@@ -1,0 +1,73 @@
+# MSD Media - Full LLM Index
+
+Ce document fournit une cartographie textuelle des pages utiles pour les moteurs IA.
+
+## Intentions couvertes
+- Agence web locale par ville
+- Création de landing pages par ville
+- Création de sites web par ville
+- Études de cas et preuves de livraison
+
+## URLs
+- https://msd-media.com/
+- https://msd-media.com/etudes-de-cas/
+- https://msd-media.com/agence-web-annecy/
+- https://msd-media.com/landing-page-annecy/
+- https://msd-media.com/creation-site-web-annecy/
+- https://msd-media.com/creation-site-internet-annecy/
+- https://msd-media.com/creation-site-vitrine-annecy/
+- https://msd-media.com/agence-web-bordeaux/
+- https://msd-media.com/agence-web-chambery/
+- https://msd-media.com/agence-web-clermont-ferrand/
+- https://msd-media.com/agence-web-geneve/
+- https://msd-media.com/agence-web-lille/
+- https://msd-media.com/agence-web-lyon/
+- https://msd-media.com/agence-web-marseille/
+- https://msd-media.com/agence-web-montpellier/
+- https://msd-media.com/agence-web-nantes/
+- https://msd-media.com/agence-web-nice/
+- https://msd-media.com/agence-web-paris/
+- https://msd-media.com/agence-web-rennes/
+- https://msd-media.com/agence-web-strasbourg/
+- https://msd-media.com/agence-web-toulouse/
+- https://msd-media.com/landing-page-bordeaux/
+- https://msd-media.com/landing-page-chambery/
+- https://msd-media.com/landing-page-clermont-ferrand/
+- https://msd-media.com/landing-page-geneve/
+- https://msd-media.com/landing-page-lille/
+- https://msd-media.com/landing-page-lyon/
+- https://msd-media.com/landing-page-marseille/
+- https://msd-media.com/landing-page-montpellier/
+- https://msd-media.com/landing-page-nantes/
+- https://msd-media.com/landing-page-nice/
+- https://msd-media.com/landing-page-paris/
+- https://msd-media.com/landing-page-rennes/
+- https://msd-media.com/landing-page-strasbourg/
+- https://msd-media.com/landing-page-toulouse/
+- https://msd-media.com/creation-site-web-bordeaux/
+- https://msd-media.com/creation-site-web-chambery/
+- https://msd-media.com/creation-site-web-clermont-ferrand/
+- https://msd-media.com/creation-site-web-geneve/
+- https://msd-media.com/creation-site-web-lille/
+- https://msd-media.com/creation-site-web-lyon/
+- https://msd-media.com/creation-site-web-marseille/
+- https://msd-media.com/creation-site-web-montpellier/
+- https://msd-media.com/creation-site-web-nantes/
+- https://msd-media.com/creation-site-web-nice/
+- https://msd-media.com/creation-site-web-paris/
+- https://msd-media.com/creation-site-web-rennes/
+- https://msd-media.com/creation-site-web-strasbourg/
+- https://msd-media.com/creation-site-web-toulouse/
+
+## Résumé éditorial
+MSD Media propose des pages locales optimisées SEO et GEO pour répondre aux recherches transactionnelles (agence web, landing page, création de site web) avec un maillage par ville et des éléments de réassurance (réalisations, avis, FAQ).
+
+## Données structurées présentes dans les pages
+- Organization
+- WebSite
+- WebPage
+- FAQPage
+
+## Coordonnées/localisation
+- Point d'ancrage principal: Annecy (Haute-Savoie)
+- Couverture: principales villes françaises + Genève

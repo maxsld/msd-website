@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://msd-media.com/sitemap.xml
+Sitemap: https://msd-media.com/blog/sitemap.xml

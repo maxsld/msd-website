@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyse SEO Gratuite – Auditez votre site en 30 secondes | MSD Media</title>
+  <meta name="description" content="Analysez gratuitement le SEO de n'importe quel site web. Score, détection des erreurs critiques, recommandations concrètes. Outil gratuit par MSD Media." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Maxens Soldan" />
+  <link rel="canonical" href="https://msd-media.com/analyse-seo/" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="https://msd-media.com/assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="https://msd-media.com/assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="https://msd-media.com/assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://msd-media.com/assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="https://msd-media.com/assets/img/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous" defer></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P28B6QRF');</script>
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Analyse SEO Gratuite",
+    "url": "https://msd-media.com/analyse-seo/",
+    "description": "Outil gratuit d'analyse SEO par MSD Media. Auditez votre site et obtenez un score détaillé.",
+    "isPartOf": {"@type": "WebSite", "url": "https://msd-media.com/"}
+  }
+  </script>
+
+  <style>
+    /* ── Tool hero ── */
+    .tool-hero {
+      background: #ffffff;
+      padding: 6rem 1.5rem 4rem;
+      text-align: center;
+    }
+    .tool-hero__breadcrumb {
+      margin-bottom: 1.5rem;
+    }
+    .tool-hero__title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(2rem, 4.5vw, 3.6rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      color: #0a0a0a;
+      margin: 0 0 1rem;
+      line-height: 1.1;
+    }
+    .tool-hero__sub {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: #555;
+      margin: 0 auto 2.5rem;
+      max-width: 560px;
+      line-height: 1.6;
+    }
+    .tool-form {
+      display: flex;
+      gap: .75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .tool-form__input {
+      flex: 1 1 300px;
+      padding: .85rem 1.25rem;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: #0a0a0a;
+      outline: none;
+      transition: border-color .2s;
+    }
+    .tool-form__input:focus {
+      border-color: #0a0a0a;
+    }
+
+    /* ── Audit section ── */
+    .audit-section {
+      background: #ffffff;
+      padding: 3rem 1.5rem 5rem;
+    }
+    .audit-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Loading */
+    .audit-loading {
+      display: none;
+      text-align: center;
+      padding: 3rem 0;
+    }
+    .audit-loading.is-visible {
+      display: block;
+    }
+    .audit-loading__spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid #e0e0e0;
+      border-top-color: #0a0a0a;
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+      margin: 0 auto 1rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .audit-loading__text {
+      font-family: 'Inter', sans-serif;
+      color: #555;
+      font-size: .95rem;
+    }
+
+    /* Error */
+    .audit-error {
+      display: none;
+      background: #fff3f3;
+      border: 1px solid #ffcccc;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      color: #c0392b;
+    }
+    .audit-error.is-visible { display: block; }
+
+    /* Results */
+    .audit-results {
+      display: none;
+    }
+    .audit-results.is-visible { display: block; }
+
+    /* Screenshot + score row */
+    .audit-top {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: start;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 640px) {
+      .audit-top { grid-template-columns: 1fr; }
+    }
+
+    .audit-screenshot-wrap {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e8e8e8;
+      background: #f5f5f5;
+      min-height: 200px;
+    }
+    .audit-screenshot-wrap img {
+      width: 100%;
+      display: block;
+    }
+    .audit-pin {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      font-size: .7rem;
+      font-weight: 700;
+      color: #fff;
+      cursor: pointer;
+      transform: translate(-50%, -50%);
+      transition: transform .15s;
+      z-index: 10;
+    }
+    .audit-pin:hover { transform: translate(-50%, -50%) scale(1.2); }
+    .audit-pin--err { background: #e74c3c; }
+    .audit-pin--warn { background: #f39c12; }
+    .audit-pin--ok { background: #27ae60; }
+
+    /* Score donut */
+    .audit-score {
+      text-align: center;
+      min-width: 130px;
+    }
+    .audit-score svg { display: block; margin: 0 auto; }
+    .audit-score__label {
+      font-family: 'Inter', sans-serif;
+      font-size: .8rem;
+      color: #888;
+      margin-top: .5rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    /* Issues grid */
+    .audit-issues {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .audit-issue {
+      background: #fafafa;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      display: flex;
+      gap: .75rem;
+      align-items: flex-start;
+    }
+    .audit-issue__icon {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+    .audit-issue--err .audit-issue__icon { color: #e74c3c; }
+    .audit-issue--warn .audit-issue__icon { color: #f39c12; }
+    .audit-issue--ok .audit-issue__icon { color: #27ae60; }
+    .audit-issue__title {
+      font-family: 'Inter', sans-serif;
+      font-size: .9rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 0 0 .2rem;
+    }
+    .audit-issue__desc {
+      font-family: 'Inter', sans-serif;
+      font-size: .8rem;
+      color: #666;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* Summary bar */
+    .audit-summary {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      font-family: 'Inter', sans-serif;
+    }
+    .audit-summary__item {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .9rem;
+    }
+    .audit-summary__dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .audit-summary__dot--err { background: #e74c3c; }
+    .audit-summary__dot--warn { background: #f39c12; }
+    .audit-summary__dot--ok { background: #27ae60; }
+
+    .audit-url-display {
+      font-family: 'Inter', sans-serif;
+      font-size: .85rem;
+      color: #888;
+      margin-bottom: 1.5rem;
+      word-break: break-all;
+    }
+    .audit-url-display strong { color: #0a0a0a; }
+
+    /* Booking hidden until results */
+    .booking-section-wrap { display: none; }
+    .booking-section-wrap.is-visible { display: block; }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28B6QRF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="https://msd-media.com/"><img height="151" width="372" src="../assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager"></a>
+      <div class="nav-menu" data-nav-menu>
+        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
+          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
+          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
+          <a href="https://msd-media.com/">Accueil</a>
+          <a href="https://msd-media.com/etudes-de-cas/">Études de cas</a>
+          <a href="https://msd-media.com/blog/">Blog</a>
+          <a href="https://msd-media.com/contact/">Contact</a>
+          <a href="https://msd-media.com/recrutement/">Recrutement</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
+      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="tool-hero">
+      <nav class="tool-hero__breadcrumb" aria-label="Fil d'Ariane">
+        <ol class="breadcrumb__list">
+          <li><a href="https://msd-media.com/">Accueil</a></li>
+          <li aria-current="page">Analyse SEO</li>
+        </ol>
+      </nav>
+      <h1 class="tool-hero__title">Analysez votre site SEO<br>gratuitement en 30 secondes</h1>
+      <p class="tool-hero__sub">Entrez l'URL de votre site. Notre outil détecte les erreurs critiques et vous donne un score SEO actionnable.</p>
+      <div class="tool-form">
+        <input
+          id="urlInput"
+          class="tool-form__input"
+          type="url"
+          placeholder="https://votre-site.com"
+          autocomplete="url"
+          aria-label="URL du site à analyser"
+        />
+        <button id="analyseBtn" class="contact-button" type="button">Analyser</button>
+      </div>
+    </section>
+
+    <!-- Audit section -->
+    <section class="audit-section">
+      <div class="audit-container">
+
+        <!-- Loading -->
+        <div class="audit-loading" id="auditLoading" aria-live="polite">
+          <div class="audit-loading__spinner" aria-hidden="true"></div>
+          <p class="audit-loading__text" id="auditLoadingText">Récupération de la page…</p>
+        </div>
+
+        <!-- Error -->
+        <div class="audit-error" id="auditError" role="alert"></div>
+
+        <!-- Results -->
+        <div class="audit-results" id="auditResults">
+          <p class="audit-url-display">Analyse de : <strong id="auditUrlLabel"></strong></p>
+
+          <div class="audit-top">
+            <div class="audit-screenshot-wrap" id="auditScreenshotWrap">
+              <img id="auditScreenshot" src="" alt="Capture d'écran du site analysé" loading="lazy" />
+              <div id="auditPins"></div>
+            </div>
+            <div class="audit-score">
+              <svg width="130" height="130" viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#e8e8e8" stroke-width="8"/>
+                <circle id="scoreCircle" cx="50" cy="50" r="45" fill="none" stroke="#0a0a0a" stroke-width="8"
+                  stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="283"
+                  transform="rotate(-90 50 50)" style="transition:stroke-dashoffset 1s ease"/>
+                <text id="scoreText" x="50" y="55" text-anchor="middle"
+                  font-family="'Inter',sans-serif" font-size="22" font-weight="800" fill="#0a0a0a">–</text>
+              </svg>
+              <p class="audit-score__label">Score SEO</p>
+            </div>
+          </div>
+
+          <div class="audit-summary" id="auditSummary"></div>
+          <div class="audit-issues" id="auditIssues"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Booking section (shown after analysis) -->
+    <div class="booking-section-wrap" id="bookingWrap">
+      <section class="booking-section" id="rdv">
+        <div class="booking-section__inner">
+          <h2 class="section-tag section-tag--light">Réserver un appel</h2>
+          <h2 class="section-title section-title--light">On corrige tout ça<br>pour vous en 14 jours.</h2>
+          <div class="booking-section__embed">
+            <iframe
+              src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&theme=dark"
+              title="Prendre rendez-vous avec MSD Media"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img height="151" width="372" src="../assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy">
+        <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:contact@msd-media.com">contact@msd-media.com</a></p>
+      </div>
+      <div class="footer-offices">
+        <article class="footer-office-card">
+          <h4 class="footer-office-city">Annecy</h4>
+          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
+          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
+        </article>
+        <article class="footer-office-card">
+          <h4 class="footer-office-city">Munich</h4>
+          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
+          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+        </article>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:contact@msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-cities">
+      <ul>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
+        <li><a href="https://msd-media.com/agence-web-lyon/">Lyon</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-paris/">Paris</a></li>
+        <li><a href="https://msd-media.com/agence-web-marseille/">Marseille</a></li>
+        <li><a href="https://msd-media.com/agence-web-toulouse/">Toulouse</a></li>
+        <li><a href="https://msd-media.com/agence-web-bordeaux/">Bordeaux</a></li>
+        <li><a href="https://msd-media.com/agence-web-lille/">Lille</a></li>
+        <li><a href="https://msd-media.com/agence-web-nantes/">Nantes</a></li>
+        <li><a href="https://msd-media.com/agence-web-montpellier/">Montpellier</a></li>
+        <li><a href="https://msd-media.com/agence-web-nice/">Nice</a></li>
+        <li><a href="https://msd-media.com/agence-web-rennes/">Rennes</a></li>
+        <li><a href="https://msd-media.com/agence-web-clermont-ferrand/">Clermont-Ferrand</a></li>
+      </ul>
+    </div>
+    <div class="footer-legal">
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">Politique de confidentialité</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 MSD Media. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../assets/js/script.js" defer></script>
+
+  <script>
+  (function() {
+    'use strict';
+
+    const btn        = document.getElementById('analyseBtn');
+    const input      = document.getElementById('urlInput');
+    const loadingEl  = document.getElementById('auditLoading');
+    const loadingTxt = document.getElementById('auditLoadingText');
+    const errorEl    = document.getElementById('auditError');
+    const resultsEl  = document.getElementById('auditResults');
+    const bookingEl  = document.getElementById('bookingWrap');
+
+    /* ── helpers ── */
+    function normalizeUrl(raw) {
+      raw = raw.trim();
+      if (!raw) return null;
+      if (!/^https?:\/\//i.test(raw)) raw = 'https://' + raw;
+      try { return new URL(raw).href; } catch { return null; }
+    }
+
+    function setLoading(msg) {
+      loadingTxt.textContent = msg || 'Analyse en cours…';
+      loadingEl.classList.add('is-visible');
+      errorEl.classList.remove('is-visible');
+      resultsEl.classList.remove('is-visible');
+      bookingEl.classList.remove('is-visible');
+    }
+
+    function setError(msg) {
+      loadingEl.classList.remove('is-visible');
+      errorEl.textContent = msg;
+      errorEl.classList.add('is-visible');
+    }
+
+    function setResults() {
+      loadingEl.classList.remove('is-visible');
+      errorEl.classList.remove('is-visible');
+      resultsEl.classList.add('is-visible');
+      bookingEl.classList.add('is-visible');
+    }
+
+    /* ── fetch with timeout ── */
+    async function tryFetch(url, ms) {
+      const ac = new AbortController();
+      const t = setTimeout(() => ac.abort(), ms);
+      try {
+        const r = await fetch(url, { signal: ac.signal });
+        clearTimeout(t);
+        return r;
+      } catch(e) {
+        clearTimeout(t);
+        throw e;
+      }
+    }
+
+    /* ── fetch page HTML via CORS proxies ── */
+    async function getPageHtml(targetUrl) {
+      const proxies = [
+        `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`,
+        `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`,
+        `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`
+      ];
+
+      for (let i = 0; i < proxies.length; i++) {
+        const label = ['allorigins', 'corsproxy', 'codetabs'][i];
+        loadingTxt.textContent = `Proxy ${label} (${i+1}/3)…`;
+        try {
+          const res = await tryFetch(proxies[i], 10000);
+          if (!res.ok) continue;
+          const data = await res.json().catch(() => null);
+          if (data && data.contents) return data.contents;
+          const text = await res.text().catch(() => null);
+          if (text && text.trim().startsWith('<')) return text;
+        } catch(e) {
+          // try next proxy
+        }
+      }
+      return null;
+    }
+
+    /* ── SEO checks ── */
+    function checkSEO(doc, url) {
+      const issues = [];
+
+      // Title
+      const title = doc.querySelector('title');
+      const titleTxt = title ? title.textContent.trim() : '';
+      if (!titleTxt) {
+        issues.push({ id:'title', type:'err', title:'Title manquant', desc:'Aucune balise <title> trouvée. Indispensable pour le SEO.', pin:{x:10,y:5} });
+      } else if (titleTxt.length < 30) {
+        issues.push({ id:'title', type:'warn', title:'Title trop court', desc:`"${titleTxt.slice(0,50)}" (${titleTxt.length} car.). Idéal : 50–60 car.`, pin:{x:10,y:5} });
+      } else if (titleTxt.length > 65) {
+        issues.push({ id:'title', type:'warn', title:'Title trop long', desc:`${titleTxt.length} car. – Google tronque au-delà de 60 car.`, pin:{x:10,y:5} });
+      } else {
+        issues.push({ id:'title', type:'ok', title:'Title OK', desc:`${titleTxt.length} car. – parfait.` });
+      }
+
+      // Meta description
+      const metaDesc = doc.querySelector('meta[name="description"]');
+      const descTxt = metaDesc ? (metaDesc.getAttribute('content') || '').trim() : '';
+      if (!descTxt) {
+        issues.push({ id:'desc', type:'err', title:'Meta description manquante', desc:'Très important pour le CTR dans Google.', pin:{x:10,y:8} });
+      } else if (descTxt.length < 70) {
+        issues.push({ id:'desc', type:'warn', title:'Meta description courte', desc:`${descTxt.length} car. – idéal : 130–160 car.`, pin:{x:10,y:8} });
+      } else if (descTxt.length > 165) {
+        issues.push({ id:'desc', type:'warn', title:'Meta description trop longue', desc:`${descTxt.length} car. – Google tronque au-delà de 160 car.`, pin:{x:10,y:8} });
+      } else {
+        issues.push({ id:'desc', type:'ok', title:'Meta description OK', desc:`${descTxt.length} car. – parfait.` });
+      }
+
+      // H1
+      const h1s = doc.querySelectorAll('h1');
+      if (h1s.length === 0) {
+        issues.push({ id:'h1', type:'err', title:'H1 manquant', desc:'Aucun H1 sur la page. Balise critique pour le SEO.', pin:{x:20,y:25} });
+      } else if (h1s.length > 1) {
+        issues.push({ id:'h1', type:'warn', title:'Plusieurs H1 détectés', desc:`${h1s.length} balises H1 – une seule recommandée par page.`, pin:{x:20,y:25} });
+      } else {
+        const txt = h1s[0].textContent.trim();
+        if (txt.length > 70) {
+          issues.push({ id:'h1', type:'warn', title:'H1 trop long', desc:`${txt.length} car. – préférez moins de 70 car.`, pin:{x:20,y:25} });
+        } else {
+          issues.push({ id:'h1', type:'ok', title:'H1 OK', desc:`"${txt.slice(0,50)}"` });
+        }
+      }
+
+      // Canonical
+      const canonical = doc.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        issues.push({ id:'canonical', type:'warn', title:'Canonical manquant', desc:'Risque de contenu dupliqué si plusieurs URLs pointent vers cette page.', pin:{x:85,y:5} });
+      } else {
+        issues.push({ id:'canonical', type:'ok', title:'Canonical OK', desc:canonical.getAttribute('href') });
+      }
+
+      // OG tags
+      const ogTitle = doc.querySelector('meta[property="og:title"]');
+      const ogDesc  = doc.querySelector('meta[property="og:description"]');
+      const ogImg   = doc.querySelector('meta[property="og:image"]');
+      if (!ogTitle || !ogDesc || !ogImg) {
+        const missing = [!ogTitle && 'og:title', !ogDesc && 'og:description', !ogImg && 'og:image'].filter(Boolean);
+        issues.push({ id:'og', type:'warn', title:'Open Graph incomplet', desc:`Manquant : ${missing.join(', ')}. Impacte le partage réseaux sociaux.`, pin:{x:70,y:5} });
+      } else {
+        issues.push({ id:'og', type:'ok', title:'Open Graph OK', desc:'og:title, og:description et og:image présents.' });
+      }
+
+      // Images alt
+      const imgs = Array.from(doc.querySelectorAll('img'));
+      const missingAlt = imgs.filter(img => !img.getAttribute('alt') || img.getAttribute('alt').trim() === '');
+      if (missingAlt.length > 0) {
+        issues.push({ id:'imgalt', type: missingAlt.length > 5 ? 'err' : 'warn', title:`${missingAlt.length} image(s) sans alt`, desc:'Les attributs alt sont essentiels pour l\'accessibilité et le SEO images.', pin:{x:40,y:40} });
+      } else if (imgs.length > 0) {
+        issues.push({ id:'imgalt', type:'ok', title:'Toutes les images ont un alt', desc:`${imgs.length} images vérifiées.` });
+      }
+
+      // Robots meta
+      const robotsMeta = doc.querySelector('meta[name="robots"]');
+      if (robotsMeta) {
+        const content = (robotsMeta.getAttribute('content') || '').toLowerCase();
+        if (content.includes('noindex')) {
+          issues.push({ id:'robots', type:'err', title:'Page non-indexée !', desc:'meta robots="noindex" détecté – Google n\'indexera pas cette page.', pin:{x:90,y:5} });
+        } else {
+          issues.push({ id:'robots', type:'ok', title:'Robots OK', desc:'Page autorisée à l\'indexation.' });
+        }
+      } else {
+        issues.push({ id:'robots', type:'warn', title:'Meta robots absent', desc:'Par défaut Google indexe, mais il est préférable de l\'expliciter.' });
+      }
+
+      // Structured data
+      const schemas = doc.querySelectorAll('script[type="application/ld+json"]');
+      if (schemas.length === 0) {
+        issues.push({ id:'schema', type:'warn', title:'Données structurées absentes', desc:'Schema.org améliore la visibilité dans les résultats enrichis Google.', pin:{x:5,y:90} });
+      } else {
+        let valid = 0;
+        schemas.forEach(s => { try { JSON.parse(s.textContent); valid++; } catch {} });
+        if (valid < schemas.length) {
+          issues.push({ id:'schema', type:'err', title:'JSON-LD invalide', desc:`${schemas.length - valid} bloc(s) de données structurées malformé(s).`, pin:{x:5,y:90} });
+        } else {
+          issues.push({ id:'schema', type:'ok', title:`${valid} schema(s) valide(s)`, desc:'Données structurées bien formées.' });
+        }
+      }
+
+      // Viewport
+      const viewport = doc.querySelector('meta[name="viewport"]');
+      if (!viewport) {
+        issues.push({ id:'viewport', type:'err', title:'Viewport manquant', desc:'Sans viewport, le site n\'est pas adapté au mobile — pénalité SEO mobile.', pin:{x:50,y:5} });
+      } else {
+        issues.push({ id:'viewport', type:'ok', title:'Viewport OK', desc:'Site configuré pour le mobile.' });
+      }
+
+      // Lang attribute
+      const htmlEl = doc.querySelector('html');
+      const lang = htmlEl ? htmlEl.getAttribute('lang') : null;
+      if (!lang) {
+        issues.push({ id:'lang', type:'warn', title:'Attribut lang manquant', desc:'<html lang="fr"> aide Google à cibler la bonne audience.' });
+      } else {
+        issues.push({ id:'lang', type:'ok', title:`Langue déclarée : ${lang}`, desc:'Google comprend la langue cible de la page.' });
+      }
+
+      // Internal links
+      const links = doc.querySelectorAll('a[href]');
+      const internalLinks = Array.from(links).filter(a => {
+        const href = a.getAttribute('href');
+        return href && !href.startsWith('http') && !href.startsWith('mailto') && !href.startsWith('tel') && !href.startsWith('#');
+      });
+      if (internalLinks.length === 0) {
+        issues.push({ id:'ilinks', type:'warn', title:'Peu de liens internes', desc:'Les liens internes aident Google à comprendre la structure de votre site.', pin:{x:30,y:80} });
+      } else {
+        issues.push({ id:'ilinks', type:'ok', title:`${internalLinks.length} lien(s) interne(s)`, desc:'Bonne structure de maillage interne.' });
+      }
+
+      // Word count (rough estimate)
+      const bodyText = doc.body ? doc.body.innerText || doc.body.textContent || '' : '';
+      const wordCount = bodyText.trim().split(/\s+/).filter(w => w.length > 2).length;
+      if (wordCount < 300) {
+        issues.push({ id:'content', type:'warn', title:`Contenu court (~${wordCount} mots)`, desc:'Google préfère les pages avec au moins 300–500 mots de contenu.', pin:{x:50,y:50} });
+      } else {
+        issues.push({ id:'content', type:'ok', title:`Contenu suffisant (~${wordCount} mots)`, desc:'Volume de texte correct pour le SEO.' });
+      }
+
+      return issues;
+    }
+
+    /* ── Score calculation ── */
+    function calcScore(issues) {
+      const total  = issues.length;
+      const errors = issues.filter(i => i.type === 'err').length;
+      const warns  = issues.filter(i => i.type === 'warn').length;
+      const penalty = errors * 8 + warns * 3;
+      return Math.max(0, Math.min(100, Math.round(100 - (penalty / total) * 100)));
+    }
+
+    /* ── Render ── */
+    function render(issues, score, targetUrl) {
+      // URL label
+      document.getElementById('auditUrlLabel').textContent = targetUrl;
+
+      // Screenshot
+      const thumb = `https://image.thum.io/get/width/800/crop/600/${encodeURIComponent(targetUrl)}`;
+      const img = document.getElementById('auditScreenshot');
+      img.src = thumb;
+      img.onerror = () => { document.getElementById('auditScreenshotWrap').style.display = 'none'; };
+
+      // Pins
+      const pinsContainer = document.getElementById('auditPins');
+      pinsContainer.innerHTML = '';
+      let pinIdx = 1;
+      issues.filter(i => i.pin && i.type !== 'ok').forEach(issue => {
+        const pin = document.createElement('div');
+        pin.className = `audit-pin audit-pin--${issue.type}`;
+        pin.style.left = issue.pin.x + '%';
+        pin.style.top  = issue.pin.y + '%';
+        pin.textContent = pinIdx++;
+        pin.title = issue.title;
+        pinsContainer.appendChild(pin);
+      });
+
+      // Score donut
+      const circle = document.getElementById('scoreCircle');
+      const textEl = document.getElementById('scoreText');
+      const circumference = 283;
+      const offset = circumference - (score / 100) * circumference;
+      const color = score >= 80 ? '#27ae60' : score >= 50 ? '#f39c12' : '#e74c3c';
+      circle.style.stroke = color;
+      textEl.style.fill   = color;
+      setTimeout(() => { circle.style.strokeDashoffset = offset; }, 100);
+      textEl.textContent = score;
+
+      // Summary
+      const errors = issues.filter(i => i.type === 'err').length;
+      const warns  = issues.filter(i => i.type === 'warn').length;
+      const oks    = issues.filter(i => i.type === 'ok').length;
+      document.getElementById('auditSummary').innerHTML = `
+        <span class="audit-summary__item"><span class="audit-summary__dot audit-summary__dot--err"></span>${errors} erreur${errors>1?'s':''}</span>
+        <span class="audit-summary__item"><span class="audit-summary__dot audit-summary__dot--warn"></span>${warns} avertissement${warns>1?'s':''}</span>
+        <span class="audit-summary__item"><span class="audit-summary__dot audit-summary__dot--ok"></span>${oks} OK</span>
+      `;
+
+      // Issues — sorted: err → warn → ok
+      const sorted = [...issues].sort((a,b) => {
+        const o = {err:0,warn:1,ok:2};
+        return o[a.type] - o[b.type];
+      });
+      const icons = { err:'fa-solid fa-circle-xmark', warn:'fa-solid fa-triangle-exclamation', ok:'fa-solid fa-circle-check' };
+      document.getElementById('auditIssues').innerHTML = sorted.map(i => `
+        <div class="audit-issue audit-issue--${i.type}">
+          <span class="audit-issue__icon"><i class="${icons[i.type]}"></i></span>
+          <div>
+            <p class="audit-issue__title">${i.title}</p>
+            <p class="audit-issue__desc">${i.desc}</p>
+          </div>
+        </div>
+      `).join('');
+
+      setResults();
+    }
+
+    /* ── Main analysis ── */
+    async function runAnalysis() {
+      const raw = input.value;
+      const targetUrl = normalizeUrl(raw);
+      if (!targetUrl) {
+        input.focus();
+        input.style.borderColor = '#e74c3c';
+        setTimeout(() => { input.style.borderColor = ''; }, 1500);
+        return;
+      }
+
+      btn.disabled = true;
+      setLoading('Connexion au site…');
+
+      try {
+        const html = await getPageHtml(targetUrl);
+
+        if (!html) {
+          setError('Impossible de récupérer la page. Vérifiez l\'URL ou réessayez. Certains sites bloquent les proxies.');
+          btn.disabled = false;
+          return;
+        }
+
+        loadingTxt.textContent = 'Analyse SEO en cours…';
+
+        // Parse HTML
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        // Run checks
+        const issues = checkSEO(doc, targetUrl);
+        const score  = calcScore(issues);
+
+        render(issues, score, targetUrl);
+
+      } catch(e) {
+        setError('Une erreur inattendue est survenue. Réessayez dans quelques instants.');
+      }
+
+      btn.disabled = false;
+    }
+
+    btn.addEventListener('click', runAnalysis);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') runAnalysis(); });
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recrutement MSD Media | Setter (Commercial)</title>
+  <meta name="description" content="Postulez chez MSD Media sur le poste Setter (commercial)." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="canonical" href="https://msd-media.com/recrutement/" />
+  <meta property="og:title" content="Recrutement MSD Media | Setter (Commercial)" />
+  <meta property="og:description" content="Postulez chez MSD Media sur le poste Setter (commercial)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://msd-media.com/recrutement/" />
+  <meta property="og:image" content="https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="https://msd-media.com/assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="https://msd-media.com/assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="https://msd-media.com/assets/img/favicon.ico" />
+  <style>
+    :root {
+      --bg: #000;
+      --text: #f6f6f6;
+      --muted: #b7b7b7;
+      --line: rgba(255, 255, 255, 0.18);
+      --chip: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", sans-serif;
+      letter-spacing: -0.02em;
+      display: grid;
+      place-items: center;
+      padding: 2.5rem 1rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: -180px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(920px, 94vw);
+      height: 390px;
+      border-radius: 999px;
+      background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.07) 35%, rgba(255, 255, 255, 0) 75%);
+      filter: blur(36px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .recruitment {
+      width: min(1000px, 100%);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .recruitment__logo {
+      width: 72px;
+      height: auto;
+      margin: 0 auto 1.1rem;
+      filter: invert(1) brightness(1.9);
+      display: block;
+      margin-bottom: 4rem;
+    }
+
+    .recruitment h1 {
+      font-size: clamp(1.65rem, 5vw, 4rem);
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: -0.05em;
+      margin-bottom: 3rem;
+    }
+
+    .chips {
+      display: flex;
+      justify-content: center;
+      gap: 0.55rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .chip {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      padding: .6rem 1.2rem;
+      border-radius: 999px;
+      background: var(--chip);
+      color: #fff;
+      font-family: "Inter", sans-serif;
+      font-size: 0.86rem;
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+    }
+
+    .chip.is-active {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+
+    .form {
+      text-align: left;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .field {
+      display: grid;
+      gap: 0.45rem;
+      margin-bottom: 0.82rem;
+    }
+
+    .field-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.82rem;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 0.78rem;
+      background: transparent;
+      color: #fff;
+      font: inherit;
+      padding: 0.75rem 0.82rem;
+      outline: none;
+    }
+
+    .field textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: rgba(255, 255, 255, 0.45);
+      font-weight: 400;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: rgba(255, 255, 255, 0.45);
+    }
+
+    .submit {
+      margin-top: 0.25rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: #000;
+      font: inherit;
+      font-size: 0.94rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      cursor: pointer;
+    }
+
+    @media (max-width: 680px) {
+      .field-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+<!-- auto-schema:start -->
+<script id="schema-breadcrumb-auto" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://msd-media.com/"},{"@type":"ListItem","position":2,"name":"Recrutement MSD Media | Setter (Commercial)","item":"https://msd-media.com/recrutement/"}]}</script>
+<!-- auto-schema:end -->
+</head>
+
+<body>
+  <main class="recruitment">
+    <img height="151" width="372" src="../assets/img/logo-black.webp" alt="MSD Media" class="recruitment__logo" loading="lazy">
+    <h1>Recrutement MSD Media</h1>
+    <div class="chips" aria-label="Postes ouverts">
+      <button type="button" class="chip is-active" data-offer="Setter (commercial)">Setter (commercial)</button>
+      <button type="button" class="chip" data-offer="Candidature spontanée">Candidature spontanée</button>
+    </div>
+
+    <form class="form" action="https://formspree.io/f/mkopvwap" method="POST">
+      <input type="hidden" name="_subject" value="Candidature recrutement" />
+      <div class="field">
+        <select id="poste" name="poste" required>
+          <option value="Setter (commercial)" selected>Offre : Setter (commercial)</option>
+          <option value="Candidature spontanée">Offre : Candidature spontanée</option>
+        </select>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <input id="nom" name="nom" type="text" required placeholder="Nom *" />
+        </div>
+        <div class="field">
+          <input id="whatsapp" name="whatsapp" type="tel" required placeholder="WhatsApp *" />
+        </div>
+      </div>
+
+      <div class="field">
+        <input id="portfolio" name="portfolio" type="url" placeholder="Lien vers votre portfolio / LinkedIn" />
+      </div>
+
+      <div class="field">
+        <textarea id="motivations" name="motivations" required placeholder="Quelles sont vos motivations pour rejoindre MSD Media ? *"></textarea>
+      </div>
+
+      <button type="submit" class="submit">Envoyer ma candidature</button>
+    </form>
+  </main>
+  <script>
+    (function () {
+      const chips = Array.from(document.querySelectorAll('.chip[data-offer]'));
+      const offerSelect = document.getElementById('poste');
+      if (!chips.length || !offerSelect) return;
+
+      chips.forEach((chip) => {
+        chip.addEventListener('click', () => {
+          const offer = chip.dataset.offer || '';
+          offerSelect.value = offer;
+          chips.forEach((c) => c.classList.toggle('is-active', c === chip));
+        });
+      });
+
+      offerSelect.addEventListener('change', () => {
+        const offer = offerSelect.value;
+        chips.forEach((chip) => {
+          chip.classList.toggle('is-active', chip.dataset.offer === offer);
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>

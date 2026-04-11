@@ -1,0 +1,670 @@
+/* Global responsive layer for the whole site */
+
+@media (max-width: 1200px) {
+  .navbar,
+  .section-grid,
+  .realisations-inner,
+  .process-inner,
+  .booking-section__inner,
+  .faq-container,
+  .footer-container,
+  .founder-section,
+  .section-reviews {
+    width: min(100%, 1060px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero {
+    padding-inline: 1.2rem;
+  }
+
+  .hero__title {
+    font-size: clamp(2.25rem, 8vw, 4.6rem);
+  }
+
+  .video-hero {
+    max-width: 100%;
+  }
+
+  .realisations-slide {
+    width: min(54vw, 540px);
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-studies-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .hero__title-word-wrap {
+    margin-left: 0;
+  }
+
+  .navbar {
+    width: calc(100% - 1.1rem);
+    padding: 1.15rem 0.95rem 0.6rem;
+    gap: 0.6rem;
+  }
+
+  .nav-right {
+    gap: 0.5rem;
+  }
+
+  .hero {
+    padding: 0.9rem 1rem 1.5rem;
+  }
+
+  .hero__actions {
+    margin-top: 2rem;
+    gap: 0.65rem;
+  }
+
+  .hero__btn {
+    min-height: 42px;
+  }
+
+  .video-hero {
+    margin-top: 2.1rem;
+  }
+
+  .hero-companies-proof {
+    margin-top: 3.4rem;
+  }
+
+  .hero-scroll-indicator {
+    width: 92px;
+    height: 92px;
+    margin-top: 0.6rem;
+  }
+
+  .scroll-manifesto {
+    min-height: 54vh;
+    margin: 0.65rem 0 0.35rem;
+  }
+
+  .scroll-manifesto__pin {
+    min-height: 54vh;
+    padding-inline: 1rem;
+  }
+
+  .scroll-manifesto__text {
+    font-size: clamp(1.7rem, 7.2vw, 3rem);
+    line-height: 1.08;
+    transform: translateY(0);
+  }
+
+  .realisations-section {
+    padding: 2.2rem 1rem 0.7rem;
+  }
+
+  .realisations-track {
+    height: clamp(210px, 44vw, 360px);
+  }
+
+  .realisations-slide {
+    width: min(74vw, 520px);
+    border-radius: 18px;
+  }
+
+  .realisations-nav {
+    width: 44px;
+    height: 44px;
+  }
+
+  .realisations-nav--prev { left: 2%; }
+  .realisations-nav--next { right: 2%; }
+
+  .realisations-ctas {
+    gap: 0.55rem;
+  }
+
+  .process-section {
+    padding: 2.6rem 1rem 0.6rem;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    padding: 1.35rem 1.15rem 1rem;
+  }
+
+  .process-step__image {
+    width: 100%;
+    max-width: none;
+    aspect-ratio: 16 / 9;
+  }
+
+  .case-studies-section {
+    padding: 1.8rem 1rem 0.6rem;
+  }
+
+  .case-studies-grid {
+    gap: 1.15rem;
+  }
+
+  .case-study-detail-section {
+    padding: 1.8rem 1rem 0.6rem;
+  }
+
+  .section-reviews {
+    margin-top: 2.7rem;
+    padding-inline: 0.8rem;
+  }
+
+  .review-videos {
+    gap: 1.05rem;
+  }
+
+  .review-video {
+    width: min(46vw, 230px);
+    border-radius: 1.2rem;
+  }
+
+  .founder-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 3.2rem auto 2.4rem;
+    padding-inline: 1rem;
+  }
+
+  .founder-video-card {
+    max-width: 460px;
+  }
+
+  .faq {
+    padding: 2.6rem 1rem 2.2rem;
+  }
+
+  .booking-section {
+    margin-top: 2rem;
+    padding: 2.4rem 1rem 0;
+  }
+
+  .booking-section__embed iframe {
+    min-height: 620px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    text-align: left;
+  }
+
+  .footer-left,
+  .footer-contact {
+    justify-self: start;
+  }
+
+  .footer-offices {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-cities ul {
+    gap: 0.55rem 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-inline: 1rem;
+  }
+
+  .booking-section,
+  .site-footer {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .section-grid + .section-grid {
+    margin-top: 3.25rem;
+  }
+
+  .navbar {
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .nav-left .logo {
+    width: 62px;
+  }
+
+  .nav-right {
+    width: auto;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+
+  .lang-switch__select {
+    min-width: 66px;
+    max-width: 84px;
+    padding-right: 1.2rem;
+  }
+
+  .hero__title {
+    line-height: 0.96;
+  }
+
+  .trustpilot_content img {
+    width: min(58vw, 220px);
+    min-width: 0;
+    margin-top: 2.2rem;
+  }
+
+  .video-hero-controls {
+    display: none !important;
+  }
+
+  .video-control-progress {
+    width: min(38vw, 210px);
+  }
+
+  .hero-scroll-indicator {
+    width: 84px;
+    height: 84px;
+  }
+
+  .hero-scroll-indicator__ring text {
+    font-size: 9px;
+  }
+
+  .hero-scroll-indicator__arrow {
+    font-size: 1.7rem;
+  }
+
+  .realisations-slide-overlay {
+    font-size: 0.9rem;
+  }
+
+  .realisations-slide.is-prev {
+    transform: translate(calc(-50% - 54%), -50%) scale(0.82) rotate(-2deg);
+  }
+
+  .realisations-slide.is-next {
+    transform: translate(calc(-50% + 54%), -50%) scale(0.82) rotate(2deg);
+  }
+
+  .realisations-cta,
+  .realisations-cta--ghost {
+    width: fit-content;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .logo-marquee__img {
+    height: 30px;
+  }
+
+  .logo-marquee__img--carroz {
+    height: 22px;
+    max-width: 120px;
+  }
+
+  .review-video {
+    width: min(44vw, 210px);
+  }
+
+  .founder-video-thumb {
+    aspect-ratio: 16 / 9;
+  }
+
+  .faq-question {
+    padding: 0.95rem 1rem;
+    font-size: 0.98rem;
+  }
+
+  .booking-section__embed,
+  .booking-section__embed iframe {
+    min-height: 560px;
+  }
+
+  .footer-social {
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    padding-inline: 0.8rem;
+  }
+
+  .booking-section,
+  .site-footer {
+    width: calc(100% + 1.6rem);
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+  }
+
+  .navbar {
+    width: calc(100% - 0.6rem);
+    padding: 0.95rem 0.7rem 0.48rem;
+  }
+
+  .nav-right {
+    gap: 0.42rem;
+  }
+
+  .nav-left {
+    gap: 0.35rem;
+  }
+
+  .nav-menu-toggle {
+    width: 26px;
+    height: 26px;
+  }
+
+  .contact-button {
+    padding: 0 0.72rem;
+    font-size: 0.78rem;
+    min-height: 36px;
+  }
+
+  .navbar .contact-button {
+    height: 36px;
+    min-height: 36px;
+    font-size: 0.74rem;
+    font-weight: 500;
+    padding: 0 0.62rem;
+  }
+
+  .whatsapp-nav-button {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+
+  .lang-switch__select {
+    height: 36px;
+    min-width: 64px;
+  }
+
+  .hero {
+    padding-inline: 0.75rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero__actions {
+    width: 100%;
+  }
+
+  .hero__btn {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .video-hero {
+    margin-top: 1.4rem;
+  }
+
+  .video-hero-content {
+    border-radius: 12px;
+    max-height: 64vh;
+  }
+
+  .video-control-progress {
+    width: 34vw;
+  }
+
+  .scroll-manifesto__text {
+    font-size: clamp(1.35rem, 6.8vw, 2.3rem);
+  }
+
+  .realisations-section {
+    padding: 1.8rem 0.7rem 0.35rem;
+  }
+
+  .realisations-track {
+    height: 200px;
+  }
+
+  .realisations-slide {
+    width: 76vw;
+    border-radius: 15px;
+  }
+
+  .realisations-slide.is-far-left {
+    transform: translate(calc(-50% - 88%), -50%) scale(0.7);
+  }
+
+  .realisations-slide.is-far-right {
+    transform: translate(calc(-50% + 88%), -50%) scale(0.7);
+  }
+
+  .realisations-nav {
+    width: 38px;
+    height: 38px;
+    font-size: 0.85rem;
+  }
+
+  .contact-button,
+  .hero__btn,
+  .realisations-cta,
+  .realisations-cta--ghost {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .process-section {
+    padding-inline: 0.7rem;
+  }
+
+  .process-step {
+    border-radius: 1.25rem;
+  }
+
+  .case-studies-section {
+    padding-inline: 0.7rem;
+  }
+
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .case-study-card__title {
+    font-size: 1.1rem;
+  }
+
+  .case-study-card__description {
+    font-size: 0.94rem;
+  }
+
+  .case-study-detail-section {
+    padding-inline: 0.7rem;
+  }
+
+  .case-study-detail-content p {
+    font-size: 0.96rem;
+  }
+
+  .contact-page {
+    padding-inline: 0.7rem;
+  }
+
+  .contact-page__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 0.9rem;
+  }
+
+  .contact-form__row {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .blog-article-shell {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    margin-bottom: 2rem;
+  }
+
+  .blog-toc {
+    position: static;
+    top: auto;
+    border-radius: 0.95rem;
+  }
+
+  .blog-toc li a {
+    font-size: 0.86rem;
+  }
+
+  .blog-article-content {
+    padding: 1rem 0.9rem 1.15rem;
+    border-radius: 0.95rem;
+  }
+
+  .blog-article-content p,
+  .blog-article-content li {
+    font-size: 0.95rem;
+    line-height: 1.62;
+  }
+
+  .blog-article-content p {
+    margin-bottom: 1.35rem;
+  }
+
+  .blog-related {
+    grid-column: auto;
+  }
+
+  .blog-related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .blog-related-card {
+    display: block;
+  }
+
+  .blog-related-card__media img {
+    min-height: 86px;
+  }
+
+  .blog-related-card__content {
+    padding: 0.55rem 0.58rem 0.62rem;
+  }
+
+  .review-videos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-video {
+    width: min(48vw, 180px);
+    border-radius: 1rem;
+  }
+
+  .project-preview-window {
+    width: 97vw;
+    height: 88vh;
+  }
+
+  .project-preview-toolbar {
+    grid-template-columns: auto 1fr;
+  }
+
+  .project-preview-close {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.55rem;
+  }
+
+  .founder-section {
+    margin-top: 2.2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .founder-link {
+    font-size: 0.96rem;
+  }
+
+  .faq {
+    padding: 2.1rem 0.7rem 1.8rem;
+  }
+
+  .faq-item {
+    border-radius: 0.95rem;
+  }
+
+  .booking-section {
+    padding-inline: 0.7rem;
+  }
+
+  .booking-section__embed iframe {
+    min-height: 520px;
+  }
+
+  .site-footer {
+    padding: 2rem 1.25rem 1.8rem;
+  }
+
+  .footer-legal {
+    gap: 0.9rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    padding-inline: 0.65rem;
+  }
+
+  .booking-section,
+  .site-footer {
+    width: calc(100% + 1.3rem);
+    margin-left: -0.65rem;
+    margin-right: -0.65rem;
+  }
+
+  .hero__title {
+    font-size: clamp(1.85rem, 10.2vw, 2.45rem);
+  }
+
+  .hero-companies-proof {
+    margin-top: 2.5rem;
+  }
+
+  .hero-scroll-indicator {
+    width: 76px;
+    height: 76px;
+    margin-top: 0.4rem;
+  }
+
+  .hero-scroll-indicator__arrow {
+    font-size: 1.5rem;
+  }
+
+  .realisations-slide {
+    width: 80vw;
+  }
+
+  .process-step {
+    padding: 1.05rem 0.9rem 0.9rem;
+  }
+
+  .process-step__image {
+    border-radius: 1rem;
+  }
+
+  .review-video {
+    width: min(47vw, 160px);
+  }
+
+  .site-footer {
+    padding-inline: 1rem;
+  }
+
+  .footer-cities ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

@@ -1978,12 +1978,6 @@ position: relative;
   font-size: 0.95rem;
 }
 
-.blog-internal-links__list a::before {
-  content: "→";
-  display: inline-block;
-  text-decoration: none;
-}
-
 .blog-related h2 {
   margin: 0 0 0.75rem;
   font-size: 1.15rem;
@@ -2007,12 +2001,6 @@ position: relative;
   text-decoration: underline;
   text-underline-offset: 0.18em;
   font-size: 0.96rem;
-}
-
-.blog-related-links a::before {
-  content: "→";
-  display: inline-block;
-  text-decoration: none;
 }
 
 .blog-related-grid {

@@ -425,15 +425,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const logoTrack = document.querySelector(".logo-marquee__track");
   const clientLogos = [
-    { src: "assets/img/logo-track1.webp", alt: "Logo client 1" },
-    { src: "assets/img/logo-track2.webp", alt: "Logo client 2" },
-    { src: "assets/img/logo-track3.webp", alt: "Logo client 3" },
-    { src: "assets/img/logo-track4.webp", alt: "Logo client 4" },
-    { src: "assets/img/logo-track5.webp", alt: "Logo client 5" },
-    { src: "assets/img/logo-track6.webp", alt: "Logo client 6" },
-    { src: "assets/img/logo-track7.webp", alt: "Logo client 7", className: "logo-marquee__img--carroz" },
-    { src: "assets/img/logo-track8.webp", alt: "Logo client 8" },
-    { src: "assets/img/logo-track9.webp", alt: "Logo client 9" }
+    { src: "https://msd-media.com/assets/img/logo-track1.webp", alt: "Logo client 1" },
+    { src: "https://msd-media.com/assets/img/logo-track2.webp", alt: "Logo client 2" },
+    { src: "https://msd-media.com/assets/img/logo-track3.webp", alt: "Logo client 3" },
+    { src: "https://msd-media.com/assets/img/logo-track4.webp", alt: "Logo client 4" },
+    { src: "https://msd-media.com/assets/img/logo-track5.webp", alt: "Logo client 5" },
+    { src: "https://msd-media.com/assets/img/logo-track6.webp", alt: "Logo client 6" },
+    { src: "https://msd-media.com/assets/img/logo-track7.webp", alt: "Logo client 7", className: "logo-marquee__img--carroz" },
+    { src: "https://msd-media.com/assets/img/logo-track8.webp", alt: "Logo client 8" },
+    { src: "https://msd-media.com/assets/img/logo-track9.webp", alt: "Logo client 9" }
   ];
 
   if (logoTrack) {
@@ -577,6 +577,71 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const realisationsCarousel = document.querySelector("[data-realisations-carousel]");
+  const standalonePreviewTriggers = Array.from(document.querySelectorAll("[data-preview-trigger]"));
+
+  if (!realisationsCarousel && standalonePreviewTriggers.length) {
+    const previewModal = document.querySelector("[data-project-preview-modal]");
+    const previewIframe = previewModal ? previewModal.querySelector("[data-project-preview-iframe]") : null;
+    const previewAddress = previewModal ? previewModal.querySelector("[data-project-preview-address]") : null;
+    const previewCloseButtons = previewModal ? previewModal.querySelectorAll("[data-project-preview-close]") : [];
+    let previewCloseTimeoutId = null;
+
+    const PREVIEW_CLOSE_DURATION = 240;
+
+    const closePreview = () => {
+      if (!previewModal || !previewIframe) return;
+      if (!previewModal.classList.contains("is-open")) return;
+
+      previewModal.classList.remove("is-open");
+      previewModal.classList.add("is-closing");
+      previewModal.setAttribute("aria-hidden", "true");
+      syncBodyScrollLock();
+
+      if (previewCloseTimeoutId) {
+        window.clearTimeout(previewCloseTimeoutId);
+      }
+
+      previewCloseTimeoutId = window.setTimeout(() => {
+        previewModal.classList.remove("is-closing");
+        previewIframe.src = "";
+      }, PREVIEW_CLOSE_DURATION);
+    };
+
+    const openPreview = (url, displayUrl) => {
+      if (!previewModal || !previewIframe || !url) return;
+
+      if (previewCloseTimeoutId) {
+        window.clearTimeout(previewCloseTimeoutId);
+        previewCloseTimeoutId = null;
+      }
+
+      previewModal.classList.remove("is-closing");
+      if (previewAddress) previewAddress.textContent = displayUrl || url;
+      previewIframe.src = url;
+      previewModal.classList.add("is-open");
+      previewModal.setAttribute("aria-hidden", "false");
+      syncBodyScrollLock();
+    };
+
+    standalonePreviewTriggers.forEach((trigger) => {
+      trigger.addEventListener("click", (event) => {
+        const previewUrl = trigger.getAttribute("data-preview-url");
+        const previewDisplayUrl = trigger.getAttribute("data-preview-display-url");
+        if (!previewUrl) return;
+        event.preventDefault();
+        openPreview(previewUrl, previewDisplayUrl);
+      });
+    });
+
+    previewCloseButtons.forEach((btn) => {
+      btn.addEventListener("click", closePreview);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closePreview();
+    });
+  }
+
   if (realisationsCarousel) {
     const realisationSlides = Array.from(realisationsCarousel.querySelectorAll(".realisations-slide"));
     const prevBtn = realisationsCarousel.querySelector("[data-realisations-prev]");
@@ -897,7 +962,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Avis
-const assetBase = "assets";
+const assetBase = "https://msd-media.com/assets";
 const avisLeft = [
   {
     text: "MSD MEDIA m’a vraiment impressionné par son professionnalisme et sa créativité. Maxens a su comprendre mes besoins rapidement et transformer mes idées en une landing page claire, moderne et efficace. Communication fluide et résultat à la hauteur de mes attentes.",
@@ -1013,13 +1078,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const wordNodes = manifestoText.querySelectorAll(".scroll-manifesto__word");
   if (!wordNodes.length) return;
 
+  // Promouvoir chaque span sur son propre layer GPU avant l'animation
+  wordNodes.forEach((n) => { n.style.willChange = "transform, opacity, filter"; });
+
   const revealTl = window.gsap.timeline({
     scrollTrigger: {
       trigger: manifestoSection,
       start: "top 90%",
       end: "top  5%",
       scrub: 0.45,
-      invalidateOnRefresh: true
+      invalidateOnRefresh: true,
+      onLeave: () => wordNodes.forEach((n) => { n.style.willChange = "auto"; }),
+      onLeaveBack: () => wordNodes.forEach((n) => { n.style.willChange = "auto"; })
     }
   });
 

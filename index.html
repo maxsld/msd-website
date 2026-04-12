@@ -37,10 +37,12 @@
   <link rel="manifest" href="https://msd-media.com/assets/img/site.webmanifest" />
 
   <link rel="preload" as="image" href="https://msd-media.com/assets/img/logo-black.webp" fetchpriority="high">
-  <!-- Fonts -->
+  <!-- Fonts – chargement non-bloquant -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"></noscript>
 
   <!-- Styles -->
 
@@ -419,27 +421,27 @@
       <div class="process-steps">
         <article class="process-step animate-fade-opacity">
           <span class="process-step__day">Jour 1-3</span>
-          <img  class="process-step__image" src="https://msd-media.com/assets/img/process1.avif" alt="Phase de cadrage projet" loading="lazy">
+          <img width="380" height="238" class="process-step__image" src="https://msd-media.com/assets/img/process1.avif" alt="Phase de cadrage projet" loading="lazy">
           <h4>Brief & lancement</h4>
           <p>Appel de cadrage avec vous + chef de projet. On aligne les objectifs, le positionnement et l’architecture
             du site.</p>
         </article>
         <article class="process-step animate-fade-opacity">
           <span class="process-step__day">Jour 4-7</span>
-          <img  class="process-step__image" src="https://msd-media.com/assets/img/process2.avif" alt="Phase de design UX UI" loading="lazy">
+          <img width="380" height="238" class="process-step__image" src="https://msd-media.com/assets/img/process2.avif" alt="Phase de design UX UI" loading="lazy">
           <h4>UX/UI & validation</h4>
           <p>Création de la maquette sur mesure (desktop + mobile), puis validation avec vous avant développement.</p>
         </article>
         <article class="process-step animate-fade-opacity">
           <span class="process-step__day">Jour 8-11</span>
-          <img  class="process-step__image" src="https://msd-media.com/assets/img/process3.avif" alt="Phase de développement du site" loading="lazy">
+          <img width="380" height="238" class="process-step__image" src="https://msd-media.com/assets/img/process3.avif" alt="Phase de développement du site" loading="lazy">
           <h4>Développement</h4>
           <p>Intégration propre, rapide et responsive. SEO technique de base, performance et tracking sont mis en
             place.</p>
         </article>
         <article class="process-step animate-fade-opacity">
           <span class="process-step__day">Jour 12-14</span>
-          <img  class="process-step__image" src="https://msd-media.com/assets/img/process4.avif" alt="Phase de livraison finale" loading="lazy">
+          <img width="380" height="238" class="process-step__image" src="https://msd-media.com/assets/img/process4.avif" alt="Phase de livraison finale" loading="lazy">
           <h4>Livraison & ajustements</h4>
           <p>Présentation de la V1, retours, derniers ajustements puis mise en ligne finale de votre site web.</p>
         </article>
@@ -541,7 +543,7 @@
     <div class="founder-video-card">
       <a href="https://youtu.be/mLVqVknv2VA?si=qAgiIhJUew3sbyE8" target="_blank" rel="noreferrer"
         class="founder-video-link">
-        <img src="https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp" alt="Portrait de Maxens Soldan" class="founder-video-thumb" loading="lazy">
+        <img width="600" height="338" src="https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp" alt="Portrait de Maxens Soldan" class="founder-video-thumb" loading="lazy">
         <div class="founder-video-overlay">
           <span class="play-button"><i class="fa-solid fa-play"></i></span>
           <div class="founder-caption">
@@ -660,7 +662,7 @@
       <!-- Bloc gauche : logo + slogan -->
       <div class="footer-left">
         <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy">
-        <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:contact@msd-media.com">contact@msd-media.com</a></p>
+        <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:agence@msd-media.com">agence@msd-media.com</a></p>
       </div>
 
       <div class="footer-offices">
@@ -738,8 +740,8 @@
 
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 <script src="assets/js/script.js" defer></script>
 
 </html>

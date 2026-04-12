@@ -93,8 +93,8 @@
   }
 
   .scroll-manifesto__text {
-    font-size: clamp(1.7rem, 7.2vw, 3rem);
-    line-height: 1.08;
+    font-size: clamp(1.95rem, 8.4vw, 3.15rem);
+    line-height: 1.06;
     transform: translateY(0);
   }
 
@@ -250,6 +250,13 @@
 
   .hero__title {
     line-height: 0.96;
+  }
+
+  .hero__title-word-wrap {
+    margin-left: 0.30rem !important;
+    max-width: calc(100vw - 2rem);
+    white-space: normal;
+    overflow: visible;
   }
 
   .trustpilot_content img {
@@ -413,7 +420,7 @@
   }
 
   .scroll-manifesto__text {
-    font-size: clamp(1.35rem, 6.8vw, 2.3rem);
+    font-size: clamp(1.7rem, 8vw, 2.7rem);
   }
 
   .realisations-section {

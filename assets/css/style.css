@@ -513,6 +513,11 @@ main {
   color: #0c0c0d;
 }
 
+.case-study-page .hero__title-word-wrap > span,
+.case-study-page .hero__title-word {
+  color: #0c0c0d;
+}
+
 .hero__title-word.is-leaving {
   opacity: 0;
   transform: translateY(-0.16em);
@@ -1459,6 +1464,7 @@ position: relative;
 
 .case-study-detail-image {
   width: 100%;
+  height: auto;
   border-radius: 18px;
   border: 2px solid rgba(18, 18, 18, 0.1);
   display: block;
@@ -2637,10 +2643,12 @@ position: relative;
 
 .track-left {
   animation: scroll-left 60s linear infinite;
+  will-change: transform;
 }
 
 .track-right {
   animation: scroll-right 60s linear infinite;
+  will-change: transform;
 }
 
 

@@ -1,0 +1,22 @@
+/* Keyframe animations utilisées par script.js via IntersectionObserver */
+/* N'utilise que des propriétés composited (opacity + transform) pour éviter les repaints */
+
+@keyframes fadeInRightBlur {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

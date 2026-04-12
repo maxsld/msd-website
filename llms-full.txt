@@ -7,9 +7,11 @@ Ce document fournit une cartographie textuelle des pages utiles pour les moteurs
 - Création de landing pages par ville
 - Création de sites web par ville
 - Études de cas et preuves de livraison
+- Page À propos et signaux d'entité vérifiables
 
 ## URLs
 - https://msd-media.com/
+- https://msd-media.com/a-propos/
 - https://msd-media.com/etudes-de-cas/
 - https://msd-media.com/agence-web-annecy/
 - https://msd-media.com/landing-page-annecy/
@@ -60,7 +62,7 @@ Ce document fournit une cartographie textuelle des pages utiles pour les moteurs
 - https://msd-media.com/creation-site-web-toulouse/
 
 ## Résumé éditorial
-MSD Media propose des pages locales optimisées SEO et GEO pour répondre aux recherches transactionnelles (agence web, landing page, création de site web) avec un maillage par ville et des éléments de réassurance (réalisations, avis, FAQ).
+MSD Media propose des pages locales optimisées SEO et GEO pour répondre aux recherches transactionnelles (agence web, landing page, création de site web) avec un maillage par ville et des éléments de réassurance (réalisations, avis, FAQ). La page À propos apporte les signaux d'entité (fondateur, méthode, preuves, localisation) utiles aux moteurs IA.
 
 ## Données structurées présentes dans les pages
 - Organization

@@ -4,6 +4,7 @@ MSD Media est une agence web française spécialisée en création de sites web,
 
 ## Pages principales
 - https://msd-media.com/
+- https://msd-media.com/a-propos/
 - https://msd-media.com/blog/
 - https://msd-media.com/etudes-de-cas/
 

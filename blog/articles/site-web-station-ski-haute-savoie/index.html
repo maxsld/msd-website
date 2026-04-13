@@ -26,7 +26,8 @@
   <link rel="shortcut icon" href="https://msd-media.com/assets/img/favicon.ico" />
 
   <link rel="stylesheet" href="../../../assets/css/style.css" />
-  <link rel="stylesheet" href="../../../assets/css/animations.css" />
+  <link rel="stylesheet" href="../../../assets/css/animations.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../../assets/css/animations.css"></noscript>
   <link rel="stylesheet" href="../../../assets/css/responsive.css" />
   <!-- font-display:swap override for FontAwesome -->
   <script>!function(){var o=new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.tagName==="STYLE"&&n.textContent.indexOf("Font Awesome")>-1){n.textContent=n.textContent.replace(/font-display\s*:[^;]+;/g,"font-display:swap;");if(n.textContent.indexOf("font-display")<0)n.textContent=n.textContent.replace(/(@font-face\s*\{)/g,"$1font-display:swap;")}})});});o.observe(document.head,{childList:true})}();</script>
@@ -240,7 +241,7 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-left">
-        <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy">
+        <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
         <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:agence@msd-media.com">agence@msd-media.com</a></p>
       </div>
       <div class="footer-offices">

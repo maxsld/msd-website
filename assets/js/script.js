@@ -442,6 +442,8 @@ document.addEventListener("DOMContentLoaded", () => {
       logo.className = `logo-marquee__img ${className}`.trim();
       logo.src = src;
       logo.alt = isDuplicate ? "" : alt;
+      logo.loading = "lazy";
+      logo.decoding = "async";
       if (isDuplicate) {
         logo.setAttribute("aria-hidden", "true");
       }
@@ -810,6 +812,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Sur mobile ou connexion lente, on ne lance pas la vidéo automatiquement
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const isSlow = navigator.connection && (navigator.connection.saveData || ["slow-2g", "2g"].includes(navigator.connection.effectiveType));
+  if (isMobile || isSlow) {
+    document.querySelectorAll(".video-hero-content").forEach(function(v) {
+      v.removeAttribute("autoplay");
+      v.pause && v.pause();
+    });
+  }
+
   const players = document.querySelectorAll(".video-hero-player");
   if (!players.length) return;
 
@@ -1041,7 +1053,8 @@ if (trackLeft) {
   trackLeft.replaceChildren(...cards);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+// Animation GSAP du manifesto — chargement différé au premier scroll
+function initManifestoAnimation() {
   const manifestoSection = document.querySelector(".scroll-manifesto");
   const manifestoText = document.querySelector("[data-scroll-manifesto-text]");
   if (!manifestoSection || !manifestoText) return;
@@ -1078,7 +1091,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const wordNodes = manifestoText.querySelectorAll(".scroll-manifesto__word");
   if (!wordNodes.length) return;
 
-  // Promouvoir chaque span sur son propre layer GPU avant l'animation
   wordNodes.forEach((n) => { n.style.willChange = "transform, opacity, filter"; });
 
   const revealTl = window.gsap.timeline({
@@ -1105,7 +1117,31 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "none",
     stagger: 0.24
   });
-});
+}
+
+// Chargement GSAP uniquement au premier scroll (économie bande passante au chargement)
+(function() {
+  if (!document.querySelector(".scroll-manifesto")) return;
+  var loaded = false;
+  function loadGsap() {
+    if (loaded) return;
+    loaded = true;
+    var s1 = document.createElement("script");
+    s1.src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js";
+    s1.crossOrigin = "anonymous";
+    s1.onload = function() {
+      var s2 = document.createElement("script");
+      s2.src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js";
+      s2.crossOrigin = "anonymous";
+      s2.onload = initManifestoAnimation;
+      document.head.appendChild(s2);
+    };
+    document.head.appendChild(s1);
+  }
+  window.addEventListener("scroll", loadGsap, { passive: true, once: true });
+  // Fallback : charger après 3s si pas encore scrollé
+  setTimeout(loadGsap, 3000);
+})();
 
 // Année du copyright dynamique
 document.querySelectorAll(".copyright-year").forEach(function(el) {

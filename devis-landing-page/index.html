@@ -37,7 +37,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <!-- Styles -->
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../assets/css/animations.css"></noscript>
   <link rel="stylesheet" href="../assets/css/responsive.css" />
 
   <!-- Font Awesome -->
@@ -771,25 +772,25 @@
       <div class="process-steps">
         <article class="process-step">
           <span class="process-step__day">Livraison</span>
-          <img class="process-step__image" src="https://msd-media.com/assets/img/process4.avif" alt="Livraison rapide du projet web" loading="lazy">
+          <img class="process-step__image" src="https://msd-media.com/assets/img/process4.avif" alt="Livraison rapide du projet web" loading="lazy" decoding="async">
           <h4>14 jours garantis</h4>
           <p>Première version livrée en 14 jours calendaires. On s'engage sur le délai, pas juste sur l'intention.</p>
         </article>
         <article class="process-step">
           <span class="process-step__day">Qualité</span>
-          <img class="process-step__image" src="https://msd-media.com/assets/img/process2.avif" alt="Qualité de design et d'intégration sur mesure" loading="lazy">
+          <img class="process-step__image" src="https://msd-media.com/assets/img/process2.avif" alt="Qualité de design et d'intégration sur mesure" loading="lazy" decoding="async">
           <h4>Code 100% sur mesure</h4>
           <p>Aucun template, aucun constructeur visuel. Chaque ligne de code est écrite pour votre projet spécifiquement.</p>
         </article>
         <article class="process-step">
           <span class="process-step__day">Résultats</span>
-          <img class="process-step__image" src="https://msd-media.com/assets/img/process3.avif" alt="Résultats SEO et conversion" loading="lazy">
+          <img class="process-step__image" src="https://msd-media.com/assets/img/process3.avif" alt="Résultats SEO et conversion" loading="lazy" decoding="async">
           <h4>SEO & conversion intégrés</h4>
           <p>Vitesse, structure sémantique et balisage optimisés dès la première version. Pas en option.</p>
         </article>
         <article class="process-step">
           <span class="process-step__day">Suivi</span>
-          <img class="process-step__image" src="https://msd-media.com/assets/img/process1.avif" alt="Suivi et ajustements du projet web" loading="lazy">
+          <img class="process-step__image" src="https://msd-media.com/assets/img/process1.avif" alt="Suivi et ajustements du projet web" loading="lazy" decoding="async">
           <h4>Ajustements illimités</h4>
           <p>Retours illimités pendant la phase projet. Vous validez chaque étape avant de passer à la suivante.</p>
         </article>
@@ -816,7 +817,7 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-left">
-        <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy">
+        <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
         <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:agence@msd-media.com">agence@msd-media.com</a></p>
       </div>
       <div class="footer-offices">
@@ -881,8 +882,6 @@
 
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 <script src="../assets/js/script.js" defer></script>
 
 <script>

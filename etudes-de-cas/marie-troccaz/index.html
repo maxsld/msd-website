@@ -73,7 +73,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="../../assets/css/style.css" />
-  <link rel="stylesheet" href="../../assets/css/animations.css" />
+  <link rel="stylesheet" href="../../assets/css/animations.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../assets/css/animations.css"></noscript>
   <link rel="stylesheet" href="../../assets/css/responsive.css" />
   <!-- font-display:swap override for FontAwesome -->
   <script>!function(){var o=new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.tagName==="STYLE"&&n.textContent.indexOf("Font Awesome")>-1){n.textContent=n.textContent.replace(/font-display\s*:[^;]+;/g,"font-display:swap;");if(n.textContent.indexOf("font-display")<0)n.textContent=n.textContent.replace(/(@font-face\s*\{)/g,"$1font-display:swap;")}})});});o.observe(document.head,{childList:true})}();</script>
@@ -83,7 +84,7 @@
 <body class="case-study-page">
   <header class="navbar">
     <div class="nav-left">
-      <a href="https://msd-media.com/"><img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="lazy"></a>
+      <a href="https://msd-media.com/"><img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="lazy" decoding="async"></a>
       <div class="nav-menu" data-nav-menu>
         <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
           <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
@@ -120,7 +121,7 @@
     <section class="case-study-detail-section section-grid">
       <div class="case-study-detail-inner">
         <button class="case-study-preview-trigger" type="button" data-preview-trigger data-preview-url="https://marietroccaz.com/" data-preview-display-url="https://marietroccaz.com/" aria-label="Voir le site en ligne : Marie Troccaz">
-          <img height="604" width="800" class="case-study-detail-image" src="https://msd-media.com/assets/img/marie-troccaz-mockup.webp" alt="Capture Marie Troccaz" loading="lazy" />
+          <img height="604" width="800" class="case-study-detail-image" src="https://msd-media.com/assets/img/marie-troccaz-mockup.webp" alt="Capture Marie Troccaz" loading="lazy"  decoding="async"/>
           <span class="case-study-preview-overlay">Voir le site en ligne <i class="fa-solid fa-arrow-right"></i></span>
         </button>
         <div class="case-study-detail-content">
@@ -206,7 +207,7 @@
 
       <!-- Bloc gauche : logo + slogan -->
       <div class="footer-left">
-        <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy">
+        <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
         <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:agence@msd-media.com">agence@msd-media.com</a></p>
       </div>
 

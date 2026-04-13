@@ -27,7 +27,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../../assets/css/style.css" />
-  <link rel="stylesheet" href="../../../assets/css/animations.css" />
+  <link rel="stylesheet" href="../../../assets/css/animations.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../../assets/css/animations.css"></noscript>
   <link rel="stylesheet" href="../../../assets/css/responsive.css" />
   <!-- font-display:swap override for FontAwesome -->
   <script>!function(){var o=new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.tagName==="STYLE"&&n.textContent.indexOf("Font Awesome")>-1){n.textContent=n.textContent.replace(/font-display\s*:[^;]+;/g,"font-display:swap;");if(n.textContent.indexOf("font-display")<0)n.textContent=n.textContent.replace(/(@font-face\s*\{)/g,"$1font-display:swap;")}})});});o.observe(document.head,{childList:true})}();</script>
@@ -224,7 +225,6 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-  <script src="../../../assets/js/script.js" defer></script>
+    <script src="../../../assets/js/script.js" defer></script>
 </body>
 </html>

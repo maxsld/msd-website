@@ -40,6 +40,8 @@
   <link rel="preload" as="image" href="https://msd-media.com/assets/img/cover-video-1.webp" fetchpriority="high">
   <!-- Fonts – chargement non-bloquant -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
+  <link rel="dns-prefetch" href="https://kit.fontawesome.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -47,48 +49,15 @@
 
   <!-- Styles -->
 
-  <link rel="preload" as="style" href="assets/css/style.css" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/animations.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="assets/css/animations.css"></noscript>
-  <link rel="preload" as="style" href="assets/css/responsive.css" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/css/responsive.css"></noscript>
+  <link rel="stylesheet" href="assets/css/responsive.css">
 
-  <style>
-    /* Local icon fallback to avoid Font Awesome network chain on mobile */
-    .fa-solid,
-    .fa-brands {
-      display: inline-block;
-      font-style: normal;
-      font-family: "Inter", sans-serif;
-      font-weight: 600;
-      line-height: 1;
-      speak: never;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .fa-solid::before,
-    .fa-brands::before {
-      display: inline-block;
-      transform: translateY(0.02em);
-    }
-
-    .fa-whatsapp::before { content: "◍"; }
-    .fa-pause::before { content: "||"; letter-spacing: -0.08em; }
-    .fa-play::before { content: "▶"; }
-    .fa-volume-xmark::before { content: "×)"; font-size: 0.8em; }
-    .fa-volume-high::before { content: "))"; font-size: 0.8em; }
-    .fa-chevron-left::before { content: "‹"; }
-    .fa-chevron-right::before { content: "›"; }
-    .fa-arrow-right::before { content: "→"; }
-    .fa-globe::before { content: "◎"; }
-    .fa-xmark::before { content: "×"; }
-    .fa-linkedin::before { content: "in"; font-size: 0.74em; font-weight: 700; letter-spacing: -0.02em; }
-    .fa-instagram::before { content: "○"; }
-    .fa-envelope::before { content: "✉"; font-size: 0.86em; }
-    .fa-expand::before { content: "⤢"; }
-    .fa-compress::before { content: "⤡"; }
-  </style>
+  <!-- Font Awesome -->
+  <!-- font-display:swap override for FontAwesome -->
+  <script>!function(){var o=new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.tagName==="STYLE"&&n.textContent.indexOf("Font Awesome")>-1){n.textContent=n.textContent.replace(/font-display\s*:[^;]+;/g,"font-display:swap;");if(n.textContent.indexOf("font-display")<0)n.textContent=n.textContent.replace(/(@font-face\s*\{)/g,"$1font-display:swap;")}})});});o.observe(document.head,{childList:true})}();</script>
+  <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous" defer></script>
 
   <!-- Open Graph (Facebook, LinkedIn, etc.) -->
   <meta property="og:title" content="MSD Media – Agence Web & Landing Pages sur Mesure en France" />

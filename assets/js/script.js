@@ -1106,3 +1106,8 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: 0.24
   });
 });
+
+// Année du copyright dynamique
+document.querySelectorAll(".copyright-year").forEach(function(el) {
+  el.textContent = new Date().getFullYear();
+});

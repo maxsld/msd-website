@@ -29,6 +29,8 @@
   <link rel="stylesheet" href="../../../assets/css/style.css" />
   <link rel="stylesheet" href="../../../assets/css/animations.css" />
   <link rel="stylesheet" href="../../../assets/css/responsive.css" />
+  <!-- font-display:swap override for FontAwesome -->
+  <script>!function(){var o=new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.tagName==="STYLE"&&n.textContent.indexOf("Font Awesome")>-1){n.textContent=n.textContent.replace(/font-display\s*:[^;]+;/g,"font-display:swap;");if(n.textContent.indexOf("font-display")<0)n.textContent=n.textContent.replace(/(@font-face\s*\{)/g,"$1font-display:swap;")}})});});o.observe(document.head,{childList:true})}();</script>
   <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous" defer></script>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Pourquoi votre site web ne génère pas de clients : les 7 vraies causes en 2026","description":"Votre site a du trafic mais pas de leads ? Découvrez les 7 raisons les plus fréquentes qui empêchent un site web de convertir en 2026, et comment les corriger.","image":"https://msd-media.com/assets/img/blog/pourquoi-site-web-ne-convertit-pas-2026.jpg","author":{"@type":"Person","name":"Maxens Soldan","url":"https://msd-media.com/blog/articles/maxens-soldan/"},"publisher":{"@type":"Organization","name":"MSD Media","logo":{"@type":"ImageObject","url":"https://msd-media.com/assets/img/logo-black.webp"}},"datePublished":"2026-04-14","dateModified":"2026-04-14","mainEntityOfPage":"https://msd-media.com/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/","articleSection":"Blog SEO","inLanguage":"fr-FR","keywords":"site web ne convertit pas, taux de conversion site web, optimisation conversion, pourquoi site web ne génère pas de leads","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"100","bestRating":"5","worstRating":"1"}}</script>
@@ -154,7 +156,7 @@
     </div>
   </section>
 
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-left">
         <img src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo">
@@ -162,27 +164,63 @@
       </div>
       <div class="footer-offices">
         <article class="footer-office-card">
-          <h4 class="footer-office-city">Annecy</h4>
+          <p class="footer-office-city">Annecy</p>
           <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
           <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
         </article>
         <article class="footer-office-card">
-          <h4 class="footer-office-city">Munich</h4>
-          <p class="footer-office-time" data-office-time data-timezone="Europe/Berlin">--:--</p>
+          <p class="footer-office-city">Munich</p>
+          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
           <p class="footer-office-address">Munich, Bavière, Allemagne</p>
         </article>
       </div>
       <div class="footer-contact">
         <div class="footer-social">
           <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           <a href="mailto:agence@msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </div>
+    <div class="footer-cities">
+      <ul>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
+        <li><a href="https://msd-media.com/agence-web-lyon/">Lyon</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-paris/">Paris</a></li>
+        <li><a href="https://msd-media.com/agence-web-marseille/">Marseille</a></li>
+        <li><a href="https://msd-media.com/agence-web-toulouse/">Toulouse</a></li>
+        <li><a href="https://msd-media.com/agence-web-bordeaux/">Bordeaux</a></li>
+        <li><a href="https://msd-media.com/agence-web-lille/">Lille</a></li>
+        <li><a href="https://msd-media.com/agence-web-nantes/">Nantes</a></li>
+        <li><a href="https://msd-media.com/agence-web-montpellier/">Montpellier</a></li>
+        <li><a href="https://msd-media.com/agence-web-nice/">Nice</a></li>
+        <li><a href="https://msd-media.com/agence-web-rennes/">Rennes</a></li>
+        <li><a href="https://msd-media.com/agence-web-clermont-ferrand/">Clermont-Ferrand</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-city-services">
+      <p class="footer-city-services__title">Nos spécialités</p>
+      <ul>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Agence web Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Agence web Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-paris/">Agence web Paris</a></li>
+        <li><a href="https://msd-media.com/agence-web-lyon/">Agence web Lyon</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Agence web Genève</a></li>
+        <li><a href="https://msd-media.com/blog/">Blog web &amp; SEO</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-legal">
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">Politique de confidentialité</a>
+    </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 MSD Media. Tous droits réservés.</p>
-      <nav class="footer-legal"><a href="/terms/">Mentions légales</a></nav>
+      <p>&copy; <span class="copyright-year">2026</span> MSD Media. Tous droits réservés.</p>
     </div>
   </footer>
 

@@ -29,6 +29,8 @@
   <link rel="stylesheet" href="../../../assets/css/style.css" />
   <link rel="stylesheet" href="../../../assets/css/animations.css" />
   <link rel="stylesheet" href="../../../assets/css/responsive.css" />
+  <!-- font-display:swap override for FontAwesome -->
+  <script>!function(){var o=new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.tagName==="STYLE"&&n.textContent.indexOf("Font Awesome")>-1){n.textContent=n.textContent.replace(/font-display\s*:[^;]+;/g,"font-display:swap;");if(n.textContent.indexOf("font-display")<0)n.textContent=n.textContent.replace(/(@font-face\s*\{)/g,"$1font-display:swap;")}})});});o.observe(document.head,{childList:true})}();</script>
   <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous" defer></script>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Création de site internet à Toulouse","description":"Découvrez comment MSD Media, agence web à Toulouse, conçoit des sites internet sur-mesure, performants et optimisés pour le SEO. Présentation complète de nos services et méthode de travail.","image":"https://msd-media.com/assets/img/blog/creation-site-internet-toulouse.jpg","author":{"@type":"Person","name":"Maxens Soldan"},"publisher":{"@type":"Organization","name":"MSD Media","logo":{"@type":"ImageObject","url":"https://msd-media.com/assets/img/logo-black.webp"}},"datePublished":"2026-09-26","dateModified":"2026-09-26","mainEntityOfPage":"https://msd-media.com/blog/articles/creation-site-internet-toulouse/","articleSection":"Blog SEO","inLanguage":"fr-FR","keywords":"création site internet Toulouse, agence web Toulouse, site vitrine Toulouse, site e-commerce Toulouse, landing page Toulouse, MSD Media, SEO, développement web","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"100","bestRating":"5","worstRating":"1"}}</script>
@@ -155,12 +157,12 @@
       </div>
       <div class="footer-offices">
         <article class="footer-office-card">
-          <h4 class="footer-office-city">Annecy</h4>
+          <p class="footer-office-city">Annecy</p>
           <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
           <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
         </article>
         <article class="footer-office-card">
-          <h4 class="footer-office-city">Munich</h4>
+          <p class="footer-office-city">Munich</p>
           <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
           <p class="footer-office-address">Munich, Bavière, Allemagne</p>
         </article>
@@ -212,7 +214,7 @@
       <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">Politique de confidentialité</a>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 MSD Media. Tous droits réservés.</p>
+      <p>&copy; <span class="copyright-year">2026</span> MSD Media. Tous droits réservés.</p>
     </div>
   </footer>
 

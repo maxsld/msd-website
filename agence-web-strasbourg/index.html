@@ -39,6 +39,8 @@
   <link rel="preload" as="image" href="https://msd-media.com/assets/img/logo-black.webp" fetchpriority="high">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
+  <link rel="dns-prefetch" href="https://kit.fontawesome.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
@@ -49,6 +51,8 @@
   <link rel="stylesheet" href="../assets/css/responsive.css">
 
   <!-- Font Awesome -->
+  <!-- font-display:swap override for FontAwesome -->
+  <script>!function(){var o=new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.tagName==="STYLE"&&n.textContent.indexOf("Font Awesome")>-1){n.textContent=n.textContent.replace(/font-display\s*:[^;]+;/g,"font-display:swap;");if(n.textContent.indexOf("font-display")<0)n.textContent=n.textContent.replace(/(@font-face\s*\{)/g,"$1font-display:swap;")}})});});o.observe(document.head,{childList:true})}();</script>
   <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous" defer></script>
 
   <!-- Open Graph (Facebook, LinkedIn, etc.) -->
@@ -697,12 +701,12 @@
 
       <div class="footer-offices">
         <article class="footer-office-card">
-          <h4 class="footer-office-city">Annecy</h4>
+          <p class="footer-office-city">Annecy</p>
           <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
           <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
         </article>
         <article class="footer-office-card">
-          <h4 class="footer-office-city">Munich</h4>
+          <p class="footer-office-city">Munich</p>
           <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
           <p class="footer-office-address">Munich, Bavière, Allemagne</p>
         </article>
@@ -765,7 +769,7 @@
 
     <!-- Copyright -->
     <div class="footer-bottom">
-      <p>&copy; 2026 MSD Media. Tous droits réservés.</p>
+      <p>&copy; <span class="copyright-year">2026</span> MSD Media. Tous droits réservés.</p>
     </div>
   </footer>
 

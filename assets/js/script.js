@@ -812,15 +812,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Sur mobile ou connexion lente, on ne lance pas la vidéo automatiquement
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
-  const isSlow = navigator.connection && (navigator.connection.saveData || ["slow-2g", "2g"].includes(navigator.connection.effectiveType));
-  if (isMobile || isSlow) {
-    document.querySelectorAll(".video-hero-content").forEach(function(v) {
-      v.removeAttribute("autoplay");
-      v.pause && v.pause();
-    });
-  }
+  document.querySelectorAll(".video-hero-content").forEach((v) => {
+    v.setAttribute("autoplay", "");
+    v.muted = true;
+
+    const ensureAutoplay = () => {
+      if (!v.play) return;
+      const playPromise = v.play();
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {});
+      }
+    };
+
+    if (v.readyState >= 2) {
+      ensureAutoplay();
+      return;
+    }
+
+    v.addEventListener("loadeddata", ensureAutoplay, { once: true });
+  });
 
   const players = document.querySelectorAll(".video-hero-player");
   if (!players.length) return;

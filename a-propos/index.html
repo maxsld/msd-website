@@ -37,10 +37,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"></noscript>
 
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="preload" as="style" href="../assets/css/style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../assets/css/style.css"></noscript>
   <link rel="stylesheet" href="../assets/css/animations.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="../assets/css/animations.css"></noscript>
-  <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <link rel="preload" as="style" href="../assets/css/responsive.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../assets/css/responsive.css"></noscript>
   <!-- font-display:swap override for FontAwesome -->
   <script>!function(){var o=new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.tagName==="STYLE"&&n.textContent.indexOf("Font Awesome")>-1){n.textContent=n.textContent.replace(/font-display\s*:[^;]+;/g,"font-display:swap;");if(n.textContent.indexOf("font-display")<0)n.textContent=n.textContent.replace(/(@font-face\s*\{)/g,"$1font-display:swap;")}})});});o.observe(document.head,{childList:true})}();</script>
   <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous" defer></script>

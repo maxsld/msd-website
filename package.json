@@ -1,0 +1,12 @@
+{
+  "name": "msd-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "analytics:weekly": "node scripts/weekly-analytics-report.mjs"
+  },
+  "dependencies": {
+    "google-auth-library": "^9.15.1",
+    "nodemailer": "^6.10.1"
+  }
+}

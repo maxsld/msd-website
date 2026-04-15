@@ -1,3 +1,280 @@
+// Tracking analytics (GTM + dataLayer + attribution + CTA + forms + engagement + booking + optional heatmap)
+(function () {
+  window.dataLayer = window.dataLayer || [];
+
+  const GTM_CONTAINER_ID = "GTM-P28B6QRF";
+  const CLARITY_PROJECT_ID =
+    window.MSD_CLARITY_PROJECT_ID ||
+    document.documentElement.getAttribute("data-clarity-project-id") ||
+    (document.querySelector('meta[name="msd-clarity-id"]') || {}).content ||
+    "";
+  const PAGE_ENTERED_AT = Date.now();
+  const SCROLL_STEPS = [25, 50, 75, 90];
+  const reachedScrollSteps = new Set();
+  let exitTracked = false;
+  let bookingCompletedTracked = false;
+
+  const toText = (value) =>
+    String(value || "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 160);
+
+  const getPageType = () => {
+    const path = window.location.pathname || "/";
+    if (path === "/" || path === "/index.html") return "home";
+    if (path.includes("/contact/")) return "contact";
+    if (path.includes("/blog/")) return "blog";
+    if (path.includes("/etudes-de-cas/")) return "case_study";
+    if (path.includes("/confirmation-contact/")) return "confirmation_contact";
+    if (path.includes("/confirmation-reservation-appel/")) return "confirmation_booking";
+    return "other";
+  };
+
+  const getSectionLabel = (node) => {
+    const section = node ? node.closest("section, header, footer, main, nav") : null;
+    if (!section) return "unknown";
+    return (
+      section.getAttribute("id") ||
+      toText(section.getAttribute("aria-label")) ||
+      toText(section.className) ||
+      section.tagName.toLowerCase()
+    );
+  };
+
+  const ensureGtmLoaded = () => {
+    if (!GTM_CONTAINER_ID) return;
+    const hasScript = Boolean(
+      document.querySelector(`script[src*="googletagmanager.com/gtm.js?id=${GTM_CONTAINER_ID}"]`)
+    );
+    const hasRuntime = Boolean(window.google_tag_manager && window.google_tag_manager[GTM_CONTAINER_ID]);
+    if (hasScript || hasRuntime) return;
+
+    window.dataLayer.push({
+      "gtm.start": Date.now(),
+      event: "gtm.js"
+    });
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_CONTAINER_ID}`;
+    document.head.appendChild(script);
+  };
+
+  const pushTrack = (eventName, payload = {}) => {
+    window.dataLayer.push({
+      event: eventName,
+      event_source: "msd_site",
+      page_path: window.location.pathname,
+      page_title: document.title,
+      page_type: getPageType(),
+      ...payload
+    });
+  };
+
+  window.msdTrack = pushTrack;
+  ensureGtmLoaded();
+
+  const query = new URLSearchParams(window.location.search || "");
+  pushTrack("msd_page_view", {
+    referrer: document.referrer || "(direct)",
+    utm_source: query.get("utm_source") || "",
+    utm_medium: query.get("utm_medium") || "",
+    utm_campaign: query.get("utm_campaign") || "",
+    utm_term: query.get("utm_term") || "",
+    utm_content: query.get("utm_content") || ""
+  });
+
+  const trackExit = (reason) => {
+    if (exitTracked) return;
+    exitTracked = true;
+    const timeOnPageSeconds = Math.max(1, Math.round((Date.now() - PAGE_ENTERED_AT) / 1000));
+    pushTrack("time_on_page", { time_on_page_seconds: timeOnPageSeconds, leave_reason: reason });
+  };
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      const doc = document.documentElement;
+      const maxScrollable = doc.scrollHeight - window.innerHeight;
+      if (maxScrollable <= 0) return;
+      const percent = Math.round((window.scrollY / maxScrollable) * 100);
+      SCROLL_STEPS.forEach((step) => {
+        if (percent >= step && !reachedScrollSteps.has(step)) {
+          reachedScrollSteps.add(step);
+          pushTrack("scroll_depth", { scroll_percent: step });
+        }
+      });
+    },
+    { passive: true }
+  );
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") {
+      trackExit("hidden");
+    }
+  });
+
+  window.addEventListener("beforeunload", () => trackExit("beforeunload"));
+
+  document.addEventListener(
+    "click",
+    (event) => {
+      const target = event.target.closest("a, button");
+      if (!target) return;
+
+      const href = target.getAttribute("href") || "";
+      const text = toText(target.textContent || target.getAttribute("aria-label") || target.getAttribute("title"));
+      const classes = toText(target.className);
+      const ctaLocation = getSectionLabel(target);
+      const isBooking = /cal\.com/i.test(href);
+      const isWhatsApp = /wa\.me/i.test(href);
+      const isEmail = href.startsWith("mailto:");
+      const isPhone = href.startsWith("tel:");
+      const isSubmitButton = target.tagName === "BUTTON" && target.getAttribute("type") === "submit";
+      const isStyledCta =
+        target.matches(".contact-button, .hero__btn, .whatsapp-nav-button, .realisations-cta") ||
+        /cta|hero__btn|contact-button|whatsapp/i.test(classes);
+
+      if (!isBooking && !isWhatsApp && !isEmail && !isPhone && !isSubmitButton && !isStyledCta) {
+        return;
+      }
+
+      let ctaKind = "generic";
+      if (isBooking) ctaKind = "booking";
+      else if (isWhatsApp) ctaKind = "whatsapp";
+      else if (isEmail) ctaKind = "email";
+      else if (isPhone) ctaKind = "phone";
+      else if (isSubmitButton) ctaKind = "form_submit_button";
+
+      pushTrack("cta_click", {
+        cta_kind: ctaKind,
+        cta_text: text || "(no_text)",
+        cta_href: href || "",
+        cta_location: ctaLocation
+      });
+
+      if (isBooking) {
+        pushTrack("booking_intent", {
+          provider: "cal",
+          cta_text: text || "(no_text)",
+          cta_location: ctaLocation
+        });
+      }
+    },
+    true
+  );
+
+  document.addEventListener(
+    "submit",
+    (event) => {
+      const form = event.target;
+      if (!(form instanceof HTMLFormElement)) return;
+      const formId = toText(form.getAttribute("id") || "");
+      const formName = toText(form.getAttribute("name") || "");
+      const formAction = form.getAttribute("action") || window.location.pathname;
+      const isContactForm = formId === "contact-form";
+
+      pushTrack("form_submit_attempt", {
+        form_id: formId || "(none)",
+        form_name: formName || "(none)",
+        form_action: formAction,
+        form_method: (form.getAttribute("method") || "get").toLowerCase(),
+        form_location: getSectionLabel(form)
+      });
+
+      if (isContactForm) {
+        pushTrack("lead_submit_attempt", { form_id: "contact-form" });
+      }
+    },
+    true
+  );
+
+  const emitBookingCompleted = (source) => {
+    if (bookingCompletedTracked) return;
+    bookingCompletedTracked = true;
+    pushTrack("booking_completed", { provider: "cal", source });
+  };
+
+  window.addEventListener("message", (event) => {
+    let hostname = "";
+    try {
+      hostname = new URL(event.origin).hostname;
+    } catch (_) {
+      return;
+    }
+    if (!/cal\.com$/i.test(hostname)) return;
+
+    const rawData = event.data;
+    const dataText = toText(
+      typeof rawData === "string" ? rawData : JSON.stringify(rawData || {})
+    ).toLowerCase();
+
+    if (
+      dataText.includes("bookingsuccessful") ||
+      dataText.includes("booking_successful") ||
+      dataText.includes("bookingconfirmed") ||
+      dataText.includes("booking_confirmed")
+    ) {
+      emitBookingCompleted("embed_message");
+    }
+  });
+
+  const observeBookingIframes = () => {
+    const bookingIframes = document.querySelectorAll('iframe[src*="cal.com"], iframe[data-src*="cal.com"]');
+    bookingIframes.forEach((iframe, idx) => {
+      const emitLoaded = () => {
+        pushTrack("booking_loaded", {
+          provider: "cal",
+          embed_slot: idx + 1,
+          embed_src: iframe.getAttribute("src") || iframe.getAttribute("data-src") || ""
+        });
+      };
+
+      if (iframe.getAttribute("src")) {
+        iframe.addEventListener("load", emitLoaded, { once: true });
+        return;
+      }
+
+      const observer = new MutationObserver(() => {
+        if (!iframe.getAttribute("src")) return;
+        observer.disconnect();
+        iframe.addEventListener("load", emitLoaded, { once: true });
+      });
+      observer.observe(iframe, { attributes: true, attributeFilter: ["src"] });
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", observeBookingIframes);
+  } else {
+    observeBookingIframes();
+  }
+
+  if (window.location.pathname.includes("/confirmation-reservation-appel/")) {
+    emitBookingCompleted("confirmation_page");
+  }
+  if (window.location.pathname.includes("/confirmation-contact/")) {
+    pushTrack("lead_confirmed", { form_id: "contact-form", source: "confirmation_page" });
+  }
+
+  if (CLARITY_PROJECT_ID) {
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
+    pushTrack("heatmap_loaded", { provider: "clarity" });
+  }
+})();
+
 // Défilement doux pour les ancres internes
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

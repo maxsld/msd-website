@@ -76,9 +76,20 @@
 <!-- auto-schema:start -->
 <script id="schema-breadcrumb-auto" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://msd-media.com/"},{"@type":"ListItem","position":2,"name":"Contact Agence Web Annecy | MSD Media","item":"https://msd-media.com/contact/"}]}</script>
 <!-- auto-schema:end -->
+<!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P28B6QRF');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28B6QRF"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <header class="navbar">
     <div class="nav-left">
       <a href="https://msd-media.com/"><img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager"></a>
@@ -271,6 +282,20 @@
       const status = document.getElementById('contact-form-status');
       if (!form) return;
 
+      const track = (eventName, payload) => {
+        if (typeof window.msdTrack === 'function') {
+          window.msdTrack(eventName, payload || {});
+          return;
+        }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: eventName,
+          page_path: window.location.pathname,
+          page_title: document.title,
+          ...(payload || {})
+        });
+      };
+
       form.addEventListener('submit', async function (event) {
         event.preventDefault();
         const submitButton = form.querySelector('button[type="submit"]');
@@ -284,6 +309,7 @@
         const turnstileToken = form.querySelector('input[name="cf-turnstile-response"]');
         if (!turnstileToken || !turnstileToken.value) {
           if (status) status.textContent = "Veuillez valider le captcha avant d'envoyer.";
+          track('lead_submit_error', { form_id: 'contact-form', error_type: 'captcha_missing' });
           if (submitButton) {
             submitButton.disabled = false;
             submitButton.textContent = originalLabel || 'Envoyer ma demande';
@@ -301,15 +327,22 @@
           });
 
           if (response.ok) {
+            track('lead_submit_success', { form_id: 'contact-form', provider: 'formspree' });
             window.location.href = 'https://msd-media.com/confirmation-contact/';
             return;
           }
 
+          track('lead_submit_error', {
+            form_id: 'contact-form',
+            error_type: 'http_error',
+            status_code: response.status
+          });
           if (status) status.textContent = "Une erreur est survenue. Réessayez ou contactez-nous par email.";
           if (window.turnstile && typeof window.turnstile.reset === 'function') {
             window.turnstile.reset();
           }
         } catch (_) {
+          track('lead_submit_error', { form_id: 'contact-form', error_type: 'network_error' });
           if (status) status.textContent = "Impossible d'envoyer le formulaire pour le moment.";
           if (window.turnstile && typeof window.turnstile.reset === 'function') {
             window.turnstile.reset();

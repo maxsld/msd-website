@@ -286,32 +286,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Animations d’apparition
-document.addEventListener("DOMContentLoaded", () => {
-  const fadeInRightElements = document.querySelectorAll(".animate-fade-in");
-  const fadeInOpacityElements = document.querySelectorAll(".animate-fade-opacity");
-  const delayBetween = 150;
-
-  const handleIntersection = (elements, animationName) => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting && !entry.target.classList.contains("animated")) {
-            entry.target.classList.add("animated");
-            setTimeout(() => {
-              entry.target.style.animation = `${animationName} 1s ease forwards`;
-            }, index * delayBetween);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    elements.forEach((el) => observer.observe(el));
-  };
-
-  handleIntersection(fadeInRightElements, "fadeInRightBlur");
-  handleIntersection(fadeInOpacityElements, "fadeInOpacity");
-});
+// Animations d’apparition désactivées (fade/opacity)
 
 // Controles personnalises pour la video hero
 document.addEventListener("DOMContentLoaded", () => {

@@ -20,7 +20,7 @@ ANNECY_EXTRA_FAQ = """
           <span class="icon">+</span>
         </button>
         <div class="faq-answer">
-          <p>Le prix dépend de la complexité du projet. Une <a href="https://msd-media.com/landing-page-annecy/">landing page à Annecy</a> est plus accessible qu'un site vitrine multi-pages. Pour les entreprises de Haute-Savoie, nous proposons des formules adaptées. <a href="https://msd-media.com/tarifs-site-web-annecy/">Consultez nos tarifs</a> pour une estimation précise.</p>
+          <p>Le prix dépend de la complexité du projet. Une <a href="https://msd-media.com/landing-page-annecy/">landing page à Annecy</a> est plus accessible qu'un site vitrine multi-pages. Pour les entreprises de Haute-Savoie, nous proposons des formules adaptées. <a href="https://msd-media.com/contact/">Consultez nos tarifs</a> pour une estimation précise.</p>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ STRASBOURG_EXTRA_FAQ = """
           <span class="icon">+</span>
         </button>
         <div class="faq-answer">
-          <p>Le prix dépend de la complexité du projet. Une <a href="https://msd-media.com/landing-page-strasbourg/">landing page à Strasbourg</a> est plus accessible qu'un site vitrine multi-pages. Pour les entreprises d'Alsace, nous proposons des formules adaptées. <a href="https://msd-media.com/tarifs-site-web-strasbourg/">Consultez nos tarifs</a> pour une estimation précise.</p>
+          <p>Le prix dépend de la complexité du projet. Une <a href="https://msd-media.com/landing-page-strasbourg/">landing page à Strasbourg</a> est plus accessible qu'un site vitrine multi-pages. Pour les entreprises d'Alsace, nous proposons des formules adaptées. <a href="https://msd-media.com/contact/">Consultez nos tarifs</a> pour une estimation précise.</p>
         </div>
       </div>
 

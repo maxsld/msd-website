@@ -514,7 +514,7 @@ function getInternalServiceLinks(post = {}, extraContext = '') {
   const strasbourgLinks = [
     { href: '/seo-local-strasbourg/', label: 'SEO local à Strasbourg' },
     { href: '/refonte-site-web-strasbourg/', label: 'Refonte de site web à Strasbourg' },
-    { href: '/tarifs-site-web-strasbourg/', label: 'Tarifs site web à Strasbourg' },
+    { href: '/contact/', label: 'Tarifs site web à Strasbourg' },
     { href: '/creation-site-web-strasbourg/', label: 'Création de site web à Strasbourg' },
     { href: '/landing-page-strasbourg/', label: 'Landing page à Strasbourg' }
   ];
@@ -522,7 +522,7 @@ function getInternalServiceLinks(post = {}, extraContext = '') {
   const annecyLinks = [
     { href: '/seo-local-annecy/', label: 'SEO local à Annecy' },
     { href: '/refonte-site-web-annecy/', label: 'Refonte de site web à Annecy' },
-    { href: '/tarifs-site-web-annecy/', label: 'Tarifs site web à Annecy' },
+    { href: '/contact/', label: 'Tarifs site web à Annecy' },
     { href: '/creation-site-web-annecy/', label: 'Création de site web à Annecy' },
     { href: '/landing-page-annecy/', label: 'Landing page à Annecy' }
   ];
@@ -533,14 +533,14 @@ function getInternalServiceLinks(post = {}, extraContext = '') {
     return [
       { href: '/landing-page-strasbourg/', label: 'Landing page à Strasbourg' },
       { href: '/landing-page-annecy/', label: 'Landing page à Annecy' },
-      { href: '/tarifs-site-web-strasbourg/', label: 'Tarifs site web à Strasbourg' }
+      { href: '/contact/', label: 'Tarifs site web à Strasbourg' }
     ];
   }
 
   return [
     { href: '/seo-local-strasbourg/', label: 'SEO local à Strasbourg' },
     { href: '/refonte-site-web-strasbourg/', label: 'Refonte de site web à Strasbourg' },
-    { href: '/tarifs-site-web-strasbourg/', label: 'Tarifs site web à Strasbourg' }
+    { href: '/contact/', label: 'Tarifs site web à Strasbourg' }
   ];
 }
 

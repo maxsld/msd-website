@@ -82,6 +82,21 @@
   <meta name="twitter:creator" content="@MaxensSoldan" />
   <meta name="twitter:image:alt" content="Interface moderne de landing page réalisée par MSD Media" />
 
+  <!-- MSD Analytics — à coller avant </body> -->
+<script>
+(function(){
+  var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
+  sessionStorage.setItem('_msd',sid);
+  var t=Date.now();
+  function send(d){
+    var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
+    navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p));
+  }
+  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')send(Date.now()-t);});
+  send(0);
+})();
+</script>
+
   <!-- Schema complet -->
   <script type="application/ld+json">
 {
@@ -294,9 +309,9 @@
     <section class="hero">
       <!--<div class="hero-proof" aria-label="Clients accompagnés">
         <div class="hero-proof__avatars" aria-hidden="true">
-          <img  class="hero-proof__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80" alt="Poto 1494790108377 be9c29b29330" loading="lazy" referrerpolicy="no-referrer" decoding="async">
-          <img  class="hero-proof__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80" alt="Poto 1500648767791 00dcc994a43e" loading="lazy" referrerpolicy="no-referrer" decoding="async">
-          <img  class="hero-proof__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&h=120&q=80" alt="Poto 1544005313 94ddf0286df2" loading="lazy" referrerpolicy="no-referrer" decoding="async">
+          <img  class="hero-proof__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80" alt="Client accompagné par MSD Media" loading="lazy" referrerpolicy="no-referrer" decoding="async">
+          <img  class="hero-proof__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80" alt="Client accompagné par MSD Media" loading="lazy" referrerpolicy="no-referrer" decoding="async">
+          <img  class="hero-proof__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&h=120&q=80" alt="Client accompagné par MSD Media" loading="lazy" referrerpolicy="no-referrer" decoding="async">
         </div>
         <p class="hero-proof__text" data-i18n="clients_supported">+30 clients accompagnés</p>
       </div>-->
@@ -312,7 +327,7 @@
         <a class="hero__btn hero__btn--primary" href="#contact" data-i18n="hero_primary">Réserver un appel</a>
         <a class="hero__btn hero__btn--secondary" href="#agence" data-i18n="hero_secondary">Découvrir l'agence</a>
       </div>
-          <a class="trustpilot_content animate-fade-in" href="https://fr.trustpilot.com/review/msd-media.com">
+          <a class="trustpilot_content" href="https://fr.trustpilot.com/review/msd-media.com">
         <img height="69" width="927" src="https://msd-media.com/assets/img/trustpilot-color.webp" alt="Official Trustpilot logo" loading="lazy" decoding="async">
       </a>
       <div class="video-hero video-hero-player">
@@ -331,7 +346,6 @@
       </div>
       </div>
       <p class="hero-companies-proof" aria-label="Preuve sociale">
-        On fait des sites web et des landing pages inoubliables pour des entreprises qui veulent convertir.<br>
         <strong>+30 clients accompagnés</strong> en France, Suisse et Belgique.
       </p>
       <div class="logo-marquee" aria-label="Logos clients">
@@ -496,7 +510,7 @@
           <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
           <span class="review-video__label">Lire l'avis vidéo</span>
         </button>
-        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/62f44c26-5d27-413f-896c-1757747c085a/"
+        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/86a9d3f0-7d81-462a-afbd-3a3f5c4e8a2f/"
           frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 1"></iframe>
       </div>
 
@@ -507,7 +521,7 @@
           <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
           <span class="review-video__label">Lire l'avis vidéo</span>
         </button>
-        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/b1e1ca2f-9769-47f9-8b86-ee149e3c072f/"
+        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/b7624277-5a5c-4593-bd02-867d509c7927/"
           frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 2"></iframe>
       </div>
 
@@ -518,7 +532,7 @@
           <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
           <span class="review-video__label">Lire l'avis vidéo</span>
         </button>
-        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/da45a4c8-4877-4f05-8a76-b4fc95c29e10/"
+        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/a5877649-ae66-446b-9abd-de12da540604/"
           frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 3"></iframe>
       </div>
 
@@ -529,7 +543,7 @@
           <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
           <span class="review-video__label">Lire l'avis vidéo</span>
         </button>
-        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/bd6c0153-a7c1-4ce9-89c6-3219676c4b3f/"
+        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/bb45034f-a7f3-4f4d-ad6e-e07de17fe338/"
           frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 4"></iframe>
       </div>
     </div>

@@ -83,6 +83,7 @@
   <meta name="twitter:image:alt" content="Interface moderne de landing page réalisée par MSD Media" />
 
 <!-- MSD Analytics — à coller avant </body> -->
+<!-- MSD Analytics — à coller avant </body> -->
 <script>
 (function(){
   var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
@@ -91,7 +92,16 @@
   var iv;
   function send(d){
     var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
-    navigator.sendBeacon('https://msd-dashboard-tau.vercel.app',JSON.stringify(p));
+    var ok=false;
+    try { ok=navigator.sendBeacon('https://msd-dashboard-tau.vercel.app/api/track',JSON.stringify(p)); } catch(e) {}
+    if(!ok){
+      fetch('https://msd-dashboard-tau.vercel.app/api/track',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify(p),
+        keepalive:true
+      }).catch(function(){});
+    }
   }
   function start(){
     if(iv) return;

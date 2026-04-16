@@ -82,18 +82,32 @@
   <meta name="twitter:creator" content="@MaxensSoldan" />
   <meta name="twitter:image:alt" content="Interface moderne de landing page réalisée par MSD Media" />
 
-  <!-- MSD Analytics — à coller avant </body> -->
+<!-- MSD Analytics — à coller avant </body> -->
 <script>
 (function(){
   var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
   sessionStorage.setItem('_msd',sid);
   var t=Date.now();
+  var iv;
   function send(d){
     var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
-    navigator.sendBeacon('https://msd-dashboard-tau.vercel.app/api/track',JSON.stringify(p));
+    navigator.sendBeacon('https://msd-dashboard-tau.vercel.app',JSON.stringify(p));
   }
-  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')send(Date.now()-t);});
+  function start(){
+    if(iv) return;
+    iv=setInterval(function(){send(Date.now()-t);},15000);
+  }
+  function stop(){
+    if(!iv) return;
+    clearInterval(iv);
+    iv=undefined;
+  }
+  document.addEventListener('visibilitychange',function(){
+    if(document.visibilityState==='hidden'){send(Date.now()-t);stop();}
+    else{t=Date.now();send(0);start();}
+  });
   send(0);
+  start();
 })();
 </script>
 

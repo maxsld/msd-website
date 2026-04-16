@@ -90,7 +90,7 @@
   var t=Date.now();
   function send(d){
     var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
-    navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p));
+    navigator.sendBeacon('https://msd-dashboard-tau.vercel.app/api/track',JSON.stringify(p));
   }
   document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')send(Date.now()-t);});
   send(0);

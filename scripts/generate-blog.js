@@ -749,6 +749,7 @@ function renderArticlePage(post, allPosts) {
           <a href="${SITE_URL}/etudes-de-cas/">Études de cas</a>
           <a href="${SITE_URL}/contact/">Contact</a>
           <a href="${SITE_URL}/recrutement/">Recrutement</a>
+          <a href="${SITE_URL}/affiliation/">Affiliation</a>
         </div>
       </div>
     </div>
@@ -845,6 +846,7 @@ function renderBlogIndex(posts) {
           <a href="${SITE_URL}/blog/">Blog</a>
           <a href="${SITE_URL}/contact/">Contact</a>
           <a href="${SITE_URL}/recrutement/">Recrutement</a>
+          <a href="${SITE_URL}/affiliation/">Affiliation</a>
         </div>
       </div>
     </div>

@@ -3,9 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "analytics:weekly": "node scripts/weekly-analytics-report.mjs"
+    "analytics:weekly": "node scripts/weekly-analytics-report.mjs",
+    "blog:generate": "node scripts/generate-articles.js",
+    "blog:build": "cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
     "google-auth-library": "^9.15.1",
     "nodemailer": "^6.10.1"
   }

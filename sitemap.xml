@@ -482,6 +482,12 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://msd-media.com/blog/articles/template-2026-landing-page/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://msd-media.com/blog/articles/top-10-questions-landing-page-2026/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -550,6 +556,24 @@
   <url>
     <loc>https://msd-media.com/blog/articles/landing-page-vs-site-web-guide-complet/</loc>
     <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/copywriting-web-2026-textes-qui-convertissent/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/refonte-site-web-strasbourg-2026/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/vitesse-performance-site-web-annecy-2026/</loc>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>

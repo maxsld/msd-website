@@ -825,38 +825,10 @@
 <script>
   (function () {
     var CAL_BASE = "https://cal.com/maxens-soldan-msd-media/30min";
-    var STORAGE_KEY = "msd_aff";
-
-    // Capture ?aff= from URL and persist in sessionStorage
-    var urlRef = new URLSearchParams(window.location.search).get("aff");
-    if (urlRef) sessionStorage.setItem(STORAGE_KEY, urlRef);
-    var ref = sessionStorage.getItem(STORAGE_KEY);
+    var ref = new URLSearchParams(window.location.search).get("aff");
     if (!ref) return;
-
-    function buildCalUrl(base) {
-      var sep = base.includes("?") ? "&" : "?";
-      return base + sep + "metadata[ref]=" + encodeURIComponent(ref);
-    }
-
-    function patchLinks() {
-      document.querySelectorAll('a[href*="cal.com"]').forEach(function (a) {
-        if (!a.href.includes("metadata[ref]")) {
-          a.href = buildCalUrl(a.href);
-        }
-      });
-      document.querySelectorAll('iframe[src*="cal.com"]').forEach(function (f) {
-        if (!f.src.includes("metadata[ref]")) {
-          f.src = buildCalUrl(f.src);
-        }
-      });
-    }
-
-    // Run now and after DOMContentLoaded (cover deferred elements)
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", patchLinks);
-    } else {
-      patchLinks();
-    }
+    // Redirect directly to Cal.com with affiliate ref in metadata
+    window.location.replace(CAL_BASE + "?metadata[ref]=" + encodeURIComponent(ref));
   })();
 </script>
 

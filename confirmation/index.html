@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appel confirmé – MSD Media</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="https://msd-media.com/assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: #111;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 20px;
+      padding: 56px 48px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      height: 28px;
+      width: auto;
+      margin-bottom: 40px;
+    }
+
+    .icon-wrap {
+      width: 72px;
+      height: 72px;
+      background: #f0fdf4;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+    }
+
+    .icon-check {
+      width: 36px;
+      height: 36px;
+      color: #16a34a;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .steps {
+      background: #f9f9f7;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+
+    .steps-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #888;
+      margin-bottom: 14px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .step + .step {
+      margin-top: 12px;
+    }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background: #111;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #111;
+      color: #fff;
+      padding: 13px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: opacity 0.15s;
+    }
+
+    .cta:hover { opacity: 0.85; }
+
+    .footer-note {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    .footer-note a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    @media (max-width: 560px) {
+      .card { padding: 40px 24px; }
+      h1 { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media" class="logo" />
+
+    <div class="icon-wrap">
+      <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 6 9 17l-5-5"/>
+      </svg>
+    </div>
+
+    <h1>Votre appel est confirmé&nbsp;!</h1>
+    <p class="subtitle">
+      Un email de confirmation vient de vous être envoyé.<br />
+      Maxens vous contactera à l'heure prévue.
+    </p>
+
+    <div class="steps">
+      <p class="steps-title">Ce qui se passe ensuite</p>
+      <div class="step">
+        <span class="step-num">1</span>
+        <span>Vérifiez votre boîte mail — vous avez reçu un récapitulatif avec le lien d'appel</span>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <span>Pendant l'appel (30 min), on analyse votre situation et on vous propose une stratégie concrète</span>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <span>Si ça matche, on vous envoie un devis détaillé sous 24h</span>
+      </div>
+    </div>
+
+    <a href="https://msd-media.com" class="cta">
+      Retour sur le site
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+
+    <p class="footer-note">
+      Une question ? <a href="mailto:agence@msd-media.com">agence@msd-media.com</a>
+    </p>
+  </div>
+</body>
+</html>

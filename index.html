@@ -825,10 +825,14 @@
 <script>
   (function () {
     var CAL_BASE = "https://cal.com/maxens-soldan-msd-media/30min";
+    var CONFIRM_URL = "https://msd-media.com/confirmation/";
     var ref = new URLSearchParams(window.location.search).get("aff");
     if (!ref) return;
-    // Redirect directly to Cal.com with affiliate ref in metadata
-    window.location.replace(CAL_BASE + "?metadata[ref]=" + encodeURIComponent(ref));
+    window.location.replace(
+      CAL_BASE +
+      "?metadata[ref]=" + encodeURIComponent(ref) +
+      "&redirectUrl=" + encodeURIComponent(CONFIRM_URL)
+    );
   })();
 </script>
 

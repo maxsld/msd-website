@@ -18,6 +18,7 @@
   <noscript><link rel="stylesheet" href="../assets/css/animations.css"></noscript>
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -390,12 +391,22 @@
       <form class="affiliate-modal__form" data-affiliate-form>
         <div class="contact-form__row">
           <div class="contact-form__field">
+            <label for="affiliate-firstname">Prénom</label>
+            <input id="affiliate-firstname" name="first_name" type="text" placeholder="Votre prénom" required>
+          </div>
+          <div class="contact-form__field">
             <label for="affiliate-name">Nom</label>
             <input id="affiliate-name" name="name" type="text" placeholder="Votre nom" required>
           </div>
+        </div>
+        <div class="contact-form__row">
           <div class="contact-form__field">
             <label for="affiliate-email">Email</label>
             <input id="affiliate-email" name="email" type="email" placeholder="vous@email.com" required>
+          </div>
+          <div class="contact-form__field">
+            <label for="affiliate-phone">Téléphone</label>
+            <input id="affiliate-phone" name="phone" type="tel" placeholder="+33 6 00 00 00 00" required>
           </div>
         </div>
         <div class="contact-form__field">
@@ -410,6 +421,7 @@
             <option value="autre">Autre</option>
           </select>
         </div>
+        <div class="cf-turnstile" data-sitekey="VOTRE_SITE_KEY_CLOUDFLARE" data-theme="light"></div>
         <br>
         <button class="contact-form__submit" type="submit" style="width: fit-content; margin: 0 auto;">Générer mon lien</button>
       </form>
@@ -607,9 +619,13 @@
         event.preventDefault();
         var id = generateAffiliateId();
         var link = "https://msd-media.com/?aff=" + encodeURIComponent(id);
+        var firstNameVal = form.querySelector("[name='first_name']").value;
         var nameVal = form.querySelector("[name='name']").value;
         var emailVal = form.querySelector("[name='email']").value;
+        var phoneVal = form.querySelector("[name='phone']").value;
         var channelVal = form.querySelector("[name='channel']").value;
+        var turnstileToken = form.querySelector("[name='cf-turnstile-response']");
+        var cfToken = turnstileToken ? turnstileToken.value : "";
 
         idNode.textContent = id;
         linkInput.value = link;
@@ -621,10 +637,13 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             affiliate_id: id,
+            first_name: firstNameVal,
             name: nameVal,
             email: emailVal,
+            phone: phoneVal,
             channel: channelVal,
             link: link,
+            cf_turnstile_token: cfToken,
           }),
         }).catch(function () {
           // Silently ignore errors — the link is already shown to the user

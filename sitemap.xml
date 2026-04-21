@@ -25,6 +25,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://msd-media.com/audit-seo-strasbourg/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://msd-media.com/refonte-site-web-annecy/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -55,8 +61,20 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://msd-media.com/faq-seo-strasbourg/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://msd-media.com/glossaire-web-seo-annecy/</loc>
     <lastmod>2026-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/glossaire-web-seo-strasbourg/</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -115,8 +133,20 @@
     <priority>0.70</priority>
   </url>
   <url>
+    <loc>https://msd-media.com/creation-site-internet-strasbourg/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
     <loc>https://msd-media.com/creation-site-vitrine-annecy/</loc>
     <lastmod>2026-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/creation-site-vitrine-strasbourg/</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
   </url>
@@ -572,8 +602,74 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://msd-media.com/blog/articles/site-web-hotel-hebergement-annecy/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/site-web-hotel-hebergement-strasbourg/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://msd-media.com/blog/articles/vitesse-performance-site-web-annecy-2026/</loc>
     <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/vitesse-performance-site-web-strasbourg-2026/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/creation-site-web-strasbourg-2026/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/landing-page-strasbourg-guide-2026/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/site-web-architecte-strasbourg/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/site-web-artisan-tpe-strasbourg/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/site-web-avocat-strasbourg/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/site-web-coach-sportif-strasbourg/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/site-web-medecin-strasbourg/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/site-web-restaurant-strasbourg/</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -590,18 +686,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-web-strasbourg-2026/</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/landing-page-strasbourg-guide-2026/</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -609,42 +693,6 @@
   </url>
   <url>
     <loc>https://msd-media.com/blog/articles/site-web-agence-immobiliere-alsace/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-architecte-strasbourg/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-artisan-tpe-strasbourg/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-avocat-strasbourg/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-coach-sportif-strasbourg/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-medecin-strasbourg/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-restaurant-strasbourg/</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -812,13 +860,13 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/site-web-avocat-annecy/</loc>
+    <loc>https://msd-media.com/blog/articles/site-web-agence-immobiliere-strasbourg/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/site-web-photographe-annecy/</loc>
+    <loc>https://msd-media.com/blog/articles/site-web-avocat-annecy/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -836,7 +884,19 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://msd-media.com/blog/articles/site-web-photographe-strasbourg/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://msd-media.com/blog/articles/site-web-therapeute-annecy/</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/site-web-therapeute-strasbourg/</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -884,7 +944,19 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://msd-media.com/blog/articles/10-erreurs-creation-site-web-strasbourg/</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://msd-media.com/blog/articles/combien-coute-site-web-annecy-2026/</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/blog/articles/combien-coute-site-web-strasbourg-2026/</loc>
     <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>

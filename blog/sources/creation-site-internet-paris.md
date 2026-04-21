@@ -5,7 +5,7 @@ description: "Découvrez comment MSD Media, agence web à Paris, conçoit des si
 image: "https://hospitality-on.com/sites/hon/files/2017-09/Paris.jpg"
 tags: ["création site internet Paris", "agence web Paris", "site vitrine Paris", "site e-commerce Paris", "landing page Paris", "MSD Media", "SEO", "développement web"]
 slug: "creation-site-internet-paris"
-keyword: "Par ville"
+keyword: "création site internet Paris"
 ---
 
 Avoir un **site internet professionnel à Paris** n’est plus une option : c’est une nécessité pour toute entreprise qui souhaite **se démarquer dans un environnement ultra-concurrentiel**.  

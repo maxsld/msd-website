@@ -5,7 +5,7 @@ description: "Découvrez comment MSD Media, agence web à Lyon, conçoit des sit
 image: "https://www.vacationstravel.com/wp-content/uploads/2023/12/Untitled-design-2-5.jpg"
 tags: ["création site internet Lyon", "agence web Lyon", "site vitrine Lyon", "site e-commerce Lyon", "landing page Lyon", "MSD Media", "SEO", "développement web"]
 slug: "creation-site-internet-lyon"
-keyword: "Par ville"
+keyword: "création site internet Lyon"
 ---
 
 Avoir un **site internet professionnel à Lyon** est aujourd’hui une condition essentielle pour exister dans un marché aussi concurrentiel que dynamique.  

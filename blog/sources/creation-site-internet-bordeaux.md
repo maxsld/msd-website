@@ -5,7 +5,7 @@ description: "Découvrez comment MSD Media, agence web à Bordeaux, conçoit des
 image: "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/481000/481844-Bordeaux.jpg"
 tags: ["création site internet Bordeaux", "agence web Bordeaux", "site vitrine Bordeaux", "site e-commerce Bordeaux", "landing page Bordeaux", "MSD Media", "SEO", "développement web"]
 slug: "creation-site-internet-bordeaux"
-keyword: "Par ville"
+keyword: "création site internet Bordeaux"
 ---
 
 Avoir un **site internet professionnel à Bordeaux** est essentiel pour se démarquer dans un marché dynamique et concurrentiel.  

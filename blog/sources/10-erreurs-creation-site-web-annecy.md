@@ -5,7 +5,7 @@ description: "Les erreurs classiques qui coûtent cher aux entreprises d'Annecy.
 image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 tags: ["site web", "Annecy", "erreurs", "conseils", "création site"]
 slug: "10-erreurs-creation-site-web-annecy"
-keyword: "site web Annecy"
+keyword: "10 erreurs création site web Annecy"
 ---
 
 Tu veux créer un site web à Annecy ?  

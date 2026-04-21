@@ -5,7 +5,7 @@ description: "Découvrez comment MSD Media, agence web à Marseille, crée des s
 image: "https://www.accentfrancais.com/fr/media/197/marseille_1200x800.png"
 tags: ["création site internet Marseille", "agence web Marseille", "site vitrine Marseille", "site e-commerce Marseille", "landing page Marseille", "MSD Media", "SEO", "développement web"]
 slug: "creation-site-internet-marseille"
-keyword: "Par ville"
+keyword: "création site internet Marseille"
 ---
 
 Avoir un **site internet professionnel à Marseille** est indispensable pour se démarquer dans un marché compétitif et dynamique.  

@@ -157,3 +157,32 @@ Cela dépend de votre activité. Pour le tourisme, la restauration ou les servic
 
 **MSD Media propose-t-il des prestations SEO à Strasbourg ?**
 Oui. Nous créons des sites web optimisés pour le SEO local strasbourgeois : contenu ciblé, schemas, GBP et structure technique. [Parlons de votre visibilité à Strasbourg.](https://cal.com/maxens-soldan-msd-media/30min)
+
+
+---
+
+## Ressources Strasbourg MSD Media
+
+### Pages services Strasbourg
+- [Agence web Strasbourg](https://msd-media.com/agence-web-strasbourg/)
+- [Création de site web à Strasbourg](https://msd-media.com/creation-site-web-strasbourg/)
+- [Landing page à Strasbourg](https://msd-media.com/landing-page-strasbourg/)
+- [Refonte de site web à Strasbourg](https://msd-media.com/refonte-site-web-strasbourg/)
+- [SEO local Strasbourg](https://msd-media.com/seo-local-strasbourg/)
+- [Audit SEO Strasbourg](https://msd-media.com/audit-seo-strasbourg/)
+
+### Pages par métier à Strasbourg
+- [Site web avocat Strasbourg](https://msd-media.com/blog/articles/site-web-avocat-strasbourg/)
+- [Site web médecin Strasbourg](https://msd-media.com/blog/articles/site-web-medecin-strasbourg/)
+- [Site web restaurant Strasbourg](https://msd-media.com/blog/articles/site-web-restaurant-strasbourg/)
+- [Site web artisan Strasbourg](https://msd-media.com/blog/articles/site-web-artisan-tpe-strasbourg/)
+- [Site web architecte Strasbourg](https://msd-media.com/blog/articles/site-web-architecte-strasbourg/)
+- [Site web agence immobilière Strasbourg](https://msd-media.com/blog/articles/site-web-agence-immobiliere-strasbourg/)
+
+### Guides complémentaires Strasbourg
+- [Comment choisir une agence web à Strasbourg](https://msd-media.com/blog/articles/choisir-agence-web-strasbourg/)
+- [Création site web Strasbourg : guide 2026](https://msd-media.com/blog/articles/creation-site-web-strasbourg-2026/)
+- [Landing page Strasbourg : guide conversion 2026](https://msd-media.com/blog/articles/landing-page-strasbourg-guide-2026/)
+- [Refonte site web Strasbourg : guide 2026](https://msd-media.com/blog/articles/refonte-site-web-strasbourg-2026/)
+- [Combien coûte un site web à Strasbourg en 2026](https://msd-media.com/blog/articles/combien-coute-site-web-strasbourg-2026/)
+- [Vitesse et performance site web Strasbourg 2026](https://msd-media.com/blog/articles/vitesse-performance-site-web-strasbourg-2026/)

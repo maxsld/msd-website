@@ -5,7 +5,7 @@ description: "Découvrez comment MSD Media, agence web à Genève, conçoit des 
 image: "https://wildroad.fr/wp-content/uploads/2023/04/visiter-geneve-16-choses-a-faire-un-jour-1024x683.jpg"
 tags: ["création site internet Genève", "agence web Genève", "site vitrine Genève", "site e-commerce Genève", "landing page Genève", "MSD Media", "SEO", "développement web"]
 slug: "creation-site-internet-geneve"
-keyword: "Par ville"
+keyword: "création site internet Genève"
 ---
 
 # Création de site internet à Genève

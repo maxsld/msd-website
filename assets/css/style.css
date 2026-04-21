@@ -3503,11 +3503,14 @@ body.affiliate-modal-open {
 /* LIENS LEGAUX */
 .footer-legal {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 2.5rem;
   font-size: 0.85rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-legal a {
@@ -3521,10 +3524,13 @@ body.affiliate-modal-open {
 
 /* COPYRIGHT */
 .footer-bottom {
-  text-align: center;
+  text-align: left;
   margin-top: 2rem;
   font-size: 0.85rem;
   color: #888;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 620px) {
@@ -3813,8 +3819,10 @@ iframe.skiptranslate,
 
 /* ── Footer city services ───────────────────────────────────────────────── */
 .footer-city-services {
-  padding: 2.25rem 2rem 0;
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.25rem 0 0;
+  text-align: left;
 }
 
 
@@ -3828,7 +3836,8 @@ iframe.skiptranslate,
 
 .footer-city-services ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 0.5rem 1.25rem;
   list-style: none;

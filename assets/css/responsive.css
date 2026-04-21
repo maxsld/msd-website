@@ -236,6 +236,10 @@
     font-size: 0.88rem;
   }
 
+  .affiliate-estimator__scale {
+    display: none;
+  }
+
   .affiliate-cta {
     padding: 2rem 1rem 0.25rem;
   }

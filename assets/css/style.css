@@ -3855,7 +3855,7 @@ iframe.skiptranslate,
   max-width: 1200px;
   margin: 1.25rem auto 0;
   padding: 0 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-affiliate-conditions__title {
@@ -3866,7 +3866,7 @@ iframe.skiptranslate,
 }
 
 .footer-affiliate-conditions__text {
-  margin: 0.35rem auto 0;
+  margin: 0.35rem 0 0;
   max-width: 980px;
   font-size: 0.72rem;
   line-height: 1.45;

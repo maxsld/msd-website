@@ -150,8 +150,8 @@ Palm Square accompagne les startups et entreprises dans la création de landing 
 
 | Agence          | Spécialité | Points forts | Tarif indicatif |
 |------------------|------------|--------------|-------------------|
-| **MSD Media**   | Landing pages sur-mesure, conversion | Copywriting, UX/UI, SEO, retours illimités | 2 450€ |
-| 160 Agency       | Landing pages SaaS | Paid media, UX/UI, retours illimités | 3 500€+ |
+| **MSD Media**   | Landing pages sur-mesure, conversion | Copywriting, UX/UI, SEO, retours illimités | sur devis|
+| 160 Agency       | Landing pages SaaS | Paid media, UX/UI, retours illimités | sur devis+ |
 | LaGrowthMachine | Growth + landing pages B2B | Automatisation, funnels multicanaux | Sur devis |
 | Voyelle          | Landing pages marketing | UX/UI, data analytics, A/B testing | Sur devis |
 | Palm Square      | Landing pages sur-mesure | UX/UI, copywriting, tracking | Sur devis |

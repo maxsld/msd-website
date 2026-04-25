@@ -6,107 +6,19 @@ image: "https://images.pexels.com/photos/4506214/pexels-photo-4506214.jpeg"
 tags: ["site web thérapeute Annecy", "site web praticien bien-être Annecy", "création site web Annecy", "agence web Annecy", "SEO thérapeute Annecy", "naturopathe Annecy", "MSD Media"]
 slug: "site-web-therapeute-annecy"
 keyword: "site web thérapeute Annecy"
----
-
-# Site web pour thérapeute et praticien à Annecy : le guide complet 2026
-
-Vous êtes naturopathe, sophrologue, hypnothérapeute, psychothérapeute, ostéopathe, acupuncteur, coach de vie, énergéticien ou tout autre praticien bien-être à Annecy. Votre activité repose sur la confiance — une confiance qui se construit sur la durée, dans l'intimité d'une séance.
-
-Mais avant cette première séance, il y a un moment décisif que beaucoup de thérapeutes négligent : le moment où un futur client vous cherche en ligne.
-
-Annecy est une ville particulièrement réceptive aux approches alternatives et complémentaires. La qualité de vie, la proximité de la nature, la population active et sensibilisée au bien-être — tout cela crée une demande forte en thérapies et accompagnements de toutes sortes. Et cette demande se cherche d'abord sur Google.
-
-Ce guide vous explique comment construire un site web qui inspire confiance, attire des clients qualifiés et vous positionne comme une référence dans votre domaine à Annecy.
-
----
-
-## Pourquoi un thérapeute à Annecy a besoin d'un site web professionnel
-
-### Le bouche-à-oreille atteint ses limites
-
-Le bouche-à-oreille est puissant dans les métiers thérapeutiques. Mais il est limité par définition — il ne vous amène que les personnes dans le cercle de vos clients actuels. Un site web bien référencé à Annecy vous amène des clients que vous n'auriez jamais pu toucher autrement.
-
-### Vos futurs clients cherchent sur Google dans des moments vulnérables
-
-Quelqu'un qui cherche un thérapeute à Annecy est souvent dans un moment difficile — anxiété, douleurs chroniques, burn-out, deuil, questions existentielles. Il cherche quelqu'un en qui il peut avoir confiance avant même de prendre rendez-vous. Votre site web est sa première impression de vous — et cette impression est souvent décisive.
-
-### La concurrence entre praticiens à Annecy est forte
-
-Le marché du bien-être et des thérapies alternatives a explosé à Annecy comme dans toute la France. Naturopathes, sophrologues, hypnothérapeutes, coachs — la concurrence est réelle. Les thérapeutes qui ont un site professionnel et bien référencé captent les clients en ligne. Les autres attendent que le bouche-à-oreille fasse son travail.
-
----
-
-## Ce qu'un site web pour thérapeute à Annecy doit contenir
-
-### 1. Une page d'accueil qui parle à votre client idéal
-
-La page d'accueil d'un site de thérapeute ne doit pas parler de vous en premier — elle doit parler de votre client. De sa situation, de sa souffrance, de ce qu'il cherche. Et de la façon dont vous pouvez l'accompagner.
-
-Un bon point de départ : commencez votre hero section non pas par "Je suis naturopathe à Annecy" mais par une phrase qui décrit l'état de votre client idéal : "Vous vous sentez épuisé, déconnecté de vous-même et à court de solutions ?" ou "Vous souffrez de douleurs chroniques et cherchez une approche différente de la médecine conventionnelle ?"
-
-Cette accroche crée immédiatement une résonance avec les visiteurs concernés — et les qualifie naturellement.
-
-### 2. Une page "Mon approche" claire et authentique
-
-C'est la page la plus importante pour un thérapeute. Vos futurs clients veulent comprendre :
-
-- Quelle est votre approche thérapeutique ?
+--- # Site web pour thérapeute et praticien à Annecy : le guide complet 2026 Vous êtes naturopathe, sophrologue, hypnothérapeute, psychothérapeute, ostéopathe, acupuncteur, coach de vie, énergéticien ou tout autre praticien bien-être à Annecy. Votre activité repose sur la confiance — une confiance qui se construit sur la durée, dans l'intimité d'une séance. Mais avant cette première séance, il y a un moment décisif que beaucoup de thérapeutes négligent : le moment où un futur client vous cherche en ligne. Annecy est une ville particulièrement réceptive aux approches alternatives et complémentaires. La qualité de vie, la proximité de la nature, la population active et sensibilisée au bien-être — tout cela crée une demande forte en thérapies et accompagnements de toutes sortes. Et cette demande se cherche d'abord sur Google. Ce guide vous explique comment construire un site web qui inspire confiance, attire des clients qualifiés et vous positionne comme une référence dans votre domaine à Annecy. --- ## Pourquoi un thérapeute à Annecy a besoin d'un site web professionnel ### Le bouche-à-oreille atteint ses limites Le bouche-à-oreille est puissant dans les métiers thérapeutiques. Mais il est limité par définition — il ne vous amène que les personnes dans le cercle de vos clients actuels. Un site web bien référencé à Annecy vous amène des clients que vous n'auriez jamais pu toucher autrement. ### Vos futurs clients cherchent sur Google dans des moments vulnérables Quelqu'un qui cherche un thérapeute à Annecy est souvent dans un moment difficile — anxiété, douleurs chroniques, burn-out, deuil, questions existentielles. Il cherche quelqu'un en qui il peut avoir confiance avant même de prendre rendez-vous. Votre site web est sa première impression de vous — et cette impression est souvent décisive. ### La concurrence entre praticiens à Annecy est forte Le marché du bien-être et des thérapies alternatives a explosé à Annecy comme dans toute la France. Naturopathes, sophrologues, hypnothérapeutes, coachs — la concurrence est réelle. Les thérapeutes qui ont un site professionnel et bien référencé captent les clients en ligne. Les autres attendent que le bouche-à-oreille fasse son travail. --- ## Ce qu'un site web pour thérapeute à Annecy doit contenir ### 1. Une page d'accueil qui parle à votre client idéal La page d'accueil d'un site de thérapeute ne doit pas parler de vous en premier — elle doit parler de votre client. De sa situation, de sa souffrance, de ce qu'il cherche. Et de la façon dont vous pouvez l'accompagner. Un bon point de départ : commencez votre hero section non pas par "Je suis naturopathe à Annecy" mais par une phrase qui décrit l'état de votre client idéal : "Vous vous sentez épuisé, déconnecté de vous-même et à court de solutions ?" ou "Vous souffrez de douleurs chroniques et cherchez une approche différente de la médecine conventionnelle ?" Cette accroche crée immédiatement une résonance avec les visiteurs concernés — et les qualifie naturellement. ### 2. Une page "Mon approche" claire et authentique C'est la page la plus importante pour un thérapeute. Vos futurs clients veulent comprendre : - Quelle est votre approche thérapeutique ?
 - Comment se déroule une séance concrètement ?
 - Combien de séances sont généralement nécessaires ?
 - Pour quelles problématiques êtes-vous particulièrement efficace ?
-- Quelle est votre formation et votre parcours ?
-
-Cette page doit être écrite avec authenticité — pas avec du jargon thérapeutique que vos clients ne comprennent pas. Expliquez simplement ce que vous faites et ce que ça apporte, comme vous l'expliqueriez à un ami.
-
-Une photo de vous dans votre cabinet ou en séance est indispensable. Les gens qui cherchent un thérapeute veulent voir à qui ils vont confier leur vulnérabilité.
-
-### 3. Une page par type de thérapie ou d'accompagnement
-
-Si vous proposez plusieurs types d'accompagnements, chacun doit avoir sa propre page. Cette structure a deux avantages :
-
-**Pour vos visiteurs :** ils trouvent rapidement l'accompagnement qui correspond à leur problématique sans avoir à tout lire.
-
-**Pour le SEO :** chaque page cible une requête précise. "Hypnothérapie Annecy", "naturopathie Annecy", "sophrologie Annecy" — autant de portes d'entrée vers votre site.
-
-Chaque page doit expliquer : en quoi consiste cette approche, pour qui elle est indiquée, comment se déroule une séance, combien de séances sont généralement nécessaires, et ce que vos clients en retirent concrètement.
-
-### 4. Des témoignages clients qui rassurent
-
-Dans les métiers thérapeutiques, les témoignages sont l'outil de conversion le plus puissant. Un futur client hésitant va chercher des preuves que votre accompagnement fonctionne vraiment — et des témoignages authentiques d'anciens clients sont ces preuves.
-
-Idéalement, vos témoignages doivent décrire une transformation concrète : "Avant de consulter, je faisais des crises d'anxiété plusieurs fois par semaine. Après 6 séances, j'ai retrouvé un quotidien apaisé." C'est infiniment plus convaincant que "Très bon thérapeute, je recommande."
-
-Assurez-vous d'avoir l'accord explicite de vos clients avant de publier leur témoignage.
-
-### 5. Les informations pratiques rassurantes
-
-Pour quelqu'un qui n'a jamais consulté un thérapeute, la première prise de contact peut être intimidante. Votre site doit lever tous les freins :
-
-- **Où vous trouvez-vous ?** Adresse précise à Annecy, plan d'accès, parking
+- Quelle est votre formation et votre parcours ? Cette page doit être écrite avec authenticité — pas avec du jargon thérapeutique que vos clients ne comprennent pas. Expliquez simplement ce que vous faites et ce que ça apporte, comme vous l'expliqueriez à un ami. Une photo de vous dans votre cabinet ou en séance est indispensable. Les gens qui cherchent un thérapeute veulent voir à qui ils vont confier leur vulnérabilité. ### 3. Une page par type de thérapie ou d'accompagnement Si vous proposez plusieurs types d'accompagnements, chacun doit avoir sa propre page. Cette structure a deux avantages : **Pour vos visiteurs :** ils trouvent rapidement l'accompagnement qui correspond à leur problématique sans avoir à tout lire. **Pour le SEO :** chaque page cible une requête précise. "Hypnothérapie Annecy", "naturopathie Annecy", "sophrologie Annecy" — autant de portes d'entrée vers votre site. Chaque page doit expliquer : en quoi consiste cette approche, pour qui elle est indiquée, comment se déroule une séance, combien de séances sont généralement nécessaires, et ce que vos clients en retirent concrètement. ### 4. Des témoignages clients qui rassurent Dans les métiers thérapeutiques, les témoignages sont l'outil de conversion le plus puissant. Un futur client hésitant va chercher des preuves que votre accompagnement fonctionne vraiment — et des témoignages authentiques d'anciens clients sont ces preuves. Idéalement, vos témoignages doivent décrire une transformation concrète : "Avant de consulter, je faisais des crises d'anxiété plusieurs fois par semaine. Après 6 séances, j'ai retrouvé un quotidien apaisé." C'est infiniment plus convaincant que "Très bon thérapeute, je recommande." Assurez-vous d'avoir l'accord explicite de vos clients avant de publier leur témoignage. ### 5. Les informations pratiques rassurantes Pour quelqu'un qui n'a jamais consulté un thérapeute, la première prise de contact peut être intimidante. Votre site doit lever tous les freins : - **Où vous trouvez-vous ?** Adresse précise à Annecy, plan d'accès, parking
 - **Comment réserver ?** Formulaire simple, téléphone, ou outil de réservation en ligne
 - **Combien ça coûte ?** Tarifs par séance, durée d'une séance, conditions d'annulation
 - **Est-ce remboursé ?** Mutuelles qui remboursent votre approche (si applicable)
-- **Comment se passe la première séance ?** Un paragraphe qui explique le déroulement rassure énormément les personnes qui n'ont jamais consulté
-
-### 6. Une FAQ qui lève les derniers doutes
-
-Une section FAQ est particulièrement efficace pour les thérapeutes car elle répond aux questions que les clients n'osent pas toujours poser directement. Elle est aussi excellent pour le SEO — Google adore les FAQ structurées avec schema markup.
-
-Questions typiques à aborder :
-
-- "Combien de séances faut-il en général ?"
+- **Comment se passe la première séance ?** Un paragraphe qui explique le déroulement rassure énormément les personnes qui n'ont jamais consulté ### 6. Une FAQ qui lève les derniers doutes Une section FAQ est particulièrement efficace pour les thérapeutes car elle répond aux questions que les clients n'osent pas toujours poser directement. Elle est aussi excellent pour le SEO — Google adore les FAQ structurées avec schema markup. Questions typiques à aborder : - "Combien de séances faut-il en général ?"
 - "Est-ce que ça fonctionne si je suis sceptique ?"
 - "Quelle est la différence entre votre approche et la psychothérapie classique ?"
 - "Puis-je combiner votre accompagnement avec un suivi médical ?"
-- "Comment savoir si c'est fait pour moi ?"
-
----
-
-## Le SEO local pour un thérapeute à Annecy
-
-### Les requêtes prioritaires par spécialité
-
-| Spécialité | Requêtes cibles |
+- "Comment savoir si c'est fait pour moi ?" --- ## Le SEO local pour un thérapeute à Annecy ### Les requêtes prioritaires par spécialité | Spécialité | Requêtes cibles |
 |---|---|
 | Naturopathie | `naturopathe Annecy`, `naturopathie Annecy`, `consultation naturopathie Annecy` |
 | Sophrologie | `sophrologue Annecy`, `sophrologie Annecy anxiété`, `sophrologie Annecy stress` |
@@ -114,116 +26,30 @@ Questions typiques à aborder :
 | Ostéopathie | `ostéopathe Annecy`, `ostéopathie Annecy dos`, `ostéopathe Annecy bébé` |
 | Coaching | `coach de vie Annecy`, `coach bien-être Annecy`, `coaching personnel Annecy` |
 | Acupuncture | `acupuncteur Annecy`, `acupuncture Annecy`, `médecine traditionnelle chinoise Annecy` |
-| Psychothérapie | `psychothérapeute Annecy`, `thérapie Annecy`, `psy Annecy` |
-
-### Les 5 leviers SEO prioritaires pour un thérapeute à Annecy
-
-**1. Google Business Profile — votre vitrine locale**
-Votre fiche Google est souvent le premier résultat qu'un futur client voit. Catégorie précise (Naturopathe, Sophrologue, Hypnothérapeute…), description avec vos mots-clés, photos de votre cabinet, horaires à jour. Répondez à chaque avis pour montrer votre engagement.
-
-**2. Des pages par problématique, pas seulement par technique**
-Vos clients ne cherchent pas "sophrologie Annecy" — ils cherchent "comment gérer mon anxiété Annecy" ou "aide pour arrêter de fumer Annecy". Créez des pages orientées problématiques :
-
-```
+| Psychothérapie | `psychothérapeute Annecy`, `thérapie Annecy`, `psy Annecy` | ### Les 5 leviers SEO prioritaires pour un thérapeute à Annecy **1. Google Business Profile — votre vitrine locale**
+Votre fiche Google est souvent le premier résultat qu'un futur client voit. Catégorie précise (Naturopathe, Sophrologue, Hypnothérapeute…), description avec vos mots-clés, photos de votre cabinet, horaires à jour. Répondez à chaque avis pour montrer votre engagement. **2. Des pages par problématique, pas seulement par technique**
+Vos clients ne cherchent pas "sophrologie Annecy" — ils cherchent "comment gérer mon anxiété Annecy" ou "aide pour arrêter de fumer Annecy". Créez des pages orientées problématiques : ```
 /accompagnement-anxiete-annecy
 /arret-tabac-annecy
 /gestion-stress-annecy
 /douleurs-chroniques-annecy
 /burn-out-annecy
-```
-
-Ces pages ciblent des requêtes avec une intention très forte et une concurrence quasi nulle.
-
-**3. Le schema markup LocalBusiness + MedicalBusiness**
-Pour les praticiens de santé et bien-être, ce balisage structuré aide Google à comprendre votre activité et peut générer des rich snippets (étoiles, adresse, horaires) dans les résultats.
-
-**4. Des articles de blog sur des problématiques locales**
-Des articles comme "Comment gérer le stress au travail à Annecy : 5 approches complémentaires", "Burn-out en Haute-Savoie : témoignages et solutions" ou "Pourquoi Annecy est une ville propice au bien-être" attirent du trafic qualifié depuis des personnes en recherche active de solutions.
-
-**5. Les citations locales**
-Inscrivez-vous sur les annuaires de thérapeutes (ThéraLocal, Synergies, Doctolib pour les ostéopathes…) avec le même nom, adresse et téléphone que sur votre site. La cohérence de ces citations locales est un signal SEO important.
-
----
-
-## Les spécificités du marché thérapeutique à Annecy
-
-### Une population sensibilisée au bien-être
-
-Annecy attire une population active, souvent cadres et professions libérales, avec un fort pouvoir d'achat et une sensibilité marquée aux questions de santé globale et de qualité de vie. Ces profils sont précisément les clients idéaux pour des accompagnements thérapeutiques alternatifs ou complémentaires.
-
-### La montagne comme cadre thérapeutique
-
-La nature omniprésente autour d'Annecy — lac, forêts, montagnes — est un atout thérapeutique à valoriser. Si vous intégrez la nature dans votre pratique (randonnées thérapeutiques, séances en plein air, ressourcement en montagne), c'est un angle différenciateur fort à mettre en avant sur votre site.
-
-### La clientèle genevoise et frontalière
-
-Les professionnels suisses et frontaliers qui résident à Annecy constituent un segment à fort pouvoir d'achat. Ils sont souvent exposés à des niveaux de stress élevés et cherchent des accompagnements de qualité. Si vous parlez anglais, une page de présentation en anglais peut capter ce segment.
-
----
-
-## Les règles éthiques à respecter pour un site de thérapeute
-
-Selon votre profession, des règles spécifiques encadrent votre communication :
-
-- **Psys et psychothérapeutes** : encadrés par le Code de déontologie des psychologues — pas d'allégations de guérison, pas de comparaison avec des confrères
+``` Ces pages ciblent des requêtes avec une intention très forte et une concurrence quasi nulle. **3. Le schema markup LocalBusiness + MedicalBusiness**
+Pour les praticiens de santé et bien-être, ce balisage structuré aide Google à comprendre votre activité et peut générer des rich snippets (étoiles, adresse, horaires) dans les résultats. **4. Des articles de blog sur des problématiques locales**
+Des articles comme "Comment gérer le stress au travail à Annecy : 5 approches complémentaires", "Burn-out en Haute-Savoie : témoignages et solutions" ou "Pourquoi Annecy est une ville propice au bien-être" attirent du trafic qualifié depuis des personnes en recherche active de solutions. **5. Les citations locales**
+Inscrivez-vous sur les annuaires de thérapeutes (ThéraLocal, Synergies, Doctolib pour les ostéopathes…) avec le même nom, adresse et téléphone que sur votre site. La cohérence de ces citations locales est un signal SEO important. --- ## Les spécificités du marché thérapeutique à Annecy ### Une population sensibilisée au bien-être Annecy attire une population active, souvent cadres et professions libérales, avec un fort pouvoir d'achat et une sensibilité marquée aux questions de santé globale et de qualité de vie. Ces profils sont précisément les clients idéaux pour des accompagnements thérapeutiques alternatifs ou complémentaires. ### La montagne comme cadre thérapeutique La nature omniprésente autour d'Annecy — lac, forêts, montagnes — est un atout thérapeutique à valoriser. Si vous intégrez la nature dans votre pratique (randonnées thérapeutiques, séances en plein air, ressourcement en montagne), c'est un angle différenciateur fort à mettre en avant sur votre site. ### La clientèle genevoise et frontalière Les professionnels suisses et frontaliers qui résident à Annecy constituent un segment à fort pouvoir d'achat. Ils sont souvent exposés à des niveaux de stress élevés et cherchent des accompagnements de qualité. Si vous parlez anglais, une page de présentation en anglais peut capter ce segment. --- ## Les règles éthiques à respecter pour un site de thérapeute Selon votre profession, des règles spécifiques encadrent votre communication : - **Psys et psychothérapeutes** : encadrés par le Code de déontologie des psychologues — pas d'allégations de guérison, pas de comparaison avec des confrères
 - **Ostéopathes** : encadrés par le Code de déontologie des ostéopathes — communication sobre et factuelle
-- **Thérapeutes non réglementés** (naturopathes, sophrologues, hypnothérapeutes…) : pas de cadre légal strict mais responsabilité éthique de ne pas promettre de guérisons ni de se substituer au corps médical
-
-Dans tous les cas : pas d'allégations de guérison garantie, pas de dénigrement de la médecine conventionnelle, et une mention claire que votre accompagnement ne se substitue pas à un suivi médical si la situation l'exige.
-
----
-
-## Combien coûte un site web pour thérapeute à Annecy en 2026 ?
-
-| Type de site | Fourchette indicative | Ce qui est inclus |
+- **Thérapeutes non réglementés** (naturopathes, sophrologues, hypnothérapeutes…) : pas de cadre légal strict mais responsabilité éthique de ne pas promettre de guérisons ni de se substituer au corps médical Dans tous les cas : pas d'allégations de guérison garantie, pas de dénigrement de la médecine conventionnelle, et une mention claire que votre accompagnement ne se substitue pas à un suivi médical si la situation l'exige. --- ## Combien coûte un site web pour thérapeute à Annecy en 2026 ? | Type de site | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Site vitrine simple (4-6 pages) | 800 € – 2 000 € | Design apaisant, pages approche, tarifs, contact |
-| Site complet avec pages problématiques | 2 000 € – 4 000 € | + pages par problématique, blog, réservation en ligne |
-| Site premium avec blog actif | 3 500 € – 6 000 € | + articles SEO locaux, FAQ schema, optimisation avancée |
-
-**Le ROI pour un thérapeute :** si votre site vous amène 3 à 5 nouveaux clients par mois à Annecy, et que chaque client fait en moyenne 5 séances à 70 €, c'est entre 1 050 € et 1 750 € de CA mensuel supplémentaire — soit un retour sur investissement complet en 2 à 3 mois.
-
----
-
-## Les 5 erreurs les plus fréquentes sur les sites de thérapeutes à Annecy
-
-**1. Un site trop centré sur la technique, pas assez sur le client**
-Parler de votre méthode avant de parler de ce que ça apporte concrètement à votre client. Commencez toujours par la problématique du client, pas par votre approche.
-
-**2. Des photos génériques ou l'absence de photo de vous**
-Un thérapeute sans photo sur son site perd immédiatement la confiance de ses visiteurs. Investissez dans une séance photo professionnelle — c'est l'un des meilleurs investissements que vous puissiez faire pour votre site.
-
-**3. Pas de tarifs affichés**
-Beaucoup de thérapeutes hésitent à afficher leurs tarifs. C'est une erreur — l'absence de prix génère de l'incertitude et fait fuir des clients potentiels. Affichez au moins le tarif d'une séance individuelle.
-
-**4. Un formulaire de contact trop compliqué**
-Un thérapeute n'a pas besoin d'un formulaire à 10 champs. Nom, email ou téléphone, et un champ "Quelle est votre demande ?" suffisent largement.
-
-**5. Négliger le référencement par problématique**
-La plupart des thérapeutes à Annecy optimisent leur site sur leur technique ("naturopathie Annecy") mais pas sur les problématiques de leurs clients ("fatigue chronique Annecy", "gestion stress Annecy"). Ces requêtes problématiques ont souvent plus de volume et moins de concurrence.
-
----
-
-## Pourquoi MSD Media pour votre site web à Annecy
-
-MSD Media est une agence web à Annecy spécialisée dans la création de sites web à fort taux de conversion. Nous comprenons les enjeux spécifiques des métiers thérapeutiques : la nécessité de créer la confiance avant même le premier contact, l'importance de l'authenticité dans la présentation, et les règles éthiques à respecter dans la communication.
-
-- **Design apaisant et professionnel** : votre site doit inspirer confiance et sérénité dès le premier coup d'œil
+| Site vitrine simple (4-6 pages) | sur devis– sur devis| Design apaisant, pages approche, tarifs, contact |
+| Site complet avec pages problématiques | sur devis– sur devis| + pages par problématique, blog, réservation en ligne |
+| Site premium avec blog actif | sur devis– sur devis| + articles SEO locaux, FAQ schema, optimisation avancée | **Le ROI pour un thérapeute :** si votre site vous amène 3 à 5 nouveaux clients par mois à Annecy, et que chaque client fait en moyenne 5 séances à sur devis, c'est entre sur devis et sur devis de CA mensuel supplémentaire — soit un retour sur investissement complet en 2 à 3 mois. --- ## Les 5 erreurs les plus fréquentes sur les sites de thérapeutes à Annecy **1. Un site trop centré sur la technique, pas assez sur le client**
+Parler de votre méthode avant de parler de ce que ça apporte concrètement à votre client. Commencez toujours par la problématique du client, pas par votre approche. **2. Des photos génériques ou l'absence de photo de vous**
+Un thérapeute sans photo sur son site perd immédiatement la confiance de ses visiteurs. Investissez dans une séance photo professionnelle — c'est l'un des meilleurs investissements que vous puissiez faire pour votre site. **3. Pas de tarifs affichés**
+Beaucoup de thérapeutes hésitent à afficher leurs tarifs. C'est une erreur — l'absence de prix génère de l'incertitude et fait fuir des clients potentiels. Affichez au moins le tarif d'une séance individuelle. **4. Un formulaire de contact trop compliqué**
+Un thérapeute n'a pas besoin d'un formulaire à 10 champs. Nom, email ou téléphone, et un champ "Quelle est votre demande ?" suffisent largement. **5. Négliger le référencement par problématique**
+La plupart des thérapeutes à Annecy optimisent leur site sur leur technique ("naturopathie Annecy") mais pas sur les problématiques de leurs clients ("fatigue chronique Annecy", "gestion stress Annecy"). Ces requêtes problématiques ont souvent plus de volume et moins de concurrence. --- ## Pourquoi MSD Media pour votre site web à Annecy MSD Media est une agence web à Annecy spécialisée dans la création de sites web à fort taux de conversion. Nous comprenons les enjeux spécifiques des métiers thérapeutiques : la nécessité de créer la confiance avant même le premier contact, l'importance de l'authenticité dans la présentation, et les règles éthiques à respecter dans la communication. - **Design apaisant et professionnel** : votre site doit inspirer confiance et sérénité dès le premier coup d'œil
 - **SEO local intégré** : pages par problématique, Google Business Profile, schema markup
 - **Copywriting orienté client** : nous écrivons des textes qui parlent à votre client idéal, pas à vos confrères
 - **Livraison en 14 jours** : votre cabinet en ligne rapidement
-- **Ajustements illimités** jusqu'à satisfaction complète
-
----
-
-## Ce qu'il faut retenir
-
-Dans le marché du bien-être et des thérapies à Annecy, votre site web est votre premier outil de confiance. Il travaille pour vous 24h/24, répond aux questions de vos futurs clients avant même qu'ils vous appellent, et vous positionne sur Google à l'exact moment où quelqu'un cherche une solution à sa problématique.
-
-Un site efficace pour un thérapeute annecien n'est pas forcément complexe. Il doit être authentique, rassurant, clair sur ce que vous faites et pour qui, et optimisé pour apparaître sur les bonnes requêtes locales.
-
----
-
-## Vous êtes thérapeute ou praticien à Annecy et vous voulez un site web qui attire des clients qualifiés ?
-
-MSD Media conçoit des sites web sur mesure pour les thérapeutes et praticiens à Annecy — design apaisant, SEO local complet, copywriting orienté client et réservation en ligne. Livraison en 14 jours, ajustements illimités, satisfaction garantie.
+- **Ajustements illimités** jusqu'à satisfaction complète --- ## Ce qu'il faut retenir Dans le marché du bien-être et des thérapies à Annecy, votre site web est votre premier outil de confiance. Il travaille pour vous 24h/24, répond aux questions de vos futurs clients avant même qu'ils vous appellent, et vous positionne sur Google à l'exact moment où quelqu'un cherche une solution à sa problématique. Un site efficace pour un thérapeute annecien n'est pas forcément complexe. Il doit être authentique, rassurant, clair sur ce que vous faites et pour qui, et optimisé pour apparaître sur les bonnes requêtes locales. --- ## Vous êtes thérapeute ou praticien à Annecy et vous voulez un site web qui attire des clients qualifiés ? MSD Media conçoit des sites web sur mesure pour les thérapeutes et praticiens à Annecy — design apaisant, SEO local complet, copywriting orienté client et réservation en ligne. Livraison en 14 jours, ajustements illimités, satisfaction garantie.

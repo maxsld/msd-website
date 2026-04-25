@@ -73,12 +73,12 @@ Les tarifs varient selon la complexité du projet, le nombre de pages et le nive
 
 | Type de projet | Fourchette indicative |
 |---|---|
-| Site vitrine 5 à 8 pages | 1 500 € – 3 500 € |
-| Site vitrine 10 à 20 pages | 3 500 € – 7 000 € |
-| Site e-commerce | 5 000 € – 15 000 € |
-| Landing page seule | 800 € – 2 000 € |
+| Site vitrine 5 à 8 pages | sur devis– sur devis|
+| Site vitrine 10 à 20 pages | sur devis– sur devis|
+| Site e-commerce | sur devis– sur devis|
+| Landing page seule | sur devis– sur devis|
 
-**Attention aux offres trop basses.** Un site à 300 € sur une plateforme en ligne ne sera ni optimisé pour le SEO local à Annecy, ni adapté à votre conversion. Ce type de site coûte souvent plus cher à terme qu'un site fait correctement dès le départ.
+**Attention aux offres trop basses.** Un site à sur devis sur une plateforme en ligne ne sera ni optimisé pour le SEO local à Annecy, ni adapté à votre conversion. Ce type de site coûte souvent plus cher à terme qu'un site fait correctement dès le départ.
 
 Chez MSD Media, chaque projet est chiffré après un appel découverte gratuit pour comprendre vos objectifs réels.
 

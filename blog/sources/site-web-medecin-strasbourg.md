@@ -73,7 +73,7 @@ Une page dédiée à chaque spécialité permet à Google de vous positionner su
 - **Adresse précise** avec plan intégré (Google Maps)
 - **Horaires d'ouverture** à jour
 - **Modes de prise de rendez-vous** (téléphone, Doctolib, email)
-- **Secteur de conventionnement** (secteur 1, 2 ou 3)
+- **Secteur de conventionnement** (sect sur devis ou 3)
 - **Modes de paiement acceptés**
 - **Accessibilité** (tram, parking, accès PMR)
 - **Téléconsultation** disponible ou non
@@ -146,9 +146,9 @@ Plus de 70% des recherches médicales locales se font sur smartphone.
 
 | Type de site | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Site vitrine simple (3-5 pages) | 1 000 € – 2 500 € | Design, intégration, mobile-first, SEO on-page |
-| Site vitrine complet (6-10 pages) | 2 500 € – 5 000 € | + blog, pages spécialités, optimisation SEO locale |
-| Refonte d'un site existant | 1 500 € – 4 000 € | Audit, redirections, nouveau design, SEO |
+| Site vitrine simple (3-5 pages) | sur devis– sur devis| Design, intégration, mobile-first, SEO on-page |
+| Site vitrine complet (6-10 pages) | sur devis– sur devis| + blog, pages spécialités, optimisation SEO locale |
+| Refonte d'un site existant | sur devis– sur devis| Audit, redirections, nouveau design, SEO |
 
 **Ce qu'il faut savoir sur le ROI :** un médecin qui attire 5 nouveaux patients par mois grâce à son site web récupère son investissement en quelques semaines.
 

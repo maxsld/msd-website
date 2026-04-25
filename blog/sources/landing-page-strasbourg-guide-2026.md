@@ -104,11 +104,11 @@ Dans la plupart des cas, la solution optimale pour une entreprise strasbourgeois
 
 | Type de landing page | Fourchette de prix | Ce qui est inclus |
 |---|---|---|
-| Landing page simple (1 section CTA) | 800 € – 1 500 € | Design, intégration, formulaire, SEO de base |
-| Landing page complète (6-8 sections) | 1 500 € – 2 500 € | + témoignages, FAQ, optimisation conversion |
-| Landing page premium avec A/B testing | 2 500 € – 4 000 € | + tests, analytics avancés, optimisation continue |
+| Landing page simple (1 section CTA) | sur devis– sur devis| Design, intégration, formulaire, SEO de base |
+| Landing page complète (6-8 sections) | sur devis– sur devis| + témoignages, FAQ, optimisation conversion |
+| Landing page premium avec A/B testing | sur devis– sur devis| + tests, analytics avancés, optimisation continue |
 
-**Le ROI d'une landing page :** si votre landing page génère 5 à 10 leads qualifiés par mois avec un taux de closing de 20%, et que votre panier moyen client est de 2 000 €, votre retour sur investissement est atteint en quelques semaines.
+**Le ROI d'une landing page :** si votre landing page génère 5 à 10 leads qualifiés par mois avec un taux de closing de 20%, et que votre panier moyen client est de sur devis, votre retour sur investissement est atteint en quelques semaines.
 
 ---
 
@@ -155,7 +155,7 @@ MSD Media est spécialisée dans la création de landing pages à fort taux de c
 - **SEO on-page** : votre landing page visible sur Google dès la mise en ligne
 - **Suivi analytics** : tracking précis de toutes les conversions
 - **Livraison en 14 jours** : votre page en ligne rapidement pour lancer votre campagne
-- **Prix fixe dès 1 500 €** : pas de mauvaises surprises
+- **Prix fixe dès sur devis** : pas de mauvaises surprises
 
 ---
 

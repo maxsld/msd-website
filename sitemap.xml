@@ -55,6 +55,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://msd-media.com/agence-web-alsace/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://msd-media.com/faq-seo-annecy/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -85,6 +91,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://msd-media.com/about/maxens-soldan/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://msd-media.com/contact/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,9 +110,9 @@
   </url>
   <url>
     <loc>https://msd-media.com/agence-web-annecy/</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://msd-media.com/agence-web-annecy-le-vieux/</loc>

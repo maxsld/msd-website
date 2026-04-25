@@ -56,10 +56,10 @@ Toutes les refontes ne sont pas identiques. Il faut calibrer l'intervention au p
 
 | Type d'intervention | Ce que ça change | Pour qui | Coût indicatif |
 |---|---|---|---|
-| Optimisation performance | Vitesse, Core Web Vitals, images | Site fonctionnel mais lent | 300 – 800 € |
-| Refonte graphique | Design, couleurs, typographie | Structure OK, look vieillissant | 800 – 2 000 € |
-| Refonte UX/contenu | Structure, messages, conversion | Trafic OK, pas de leads | 1 500 – 3 500 € |
-| Refonte complète | Tout — technique, design, contenu | Site dépassé sur tous les plans | 2 500 – 6 000 € |
+| Optimisation performance | Vitesse, Core Web Vitals, images | Site fonctionnel mais lent | 300 – sur devis|
+| Refonte graphique | Design, couleurs, typographie | Structure OK, look vieillissant | 800 – sur devis|
+| Refonte UX/contenu | Structure, messages, conversion | Trafic OK, pas de leads | 1 500 – sur devis|
+| Refonte complète | Tout — technique, design, contenu | Site dépassé sur tous les plans | 2 500 – sur devis|
 
 Pour une TPE ou PME strasbourgeoise, la refonte complète est souvent la plus rentable sur 3 ans : elle adresse l'ensemble des problèmes en une fois plutôt que d'empiler les correctifs.
 
@@ -108,15 +108,15 @@ Les tarifs varient selon l'agence, le type de prestataire et la complexité du p
 
 ### Freelance local (Strasbourg/Alsace)
 
-Pour un site vitrine de 5 à 10 pages : **1 500 à 3 500 €**. Bon compromis qualité/prix pour les TPE. Vigilance sur le suivi SEO post-lancement et la pérennité du prestataire.
+Pour un site vitrine de 5 à 10 pages : **1 500 à sur devis**. Bon compromis qualité/prix pour les TPE. Vigilance sur le suivi SEO post-lancement et la pérennité du prestataire.
 
 ### Agence web strasbourgeoise
 
-Pour une refonte complète : **4 000 à 12 000 €**. Plus de process, plus de garanties, mais aussi plus de frais de structure répercutés sur le client.
+Pour une refonte complète : **4 000 à sur devis**. Plus de process, plus de garanties, mais aussi plus de frais de structure répercutés sur le client.
 
 ### Agence web spécialisée en performance (MSD Media)
 
-Pour une landing page ou un site vitrine orienté conversion : **2 450 €**. Inclut design, développement, rédaction SEO, optimisation performance (score PageSpeed garanti > 90/100), hébergement 1 an.
+Pour une landing page ou un site vitrine orienté conversion : **sur devis**. Inclut design, développement, rédaction SEO, optimisation performance (score PageSpeed garanti > 90/100), hébergement 1 an.
 
 ### Éléments qui font varier le prix
 
@@ -140,7 +140,7 @@ Un design moderne sur des textes génériques ne convertit pas. Le contenu est l
 
 ### Choisir le prestataire sur le prix uniquement
 
-Un site à 800 € qui ne génère aucun lead coûte infiniment plus cher qu'un site à 3 000 € qui ramène 5 clients par mois. Le bon critère de sélection : le ROI projeté, pas le budget initial.
+Un site à sur devis qui ne génère aucun lead coûte infiniment plus cher qu'un site à sur devis qui ramène 5 clients par mois. Le bon critère de sélection : le ROI projeté, pas le budget initial.
 
 ### Ne pas tester sur de vrais appareils mobiles
 

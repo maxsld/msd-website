@@ -131,9 +131,9 @@ Si c'est votre spécialité ou même une partie de votre activité, créez une p
 
 | Type de site | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Portfolio simple (5-8 projets) | 1 800 € – 3 500 € | Design, portfolio, SEO on-page, mobile-first |
-| Site complet avec blog | 3 500 € – 6 000 € | + blog, pages prestations, SEO local complet |
-| Refonte d'un site existant | 2 000 € – 4 500 € | Audit, nouveau design, SEO, migration portfolio |
+| Portfolio simple (5-8 projets) | sur devis– sur devis| Design, portfolio, SEO on-page, mobile-first |
+| Site complet avec blog | sur devis– sur devis| + blog, pages prestations, SEO local complet |
+| Refonte d'un site existant | sur devis– sur devis| Audit, nouveau design, SEO, migration portfolio |
 
 ---
 

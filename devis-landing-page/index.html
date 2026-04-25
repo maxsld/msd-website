@@ -9,7 +9,7 @@
     content="Simulateur de devis gratuit pour votre site web ou landing page. Obtenez une estimation personnalisée en 2 minutes selon votre type de projet, vos fonctionnalités et vos délais." />
 
   <meta name="keywords"
-    content="devis site web, simulateur devis, prix site internet, budget landing page, estimation création site web, msd media" />
+    content="devis site web, simulateur devis, valeur site internet, projet landing page, estimation création site web, msd media" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="theme-color" content="#050505" />
@@ -48,7 +48,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Simulateur Devis Site Web | MSD Media" />
-  <meta property="og:description" content="Estimez le budget de votre site web ou landing page en 2 minutes. Simulateur gratuit par MSD Media." />
+  <meta property="og:description" content="Estimez le projet de votre site web ou landing page en 2 minutes. Simulateur gratuit par MSD Media." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://msd-media.com/devis-landing-page/" />
   <meta property="og:image" content="https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp" />
@@ -60,7 +60,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Simulateur Devis Site Web | MSD Media" />
-  <meta name="twitter:description" content="Estimez le budget de votre site web en 2 minutes. Simulateur gratuit." />
+  <meta name="twitter:description" content="Estimez le projet de votre site web en 2 minutes. Simulateur gratuit." />
   <meta name="twitter:image" content="https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp" />
   <meta name="twitter:site" content="@MaxensSoldan" />
 
@@ -701,21 +701,21 @@
             <label class="sim-option">
               <input type="radio" name="budget" value="low">
               <span class="sim-option__label">
-                <span class="sim-option__title">< 1 500 €</span>
+                <span class="sim-option__title">Budget bas</span>
                 <span class="sim-option__desc">Projet simple et efficace</span>
               </span>
             </label>
             <label class="sim-option">
               <input type="radio" name="budget" value="mid">
               <span class="sim-option__label">
-                <span class="sim-option__title">1 500 – 3 500 €</span>
+                <span class="sim-option__title">Budget moyen</span>
                 <span class="sim-option__desc">Site professionnel complet</span>
               </span>
             </label>
             <label class="sim-option">
               <input type="radio" name="budget" value="high">
               <span class="sim-option__label">
-                <span class="sim-option__title">3 500 – 7 000 €</span>
+                <span class="sim-option__title">Budget élevé</span>
                 <span class="sim-option__desc">Site premium, fonctionnalités avancées</span>
               </span>
             </label>
@@ -737,7 +737,7 @@
         <div class="sim-step" id="stepResult" data-step="result">
           <div class="sim-result">
             <p class="sim-result__label">Estimation indicative</p>
-            <div class="sim-result__range" id="resultRange">— €</div>
+            <div class="sim-result__range" id="resultRange">Sur devis</div>
             <p class="sim-result__delay" id="resultDelay">Délai estimé : —</p>
 
             <div class="sim-result__details">
@@ -995,16 +995,11 @@
   });
 
   function computeResult() {
-    const raw = (state.basePrice + state.featuresAdd) * state.delayMultiplier;
-    const low = Math.round(raw / 100) * 100;
-    const high = Math.round((raw * 1.25) / 100) * 100;
-
     let delayDays = state.baseDelay;
     if (state.delayMultiplier > 1) delayDays = Math.max(5, Math.round(delayDays * 0.6));
     else if (state.delayMultiplier < 1) delayDays = Math.round(delayDays * 1.3);
 
-    document.getElementById('resultRange').textContent =
-      `${low.toLocaleString('fr-FR')} – ${high.toLocaleString('fr-FR')} €`;
+    document.getElementById('resultRange').textContent = 'Sur devis';
     document.getElementById('resultDelay').textContent =
       `Délai estimé : ${delayDays} jours · ${state.delayLabel}`;
 

@@ -27,11 +27,11 @@ Et comment les éviter.
 ## Erreur n°1 : Choisir le moins cher
 
 **Le piège :**  
-Tu vois une annonce : "Site web pro à 500€".  
+Tu vois une annonce : "Site web pro à sur devis".  
 Tu te dis "parfait, j'économise".
 
 **La réalité :**  
-Un site à 500€, c'est :
+Un site à sur devis, c'est :
 - Un template copié-collé
 - Aucune optimisation SEO
 - Des bugs partout
@@ -107,7 +107,7 @@ Ton site met 7 secondes à charger.
 **Pourquoi c'est lent :**
 - Images non compressées (3 Mo par photo)
 - Trop de plugins WordPress
-- Hébergement pourri à 3€/mois
+- Hébergement pourri à sur devis
 - Code mal optimisé
 
 **Solution :**  
@@ -211,7 +211,7 @@ Un site non maintenu = un site mort.
 
 **Solution :**  
 Prévois un budget maintenance :  
-300€ - 600€/an minimum.
+sur devis minimum.
 
 Ou choisis un prestataire qui inclut la maintenance.  
 (C'est inclus la 1ère année chez MSD Media)

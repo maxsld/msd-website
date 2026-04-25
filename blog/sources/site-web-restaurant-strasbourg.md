@@ -124,9 +124,9 @@ Créer une page dédiée "Notre restaurant pendant le marché de Noël de Strasb
 
 | Type de site | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Site vitrine simple | 1 200 € – 2 500 € | Design, menu en ligne, réservation, mobile-first, SEO on-page |
-| Site complet avec pages événements | 2 500 € – 4 500 € | + pages spécialités, blog, galerie, privatisation |
-| Refonte d'un site existant | 1 500 € – 3 500 € | Audit, nouveau design, SEO, optimisation vitesse |
+| Site vitrine simple | sur devis– sur devis| Design, menu en ligne, réservation, mobile-first, SEO on-page |
+| Site complet avec pages événements | sur devis– sur devis| + pages spécialités, blog, galerie, privatisation |
+| Refonte d'un site existant | sur devis– sur devis| Audit, nouveau design, SEO, optimisation vitesse |
 
 **Le retour sur investissement :** un restaurant à Strasbourg qui attire 10 à 20 nouvelles réservations par mois grâce à son site web récupère rapidement son investissement — surtout si la réservation directe lui évite les commissions de plateforme.
 

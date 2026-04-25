@@ -553,7 +553,6 @@
         var max = Number(range.max) || 100;
         var pct = ((value - min) / (max - min)) * 100;
         var totalAmount = value * COMMISSION_PER_CLIENT;
-
         line.style.setProperty("--affiliate-pct", pct + "%");
         referrals.textContent = value + " parrainages";
         amount.textContent = totalAmount.toLocaleString("fr-FR", { maximumFractionDigits: 2 }) + " €";

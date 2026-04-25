@@ -99,7 +99,7 @@ Le champ `sameAs` est particulièrement important pour le GEO : il relie votre e
       "name": "Combien coûte une landing page ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Une landing page sur mesure coûte entre 800€ et 3000€..."
+        "text": "Une landing page sur mesure coûte entre sur devis et sur devis..."
       }
     }
   ]
@@ -123,7 +123,7 @@ Les FAQ sont les extraits que les IA citent le plus souvent verbatim. Une FAQ bi
     "postalCode": "XXXXX"
   },
   "areaServed": {"@type": "City", "name": "Ville"},
-  "priceRange": "€€"
+  "priceRange": "Sur devis"
 }
 ```
 

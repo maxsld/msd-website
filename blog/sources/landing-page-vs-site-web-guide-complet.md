@@ -89,7 +89,7 @@ Le site internet complet s'impose dans ces cas :
 | **Objectif principal** | Conversion immédiate | Présence globale + SEO |
 | **Nombre de pages** | 1 page unique | Plusieurs pages (5 à 50+) |
 | **Temps de création** | 7 à 14 jours | 3 à 12 semaines |
-| **Budget indicatif** | 800€ à 3000€ | 2500€ à 15000€+ |
+| **Budget indicatif** | sur devisà sur devis| sur devisà sur devis+ |
 | **Utilisation idéale** | Campagnes publicitaires | Stratégie digitale long terme |
 | **Navigation** | Minimaliste ou absente | Menu complet et hiérarchisé |
 | **SEO** | Limité (1 mot-clé) | Étendu (multiples requêtes) |
@@ -160,14 +160,8 @@ Que vous choisissiez une landing page ou un site complet, **MSD Media** applique
 ### Fourchettes de Prix Indicatives
 
 **Landing page professionnelle** :
-- Entrée de gamme : 800€ - 1500€
-- Standard MSD Media : 1500€ - 3000€
-- Premium (animations, vidéo) : 3000€ - 5000€
-
-**Site web complet** :
-- Site vitrine (5-10 pages) : 2500€ - 6000€
-- Site corporate (15-30 pages + blog) : 6000€ - 12000€
-- Site e-commerce ou sur mesure : 10000€ - 30000€+
+- Entrée de gamme : sur devis- Standard MSD Media : sur devis- Premium (animations, vidéo) : sur devis**Site web complet** :
+- Site vitrine (5-10 pages) : sur devis- Site corporate (15-30 pages + blog) : sur devis- Site e-commerce ou sur mesure : sur devis+
 
 *Les tarifs varient selon complexité, fonctionnalités et niveau de personnalisation.*
 

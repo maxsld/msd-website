@@ -43,7 +43,7 @@ Le site vitrine présente votre entreprise, vos services, votre équipe et vos c
 - Les artisans et PME locales
 - Les commerces de proximité
 
-**Fourchette de prix à Strasbourg :** 1 200 € – 4 000 € selon la complexité et l'agence
+**Fourchette de prix à Strasbourg :** sur devis– sur devis selon la complexité et l'agence
 
 **Délai moyen :** 2 à 6 semaines
 
@@ -54,15 +54,13 @@ La landing page est une page unique conçue pour convertir un type de visiteur p
 - Capter des leads qualifiés sur une campagne Google Ads ou Meta Ads
 - Tester un marché avant d'investir dans un site complet
 
-**Fourchette de prix :** 800 € – 2 500 €
-
-**Délai moyen :** 1 à 2 semaines
+**Fourchette de prix :** sur devis– sur devis**Délai moyen :** 1 à 2 semaines
 
 ### Le site e-commerce
 
 Pour vendre en ligne — produits physiques, produits locaux alsaciens, réservations en ligne. La complexité (et le coût) varie selon le nombre de produits, les intégrations logistiques et les fonctionnalités souhaitées.
 
-**Fourchette de prix :** 3 000 € – 15 000 €+
+**Fourchette de prix :** sur devis– sur devis+
 
 **Délai moyen :** 1 à 4 mois
 
@@ -78,11 +76,11 @@ Voici une grille indicative pour le marché strasbourgeois :
 
 | Type de prestation | Fourchette basse | Fourchette haute |
 |---|---|---|
-| Landing page simple | 800 € | 2 500 € |
-| Site vitrine 4-6 pages | 1 500 € | 4 000 € |
-| Site vitrine avec blog SEO | 3 000 € | 6 000 € |
-| Site e-commerce (catalogue moyen) | 4 000 € | 12 000 € |
-| Refonte complète | 2 000 € | 8 000 € |
+| Landing page simple | sur devis| sur devis|
+| Site vitrine 4-6 pages | sur devis| sur devis|
+| Site vitrine avec blog SEO | sur devis| sur devis|
+| Site e-commerce (catalogue moyen) | sur devis| sur devis|
+| Refonte complète | sur devis| sur devis|
 
 **Ce que le prix inclut généralement :**
 - Design sur mesure ou personnalisation d'un template
@@ -97,7 +95,7 @@ Voici une grille indicative pour le marché strasbourgeois :
 - Maintenance mensuelle
 - Hébergement
 
-**Attention aux prix trop bas :** un site créé pour 300 € sur Wix ou par un étudiant sans expérience ne vous positionnera pas sur Google et ne convertira pas vos visiteurs. Le coût d'un mauvais site est bien supérieur à l'économie réalisée à la création.
+**Attention aux prix trop bas :** un site créé pour sur devis sur Wix ou par un étudiant sans expérience ne vous positionnera pas sur Google et ne convertira pas vos visiteurs. Le coût d'un mauvais site est bien supérieur à l'économie réalisée à la création.
 
 ---
 

@@ -113,9 +113,9 @@ Votre fiche Google doit préciser votre catégorie (Personal Trainer, Coach spor
 
 | Type de site | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Site vitrine simple | 1 000 € – 2 200 € | Design, présentation, offres, formulaire, SEO |
-| Site avec blog et réservation | 2 200 € – 4 000 € | + blog, calendrier réservation, pages spécialités |
-| Refonte d'un site existant | 1 200 € – 3 000 € | Audit, nouveau design, SEO |
+| Site vitrine simple | sur devis– sur devis| Design, présentation, offres, formulaire, SEO |
+| Site avec blog et réservation | sur devis– sur devis| + blog, calendrier réservation, pages spécialités |
+| Refonte d'un site existant | sur devis– sur devis| Audit, nouveau design, SEO |
 
 ---
 

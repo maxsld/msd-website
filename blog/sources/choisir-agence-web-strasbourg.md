@@ -76,11 +76,11 @@ Demandez un devis détaillé avec les postes séparés : design, développement,
 
 | Prestation | Fourchette basse | Fourchette haute |
 |------------|-----------------|-----------------|
-| Landing page | 800€ | 4 000€ |
-| Site vitrine | 2 000€ | 12 000€ |
-| Site e-commerce | 4 000€ | 25 000€+ |
-| Refonte SEO | 1 500€ | 8 000€ |
-| Maintenance mensuelle | 50€/mois | 500€/mois |
+| Landing page | sur devis| sur devis|
+| Site vitrine | sur devis| sur devis|
+| Site e-commerce | sur devis| sur devis+ |
+| Refonte SEO | sur devis| sur devis|
+| Maintenance mensuelle | sur devis | sur devis |
 
 Ces tarifs varient selon la taille de l'agence, l'expérience et les prestations incluses.
 

@@ -188,9 +188,9 @@ Des requêtes comme "avocat droit des frontaliers Annecy", "avocat franco-suisse
 
 | Type de site | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Site vitrine simple (4-6 pages) | 1 500 € – 3 000 € | Design, intégration, mobile-first, SEO on-page |
-| Site complet avec pages par domaine (8-15 pages) | 3 000 € – 6 000 € | + pages domaines, blog, maillage SEO complet |
-| Refonte d'un site existant | 2 000 € – 5 000 € | Audit, redirections, nouveau design, SEO |
+| Site vitrine simple (4-6 pages) | sur devis– sur devis| Design, intégration, mobile-first, SEO on-page |
+| Site complet avec pages par domaine (8-15 pages) | sur devis– sur devis| + pages domaines, blog, maillage SEO complet |
+| Refonte d'un site existant | sur devis– sur devis| Audit, redirections, nouveau design, SEO |
 
 **Le retour sur investissement :** un avocat à Annecy qui attire 3 à 5 nouveaux clients par mois via son site web récupère son investissement initial en quelques semaines. Un seul dossier important peut couvrir le coût total de la création du site.
 

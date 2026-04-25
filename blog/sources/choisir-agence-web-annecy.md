@@ -90,7 +90,7 @@ La question à poser : **"Puis-je contacter directement un ou deux de vos client
 
 ### Erreur n°1 : Choisir sur le prix uniquement
 
-C'est l'erreur classique. Une agence web à Annecy qui propose un site vitrine à 500 € ne peut pas vous livrer un site stratégiquement construit, optimisé pour le SEO local et conçu pour convertir. Le budget investi dans un bon site web est récupéré en quelques mois si le travail est bien fait.
+C'est l'erreur classique. Une agence web à Annecy qui propose un site vitrine à sur devis ne peut pas vous livrer un site stratégiquement construit, optimisé pour le SEO local et conçu pour convertir. Le budget investi dans un bon site web est récupéré en quelques mois si le travail est bien fait.
 
 La bonne question n'est pas "combien ça coûte ?" mais "quel est le retour sur investissement attendu ?"
 
@@ -134,13 +134,13 @@ Les tarifs pratiqués par les agences web à Annecy varient considérablement se
 
 | Type de projet | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Landing page sur mesure | 800 € – 2 000 € | 1 page, copywriting, SEO on-page, mobile-first |
-| Site vitrine 5-8 pages | 1 500 € – 4 000 € | Design, intégration, SEO local, formulaire |
-| Site vitrine 10-20 pages | 3 500 € – 8 000 € | + blog, pages service, maillage interne |
-| Refonte complète | 2 000 € – 7 000 € | Audit, redirections, nouveau design, SEO |
-| Site e-commerce | 5 000 € – 15 000 € | Catalogue, paiement, logistique, SEO |
+| Landing page sur mesure | sur devis– sur devis| 1 page, copywriting, SEO on-page, mobile-first |
+| Site vitrine 5-8 pages | sur devis– sur devis| Design, intégration, SEO local, formulaire |
+| Site vitrine 10-20 pages | sur devis– sur devis| + blog, pages service, maillage interne |
+| Refonte complète | sur devis– sur devis| Audit, redirections, nouveau design, SEO |
+| Site e-commerce | sur devis– sur devis| Catalogue, paiement, logistique, SEO |
 
-**Ce que ces fourchettes ne disent pas :** deux devis au même prix peuvent cacher des niveaux de qualité radicalement différents. Un site à 2 000 € conçu avec une vraie stratégie SEO locale et un copywriting orienté conversion vaut dix fois plus qu'un site à 2 000 € basé sur un template générique sans optimisation.
+**Ce que ces fourchettes ne disent pas :** deux devis au même prix peuvent cacher des niveaux de qualité radicalement différents. Un site à sur devis conçu avec une vraie stratégie SEO locale et un copywriting orienté conversion vaut dix fois plus qu'un site à sur devis basé sur un template générique sans optimisation.
 
 ---
 

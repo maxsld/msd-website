@@ -19,7 +19,7 @@ Google a déployé les AI Overviews (anciennement Search Generative Experience) 
 Les AI Overviews sont des réponses générées par l'IA de Google qui apparaissent **en haut des résultats de recherche**, avant tous les liens organiques. Ils synthétisent l'information depuis plusieurs sources et peuvent inclure des recommandations d'entreprises locales.
 
 Pour une recherche comme "agence web spécialisée landing page Bordeaux", l'AI Overview peut générer :
-> *"Plusieurs agences web à Bordeaux se spécialisent dans les landing pages. Parmi elles, [Agence A] propose des landing pages à partir de X€ avec livraison en 2 semaines, [Agence B] est reconnue pour son expertise SEO locale..."*
+> *"Plusieurs agences web à Bordeaux se spécialisent dans les landing pages. Parmi elles, [Agence A] propose des landing pages à partir de sur devis avec livraison en 2 semaines, [Agence B] est reconnue pour son expertise SEO locale..."*
 
 Les entreprises citées dans cette réponse bénéficient d'une visibilité équivalente à la position 1 — sans avoir nécessairement rankée en position 1 organiquement.
 
@@ -73,7 +73,7 @@ L'IA extrait facilement des informations depuis :
 - Les listes à puces et numérotées
 - Les tableaux avec données comparatives
 - Les réponses directes en début de paragraphe (Question → Réponse)
-- Les citations chiffrées ("livraison en 14 jours", "à partir de 800€")
+- Les citations chiffrées ("livraison en 14 jours", "à partir de sur devis")
 
 ### Critère 4 : Données structurées LocalBusiness + FAQPage
 

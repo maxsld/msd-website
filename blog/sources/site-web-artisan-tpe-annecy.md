@@ -6,136 +6,29 @@ image: "https://img.freepik.com/fotos-kostenlos/abstrakter-gradient-hintergrund-
 tags: ["site web artisan Annecy", "site web TPE Annecy", "création site web Annecy", "agence web Annecy", "SEO local Annecy", "MSD Media"]
 slug: "site-web-artisan-tpe-annecy"
 keyword: "site web artisan Annecy"
----
-
-# Site web pour artisan et TPE à Annecy : ce qu'il faut vraiment (et ce qu'il ne faut pas)
-
-Vous êtes plombier, électricien, coach, thérapeute, photographe ou consultant à Annecy. Vous savez que vous avez besoin d'un site web. Mais entre les offres à 300 € sur Wix, les agences qui vous proposent 15 000 € de développement sur mesure et les templates WordPress en libre accès, difficile de savoir quoi faire.
-
-Cet article vous donne une réponse honnête et directe : ce dont vous avez vraiment besoin, ce que ça coûte, et ce qui va réellement vous ramener des clients à Annecy.
-
----
-
-## La réalité du site web pour un artisan ou une TPE à Annecy
-
-Un artisan ou un indépendant à Annecy n'a pas besoin d'un site complexe. Il a besoin d'un site qui fait trois choses :
-
-1. **Apparaître sur Google** quand quelqu'un cherche son métier à Annecy
+--- # Site web pour artisan et TPE à Annecy : ce qu'il faut vraiment (et ce qu'il ne faut pas) Vous êtes plombier, électricien, coach, thérapeute, photographe ou consultant à Annecy. Vous savez que vous avez besoin d'un site web. Mais entre les offres à sur devis sur Wix, les agences qui vous proposent sur devis de développement sur mesure et les templates WordPress en libre accès, difficile de savoir quoi faire. Cet article vous donne une réponse honnête et directe : ce dont vous avez vraiment besoin, ce que ça coûte, et ce qui va réellement vous ramener des clients à Annecy. --- ## La réalité du site web pour un artisan ou une TPE à Annecy Un artisan ou un indépendant à Annecy n'a pas besoin d'un site complexe. Il a besoin d'un site qui fait trois choses : 1. **Apparaître sur Google** quand quelqu'un cherche son métier à Annecy
 2. **Convaincre en quelques secondes** que vous êtes la bonne personne pour le job
-3. **Générer un appel, un email ou une réservation** sans friction
-
-Tout le reste — blog, espace client, animations sophistiquées — est accessoire tant que ces trois objectifs ne sont pas atteints.
-
----
-
-## Ce qu'il faut vraiment sur votre site
-
-### Une page d'accueil claire et orientée local
-
-Votre page d'accueil doit répondre immédiatement aux questions de votre visiteur : qui êtes-vous, dans quelle ville (Annecy, Haute-Savoie), pour quel type de client, et comment vous joindre. Le numéro de téléphone doit être visible sans scroller.
-
-### Une page par service
-
-Si vous proposez plusieurs prestations distinctes, chacune mérite sa propre page. C'est utile pour le SEO (une page = une requête cible) et pour la clarté de votre offre. Un artisan plombier à Annecy peut avoir des pages séparées pour "dépannage plomberie Annecy", "installation chauffe-eau Annecy" et "plomberie salle de bain Annecy".
-
-### Des avis clients visibles
-
-Les avis Google sont le premier réflexe d'un habitant d'Annecy avant de contacter un artisan. Intégrez vos avis directement sur votre site, ou affichez votre note Google avec un lien vers votre fiche. La preuve sociale locale est particulièrement puissante : un client annecien fait davantage confiance à un avis d'un autre habitant d'Annecy.
-
-### Un call-to-action simple et direct
-
-"Appelez-nous au 04 XX XX XX XX" ou "Demandez votre devis gratuit" — c'est tout ce qu'il faut. Pas de formulaire à 12 champs. Pas de processus compliqué. La friction est l'ennemi de la conversion.
-
-### Une page de mentions légales et une politique de confidentialité
-
-Obligatoires légalement. Elles rassurent aussi les visiteurs sur le sérieux de votre structure.
-
----
-
-## Ce dont vous n'avez pas besoin (pour l'instant)
-
-### Un blog
-Un blog est utile pour le SEO à long terme — mais uniquement si vous publiez régulièrement des contenus de qualité. Un blog avec 2 articles datant de 2022 nuit à votre image. Si vous n'avez pas le temps d'écrire 2 articles par mois, ne mettez pas de blog.
-
-### Une boutique en ligne
-Sauf si votre activité le justifie directement, une boutique e-commerce ajoute de la complexité pour peu de résultats supplémentaires pour un artisan local.
-
-### Un site en plusieurs langues
-Annecy est proche de la Suisse et de Genève, mais à moins que vous cibliez explicitement une clientèle internationale, un site en français suffit largement.
-
-### Des animations élaborées
-Les effets visuels sophistiqués ralentissent votre site et distraient vos visiteurs de l'essentiel : comprendre ce que vous faites et comment vous contacter.
-
----
-
-## Le SEO local pour un artisan à Annecy : les bases indispensables
-
-### 1. Optimiser votre Google Business Profile
-C'est gratuit et c'est l'outil le plus puissant pour un artisan à Annecy. Remplissez absolument tous les champs : description avec vos mots-clés, catégories précises, zone de service (Annecy, Cran-Gevrier, Seynod, Meythet…), photos récentes, horaires. Répondez à chaque avis, même les négatifs.
-
-### 2. Des mots-clés géolocalisés sur chaque page
-Sur votre page d'accueil et vos pages de service, intégrez naturellement votre ville : "plombier à Annecy", "électricien Haute-Savoie", "coach professionnel Annecy". Ne surchargez pas, mais assurez-vous que Google comprend où vous exercez.
-
-### 3. Un nom de domaine professionnel
-Évitez les sous-domaines des plateformes gratuites (monsite.wixsite.com). Un domaine en .fr avec votre nom ou votre métier + ville (plombier-annecy.fr par exemple) renforce votre crédibilité et votre SEO local.
-
-### 4. Un site rapide sur mobile
-Plus de 60 % des recherches locales à Annecy se font sur smartphone. Si votre site met 5 secondes à charger sur mobile, vous perdez la majorité de vos visiteurs avant qu'ils aient vu votre offre.
-
-### 5. Des citations locales cohérentes
-Votre nom, adresse et téléphone doivent être identiques partout sur le web : site, Google Business, Pages Jaunes, Yelp, Houzz (pour les artisans du bâtiment). Les incohérences pénalisent votre SEO local.
-
----
-
-## Quel budget prévoir pour un artisan ou TPE à Annecy ?
-
-Voici une fourchette honnête selon les options disponibles :
-
-| Solution | Budget indicatif | Niveau SEO | Recommandé pour |
+3. **Générer un appel, un email ou une réservation** sans friction Tout le reste — blog, espace client, animations sophistiquées — est accessoire tant que ces trois objectifs ne sont pas atteints. --- ## Ce qu'il faut vraiment sur votre site ### Une page d'accueil claire et orientée local Votre page d'accueil doit répondre immédiatement aux questions de votre visiteur : qui êtes-vous, dans quelle ville (Annecy, Haute-Savoie), pour quel type de client, et comment vous joindre. Le numéro de téléphone doit être visible sans scroller. ### Une page par service Si vous proposez plusieurs prestations distinctes, chacune mérite sa propre page. C'est utile pour le SEO (une page = une requête cible) et pour la clarté de votre offre. Un artisan plombier à Annecy peut avoir des pages séparées pour "dépannage plomberie Annecy", "installation chauffe-eau Annecy" et "plomberie salle de bain Annecy". ### Des avis clients visibles Les avis Google sont le premier réflexe d'un habitant d'Annecy avant de contacter un artisan. Intégrez vos avis directement sur votre site, ou affichez votre note Google avec un lien vers votre fiche. La preuve sociale locale est particulièrement puissante : un client annecien fait davantage confiance à un avis d'un autre habitant d'Annecy. ### Un call-to-action simple et direct "Appelez-nous au 04 XX XX XX XX" ou "Demandez votre devis gratuit" — c'est tout ce qu'il faut. Pas de formulaire à 12 champs. Pas de processus compliqué. La friction est l'ennemi de la conversion. ### Une page de mentions légales et une politique de confidentialité Obligatoires légalement. Elles rassurent aussi les visiteurs sur le sérieux de votre structure. --- ## Ce dont vous n'avez pas besoin (pour l'instant) ### Un blog
+Un blog est utile pour le SEO à long terme — mais uniquement si vous publiez régulièrement des contenus de qualité. Un blog avec 2 articles datant de 2022 nuit à votre image. Si vous n'avez pas le temps d'écrire 2 articles par mois, ne mettez pas de blog. ### Une boutique en ligne
+Sauf si votre activité le justifie directement, une boutique e-commerce ajoute de la complexité pour peu de résultats supplémentaires pour un artisan local. ### Un site en plusieurs langues
+Annecy est proche de la Suisse et de Genève, mais à moins que vous cibliez explicitement une clientèle internationale, un site en français suffit largement. ### Des animations élaborées
+Les effets visuels sophistiqués ralentissent votre site et distraient vos visiteurs de l'essentiel : comprendre ce que vous faites et comment vous contacter. --- ## Le SEO local pour un artisan à Annecy : les bases indispensables ### 1. Optimiser votre Google Business Profile
+C'est gratuit et c'est l'outil le plus puissant pour un artisan à Annecy. Remplissez absolument tous les champs : description avec vos mots-clés, catégories précises, zone de service (Annecy, Cran-Gevrier, Seynod, Meythet…), photos récentes, horaires. Répondez à chaque avis, même les négatifs. ### 2. Des mots-clés géolocalisés sur chaque page
+Sur votre page d'accueil et vos pages de service, intégrez naturellement votre ville : "plombier à Annecy", "électricien Haute-Savoie", "coach professionnel Annecy". Ne surchargez pas, mais assurez-vous que Google comprend où vous exercez. ### 3. Un nom de domaine professionnel
+Évitez les sous-domaines des plateformes gratuites (monsite.wixsite.com). Un domaine en .fr avec votre nom ou votre métier + ville (plombier-annecy.fr par exemple) renforce votre crédibilité et votre SEO local. ### 4. Un site rapide sur mobile
+Plus de 60 % des recherches locales à Annecy se font sur smartphone. Si votre site met 5 secondes à charger sur mobile, vous perdez la majorité de vos visiteurs avant qu'ils aient vu votre offre. ### 5. Des citations locales cohérentes
+Votre nom, adresse et téléphone doivent être identiques partout sur le web : site, Google Business, Pages Jaunes, Yelp, Houzz (pour les artisans du bâtiment). Les incohérences pénalisent votre SEO local. --- ## Quel budget prévoir pour un artisan ou TPE à Annecy ? Voici une fourchette honnête selon les options disponibles : | Solution | Budget indicatif | Niveau SEO | Recommandé pour |
 |---|---|---|---|
-| Wix / Squarespace en autonomie | 0 – 300 €/an | Faible | Budget très serré, test rapide |
-| WordPress avec template | 500 – 1 500 € | Moyen | Si vous êtes à l'aise techniquement |
-| Site vitrine par agence web Annecy | 1 500 – 3 500 € | Élevé | Résultats sérieux et durables |
-| Landing page sur mesure | 800 – 1 500 € | Élevé | Offre unique, campagne locale |
-
-Le site Wix peut suffire pour tester, mais il atteindra rapidement ses limites SEO. Pour un artisan qui veut apparaître en première page sur "plombier Annecy" ou "électricien Haute-Savoie", un site conçu avec une vraie stratégie SEO locale change tout.
-
----
-
-## Les 5 erreurs les plus fréquentes des artisans et TPE à Annecy
-
-**1. Ne pas revendiquer sa fiche Google Business**
-Des milliers d'entreprises anneciennes ont une fiche Google non réclamée, avec des informations fausses ou incomplètes. C'est de l'argent laissé sur la table chaque jour.
-
-**2. Utiliser un site template sans personnalisation SEO**
-Un template Wix non optimisé ne sortira jamais sur "votre métier + Annecy". La structure technique et le contenu doivent être travaillés spécifiquement pour le SEO local.
-
-**3. Avoir un numéro de téléphone non cliquable sur mobile**
-Sur smartphone, le numéro de téléphone doit être un lien cliquable (tel:). Si un visiteur doit copier-coller votre numéro pour vous appeler, vous perdez des clients.
-
-**4. Ignorer les avis clients**
-Un artisan à Annecy avec 3 avis sur Google est moins visible et moins crédible qu'un concurrent avec 40 avis. Demandez systématiquement un avis à chaque client satisfait — c'est légal, gratuit et très efficace.
-
-**5. Oublier de mesurer les résultats**
-Sans Google Analytics et Google Search Console configurés, vous volez à l'aveugle. Ces outils gratuits vous disent exactement combien de personnes visitent votre site, d'où elles viennent et ce qu'elles cherchent.
-
----
-
-## Résumé : ce qu'il vous faut pour démarrer
-
-Pour un artisan ou une TPE à Annecy qui veut des résultats rapides :
-
-- Un site de 4 à 6 pages, clair et mobile-first
+| Wix / Squarespace en autonomie | 0 – sur devis | Faible | Budget très serré, test rapide |
+| WordPress avec template | 500 – sur devis| Moyen | Si vous êtes à l'aise techniquement |
+| Site vitrine par agence web Annecy | 1 500 – sur devis| Élevé | Résultats sérieux et durables |
+| Landing page sur mesure | 800 – sur devis| Élevé | Offre unique, campagne locale | Le site Wix peut suffire pour tester, mais il atteindra rapidement ses limites SEO. Pour un artisan qui veut apparaître en première page sur "plombier Annecy" ou "électricien Haute-Savoie", un site conçu avec une vraie stratégie SEO locale change tout. --- ## Les 5 erreurs les plus fréquentes des artisans et TPE à Annecy **1. Ne pas revendiquer sa fiche Google Business**
+Des milliers d'entreprises anneciennes ont une fiche Google non réclamée, avec des informations fausses ou incomplètes. C'est de l'argent laissé sur la table chaque jour. **2. Utiliser un site template sans personnalisation SEO**
+Un template Wix non optimisé ne sortira jamais sur "votre métier + Annecy". La structure technique et le contenu doivent être travaillés spécifiquement pour le SEO local. **3. Avoir un numéro de téléphone non cliquable sur mobile**
+Sur smartphone, le numéro de téléphone doit être un lien cliquable (tel:). Si un visiteur doit copier-coller votre numéro pour vous appeler, vous perdez des clients. **4. Ignorer les avis clients**
+Un artisan à Annecy avec 3 avis sur Google est moins visible et moins crédible qu'un concurrent avec 40 avis. Demandez systématiquement un avis à chaque client satisfait — c'est légal, gratuit et très efficace. **5. Oublier de mesurer les résultats**
+Sans Google Analytics et Google Search Console configurés, vous volez à l'aveugle. Ces outils gratuits vous disent exactement combien de personnes visitent votre site, d'où elles viennent et ce qu'elles cherchent. --- ## Résumé : ce qu'il vous faut pour démarrer Pour un artisan ou une TPE à Annecy qui veut des résultats rapides : - Un site de 4 à 6 pages, clair et mobile-first
 - Un Google Business Profile complet et optimisé
 - Des mots-clés géolocalisés sur chaque page
 - Des avis clients visibles et récents
-- Un CTA simple : numéro de téléphone cliquable + formulaire court
-
-C'est suffisant pour apparaître sur vos requêtes locales et convertir vos visiteurs en clients — sans budget marketing démesuré.
-
----
-
-## MSD Media accompagne les artisans et TPE à Annecy
-
-Chez MSD Media, on conçoit des sites web sur mesure pour les indépendants et petites entreprises à Annecy : clairs, rapides, optimisés pour le SEO local et livrés en 14 jours. Pas de superflu. Pas de jargon. Des résultats mesurables.
-
+- Un CTA simple : numéro de téléphone cliquable + formulaire court C'est suffisant pour apparaître sur vos requêtes locales et convertir vos visiteurs en clients — sans budget marketing démesuré. --- ## MSD Media accompagne les artisans et TPE à Annecy Chez MSD Media, on conçoit des sites web sur mesure pour les indépendants et petites entreprises à Annecy : clairs, rapides, optimisés pour le SEO local et livrés en 14 jours. Pas de superflu. Pas de jargon. Des résultats mesurables. 

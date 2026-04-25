@@ -131,9 +131,9 @@ Des requêtes comme "rénovation maison colombages Strasbourg", "artisan bâtime
 
 | Type de site | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Site vitrine simple (3-5 pages) | 1 200 € – 2 500 € | Design, galerie réalisations, formulaire devis, SEO |
-| Site complet avec pages prestations | 2 500 € – 4 500 € | + pages par prestation, blog, SEO local complet |
-| Refonte d'un site existant | 1 500 € – 3 500 € | Audit, nouveau design, SEO, galerie mise à jour |
+| Site vitrine simple (3-5 pages) | sur devis– sur devis| Design, galerie réalisations, formulaire devis, SEO |
+| Site complet avec pages prestations | sur devis– sur devis| + pages par prestation, blog, SEO local complet |
+| Refonte d'un site existant | sur devis– sur devis| Audit, nouveau design, SEO, galerie mise à jour |
 
 **Le retour sur investissement :** un artisan strasbourgeois qui génère 5 à 10 nouvelles demandes de devis qualifiées par mois grâce à son site récupère son investissement en quelques chantiers.
 

@@ -494,12 +494,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const wordSet = heroWordSets[lang] || heroWordSets.fr;
     if (!heroLead || !heroWord || !wordSet.words.length) return;
 
+    stopHeroWordRotation();
     heroWordLang = lang;
     heroWordIndex = 0;
     heroLead.textContent = wordSet.lead;
+    const isMobileView = window.matchMedia("(max-width: 768px)").matches;
     swapHeroWord(wordSet.words[heroWordIndex], false);
 
-    stopHeroWordRotation();
+    // Sur mobile on garde le mot fixe pour éviter tout décalage de page.
+    if (isMobileView) {
+      heroWordWrap.style.width = "auto";
+      return;
+    }
+
     if (wordSet.words.length < 2) return;
 
     heroWordIntervalId = window.setInterval(() => {
@@ -603,8 +610,22 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.remove("is-hidden", "is-visible");
   }
 
+  let wasMobileHeroView = window.matchMedia("(max-width: 768px)").matches;
   window.addEventListener("resize", () => {
     if (!heroWord || !heroWordWrap) return;
+    const isMobileHeroView = window.matchMedia("(max-width: 768px)").matches;
+
+    if (isMobileHeroView !== wasMobileHeroView) {
+      wasMobileHeroView = isMobileHeroView;
+      startHeroWordRotation(heroWordLang);
+      return;
+    }
+
+    if (isMobileHeroView) {
+      heroWordWrap.style.width = "auto";
+      return;
+    }
+
     const currentWidth = measureHeroWordWidth(heroWord.textContent || "");
     if (currentWidth) {
       heroWordWrap.style.width = `${currentWidth}px`;

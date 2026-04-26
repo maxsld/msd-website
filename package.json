@@ -5,7 +5,14 @@
   "scripts": {
     "analytics:weekly": "node scripts/weekly-analytics-report.mjs",
     "blog:generate": "node scripts/generate-articles.js",
-    "blog:build": "cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs"
+    "blog:build": "cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs",
+    "index:submit": "node scripts/google-index.mjs --days=7",
+    "index:dry-run": "node scripts/google-index.mjs --days=7 --dry-run",
+    "lastmod:update": "node scripts/update-lastmod.mjs",
+    "lastmod:dry-run": "node scripts/update-lastmod.mjs --dry-run",
+    "uptime:check": "node scripts/uptime-monitor.mjs",
+    "cwv:report": "node scripts/cwv-report.mjs",
+    "hooks:setup": "git config core.hooksPath .githooks && echo 'Hooks installés ✓'"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",

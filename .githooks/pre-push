@@ -1,0 +1,16 @@
+#!/bin/sh
+# Hook pre-push : met à jour les lastmod dans les sitemaps avant chaque push.
+# Installé via : npm run hooks:setup
+
+echo "[pre-push] Mise à jour des lastmod dans les sitemaps..."
+
+node scripts/update-lastmod.mjs
+
+# Si des sitemaps ont été modifiés, les committer avant le push
+if ! git diff --quiet sitemap.xml blog/sitemap.xml; then
+  git add sitemap.xml blog/sitemap.xml
+  git commit -m "chore(sitemap): update lastmod [skip ci]"
+  echo "[pre-push] Sitemaps commités ✓"
+fi
+
+exit 0

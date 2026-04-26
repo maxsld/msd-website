@@ -1,0 +1,46 @@
+name: Index on Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+
+    # Ignorer les commits automatiques du bot (build-blog, weekly-blog…)
+    if: "!contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, 'chore(blog):') && !contains(github.event.head_commit.message, 'chore(sitemap):')"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      # Mettre à jour les lastmod avant de pinguer Google
+      - name: Update sitemap lastmod
+        run: node scripts/update-lastmod.mjs
+
+      - name: Commit updated sitemaps
+        run: |
+          git config user.name "msd-seo-bot"
+          git config user.email "seo@msd-media.com"
+          git add sitemap.xml blog/sitemap.xml
+          git diff --cached --quiet || git commit -m "chore(sitemap): update lastmod [skip ci]"
+          git push
+
+      # Attendre que Vercel ait fini de déployer (~60s)
+      - name: Wait for Vercel deploy
+        run: sleep 90
+
+      # Ping sitemaps (Google + Bing) + IndexNow pour les URLs modifiées
+      - name: Submit URLs
+        run: node scripts/google-index.mjs --days=7

@@ -27,15 +27,18 @@ const EVENTS_OF_INTEREST = [
 ];
 
 const requiredEnvKeys = [
-  "GA4_PROPERTY_ID",
-  "GOOGLE_SERVICE_ACCOUNT_EMAIL",
-  "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY",
-  "GSC_SITE_URL",
   "SMTP_HOST",
   "SMTP_PORT",
   "SMTP_USER",
   "SMTP_PASS",
   "MAIL_TO"
+];
+
+const googleEnvKeys = [
+  "GA4_PROPERTY_ID",
+  "GOOGLE_SERVICE_ACCOUNT_EMAIL",
+  "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY",
+  "GSC_SITE_URL"
 ];
 
 async function loadEnvFile(filePath) {
@@ -361,6 +364,16 @@ async function run() {
   assertEnvVars(requiredEnvKeys);
 
   const { startDate, endDate } = getDateRange();
+
+  const missingGoogle = googleEnvKeys.filter((k) => !process.env[k]);
+  if (missingGoogle.length) {
+    console.warn(
+      `[weekly-analytics-report] Credentials Google manquants (${missingGoogle.join(", ")}). ` +
+      `Configurez ces secrets GitHub pour activer le rapport GA4/GSC. Rapport ignoré.`
+    );
+    return;
+  }
+
   const token = await getGoogleAccessToken();
 
   const baseDateRange = [{ startDate, endDate }];

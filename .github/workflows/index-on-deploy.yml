@@ -4,9 +4,6 @@ on:
   push:
     branches: [main]
 
-permissions:
-  contents: write
-
 jobs:
   index:
     runs-on: ubuntu-latest
@@ -16,38 +13,22 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
-        with:
-          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: Install dependencies
         run: npm install
 
-      # Mettre à jour les lastmod avant de pinguer Google
-      - name: Update sitemap lastmod
-        run: node scripts/update-lastmod.mjs
-
-      - name: Commit updated sitemaps
-        env:
-          PUSH_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
-        run: |
-          git config user.name "msd-seo-bot"
-          git config user.email "seo@msd-media.com"
-          git remote set-url origin "https://x-access-token:${PUSH_TOKEN}@github.com/${{ github.repository }}.git"
-          git add sitemap.xml blog/sitemap.xml
-          git diff --cached --quiet || git commit -m "chore(sitemap): update lastmod [skip ci]"
-          git push
-
-      # Attendre que Vercel ait fini de déployer (~60s)
+      # Attendre que Vercel ait fini de déployer (~90s)
       - name: Wait for Vercel deploy
         run: sleep 90
 
       # Ping sitemaps (Google + Bing) + IndexNow pour les URLs modifiées
       - name: Submit URLs
         run: node scripts/google-index.mjs --days=7
+        env:
+          INDEXNOW_KEY: efce413a0bd22c8ad04ad561e64371e9

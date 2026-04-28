@@ -1,5 +1,21 @@
 User-agent: *
 Allow: /
 
+# Empêcher l'indexation des logos et favicons dans Google Images
+User-agent: Googlebot-Image
+Disallow: /assets/img/logo-black.webp
+Disallow: /assets/img/logo-track1.webp
+Disallow: /assets/img/logo-track2.webp
+Disallow: /assets/img/logo-track3.webp
+Disallow: /assets/img/logo-track4.webp
+Disallow: /assets/img/logo-track5.webp
+Disallow: /assets/img/logo-track6.webp
+Disallow: /assets/img/logo-track7.webp
+Disallow: /assets/img/logo-track8.webp
+Disallow: /assets/img/logo-track9.webp
+Disallow: /assets/img/favicon-96x96.png
+Disallow: /assets/img/favicon.ico
+Disallow: /assets/img/favicon.svg
+
 Sitemap: https://msd-media.com/sitemap.xml
 Sitemap: https://msd-media.com/blog/sitemap.xml

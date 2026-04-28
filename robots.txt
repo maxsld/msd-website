@@ -1,8 +1,21 @@
 User-agent: *
 Allow: /
 
-# Empêcher l'indexation des logos et favicons dans Google Images
+# Google Images : autoriser les images utiles (mockups, photos, réalisations)
 User-agent: Googlebot-Image
+Allow: /assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp
+Allow: /assets/img/img-cover.webp
+Allow: /assets/img/agence3xl-mockup.webp
+Allow: /assets/img/aristoi-academia-mockup.webp
+Allow: /assets/img/carroz-sports-mockup.webp
+Allow: /assets/img/em-motors-mockup.webp
+Allow: /assets/img/hairtattoo-mockup.webp
+Allow: /assets/img/laurence-mockup.webp
+Allow: /assets/img/marie-troccaz-mockup.webp
+Allow: /assets/img/maxime-sciare-mockup.webp
+Allow: /assets/img/nation-mockup.webp
+Allow: /assets/img/blog/
+# Bloquer logos, favicons et photos de profil des avis
 Disallow: /assets/img/logo-black.webp
 Disallow: /assets/img/logo-track1.webp
 Disallow: /assets/img/logo-track2.webp
@@ -16,6 +29,7 @@ Disallow: /assets/img/logo-track9.webp
 Disallow: /assets/img/favicon-96x96.png
 Disallow: /assets/img/favicon.ico
 Disallow: /assets/img/favicon.svg
+Disallow: /assets/img/profiles/
 
 Sitemap: https://msd-media.com/sitemap.xml
 Sitemap: https://msd-media.com/blog/sitemap.xml

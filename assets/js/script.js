@@ -329,18 +329,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const LANGUAGE_COOKIE_KEY = "msd_site_lang";
   const LANGUAGE_STORAGE_KEY = "msd_site_lang";
-  const GOOGLE_TRANSLATE_COOKIE_KEY = "googtrans";
   const ONE_YEAR_SECONDS = 60 * 60 * 24 * 365;
 
   const setCookie = (name, value, maxAgeSeconds) => {
     document.cookie = `${name}=${encodeURIComponent(value)}; path=/; max-age=${maxAgeSeconds}; SameSite=Lax`;
-  };
-
-  const setRawCookie = (name, value, maxAgeSeconds) => {
-    document.cookie = `${name}=${value}; path=/; max-age=${maxAgeSeconds}; SameSite=Lax`;
-    const host = window.location.hostname;
-    if (!host || host === "localhost" || /^[0-9.]+$/.test(host)) return;
-    document.cookie = `${name}=${value}; path=/; domain=.${host}; max-age=${maxAgeSeconds}; SameSite=Lax`;
   };
 
   const getCookie = (name) => {
@@ -354,10 +346,15 @@ document.addEventListener("DOMContentLoaded", () => {
     return "";
   };
 
-  const normalizeLang = (raw) => (raw === "en" ? "en" : "fr");
+  const normalizeLang = (raw) => {
+    const value = String(raw || "").toLowerCase().trim();
+    if (value === "en" || value.startsWith("en-")) return "en";
+    if (value === "fr" || value.startsWith("fr-")) return "fr";
+    return "";
+  };
 
   const saveLanguagePreference = (lang) => {
-    const normalizedLang = normalizeLang(lang);
+    const normalizedLang = normalizeLang(lang) || "fr";
     setCookie(LANGUAGE_COOKIE_KEY, normalizedLang, ONE_YEAR_SECONDS);
     try {
       window.localStorage.setItem(LANGUAGE_STORAGE_KEY, normalizedLang);
@@ -366,70 +363,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const readLanguagePreference = () => {
     const cookieLang = normalizeLang(getCookie(LANGUAGE_COOKIE_KEY));
-    if (cookieLang === "en") return "en";
+    if (cookieLang) return cookieLang;
     try {
       const storedLang = normalizeLang(window.localStorage.getItem(LANGUAGE_STORAGE_KEY) || "");
-      if (storedLang === "en") return "en";
+      if (storedLang) return storedLang;
     } catch (_) {}
-    return "fr";
-  };
-
-  const readGoogleTranslateLang = () => {
-    const value = getCookie(GOOGLE_TRANSLATE_COOKIE_KEY);
-    const match = value.match(/^\/fr\/([a-z]{2})$/i);
-    return normalizeLang(match ? match[1].toLowerCase() : "");
-  };
-
-  const saveGoogleTranslatePreference = (lang) => {
-    const normalizedLang = normalizeLang(lang);
-    setRawCookie(GOOGLE_TRANSLATE_COOKIE_KEY, `/fr/${normalizedLang}`, ONE_YEAR_SECONDS);
-  };
-
-  const ensureTranslateContainer = () => {
-    let container = document.getElementById("google_translate_element");
-    if (container) return container;
-    container = document.createElement("div");
-    container.id = "google_translate_element";
-    container.style.position = "fixed";
-    container.style.left = "-9999px";
-    container.style.top = "0";
-    container.style.width = "1px";
-    container.style.height = "1px";
-    container.style.overflow = "hidden";
-    document.body.appendChild(container);
-    return container;
-  };
-
-  const ensureGoogleTranslateScript = () => {
-    if (window.__msdGoogleTranslateReady) return;
-    ensureTranslateContainer();
-
-    window.googleTranslateElementInit = () => {
-      if (window.__msdGoogleTranslateReady) return;
-      try {
-        new window.google.translate.TranslateElement(
-          {
-            pageLanguage: "fr",
-            includedLanguages: "fr,en",
-            autoDisplay: false
-          },
-          "google_translate_element"
-        );
-        window.__msdGoogleTranslateReady = true;
-      } catch (_) {}
-    };
-
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      window.googleTranslateElementInit();
-      return;
-    }
-
-    if (document.getElementById("google-translate-script")) return;
-    const script = document.createElement("script");
-    script.id = "google-translate-script";
-    script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.async = true;
-    document.head.appendChild(script);
+    return "";
   };
 
   const stopHeroWordRotation = () => {
@@ -530,9 +469,46 @@ document.addEventListener("DOMContentLoaded", () => {
     startHeroWordRotation(lang);
   };
 
-  const preferredLang = "fr";
+  const getBrowserDefaultLanguage = () => {
+    const languages = navigator.languages && navigator.languages.length
+      ? navigator.languages
+      : [navigator.language || ""];
+    return languages.some((lang) => normalizeLang(lang) === "fr") ? "fr" : "en";
+  };
+
+  const shouldRedirectToEnglish = () => {
+    const path = window.location.pathname.replace(/\/index\.html$/i, "/");
+    if (path !== "/") return false;
+    if (normalizeLang(window.__MSD_FORCE_LANG__)) return false;
+    if (new URLSearchParams(window.location.search).has("lang")) return false;
+    const storedLang = readLanguagePreference();
+    if (storedLang) return storedLang === "en";
+    return getBrowserDefaultLanguage() === "en";
+  };
+
+  if (shouldRedirectToEnglish()) {
+    window.location.replace("/en/");
+    return;
+  }
+
+  const getRequestedLanguage = () => {
+    const forcedLang = normalizeLang(window.__MSD_FORCE_LANG__);
+    if (forcedLang) return forcedLang;
+
+    const params = new URLSearchParams(window.location.search);
+    const queryLang = normalizeLang(params.get("lang"));
+    if (queryLang) return queryLang;
+
+    if (/^\/en(?:\/|$)/i.test(window.location.pathname)) return "en";
+
+    const storedLang = readLanguagePreference();
+    if (storedLang) return storedLang;
+
+    return getBrowserDefaultLanguage();
+  };
+
+  const preferredLang = getRequestedLanguage();
   saveLanguagePreference(preferredLang);
-  saveGoogleTranslatePreference(preferredLang);
 
   if (langSelect) {
     langSelect.remove();
@@ -696,7 +672,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  const logoTrack = document.querySelector(".logo-marquee__track");
+  const logoTracks = document.querySelectorAll(".logo-marquee__track");
   const clientLogos = [
     { src: "https://msd-media.com/assets/img/logo-track1.webp", alt: "Logo client 1" },
     { src: "https://msd-media.com/assets/img/logo-track2.webp", alt: "Logo client 2" },
@@ -709,7 +685,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { src: "https://msd-media.com/assets/img/logo-track9.webp", alt: "Logo client 9" }
   ];
 
-  if (logoTrack) {
+  if (logoTracks.length) {
     const buildLogo = ({ src, alt, className = "" }, isDuplicate = false) => {
       const logo = document.createElement("img");
       logo.className = `logo-marquee__img ${className}`.trim();
@@ -723,11 +699,13 @@ document.addEventListener("DOMContentLoaded", () => {
       return logo;
     };
 
-    const logos = [
-      ...clientLogos.map((logo) => buildLogo(logo)),
-      ...clientLogos.map((logo) => buildLogo(logo, true))
-    ];
-    logoTrack.replaceChildren(...logos);
+    logoTracks.forEach((logoTrack) => {
+      const logos = [
+        ...clientLogos.map((logo) => buildLogo(logo)),
+        ...clientLogos.map((logo) => buildLogo(logo, true))
+      ];
+      logoTrack.replaceChildren(...logos);
+    });
   }
 
   const callToast = document.querySelector("[data-call-toast]");

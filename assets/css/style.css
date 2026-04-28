@@ -693,6 +693,14 @@ position: relative;
   -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
 }
 
+.logo-marquee--reviews {
+  margin: 2rem auto 2.5rem;
+}
+
+.logo-marquee--reviews .logo-marquee__track {
+  animation-direction: reverse;
+}
+
 .hero-companies-proof {
   margin-top: 6rem;
   margin-bottom: 0.2rem;
@@ -2518,7 +2526,7 @@ position: relative;
   gap: 1.5rem;
   margin-top: 3rem;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 2.8rem;
 }
 
 .avis-track {
@@ -3719,39 +3727,6 @@ body.page-404 .site-footer {
 .glossary-table tbody tr:last-child td {
   border-bottom: 0;
 }
-
-/* Hide Google Translate UI chrome (top banner + tooltip) */
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-}
-
-body {
-  top: 0 !important;
-  margin-top: 0 !important;
-}
-
-#goog-gt-tt,
-.goog-te-balloon-frame,
-.goog-tooltip,
-.goog-tooltip:hover {
-  display: none !important;
-}
-
-iframe.goog-te-banner-frame,
-iframe.skiptranslate,
-.skiptranslate iframe {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-.goog-te-gadget,
-.goog-te-gadget-simple,
-.goog-te-gadget-icon,
-.goog-te-ftab,
-.goog-logo-link {
-  display: none !important;
-}
-
 
 /* ── Breadcrumb ──────────────────────────────────────────────────────────── */
 .breadcrumb {

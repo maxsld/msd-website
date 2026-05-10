@@ -3847,3 +3847,137 @@ body.page-404 .site-footer {
   line-height: 1.45;
   color: rgba(255,255,255,0.5);
 }
+
+/* ── Bouton Cal.com flottant + modal ────────────────── */
+.cal-float-btn {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 160;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f0f0f;
+  color: #fff;
+  border: none;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.22);
+  opacity: 0;
+  transform: translateY(18px) scale(0.82) rotate(-8deg);
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: inherit;
+  letter-spacing: -0.01em;
+}
+.cal-float-btn.cal-float-btn--visible {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotate(0deg);
+  pointer-events: auto;
+  animation: calFloatBtnEntrance 0.42s cubic-bezier(0.2, 0.9, 0.22, 1.2);
+}
+.cal-float-btn:hover {
+  box-shadow: 0 10px 32px rgba(0,0,0,0.32);
+  transform: translateY(-2px) scale(1.04);
+}
+.cal-float-btn svg {
+  flex-shrink: 0;
+}
+
+@keyframes calFloatBtnEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.82) rotate(-8deg);
+  }
+  58% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.08) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+.cal-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 1.75rem 5.5rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.cal-modal-overlay.cal-modal-overlay--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.cal-modal {
+  width: 390px;
+  height: 600px;
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.22), 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  position: relative;
+}
+.cal-modal-overlay.cal-modal-overlay--open .cal-modal {
+  transform: translateY(0) scale(1);
+}
+.cal-modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 10;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.08);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #333;
+  transition: background 0.2s;
+}
+.cal-modal__close:hover { background: rgba(0,0,0,0.15); }
+.cal-modal iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .cal-float-btn {
+    bottom: 1.25rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .cal-modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .cal-modal {
+    width: 100%;
+    height: 85dvh;
+    border-radius: 1.25rem 1.25rem 0 0;
+  }
+}

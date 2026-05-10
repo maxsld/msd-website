@@ -1408,3 +1408,50 @@ function initManifestoAnimation() {
 document.querySelectorAll(".copyright-year").forEach(function(el) {
   el.textContent = new Date().getFullYear();
 });
+
+// Bouton Cal.com flottant — modal iframe téléphone
+(function() {
+  var CAL_URL = "https://cal.com/maxens-soldan-msd-media/30min?embed=true&embedType=inline&layout=month_view";
+
+  // Overlay + modal
+  var overlay = document.createElement("div");
+  overlay.className = "cal-modal-overlay";
+  overlay.innerHTML =
+    '<div class="cal-modal" role="dialog" aria-modal="true" aria-label="Prendre rendez-vous">' +
+      '<button class="cal-modal__close" aria-label="Fermer">&#x2715;</button>' +
+      '<iframe id="cal-iframe" src="' + CAL_URL + '" title="Prendre rendez-vous" loading="lazy"></iframe>' +
+    '</div>';
+  document.body.appendChild(overlay);
+
+  // Bouton flottant
+  var btn = document.createElement("button");
+  btn.className = "cal-float-btn";
+  btn.type = "button";
+  btn.setAttribute("aria-label", "Prendre rendez-vous");
+  btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
+  document.body.appendChild(btn);
+
+  function openModal() {
+    overlay.classList.add("cal-modal-overlay--open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    overlay.classList.remove("cal-modal-overlay--open");
+    document.body.style.overflow = "";
+  }
+
+  btn.addEventListener("click", openModal);
+  overlay.querySelector(".cal-modal__close").addEventListener("click", closeModal);
+  overlay.addEventListener("click", function(e) {
+    if (e.target === overlay) closeModal();
+  });
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") closeModal();
+  });
+
+  setTimeout(function() {
+    btn.classList.add("cal-float-btn--visible");
+    openModal();
+  }, 5000);
+})();

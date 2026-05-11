@@ -469,46 +469,15 @@ document.addEventListener("DOMContentLoaded", () => {
     startHeroWordRotation(lang);
   };
 
-  const getBrowserDefaultLanguage = () => {
-    const languages = navigator.languages && navigator.languages.length
-      ? navigator.languages
-      : [navigator.language || ""];
-    return languages.some((lang) => normalizeLang(lang) === "fr") ? "fr" : "en";
-  };
-
-  const shouldRedirectToEnglish = () => {
-    const path = window.location.pathname.replace(/\/index\.html$/i, "/");
-    if (path !== "/") return false;
-    if (normalizeLang(window.__MSD_FORCE_LANG__)) return false;
-    if (new URLSearchParams(window.location.search).has("lang")) return false;
-    const storedLang = readLanguagePreference();
-    if (storedLang) return storedLang === "en";
-    return getBrowserDefaultLanguage() === "en";
-  };
-
-  if (shouldRedirectToEnglish()) {
-    window.location.replace("/en/");
-    return;
-  }
-
   const getRequestedLanguage = () => {
     const forcedLang = normalizeLang(window.__MSD_FORCE_LANG__);
     if (forcedLang) return forcedLang;
 
-    const params = new URLSearchParams(window.location.search);
-    const queryLang = normalizeLang(params.get("lang"));
-    if (queryLang) return queryLang;
-
     if (/^\/en(?:\/|$)/i.test(window.location.pathname)) return "en";
-
-    const storedLang = readLanguagePreference();
-    if (storedLang) return storedLang;
-
-    return getBrowserDefaultLanguage();
+    return "fr";
   };
 
   const preferredLang = getRequestedLanguage();
-  saveLanguagePreference(preferredLang);
 
   if (langSelect) {
     langSelect.remove();
@@ -1411,6 +1380,24 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
 
 // Bouton Cal.com flottant — modal iframe téléphone
 (function() {
+  var path = (window.location.pathname || "/").replace(/\/+$/, "") || "/";
+  var blockedPrefixes = [
+    "/blog",
+    "/etudes-de-cas",
+    "/recrutement",
+    "/affiliation",
+    "/configurateur",
+    "/confirmation",
+    "/confirmation-reservation-appel"
+  ];
+  var shouldRenderCalPopup = !blockedPrefixes.some(function(prefix) {
+    return path === prefix || path.indexOf(prefix + "/") === 0;
+  });
+
+  if (!shouldRenderCalPopup) {
+    return;
+  }
+
   var CAL_URL = "https://cal.com/maxens-soldan-msd-media/30min?embed=true&embedType=inline&layout=month_view";
 
   // Overlay + modal
@@ -1433,12 +1420,10 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
 
   function openModal() {
     overlay.classList.add("cal-modal-overlay--open");
-    document.body.style.overflow = "hidden";
   }
 
   function closeModal() {
     overlay.classList.remove("cal-modal-overlay--open");
-    document.body.style.overflow = "";
   }
 
   btn.addEventListener("click", openModal);

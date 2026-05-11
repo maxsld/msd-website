@@ -1,5 +1,8 @@
 {
   "functions": {
+    "api/generate-site-concept.js": {
+      "maxDuration": 30
+    },
     "api/**/*.js": {
       "maxDuration": 10
     }

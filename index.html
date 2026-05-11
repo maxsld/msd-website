@@ -83,7 +83,7 @@
   <meta name="twitter:site" content="@MaxensSoldan" />
   <meta name="twitter:creator" content="@MaxensSoldan" />
   <meta name="twitter:image:alt" content="Interface moderne de landing page réalisée par MSD Media" />
-
+<!-- MSD Analytics — à coller avant </body> -->
 <script>
 (function(){
   var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
@@ -93,9 +93,9 @@
   function send(d){
     var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
     var ok=false;
-    try { ok=navigator.sendBeacon('https://msd-dashboard-tau.vercel.app/api/track',JSON.stringify(p)); } catch(e) {}
+    try { ok=navigator.sendBeacon('http://localhost:3000/api/track',JSON.stringify(p)); } catch(e) {}
     if(!ok){
-      fetch('https://msd-dashboard-tau.vercel.app/api/track',{
+      fetch('http://localhost:3000/api/track',{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(p),
@@ -118,9 +118,32 @@
   });
   send(0);
   start();
+
+  // Scroll heatmap tracking
+  (function(){
+    var path=location.pathname;
+    var scrollEvts=[];
+    var lastPct=0;
+    var pauseTimer=null;
+    function getPct(){return Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight||1))*100);}
+    function bucket(p){return Math.floor(p/5)*5;}
+    function flush(){
+      if(!scrollEvts.length)return;
+      var evts=scrollEvts.splice(0);
+      navigator.sendBeacon('http://localhost:3000/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
+    }
+    window.addEventListener('scroll',function(){
+      var pct=getPct();
+      if(Math.abs(pct-lastPct)>10&&pct<lastPct){scrollEvts.push({type:'backtrack',pct:bucket(pct)});}
+      lastPct=pct;
+      if(pauseTimer)clearTimeout(pauseTimer);
+      pauseTimer=setTimeout(function(){scrollEvts.push({type:'pause',pct:bucket(pct)});flush();},1500);
+    },{passive:true});
+    window.addEventListener('beforeunload',function(){scrollEvts.push({type:'exit',pct:bucket(getPct())});flush();});
+    setInterval(flush,30000);
+  })();
 })();
 </script>
-
   <!-- Schema complet -->
   <script type="application/ld+json">
 {
@@ -460,8 +483,8 @@
       </div>
 
       <div class="realisations-ctas">
-        <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button hero-primary-cta realisations-cta">
-          <span class="cta-text">Démarrer mon projet</span>
+        <a href="/configurateur/" class="contact-button hero-primary-cta realisations-cta">
+          <span class="cta-text">Configurer mon site</span>
         </a>
         <a href="https://msd-media.com/etudes-de-cas/" class="contact-button realisations-cta realisations-cta--ghost" target="_blank" rel="noopener noreferrer">
           <span class="cta-text">Voir les études de cas</span>

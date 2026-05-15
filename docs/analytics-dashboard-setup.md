@@ -69,7 +69,7 @@ Puis envoie un email HTML via SMTP.
 1. Copier `.env.analytics.example` vers `.env.analytics`.
 2. Remplir toutes les variables.
 3. Pour l'expéditeur:
-   - `MAIL_FROM=agence@msd-media.com`
+   - `MAIL_FROM=maxens.soldan@msd-media.com`
    - Le SMTP doit autoriser cet expéditeur (SPF/DKIM/DMARC alignés).
 
 ### Test local
@@ -93,7 +93,7 @@ Workflow prêt: `.github/workflows/weekly-analytics-report.yml`
    - `SMTP_SECURE`
    - `SMTP_USER`
    - `SMTP_PASS`
-   - `MAIL_FROM` (`agence@msd-media.com`)
+   - `MAIL_FROM` (`maxens.soldan@msd-media.com`)
    - `MAIL_TO` (`soldan.maxens@gmail.com`)
 2. Le job tourne tous les lundis à `06:00 UTC`.
 

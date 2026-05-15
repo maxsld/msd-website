@@ -1,6 +1,34 @@
 User-agent: *
 Allow: /
 
+# Fichiers LLM — autoriser explicitement les crawlers IA
+User-agent: GPTBot
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /a-propos/
+Allow: /etudes-de-cas/
+Allow: /blog/
+
+User-agent: Claude-Web
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /a-propos/
+Allow: /etudes-de-cas/
+Allow: /blog/
+
+User-agent: PerplexityBot
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /a-propos/
+Allow: /etudes-de-cas/
+Allow: /blog/
+
+User-agent: anthropic-ai
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /a-propos/
+Allow: /blog/
+
 # Google Images : autoriser les images utiles (mockups, photos, réalisations)
 User-agent: Googlebot-Image
 Allow: /assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp

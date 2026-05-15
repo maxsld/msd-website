@@ -517,7 +517,7 @@ async function run() {
     }
   });
 
-  const from = process.env.MAIL_FROM || "agence@msd-media.com";
+  const from = process.env.MAIL_FROM || "maxens.soldan@msd-media.com";
   const to = process.env.MAIL_TO;
   const subject = `MSD Media - Dashboard hebdo (${startDate} -> ${endDate})`;
 

@@ -212,12 +212,12 @@ async function sendEmail(articles) {
 
   await transporter.sendMail({
     from: process.env.MAIL_FROM || 'MSD Media SEO <seo@msd-media.com>',
-    to: 'agence@msd-media.com',
+    to: 'maxens.soldan@msd-media.com',
     subject: `📝 3 articles SEO à valider — ${dateLabel}`,
     html: buildEmailHtml(articles),
   });
 
-  console.log('📧 Email envoyé à agence@msd-media.com');
+  console.log('📧 Email envoyé à maxens.soldan@msd-media.com');
 }
 
 // ─── MAIN ──────────────────────────────────────────────────────────────────────

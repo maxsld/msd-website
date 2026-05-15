@@ -93,9 +93,9 @@
   function send(d){
     var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
     var ok=false;
-    try { ok=navigator.sendBeacon('http://localhost:3000/api/track',JSON.stringify(p)); } catch(e) {}
+    try { ok=navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p)); } catch(e) {}
     if(!ok){
-      fetch('http://localhost:3000/api/track',{
+      fetch('https://app.msd-media.com/api/track',{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(p),
@@ -130,7 +130,7 @@
     function flush(){
       if(!scrollEvts.length)return;
       var evts=scrollEvts.splice(0);
-      navigator.sendBeacon('http://localhost:3000/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
+      navigator.sendBeacon('https://app.msd-media.com/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
     }
     window.addEventListener('scroll',function(){
       var pct=getPct();
@@ -207,6 +207,15 @@
         "Landing page à fort taux de conversion",
         "Refonte de site web",
         "SEO local",
+        "GEO — Generative Engine Optimization",
+        "Copywriting web"
+      ],
+      "knowsAbout": [
+        "Création de site web",
+        "Landing page",
+        "SEO local",
+        "GEO Generative Engine Optimization",
+        "Optimisation du taux de conversion",
         "Copywriting web"
       ],
       "numberOfEmployees": {
@@ -218,10 +227,21 @@
         "https://fr.trustpilot.com/review/msd-media.com",
         "https://www.sortlist.com/agency/msd-media"
       ],
+      "mentions": [
+        { "@type": "Organization", "name": "Nation Startup", "url": "https://msd-media.com/etudes-de-cas/nation-startup/" },
+        { "@type": "Organization", "name": "Agence 3XL", "url": "https://msd-media.com/etudes-de-cas/agence-3xl/" },
+        { "@type": "Person", "name": "Maxime Sciare", "url": "https://msd-media.com/etudes-de-cas/maxime-sciare/" },
+        { "@type": "Person", "name": "Laurence Daien Maestripieri", "url": "https://msd-media.com/etudes-de-cas/laurence-daien-maestripieri/" },
+        { "@type": "Organization", "name": "EM Motors", "url": "https://msd-media.com/etudes-de-cas/em-motors/" },
+        { "@type": "Person", "name": "Marie Troccaz", "url": "https://msd-media.com/etudes-de-cas/marie-troccaz/" },
+        { "@type": "Organization", "name": "Aristoi Academia", "url": "https://msd-media.com/etudes-de-cas/aristoi-academia/" },
+        { "@type": "Organization", "name": "Carroz Sports", "url": "https://msd-media.com/etudes-de-cas/carroz-sports/" },
+        { "@type": "Organization", "name": "HairTattoo", "url": "https://msd-media.com/etudes-de-cas/hairtattoo/" }
+      ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.4",
-        "reviewCount": "10",
+        "ratingValue": "4.9",
+        "reviewCount": "7",
         "bestRating": "5",
         "worstRating": "1"
       }
@@ -247,7 +267,11 @@
       "about": {
         "@id": "https://msd-media.com/#organization"
       },
-      "description": "Agence web spécialisée en landing pages et sites web à fort taux de conversion. Livraison 14 jours, SEO intégré, clients France, Suisse, Belgique."
+      "description": "Agence web spécialisée en landing pages et sites web à fort taux de conversion. Livraison 14 jours, SEO intégré, clients France, Suisse, Belgique.",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero__title", ".scroll-manifesto__text", ".section-title"]
+      }
     },
     {
       "@type": "FAQPage",
@@ -780,7 +804,7 @@
       <!-- Bloc gauche : logo + slogan -->
       <div class="footer-left">
         <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
-        <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:agence@msd-media.com">agence@msd-media.com</a></p>
+        <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
       </div>
 
       <div class="footer-offices">

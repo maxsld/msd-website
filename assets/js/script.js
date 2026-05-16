@@ -927,7 +927,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (realisationSlides.length > 1) {
       let currentIndex = 0;
       const AUTOPLAY_DELAY = 4000;
-      let autoplayIntervalId = null;
+      let autoplayTimeoutId = null;
 
       const updateRealisations = () => {
         const total = realisationSlides.length;
@@ -963,16 +963,20 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       stopRealisationsAutoplay = () => {
-        if (!autoplayIntervalId) return;
-        window.clearInterval(autoplayIntervalId);
-        autoplayIntervalId = null;
+        if (!autoplayTimeoutId) return;
+        window.clearTimeout(autoplayTimeoutId);
+        autoplayTimeoutId = null;
       };
 
       startRealisationsAutoplay = () => {
-        if (autoplayIntervalId) return;
+        if (autoplayTimeoutId) return;
         if (document.hidden) return;
         if (previewModal && previewModal.classList.contains("is-open")) return;
-        autoplayIntervalId = window.setInterval(goNext, AUTOPLAY_DELAY);
+        autoplayTimeoutId = window.setTimeout(() => {
+          autoplayTimeoutId = null;
+          goNext();
+          startRealisationsAutoplay();
+        }, AUTOPLAY_DELAY);
       };
 
       const restartRealisationsAutoplay = () => {
@@ -981,14 +985,18 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       if (nextBtn) {
-        nextBtn.addEventListener("click", () => {
+        nextBtn.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
           goNext();
           restartRealisationsAutoplay();
         });
       }
 
       if (prevBtn) {
-        prevBtn.addEventListener("click", () => {
+        prevBtn.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
           goPrev();
           restartRealisationsAutoplay();
         });
@@ -1382,6 +1390,7 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
 (function() {
   var path = (window.location.pathname || "/").replace(/\/+$/, "") || "/";
   var blockedPrefixes = [
+    "/404",
     "/blog",
     "/etudes-de-cas",
     "/recrutement",

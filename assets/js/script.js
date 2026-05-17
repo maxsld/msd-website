@@ -303,8 +303,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const heroWordSets = {
     fr: {
-      lead: "On fait des sites web et des landing pages que les IA",
-      words: ["recommandent."]
+      lead: "On fait des sites web et des landing pages que",
+      words: [
+        {
+          label: "Claude",
+          logo: "https://cdn.prod.website-files.com/6883119fb08482e1a28b331b/68b1a91141a014f6037a9a61_68adecff420db5aa8aaaf7a9_claude-logo.svg"
+        },
+        {
+          label: "ChatGPT",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/3840px-ChatGPT-Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+        },
+        {
+          label: "Perplexity",
+          logo: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/perplexity.webp"
+        },
+        {
+          label: "Gemini",
+          logo: "https://static.vecteezy.com/system/resources/previews/055/687/065/non_2x/gemini-google-icon-symbol-logo-free-png.png"
+        }
+      ]
     },
     en: {
       lead: "We build websites and landing pages",
@@ -378,6 +395,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  const renderHeroWord = (entry) => {
+    if (typeof entry === "string") return entry;
+    const label = String(entry?.label || "");
+    const logo = String(entry?.logo || "");
+    if (!label && !logo) return "";
+    if (!logo) return label;
+    return `<span class="hero__title-word-entry"><img class="hero__title-word-logo" src="${logo}" alt="${label} logo" loading="eager" decoding="async"><span class="hero__title-word-label">${label}</span></span>`;
+  };
+
   const measureHeroWordWidth = (word) => {
     if (!heroWord || !heroWordWrap) return 0;
 
@@ -396,7 +422,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.body.appendChild(ruler);
 
-    ruler.textContent = word;
+    ruler.innerHTML = renderHeroWord(word);
     const width = Math.ceil(ruler.getBoundingClientRect().width) + 2;
     ruler.remove();
     return width;
@@ -410,7 +436,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (!animate || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      heroWord.textContent = nextWord;
+      heroWord.innerHTML = renderHeroWord(nextWord);
       heroWord.classList.remove("is-leaving", "is-entering");
       return;
     }
@@ -419,7 +445,7 @@ document.addEventListener("DOMContentLoaded", () => {
     heroWord.classList.add("is-leaving");
 
     window.setTimeout(() => {
-      heroWord.textContent = nextWord;
+      heroWord.innerHTML = renderHeroWord(nextWord);
       heroWord.classList.remove("is-leaving");
       heroWord.classList.add("is-entering");
 
@@ -571,7 +597,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const currentWidth = measureHeroWordWidth(heroWord.textContent || "");
+    const activeWordSet = heroWordSets[heroWordLang] || heroWordSets.fr;
+    const activeEntry = activeWordSet.words[heroWordIndex] || activeWordSet.words[0] || "";
+    const currentWidth = measureHeroWordWidth(activeEntry);
     if (currentWidth) {
       heroWordWrap.style.width = `${currentWidth}px`;
     }

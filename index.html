@@ -83,66 +83,81 @@
   <meta name="twitter:site" content="@MaxensSoldan" />
   <meta name="twitter:creator" content="@MaxensSoldan" />
   <meta name="twitter:image:alt" content="Interface moderne de landing page réalisée par MSD Media" />
-<!-- MSD Analytics — à coller avant </body> -->
+<!-- Tracking — chargé uniquement après consentement cookie -->
 <script>
-(function(){
-  var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
-  sessionStorage.setItem('_msd',sid);
-  var t=Date.now();
-  var iv;
-  function send(d){
-    var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
-    var ok=false;
-    try { ok=navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p)); } catch(e) {}
-    if(!ok){
-      fetch('https://app.msd-media.com/api/track',{
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify(p),
-        keepalive:true
-      }).catch(function(){});
-    }
-  }
-  function start(){
-    if(iv) return;
-    iv=setInterval(function(){send(Date.now()-t);},15000);
-  }
-  function stop(){
-    if(!iv) return;
-    clearInterval(iv);
-    iv=undefined;
-  }
-  document.addEventListener('visibilitychange',function(){
-    if(document.visibilityState==='hidden'){send(Date.now()-t);stop();}
-    else{t=Date.now();send(0);start();}
-  });
-  send(0);
-  start();
-
-  // Scroll heatmap tracking
+function _msdLoadTracking(){
+  // MSD Analytics
   (function(){
-    var path=location.pathname;
-    var scrollEvts=[];
-    var lastPct=0;
-    var pauseTimer=null;
-    function getPct(){return Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight||1))*100);}
-    function bucket(p){return Math.floor(p/5)*5;}
-    function flush(){
-      if(!scrollEvts.length)return;
-      var evts=scrollEvts.splice(0);
-      navigator.sendBeacon('https://app.msd-media.com/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
+    var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
+    sessionStorage.setItem('_msd',sid);
+    var t=Date.now();
+    var iv;
+    function send(d){
+      var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
+      var ok=false;
+      try { ok=navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p)); } catch(e) {}
+      if(!ok){
+        fetch('https://app.msd-media.com/api/track',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(p),
+          keepalive:true
+        }).catch(function(){});
+      }
     }
-    window.addEventListener('scroll',function(){
-      var pct=getPct();
-      if(Math.abs(pct-lastPct)>10&&pct<lastPct){scrollEvts.push({type:'backtrack',pct:bucket(pct)});}
-      lastPct=pct;
-      if(pauseTimer)clearTimeout(pauseTimer);
-      pauseTimer=setTimeout(function(){scrollEvts.push({type:'pause',pct:bucket(pct)});flush();},1500);
-    },{passive:true});
-    window.addEventListener('beforeunload',function(){scrollEvts.push({type:'exit',pct:bucket(getPct())});flush();});
-    setInterval(flush,30000);
+    function start(){
+      if(iv) return;
+      iv=setInterval(function(){send(Date.now()-t);},15000);
+    }
+    function stop(){
+      if(!iv) return;
+      clearInterval(iv);
+      iv=undefined;
+    }
+    document.addEventListener('visibilitychange',function(){
+      if(document.visibilityState==='hidden'){send(Date.now()-t);stop();}
+      else{t=Date.now();send(0);start();}
+    });
+    send(0);
+    start();
+    // Scroll heatmap tracking
+    (function(){
+      var path=location.pathname;
+      var scrollEvts=[];
+      var lastPct=0;
+      var pauseTimer=null;
+      function getPct(){return Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight||1))*100);}
+      function bucket(p){return Math.floor(p/5)*5;}
+      function flush(){
+        if(!scrollEvts.length)return;
+        var evts=scrollEvts.splice(0);
+        navigator.sendBeacon('https://app.msd-media.com/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
+      }
+      window.addEventListener('scroll',function(){
+        var pct=getPct();
+        if(Math.abs(pct-lastPct)>10&&pct<lastPct){scrollEvts.push({type:'backtrack',pct:bucket(pct)});}
+        lastPct=pct;
+        if(pauseTimer)clearTimeout(pauseTimer);
+        pauseTimer=setTimeout(function(){scrollEvts.push({type:'pause',pct:bucket(pct)});flush();},1500);
+      },{passive:true});
+      window.addEventListener('beforeunload',function(){scrollEvts.push({type:'exit',pct:bucket(getPct())});flush();});
+      setInterval(flush,30000);
+    })();
   })();
-})();
+  // Google Analytics (GA4)
+  (function(){
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-RR3YC84DCZ';
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-RR3YC84DCZ');
+  })();
+}
+if(localStorage.getItem('msd_cookie_consent')==='accepted'){_msdLoadTracking();}
 </script>
   <!-- Schema complet -->
   <script type="application/ld+json">
@@ -355,16 +370,6 @@
   </script>
 
 
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RR3YC84DCZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RR3YC84DCZ');
-</script>
 
 <!-- auto-schema:start -->
 <script id="schema-breadcrumb-auto" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://msd-media.com/"}]}</script>
@@ -939,6 +944,31 @@
 </footer>
 
 </body>
+
+<!-- Cookie banner RGPD -->
+<div id="msd-cookie-banner" style="display:none;position:fixed;bottom:20px;left:20px;z-index:9999;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:12px 14px;max-width:300px;box-shadow:0 4px 16px rgba(0,0,0,.08);font-family:'Inter',sans-serif;" aria-live="polite" role="dialog" aria-label="Bannière cookies">
+  <p style="margin:0 0 10px;font-size:11.5px;color:#6b7280;line-height:1.5;">Cookies analytiques pour mesurer l'audience. <a href="/politique-de-confidentialite/" style="color:#111;text-decoration:underline;">En savoir plus</a></p>
+  <div style="display:flex;gap:6px;">
+    <button id="msd-cookie-refuse" style="flex:1;background:transparent;border:1px solid #e5e7eb;color:#9ca3af;font-size:11.5px;font-weight:500;padding:6px 0;border-radius:7px;cursor:pointer;">Refuser</button>
+    <button id="msd-cookie-accept" style="flex:1;background:#111;color:#fff;font-size:11.5px;font-weight:600;padding:6px 0;border-radius:7px;cursor:pointer;border:none;">Accepter</button>
+  </div>
+</div>
+<script>
+(function(){
+  var banner=document.getElementById('msd-cookie-banner');
+  var consent=localStorage.getItem('msd_cookie_consent');
+  if(!consent){banner.style.display='flex';}
+  document.getElementById('msd-cookie-accept').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','accepted');
+    banner.style.display='none';
+    if(typeof _msdLoadTracking==='function')_msdLoadTracking();
+  });
+  document.getElementById('msd-cookie-refuse').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','refused');
+    banner.style.display='none';
+  });
+})();
+</script>
 
 <script src="assets/js/script.js" defer></script>
 <script>

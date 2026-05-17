@@ -862,31 +862,6 @@ if(localStorage.getItem('msd_cookie_consent')==='accepted'){_msdLoadTracking();}
 
 </body>
 
-<!-- Cookie banner RGPD -->
-<div id="msd-cookie-banner" style="display:none;position:fixed;bottom:20px;left:20px;z-index:9999;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:12px 14px;max-width:300px;box-shadow:0 4px 16px rgba(0,0,0,.08);font-family:'Inter',sans-serif;" aria-live="polite" role="dialog" aria-label="Cookie banner">
-  <p style="margin:0 0 10px;font-size:11.5px;color:#6b7280;line-height:1.5;">Analytics cookies to measure traffic. <a href="https://msd-media.com/terms/politique-confidentialite.html" style="color:#111;text-decoration:underline;">Learn more</a></p>
-  <div style="display:flex;gap:6px;">
-    <button id="msd-cookie-refuse" style="flex:1;background:transparent;border:1px solid #e5e7eb;color:#9ca3af;font-size:11.5px;font-weight:500;padding:6px 0;border-radius:7px;cursor:pointer;">Decline</button>
-    <button id="msd-cookie-accept" style="flex:1;background:#111;color:#fff;font-size:11.5px;font-weight:600;padding:6px 0;border-radius:7px;cursor:pointer;border:none;">Accept</button>
-  </div>
-</div>
-<script>
-(function(){
-  var banner=document.getElementById('msd-cookie-banner');
-  var consent=localStorage.getItem('msd_cookie_consent');
-  if(!consent){banner.style.display='flex';}
-  document.getElementById('msd-cookie-accept').addEventListener('click',function(){
-    localStorage.setItem('msd_cookie_consent','accepted');
-    banner.style.display='none';
-    if(typeof _msdLoadTracking==='function')_msdLoadTracking();
-  });
-  document.getElementById('msd-cookie-refuse').addEventListener('click',function(){
-    localStorage.setItem('msd_cookie_consent','refused');
-    banner.style.display='none';
-  });
-})();
-</script>
-
 <script>window.__MSD_FORCE_LANG__ = "en";</script>
 <script src="../assets/js/script.js" defer></script>
 

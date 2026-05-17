@@ -303,6 +303,15 @@
     padding-inline: 1rem;
   }
 
+  .hero__title [data-hero-lead],
+  .hero__title-tail {
+    display: none;
+  }
+
+  .hero__title-mobile {
+    display: inline;
+  }
+
   .booking-section,
   .site-footer {
     width: calc(100% + 2rem);
@@ -342,8 +351,8 @@
   .hero__title-word-wrap {
     margin-left: 0.30rem !important;
     max-width: calc(100vw - 2rem);
-    white-space: normal;
-    overflow: visible;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .trustpilot_content img {

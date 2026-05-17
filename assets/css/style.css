@@ -474,22 +474,33 @@ main {
 .hero__title {
   margin: 0;
   font-family: "Inter", sans-serif;
-  font-size: clamp(1.65rem, 5.8vw, 4.2rem);
+  font-size: clamp(1.5rem, 5.2vw, 3.7rem);
   font-weight: 600;
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.05em;
   text-align: center;
   text-wrap: balance;
-  max-width: 24ch;
+  max-width: 27ch;
   color: #0c0c0d;
+}
+
+.hero__title-tail {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.hero__title-mobile {
+  display: none;
 }
 
 .hero__title-word-wrap {
   display: inline-block;
   position: relative;
-  margin-left: 0.55rem;
-  vertical-align: -0.08em;
+  margin-top: calc(-1rem + 2px);
   overflow: hidden;
+  padding: 0.14em 0.5em 0.2em;
   padding-bottom: 0.12em;
   margin-bottom: -0.20em;
   white-space: nowrap;
@@ -498,14 +509,36 @@ main {
 }
 
 .hero__title-word {
-  display: block;
-  color: var(--global-color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   will-change: transform, opacity, filter;
   transition: opacity 0.34s ease, transform 0.34s ease, filter 0.34s ease;
   line-height: inherit;
 }
 
-.hero__title-word-wrap > span {
+.hero__title-word-entry {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  vertical-align: middle;
+}
+
+.hero__title-word-logo {
+  width: 0.78em;
+  height: 0.78em;
+  object-fit: contain;
+  flex: 0 0 auto;
+  vertical-align: middle;
+  transform: translateY(0.07em);
+}
+
+.hero__title-word-label {
+  display: inline-block;
+}
+
+.hero__title-accent {
+  display: inline-block;
   color: var(--global-color-blue);
 }
 

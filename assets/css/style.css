@@ -1751,6 +1751,225 @@ position: relative;
   line-height: 1.5;
 }
 
+.ai-presence-hero-lead {
+  max-width: 760px;
+  margin: 1rem auto 0;
+  color: #2d2d2d;
+  font-size: 1.04rem;
+  line-height: 1.6;
+}
+
+.ai-presence-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.ai-presence-tool-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.ai-presence-sidecard {
+  position: sticky;
+  top: 7rem;
+}
+
+.ai-presence-list {
+  margin: 1rem 0 0;
+  padding: 0;
+  text-align: left;
+}
+
+.ai-presence-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.55rem;
+  color: #1f1f1f;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.ai-presence-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #111;
+}
+
+.ai-presence-kpis {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+.ai-presence-kpis strong,
+.ai-presence-kpis span {
+  display: block;
+  text-align: left;
+}
+
+.ai-presence-kpis strong {
+  color: #111;
+  font-size: 0.96rem;
+  font-weight: 600;
+}
+
+.ai-presence-kpis span {
+  margin-top: 0.1rem;
+  color: rgba(17, 17, 17, 0.66);
+  font-size: 0.84rem;
+}
+
+.ai-presence-tool {
+  border: 1px solid rgba(16, 16, 16, 0.1);
+  border-radius: 1.35rem;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, #f6f5f3 100%);
+}
+
+.ai-presence-form {
+  max-width: none;
+  margin: 0;
+}
+
+.ai-presence-disclaimer {
+  margin: 0.9rem 0 0;
+  color: rgba(17, 17, 17, 0.58);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.ai-presence-result {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(16, 16, 16, 0.12);
+  background: #ffffff;
+  text-align: left;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.ai-presence-result.is-loading {
+  opacity: 0.88;
+}
+
+.ai-presence-result.is-danger {
+  border-color: rgba(168, 39, 39, 0.22);
+  box-shadow: 0 18px 44px rgba(168, 39, 39, 0.08);
+}
+
+.ai-presence-result.is-warning {
+  border-color: rgba(181, 124, 18, 0.24);
+  box-shadow: 0 18px 44px rgba(181, 124, 18, 0.08);
+}
+
+.ai-presence-result.is-success {
+  border-color: rgba(32, 121, 77, 0.22);
+  box-shadow: 0 18px 44px rgba(32, 121, 77, 0.08);
+}
+
+.ai-presence-result__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.ai-presence-result__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0.25rem 0.72rem;
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.05);
+  color: #111;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.ai-presence-result__score {
+  color: #111;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ai-presence-result h2 {
+  margin: 0 0 0.65rem;
+  color: #111;
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.ai-presence-result p {
+  margin: 0;
+  color: #2f2f2f;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.ai-presence-result__bullets {
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.ai-presence-result__bullets li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.55rem;
+  color: #222;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.ai-presence-result__bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.48rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.ai-presence-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.ai-presence-benefits {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ai-presence-cta-copy {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.ai-presence-cta-copy p {
+  margin: 0 auto 1.15rem;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
 /* Blog article pages */
 .blog-article-shell {
   max-width: 860px;
@@ -1835,7 +2054,12 @@ position: relative;
 }
 
 .blog-article-content > img {
+  display: block;
+  width: min(100%, 460px);
+  height: auto;
+  margin: 0 auto 1rem;
   border: 0;
+  border-radius: 1.15rem;
 }
 
 .blog-article-content h2,

@@ -1,35 +1,47 @@
 User-agent: *
 Allow: /
+Disallow: /assets/img/profiles/
+Disallow: /admin/
 
-# Fichiers LLM — autoriser explicitement les crawlers IA
+# ── AI Crawlers — explicitly allowed ──────────────────────────────────────────
+
+# OpenAI
 User-agent: GPTBot
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /a-propos/
-Allow: /etudes-de-cas/
-Allow: /blog/
+Allow: /
 
-User-agent: Claude-Web
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /a-propos/
-Allow: /etudes-de-cas/
-Allow: /blog/
+User-agent: OAI-SearchBot
+Allow: /
 
-User-agent: PerplexityBot
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /a-propos/
-Allow: /etudes-de-cas/
-Allow: /blog/
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
 
 User-agent: anthropic-ai
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /a-propos/
-Allow: /blog/
+Allow: /
 
-# Google Images : autoriser les images utiles (mockups, photos, réalisations)
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google (AI training + AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# CommonCrawl (training dataset used by many LLMs)
+User-agent: CCBot
+Allow: /
+
+# Apple
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Google Images ──────────────────────────────────────────────────────────────
 User-agent: Googlebot-Image
 Allow: /assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp
 Allow: /assets/img/img-cover.webp
@@ -43,7 +55,6 @@ Allow: /assets/img/marie-troccaz-mockup.webp
 Allow: /assets/img/maxime-sciare-mockup.webp
 Allow: /assets/img/nation-mockup.webp
 Allow: /assets/img/blog/
-# Bloquer logos, favicons et photos de profil des avis
 Disallow: /assets/img/logo-black.webp
 Disallow: /assets/img/logo-track1.webp
 Disallow: /assets/img/logo-track2.webp
@@ -59,5 +70,6 @@ Disallow: /assets/img/favicon.ico
 Disallow: /assets/img/favicon.svg
 Disallow: /assets/img/profiles/
 
+# ── Sitemaps ───────────────────────────────────────────────────────────────────
 Sitemap: https://msd-media.com/sitemap.xml
 Sitemap: https://msd-media.com/blog/sitemap.xml

@@ -126,6 +126,10 @@
     padding: 2.2rem 1rem 0.7rem;
   }
 
+  .realisations-carousel {
+    padding-inline: 3.75rem;
+  }
+
   .realisations-track {
     height: clamp(210px, 44vw, 360px);
   }
@@ -140,8 +144,8 @@
     height: 44px;
   }
 
-  .realisations-nav--prev { left: 2%; }
-  .realisations-nav--next { right: 2%; }
+  .realisations-nav--prev { left: 0.35rem; }
+  .realisations-nav--next { right: 0.35rem; }
 
   .realisations-ctas {
     gap: 0.55rem;
@@ -523,6 +527,10 @@
     padding: 1.8rem 0.7rem 0.35rem;
   }
 
+  .realisations-carousel {
+    padding-inline: 3.1rem;
+  }
+
   .realisations-track {
     height: 200px;
   }
@@ -544,6 +552,14 @@
     width: 38px;
     height: 38px;
     font-size: 0.85rem;
+  }
+
+  .realisations-nav--prev {
+    left: 0.2rem;
+  }
+
+  .realisations-nav--next {
+    right: 0.2rem;
   }
 
   .contact-button,

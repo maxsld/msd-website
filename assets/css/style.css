@@ -1108,11 +1108,13 @@ position: relative;
   margin-top: 1.2rem;
   overflow: hidden;
   isolation: isolate;
+  padding-inline: 5.5rem;
 }
 
 .realisations-track {
   position: relative;
   height: clamp(220px, 34vw, 420px);
+  z-index: 1;
 }
 
 .realisations-slide {
@@ -2332,11 +2334,12 @@ position: relative;
   padding: 0;
   font-size: 1rem;
   cursor: pointer;
-  z-index: 10;
+  z-index: 30;
   pointer-events: auto;
   touch-action: manipulation;
   -webkit-appearance: none;
   appearance: none;
+  isolation: isolate;
 }
 
 .realisations-nav i {
@@ -2344,11 +2347,11 @@ position: relative;
 }
 
 .realisations-nav--prev {
-  left: 4%;
+  left: 1rem;
 }
 
 .realisations-nav--next {
-  right: 4%;
+  right: 1rem;
 }
 
 .realisations-ctas {
@@ -3590,6 +3593,10 @@ body.affiliate-modal-open {
     padding: 2.6rem 1rem 1rem;
   }
 
+  .realisations-carousel {
+    padding-inline: 3.5rem;
+  }
+
   .realisations-track {
     height: 200px;
   }
@@ -3621,11 +3628,11 @@ body.affiliate-modal-open {
   }
 
   .realisations-nav--prev {
-    left: 2%;
+    left: 0.35rem;
   }
 
   .realisations-nav--next {
-    right: 2%;
+    right: 0.35rem;
   }
 
   .project-preview-window {
@@ -4360,8 +4367,12 @@ body.page-404 .site-footer {
   opacity: 0;
   transition: opacity 0.25s ease;
 }
+.cal-modal-overlay[hidden] {
+  display: none;
+}
 .cal-modal-overlay.cal-modal-overlay--open {
   opacity: 1;
+  pointer-events: auto;
 }
 .cal-modal {
   width: 340px;

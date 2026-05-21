@@ -838,6 +838,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const PREVIEW_CLOSE_DURATION = 240;
 
+    if (previewModal) {
+      previewModal.hidden = !previewModal.classList.contains("is-open");
+      previewModal.inert = !previewModal.classList.contains("is-open");
+    }
+
     const closePreview = () => {
       if (!previewModal || !previewIframe) return;
       if (!previewModal.classList.contains("is-open")) return;
@@ -845,6 +850,7 @@ document.addEventListener("DOMContentLoaded", () => {
       previewModal.classList.remove("is-open");
       previewModal.classList.add("is-closing");
       previewModal.setAttribute("aria-hidden", "true");
+      previewModal.inert = true;
       syncBodyScrollLock();
 
       if (previewCloseTimeoutId) {
@@ -854,6 +860,7 @@ document.addEventListener("DOMContentLoaded", () => {
       previewCloseTimeoutId = window.setTimeout(() => {
         previewModal.classList.remove("is-closing");
         previewIframe.src = "";
+        previewModal.hidden = true;
       }, PREVIEW_CLOSE_DURATION);
     };
 
@@ -865,6 +872,8 @@ document.addEventListener("DOMContentLoaded", () => {
         previewCloseTimeoutId = null;
       }
 
+      previewModal.hidden = false;
+      previewModal.inert = false;
       previewModal.classList.remove("is-closing");
       if (previewAddress) previewAddress.textContent = displayUrl || url;
       previewIframe.src = url;
@@ -906,6 +915,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const PREVIEW_CLOSE_DURATION = 240;
 
+    if (previewModal) {
+      previewModal.hidden = !previewModal.classList.contains("is-open");
+      previewModal.inert = !previewModal.classList.contains("is-open");
+    }
+
     const closePreview = () => {
       if (!previewModal) return;
       if (!previewModal.classList.contains("is-open")) return;
@@ -913,6 +927,7 @@ document.addEventListener("DOMContentLoaded", () => {
       previewModal.classList.remove("is-open");
       previewModal.classList.add("is-closing");
       previewModal.setAttribute("aria-hidden", "true");
+      previewModal.inert = true;
       syncBodyScrollLock();
 
       if (previewCloseTimeoutId) {
@@ -922,6 +937,7 @@ document.addEventListener("DOMContentLoaded", () => {
       previewCloseTimeoutId = window.setTimeout(() => {
         previewModal.classList.remove("is-closing");
         if (previewIframe) previewIframe.src = "";
+        previewModal.hidden = true;
       }, PREVIEW_CLOSE_DURATION);
 
       startRealisationsAutoplay();
@@ -936,6 +952,8 @@ document.addEventListener("DOMContentLoaded", () => {
         previewCloseTimeoutId = null;
       }
 
+      previewModal.hidden = false;
+      previewModal.inert = false;
       previewModal.classList.remove("is-closing");
       if (previewAddress) previewAddress.textContent = displayUrl || url;
       previewIframe.src = url;
@@ -956,9 +974,53 @@ document.addEventListener("DOMContentLoaded", () => {
       let currentIndex = 0;
       const AUTOPLAY_DELAY = 4000;
       let autoplayTimeoutId = null;
+      let currentViewportMode = "";
+
+      const getRealisationsViewportMode = () => {
+        if (window.matchMedia("(max-width: 620px)").matches) return "mobile";
+        if (window.matchMedia("(max-width: 992px)").matches) return "tablet";
+        return "desktop";
+      };
+
+      const getRealisationsSlideStyles = (state) => {
+        const viewportMode = getRealisationsViewportMode();
+        const isMobile = viewportMode === "mobile";
+        const isTablet = viewportMode === "tablet";
+
+        const transforms = {
+          active: "translate(-50%, -50%) scale(1)",
+          prev: isMobile
+            ? "translate(calc(-50% - 58%), -50%) scale(0.84) rotate(-2deg)"
+            : isTablet
+              ? "translate(calc(-50% - 54%), -50%) scale(0.82) rotate(-2deg)"
+              : "translate(calc(-50% - 46%), -50%) scale(0.84) rotate(-3deg)",
+          next: isMobile
+            ? "translate(calc(-50% + 58%), -50%) scale(0.84) rotate(2deg)"
+            : isTablet
+              ? "translate(calc(-50% + 54%), -50%) scale(0.82) rotate(2deg)"
+              : "translate(calc(-50% + 46%), -50%) scale(0.84) rotate(3deg)",
+          farLeft: isMobile
+            ? "translate(calc(-50% - 88%), -50%) scale(0.7)"
+            : "translate(calc(-50% - 78%), -50%) scale(0.72)",
+          farRight: isMobile
+            ? "translate(calc(-50% + 88%), -50%) scale(0.7)"
+            : "translate(calc(-50% + 78%), -50%) scale(0.72)"
+        };
+
+        const styles = {
+          active: { opacity: "1", zIndex: "3", filter: "saturate(1)", pointerEvents: "auto", transform: transforms.active },
+          prev: { opacity: "0.44", zIndex: "2", filter: "saturate(0.75)", pointerEvents: "none", transform: transforms.prev },
+          next: { opacity: "0.44", zIndex: "2", filter: "saturate(0.75)", pointerEvents: "none", transform: transforms.next },
+          farLeft: { opacity: "0", zIndex: "1", filter: "saturate(0.75)", pointerEvents: "none", transform: transforms.farLeft },
+          farRight: { opacity: "0", zIndex: "1", filter: "saturate(0.75)", pointerEvents: "none", transform: transforms.farRight }
+        };
+
+        return styles[state];
+      };
 
       const updateRealisations = () => {
         const total = realisationSlides.length;
+        currentViewportMode = getRealisationsViewportMode();
         realisationSlides.forEach((slide, index) => {
           let diff = index - currentIndex;
           if (diff > total / 2) diff -= total;
@@ -966,17 +1028,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
           slide.classList.remove("is-prev", "is-active", "is-next", "is-far-left", "is-far-right");
 
+          let state = "farRight";
+
           if (diff === 0) {
             slide.classList.add("is-active");
+            state = "active";
           } else if (diff === -1) {
             slide.classList.add("is-prev");
+            state = "prev";
           } else if (diff === 1) {
             slide.classList.add("is-next");
+            state = "next";
           } else if (diff < -1) {
             slide.classList.add("is-far-left");
+            state = "farLeft";
           } else {
             slide.classList.add("is-far-right");
+            state = "farRight";
           }
+
+          const styles = getRealisationsSlideStyles(state);
+          slide.style.transform = styles.transform;
+          slide.style.opacity = styles.opacity;
+          slide.style.zIndex = styles.zIndex;
+          slide.style.filter = styles.filter;
+          slide.style.pointerEvents = styles.pointerEvents;
         });
       };
 
@@ -1061,6 +1137,12 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
         startRealisationsAutoplay();
+      });
+
+      window.addEventListener("resize", () => {
+        const nextViewportMode = getRealisationsViewportMode();
+        if (nextViewportMode === currentViewportMode) return;
+        updateRealisations();
       });
 
       updateRealisations();
@@ -1440,6 +1522,7 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
   // Overlay + modal
   var overlay = document.createElement("div");
   overlay.className = "cal-modal-overlay";
+  overlay.hidden = true;
   overlay.innerHTML =
     '<div class="cal-modal" role="dialog" aria-modal="true" aria-label="Prendre rendez-vous">' +
       '<button class="cal-modal__close" aria-label="Fermer">&#x2715;</button>' +
@@ -1456,11 +1539,13 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
   document.body.appendChild(btn);
 
   function openModal() {
+    overlay.hidden = false;
     overlay.classList.add("cal-modal-overlay--open");
   }
 
   function closeModal() {
     overlay.classList.remove("cal-modal-overlay--open");
+    overlay.hidden = true;
   }
 
   btn.addEventListener("click", openModal);

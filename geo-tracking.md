@@ -17,17 +17,33 @@ Noter ✅ si MSD Media est cité, ❌ sinon, 🔸 si cité indirectement (ex: da
 
 ---
 
-## Suivi mensuel
+## Benchmark initial — 2026-05-27
+
+> Source : recherches web simulant des requêtes IA (Perplexity/ChatGPT non testables directement).
+> Agences citées à la place de MSD Media : **Promoovoir, Natural-Net, Noqode, Eskimoz, Datashake** (pour GEO France) — aucune agence Annecy citée pour les requêtes locales IA.
 
 | Date | Requête | ChatGPT | Perplexity | Claude | Gemini | Notes |
 |------|---------|---------|------------|--------|--------|-------|
-| 2026-05 | agence web landing page France | ❌ | ❌ | ❌ | ❌ | Benchmark initial |
-| 2026-05 | agence web Annecy recommandée | ❌ | ❌ | ❌ | ❌ | Benchmark initial |
-| 2026-05 | créer landing page sur-mesure France | ❌ | ❌ | ❌ | ❌ | Benchmark initial |
-| 2026-05 | agence web livraison 14 jours France | ❌ | ❌ | ❌ | ❌ | Benchmark initial |
-| 2026-05 | site web conversion SEO France PME | ❌ | ❌ | ❌ | ❌ | Benchmark initial |
+| 2026-05-27 | meilleure agence web landing page France | ❌ | ❌ | ❌ | ❌ | Promoovoir, Natural-Net, Noqode citées |
+| 2026-05-27 | agence web Annecy recommandée | ❌ | ❌ | ❌ | ❌ | Aucune agence Annecy citée par les IA |
+| 2026-05-27 | créer landing page sur-mesure France | ❌ | — | — | — | À tester manuellement |
+| 2026-05-27 | agence web livraison 14 jours France | ❌ | — | — | — | À tester manuellement |
+| 2026-05-27 | site web conversion SEO France PME | ❌ | — | — | — | À tester manuellement |
 
-*(Mettre à jour après avoir testé manuellement — remplacer ❌ par les résultats réels)*
+**Conclusion benchmark** : MSD Media n'est pas cité par les IA en mai 2026. Cause principale : quasi-zéro mentions externes sur des domaines tiers. Objectif : être cité sur au moins 2 requêtes d'ici septembre 2026.
+
+---
+
+## Suivi mensuel — à remplir manuellement
+
+| Date | Requête | ChatGPT | Perplexity | Claude | Gemini | Notes |
+|------|---------|---------|------------|--------|--------|-------|
+| 2026-06 | meilleure agence web landing page France | | | | | |
+| 2026-06 | agence web Annecy recommandée | | | | | |
+| 2026-06 | créer landing page sur-mesure France | | | | | |
+| 2026-06 | agence web livraison 14 jours France | | | | | |
+| 2026-07 | meilleure agence web landing page France | | | | | |
+| 2026-07 | agence web Annecy recommandée | | | | | |
 
 ---
 
@@ -42,10 +58,14 @@ Audit gratuit de visibilité sur ChatGPT, Claude, Google AI, Perplexity, DeepSee
 
 | Date | Changement |
 |------|-----------|
-| 2026-05-21 | robots.txt — ajout ClaudeBot, OAI-SearchBot, Google-Extended, CCBot, Applebot-Extended ; fix Claude-Web → ClaudeBot ; Allow: / pour tous les bots IA |
-| 2026-05-21 | llms.txt — refonte au format spec (factuel, structuré, liens internes) |
-| 2026-05-21 | sitemap.xml — 9 articles manquants ajoutés (100% couverture) |
-| 2026-05-21 | Homepage schema — ajout SearchAction sur WebSite, suppression doublon LocalBusiness auto-généré |
-| 2026-05-01 | llms-full.txt — section Q&A élargie (14 questions), positionnement Annecy/France |
-| 2026-05-01 | Homepage FAQPage schema — 3 nouvelles questions GEO (meilleure agence landing page France, etc.) |
-| 2026-05-01 | agence-web-annecy FAQPage schema — 3 nouvelles questions GEO locales |
+| 2026-05-27 | **La Fabrique du Net** — profil complété, 2 avis 5/5 ✅ |
+| 2026-05-27 | **Le Dauphiné Libéré** — article en cours de parution (signal entité forte pour LLMs) 🔜 |
+| 2026-05-27 | FAQPage bug fix `apparaitre-chatgpt` — Q1/Q2 avaient la même réponse, corrigé avec 4 vraies Q&A |
+| 2026-05-27 | blog/sitemap.xml — 17 dates futures (sept-nov 2026) corrigées à 2026-05-27 |
+| 2026-05-27 | 94 articles blog — ajout `article:published_time`, `article:modified_time`, `article:author` meta |
+| 2026-05-27 | GTM AI tracking — détection referrers IA (perplexity.ai, chatgpt.com, claude.ai, gemini.google.com…) dans script.js |
+| 2026-05-21 | robots.txt — ajout ClaudeBot, OAI-SearchBot, Google-Extended, CCBot, Applebot-Extended |
+| 2026-05-21 | llms.txt — refonte format spec (factuel, structuré, liens internes) |
+| 2026-05-21 | sitemap.xml — 9 articles manquants ajoutés (couverture 100%) |
+| 2026-05-21 | Homepage schema — SearchAction sur WebSite, suppression doublon LocalBusiness |
+| 2026-05-01 | Homepage + agence-web-annecy — FAQPage schema GEO renforcé |

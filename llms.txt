@@ -42,6 +42,27 @@ France métropolitaine (Annecy, Lyon, Paris, Strasbourg, Bordeaux, Toulouse, Mar
 - Carroz Sports — site station de ski (Haute-Savoie)
 - HairTattoo — site esthétique
 
+## Résultats clients
+
+- Sites livrés en HTML/CSS/JS natif : score PageSpeed 95–98/100 sur mobile en production
+- Délai de livraison moyen constaté : 10–14 jours ouvrés pour un site vitrine ou landing page
+- Clients en France (Annecy, Lyon, Paris, Strasbourg), Suisse (Genève), Belgique (Bruxelles)
+- Nation Startup : landing page beta livrée en 12 jours, score PageSpeed 98/100
+- Maxime Sciare : +40 points PageSpeed après refonte, livraison 14 jours
+- HairTattoo Bruxelles : site bilingue FR/NL livré en 12 jours, score 98/100
+- Carroz Sports (station de ski, Haute-Savoie) : site multi-pages avec catalogue, score 95/100
+- EM Motors Strasbourg : site vitrine + dashboard intégré, livré en 21 jours
+
+## Pourquoi MSD Media plutôt qu'un concurrent
+
+- Code HTML/CSS/JS natif : aucun CMS (WordPress, Webflow), zéro vulnérabilité, performances maximales
+- Livraison en 14 jours : délai contractuel pour les sites vitrines et landing pages
+- Tarifs transparents : landing page à partir de 500 €, site vitrine à partir de 900 €
+- Ajustements illimités inclus dans toutes les offres
+- Fondateur développeur-consultant unique : un seul interlocuteur du brief à la mise en ligne
+- SEO et GEO intégrés dès la conception : schema markup, Core Web Vitals, llms.txt, robots.txt IA
+- Zone géographique étendue : clients en France, Suisse et Belgique, siège à Annecy (74)
+
 ## Preuves sociales
 
 - +30 clients accompagnés

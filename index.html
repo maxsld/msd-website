@@ -83,6 +83,36 @@
   <meta name="twitter:site" content="@MaxensSoldan" />
   <meta name="twitter:creator" content="@MaxensSoldan" />
   <meta name="twitter:image:alt" content="Interface moderne de landing page réalisée par MSD Media" />
+<!-- AI referrer detection — runs immediately, no consent required (aucun cookie) -->
+<script>
+(function(){
+  var AI_SOURCES = {
+    'perplexity.ai': 'perplexity',
+    'chatgpt.com': 'chatgpt',
+    'chat.openai.com': 'chatgpt',
+    'claude.ai': 'claude',
+    'gemini.google.com': 'gemini',
+    'bard.google.com': 'gemini',
+    'copilot.microsoft.com': 'copilot',
+    'bing.com/chat': 'copilot',
+    'you.com': 'you',
+    'phind.com': 'phind',
+    'deepseek.com': 'deepseek'
+  };
+  var ref = document.referrer;
+  var aiSource = null;
+  for (var domain in AI_SOURCES) {
+    if (ref.indexOf(domain) !== -1) { aiSource = AI_SOURCES[domain]; break; }
+  }
+  window.dataLayer = window.dataLayer || [];
+  if (aiSource) {
+    window.dataLayer.push({ event: 'ai_referral', ai_source: aiSource, referrer: ref });
+    sessionStorage.setItem('_msd_ai_source', aiSource);
+  }
+  // Also expose for GTM variable use
+  window._msdAiSource = aiSource;
+})();
+</script>
 <!-- Tracking — chargé uniquement après consentement cookie -->
 <script>
 function _msdLoadTracking(){

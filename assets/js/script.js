@@ -1,3 +1,21 @@
+// AI referrer detection — fires on every page, no consent needed
+(function(){
+  var AI_SOURCES = {
+    'perplexity.ai':'perplexity','chatgpt.com':'chatgpt','chat.openai.com':'chatgpt',
+    'claude.ai':'claude','gemini.google.com':'gemini','bard.google.com':'gemini',
+    'copilot.microsoft.com':'copilot','bing.com/chat':'copilot',
+    'you.com':'you','phind.com':'phind','deepseek.com':'deepseek'
+  };
+  var ref = document.referrer, aiSource = null;
+  for (var d in AI_SOURCES) { if (ref.indexOf(d) !== -1) { aiSource = AI_SOURCES[d]; break; } }
+  window.dataLayer = window.dataLayer || [];
+  if (aiSource) {
+    window.dataLayer.push({ event: 'ai_referral', ai_source: aiSource, referrer: ref });
+    sessionStorage.setItem('_msd_ai_source', aiSource);
+  }
+  window._msdAiSource = aiSource;
+})();
+
 // Tracking analytics (GTM + dataLayer + attribution + CTA + forms + engagement + booking + optional heatmap)
 (function () {
   window.dataLayer = window.dataLayer || [];

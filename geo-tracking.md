@@ -59,7 +59,7 @@ Audit gratuit de visibilité sur ChatGPT, Claude, Google AI, Perplexity, DeepSee
 | Date | Changement |
 |------|-----------|
 | 2026-05-27 | **La Fabrique du Net** — profil complété, 2 avis 5/5 ✅ |
-| 2026-05-27 | **Le Dauphiné Libéré** — article en cours de parution (signal entité forte pour LLMs) 🔜 |
+| 2026-06-04 | **Le Dauphiné Libéré** — article publié ✅ [lien](https://www.ledauphine.com/economie/2026/06/04/msd-media-l-agence-web-qui-veut-transformer-les-visiteurs-en-clients) — ajouté sameAs Organization + Person schema + llms.txt |
 | 2026-05-27 | FAQPage bug fix `apparaitre-chatgpt` — Q1/Q2 avaient la même réponse, corrigé avec 4 vraies Q&A |
 | 2026-05-27 | blog/sitemap.xml — 17 dates futures (sept-nov 2026) corrigées à 2026-05-27 |
 | 2026-05-27 | 94 articles blog — ajout `article:published_time`, `article:modified_time`, `article:author` meta |

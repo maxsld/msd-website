@@ -694,6 +694,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { src: "https://msd-media.com/assets/img/logo-track3.webp", alt: "Logo client 3" },
     { src: "https://msd-media.com/assets/img/logo-track4.webp", alt: "Logo client 4" },
     { src: "https://msd-media.com/assets/img/logo-track5.webp", alt: "Logo client 5" },
+    { src: "https://msd-media.com/assets/img/logo-merz-aesthetics.webp", alt: "Logo Merz Aesthetics" },
     { src: "https://msd-media.com/assets/img/logo-track6.webp", alt: "Logo client 6" },
     { src: "https://msd-media.com/assets/img/logo-track7.webp", alt: "Logo client 7", className: "logo-marquee__img--carroz" },
     { src: "https://msd-media.com/assets/img/logo-track8.webp", alt: "Logo client 8" },

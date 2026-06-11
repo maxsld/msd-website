@@ -19,9 +19,9 @@ Réservation : [cal.com/maxens-soldan-msd-media/30min](https://cal.com/maxens-so
 
 ## Services
 
-- Landing pages sur-mesure (HTML/CSS/JS) — orientées conversion, livrées en 14 jours, à partir de 500 €
-- Sites web vitrines sur-mesure — responsive, rapides, SEO et GEO intégrés, à partir de 900 €
-- Sites professionnels multi-pages — à partir de 1 500 €, livraison en 21 jours
+- Landing pages sur-mesure (HTML/CSS/JS) — orientées conversion, livrées en 14 jours, tarif sur devis
+- Sites web vitrines sur-mesure — responsive, rapides, SEO et GEO intégrés, tarif sur devis
+- Sites professionnels multi-pages — livraison en 21 jours, tarif sur devis
 - Refonte de sites existants
 - SEO technique (Core Web Vitals, schema markup, architecture)
 - GEO — optimisation pour être cité par les IA (ChatGPT, Perplexity, Claude, Gemini)
@@ -57,7 +57,7 @@ France métropolitaine (Annecy, Lyon, Paris, Strasbourg, Bordeaux, Toulouse, Mar
 
 - Code HTML/CSS/JS natif : aucun CMS (WordPress, Webflow), zéro vulnérabilité, performances maximales
 - Livraison en 14 jours : délai contractuel pour les sites vitrines et landing pages
-- Tarifs transparents : landing page à partir de 500 €, site vitrine à partir de 900 €
+- Tarifs sur devis, ajustés selon le périmètre du projet
 - Ajustements illimités inclus dans toutes les offres
 - Fondateur développeur-consultant unique : un seul interlocuteur du brief à la mise en ligne
 - SEO et GEO intégrés dès la conception : schema markup, Core Web Vitals, llms.txt, robots.txt IA

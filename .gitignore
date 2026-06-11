@@ -2,3 +2,10 @@
 /.claude
 /node_modules
 /.env.analytics
+
+# SEO audit outputs
+/FULL-AUDIT-REPORT.md
+/ACTION-PLAN.md
+
+# Claude SEO skill
+/skills/

@@ -32,7 +32,11 @@
     { "source": "/etudes-de-cas/cas/maxime-sciare.html", "destination": "/etudes-de-cas/maxime-sciare/", "permanent": true },
     { "source": "/etudes-de-cas/cas/l-agence-3xl.html", "destination": "/etudes-de-cas/agence-3xl/", "permanent": true },
     { "source": "/etudes-de-cas/cas/l-o-morel.html", "destination": "/etudes-de-cas/", "permanent": true },
-    { "source": "/etudes-de-cas/cas/:slug.html", "destination": "/etudes-de-cas/", "permanent": true }
+    { "source": "/etudes-de-cas/cas/:slug.html", "destination": "/etudes-de-cas/", "permanent": true },
+    { "source": "/blog/articles/landing-page-vs-site-web/", "destination": "/blog/articles/landing-page-vs-site-web-guide-complet/", "permanent": true },
+    { "source": "/blog/articles/landing-page-vs-site-web", "destination": "/blog/articles/landing-page-vs-site-web-guide-complet/", "permanent": true },
+    { "source": "/blog/articles/pourquoi-mon-site-ne-genere-pas-de-clients/", "destination": "/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/", "permanent": true },
+    { "source": "/blog/articles/pourquoi-mon-site-ne-genere-pas-de-clients", "destination": "/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/", "permanent": true }
   ],
   "headers": [
     {

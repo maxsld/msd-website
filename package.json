@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "analytics:build": "esbuild assets/js/analytics.js --bundle --format=iife --outfile=assets/js/analytics.bundle.js --minify",
     "analytics:weekly": "node scripts/weekly-analytics-report.mjs",
     "blog:generate": "node scripts/generate-articles.js",
     "blog:build": "cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs",
@@ -16,7 +17,11 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
+    "@vercel/analytics": "^2.0.1",
     "google-auth-library": "^9.15.1",
     "nodemailer": "^6.10.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1"
   }
 }

@@ -9,52 +9,248 @@
   },
   "redirects": [
     {
+      "source": "/blog/articles/bloquer-crawlers-ia-robots-txt/",
+      "destination": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/bloquer-crawlers-ia-robots-txt",
+      "destination": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-bordeaux/",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-bordeaux",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-geneve/",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-geneve",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-lyon/",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-lyon",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-marseille/",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-marseille",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-paris/",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-paris",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-toulouse/",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-toulouse",
+      "destination": "/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/template-2026-landing-page/",
+      "destination": "/blog/articles/creer-landing-page-qui-convertit/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/template-2026-landing-page",
+      "destination": "/blog/articles/creer-landing-page-qui-convertit/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-5-applications-productivite-2026/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-5-applications-productivite-2026",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "www.msd-media.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.msd-media.com"
+        }
+      ],
       "destination": "https://msd-media.com/$1",
       "permanent": true
     },
-    { "source": "/blog/articles/top-5-agences-landing-page-france-2025.html", "destination": "/blog/articles/top-5-agences-landing-page-france-2026/", "permanent": true },
-    { "source": "/blog/articles/top-5-agences-landing-page-france-2025", "destination": "/blog/articles/top-5-agences-landing-page-france-2026/", "permanent": true },
-    { "source": "/blog/articles/top-5-applications-productivite-2025.html", "destination": "/blog/articles/top-5-applications-productivite-2026/", "permanent": true },
-    { "source": "/blog/articles/top-5-applications-productivite-2025", "destination": "/blog/articles/top-5-applications-productivite-2026/", "permanent": true },
-    { "source": "/blog/articles/top-10-questions-landing-page-2025.html", "destination": "/blog/articles/top-10-questions-landing-page-2026/", "permanent": true },
-    { "source": "/blog/articles/top-10-questions-landing-page-2025", "destination": "/blog/articles/top-10-questions-landing-page-2026/", "permanent": true },
-    { "source": "/blog/articles/meilleure-agence-web-annecy-2025.html", "destination": "/blog/articles/meilleure-agence-web-annecy-2026/", "permanent": true },
-    { "source": "/blog/articles/meilleure-agence-web-annecy-2025", "destination": "/blog/articles/meilleure-agence-web-annecy-2026/", "permanent": true },
-    { "source": "/blog/articles/:slug.html", "destination": "/blog/articles/:slug/", "permanent": true },
-    { "source": "/ville/:city/", "destination": "/agence-web-:city/", "permanent": true },
-    { "source": "/ville/:city", "destination": "/agence-web-:city/", "permanent": true },
-    { "source": "/portfolio/", "destination": "/etudes-de-cas/", "permanent": true },
-    { "source": "/portfolio", "destination": "/etudes-de-cas/", "permanent": true },
-    { "source": "/blog/blog.html", "destination": "/blog/", "permanent": true },
-    { "source": "/etudes-de-cas/cas/laurence-daien.html", "destination": "/etudes-de-cas/laurence-daien-maestripieri/", "permanent": true },
-    { "source": "/etudes-de-cas/cas/maxime-sciare.html", "destination": "/etudes-de-cas/maxime-sciare/", "permanent": true },
-    { "source": "/etudes-de-cas/cas/l-agence-3xl.html", "destination": "/etudes-de-cas/agence-3xl/", "permanent": true },
-    { "source": "/etudes-de-cas/cas/l-o-morel.html", "destination": "/etudes-de-cas/", "permanent": true },
-    { "source": "/etudes-de-cas/cas/:slug.html", "destination": "/etudes-de-cas/", "permanent": true },
-    { "source": "/blog/articles/landing-page-vs-site-web/", "destination": "/blog/articles/landing-page-vs-site-web-guide-complet/", "permanent": true },
-    { "source": "/blog/articles/landing-page-vs-site-web", "destination": "/blog/articles/landing-page-vs-site-web-guide-complet/", "permanent": true },
-    { "source": "/blog/articles/pourquoi-mon-site-ne-genere-pas-de-clients/", "destination": "/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/", "permanent": true },
-    { "source": "/blog/articles/pourquoi-mon-site-ne-genere-pas-de-clients", "destination": "/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/", "permanent": true }
+    {
+      "source": "/blog/articles/top-5-agences-landing-page-france-2025.html",
+      "destination": "/blog/articles/top-5-agences-landing-page-france-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-5-agences-landing-page-france-2025",
+      "destination": "/blog/articles/top-5-agences-landing-page-france-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-5-applications-productivite-2025.html",
+      "destination": "/blog/articles/top-5-applications-productivite-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-5-applications-productivite-2025",
+      "destination": "/blog/articles/top-5-applications-productivite-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-10-questions-landing-page-2025.html",
+      "destination": "/blog/articles/top-10-questions-landing-page-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-10-questions-landing-page-2025",
+      "destination": "/blog/articles/top-10-questions-landing-page-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/meilleure-agence-web-annecy-2025.html",
+      "destination": "/blog/articles/meilleure-agence-web-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/meilleure-agence-web-annecy-2025",
+      "destination": "/blog/articles/meilleure-agence-web-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/:slug.html",
+      "destination": "/blog/articles/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/ville/:city/",
+      "destination": "/agence-web-:city/",
+      "permanent": true
+    },
+    {
+      "source": "/ville/:city",
+      "destination": "/agence-web-:city/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/",
+      "destination": "/etudes-de-cas/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/etudes-de-cas/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/blog.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/etudes-de-cas/cas/laurence-daien.html",
+      "destination": "/etudes-de-cas/laurence-daien-maestripieri/",
+      "permanent": true
+    },
+    {
+      "source": "/etudes-de-cas/cas/maxime-sciare.html",
+      "destination": "/etudes-de-cas/maxime-sciare/",
+      "permanent": true
+    },
+    {
+      "source": "/etudes-de-cas/cas/l-agence-3xl.html",
+      "destination": "/etudes-de-cas/agence-3xl/",
+      "permanent": true
+    },
+    {
+      "source": "/etudes-de-cas/cas/l-o-morel.html",
+      "destination": "/etudes-de-cas/",
+      "permanent": true
+    },
+    {
+      "source": "/etudes-de-cas/cas/:slug.html",
+      "destination": "/etudes-de-cas/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/landing-page-vs-site-web/",
+      "destination": "/blog/articles/landing-page-vs-site-web-guide-complet/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/landing-page-vs-site-web",
+      "destination": "/blog/articles/landing-page-vs-site-web-guide-complet/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/pourquoi-mon-site-ne-genere-pas-de-clients/",
+      "destination": "/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/pourquoi-mon-site-ne-genere-pas-de-clients",
+      "destination": "/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/assets/img/logo-:name*",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
       ]
     },
     {
       "source": "/assets/img/favicon:name*",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
       ]
     },
     {
       "source": "/assets/img/profiles/:name*",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
       ]
     }
   ]

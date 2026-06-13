@@ -121,12 +121,6 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/agence-web-munich/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/landing-page-annecy/</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -163,43 +157,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/agence-web-bordeaux/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/agence-web-chambery/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/agence-web-chamonix/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/agence-web-cluses/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/agence-web-clermont-ferrand/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/agence-web-geneve/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/agence-web-lille/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
@@ -211,37 +169,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/agence-web-marseille/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/agence-web-montpellier/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/agence-web-nantes/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/agence-web-nice/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/agence-web-paris/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/agence-web-rennes/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
@@ -253,43 +181,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/agence-web-toulouse/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/agence-web-thonon-les-bains/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/landing-page-bordeaux/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/landing-page-chambery/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/landing-page-clermont-ferrand/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/landing-page-geneve/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/landing-page-lille/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
@@ -301,49 +193,13 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/landing-page-marseille/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/landing-page-montpellier/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/landing-page-nantes/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/landing-page-nice/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/landing-page-paris/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/landing-page-rennes/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/landing-page-strasbourg/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/landing-page-toulouse/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
@@ -500,19 +356,7 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-internet-strasbourg/</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/blog/articles/creer-landing-page-qui-convertit/</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/template-2026-landing-page/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -520,48 +364,6 @@
   <url>
     <loc>https://msd-media.com/blog/articles/top-10-questions-landing-page-2026/</loc>
     <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-internet-annecy/</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-internet-bordeaux/</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-internet-geneve/</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-internet-lyon/</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-internet-marseille/</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-internet-paris/</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-internet-toulouse/</loc>
-    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -574,12 +376,6 @@
   <url>
     <loc>https://msd-media.com/blog/articles/creer-landing-page-14-jours/</loc>
     <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/landing-page-vs-site-web/</loc>
-    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -620,18 +416,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/combien-coute-site-web-strasbourg-2026/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-internet-strasbourg-prix-2026/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/blog/articles/landing-page-coach-consultant-annecy/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -651,12 +435,6 @@
   </url>
   <url>
     <loc>https://msd-media.com/blog/articles/site-web-agence-immobiliere-annecy/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-agence-immobiliere-strasbourg/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -686,19 +464,7 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/site-web-therapeute-strasbourg/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/blog/articles/vitesse-performance-site-web-annecy-2026/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/vitesse-performance-site-web-strasbourg-2026/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -710,67 +476,7 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/refonte-site-web-strasbourg-2026/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/blog/articles/site-web-hotel-hebergement-annecy/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-hotel-hebergement-strasbourg/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/creation-site-web-strasbourg-2026/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/landing-page-strasbourg-guide-2026/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-architecte-strasbourg/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-artisan-tpe-strasbourg/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-avocat-strasbourg/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-coach-sportif-strasbourg/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-medecin-strasbourg/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-restaurant-strasbourg/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -794,12 +500,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/site-web-agence-immobiliere-alsace/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/blog/articles/aeo-seo-geo-guide-2026/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -807,18 +507,6 @@
   </url>
   <url>
     <loc>https://msd-media.com/blog/articles/apparaitre-chatgpt-perplexity-google-ia/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/bloquer-crawlers-ia-robots-txt/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/choisir-agence-web-strasbourg/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -843,12 +531,6 @@
   </url>
   <url>
     <loc>https://msd-media.com/blog/articles/seo-local-ia-2026/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/seo-local-strasbourg-2026/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -908,12 +590,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/top-5-applications-productivite-2026/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/blog/articles/seo-local-annecy-guide-complet-2026/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -950,12 +626,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/site-web-photographe-strasbourg/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/blog/articles/choisir-agence-web-annecy/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -986,12 +656,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://msd-media.com/blog/articles/10-erreurs-creation-site-web-strasbourg/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://msd-media.com/blog/articles/combien-coute-seo-annecy-2026/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -1002,30 +666,6 @@
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/google-business-profile-strasbourg-2026/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/pourquoi-mon-site-ne-genere-pas-de-clients/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/seo-local-alsace-2026/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://msd-media.com/blog/articles/site-web-coiffeur-strasbourg/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://msd-media.com/blog/articles/site-web-dentiste-annecy/</loc>

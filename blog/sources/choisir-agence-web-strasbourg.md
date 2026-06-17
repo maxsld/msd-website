@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Agence web à Strasbourg : comment bien choisir en 2026 ?"
 date: "2026-04-09"
 description: "Comment choisir la bonne agence web à Strasbourg ? Critères de sélection, questions à poser, tarifs locaux et présentation de MSD Media. Guide complet 2026."

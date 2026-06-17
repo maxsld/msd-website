@@ -1,0 +1,2097 @@
+{
+  "/Users/maxenssoldan/Documents/Codage/msd-website/.githooks/pre-push": {
+    "mtime": 1777227669.3144665,
+    "ast_hash": "8e0b49c6fbb0fe337338cedda693eb5e",
+    "semantic_hash": "8e0b49c6fbb0fe337338cedda693eb5e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/_fix_all.py": {
+    "mtime": 1775901629.0987427,
+    "ast_hash": "82817a1f12f19da61a5ec0858a14e5a6",
+    "semantic_hash": "82817a1f12f19da61a5ec0858a14e5a6"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/_fix_seo.py": {
+    "mtime": 1776279247.9086607,
+    "ast_hash": "6f27034fa1b5e4385728921f72a63304",
+    "semantic_hash": "6f27034fa1b5e4385728921f72a63304"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/_fix_seo_top1.py": {
+    "mtime": 1776325673.7197945,
+    "ast_hash": "f9ca3bf620e2bec72f7100d17fd46928",
+    "semantic_hash": "f9ca3bf620e2bec72f7100d17fd46928"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/api/approve.js": {
+    "mtime": 1776503051.457176,
+    "ast_hash": "793b64cad532462d49d1637bdf73f06f",
+    "semantic_hash": "793b64cad532462d49d1637bdf73f06f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/api/generate-site-concept.js": {
+    "mtime": 1778431102.3962348,
+    "ast_hash": "1e378e8912da9f3f07d38b5f29f1fba9",
+    "semantic_hash": "1e378e8912da9f3f07d38b5f29f1fba9"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/js/script.js": {
+    "mtime": 1781015394.4314947,
+    "ast_hash": "2348f7295bbe51ed4d849cc931d890f0",
+    "semantic_hash": "2348f7295bbe51ed4d849cc931d890f0"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles-manifest.json": {
+    "mtime": 1777371874.9253435,
+    "ast_hash": "5d93f084cb956465ebee9b024da0329a",
+    "semantic_hash": "5d93f084cb956465ebee9b024da0329a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/package.json": {
+    "mtime": 1777227669.406756,
+    "ast_hash": "d9c084fcb8041ba3e8ab5c0415833ad3",
+    "semantic_hash": "d9c084fcb8041ba3e8ab5c0415833ad3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/scripts/cwv-report.mjs": {
+    "mtime": 1777227669.4074724,
+    "ast_hash": "181cd804240e6ab20b12e876b377b238",
+    "semantic_hash": "181cd804240e6ab20b12e876b377b238"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/scripts/generate-articles.js": {
+    "mtime": 1778834250.3941188,
+    "ast_hash": "c3bb8621f6a07bd718244e78d553548c",
+    "semantic_hash": "c3bb8621f6a07bd718244e78d553548c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/scripts/generate-blog.js": {
+    "mtime": 1778834250.3894567,
+    "ast_hash": "8a086852ac2bc6b4364699c7e9bb707f",
+    "semantic_hash": "8a086852ac2bc6b4364699c7e9bb707f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/scripts/github-draft.js": {
+    "mtime": 1776502673.7048423,
+    "ast_hash": "4a7142e35238d5c195f20f740795cd3e",
+    "semantic_hash": "4a7142e35238d5c195f20f740795cd3e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/scripts/google-index.mjs": {
+    "mtime": 1777227669.4075913,
+    "ast_hash": "c481ea137043145984d421985bb754f2",
+    "semantic_hash": "c481ea137043145984d421985bb754f2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/scripts/patch-static-schemas.js": {
+    "mtime": 1775814701.1641362,
+    "ast_hash": "82bbe09a1fc006ac2c89c443256093f9",
+    "semantic_hash": "82bbe09a1fc006ac2c89c443256093f9"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/scripts/update-lastmod.mjs": {
+    "mtime": 1777227669.4077148,
+    "ast_hash": "597de82357d09bc87c3bfcd49a2a90fa",
+    "semantic_hash": "597de82357d09bc87c3bfcd49a2a90fa"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/scripts/uptime-monitor.mjs": {
+    "mtime": 1777227669.4078422,
+    "ast_hash": "43dc521adfd7a1b361c90f635d2d8845",
+    "semantic_hash": "43dc521adfd7a1b361c90f635d2d8845"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/scripts/weekly-analytics-report.mjs": {
+    "mtime": 1778834250.3961074,
+    "ast_hash": "acbf2d9c8aba83686261744dbfec482a",
+    "semantic_hash": "acbf2d9c8aba83686261744dbfec482a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/vercel.json": {
+    "mtime": 1781354300.6953146,
+    "ast_hash": "540c2ca3051d48b3f7308ebc53b87469",
+    "semantic_hash": "540c2ca3051d48b3f7308ebc53b87469"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/.github/workflows/build-blog.yml": {
+    "mtime": 1776503074.2649496,
+    "ast_hash": "3dcd03bbfe351ebc16712c43c62473be",
+    "semantic_hash": "3dcd03bbfe351ebc16712c43c62473be"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/.github/workflows/cwv-weekly.yml": {
+    "mtime": 1777227669.3145945,
+    "ast_hash": "5258ff273333792a35a0795def906129",
+    "semantic_hash": "5258ff273333792a35a0795def906129"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/.github/workflows/index-on-deploy.yml": {
+    "mtime": 1777278753.4541934,
+    "ast_hash": "da92f8b396d84a46bf57161e19129e81",
+    "semantic_hash": "da92f8b396d84a46bf57161e19129e81"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/.github/workflows/uptime-monitor.yml": {
+    "mtime": 1777227669.314822,
+    "ast_hash": "917ff20583b883ab840afd63436e8067",
+    "semantic_hash": "917ff20583b883ab840afd63436e8067"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/.github/workflows/weekly-blog.yml": {
+    "mtime": 1776503062.919614,
+    "ast_hash": "011925440585440557d0dd95626ece73",
+    "semantic_hash": "011925440585440557d0dd95626ece73"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/404.html": {
+    "mtime": 1777227669.3150082,
+    "ast_hash": "20d0418a29bb17f58bcc57c68d16bd78",
+    "semantic_hash": "20d0418a29bb17f58bcc57c68d16bd78"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/404/index.html": {
+    "mtime": 1778926686.3667088,
+    "ast_hash": "dc558ef4f3a8e705e50ee3d3aff1912a",
+    "semantic_hash": "dc558ef4f3a8e705e50ee3d3aff1912a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/a-propos/index.html": {
+    "mtime": 1780736153.5664902,
+    "ast_hash": "7414eba41121d476ecca56bd22e7e703",
+    "semantic_hash": "7414eba41121d476ecca56bd22e7e703"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/affiliation/index.html": {
+    "mtime": 1778834250.3837166,
+    "ast_hash": "38593d8eba736ec29f110dc1557c7220",
+    "semantic_hash": "38593d8eba736ec29f110dc1557c7220"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-alsace/index.html": {
+    "mtime": 1778834250.388935,
+    "ast_hash": "90b8bbea4eb5b0e943d1ac6005843dc6",
+    "semantic_hash": "90b8bbea4eb5b0e943d1ac6005843dc6"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-annecy-le-vieux/index.html": {
+    "mtime": 1781182115.9020436,
+    "ast_hash": "3a1f9cbb97566660a0b151a6a60be50d",
+    "semantic_hash": "3a1f9cbb97566660a0b151a6a60be50d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-annecy/index.html": {
+    "mtime": 1781348431.9525423,
+    "ast_hash": "b78fddeb1e50fb1d566ae213c4492612",
+    "semantic_hash": "b78fddeb1e50fb1d566ae213c4492612"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-bordeaux/index.html": {
+    "mtime": 1781182115.8969,
+    "ast_hash": "2dc6dde68092304ae7b66fc6e10903b4",
+    "semantic_hash": "2dc6dde68092304ae7b66fc6e10903b4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-chambery/index.html": {
+    "mtime": 1781182115.9003496,
+    "ast_hash": "c793c7f289eed5cbc4b0549ef997233d",
+    "semantic_hash": "c793c7f289eed5cbc4b0549ef997233d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-chamonix/index.html": {
+    "mtime": 1781182115.9005494,
+    "ast_hash": "6f3d7600c3837ba1022145f132159d2a",
+    "semantic_hash": "6f3d7600c3837ba1022145f132159d2a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-clermont-ferrand/index.html": {
+    "mtime": 1781182115.9008696,
+    "ast_hash": "5bf41ce97b2b6a3e4df091cb6c40bc8e",
+    "semantic_hash": "5bf41ce97b2b6a3e4df091cb6c40bc8e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-cluses/index.html": {
+    "mtime": 1781182115.9013376,
+    "ast_hash": "265163f4c3d67c4cbeed2fd5f9bc8f77",
+    "semantic_hash": "265163f4c3d67c4cbeed2fd5f9bc8f77"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-geneve/index.html": {
+    "mtime": 1781348431.9593866,
+    "ast_hash": "6f750209136b7855a868292a2126f0bf",
+    "semantic_hash": "6f750209136b7855a868292a2126f0bf"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-haute-savoie/index.html": {
+    "mtime": 1778834250.3727791,
+    "ast_hash": "60b50ebd76358a4a6c6a8cf0dcae57bf",
+    "semantic_hash": "60b50ebd76358a4a6c6a8cf0dcae57bf"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-lille/index.html": {
+    "mtime": 1781182115.8994954,
+    "ast_hash": "0a0e43f3504a0e2d9ec458cbba6d02f1",
+    "semantic_hash": "0a0e43f3504a0e2d9ec458cbba6d02f1"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-lyon/index.html": {
+    "mtime": 1781348431.9574285,
+    "ast_hash": "95c92960f618ca0171c748f35e24401c",
+    "semantic_hash": "95c92960f618ca0171c748f35e24401c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-marseille/index.html": {
+    "mtime": 1781182115.8974054,
+    "ast_hash": "794fd06d853874565a604e2eb533349e",
+    "semantic_hash": "794fd06d853874565a604e2eb533349e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-montpellier/index.html": {
+    "mtime": 1781182115.9001372,
+    "ast_hash": "173b1dab5d4b26b14167b7aa9f696953",
+    "semantic_hash": "173b1dab5d4b26b14167b7aa9f696953"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-munich/index.html": {
+    "mtime": 1779963529.3539574,
+    "ast_hash": "87531b86301062a772b563af18fb5b8c",
+    "semantic_hash": "87531b86301062a772b563af18fb5b8c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-nantes/index.html": {
+    "mtime": 1781182115.8992326,
+    "ast_hash": "c2af888a93fb9b2ff093086b699cf535",
+    "semantic_hash": "c2af888a93fb9b2ff093086b699cf535"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-nice/index.html": {
+    "mtime": 1781182115.8982399,
+    "ast_hash": "5b686f47556f6aecfc777440834efbb6",
+    "semantic_hash": "5b686f47556f6aecfc777440834efbb6"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-paris/index.html": {
+    "mtime": 1781348431.9545524,
+    "ast_hash": "a110a28447e64dddf74d7f7854c31e62",
+    "semantic_hash": "a110a28447e64dddf74d7f7854c31e62"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-rennes/index.html": {
+    "mtime": 1781182115.899875,
+    "ast_hash": "2404104febf93e0c5a04287f01e8fb40",
+    "semantic_hash": "2404104febf93e0c5a04287f01e8fb40"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-strasbourg/index.html": {
+    "mtime": 1778834250.4182677,
+    "ast_hash": "be1d27f7444e0782a6239a3a1ba6b3b2",
+    "semantic_hash": "be1d27f7444e0782a6239a3a1ba6b3b2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-thonon-les-bains/index.html": {
+    "mtime": 1781182115.9015644,
+    "ast_hash": "c98ff39ba57bb3c57afb36e84944f4d2",
+    "semantic_hash": "c98ff39ba57bb3c57afb36e84944f4d2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/agence-web-toulouse/index.html": {
+    "mtime": 1781182115.8978953,
+    "ast_hash": "472dd1c9a93cfbd0ec5d23ec52254dc9",
+    "semantic_hash": "472dd1c9a93cfbd0ec5d23ec52254dc9"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/analyse-seo/index.html": {
+    "mtime": 1778834250.4221005,
+    "ast_hash": "1851acd6283712ac07abd4519b4c6a0d",
+    "semantic_hash": "1851acd6283712ac07abd4519b4c6a0d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/audit-seo-annecy/index.html": {
+    "mtime": 1778834250.3663867,
+    "ast_hash": "1bfccbe6417195effe04ff93932370c0",
+    "semantic_hash": "1bfccbe6417195effe04ff93932370c0"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/audit-seo-strasbourg/index.html": {
+    "mtime": 1778834250.3910124,
+    "ast_hash": "3cceeb035a6f2332def74e76c1d9fb1b",
+    "semantic_hash": "3cceeb035a6f2332def74e76c1d9fb1b"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/10-erreurs-creation-site-web-annecy/index.html": {
+    "mtime": 1781352671.2390742,
+    "ast_hash": "318f79e10d5fd49b82c07c92d05b0f27",
+    "semantic_hash": "318f79e10d5fd49b82c07c92d05b0f27"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/10-erreurs-creation-site-web-strasbourg/index.html": {
+    "mtime": 1781354284.1859214,
+    "ast_hash": "7ee9d0e18a70c3497d5d0d5d34679f9a",
+    "semantic_hash": "7ee9d0e18a70c3497d5d0d5d34679f9a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/aeo-seo-geo-guide-2026/index.html": {
+    "mtime": 1781352671.278907,
+    "ast_hash": "80d8cbcc558f750a00ef69027d445cf3",
+    "semantic_hash": "80d8cbcc558f750a00ef69027d445cf3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/agence-landing-page-site-web-france-msd-media/index.html": {
+    "mtime": 1781352671.240069,
+    "ast_hash": "68fcf2f0f62ee44a473ccb27791b63be",
+    "semantic_hash": "68fcf2f0f62ee44a473ccb27791b63be"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/agence-web-freelance-nocode-2026/index.html": {
+    "mtime": 1781352671.240303,
+    "ast_hash": "b594b6a8d37201f26bdaf1f777e93bf5",
+    "semantic_hash": "b594b6a8d37201f26bdaf1f777e93bf5"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/agences-landing-page-prix-france-2026/index.html": {
+    "mtime": 1781352671.2406676,
+    "ast_hash": "fa26ebc5642af77ab268bad2cf6b1e42",
+    "semantic_hash": "fa26ebc5642af77ab268bad2cf6b1e42"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/ameliorer-taux-conversion-site-web/index.html": {
+    "mtime": 1781352671.2412775,
+    "ast_hash": "0ef58ee6e80d4d0520b6bce632e0cb0f",
+    "semantic_hash": "0ef58ee6e80d4d0520b6bce632e0cb0f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/apparaitre-chatgpt-perplexity-google-ia/index.html": {
+    "mtime": 1781352671.242055,
+    "ast_hash": "c3e7c100aee2ae7f9f32fb663ca6a0cb",
+    "semantic_hash": "c3e7c100aee2ae7f9f32fb663ca6a0cb"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/choisir-agence-web-annecy/index.html": {
+    "mtime": 1781352671.2425036,
+    "ast_hash": "84825c59c16d24ba6834c644bec7890c",
+    "semantic_hash": "84825c59c16d24ba6834c644bec7890c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/choisir-agence-web-strasbourg/index.html": {
+    "mtime": 1781354284.1863427,
+    "ast_hash": "9b802f5a11dc14b60d6fa773741f2bb9",
+    "semantic_hash": "9b802f5a11dc14b60d6fa773741f2bb9"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/combien-coute-landing-page-annecy-2026/index.html": {
+    "mtime": 1781352671.243296,
+    "ast_hash": "15d6b22d1818ca45a7b5e9a88653b39e",
+    "semantic_hash": "15d6b22d1818ca45a7b5e9a88653b39e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/combien-coute-landing-page-france-2026/index.html": {
+    "mtime": 1781352671.243563,
+    "ast_hash": "f460bd3ce81468f7cc27e7aef4cbf53a",
+    "semantic_hash": "f460bd3ce81468f7cc27e7aef4cbf53a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/combien-coute-seo-annecy-2026/index.html": {
+    "mtime": 1781352671.2442207,
+    "ast_hash": "7b1656bfdb941f734a3f478dad9c3110",
+    "semantic_hash": "7b1656bfdb941f734a3f478dad9c3110"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/combien-coute-site-web-annecy-2026/index.html": {
+    "mtime": 1781352671.2445154,
+    "ast_hash": "67c85ec5c2b3222098e5024a706b1a65",
+    "semantic_hash": "67c85ec5c2b3222098e5024a706b1a65"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/combien-coute-site-web-strasbourg-2026/index.html": {
+    "mtime": 1781354284.186975,
+    "ast_hash": "4f28a8ea7f6901e7cad6057f0939f684",
+    "semantic_hash": "4f28a8ea7f6901e7cad6057f0939f684"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/copywriting-web-2026-textes-qui-convertissent/index.html": {
+    "mtime": 1781352671.2451482,
+    "ast_hash": "22521f8e7c98210078a7f7d575bf9eb0",
+    "semantic_hash": "22521f8e7c98210078a7f7d575bf9eb0"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/creation-site-internet-annecy/index.html": {
+    "mtime": 1781354284.1872246,
+    "ast_hash": "32442d2cc53776dc80a9f71c619d3752",
+    "semantic_hash": "32442d2cc53776dc80a9f71c619d3752"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/creation-site-internet-strasbourg-prix-2026/index.html": {
+    "mtime": 1781354284.1879637,
+    "ast_hash": "3a33db3c512f46398abbe6814c55ee2d",
+    "semantic_hash": "3a33db3c512f46398abbe6814c55ee2d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/creation-site-internet-strasbourg/index.html": {
+    "mtime": 1781354284.1876342,
+    "ast_hash": "cd292de6faf15f6a06aa26462a923f91",
+    "semantic_hash": "cd292de6faf15f6a06aa26462a923f91"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/creation-site-web-annecy-2026/index.html": {
+    "mtime": 1781352671.2500074,
+    "ast_hash": "1eacde935720938c8a6550ff35bd0c43",
+    "semantic_hash": "1eacde935720938c8a6550ff35bd0c43"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/creation-site-web-strasbourg-2026/index.html": {
+    "mtime": 1781354284.1881967,
+    "ast_hash": "54b5f0d78b6f8e099e72884f40e12fdd",
+    "semantic_hash": "54b5f0d78b6f8e099e72884f40e12fdd"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/creer-landing-page-14-jours/index.html": {
+    "mtime": 1781352671.251285,
+    "ast_hash": "0e24595b88f97944d1fe82fe4d76a67d",
+    "semantic_hash": "0e24595b88f97944d1fe82fe4d76a67d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/creer-landing-page-qui-convertit/index.html": {
+    "mtime": 1781352671.2517736,
+    "ast_hash": "310e6c50e9ea6f9f665659635ce7555f",
+    "semantic_hash": "310e6c50e9ea6f9f665659635ce7555f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/faut-il-creer-site-web-2026/index.html": {
+    "mtime": 1781352671.25211,
+    "ast_hash": "5d874e5bcb25efccc2b10f7d421c7da0",
+    "semantic_hash": "5d874e5bcb25efccc2b10f7d421c7da0"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/geo-vs-seo-annecy-2026/index.html": {
+    "mtime": 1781352671.2526278,
+    "ast_hash": "a99c2f71b87e882de785aec095aa3515",
+    "semantic_hash": "a99c2f71b87e882de785aec095aa3515"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/google-ai-overviews-pme-france/index.html": {
+    "mtime": 1781352671.2530293,
+    "ast_hash": "c37f7a41ce47c571292325665ca8f925",
+    "semantic_hash": "c37f7a41ce47c571292325665ca8f925"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/google-business-profile-annecy-2026/index.html": {
+    "mtime": 1781352671.253354,
+    "ast_hash": "8d7ead20b8e7603592c1f2c6ac33e79f",
+    "semantic_hash": "8d7ead20b8e7603592c1f2c6ac33e79f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/google-business-profile-strasbourg-2026/index.html": {
+    "mtime": 1781354284.1884785,
+    "ast_hash": "517ea151aafd0ce1fd0d1f0afc9e4177",
+    "semantic_hash": "517ea151aafd0ce1fd0d1f0afc9e4177"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/landing-page-chatgpt-google/index.html": {
+    "mtime": 1781352671.2539096,
+    "ast_hash": "9def7f00496042c44a0a38c7d807e595",
+    "semantic_hash": "9def7f00496042c44a0a38c7d807e595"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/landing-page-coach-consultant-annecy/index.html": {
+    "mtime": 1781352671.254466,
+    "ast_hash": "11408c12c00f622662c41e038b75943a",
+    "semantic_hash": "11408c12c00f622662c41e038b75943a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/landing-page-strasbourg-guide-2026/index.html": {
+    "mtime": 1781354284.1886811,
+    "ast_hash": "6191154cf4f3de516ee00b210880a7b1",
+    "semantic_hash": "6191154cf4f3de516ee00b210880a7b1"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/landing-page-vs-site-web-guide-complet/index.html": {
+    "mtime": 1781352671.255886,
+    "ast_hash": "1c29af2b4ad05b0b54cd25bc0d4bd2c7",
+    "semantic_hash": "1c29af2b4ad05b0b54cd25bc0d4bd2c7"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/maintenance-site-web-annecy/index.html": {
+    "mtime": 1781352671.2563882,
+    "ast_hash": "25558672a2ef5f26d7ec0f2bc7058a38",
+    "semantic_hash": "25558672a2ef5f26d7ec0f2bc7058a38"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/maxens-soldan/index.html": {
+    "mtime": 1781352671.260362,
+    "ast_hash": "b95c8cde39ca9bba52ef308a3f7ce7e7",
+    "semantic_hash": "b95c8cde39ca9bba52ef308a3f7ce7e7"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/meilleure-agence-web-annecy-2026/index.html": {
+    "mtime": 1781352671.2612414,
+    "ast_hash": "93fee6af9e4b97583978819ce0920e2a",
+    "semantic_hash": "93fee6af9e4b97583978819ce0920e2a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/meilleures-agences-cro-france/index.html": {
+    "mtime": 1781352671.2614274,
+    "ast_hash": "ea2662b33e70ab0c2e62324c71e9f208",
+    "semantic_hash": "ea2662b33e70ab0c2e62324c71e9f208"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/index.html": {
+    "mtime": 1781352671.2621832,
+    "ast_hash": "12f412cfe0909ef7f1a77ac42d1a7d95",
+    "semantic_hash": "12f412cfe0909ef7f1a77ac42d1a7d95"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/qui-est-maxens-parcours-et-vision/index.html": {
+    "mtime": 1781352671.2626479,
+    "ast_hash": "b442c2b5429339553e38c7293546fd84",
+    "semantic_hash": "b442c2b5429339553e38c7293546fd84"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/referencement-naturel-annecy/index.html": {
+    "mtime": 1781352671.2631023,
+    "ast_hash": "3e373234620f32a15e592919645b2571",
+    "semantic_hash": "3e373234620f32a15e592919645b2571"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/refonte-site-web-annecy/index.html": {
+    "mtime": 1781352671.2640648,
+    "ast_hash": "9cb3368269c839323c872f9265ffae96",
+    "semantic_hash": "9cb3368269c839323c872f9265ffae96"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/refonte-site-web-strasbourg-2026/index.html": {
+    "mtime": 1781354284.1894145,
+    "ast_hash": "8a50d3a474ef9d018a3f864de86b9950",
+    "semantic_hash": "8a50d3a474ef9d018a3f864de86b9950"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/schema-org-donnees-structurees-ia/index.html": {
+    "mtime": 1781352671.2652006,
+    "ast_hash": "8eb3d9f6e21f32fed97bbb6331690621",
+    "semantic_hash": "8eb3d9f6e21f32fed97bbb6331690621"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/seo-local-alsace-2026/index.html": {
+    "mtime": 1781354284.189651,
+    "ast_hash": "09c0bcd1c25148a434cc23e327886b0e",
+    "semantic_hash": "09c0bcd1c25148a434cc23e327886b0e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/seo-local-annecy-guide-complet-2026/index.html": {
+    "mtime": 1781352671.2658522,
+    "ast_hash": "8b9a3d4063a0b94c130ab22c17dad56a",
+    "semantic_hash": "8b9a3d4063a0b94c130ab22c17dad56a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/seo-local-ia-2026/index.html": {
+    "mtime": 1781352671.2662473,
+    "ast_hash": "11360f3407b5c5fdbad5bf2892bdecc6",
+    "semantic_hash": "11360f3407b5c5fdbad5bf2892bdecc6"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/seo-local-strasbourg-2026/index.html": {
+    "mtime": 1781354284.189975,
+    "ast_hash": "4f618173f137377491a8387ee5519643",
+    "semantic_hash": "4f618173f137377491a8387ee5519643"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-agence-immobiliere-alsace/index.html": {
+    "mtime": 1781354284.1902108,
+    "ast_hash": "052555ae6a9b58ada6b6f490b59661e3",
+    "semantic_hash": "052555ae6a9b58ada6b6f490b59661e3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-agence-immobiliere-annecy/index.html": {
+    "mtime": 1781352671.2670267,
+    "ast_hash": "c3d92e092113eee0e75d9fda9182cc83",
+    "semantic_hash": "c3d92e092113eee0e75d9fda9182cc83"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-agence-immobiliere-haute-savoie/index.html": {
+    "mtime": 1781352671.267285,
+    "ast_hash": "43ae55abe6810a55d35820363b808584",
+    "semantic_hash": "43ae55abe6810a55d35820363b808584"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-agence-immobiliere-strasbourg/index.html": {
+    "mtime": 1781354284.190448,
+    "ast_hash": "2e0ba3d1ff03b6d7ed1c742f41570d06",
+    "semantic_hash": "2e0ba3d1ff03b6d7ed1c742f41570d06"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-architecte-annecy/index.html": {
+    "mtime": 1781352671.2678137,
+    "ast_hash": "5812214a444c97b641d5565dcca07999",
+    "semantic_hash": "5812214a444c97b641d5565dcca07999"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-architecte-strasbourg/index.html": {
+    "mtime": 1781354284.1906617,
+    "ast_hash": "63ee10df7f9f8faa43a1d303d9da4318",
+    "semantic_hash": "63ee10df7f9f8faa43a1d303d9da4318"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-artisan-tpe-annecy/index.html": {
+    "mtime": 1781352671.2682195,
+    "ast_hash": "3608da00bd0353cdb77e4bea0e123334",
+    "semantic_hash": "3608da00bd0353cdb77e4bea0e123334"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-artisan-tpe-strasbourg/index.html": {
+    "mtime": 1781354284.1910882,
+    "ast_hash": "2d5ac48845baaef60a9de0bec3f77359",
+    "semantic_hash": "2d5ac48845baaef60a9de0bec3f77359"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-avocat-annecy/index.html": {
+    "mtime": 1781352671.2688007,
+    "ast_hash": "5205b591303cb8ab31baccfd733ef3ea",
+    "semantic_hash": "5205b591303cb8ab31baccfd733ef3ea"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-avocat-strasbourg/index.html": {
+    "mtime": 1781354284.1912253,
+    "ast_hash": "6f66e10db960f4f7b663dab6e02879cc",
+    "semantic_hash": "6f66e10db960f4f7b663dab6e02879cc"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-coach-sportif-annecy/index.html": {
+    "mtime": 1781352671.269339,
+    "ast_hash": "2bf239f585fa5215e4cd0a336db63561",
+    "semantic_hash": "2bf239f585fa5215e4cd0a336db63561"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-coach-sportif-strasbourg/index.html": {
+    "mtime": 1781354284.191676,
+    "ast_hash": "742551b5728fc4a05e14387d95350c43",
+    "semantic_hash": "742551b5728fc4a05e14387d95350c43"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-coiffeur-annecy/index.html": {
+    "mtime": 1781352671.2701316,
+    "ast_hash": "702b980423be30185a1cc376b574cd2a",
+    "semantic_hash": "702b980423be30185a1cc376b574cd2a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-coiffeur-strasbourg/index.html": {
+    "mtime": 1781354284.1925974,
+    "ast_hash": "8c8827580f4cec1a16fa26471a92340c",
+    "semantic_hash": "8c8827580f4cec1a16fa26471a92340c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-dentiste-annecy/index.html": {
+    "mtime": 1781352671.2707384,
+    "ast_hash": "526c4e7e2ee1a0fb5dbc89db1bee5908",
+    "semantic_hash": "526c4e7e2ee1a0fb5dbc89db1bee5908"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-expert-comptable-annecy/index.html": {
+    "mtime": 1781352671.2709854,
+    "ast_hash": "57aac5a4d8a351ce6db545edf0b9c8e4",
+    "semantic_hash": "57aac5a4d8a351ce6db545edf0b9c8e4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-garage-carrosserie-annecy/index.html": {
+    "mtime": 1781352671.2712328,
+    "ast_hash": "63bb5e6b0856389191106944dcee9701",
+    "semantic_hash": "63bb5e6b0856389191106944dcee9701"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-hotel-hebergement-annecy/index.html": {
+    "mtime": 1781352671.271361,
+    "ast_hash": "01febdee674e8313f320461778d7b1fd",
+    "semantic_hash": "01febdee674e8313f320461778d7b1fd"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-hotel-hebergement-strasbourg/index.html": {
+    "mtime": 1781354284.1930385,
+    "ast_hash": "561a5e216c17554314186df3abca31bb",
+    "semantic_hash": "561a5e216c17554314186df3abca31bb"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-kinesitherapeute-annecy/index.html": {
+    "mtime": 1781352671.2719295,
+    "ast_hash": "a412bdcc06b7557a6b8177e6c239ca75",
+    "semantic_hash": "a412bdcc06b7557a6b8177e6c239ca75"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-medecin-annecy/index.html": {
+    "mtime": 1781352671.272188,
+    "ast_hash": "8277d302e8cc86dffccbcbe9871a35f8",
+    "semantic_hash": "8277d302e8cc86dffccbcbe9871a35f8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-medecin-strasbourg/index.html": {
+    "mtime": 1781354284.1933434,
+    "ast_hash": "ead22f183a2ca4b6fddf4a03ecbe1f40",
+    "semantic_hash": "ead22f183a2ca4b6fddf4a03ecbe1f40"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-notaire-annecy/index.html": {
+    "mtime": 1781352671.2728915,
+    "ast_hash": "e213aaaf81e65608b70185b2a4b128c0",
+    "semantic_hash": "e213aaaf81e65608b70185b2a4b128c0"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-osteopathe-annecy/index.html": {
+    "mtime": 1781352671.2732186,
+    "ast_hash": "70e9f16c9f56f568fbab0657ac1eeed4",
+    "semantic_hash": "70e9f16c9f56f568fbab0657ac1eeed4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-photographe-annecy/index.html": {
+    "mtime": 1781352671.2734609,
+    "ast_hash": "4a41f1e105e8ac359e69475a5497568e",
+    "semantic_hash": "4a41f1e105e8ac359e69475a5497568e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-photographe-strasbourg/index.html": {
+    "mtime": 1781354284.1935687,
+    "ast_hash": "f717f408117ab43444695384193b081f",
+    "semantic_hash": "f717f408117ab43444695384193b081f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-restaurant-cafe-annecy/index.html": {
+    "mtime": 1781352671.2739642,
+    "ast_hash": "1dbd735f276fa47b94a06bf5249b8270",
+    "semantic_hash": "1dbd735f276fa47b94a06bf5249b8270"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-restaurant-strasbourg/index.html": {
+    "mtime": 1781354284.1937826,
+    "ast_hash": "e69a6b838a3e6bf4e709a1258b4fbea7",
+    "semantic_hash": "e69a6b838a3e6bf4e709a1258b4fbea7"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-station-ski-haute-savoie/index.html": {
+    "mtime": 1781352671.2743993,
+    "ast_hash": "caa4276d20d243a13f88eeac8e230e70",
+    "semantic_hash": "caa4276d20d243a13f88eeac8e230e70"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-therapeute-annecy/index.html": {
+    "mtime": 1781352671.2745652,
+    "ast_hash": "0f7790f8936cf43b1ecdf630dd27b0a8",
+    "semantic_hash": "0f7790f8936cf43b1ecdf630dd27b0a8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-therapeute-strasbourg/index.html": {
+    "mtime": 1781354284.1939921,
+    "ast_hash": "aa5e5f58b51acdb4d79cb15a099962dc",
+    "semantic_hash": "aa5e5f58b51acdb4d79cb15a099962dc"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/site-web-veterinaire-annecy/index.html": {
+    "mtime": 1781352671.2764444,
+    "ast_hash": "4abd4067e970b0d2c44eec2a6026449b",
+    "semantic_hash": "4abd4067e970b0d2c44eec2a6026449b"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/structure-landing-page-saas/index.html": {
+    "mtime": 1781352671.2770514,
+    "ast_hash": "1145b7b72d787059e716bacffc80e173",
+    "semantic_hash": "1145b7b72d787059e716bacffc80e173"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/top-10-questions-landing-page-2026/index.html": {
+    "mtime": 1781352671.2775042,
+    "ast_hash": "da4e9d0a8fb308b9f1c1bdf86b52fff4",
+    "semantic_hash": "da4e9d0a8fb308b9f1c1bdf86b52fff4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/top-5-agences-landing-page-france-2026/index.html": {
+    "mtime": 1781352671.2777662,
+    "ast_hash": "fcce69862385500c45306c5379ab1618",
+    "semantic_hash": "fcce69862385500c45306c5379ab1618"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/vitesse-performance-site-web-annecy-2026/index.html": {
+    "mtime": 1781352671.2781794,
+    "ast_hash": "5821dc35cc9fc393d9dd3406824e16f2",
+    "semantic_hash": "5821dc35cc9fc393d9dd3406824e16f2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/articles/vitesse-performance-site-web-strasbourg-2026/index.html": {
+    "mtime": 1781354284.1942923,
+    "ast_hash": "b26d3671f0485f628ed5f723837f05f7",
+    "semantic_hash": "b26d3671f0485f628ed5f723837f05f7"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/index.html": {
+    "mtime": 1781181518.5075636,
+    "ast_hash": "9c299eee962530201702700e18461d75",
+    "semantic_hash": "9c299eee962530201702700e18461d75"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/10-erreurs-creation-site-web-annecy.md": {
+    "mtime": 1777106207.522336,
+    "ast_hash": "bebdb86165e864bc41dc74f88d2dfbb9",
+    "semantic_hash": "bebdb86165e864bc41dc74f88d2dfbb9"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/10-erreurs-creation-site-web-strasbourg-2026.md": {
+    "mtime": 1777106207.4981477,
+    "ast_hash": "14072b20aa580c7676c7a12846bf6911",
+    "semantic_hash": "14072b20aa580c7676c7a12846bf6911"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/aeo-seo-geo-guide-2026.md": {
+    "mtime": 1776760260.654602,
+    "ast_hash": "fee829df9a85a300c43f9f6ada859b3d",
+    "semantic_hash": "fee829df9a85a300c43f9f6ada859b3d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/agence-landing-page-site-web-france-msd-media.md": {
+    "mtime": 1776760260.654978,
+    "ast_hash": "379ac1397e381095cc9925f9afa20139",
+    "semantic_hash": "379ac1397e381095cc9925f9afa20139"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/agence-web-freelance-nocode-2026.md": {
+    "mtime": 1777106301.3875747,
+    "ast_hash": "60c5208e18233c6ce28f3f8bf0cb9068",
+    "semantic_hash": "60c5208e18233c6ce28f3f8bf0cb9068"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/agences-landing-page-prix-france-2026.md": {
+    "mtime": 1777106361.4088745,
+    "ast_hash": "bb1b84cb6a61369ff236a47953a5da1a",
+    "semantic_hash": "bb1b84cb6a61369ff236a47953a5da1a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/ameliorer-taux-conversion-site-web.md": {
+    "mtime": 1777106361.416082,
+    "ast_hash": "ab2b73c4a1c1188a9058049067110589",
+    "semantic_hash": "ab2b73c4a1c1188a9058049067110589"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/apparaitre-chatgpt-perplexity-google-ia.md": {
+    "mtime": 1776760260.656543,
+    "ast_hash": "ac550997c3d9475d3ae7eb597b065c68",
+    "semantic_hash": "ac550997c3d9475d3ae7eb597b065c68"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/bloquer-crawlers-ia-robots-txt.md": {
+    "mtime": 1776760260.657165,
+    "ast_hash": "8334d8e331a7ab55b5d33ce0c3a7ae5d",
+    "semantic_hash": "8334d8e331a7ab55b5d33ce0c3a7ae5d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/choisir-agence-web-annecy.md": {
+    "mtime": 1777106361.411219,
+    "ast_hash": "bdbaccb6316d65b2b51c6fcfddc2af9d",
+    "semantic_hash": "bdbaccb6316d65b2b51c6fcfddc2af9d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/choisir-agence-web-strasbourg.md": {
+    "mtime": 1777106207.5605361,
+    "ast_hash": "64a57fa5df49672864dd947941b0bab8",
+    "semantic_hash": "64a57fa5df49672864dd947941b0bab8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/combien-coute-landing-page-france-2026.md": {
+    "mtime": 1777106361.411594,
+    "ast_hash": "db11b08d953aae21c355557bcb4bb88c",
+    "semantic_hash": "db11b08d953aae21c355557bcb4bb88c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/combien-coute-site-web-annecy-2026.md": {
+    "mtime": 1777106361.412381,
+    "ast_hash": "0b5982d8712b2b9e566bdc49e1c45641",
+    "semantic_hash": "0b5982d8712b2b9e566bdc49e1c45641"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/combien-coute-site-web-strasbourg-2026.md": {
+    "mtime": 1777106361.415301,
+    "ast_hash": "17b80b5661dc1ca22f697c58a6967cd1",
+    "semantic_hash": "17b80b5661dc1ca22f697c58a6967cd1"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/copywriting-web-2026-textes-qui-convertissent.md": {
+    "mtime": 1776760260.6595247,
+    "ast_hash": "12097ca36307939795bd5a37eb0604ec",
+    "semantic_hash": "12097ca36307939795bd5a37eb0604ec"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creation-site-internet-annecy.md": {
+    "mtime": 1777106207.529872,
+    "ast_hash": "e06f3bbb2ec211f77895c0eef64971f4",
+    "semantic_hash": "e06f3bbb2ec211f77895c0eef64971f4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creation-site-internet-bordeaux.md": {
+    "mtime": 1776761407.0096614,
+    "ast_hash": "a170031cc63723f988f1ca1d3a2d8cfe",
+    "semantic_hash": "a170031cc63723f988f1ca1d3a2d8cfe"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creation-site-internet-geneve.md": {
+    "mtime": 1776761407.00989,
+    "ast_hash": "ff366ca6b922d2c7508149ab244bb6ec",
+    "semantic_hash": "ff366ca6b922d2c7508149ab244bb6ec"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creation-site-internet-lyon.md": {
+    "mtime": 1776761407.010453,
+    "ast_hash": "4d6963f94a376f0f1f0e5193be9e0543",
+    "semantic_hash": "4d6963f94a376f0f1f0e5193be9e0543"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creation-site-internet-marseille.md": {
+    "mtime": 1776761407.0109468,
+    "ast_hash": "6cdd682ba10d7b6fe0a4bad4515173f4",
+    "semantic_hash": "6cdd682ba10d7b6fe0a4bad4515173f4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creation-site-internet-paris.md": {
+    "mtime": 1776761407.010809,
+    "ast_hash": "3b4dc45f943fba2ffbb6bf5bf200afb5",
+    "semantic_hash": "3b4dc45f943fba2ffbb6bf5bf200afb5"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creation-site-internet-strasbourg-prix-2026.md": {
+    "mtime": 1777106361.4085126,
+    "ast_hash": "3bf7116454bd5e7a5ed69384fea6105c",
+    "semantic_hash": "3bf7116454bd5e7a5ed69384fea6105c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creation-site-internet-strasbourg.md": {
+    "mtime": 1776761407.0211775,
+    "ast_hash": "232e530e18bbf688b154ced01eafd80f",
+    "semantic_hash": "232e530e18bbf688b154ced01eafd80f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creation-site-internet-toulouse.md": {
+    "mtime": 1776761407.0111172,
+    "ast_hash": "cb3700bd342b154bbe8fbc53157a4246",
+    "semantic_hash": "cb3700bd342b154bbe8fbc53157a4246"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creation-site-web-strasbourg-2026.md": {
+    "mtime": 1777106361.4096785,
+    "ast_hash": "9ba3f57380f2dc408582850b2035f49e",
+    "semantic_hash": "9ba3f57380f2dc408582850b2035f49e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/creer-landing-en-14-jours.md": {
+    "mtime": 1776760260.6635475,
+    "ast_hash": "8cf5312acf415d3dd0223098660f833a",
+    "semantic_hash": "8cf5312acf415d3dd0223098660f833a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/faut-il-creer-site-web-2026.md": {
+    "mtime": 1776760260.6638837,
+    "ast_hash": "a4b89877bef77eff4f5ff87a585bbccc",
+    "semantic_hash": "a4b89877bef77eff4f5ff87a585bbccc"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/geo-vs-seo-annecy-2026.md": {
+    "mtime": 1776760260.6643856,
+    "ast_hash": "013413478d155039a4b7e80c1413f633",
+    "semantic_hash": "013413478d155039a4b7e80c1413f633"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/google-ai-overviews-pme-france.md": {
+    "mtime": 1777106231.9063764,
+    "ast_hash": "7e7641570c478d4cf8e85be596c8ff1c",
+    "semantic_hash": "7e7641570c478d4cf8e85be596c8ff1c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/la-meilleure-structure-de-landing-page-pour-un-SaaS.md": {
+    "mtime": 1776760260.6650221,
+    "ast_hash": "92c2a339aad2bf4e7c2b7a5257d35296",
+    "semantic_hash": "92c2a339aad2bf4e7c2b7a5257d35296"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/landing-page-chatgpt-google.md": {
+    "mtime": 1777106361.4109132,
+    "ast_hash": "56f7d8add6a6867aa4b504003567769d",
+    "semantic_hash": "56f7d8add6a6867aa4b504003567769d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/landing-page-coach-consultant-annecy.md": {
+    "mtime": 1777106301.3832045,
+    "ast_hash": "0e4ff69006fb5b521716acef77e6dcc8",
+    "semantic_hash": "0e4ff69006fb5b521716acef77e6dcc8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/landing-page-strasbourg-guide-2026.md": {
+    "mtime": 1777106207.568308,
+    "ast_hash": "d2071e81e944cafc3e651023b9d541ed",
+    "semantic_hash": "d2071e81e944cafc3e651023b9d541ed"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/landing-page-vs-site-web copy.md": {
+    "mtime": 1776760260.6666873,
+    "ast_hash": "f1b1cb909d9b1a27aae4929984478fa0",
+    "semantic_hash": "f1b1cb909d9b1a27aae4929984478fa0"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/landing-page-vs-site-web-guide-complet.md": {
+    "mtime": 1777106207.4742987,
+    "ast_hash": "370e4bb3a3475fd5fd7b639d7972a049",
+    "semantic_hash": "370e4bb3a3475fd5fd7b639d7972a049"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/meilleure-agence-web-annecy.md": {
+    "mtime": 1776760260.667343,
+    "ast_hash": "d865f39e5e0817269c22083e2a58225b",
+    "semantic_hash": "d865f39e5e0817269c22083e2a58225b"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/meilleures-agences-cro-france.md": {
+    "mtime": 1777106301.3806949,
+    "ast_hash": "d66bbf7414e070deabfa73980566799f",
+    "semantic_hash": "d66bbf7414e070deabfa73980566799f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/meilleures-agences-landing-page.md": {
+    "mtime": 1777106207.4569833,
+    "ast_hash": "0dd2d67651165938c482c0711a3cdb73",
+    "semantic_hash": "0dd2d67651165938c482c0711a3cdb73"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/qui-est-maxens-parcours-et-vision.md": {
+    "mtime": 1777371843.2216258,
+    "ast_hash": "46434b288d0e1032e74b843310bead55",
+    "semantic_hash": "46434b288d0e1032e74b843310bead55"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/refonte-site-web-annecy.md": {
+    "mtime": 1777106361.4103537,
+    "ast_hash": "939cd64f6374da311f44380ad984986c",
+    "semantic_hash": "939cd64f6374da311f44380ad984986c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/refonte-site-web-strasbourg-2026.md": {
+    "mtime": 1777106361.409333,
+    "ast_hash": "4647f0dbce5abc8e2f000666cb9bfe7f",
+    "semantic_hash": "4647f0dbce5abc8e2f000666cb9bfe7f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/schema-org-donnees-structurees-ia.md": {
+    "mtime": 1777106231.90709,
+    "ast_hash": "d6808bc5b37e60999e2796d26ab68c09",
+    "semantic_hash": "d6808bc5b37e60999e2796d26ab68c09"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/seo-local-annecy-guide-complet-2026.md": {
+    "mtime": 1776760260.6697948,
+    "ast_hash": "58cd71f309900fd110dbe6ecf8a8b4a1",
+    "semantic_hash": "58cd71f309900fd110dbe6ecf8a8b4a1"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/seo-local-ia-2026.md": {
+    "mtime": 1776760260.6701107,
+    "ast_hash": "63908b0b444cc9638c434ea05e225288",
+    "semantic_hash": "63908b0b444cc9638c434ea05e225288"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/seo-local-strasbourg-2026.md": {
+    "mtime": 1777106207.5290985,
+    "ast_hash": "ee7f9fc7bb4bd90a305a8420001a1858",
+    "semantic_hash": "ee7f9fc7bb4bd90a305a8420001a1858"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-agence-immobiliere-annecy.md": {
+    "mtime": 1777106301.3842106,
+    "ast_hash": "58f3de73fcce409f83d8f783989b3d02",
+    "semantic_hash": "58f3de73fcce409f83d8f783989b3d02"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-agence-immobiliere-strasbourg.md": {
+    "mtime": 1777106301.3847413,
+    "ast_hash": "fc3e2e80cad266ffb736e87bc641b362",
+    "semantic_hash": "fc3e2e80cad266ffb736e87bc641b362"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-architecte-annecy.md": {
+    "mtime": 1777106361.4127648,
+    "ast_hash": "2f3df7ccb94e84f153ac2d7a1b2b2e36",
+    "semantic_hash": "2f3df7ccb94e84f153ac2d7a1b2b2e36"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-architecte-strasbourg.md": {
+    "mtime": 1777106207.5116372,
+    "ast_hash": "7389654790b56e63ca1fe813c9e96de8",
+    "semantic_hash": "7389654790b56e63ca1fe813c9e96de8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-artisan-tpe-annecy.md": {
+    "mtime": 1777106361.4135044,
+    "ast_hash": "d79dcda73d1af1e4cb320a20681ea124",
+    "semantic_hash": "d79dcda73d1af1e4cb320a20681ea124"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-artisan-tpe-strasbourg.md": {
+    "mtime": 1777106207.556556,
+    "ast_hash": "db6f21e87299c58022d37efd6e010226",
+    "semantic_hash": "db6f21e87299c58022d37efd6e010226"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-avocat-annecy.md": {
+    "mtime": 1777106207.5622835,
+    "ast_hash": "b2873767b8c696f1414d482097a35ef9",
+    "semantic_hash": "b2873767b8c696f1414d482097a35ef9"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-avocat-strasbourg.md": {
+    "mtime": 1777106207.515935,
+    "ast_hash": "944fafcb8816b4a3920df964facc870d",
+    "semantic_hash": "944fafcb8816b4a3920df964facc870d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-coach-sportif-strasbourg.md": {
+    "mtime": 1777106207.4916847,
+    "ast_hash": "1bb31df00bf59adbd5ae8d4e3222dd0b",
+    "semantic_hash": "1bb31df00bf59adbd5ae8d4e3222dd0b"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-hotel-hebergement-annecy.md": {
+    "mtime": 1776761347.506449,
+    "ast_hash": "48ac241fc776f8f98a77fbb1ba35fe3a",
+    "semantic_hash": "48ac241fc776f8f98a77fbb1ba35fe3a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-hotel-hebergement-strasbourg.md": {
+    "mtime": 1777106207.5231245,
+    "ast_hash": "91dddc68247f9174a4c0fe00a31a1423",
+    "semantic_hash": "91dddc68247f9174a4c0fe00a31a1423"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-medecin-annecy.md": {
+    "mtime": 1777106361.4119737,
+    "ast_hash": "3d998c13a3794b8a02f6e7c804b3474e",
+    "semantic_hash": "3d998c13a3794b8a02f6e7c804b3474e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-medecin-strasbourg.md": {
+    "mtime": 1777106361.4075935,
+    "ast_hash": "e8eae8bc64607bf80b1cb8d79bcd364c",
+    "semantic_hash": "e8eae8bc64607bf80b1cb8d79bcd364c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-photographe-annecy.md": {
+    "mtime": 1777106231.9089773,
+    "ast_hash": "4b462467615da1b235d08c7ddef2db0f",
+    "semantic_hash": "4b462467615da1b235d08c7ddef2db0f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-photographe-strasbourg.md": {
+    "mtime": 1777106231.9075181,
+    "ast_hash": "63c61db547d41ce4bd5389a93dccd042",
+    "semantic_hash": "63c61db547d41ce4bd5389a93dccd042"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-restaurant-cafe-annecy.md": {
+    "mtime": 1777106301.3859277,
+    "ast_hash": "25abb9c1ce515685c0fb5400aae06a6f",
+    "semantic_hash": "25abb9c1ce515685c0fb5400aae06a6f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-restaurant-strasbourg.md": {
+    "mtime": 1777106207.4971833,
+    "ast_hash": "263edb2a6c83cf7af07b63c5cd863cd8",
+    "semantic_hash": "263edb2a6c83cf7af07b63c5cd863cd8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-therapeute-annecy.md": {
+    "mtime": 1777106301.3811617,
+    "ast_hash": "09aadfaa7770737d7ac3123656d29269",
+    "semantic_hash": "09aadfaa7770737d7ac3123656d29269"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/site-web-therapeute-strasbourg.md": {
+    "mtime": 1777106301.3868554,
+    "ast_hash": "b279653e334503bee391c329f01380d0",
+    "semantic_hash": "b279653e334503bee391c329f01380d0"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/template-2026-landing-page.md": {
+    "mtime": 1776760260.6781588,
+    "ast_hash": "a9dbbe8397b15ebe8aee8a4794303312",
+    "semantic_hash": "a9dbbe8397b15ebe8aee8a4794303312"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/top-10-questions-landing-page-2026.md": {
+    "mtime": 1777106231.9049585,
+    "ast_hash": "073908666cbefbe94d4638cddf8ef9a5",
+    "semantic_hash": "073908666cbefbe94d4638cddf8ef9a5"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/vitesse-performance-site-web-annecy-2026.md": {
+    "mtime": 1777106361.4100206,
+    "ast_hash": "023f05a9b1eb7d687853ece518b36da2",
+    "semantic_hash": "023f05a9b1eb7d687853ece518b36da2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/blog/sources/vitesse-performance-site-web-strasbourg-2026.md": {
+    "mtime": 1777106361.408045,
+    "ast_hash": "5462d92ac4599950819b3c10d060f467",
+    "semantic_hash": "5462d92ac4599950819b3c10d060f467"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/chatgpt-vous-connait/index.html": {
+    "mtime": 1779399753.0746932,
+    "ast_hash": "0f5043c593967dec17cb732e03ecb38b",
+    "semantic_hash": "0f5043c593967dec17cb732e03ecb38b"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/configurateur/index.html": {
+    "mtime": 1781181542.9980066,
+    "ast_hash": "d8a542e923d42e4b440ef106a9821159",
+    "semantic_hash": "d8a542e923d42e4b440ef106a9821159"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/confirmation-contact/index.html": {
+    "mtime": 1778834250.3856056,
+    "ast_hash": "58faabcad66e9dbe8e465bba03cfcf56",
+    "semantic_hash": "58faabcad66e9dbe8e465bba03cfcf56"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/confirmation-reservation-appel/index.html": {
+    "mtime": 1778834250.3709478,
+    "ast_hash": "309d118b54070b5ab5d8e7daca543bb2",
+    "semantic_hash": "309d118b54070b5ab5d8e7daca543bb2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/confirmation/index.html": {
+    "mtime": 1781348286.1412926,
+    "ast_hash": "09f1272d6fd3c157797c8bd7a10df3dc",
+    "semantic_hash": "09f1272d6fd3c157797c8bd7a10df3dc"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/contact/index.html": {
+    "mtime": 1778834250.3904822,
+    "ast_hash": "9ae320f88d5ac6779bfa4de20c55a845",
+    "semantic_hash": "9ae320f88d5ac6779bfa4de20c55a845"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-internet-annecy/index.html": {
+    "mtime": 1778834250.4075675,
+    "ast_hash": "37c2905f3f9086f0e94d3b9cb84d78fb",
+    "semantic_hash": "37c2905f3f9086f0e94d3b9cb84d78fb"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-internet-strasbourg/index.html": {
+    "mtime": 1778834250.416055,
+    "ast_hash": "29de4c4f3b7e3ba77a2ad315351903c3",
+    "semantic_hash": "29de4c4f3b7e3ba77a2ad315351903c3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-vitrine-annecy/index.html": {
+    "mtime": 1778834250.4011257,
+    "ast_hash": "59a451c7f953f13737debfa74c6a5976",
+    "semantic_hash": "59a451c7f953f13737debfa74c6a5976"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-vitrine-strasbourg/index.html": {
+    "mtime": 1778834250.423178,
+    "ast_hash": "68f7365f4b39493e00b31d97fdb3e823",
+    "semantic_hash": "68f7365f4b39493e00b31d97fdb3e823"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-annecy/index.html": {
+    "mtime": 1778834250.4036314,
+    "ast_hash": "552731540f7971a83c8370ba99f1b1d4",
+    "semantic_hash": "552731540f7971a83c8370ba99f1b1d4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-bordeaux/index.html": {
+    "mtime": 1778834250.38173,
+    "ast_hash": "fb9f2c3c3a6e8ac840df00b97070b1de",
+    "semantic_hash": "fb9f2c3c3a6e8ac840df00b97070b1de"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-chambery/index.html": {
+    "mtime": 1778834250.365892,
+    "ast_hash": "5c011e595e86567cf0094a3f1a9295fc",
+    "semantic_hash": "5c011e595e86567cf0094a3f1a9295fc"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-clermont-ferrand/index.html": {
+    "mtime": 1778834250.3806918,
+    "ast_hash": "228c18d45773690e629a008ae0ada79c",
+    "semantic_hash": "228c18d45773690e629a008ae0ada79c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-geneve/index.html": {
+    "mtime": 1778834250.4190078,
+    "ast_hash": "0cab135eea7d3a77f0eae55db9dc23ea",
+    "semantic_hash": "0cab135eea7d3a77f0eae55db9dc23ea"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-lille/index.html": {
+    "mtime": 1778834250.3918269,
+    "ast_hash": "e81080b87607642dd29d0c738885290e",
+    "semantic_hash": "e81080b87607642dd29d0c738885290e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-lyon/index.html": {
+    "mtime": 1778834250.3732426,
+    "ast_hash": "02ed3175f5a2080fb262a3db57029a4f",
+    "semantic_hash": "02ed3175f5a2080fb262a3db57029a4f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-marseille/index.html": {
+    "mtime": 1778834250.4175584,
+    "ast_hash": "692b2c1a0c9f949cbcf217ecc7008ca7",
+    "semantic_hash": "692b2c1a0c9f949cbcf217ecc7008ca7"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-montpellier/index.html": {
+    "mtime": 1778834250.364151,
+    "ast_hash": "b4bd571997254261d8b31ab25a808066",
+    "semantic_hash": "b4bd571997254261d8b31ab25a808066"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-nantes/index.html": {
+    "mtime": 1778834250.3794835,
+    "ast_hash": "b097fa36e364ca0018a7f2ae81aec252",
+    "semantic_hash": "b097fa36e364ca0018a7f2ae81aec252"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-nice/index.html": {
+    "mtime": 1778834250.4104018,
+    "ast_hash": "874cfc0602c43f261709520d0a846a49",
+    "semantic_hash": "874cfc0602c43f261709520d0a846a49"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-paris/index.html": {
+    "mtime": 1778834250.381183,
+    "ast_hash": "67a5f6a6cdaa78735dca2aa4a25fcbf8",
+    "semantic_hash": "67a5f6a6cdaa78735dca2aa4a25fcbf8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-rennes/index.html": {
+    "mtime": 1778834250.3968136,
+    "ast_hash": "13b98dff18093538be0bc6e6e8c2053c",
+    "semantic_hash": "13b98dff18093538be0bc6e6e8c2053c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-strasbourg/index.html": {
+    "mtime": 1778834250.3945708,
+    "ast_hash": "a71e5faf5c44a0e76f67da64d203a499",
+    "semantic_hash": "a71e5faf5c44a0e76f67da64d203a499"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/creation-site-web-toulouse/index.html": {
+    "mtime": 1778834250.3646126,
+    "ast_hash": "ce5558f7e7d5a2fcafd1e7f79bf81c16",
+    "semantic_hash": "ce5558f7e7d5a2fcafd1e7f79bf81c16"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/devis-landing-page/index.html": {
+    "mtime": 1778834250.3851984,
+    "ast_hash": "093b843f9616668046653ca9f78c705c",
+    "semantic_hash": "093b843f9616668046653ca9f78c705c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/docs/analytics-dashboard-setup.md": {
+    "mtime": 1778834250.4201243,
+    "ast_hash": "6501cea57a9c55721c237e5e290099c8",
+    "semantic_hash": "6501cea57a9c55721c237e5e290099c8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/efce413a0bd22c8ad04ad561e64371e9.txt": {
+    "mtime": 1777227669.3976176,
+    "ast_hash": "d238ae132b2ffefb5cb8039813a5a80c",
+    "semantic_hash": "d238ae132b2ffefb5cb8039813a5a80c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/etudes-de-cas/agence-3xl/index.html": {
+    "mtime": 1780091503.3658788,
+    "ast_hash": "2fb521d45d7bb54aa8a24823d4c92348",
+    "semantic_hash": "2fb521d45d7bb54aa8a24823d4c92348"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/etudes-de-cas/aristoi-academia/index.html": {
+    "mtime": 1779963680.0303514,
+    "ast_hash": "4971f2ac1cb19b331b0f274ed6498b9b",
+    "semantic_hash": "4971f2ac1cb19b331b0f274ed6498b9b"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/etudes-de-cas/carroz-sports/index.html": {
+    "mtime": 1780091573.1002135,
+    "ast_hash": "c2b8c548d0496515ded508dcc15fe466",
+    "semantic_hash": "c2b8c548d0496515ded508dcc15fe466"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/etudes-de-cas/em-motors/index.html": {
+    "mtime": 1779963680.0312545,
+    "ast_hash": "85c7437bed4a0cbaf218fdb75cb31545",
+    "semantic_hash": "85c7437bed4a0cbaf218fdb75cb31545"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/etudes-de-cas/hairtattoo/index.html": {
+    "mtime": 1780091578.429296,
+    "ast_hash": "b8f65f623a508eb80a6602faa6dd2f5c",
+    "semantic_hash": "b8f65f623a508eb80a6602faa6dd2f5c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/etudes-de-cas/index.html": {
+    "mtime": 1781181531.231501,
+    "ast_hash": "50408b639bdc1d6c3d644cc3ae6e69dc",
+    "semantic_hash": "50408b639bdc1d6c3d644cc3ae6e69dc"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/etudes-de-cas/laurence-daien-maestripieri/index.html": {
+    "mtime": 1780091512.189787,
+    "ast_hash": "112ef792ca34b330240c1463dcc693ef",
+    "semantic_hash": "112ef792ca34b330240c1463dcc693ef"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/etudes-de-cas/marie-troccaz/index.html": {
+    "mtime": 1779963680.0294807,
+    "ast_hash": "a3ebdc69b94ffa4412119c2fca5f2561",
+    "semantic_hash": "a3ebdc69b94ffa4412119c2fca5f2561"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/etudes-de-cas/maxime-sciare/index.html": {
+    "mtime": 1779963680.0321171,
+    "ast_hash": "998442ab044d04040754a758766a930e",
+    "semantic_hash": "998442ab044d04040754a758766a930e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/etudes-de-cas/nation-startup/index.html": {
+    "mtime": 1780091491.5218112,
+    "ast_hash": "71b5ade4d463e7ec6c529f1eeda1a827",
+    "semantic_hash": "71b5ade4d463e7ec6c529f1eeda1a827"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/faq-seo-annecy/index.html": {
+    "mtime": 1778834250.4139357,
+    "ast_hash": "80f337c9599dbac35db9819b8ab640e4",
+    "semantic_hash": "80f337c9599dbac35db9819b8ab640e4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/faq-seo-strasbourg/index.html": {
+    "mtime": 1778834250.3900743,
+    "ast_hash": "56c689dfb5dcb9c7a0d9bd40c1b04749",
+    "semantic_hash": "56c689dfb5dcb9c7a0d9bd40c1b04749"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/geo-tracking.md": {
+    "mtime": 1780735963.962835,
+    "ast_hash": "07f6320caef45e0dbff8249330993de7",
+    "semantic_hash": "07f6320caef45e0dbff8249330993de7"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/glossaire-web-seo-annecy/index.html": {
+    "mtime": 1778834250.3932416,
+    "ast_hash": "35f525de46203fd3add88f67fe390172",
+    "semantic_hash": "35f525de46203fd3add88f67fe390172"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/glossaire-web-seo-strasbourg/index.html": {
+    "mtime": 1778834250.3841474,
+    "ast_hash": "72f16e352d13d6e6f1873f5680264467",
+    "semantic_hash": "72f16e352d13d6e6f1873f5680264467"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/index.html": {
+    "mtime": 1781211844.0968556,
+    "ast_hash": "ca164f07b0d5f3600885c570b0b92c12",
+    "semantic_hash": "ca164f07b0d5f3600885c570b0b92c12"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-annecy/index.html": {
+    "mtime": 1781352791.0034459,
+    "ast_hash": "dfe1a1219ec858f6633f4126e89146e7",
+    "semantic_hash": "dfe1a1219ec858f6633f4126e89146e7"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-bordeaux/index.html": {
+    "mtime": 1781352790.996269,
+    "ast_hash": "53cc0c8eb36a7d12510f4c47d4eacfba",
+    "semantic_hash": "53cc0c8eb36a7d12510f4c47d4eacfba"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-chambery/index.html": {
+    "mtime": 1781352791.0016632,
+    "ast_hash": "47d099fdc00731f58d084e0546eedc42",
+    "semantic_hash": "47d099fdc00731f58d084e0546eedc42"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-clermont-ferrand/index.html": {
+    "mtime": 1781352791.0021155,
+    "ast_hash": "f227d461c7d9b01b6ae044e9523640cd",
+    "semantic_hash": "f227d461c7d9b01b6ae044e9523640cd"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-geneve/index.html": {
+    "mtime": 1781352791.0030046,
+    "ast_hash": "f2b9a93d485fb24fb28d173a75c5edf3",
+    "semantic_hash": "f2b9a93d485fb24fb28d173a75c5edf3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-lille/index.html": {
+    "mtime": 1781352791.0001621,
+    "ast_hash": "2d402b18bf4bbb2493d3a8eaff548dd7",
+    "semantic_hash": "2d402b18bf4bbb2493d3a8eaff548dd7"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-lyon/index.html": {
+    "mtime": 1781352790.998004,
+    "ast_hash": "6e04533c083f32a489ff636d7182d7d0",
+    "semantic_hash": "6e04533c083f32a489ff636d7182d7d0"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-marseille/index.html": {
+    "mtime": 1781352790.9970658,
+    "ast_hash": "f8494493545172bb75567694b9c9f83d",
+    "semantic_hash": "f8494493545172bb75567694b9c9f83d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-montpellier/index.html": {
+    "mtime": 1781352791.0012481,
+    "ast_hash": "16abcd0552442c8299877ebb5551d62c",
+    "semantic_hash": "16abcd0552442c8299877ebb5551d62c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-nantes/index.html": {
+    "mtime": 1781352790.9997673,
+    "ast_hash": "bf423ffaaaadee2fa7cbeb18ec7f6996",
+    "semantic_hash": "bf423ffaaaadee2fa7cbeb18ec7f6996"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-nice/index.html": {
+    "mtime": 1781352790.99856,
+    "ast_hash": "e340c21d5c27301ad23c1b6c30c7af7b",
+    "semantic_hash": "e340c21d5c27301ad23c1b6c30c7af7b"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-paris/index.html": {
+    "mtime": 1781352790.9957495,
+    "ast_hash": "8ab1ededf81322d2fb4d6ab89e93b541",
+    "semantic_hash": "8ab1ededf81322d2fb4d6ab89e93b541"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-rennes/index.html": {
+    "mtime": 1781352791.0005753,
+    "ast_hash": "5558762c1866623404ef6278f3a05b36",
+    "semantic_hash": "5558762c1866623404ef6278f3a05b36"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-strasbourg/index.html": {
+    "mtime": 1781352791.002653,
+    "ast_hash": "86db12a42119d9f0e3091f0b499c3d13",
+    "semantic_hash": "86db12a42119d9f0e3091f0b499c3d13"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/landing-page-toulouse/index.html": {
+    "mtime": 1781352790.9993079,
+    "ast_hash": "ce06e2b8d554299c16fbfe6ee1150a5f",
+    "semantic_hash": "ce06e2b8d554299c16fbfe6ee1150a5f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/llms-full.txt": {
+    "mtime": 1778926315.8104188,
+    "ast_hash": "7ac147b0dc4f23ffddad465406ee2044",
+    "semantic_hash": "7ac147b0dc4f23ffddad465406ee2044"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/llms.txt": {
+    "mtime": 1781181493.6556702,
+    "ast_hash": "566e95bf781aa1a26988784b020e85cd",
+    "semantic_hash": "566e95bf781aa1a26988784b020e85cd"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/recrutement/index.html": {
+    "mtime": 1777227669.406947,
+    "ast_hash": "06bca1bc47cfeb504fb507bcbc8f98bd",
+    "semantic_hash": "06bca1bc47cfeb504fb507bcbc8f98bd"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/refonte-site-web-annecy/index.html": {
+    "mtime": 1778834250.3884873,
+    "ast_hash": "34987cb47ee1e4cda143f0460263dcaa",
+    "semantic_hash": "34987cb47ee1e4cda143f0460263dcaa"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/refonte-site-web-strasbourg/index.html": {
+    "mtime": 1778834250.380185,
+    "ast_hash": "5f1e2a38ba30341444db1ab9fe8aa61c",
+    "semantic_hash": "5f1e2a38ba30341444db1ab9fe8aa61c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/robots.txt": {
+    "mtime": 1779398512.466472,
+    "ast_hash": "3d35de28f816a919d1ce339c69276d68",
+    "semantic_hash": "3d35de28f816a919d1ce339c69276d68"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/seo-local-annecy/index.html": {
+    "mtime": 1778834250.4241974,
+    "ast_hash": "55ec3e7b15872beeb26b2e99fe102429",
+    "semantic_hash": "55ec3e7b15872beeb26b2e99fe102429"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/seo-local-strasbourg/index.html": {
+    "mtime": 1778834250.4167771,
+    "ast_hash": "d77e1016649b804f3b60cb8d15361c98",
+    "semantic_hash": "d77e1016649b804f3b60cb8d15361c98"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/terms/mentions.html": {
+    "mtime": 1778834250.407938,
+    "ast_hash": "023cf6735cafb1988175f333a30ed3ab",
+    "semantic_hash": "023cf6735cafb1988175f333a30ed3ab"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/terms/politique-confidentialite.html": {
+    "mtime": 1778834250.409777,
+    "ast_hash": "7e2d14096929602b9cc34b368e673a3c",
+    "semantic_hash": "7e2d14096929602b9cc34b368e673a3c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/agence3xl-mockup.webp": {
+    "mtime": 1775550478.209513,
+    "ast_hash": "844924a2a60a8c4b8383b801f2bc85df",
+    "semantic_hash": "844924a2a60a8c4b8383b801f2bc85df"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/apple-touch-icon.png": {
+    "mtime": 1774703755.8505979,
+    "ast_hash": "12d040cdec7f9b3442d73b74bb9fc6c4",
+    "semantic_hash": "12d040cdec7f9b3442d73b74bb9fc6c4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/aristoi-academia-mockup.webp": {
+    "mtime": 1775550478.349906,
+    "ast_hash": "4a3b22995face9b760d8d1cd8d49a5d8",
+    "semantic_hash": "4a3b22995face9b760d8d1cd8d49a5d8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/10-erreurs-creation-site-web-annecy.jpg": {
+    "mtime": 1775806177.807417,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/aeo-seo-geo-guide-2026.png": {
+    "mtime": 1775804809.1267147,
+    "ast_hash": "98ee597acf89f56a45c33d87bb588b37",
+    "semantic_hash": "98ee597acf89f56a45c33d87bb588b37"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/agence-landing-page-site-web-france-msd-media.jpg": {
+    "mtime": 1775806178.583304,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/agence-web-freelance-nocode-2026.jpg": {
+    "mtime": 1775806178.7600212,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/agences-landing-page-prix-france-2026.png": {
+    "mtime": 1775761356.5749118,
+    "ast_hash": "488242876cc71c79971f4a8bb415a6b3",
+    "semantic_hash": "488242876cc71c79971f4a8bb415a6b3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/ameliorer-taux-conversion-site-web.jpg": {
+    "mtime": 1775806179.1674027,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/apparaitre-chatgpt-perplexity-google-ia.png": {
+    "mtime": 1775804809.1299222,
+    "ast_hash": "98ee597acf89f56a45c33d87bb588b37",
+    "semantic_hash": "98ee597acf89f56a45c33d87bb588b37"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/bloquer-crawlers-ia-robots-txt.png": {
+    "mtime": 1775804809.1314309,
+    "ast_hash": "98ee597acf89f56a45c33d87bb588b37",
+    "semantic_hash": "98ee597acf89f56a45c33d87bb588b37"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/choisir-agence-web-annecy.jpg": {
+    "mtime": 1775806179.7538002,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/choisir-agence-web-strasbourg.jpg": {
+    "mtime": 1775806179.9248812,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/combien-coute-landing-page-france-2026.png": {
+    "mtime": 1775804809.1355176,
+    "ast_hash": "488242876cc71c79971f4a8bb415a6b3",
+    "semantic_hash": "488242876cc71c79971f4a8bb415a6b3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/combien-coute-site-web-annecy-2026.jpg": {
+    "mtime": 1775806180.3263748,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creation-site-internet-annecy.jpg": {
+    "mtime": 1775806180.860784,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creation-site-internet-bordeaux.jpg": {
+    "mtime": 1775806183.1166766,
+    "ast_hash": "87cda05569004b535dccd540d328f4c4",
+    "semantic_hash": "87cda05569004b535dccd540d328f4c4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creation-site-internet-geneve.jpg": {
+    "mtime": 1775806185.4790833,
+    "ast_hash": "c459bcc464f2f66e3d9b404614345a71",
+    "semantic_hash": "c459bcc464f2f66e3d9b404614345a71"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creation-site-internet-lyon.jpg": {
+    "mtime": 1775806186.702077,
+    "ast_hash": "0791aef7bc4896e53c313d8e66b3d1d6",
+    "semantic_hash": "0791aef7bc4896e53c313d8e66b3d1d6"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creation-site-internet-marseille.png": {
+    "mtime": 1775761360.194823,
+    "ast_hash": "0884c50ffd66480eb2d28bedc7e32310",
+    "semantic_hash": "0884c50ffd66480eb2d28bedc7e32310"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creation-site-internet-paris.jpg": {
+    "mtime": 1775806191.3558688,
+    "ast_hash": "51b7450b4be41ff98d37d69c4cd9bb43",
+    "semantic_hash": "51b7450b4be41ff98d37d69c4cd9bb43"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creation-site-internet-strasbourg-prix-2026.jpg": {
+    "mtime": 1775806193.031794,
+    "ast_hash": "ef6fe433721453010ed769240d35fb80",
+    "semantic_hash": "ef6fe433721453010ed769240d35fb80"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creation-site-internet-strasbourg.jpg": {
+    "mtime": 1775806192.2410195,
+    "ast_hash": "c478a47454cbfb5fc8ed80c9c622531f",
+    "semantic_hash": "c478a47454cbfb5fc8ed80c9c622531f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creation-site-internet-toulouse.jpg": {
+    "mtime": 1775806193.7882514,
+    "ast_hash": "79f0e3def523d2b60cc63591dc9653a8",
+    "semantic_hash": "79f0e3def523d2b60cc63591dc9653a8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creer-landing-page-14-jours.png": {
+    "mtime": 1775761361.3909464,
+    "ast_hash": "488242876cc71c79971f4a8bb415a6b3",
+    "semantic_hash": "488242876cc71c79971f4a8bb415a6b3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/creer-landing-page-qui-convertit.png": {
+    "mtime": 1775804809.1246006,
+    "ast_hash": "488242876cc71c79971f4a8bb415a6b3",
+    "semantic_hash": "488242876cc71c79971f4a8bb415a6b3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/faut-il-creer-site-web-2026.jpg": {
+    "mtime": 1775806194.39756,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/geo-vs-seo-annecy-2026.png": {
+    "mtime": 1775761362.0659277,
+    "ast_hash": "98ee597acf89f56a45c33d87bb588b37",
+    "semantic_hash": "98ee597acf89f56a45c33d87bb588b37"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/google-ai-overviews-pme-france.png": {
+    "mtime": 1775804809.138561,
+    "ast_hash": "98ee597acf89f56a45c33d87bb588b37",
+    "semantic_hash": "98ee597acf89f56a45c33d87bb588b37"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/landing-page-chatgpt-google.png": {
+    "mtime": 1775804809.139946,
+    "ast_hash": "98ee597acf89f56a45c33d87bb588b37",
+    "semantic_hash": "98ee597acf89f56a45c33d87bb588b37"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/landing-page-coach-consultant-annecy.jpg": {
+    "mtime": 1775806195.1753235,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/landing-page-vs-site-web-guide-complet.jpg": {
+    "mtime": 1775806195.5863743,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/landing-page-vs-site-web.jpg": {
+    "mtime": 1775806195.4254022,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/maintenance-site-web-annecy.jpg": {
+    "mtime": 1775806195.8352003,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/maxens-soldan.webp": {
+    "mtime": 1775805259.5850499,
+    "ast_hash": "4c79871c22de9e38458793871f47bd41",
+    "semantic_hash": "4c79871c22de9e38458793871f47bd41"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/meilleure-agence-web-annecy-2026.jpg": {
+    "mtime": 1775806196.0461252,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/meilleures-agences-cro-france.jpg": {
+    "mtime": 1775806196.2293558,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/referencement-naturel-annecy.jpg": {
+    "mtime": 1775806196.502054,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/refonte-site-web-annecy.jpg": {
+    "mtime": 1775806196.671509,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/schema-org-donnees-structurees-ia.png": {
+    "mtime": 1775804809.1412742,
+    "ast_hash": "98ee597acf89f56a45c33d87bb588b37",
+    "semantic_hash": "98ee597acf89f56a45c33d87bb588b37"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/seo-local-annecy-guide-complet-2026.jpg": {
+    "mtime": 1775806197.0933282,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/seo-local-ia-2026.jpg": {
+    "mtime": 1775806197.2731383,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/seo-local-strasbourg-2026.jpg": {
+    "mtime": 1775806197.5375347,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-agence-immobiliere-alsace.jpg": {
+    "mtime": 1775806198.2579165,
+    "ast_hash": "9df291558b0608af34ae564659d2e071",
+    "semantic_hash": "9df291558b0608af34ae564659d2e071"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-agence-immobiliere-annecy.jpg": {
+    "mtime": 1775806198.4909906,
+    "ast_hash": "9df291558b0608af34ae564659d2e071",
+    "semantic_hash": "9df291558b0608af34ae564659d2e071"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-agence-immobiliere-haute-savoie.jpg": {
+    "mtime": 1775806198.6680913,
+    "ast_hash": "9df291558b0608af34ae564659d2e071",
+    "semantic_hash": "9df291558b0608af34ae564659d2e071"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-architecte-annecy.jpg": {
+    "mtime": 1775806199.2127783,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-architecte-strasbourg.jpg": {
+    "mtime": 1775806199.3707635,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-artisan-tpe-annecy.jpg": {
+    "mtime": 1775806199.6197228,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-artisan-tpe-strasbourg.jpg": {
+    "mtime": 1775806199.7957077,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-avocat-annecy.jpg": {
+    "mtime": 1775806200.5860476,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-avocat-strasbourg.jpg": {
+    "mtime": 1775806200.7381756,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-coach-sportif-annecy.jpg": {
+    "mtime": 1775806201.2856479,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-coach-sportif-strasbourg.jpg": {
+    "mtime": 1775806201.4609702,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-coiffeur-annecy.jpg": {
+    "mtime": 1775806203.2793775,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-expert-comptable-annecy.jpg": {
+    "mtime": 1775806203.881318,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-kinesitherapeute-annecy.jpg": {
+    "mtime": 1775806204.590335,
+    "ast_hash": "5a88caec92867e737bdd32e5a00abc4a",
+    "semantic_hash": "5a88caec92867e737bdd32e5a00abc4a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-medecin-annecy.jpg": {
+    "mtime": 1775806205.4270537,
+    "ast_hash": "b75857c9b6f2e8013cf8409cc72a4f7e",
+    "semantic_hash": "b75857c9b6f2e8013cf8409cc72a4f7e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-medecin-strasbourg.jpg": {
+    "mtime": 1775806205.5952952,
+    "ast_hash": "b75857c9b6f2e8013cf8409cc72a4f7e",
+    "semantic_hash": "b75857c9b6f2e8013cf8409cc72a4f7e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-osteopathe-annecy.jpg": {
+    "mtime": 1775806206.2043178,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-photographe-annecy.jpeg": {
+    "mtime": 1775761365.7373009,
+    "ast_hash": "cda332542731687e476becf1f5f8b7bc",
+    "semantic_hash": "cda332542731687e476becf1f5f8b7bc"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-restaurant-cafe-annecy.jpg": {
+    "mtime": 1775806210.2816274,
+    "ast_hash": "71afba94c52b28dba573c4726e32a593",
+    "semantic_hash": "71afba94c52b28dba573c4726e32a593"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-restaurant-strasbourg.jpg": {
+    "mtime": 1775806210.921299,
+    "ast_hash": "0a4fa54e8544ca0d15783706d63f5252",
+    "semantic_hash": "0a4fa54e8544ca0d15783706d63f5252"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-station-ski-haute-savoie.jpg": {
+    "mtime": 1775806212.351092,
+    "ast_hash": "4c69158c4bcf0f792157686aff6d9774",
+    "semantic_hash": "4c69158c4bcf0f792157686aff6d9774"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/site-web-therapeute-annecy.jpeg": {
+    "mtime": 1775761366.5176876,
+    "ast_hash": "84a2e2426f5013b2c6381ed2ee157bb2",
+    "semantic_hash": "84a2e2426f5013b2c6381ed2ee157bb2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/structure-landing-page-saas.jpg": {
+    "mtime": 1775806213.320219,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/template-2026-landing-page.jpg": {
+    "mtime": 1775806213.4977753,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/top-10-questions-landing-page-2026.png": {
+    "mtime": 1775761366.954804,
+    "ast_hash": "488242876cc71c79971f4a8bb415a6b3",
+    "semantic_hash": "488242876cc71c79971f4a8bb415a6b3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/top-5-agences-landing-page-france-2026.jpg": {
+    "mtime": 1775806213.908994,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/blog/top-5-applications-productivite-2026.jpg": {
+    "mtime": 1775806214.523114,
+    "ast_hash": "85c72ccfa01c2cb02f693dda83a60f6c",
+    "semantic_hash": "85c72ccfa01c2cb02f693dda83a60f6c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/carroz-sports-mockup.webp": {
+    "mtime": 1775550478.5852113,
+    "ast_hash": "8b389713ee04058f85cc73706160b58d",
+    "semantic_hash": "8b389713ee04058f85cc73706160b58d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/cover-video-1.webp": {
+    "mtime": 1775550478.865214,
+    "ast_hash": "f5753823680142635e3774fe7c58d3db",
+    "semantic_hash": "f5753823680142635e3774fe7c58d3db"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/cover-video-2.webp": {
+    "mtime": 1776326501.8720832,
+    "ast_hash": "18b62c49ae5231169522620933555651",
+    "semantic_hash": "18b62c49ae5231169522620933555651"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/cover-video-3.webp": {
+    "mtime": 1775550479.7253332,
+    "ast_hash": "e7f0b0509d43d3932c77b401d7c330f4",
+    "semantic_hash": "e7f0b0509d43d3932c77b401d7c330f4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/cover-video-4.webp": {
+    "mtime": 1775550480.1953201,
+    "ast_hash": "f8e1fcc46013942d0ee342486b93e8ea",
+    "semantic_hash": "f8e1fcc46013942d0ee342486b93e8ea"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/em-motors-mockup.webp": {
+    "mtime": 1775550480.264638,
+    "ast_hash": "072c5c320b449d3fc0cbf75d2b606674",
+    "semantic_hash": "072c5c320b449d3fc0cbf75d2b606674"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/favicon-96x96.png": {
+    "mtime": 1774703755.8526628,
+    "ast_hash": "ef2fc3d5d40609bb8e096069376b6d71",
+    "semantic_hash": "ef2fc3d5d40609bb8e096069376b6d71"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/favicon.svg": {
+    "mtime": 1774703755.8566873,
+    "ast_hash": "3980666b1b375eecaaa76ccd477395bc",
+    "semantic_hash": "3980666b1b375eecaaa76ccd477395bc"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/hairtattoo-mockup.webp": {
+    "mtime": 1775550480.4293392,
+    "ast_hash": "b137a994aed129ba8977eff605e4fbf4",
+    "semantic_hash": "b137a994aed129ba8977eff605e4fbf4"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/icon-citation.webp": {
+    "mtime": 1775550480.4840631,
+    "ast_hash": "9fe4b0afef6ca5616eeed4051b706e62",
+    "semantic_hash": "9fe4b0afef6ca5616eeed4051b706e62"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/icons/chatgpt-mark.svg": {
+    "mtime": 1776516590.572067,
+    "ast_hash": "7324b3f9e372d42de236d68936567ae3",
+    "semantic_hash": "7324b3f9e372d42de236d68936567ae3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/icons/claude-mark.svg": {
+    "mtime": 1776516590.5738826,
+    "ast_hash": "75b6292a87a22fbb2ef408a679df4f16",
+    "semantic_hash": "75b6292a87a22fbb2ef408a679df4f16"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/img-cover.png": {
+    "mtime": 1777227669.363167,
+    "ast_hash": "43d12b9d40d3e833cc82a977e3c18708",
+    "semantic_hash": "43d12b9d40d3e833cc82a977e3c18708"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/img-cover.webp": {
+    "mtime": 1777227669.3635807,
+    "ast_hash": "4452f2b83d0cef8e7fc92187a1b21044",
+    "semantic_hash": "4452f2b83d0cef8e7fc92187a1b21044"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/laurence-mockup.webp": {
+    "mtime": 1775550480.7550657,
+    "ast_hash": "a3bb05983a53ff845523775d7548791a",
+    "semantic_hash": "a3bb05983a53ff845523775d7548791a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-black.webp": {
+    "mtime": 1775550480.7876103,
+    "ast_hash": "024567b5e0159e9dfcc7a58fce04dce9",
+    "semantic_hash": "024567b5e0159e9dfcc7a58fce04dce9"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-merz-aesthetics.webp": {
+    "mtime": 1781015117.3087473,
+    "ast_hash": "f9c9a9039c86b67f4a4790f1925117bd",
+    "semantic_hash": "f9c9a9039c86b67f4a4790f1925117bd"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-track1.webp": {
+    "mtime": 1774703755.8640578,
+    "ast_hash": "389d1f196c707c722866416aa13511a7",
+    "semantic_hash": "389d1f196c707c722866416aa13511a7"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-track2.webp": {
+    "mtime": 1774703755.8659768,
+    "ast_hash": "14aa2924ec9a68a703136c4abed14fb1",
+    "semantic_hash": "14aa2924ec9a68a703136c4abed14fb1"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-track3.webp": {
+    "mtime": 1774703755.8709857,
+    "ast_hash": "709eb3458c1430a4d3257c0b2fdd3110",
+    "semantic_hash": "709eb3458c1430a4d3257c0b2fdd3110"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-track4.webp": {
+    "mtime": 1774703755.8728359,
+    "ast_hash": "d1d6ecb9a089b0723f0e959c9695bdfc",
+    "semantic_hash": "d1d6ecb9a089b0723f0e959c9695bdfc"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-track5.webp": {
+    "mtime": 1774703755.8775322,
+    "ast_hash": "93985c3a829e9c3beeeb5b2219b085b5",
+    "semantic_hash": "93985c3a829e9c3beeeb5b2219b085b5"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-track6.webp": {
+    "mtime": 1774703755.8809922,
+    "ast_hash": "0bf52de5b069b5856d438411a1a46651",
+    "semantic_hash": "0bf52de5b069b5856d438411a1a46651"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-track7.webp": {
+    "mtime": 1774703755.883251,
+    "ast_hash": "78049a36b49dd070f605067fdd0e150e",
+    "semantic_hash": "78049a36b49dd070f605067fdd0e150e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-track8.webp": {
+    "mtime": 1775550481.0745058,
+    "ast_hash": "3bbc4ecb7ff0bbad3cc0a9d8eff5de1d",
+    "semantic_hash": "3bbc4ecb7ff0bbad3cc0a9d8eff5de1d"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/logo-track9.webp": {
+    "mtime": 1775550481.1507921,
+    "ast_hash": "0d703525321fec311c9a6b997121cad2",
+    "semantic_hash": "0d703525321fec311c9a6b997121cad2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/marie-troccaz-mockup.webp": {
+    "mtime": 1775550481.290824,
+    "ast_hash": "cbb952a7dca5deebfd7ab5b67f4e4b81",
+    "semantic_hash": "cbb952a7dca5deebfd7ab5b67f4e4b81"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp": {
+    "mtime": 1775550481.377162,
+    "ast_hash": "4c79871c22de9e38458793871f47bd41",
+    "semantic_hash": "4c79871c22de9e38458793871f47bd41"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/maxens-soldan.webp": {
+    "mtime": 1779399748.5009856,
+    "ast_hash": "0f10c74cbb8173e654a28d6ffa608152",
+    "semantic_hash": "0f10c74cbb8173e654a28d6ffa608152"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/maxime-sciare-mockup.webp": {
+    "mtime": 1775550481.7011788,
+    "ast_hash": "ad0e1bffdae892e75400c4ecb4b93cb1",
+    "semantic_hash": "ad0e1bffdae892e75400c4ecb4b93cb1"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/nation-mockup.webp": {
+    "mtime": 1775550481.9114468,
+    "ast_hash": "db135869c256173a4873649b76e1baf6",
+    "semantic_hash": "db135869c256173a4873649b76e1baf6"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/agence3xl-mockup-960.webp": {
+    "mtime": 1776505577.531869,
+    "ast_hash": "9aa079506910ee5d9bf7c2c4a900e611",
+    "semantic_hash": "9aa079506910ee5d9bf7c2c4a900e611"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/aristoi-academia-mockup-960.webp": {
+    "mtime": 1776505577.6879485,
+    "ast_hash": "b7abc3cca9c0bece597b3efb03d8da93",
+    "semantic_hash": "b7abc3cca9c0bece597b3efb03d8da93"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/carroz-sports-mockup-960.webp": {
+    "mtime": 1776505577.7286904,
+    "ast_hash": "7a9a658fdb8a07e76d3fb750ab9f94c1",
+    "semantic_hash": "7a9a658fdb8a07e76d3fb750ab9f94c1"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/cover-video-1-420.webp": {
+    "mtime": 1776505577.8093781,
+    "ast_hash": "f6d884b2deb806e475abcaf0957a18bf",
+    "semantic_hash": "f6d884b2deb806e475abcaf0957a18bf"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/cover-video-2-420.webp": {
+    "mtime": 1776505591.5651972,
+    "ast_hash": "e32b32dc0d2668e126c59396ea0e5eac",
+    "semantic_hash": "e32b32dc0d2668e126c59396ea0e5eac"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/cover-video-3-420.webp": {
+    "mtime": 1776505591.5930765,
+    "ast_hash": "b7168d86d97f2d921b59d1532ea680c6",
+    "semantic_hash": "b7168d86d97f2d921b59d1532ea680c6"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/hairtattoo-mockup-960.webp": {
+    "mtime": 1776505577.6521313,
+    "ast_hash": "cb70fa4fdacf16ef2d5a3b40ed195904",
+    "semantic_hash": "cb70fa4fdacf16ef2d5a3b40ed195904"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/laurence-mockup-960.webp": {
+    "mtime": 1776505577.6138449,
+    "ast_hash": "c1db4c07219b58fb700c48e74fea22e3",
+    "semantic_hash": "c1db4c07219b58fb700c48e74fea22e3"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/logo-track3-320.webp": {
+    "mtime": 1776505577.392554,
+    "ast_hash": "fcd681f03156c31e2b999251d8cff071",
+    "semantic_hash": "fcd681f03156c31e2b999251d8cff071"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/logo-track6-520.webp": {
+    "mtime": 1776505577.417552,
+    "ast_hash": "a55c56b017218cf71511be742d898820",
+    "semantic_hash": "a55c56b017218cf71511be742d898820"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/logo-track7-420.webp": {
+    "mtime": 1776505577.4260035,
+    "ast_hash": "80a76d8a36e8dec8c86aa98e801924b2",
+    "semantic_hash": "80a76d8a36e8dec8c86aa98e801924b2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/marie-troccaz-mockup-900.webp": {
+    "mtime": 1776505577.7811787,
+    "ast_hash": "d925ad3a7565684a8ec4a991fbc55d3a",
+    "semantic_hash": "d925ad3a7565684a8ec4a991fbc55d3a"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/maxime-sciare-mockup-960.webp": {
+    "mtime": 1776505577.5727475,
+    "ast_hash": "02f431b57ef2761c271809b7eb74edbc",
+    "semantic_hash": "02f431b57ef2761c271809b7eb74edbc"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/nation-mockup-960.webp": {
+    "mtime": 1776505577.4744017,
+    "ast_hash": "3c62f472831dbdf245bf0de41ed50b3b",
+    "semantic_hash": "3c62f472831dbdf245bf0de41ed50b3b"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/optimized/trustpilot-color-400.webp": {
+    "mtime": 1776505577.4340744,
+    "ast_hash": "d00ce6c1fea473dc1f55374980d1a8a6",
+    "semantic_hash": "d00ce6c1fea473dc1f55374980d1a8a6"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/process1-affiliation.png": {
+    "mtime": 1776548001.4053025,
+    "ast_hash": "1f0a4fc1c5dcf5687d0ea1dd8ea737e2",
+    "semantic_hash": "1f0a4fc1c5dcf5687d0ea1dd8ea737e2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/process2-affiliation.png": {
+    "mtime": 1776549957.2756338,
+    "ast_hash": "8a45effca3cb2bf35a2660f691b7be63",
+    "semantic_hash": "8a45effca3cb2bf35a2660f691b7be63"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/process3-affiliation.png": {
+    "mtime": 1776548829.1264584,
+    "ast_hash": "34705a1207b76ebe846b7778e354a545",
+    "semantic_hash": "34705a1207b76ebe846b7778e354a545"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/cedric.webp": {
+    "mtime": 1758803202.3815475,
+    "ast_hash": "30cb77af1deecdcf537bfcbf638228de",
+    "semantic_hash": "30cb77af1deecdcf537bfcbf638228de"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/gerald.webp": {
+    "mtime": 1775550482.0063272,
+    "ast_hash": "c6ee39b587fa2ebdde8027cddf64b009",
+    "semantic_hash": "c6ee39b587fa2ebdde8027cddf64b009"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/julian.webp": {
+    "mtime": 1775550482.1745636,
+    "ast_hash": "bc6e3b7b93a18b5c1cdbf5f4b8e2b50e",
+    "semantic_hash": "bc6e3b7b93a18b5c1cdbf5f4b8e2b50e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/laurence.webp": {
+    "mtime": 1775550482.3239396,
+    "ast_hash": "ea5a153bd68fdf345d3336ef3e47806e",
+    "semantic_hash": "ea5a153bd68fdf345d3336ef3e47806e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/maxime.webp": {
+    "mtime": 1775550482.559482,
+    "ast_hash": "b56abc72401041ff393beb3fdcf09e52",
+    "semantic_hash": "b56abc72401041ff393beb3fdcf09e52"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/cedric-176.webp": {
+    "mtime": 1776505577.1786606,
+    "ast_hash": "91da2e2660ff87eb0a6b9cf1079e0666",
+    "semantic_hash": "91da2e2660ff87eb0a6b9cf1079e0666"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/cedric-352.webp": {
+    "mtime": 1776505577.1949403,
+    "ast_hash": "32acefc0add69c4c024b844d0912880b",
+    "semantic_hash": "32acefc0add69c4c024b844d0912880b"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/gerald-176.webp": {
+    "mtime": 1776505577.2062826,
+    "ast_hash": "658c37597ee1aa59e469d040c77d2d41",
+    "semantic_hash": "658c37597ee1aa59e469d040c77d2d41"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/gerald-352.webp": {
+    "mtime": 1776505577.2194118,
+    "ast_hash": "aa0e510bfdb37fe5d38ed13c5a322127",
+    "semantic_hash": "aa0e510bfdb37fe5d38ed13c5a322127"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/julian-176.webp": {
+    "mtime": 1776505577.2307894,
+    "ast_hash": "ccc63ea48cb51637cd128b421891c1e8",
+    "semantic_hash": "ccc63ea48cb51637cd128b421891c1e8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/julian-352.webp": {
+    "mtime": 1776505577.2610564,
+    "ast_hash": "08e10de34022c48f1bc9b772e05d042c",
+    "semantic_hash": "08e10de34022c48f1bc9b772e05d042c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/laurence-176.webp": {
+    "mtime": 1776505577.274149,
+    "ast_hash": "cfff75d83ca4b37a7bcef5f5e63c74b7",
+    "semantic_hash": "cfff75d83ca4b37a7bcef5f5e63c74b7"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/laurence-352.webp": {
+    "mtime": 1776505577.2890444,
+    "ast_hash": "1d70c08f21feeb061ed9efb4d89ae93f",
+    "semantic_hash": "1d70c08f21feeb061ed9efb4d89ae93f"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/maxime-176.webp": {
+    "mtime": 1776505577.3012094,
+    "ast_hash": "958c6ec604d61c0edaf1f5f5f1b863dd",
+    "semantic_hash": "958c6ec604d61c0edaf1f5f5f1b863dd"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/maxime-352.webp": {
+    "mtime": 1776505577.3162835,
+    "ast_hash": "08726286bc0edc2d416df1403753c951",
+    "semantic_hash": "08726286bc0edc2d416df1403753c951"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/pierre-176.webp": {
+    "mtime": 1776505577.3289404,
+    "ast_hash": "da23e75ad5d45a8be4c6966c34904732",
+    "semantic_hash": "da23e75ad5d45a8be4c6966c34904732"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/pierre-352.webp": {
+    "mtime": 1776505577.3458867,
+    "ast_hash": "4b6c1bfc136ab34f0102d8e13e3cca09",
+    "semantic_hash": "4b6c1bfc136ab34f0102d8e13e3cca09"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/zoltan-176.webp": {
+    "mtime": 1776505577.3575506,
+    "ast_hash": "227e9ada5c24612c0daf5ce89c20876c",
+    "semantic_hash": "227e9ada5c24612c0daf5ce89c20876c"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/optimized/zoltan-352.webp": {
+    "mtime": 1776505577.370784,
+    "ast_hash": "8ce35038d7d7d2781cd8bcb8180cb2b8",
+    "semantic_hash": "8ce35038d7d7d2781cd8bcb8180cb2b8"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/pierre.webp": {
+    "mtime": 1758803217.2753866,
+    "ast_hash": "1868c569d56af986eb4286e0378d19a2",
+    "semantic_hash": "1868c569d56af986eb4286e0378d19a2"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/profiles/zoltan.webp": {
+    "mtime": 1758803228.4599712,
+    "ast_hash": "09454d2b8395cee707cbf7dee83956ed",
+    "semantic_hash": "09454d2b8395cee707cbf7dee83956ed"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/stars.svg": {
+    "mtime": 1764327031.6396132,
+    "ast_hash": "7fa4227f6a381bb4265934aa5e7a0a4e",
+    "semantic_hash": "7fa4227f6a381bb4265934aa5e7a0a4e"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/trustpilot-color.webp": {
+    "mtime": 1775550482.648324,
+    "ast_hash": "e02d4e71aa332663a3b613c38541d976",
+    "semantic_hash": "e02d4e71aa332663a3b613c38541d976"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/web-app-manifest-192x192.png": {
+    "mtime": 1774703755.887476,
+    "ast_hash": "80a62c207b94292becb1087787865885",
+    "semantic_hash": "80a62c207b94292becb1087787865885"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/img/web-app-manifest-512x512.png": {
+    "mtime": 1774703755.8895216,
+    "ast_hash": "c7425e5647fbb48ca96b927e9bab19fe",
+    "semantic_hash": "c7425e5647fbb48ca96b927e9bab19fe"
+  },
+  "/Users/maxenssoldan/Documents/Codage/msd-website/assets/video/video-motion-msd.mp4": {
+    "mtime": 1774703717.775103,
+    "ast_hash": "548feb011c23f29bc621709f710f310f",
+    "semantic_hash": "548feb011c23f29bc621709f710f310f"
+  }
+}

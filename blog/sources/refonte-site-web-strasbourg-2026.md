@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Refonte de site web à Strasbourg : quand faut-il le faire et combien ça coûte ? (2026)"
 date: "2026-04-21"
 description: "Votre site ne convertit plus à Strasbourg ? Découvrez les signaux d'alerte, les étapes d'une refonte réussie et les tarifs pratiqués en Alsace en 2026."

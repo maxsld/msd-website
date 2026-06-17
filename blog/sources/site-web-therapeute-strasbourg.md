@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Site web pour thérapeute et praticien à Strasbourg : le guide complet 2026"
 date: "2026-03-17"
 description: "Vous êtes thérapeute, coach, naturopathe ou praticien bien-être à Strasbourg ? Découvrez comment un site web bien conçu attire des clients qualifiés, inspire confiance et vous positionne en 1ère page sur Google."

@@ -705,7 +705,7 @@ function renderArticlePage(post, allPosts) {
   <title>${escapeHtml(post.title)} | ${BRAND}</title>
   <meta name="description" content="${escapeHtml(post.description)}" />
   <meta name="keywords" content="${escapeHtml(keywords)}" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="robots" content="${post.noindex ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large'}" />
   <link rel="canonical" href="${pageUrl}" />
 
   <meta property="og:type" content="article" />
@@ -1167,6 +1167,7 @@ function main() {
     const tags = Array.isArray(data.tags) ? data.tags : [];
     const keyword = data.keyword || tags[0] || '';
     const image = normalizePostImage(data.image, slug);
+    const noindex = data.noindex === true || data.noindex === 'true';
 
     const { html, toc } = markdownToHtml(cleanedBody);
 
@@ -1181,6 +1182,7 @@ function main() {
       html,
       toc,
       reading,
+      noindex,
       sourceFile: path.basename(filePath)
     });
   });

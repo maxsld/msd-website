@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "SEO local à Strasbourg : guide complet pour dominer les recherches locales en 2026"
 date: "2026-04-09"
 description: "Guide complet du SEO local à Strasbourg en 2026. Comment apparaître en tête des recherches Google pour votre activité en Alsace : Google Business Profile, mots-clés locaux, contenu et backlinks."

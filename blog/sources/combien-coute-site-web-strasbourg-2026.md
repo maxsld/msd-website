@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Combien coûte un site web à Strasbourg en 2026 ? (Guide des tarifs)"
 date: "2026-02-08"
 description: "Les vrais prix d'un site web à Strasbourg en 2026. Sans bullshit, sans frais cachés. Juste ce que tu dois savoir avant de te lancer."

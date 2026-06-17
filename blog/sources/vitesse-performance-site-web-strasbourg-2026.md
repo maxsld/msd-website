@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Vitesse de site web à Strasbourg : pourquoi ça coûte des clients (et comment y remédier en 2026)"
 date: "2026-04-20"
 description: "Un site lent vous fait perdre des clients à Strasbourg. Découvrez les chiffres réels, les Core Web Vitals qui comptent, et comment optimiser la performance de votre site en 2026."

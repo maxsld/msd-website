@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Les 10 erreurs à éviter lors de la création de votre site web à Strasbourg"
 date: "2026-02-08"
 description: "Les erreurs classiques qui coûtent cher aux entreprises d'Strasbourg. Ce qu'il faut absolument éviter pour créer un site qui convertit."

@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Site web pour médecin et professionnel de santé à Strasbourg : le guide complet 2026"
 date: "2026-04-19"
 description: "Vous êtes médecin, spécialiste ou professionnel de santé à Strasbourg ? Découvrez comment un site web bien conçu vous permet d'attirer de nouveaux patients, de réduire les appels inutiles et de renforcer votre crédibilité en ligne."

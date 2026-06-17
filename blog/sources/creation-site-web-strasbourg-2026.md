@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Création de site web à Strasbourg en 2026 : guide complet pour les entreprises alsaciennes"
 date: "2026-04-19"
 description: "Vous voulez créer un site web à Strasbourg en 2026 ? Découvrez tout ce qu'il faut savoir : coûts, délais, choix de l'agence, erreurs à éviter et comment dominer Google en Alsace."

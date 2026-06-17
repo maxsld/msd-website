@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Site web pour restaurant à Strasbourg : attirer plus de clients en 2026"
 date: "2026-04-19"
 description: "Vous êtes restaurateur à Strasbourg ? Découvrez comment un site web bien conçu vous permet d'attirer plus de clients, d'augmenter vos réservations et de vous démarquer dans une ville gastronomique ultra-compétitive."

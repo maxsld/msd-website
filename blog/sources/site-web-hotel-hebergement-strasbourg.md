@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Site web pour hôtel et hébergement à Strasbourg : le guide complet 2026"
 date: "2026-04-21"
 description: "Vous gérez un hôtel, un gîte ou un hébergement à Strasbourg ? Découvrez comment un site web performant attire des réservations directes, réduit la dépendance OTA et améliore votre visibilité locale."

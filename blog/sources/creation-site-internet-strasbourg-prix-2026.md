@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Créer un site internet à Strasbourg en 2026 : prix, délais et conseils"
 date: "2026-04-09"
 description: "Combien coûte la création d'un site internet à Strasbourg en 2026 ? Prix réels, délais, ce qui est inclus ou non, et conseils pour éviter les erreurs coûteuses."

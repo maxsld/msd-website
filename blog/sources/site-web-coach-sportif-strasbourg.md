@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Site web pour coach sportif à Strasbourg : développer son activité en 2026"
 date: "2026-04-19"
 description: "Vous êtes coach sportif ou préparateur physique à Strasbourg ? Découvrez comment un site web professionnel vous permet d'attirer de nouveaux clients, de vous démarquer et de développer votre activité en ligne."

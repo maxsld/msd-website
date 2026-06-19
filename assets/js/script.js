@@ -321,25 +321,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const heroWordSets = {
     fr: {
-      lead: "On fait des sites web et des landing pages que",
-      words: [
-        {
-          label: "Claude",
-          logo: "https://cdn.prod.website-files.com/6883119fb08482e1a28b331b/68b1a91141a014f6037a9a61_68adecff420db5aa8aaaf7a9_claude-logo.svg"
-        },
-        {
-          label: "ChatGPT",
-          logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/3840px-ChatGPT-Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
-        },
-        {
-          label: "Perplexity",
-          logo: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/perplexity.webp"
-        },
-        {
-          label: "Gemini",
-          logo: "https://static.vecteezy.com/system/resources/previews/055/687/065/non_2x/gemini-google-icon-symbol-logo-free-png.png"
-        }
-      ]
+      lead: "On fait des sites web et des landing pages",
+      words: ["inoubliables."]
     },
     en: {
       lead: "We build websites and landing pages",
@@ -1444,7 +1427,7 @@ function initManifestoAnimation() {
             .replace(/[.,!?;:]/g, "")
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "");
-          const isMuted = normalized === "invisibles" || normalized === "recommande";
+          const isMuted = normalized === "oublies" || normalized === "graves";
           const wordClass = isMuted ? "scroll-manifesto__word scroll-manifesto__word--muted" : "scroll-manifesto__word";
           return `<span class="${wordClass}">${word}&nbsp;</span>`;
         })

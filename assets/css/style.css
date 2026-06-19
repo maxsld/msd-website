@@ -496,22 +496,24 @@ main {
 }
 
 .hero__title-word-wrap {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
-  margin-top: calc(-1rem + 2px);
+  vertical-align: baseline;
+  margin-top: 0;
+  margin-left: 0;
   overflow: hidden;
-  padding: 0.14em 0.5em 0.2em;
-  padding-bottom: 0.12em;
-  margin-bottom: -0.20em;
+  padding: 0;
+  margin-bottom: 0;
   white-space: nowrap;
   transition: width 0.42s cubic-bezier(0.22, 1, 0.36, 1);
   line-height: inherit;
 }
 
 .hero__title-word {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  color: var(--global-color-blue);
   will-change: transform, opacity, filter;
   transition: opacity 0.34s ease, transform 0.34s ease, filter 0.34s ease;
   line-height: inherit;

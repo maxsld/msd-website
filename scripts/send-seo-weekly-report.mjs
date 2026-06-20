@@ -203,17 +203,26 @@ function mapGaRows(report, metricNames = []) {
   });
 }
 
-function statLine(pairs) {
-  return `<p style="color:#555;font-size:15px;line-height:1.8;margin:0 0 16px">${pairs
-    .map(([label, value]) => `${escapeHtml(label)} : <strong style="color:#111">${escapeHtml(value)}</strong>`)
-    .join(" &nbsp;·&nbsp; ")}</p>`;
-}
-
-function simpleList(rows, render) {
-  if (!rows.length) return "<p style='color:#aaa;font-size:14px;margin:0 0 16px'>Aucune donnée.</p>";
-  return `<ul style="margin:0 0 16px;padding-left:20px">${rows
-    .map((row) => `<li style="color:#555;font-size:14px;line-height:1.6;margin-bottom:4px">${render(row)}</li>`)
-    .join("")}</ul>`;
+function toTableHtml(headers, rows) {
+  if (!rows.length) return "<p style='color:#aaa;font-size:13px;margin:0 0 16px'>Aucune donnée.</p>";
+  const thead = `<tr>${headers
+    .map(
+      (header) =>
+        `<th style="text-align:left;padding-bottom:6px;font-size:11px;color:#aaa;font-weight:600;text-transform:uppercase;letter-spacing:.04em">${escapeHtml(header)}</th>`
+    )
+    .join("")}</tr>`;
+  const tbody = rows
+    .map(
+      (row) =>
+        `<tr>${row
+          .map(
+            (cell, idx) =>
+              `<td style="padding:8px 12px 8px 0;font-size:13px;color:${idx === 0 ? "#111" : "#444"};border-bottom:1px solid #f0f0ee">${escapeHtml(cell)}</td>`
+          )
+          .join("")}</tr>`
+    )
+    .join("");
+  return `<table style="width:100%;border-collapse:collapse;margin:0 0 20px">${thead}${tbody}</table>`;
 }
 
 function getDateRange(days) {
@@ -268,42 +277,47 @@ function buildEmailHtml({ startDate, endDate, weeklyDigestHtml, hasGoogleData, g
   if (hasGoogleData) {
     const { gaOverview, gscOverview, gscQueries, gscPages } = googleData;
 
-    const gaStats = statLine([
+    const gaRows = [
       ["Sessions", formatNumber(gaOverview.sessions)],
       ["Utilisateurs", formatNumber(gaOverview.totalUsers)],
       ["Pages vues", formatNumber(gaOverview.pageViews)],
-      ["Engagement", formatPercent(gaOverview.engagementRate)]
-    ]);
+      ["Engagement", formatPercent(gaOverview.engagementRate)],
+      ["Durée moy.", formatSeconds(gaOverview.averageSessionDuration)],
+      ["Événements", formatNumber(gaOverview.eventCount)]
+    ];
 
-    const gscStats = statLine([
+    const gscRows = [
       ["Clics SEO", formatNumber(gscOverview.clicks)],
       ["Impressions", formatNumber(gscOverview.impressions)],
       ["CTR", `${Number(gscOverview.ctr || 0).toFixed(2)} %`],
       ["Position moy.", Number(gscOverview.position || 0).toFixed(2)]
+    ];
+
+    const queryRows = gscQueries.slice(0, 8).map((row) => [
+      row.keys?.[0] || "(not set)",
+      formatNumber(row.clicks),
+      formatNumber(row.impressions),
+      `${Number(row.ctr * 100 || 0).toFixed(2)} %`,
+      Number(row.position || 0).toFixed(1)
     ]);
 
-    const topQueries = simpleList(gscQueries.slice(0, 5), (row) => {
-      const query = row.keys?.[0] || "(not set)";
-      const clicks = formatNumber(row.clicks);
-      const impressions = formatNumber(row.impressions);
-      const position = Number(row.position || 0).toFixed(1);
-      return `<strong style="color:#111">${escapeHtml(query)}</strong> — ${clicks} clics, ${impressions} impr., position ${position}`;
-    });
-
-    const topPages = simpleList(gscPages.slice(0, 5), (row) => {
-      const page = (row.keys?.[0] || "(not set)").replace("https://msd-media.com", "");
-      const clicks = formatNumber(row.clicks);
-      const impressions = formatNumber(row.impressions);
-      return `<strong style="color:#111">${escapeHtml(page)}</strong> — ${clicks} clics, ${impressions} impr.`;
-    });
+    const pageRows = gscPages.slice(0, 8).map((row) => [
+      (row.keys?.[0] || "(not set)").replace("https://msd-media.com", ""),
+      formatNumber(row.clicks),
+      formatNumber(row.impressions),
+      `${Number(row.ctr * 100 || 0).toFixed(2)} %`,
+      Number(row.position || 0).toFixed(1)
+    ]);
 
     googleSection = `
-      ${gaStats}
-      ${gscStats}
-      <h3 style="font-size:15px;font-weight:700;margin:20px 0 8px;color:#111">Top requêtes</h3>
-      ${topQueries}
-      <h3 style="font-size:15px;font-weight:700;margin:20px 0 8px;color:#111">Top pages</h3>
-      ${topPages}`;
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;color:#111">Google Analytics</h3>
+      ${toTableHtml(["Indicateur", "Valeur"], gaRows)}
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;color:#111">Search Console</h3>
+      ${toTableHtml(["Indicateur", "Valeur"], gscRows)}
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;color:#111">Top requêtes</h3>
+      ${toTableHtml(["Requête", "Clics", "Impr.", "CTR", "Position"], queryRows)}
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;color:#111">Top pages</h3>
+      ${toTableHtml(["Page", "Clics", "Impr.", "CTR", "Position"], pageRows)}`;
   }
 
   return layout(`
@@ -405,7 +419,7 @@ async function run() {
 
   const from = process.env.MAIL_FROM || "MSD Media <maxens.soldan@msd-media.com>";
   const to = process.env.MAIL_TO;
-  const subject = `📊 Rapport SEO hebdo — ${startDate} → ${endDate}`;
+  const subject = `Rapport SEO hebdo — ${startDate} → ${endDate}`;
 
   const sent = await sendViaResend({ from, to, subject, html });
   console.log(`Email hebdo SEO envoyé: ${sent.id || JSON.stringify(sent)}`);

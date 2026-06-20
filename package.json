@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "analytics:weekly": "node scripts/weekly-analytics-report.mjs",
+    "seo:weekly-report": "node scripts/send-seo-weekly-report.mjs",
     "blog:generate": "node scripts/generate-articles.js",
     "blog:build": "cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs",
     "index:submit": "node scripts/google-index.mjs --days=7",

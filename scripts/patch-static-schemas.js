@@ -84,6 +84,11 @@ function getServiceType(relPath) {
   return 'Création de site web';
 }
 
+function shortenBreadcrumbLabel(title) {
+  const firstSegment = String(title).split(/\s*[|—]\s*/)[0].trim();
+  return firstSegment || title;
+}
+
 function breadcrumbJsonLd(canonical, title) {
   const pathPart = canonical.replace(SITE_URL, '').replace(/\/+$/, '/');
   const isHome = pathPart === '/';
@@ -99,7 +104,7 @@ function breadcrumbJsonLd(canonical, title) {
     items.push({
       '@type': 'ListItem',
       position: 2,
-      name: title,
+      name: shortenBreadcrumbLabel(title),
       item: canonical
     });
   }

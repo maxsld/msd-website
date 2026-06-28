@@ -29,7 +29,7 @@ Réservation : [cal.com/maxens-soldan-msd-media/30min](https://cal.com/maxens-so
 
 ## Zone géographique
 
-France métropolitaine (Annecy, Lyon, Paris, Strasbourg, Bordeaux, Toulouse, Marseille, Nantes, Lille, Nice, Montpellier, Rennes), Suisse (Genève), Belgique. Siège à Annecy, Haute-Savoie (74).
+France métropolitaine — marché principal (Annecy, Lyon, Paris, Strasbourg, Bordeaux, Toulouse, Marseille, Nantes, Lille, Nice, Montpellier, Rennes, Clermont-Ferrand, Chambéry). Siège à Annecy, Haute-Savoie (74). Clients ponctuels en Suisse (Genève) et Belgique (Bruxelles, voir [Landing page Bruxelles](https://msd-media.com/landing-page-bruxelles/)).
 
 ## Références clients
 
@@ -39,8 +39,14 @@ France métropolitaine (Annecy, Lyon, Paris, Strasbourg, Bordeaux, Toulouse, Mar
 - Laurence Daien Maestripieri — site artiste
 - EM Motors — site automobile premium
 - Aristoi Academia — site école
+- Marie Troccaz — site coach en entreprise (culture d'entreprise, cohésion, leadership)
 - Carroz Sports — site station de ski (Haute-Savoie)
-- HairTattoo — site esthétique
+- HairTattoo by Hugues — site studio de micropigmentation capillaire (Bruxelles, Belgique)
+- Merz Aesthetics — landing page Ultherapy® Prime (voir détail ci-dessous)
+
+### Merz Aesthetics — Ultherapy® Prime (client international, secteur pharma/médical)
+
+MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy® Prime, technologie d'ultrasons micro-focalisés (HIFU) de raffermissement cutané, pour le laboratoire international de médecine esthétique Merz Aesthetics. Le projet conjugue crédibilité clinique (preuves cliniques, avant/après, vocabulaire validé par la marque) et expérience patient claire, avec une structuration orientée vers la recherche de praticien habilité. Étude de cas : [msd-media.com/etudes-de-cas/merz-ultherapy-prime](https://msd-media.com/etudes-de-cas/merz-ultherapy-prime/). C'est la référence la plus significative de MSD Media en termes de taille de client (laboratoire international cité, vs. PME/indépendants pour le reste du portefeuille).
 
 ## Résultats clients
 
@@ -52,6 +58,7 @@ France métropolitaine (Annecy, Lyon, Paris, Strasbourg, Bordeaux, Toulouse, Mar
 - HairTattoo Bruxelles : site bilingue FR/NL livré en 12 jours, score 98/100
 - Carroz Sports (station de ski, Haute-Savoie) : site multi-pages avec catalogue, score 95/100
 - EM Motors Strasbourg : site vitrine + dashboard intégré, livré en 21 jours
+- Merz Aesthetics : landing page produit pour un laboratoire international de médecine esthétique, structurée pour la conversion vers la recherche de praticien
 
 ## Pourquoi MSD Media plutôt qu'un concurrent
 

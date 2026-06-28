@@ -318,6 +318,133 @@
 <script id="schema-breadcrumb-auto" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://msd-media.com/"},{"@type":"ListItem","position":2,"name":"Creation Site Web Chambéry","item":"https://msd-media.com/creation-site-web-chambery/"}]}</script>
 <script id="schema-service-auto" type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Creation Site Web Chambéry | Agence de Création Web SEO | MSD Media","serviceType":"Création de site web","provider":{"@type":"Organization","name":"MSD Media","url":"https://msd-media.com/"},"areaServed":"France","url":"https://msd-media.com/creation-site-web-chambery/"}</script>
 <!-- auto-schema:end -->
+<!-- AI referrer detection — runs immediately, no consent required (aucun cookie) -->
+<script>
+(function(){
+  var AI_SOURCES = {
+    'perplexity.ai': 'perplexity',
+    'chatgpt.com': 'chatgpt',
+    'chat.openai.com': 'chatgpt',
+    'claude.ai': 'claude',
+    'gemini.google.com': 'gemini',
+    'bard.google.com': 'gemini',
+    'copilot.microsoft.com': 'copilot',
+    'bing.com/chat': 'copilot',
+    'you.com': 'you',
+    'phind.com': 'phind',
+    'deepseek.com': 'deepseek'
+  };
+  var ref = document.referrer;
+  var aiSource = null;
+  for (var domain in AI_SOURCES) {
+    if (ref.indexOf(domain) !== -1) { aiSource = AI_SOURCES[domain]; break; }
+  }
+  window.dataLayer = window.dataLayer || [];
+  if (aiSource) {
+    window.dataLayer.push({ event: 'ai_referral', ai_source: aiSource, referrer: ref });
+    sessionStorage.setItem('_msd_ai_source', aiSource);
+  }
+  // Also expose for GTM variable use
+  window._msdAiSource = aiSource;
+})();
+</script>
+<!-- Tracking — chargé uniquement après consentement cookie -->
+<script>
+function _msdLoadTracking(){
+  // MSD Analytics
+  (function(){
+    var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
+    sessionStorage.setItem('_msd',sid);
+    var t=Date.now();
+    var iv;
+    function send(d){
+      var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
+      var ok=false;
+      try { ok=navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p)); } catch(e) {}
+      if(!ok){
+        fetch('https://app.msd-media.com/api/track',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(p),
+          keepalive:true
+        }).catch(function(){});
+      }
+    }
+    function start(){
+      if(iv) return;
+      iv=setInterval(function(){send(Date.now()-t);},15000);
+    }
+    function stop(){
+      if(!iv) return;
+      clearInterval(iv);
+      iv=undefined;
+    }
+    document.addEventListener('visibilitychange',function(){
+      if(document.visibilityState==='hidden'){send(Date.now()-t);stop();}
+      else{t=Date.now();send(0);start();}
+    });
+    send(0);
+    start();
+    // Scroll heatmap tracking
+    (function(){
+      var path=location.pathname;
+      var scrollEvts=[];
+      var lastPct=0;
+      var pauseTimer=null;
+      function getPct(){return Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight||1))*100);}
+      function bucket(p){return Math.floor(p/5)*5;}
+      function flush(){
+        if(!scrollEvts.length)return;
+        var evts=scrollEvts.splice(0);
+        navigator.sendBeacon('https://app.msd-media.com/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
+      }
+      window.addEventListener('scroll',function(){
+        var pct=getPct();
+        if(Math.abs(pct-lastPct)>10&&pct<lastPct){scrollEvts.push({type:'backtrack',pct:bucket(pct)});}
+        lastPct=pct;
+        if(pauseTimer)clearTimeout(pauseTimer);
+        pauseTimer=setTimeout(function(){scrollEvts.push({type:'pause',pct:bucket(pct)});flush();},1500);
+      },{passive:true});
+      window.addEventListener('beforeunload',function(){scrollEvts.push({type:'exit',pct:bucket(getPct())});flush();});
+      setInterval(flush,30000);
+    })();
+  })();
+  // Google Analytics (GA4)
+  (function(){
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-VKSH9YQXZS';
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-VKSH9YQXZS');
+  })();
+}
+(function(){
+  var consent=localStorage.getItem('msd_cookie_consent');
+  if(consent==='accepted'){_msdLoadTracking();return;}
+  if(consent==='refused'){return;}
+  function init(){
+  var banner=document.getElementById('cookie-consent');
+  if(!banner)return;
+  function show(){banner.hidden=false;}
+  function hide(){banner.hidden=true;}
+  show();
+  document.getElementById('cookie-accept').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','accepted');
+    hide();
+    _msdLoadTracking();
+  });
+  document.getElementById('cookie-refuse').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','refused');
+    hide();
+  });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>
 </head>
 
 <body>
@@ -325,6 +452,16 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28B6QRF" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Consentement cookies" hidden>
+    <div class="cookie-consent__inner">
+      <p class="cookie-consent__text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">En savoir plus</a></p>
+      <div class="cookie-consent__actions">
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse">Refuser</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept">Accepter</button>
+      </div>
+    </div>
+  </div>
+
 
   <header class="navbar">
     <div class="nav-left">

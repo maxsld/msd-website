@@ -1,0 +1,262 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffffff', 'primaryBorderColor': '#000000', 'primaryTextColor': '#000000', 'lineColor': '#000000', 'secondaryColor': '#ffffff', 'tertiaryColor': '#ffffff', 'background': '#ffffff', 'mainBkg': '#ffffff', 'clusterBkg': '#ffffff', 'clusterBorder': '#000000', 'edgeLabelBackground':'#ffffff', 'fontFamily': 'Helvetica'}}}%%
+flowchart TD
+
+  classDef done fill:#ffffff,stroke:#000000,color:#000000;
+  classDef pending stroke-dasharray: 4 3,fill:#ffffff,stroke:#000000,color:#000000;
+  classDef warn fill:#ffffff,stroke:#000000,stroke-width:3px,color:#000000;
+  classDef hub fill:#000000,stroke:#000000,color:#ffffff;
+  classDef page fill:#ffffff,stroke:#000000,color:#000000;
+
+  %% ================================================================
+  %% MSD MEDIA — GRAPHE MAÎTRE COMPLET
+  %% Chaque page du site · sa fonction · la stratégie SEO · le business
+  %% ================================================================
+
+  HOME["/ — Accueil<br/>But : convertir le trafic de marque + asseoir la crédibilité globale"]:::page
+
+  %% ================================================================
+  subgraph VILLES["PAGES VILLES — 16 marchés"]
+
+    subgraph ANNECY["Annecy — cluster complet (10 pages)"]
+      direction LR
+      AN1["agence-web-annecy<br/>But : page pilier, mot-clé principal"]:::page
+      AN2["creation-site-web-annecy<br/>But : intention 'création'"]:::page
+      AN3["creation-site-internet-annecy<br/>But : variante sémantique"]:::page
+      AN4["creation-site-vitrine-annecy<br/>But : intention 'site vitrine'"]:::page
+      AN5["landing-page-annecy<br/>But : intention 'landing page'"]:::page
+      AN6["refonte-site-web-annecy<br/>But : intention 'refonte'"]:::page
+      AN7["audit-seo-annecy<br/>But : intention 'audit SEO'"]:::page
+      AN8["faq-seo-annecy<br/>But : capter questions longue traîne"]:::page
+      AN9["seo-local-annecy<br/>But : intention 'SEO local'"]:::page
+      AN10["glossaire-web-seo-annecy<br/>But : definitions, maillage interne"]:::page
+    end
+
+    subgraph STRASBOURG["Strasbourg — cluster complet (10 pages)"]
+      direction LR
+      ST1["agence-web-strasbourg<br/>But : page pilier 2e marché prioritaire"]:::page
+      ST2["creation-site-web-strasbourg"]:::page
+      ST3["creation-site-internet-strasbourg"]:::page
+      ST4["creation-site-vitrine-strasbourg"]:::page
+      ST5["landing-page-strasbourg"]:::page
+      ST6["refonte-site-web-strasbourg"]:::page
+      ST7["audit-seo-strasbourg"]:::page
+      ST8["faq-seo-strasbourg"]:::page
+      ST9["seo-local-strasbourg"]:::page
+      ST10["glossaire-web-seo-strasbourg"]:::page
+    end
+
+    subgraph V12["12 villes standard — 3 pages chacune (36 pages)"]
+      direction LR
+      L1["Lyon : agence-web ✓3 sections+photos / creation-site-web ◌ / landing-page ◌<br/>But : capter marché Lyon, déjà différencié partiellement"]:::pending
+      L2["Paris : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+      L3["Genève : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+      L4["Marseille : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+      L5["Bordeaux : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+      L6["Toulouse : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+      L7["Chambéry : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+      L8["Lille : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+      L9["Nantes : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+      L10["Montpellier : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+      L11["Clermont-Ferrand : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+      L12["Nice : agence-web ✓ / creation-site-web ◌ / landing-page ◌"]:::pending
+    end
+
+    subgraph RENNES["Rennes — 3 pages (jamais traité)"]
+      direction LR
+      RE1["agence-web-rennes"]:::pending
+      RE2["creation-site-web-rennes"]:::pending
+      RE3["landing-page-rennes"]:::pending
+    end
+
+    BXL["landing-page-bruxelles<br/>But : niche, appuyée sur preuve sociale<br/>(étude de cas HairTattoo), pas de concurrence frontale"]:::done
+
+    subgraph REGIONS["Marchés secondaires — page unique chacun (7 pages)"]
+      direction LR
+      RG1["agence-web-alsace"]:::page
+      RG2["agence-web-haute-savoie"]:::page
+      RG3["agence-web-cluses"]:::page
+      RG4["agence-web-chamonix"]:::page
+      RG5["agence-web-annecy-le-vieux"]:::page
+      RG6["agence-web-thonon-les-bains"]:::page
+      RG7["agence-web-munich<br/>(seule page en anglais)"]:::page
+    end
+  end
+
+  %% ================================================================
+  subgraph PREUVE["PREUVE SOCIALE — études de cas (10)"]
+    direction LR
+    EC1["nation-startup<br/>But : landing page pré-lancement bêta"]:::page
+    EC2["agence-3xl<br/>But : structure podcast/mentoring Annecy"]:::page
+    EC3["maxime-sciare<br/>But : coach/conférencier, repositionnement"]:::page
+    EC4["laurence-daien-maestripieri<br/>But : coach prise de parole, SEO local"]:::page
+    EC5["em-motors<br/>But : asso étudiante, vitrine + dashboard"]:::page
+    EC6["aristoi-academia<br/>But : organisme de formation"]:::page
+    EC7["marie-troccaz<br/>But : coach entreprise"]:::page
+    EC8["carroz-sports<br/>But : commerce station, SEO local Haute-Savoie"]:::page
+    EC9["hairtattoo<br/>But : preuve sociale marché Belgique"]:::page
+    EC10["merz-ultherapy-prime<br/>But : landing page client pharma international"]:::page
+  end
+
+  %% ================================================================
+  subgraph BLOG["BLOG — 84 articles, regroupés par cluster sémantique"]
+    direction LR
+    BL1["Pages métier × ville (~25)<br/>site-web-{avocat/médecin/coiffeur/...}-{annecy/strasbourg}<br/>But : longue traîne locale par profession"]:::page
+    BL2["Guides prix (~8)<br/>combien-coute-{site/landing-page/seo}-{ville}<br/>But : capter intention prix, pré-qualifier"]:::page
+    BL3["Comparatifs / choix (~6)<br/>choisir-agence-web-*, meilleure-agence-*, top-5/10-*<br/>But : capter comparaison concurrentielle"]:::page
+    BL4["GEO / IA (~7)<br/>aeo-seo-geo-guide, apparaitre-chatgpt-perplexity,<br/>google-ai-overviews, schema-org-ia<br/>But : positionnement GEO, sujet émergent"]:::page
+    BL5["SEO local (~6)<br/>seo-local-*, google-business-profile-*, referencement-naturel-annecy<br/>But : intention SEO local pure"]:::page
+    BL6["Conversion / structure (~8)<br/>ameliorer-taux-conversion, structure-landing-page-saas,<br/>creer-landing-page-*, copywriting-web<br/>But : intention produit/conseil"]:::page
+    BL7["Marque / fondateur (3)<br/>maxens-soldan, qui-est-maxens, msd-media-presse<br/>But : E-E-A-T, autorité"]:::page
+    BL8["Refonte / perf / création (~10)<br/>refonte-site-web-*, vitesse-performance-*, creation-site-*-2026<br/>But : intentions transactionnelles ville"]:::page
+  end
+
+  %% ================================================================
+  subgraph OUTILS["OUTILS DE CONVERSION"]
+    direction LR
+    O1["devis-landing-page<br/>But : simulateur, pré-qualification + lead"]:::page
+    O2["analyse-seo<br/>But : audit gratuit 30s, capture email"]:::page
+    O3["configurateur<br/>But : personnalisation offre"]:::page
+    O4["chatgpt-vous-connait<br/>But : démo AI-presence, hook GEO"]:::page
+  end
+
+  %% ================================================================
+  subgraph SUPPORT["PAGES SUPPORT"]
+    direction LR
+    S1["contact"]:::page
+    S2["a-propos<br/>But : E-E-A-T, fondateur"]:::page
+    S3["affiliation<br/>But : recrutement apporteurs d'affaires, 15%"]:::page
+    S4["recrutement<br/>But : recrutement setter commercial"]:::page
+    S5["confirmation / confirmation-contact /<br/>confirmation-reservation-appel<br/>But : pages de remerciement"]:::page
+    S6["404"]:::page
+    S7["terms (mentions légales,<br/>politique de confidentialité)"]:::page
+  end
+
+  HOME --> VILLES
+  HOME --> PREUVE
+  HOME --> BLOG
+  HOME --> OUTILS
+  HOME --> SUPPORT
+
+  %% ================================================================
+  subgraph STRATEGIE["STRATÉGIE SEO — Audit → Action → Automatisation"]
+    direction TB
+
+    AUDIT["Audit complet (25/06)<br/>Score 66/100 — FULL-AUDIT-REPORT.md"]:::done
+
+    subgraph CRIT2["CRITIQUE"]
+      direction LR
+      SC1["Duplication 93-95% sur 12 villes standard<br/>(agence-web vs creation-site-web vs landing-page)<br/>✓ Lyon traité / ◌ 11 villes + Rennes restantes"]:::pending
+      SC2["404 dans sitemap (about/maxens-soldan)<br/>✓ corrigé"]:::done
+    end
+
+    subgraph HP2["HAUTE PRIORITÉ"]
+      direction LR
+      SH1["Cannibalisation 10 pages Annecy<br/>sur 'agence web annecy' (pos. 28)<br/>✓ 9 liens contextuels ajoutés, à mesurer mi-juillet"]:::pending
+      SH2["Meta descriptions 0 clic malgré bon positionnement<br/>✓ 2 pages corrigées (maintenance Annecy, landing Clermont)"]:::done
+      SH3["Breadcrumb schema = titre complet au lieu de label court<br/>✓ générateur corrigé + 66 pages mises à jour"]:::done
+      SH4["Recrawl Google après corrections<br/>◌ à faire après déploiement (Indexing API dispo)"]:::pending
+    end
+
+    subgraph MP2["MOYENNE / BASSE"]
+      direction LR
+      SM1["Contenu blog absent sur 11 villes secondaires<br/>(seuls Annecy/Strasbourg ont un cluster)"]:::pending
+      SM2["Page Belgique<br/>✓ angle niche créé (landing-page-bruxelles)"]:::done
+      SM3["CLS homepage mobile 0,207 (Needs Improvement)"]:::pending
+      SM4["Incohérence FR/EN page Munich"]:::pending
+      SM5["Audit images alt/poids site entier"]:::pending
+    end
+
+    AUDIT --> CRIT2 --> HP2 --> MP2
+  end
+
+  VILLES -.diagnostiqué par.-> STRATEGIE
+  BLOG -.diagnostiqué par.-> STRATEGIE
+
+  %% ================================================================
+  subgraph ROUTINES2["AUTOMATISATION — 5 routines cloud hebdomadaires"]
+    direction TB
+
+    RHUB["Claude Code Cloud<br/>environnement isolé, repo GitHub"]:::hub
+
+    subgraph LUNDI["Chaque lundi matin"]
+      direction LR
+      RT1["6h00 Mots-clés<br/>(seo-cluster absent du cloud →<br/>recherche manuelle + WebSearch en repli)"]:::page
+      RT2["6h15 Audit technique<br/>skill seo-technical"]:::page
+      RT3["6h30 Brief + article<br/>skill seo-content-brief"]:::page
+      RT4["6h45 Drift monitoring<br/>skill seo-drift"]:::page
+    end
+
+    RPR["Pull Request GitHub<br/>par routine"]
+    RBLOCK["⚠ PERMISSIONS GITHUB APP EN LECTURE SEULE<br/>'Resource not accessible by integration'<br/>bloque push/PR depuis le cloud<br/>À CORRIGER : Contents + Pull requests = write"]:::warn
+    RVALID["Validation manuelle Maxens"]
+    RLIVE["Merge → en ligne sur msd-media.com"]
+
+    RT5["Dimanche 8h00 Rapport hebdo<br/>digest PR de la semaine<br/>+ données GA4/GSC live"]:::page
+    RMAIL["Email via Resend<br/>maxens.soldan@msd-media.com"]:::done
+
+    RHUB --> LUNDI --> RPR
+    RPR -.actuellement.-> RBLOCK
+    RPR --> RVALID --> RLIVE
+    RHUB --> RT5 --> RMAIL
+  end
+
+  STRATEGIE ==> ROUTINES2
+  ROUTINES2 -- "corrige/enrichit" --> VILLES
+  ROUTINES2 -- "corrige/enrichit" --> BLOG
+
+  %% ================================================================
+  subgraph BIZ2["BUSINESS — parcours client"]
+    direction TB
+
+    P1["Visiteur"] --> P2["Lead qualifié<br/>(SEO organique / affiliation / direct)"]
+    P2 --> P3["Devis"]
+    P3 --> P4{"Validé ?"}
+    P4 -->|Oui| P5["Vente"]
+    P4 -->|Non| P6["Nurturing"]
+    P5 --> P7["Brief de lancement<br/>(portail client app.msd-media.com)"]
+    P7 --> P8["Production<br/>design → développement → SEO"]
+    P8 --> P9["Livraison sous 14 jours"]
+    P9 --> P10["Email NPS post-livraison"]
+    P10 --> P11{"Satisfait ?"}
+    P11 -->|Oui| P12["Avis Trustpilot / Google"]
+    P11 -->|Non| P13["Suivi qualité"]
+    P12 -.alimente la preuve sociale.-> PREUVE
+
+    PAFFIL["Programme Affiliation<br/>15% commission par vente"]
+    PAFFIL -.apporte des leads.-> P1
+    P5 -.déclenche commission.-> PAFFIL
+  end
+
+  VILLES -- "héberge" --> BIZ2
+  OUTILS -- "génère des leads pour" --> BIZ2
+
+  %% ================================================================
+  subgraph INFRA2["INFRASTRUCTURE TECHNIQUE"]
+    direction LR
+    I1["msd-media.com<br/>statique · Vercel<br/>repo github maxsld/msd-website"]
+    I2["app.msd-media.com<br/>Dashboard Next.js<br/>devis · factures · affiliés · newsletter · NPS"]
+    I3["Google APIs (service account)<br/>Search Console · GA4 · PageSpeed/CrUX"]
+    I4["Resend<br/>emails transactionnels + rapports automatisés"]
+  end
+
+  BIZ2 -- "notifie via" --> INFRA2
+  ROUTINES2 -- "lit/écrit" --> I1
+  ROUTINES2 -- "interroge" --> I3
+  ROUTINES2 -- "envoie via" --> I4
+  I3 -- "données live" --> ROUTINES2
+
+  %% ================================================================
+  subgraph ROADMAP2["CE QU'IL RESTE À FAIRE — priorisé"]
+    direction TB
+    RM1["1. Corriger permissions GitHub App<br/>(bloque toute l'automatisation PR)"]:::warn
+    RM2["2. Finir creation-site-web-X / landing-page-X<br/>pour 11 villes + Rennes<br/>(seul Lyon a son cluster complet)"]:::pending
+    RM3["3. Mesurer impact maillage Annecy (mi-juillet)<br/>puis netlinking externe si pas d'amélioration"]:::pending
+    RM4["4. Construire clusters blog<br/>pour les 12 villes sans contenu de support"]:::pending
+    RM5["5. Confirmer données GA4<br/>(tag basculé le 19/06, à vérifier sous 48h)"]:::pending
+    RM6["6. Connecter DataForSEO / Google Keyword Planner<br/>(volumes de recherche réels, optionnel)"]:::pending
+    RM7["7. Corriger CLS homepage mobile + auditer images"]:::pending
+    RM1 --> RM2 --> RM3 --> RM4 --> RM5 --> RM6 --> RM7
+  end
+
+  ROADMAP2 -.découle de.-> STRATEGIE
+  ROADMAP2 -.découle de.-> ROUTINES2

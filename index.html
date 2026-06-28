@@ -186,7 +186,28 @@ function _msdLoadTracking(){
     gtag('config','G-VKSH9YQXZS');
   })();
 }
-if(localStorage.getItem('msd_cookie_consent')==='accepted'){_msdLoadTracking();}
+(function(){
+  var consent=localStorage.getItem('msd_cookie_consent');
+  if(consent==='accepted'){_msdLoadTracking();return;}
+  if(consent==='refused'){return;}
+  function init(){
+  var banner=document.getElementById('cookie-consent');
+  if(!banner)return;
+  function show(){banner.hidden=false;}
+  function hide(){banner.hidden=true;}
+  show();
+  document.getElementById('cookie-accept').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','accepted');
+    hide();
+    _msdLoadTracking();
+  });
+  document.getElementById('cookie-refuse').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','refused');
+    hide();
+  });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
 </script>
   <!-- Schema complet -->
   <script type="application/ld+json">
@@ -429,6 +450,16 @@ if(localStorage.getItem('msd_cookie_consent')==='accepted'){_msdLoadTracking();}
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28B6QRF" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
+  <div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Consentement cookies" hidden>
+    <div class="cookie-consent__inner">
+      <p class="cookie-consent__text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">En savoir plus</a></p>
+      <div class="cookie-consent__actions">
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse">Refuser</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept">Accepter</button>
+      </div>
+    </div>
+  </div>
 
   <header class="navbar">
     <div class="nav-left">

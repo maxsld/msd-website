@@ -46,7 +46,7 @@ Le signe le plus fiable qu'une agence web à Annecy travaille sérieusement : el
 
 Qui est votre client idéal ? Quelle est la principale raison pour laquelle il choisit votre concurrent plutôt que vous ? Quelle action voulez-vous qu'il réalise sur votre site ? Quel est votre objectif commercial dans 12 mois ?
 
-Si lors du premier appel l'agence vous parle déjà de couleurs, de templates ou de CMS sans avoir compris votre marché — fuyez. Un site beau mais mal ciblé ne convertit pas. Un site sobre mais stratégiquement construit génère des clients.
+Si lors du premier appel l'agence vous parle déjà de couleurs, de templates ou de CMS sans avoir compris votre marché — fuyez. Un site beau mais mal ciblé ne convertit pas. Un site sobre mais stratégiquement construit génère des clients. Le choix de la technologie compte aussi : voir notre comparatif [WordPress vs développement sur mesure à Annecy](/blog/articles/wordpress-vs-site-sur-mesure-annecy-2026/).
 
 La question à poser : **"Comment se déroule votre processus de discovery avant de commencer un projet ?"**
 

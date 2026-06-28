@@ -1,10 +1,11 @@
 name: Weekly SEO Blog Generator
 
+# Cron désactivé le 2026-06-28 : remplacé par la routine cloud Claude Code
+# "SEO - Brief & rédaction d'article" (lundi 6h30 UTC) pour éviter les doublons
+# de génération d'article le même jour. Déclenchement manuel toujours possible
+# depuis l'onglet Actions si besoin ponctuel.
 on:
-  schedule:
-    # Chaque lundi à 07:00 UTC = 08:00 heure Paris (hiver) / 09:00 (été)
-    - cron: '0 7 * * 1'
-  workflow_dispatch: # Permet de lancer manuellement depuis l'onglet Actions
+  workflow_dispatch:
 
 jobs:
   generate-articles:

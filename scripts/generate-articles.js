@@ -32,6 +32,14 @@ const KEYWORD_POOL = [
   "site web artisan PME France",
   "landing page high ticket",
   "coût refonte site web PME",
+  // Patterns comparatifs (business keywords, fort potentiel de citation/backlink)
+  "Wix vs développement sur mesure",
+  "Webflow vs site sur mesure",
+  "agence web vs freelance Annecy",
+  "alternative à WordPress pour site vitrine",
+  "no-code vs code sur mesure site web",
+  "top 5 erreurs refonte site web 2026",
+  "agence web vs no-code builder",
 ];
 
 function pickKeywords(pool, n = 3) {

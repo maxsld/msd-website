@@ -655,7 +655,11 @@ function renderArticlePage(post, allPosts) {
     image: imageAbsolute,
     author: {
       '@type': 'Person',
-      name: AUTHOR
+      name: AUTHOR,
+      url: `${SITE_URL}/blog/articles/maxens-soldan/`,
+      jobTitle: 'Fondateur & CEO',
+      worksFor: { '@type': 'Organization', name: BRAND },
+      sameAs: ['https://www.linkedin.com/in/maxens-soldan/']
     },
     publisher: {
       '@type': 'Organization',
@@ -765,7 +769,7 @@ function renderArticlePage(post, allPosts) {
     <section class="hero">
       <h2 class="section-tag section-tag--dark">Article</h2>
       <h1 class="hero__title"><span>${escapeHtml(post.title)}</span></h1>
-      <p class="blog-article-meta">${escapeHtml(articleMetaLine)}</p>
+      <p class="blog-article-meta">${escapeHtml(articleMetaLine)} — par <a href="/blog/articles/maxens-soldan/" class="blog-article-author-link">${escapeHtml(AUTHOR)}</a>, Fondateur &amp; CEO de MSD Media</p>
       <div class="hero__actions" aria-label="Actions principales">
         <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank">Réserver un appel</a>
         <a class="hero__btn hero__btn--secondary" href="/blog/">Retour au blog</a>
@@ -944,7 +948,7 @@ function enforceTextOnlyPolicyOnAllArticlePages() {
       slug.replace(/-/g, ' ');
     const readTime = estimateReadTimeFromHtml(articleBlock);
     const metaLine = `Publié le ${formatFrenchDate(dateRaw)} • ${readTime.minutes} min de lecture`;
-    const metaHtml = `<p class="blog-article-meta">${escapeHtml(metaLine)}</p>`;
+    const metaHtml = `<p class="blog-article-meta">${escapeHtml(metaLine)} — par <a href="/blog/articles/maxens-soldan/" class="blog-article-author-link">${escapeHtml(AUTHOR)}</a>, Fondateur &amp; CEO de MSD Media</p>`;
 
     if (/class="blog-article-meta"/i.test(html)) {
       html = html.replace(/<p class="blog-article-meta">[\s\S]*?<\/p>/i, metaHtml);

@@ -1,0 +1,21 @@
+{
+  "name": "MSD Media",
+  "short_name": "MSD Media",
+  "description": "Agence web spécialisée en landing pages et sites web sur mesure à fort taux de conversion.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "/assets/img/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

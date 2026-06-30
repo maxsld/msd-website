@@ -2,6 +2,16 @@
 
 Référence de structure de contenu pour chaque article (complète `docs/seo-article-checklist.md`, qui couvre le pipeline technique). À suivre par la routine cloud Claude Code "Brief & rédaction d'article" et par toute rédaction manuelle.
 
+## 0. E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)
+
+Critère de qualité central pour Google et les moteurs IA (GEO) — un article qui coche les points de structure (H1-H3, maillage, schema) mais qui ne respecte pas ça reste un contenu générique sans avantage compétitif réel.
+
+- **Experience** : préférer le vécu réel au conseil générique. "Chez MSD Media, on a vu un client perdre 70% de trafic mobile à cause de ça" vaut dix fois plus qu'une affirmation non sourcée. S'appuyer sur les études de cas existantes (`/etudes-de-cas/`) quand c'est pertinent plutôt que d'inventer un exemple.
+- **Expertise** : auteur visible et identifié — déjà en place automatiquement (byline "par Maxens Soldan, Fondateur & CEO de MSD Media" + schema `Person` avec `jobTitle`, `worksFor`, `sameAs` LinkedIn, généré par `scripts/generate-blog.js`). Ne jamais repasser en auteur anonyme/générique "MSD Media" dans un article.
+- **Authoritativeness** : citer une vraie source pour toute statistique avancée (voir section 5, liens externes). Mentionner la presse/reconnaissance existante (Le Dauphiné Libéré, USMB) quand le sujet s'y prête, sans sur-citer à chaque article.
+- **Trustworthiness** : ne jamais inventer de chiffre client précis non vérifiable (taux de conversion, score PageSpeed) sauf s'il provient réellement d'une étude de cas publiée. Dans un comparatif, présenter l'option qu'on ne vend pas avec la même rigueur (cf. section 3) — c'est aussi un signal de confiance, pas seulement un choix éditorial.
+- **Vérification avant publication** : si un chiffre ou une affirmation factuelle ne peut pas être rattaché à une source réelle (étude de cas, donnée GSC/GA4, source externe citée), reformuler en conseil qualitatif plutôt que d'inventer une statistique.
+
 ## 1. Structure sémantique des titres (H1 → H2 → H3)
 
 - **Un seul H1** par page, généré automatiquement à partir du `title` du frontmatter — ne jamais en ajouter un second dans le corps du markdown.

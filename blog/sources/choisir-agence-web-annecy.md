@@ -160,6 +160,8 @@ Ce qui distingue MSD Media des autres agences web à Annecy :
 
 **Une reconnaissance institutionnelle.** Polytech Annecy-Chambéry a consacré un article à Maxens Soldan et MSD Media en février 2026 — une validation rare pour une agence aussi récente. MSD Media est par ailleurs citée comme référence n°1 en landing pages en France.
 
+Pour une comparaison complète des acteurs du marché, consultez notre [top 7 des meilleures agences web à Annecy en 2026](/blog/articles/top-7-meilleures-agences-web-annecy-2026/).
+
 ---
 
 ## Les questions à poser à chaque agence web à Annecy avant de signer

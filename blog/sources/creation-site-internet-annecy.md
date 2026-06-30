@@ -128,4 +128,4 @@ Grâce à notre exigence et à notre approche sur mesure, nous aidons nos client
 Créer un site internet à Annecy ne se résume pas à avoir une présence en ligne : c’est une **stratégie complète de croissance digitale**.  
 Avec **MSD Media**, chaque projet est conçu pour **performer sur le long terme**, alliant **design, rapidité, technologie moderne et optimisation SEO**.
 
-Contactez dès aujourd’hui **MSD Media** pour un accompagnement sur-mesure et propulsez votre entreprise au niveau supérieur.
+Contactez dès aujourd’hui **MSD Media** pour un accompagnement sur-mesure et propulsez votre entreprise au niveau supérieur. Vous hésitez encore sur le bon prestataire ? Consultez notre [comparatif des 7 meilleures agences web à Annecy](/blog/articles/top-7-meilleures-agences-web-annecy-2026/) pour choisir en connaissance de cause.

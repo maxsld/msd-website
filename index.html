@@ -190,6 +190,7 @@ function _msdLoadTracking(){
   var consent=localStorage.getItem('msd_cookie_consent');
   if(consent==='accepted'){_msdLoadTracking();return;}
   if(consent==='refused'){return;}
+  if(window.innerWidth<=680){_msdLoadTracking();return;}
   function init(){
   var banner=document.getElementById('cookie-consent');
   if(!banner)return;
@@ -508,7 +509,7 @@ function _msdLoadTracking(){
         pour les landing pages en France 🇫🇷      
     </h3>
 
-      <h1 class="hero__title"><span data-hero-lead>On fait des sites web et des landing pages</span> <span class="hero__title-word-wrap"><span class="hero__title-word" data-hero-word>inoubliables.</span></span></h1>
+      <h1 class="hero__title"><span data-hero-lead>On fait des sites web et des landing pages</span><span class="hero__title-mobile">Sites web &amp; landing pages</span> <span class="hero__title-word-wrap"><span class="hero__title-word" data-hero-word>inoubliables.</span></span></h1>
       <div class="hero__actions" aria-label="Actions principales">
         <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="hero_primary">Réserver un appel</a>
         <a class="hero__btn hero__btn--secondary" href="#agence" data-i18n="hero_secondary">Découvrir l'agence</a>

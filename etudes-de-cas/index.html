@@ -185,6 +185,7 @@ function _msdLoadTracking(){
   var consent=localStorage.getItem('msd_cookie_consent');
   if(consent==='accepted'){_msdLoadTracking();return;}
   if(consent==='refused'){return;}
+  if(window.innerWidth<=680){_msdLoadTracking();return;}
   function init(){
   var banner=document.getElementById('cookie-consent');
   if(!banner)return;

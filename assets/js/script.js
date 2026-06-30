@@ -1500,6 +1500,7 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
 
 // Bouton Cal.com flottant — modal iframe téléphone
 (function() {
+  if (window.innerWidth <= 768) return;
   var path = (window.location.pathname || "/").replace(/\/+$/, "") || "/";
   var blockedPrefixes = [
     "/404",

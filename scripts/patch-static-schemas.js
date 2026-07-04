@@ -116,34 +116,41 @@ function breadcrumbJsonLd(canonical, title) {
 }
 
 function localBusinessJsonLd(canonical, relPath) {
+  // Adresse réelle unique (Annecy) sur toutes les pages : une LocalBusiness ne doit
+  // jamais revendiquer une adresse dans une ville où l'entreprise n'a pas de local.
+  // La ville de la page reste présente via areaServed.
   const loc = inferLocality(relPath);
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
+    '@id': `${SITE_URL}/#localbusiness`,
     name: 'MSD Media',
     url: `${SITE_URL}/`,
     image: `${SITE_URL}/assets/img/logo-black.webp`,
-    priceRange: '$$',
+    email: 'maxens.soldan@msd-media.com',
+    telephone: '+33783141287',
+    priceRange: 'Sur devis',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: loc.city,
-      postalCode: loc.postalCode,
-      addressRegion: loc.region,
+      streetAddress: '6 Rue Paul Guiton',
+      addressLocality: 'Annecy',
+      postalCode: '74000',
+      addressRegion: 'Haute-Savoie',
       addressCountry: 'FR'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: loc.geo.latitude,
-      longitude: loc.geo.longitude
+      latitude: 45.8992,
+      longitude: 6.1294
     },
-    numberOfEmployees: {
-      '@type': 'QuantitativeValue',
-      value: 30
-    },
-    areaServed: ['France', 'Suisse', 'Belgique'],
+    areaServed: [loc.city, 'France', 'Suisse', 'Belgique'].filter(
+      (v, i, arr) => arr.indexOf(v) === i
+    ),
     sameAs: [
       'https://www.linkedin.com/company/msd-media',
-      'https://fr.trustpilot.com/review/msd-media.com'
+      'https://fr.trustpilot.com/review/msd-media.com',
+      'https://share.google/xqjORxmtKbIlxybrm',
+      'https://www.sortlist.com/agency/msd-media'
     ],
     mainEntityOfPage: canonical
   };

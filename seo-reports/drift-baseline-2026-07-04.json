@@ -1,0 +1,113 @@
+{
+  "captured_at": "2026-07-04T09:26:59.659Z",
+  "source": "local static HTML files (no live fetch/drift scripts present in repo)",
+  "pages": {
+    "homepage": {
+      "url": "https://msd-media.com/",
+      "file": "index.html",
+      "title": "MSD Media | Agence Web & Landing Pages en France",
+      "meta_description": "Agence web à Annecy — sites internet et landing pages à fort taux de conversion. Livraison en 14 jours, SEO intégré, offres sur devis.",
+      "h1": [
+        "On fait des sites web et des landing pagesSites web &amp; landing pages inoubliables."
+      ],
+      "canonical": "https://msd-media.com/",
+      "robots_meta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "schema_types": [
+        "FAQPage",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "h2_count": 7,
+      "word_count": 853,
+      "content_hash": "6c3f10d94e363c5629c2f5db76eb907041af2c4651cfa644d3fbcc4cbb8fe477",
+      "full_html_hash": "27b956c97ec9abacf5a17ec245fbb83d6df8a12d8d4ec5b1bbfca2cdf02c0fc2"
+    },
+    "agence-web-annecy": {
+      "url": "https://msd-media.com/agence-web-annecy/",
+      "file": "agence-web-annecy/index.html",
+      "title": "Agence Web Annecy | Création de Sites Web & Landing Pages SEO",
+      "meta_description": "Agence web à Annecy — création de sites internet et landing pages SEO sur mesure. Livraison en 14 jours. Expertise locale Haute-Savoie et bassin genevois.",
+      "h1": [
+        "Agence web à Annecy :sites internet et landing pages SEO."
+      ],
+      "canonical": "https://msd-media.com/agence-web-annecy/",
+      "robots_meta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "schema_types": [
+        "FAQPage",
+        "LocalBusiness",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "h2_count": 7,
+      "word_count": 974,
+      "content_hash": "35a6cbdd8717398cc6b41f6a1f5169c31c1ed6cfe6fb9419864f8e9369ab54ce",
+      "full_html_hash": "0f7051df7cb20e132e70df49cb9909dff175746093f63416909b2c4af911e3e9"
+    },
+    "agence-web-lyon": {
+      "url": "https://msd-media.com/agence-web-lyon/",
+      "file": "agence-web-lyon/index.html",
+      "title": "Agence Web Lyon | Sites Web & Landing Pages SEO | MSD Media",
+      "meta_description": "MSD Media, agence web à Lyon, crée des sites internet et landing pages sur mesure orientés SEO local et conversion. Livraison en 14 jours pour les entreprises de Lyon et de la région Auvergne-Rhône-Alpes.",
+      "h1": [
+        "Agence web à Lyon :sites internet et landing pages SEO."
+      ],
+      "canonical": "https://msd-media.com/agence-web-lyon/",
+      "robots_meta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "schema_types": [
+        "FAQPage",
+        "LocalBusiness",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "h2_count": 10,
+      "word_count": 890,
+      "content_hash": "d8a7a2d714359ee4461df6655da7bb7bf247d74fe5a364db2804095ce4984f61",
+      "full_html_hash": "c1febbab0d17a716c58cc7ce2ca0e8870b1bb058ed4662f0ff1128350945d284"
+    },
+    "agence-web-geneve": {
+      "url": "https://msd-media.com/agence-web-geneve/",
+      "file": "agence-web-geneve/index.html",
+      "title": "Agence Web Genève | Sites Web & Landing Pages SEO | MSD Media",
+      "meta_description": "MSD Media, agence web à Genève, crée des sites internet et landing pages sur mesure orientés SEO local et conversion. Livraison en 14 jours pour les entreprises de Genève et de Suisse romande.",
+      "h1": [
+        "Agence web à Genève :sites internet et landing pages SEO."
+      ],
+      "canonical": "https://msd-media.com/agence-web-geneve/",
+      "robots_meta": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "schema_types": [
+        "FAQPage",
+        "LocalBusiness",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "h2_count": 10,
+      "word_count": 877,
+      "content_hash": "e650416308cb28281b82763ed640653875ced78ebdf66765d468ca1056c1a153",
+      "full_html_hash": "e5f4cd5dd7aae51b1b512bceaf7ba7880a7c8ac7a0b1a839a87ceeebfad3c488"
+    },
+    "blog-choisir-agence-web-annecy": {
+      "url": "https://msd-media.com/blog/articles/choisir-agence-web-annecy/",
+      "file": "blog/articles/choisir-agence-web-annecy/index.html",
+      "title": "Agence web Annecy : comment choisir en 2026 ? (guide complet) | MSD Media",
+      "meta_description": "Comment choisir la bonne agence web à Annecy en 2026 ? Critères, questions à poser, erreurs à éviter et comparatif honnête pour trouver l&#39;agence qui va vraiment faire grandir votre business.",
+      "h1": [
+        "Agence web Annecy : comment choisir en 2026 ? (guide complet)"
+      ],
+      "canonical": "https://msd-media.com/blog/articles/choisir-agence-web-annecy/",
+      "robots_meta": "index, follow, max-snippet:-1, max-image-preview:large",
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "h2_count": 14,
+      "word_count": 2435,
+      "content_hash": "5ae7d633d25dbe0201de96f43f360722ba3dd9a92bc23d3ba08a4b80f04650b3",
+      "full_html_hash": "3281c1cfa6c41b38437fd54fd6c34a19c13f7e214779014fed929505d6d7be45"
+    }
+  }
+}

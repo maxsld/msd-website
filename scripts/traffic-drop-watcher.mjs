@@ -26,7 +26,7 @@ const MIN_PREVIOUS_CLICKS = 10;
 const MAX_FLAGGED_PAGES = 15;
 const TOP_QUERIES_PER_PAGE = 5;
 
-const requiredEnvKeys = ["RESEND_API_KEY", "MAIL_TO"];
+const requiredEnvKeys = ["TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID"];
 const googleEnvKeys = [
   "GA4_PROPERTY_ID",
   "GOOGLE_SERVICE_ACCOUNT_EMAIL",
@@ -68,15 +68,6 @@ function assertEnvVars(keys) {
 
 function formatDate(date) {
   return date.toISOString().slice(0, 10);
-}
-
-function escapeHtml(value) {
-  return String(value ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 }
 
 function pct(value) {
@@ -240,113 +231,48 @@ function buildQueryDiff(currentQueries, previousQueries) {
     .slice(0, TOP_QUERIES_PER_PAGE);
 }
 
-function toTableHtml(headers, rows) {
-  if (!rows.length) return "<p style='color:#aaa;font-size:13px;margin:0 0 16px'>Aucune donnée.</p>";
-  const thead = `<tr>${headers
-    .map(
-      (header) =>
-        `<th style="text-align:left;padding-bottom:6px;font-size:11px;color:#aaa;font-weight:600;text-transform:uppercase;letter-spacing:.04em">${escapeHtml(header)}</th>`
-    )
-    .join("")}</tr>`;
-  const tbody = rows
-    .map(
-      (row) =>
-        `<tr>${row
-          .map(
-            (cell, idx) =>
-              `<td style="padding:8px 12px 8px 0;font-size:13px;color:${idx === 0 ? "#111" : "#444"};border-bottom:1px solid #f0f0ee">${escapeHtml(cell)}</td>`
-          )
-          .join("")}</tr>`
-    )
-    .join("");
-  return `<table style="width:100%;border-collapse:collapse;margin:0 0 20px">${thead}${tbody}</table>`;
+// Une seule notification Telegram groupée par run (jamais une notif par page).
+function buildTelegramText({ current, previous, flagged }) {
+  const lines = [];
+  lines.push(`📉 Trafic — ${flagged.length} page(s) en baisse`);
+  lines.push(`Semaine ${current.startDate} → ${current.endDate} vs ${previous.startDate} → ${previous.endDate} (seuil: -${pct(TRAFFIC_DROP_THRESHOLD)})`);
+  for (const page of flagged) {
+    lines.push("");
+    lines.push(`• ${page.path}`);
+    if (page.sessionsDrop !== null) {
+      lines.push(`   Sessions GA4: ${page.prevSessions} → ${page.currSessions} (-${pct(page.sessionsDrop)})`);
+    }
+    if (page.clicksDrop !== null) {
+      lines.push(`   Clics GSC: ${page.prevClicks} → ${page.currClicks} (-${pct(page.clicksDrop)})`);
+    }
+    const topQueries = page.queryDiff.slice(0, 3);
+    if (topQueries.length) {
+      lines.push(`   Requêtes en cause:`);
+      for (const q of topQueries) {
+        const pos = q.prevPosition !== null
+          ? `${q.prevPosition.toFixed(1)} → ${q.currPosition.toFixed(1)}`
+          : `— → ${q.currPosition.toFixed(1)}`;
+        lines.push(`   · « ${q.query} » clics ${q.prevClicks} → ${q.currClicks}, pos ${pos}`);
+      }
+    }
+  }
+  // Telegram limite un message à 4096 caractères.
+  return lines.join("\n").slice(0, 4000);
 }
 
-const SIGNATURE = `
-  <div style="margin-top:40px;padding-top:24px;border-top:1px solid #e8e8e8">
-    <table cellpadding="0" cellspacing="0" style="border-collapse:collapse">
-      <tr>
-        <td style="padding-right:20px;vertical-align:middle;border-right:2px solid #e8e8e8">
-          <img src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media" height="32" style="display:block"/>
-        </td>
-        <td style="padding-left:20px;vertical-align:middle">
-          <p style="margin:0 0 2px;font-size:14px;font-weight:700;color:#111">L'équipe MSD Media</p>
-          <p style="margin:0;font-size:13px;color:#555;line-height:1.7">
-            <a href="https://msd-media.com" style="color:#555;text-decoration:none">msd-media.com</a><br/>
-            <a href="mailto:maxens.soldan@msd-media.com" style="color:#555;text-decoration:none">maxens.soldan@msd-media.com</a>
-          </p>
-        </td>
-      </tr>
-    </table>
-    <p style="margin:16px 0 0;font-size:11px;color:#aaa;line-height:1.5">
-      MSD Media – Agence web de création de sites web et de landing pages · Entreprise individuelle – Maxens Soldan · SIRET : 988 083 416 00012 · Annecy, France
-    </p>
-  </div>
-`;
-
-function layout(content) {
-  return `<!DOCTYPE html>
-<html lang="fr">
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/></head>
-<body style="font-family:Inter,Arial,sans-serif;background:#f9f9f7;margin:0;padding:32px">
-  <div style="max-width:640px;margin:0 auto;background:#fff;border-radius:12px;padding:40px;border:1px solid #e8e8e8">
-    ${content}
-    ${SIGNATURE}
-  </div>
-</body>
-</html>`;
-}
-
-function buildEmailHtml({ current, previous, flagged }) {
-  const sections = flagged
-    .map((page) => {
-      const summaryRows = [
-        ["Sessions GA4", String(page.prevSessions), String(page.currSessions), page.sessionsDrop !== null ? pct(page.sessionsDrop) : "n/a"],
-        ["Clics GSC", String(page.prevClicks), String(page.currClicks), page.clicksDrop !== null ? pct(page.clicksDrop) : "n/a"]
-      ];
-      const queryRows = page.queryDiff.map((q) => [
-        q.query,
-        String(q.prevClicks),
-        String(q.currClicks),
-        q.prevPosition !== null ? `${q.prevPosition.toFixed(1)} → ${q.currPosition.toFixed(1)}` : `— → ${q.currPosition.toFixed(1)}`
-      ]);
-
-      return `
-        <h3 style="font-size:15px;font-weight:700;margin:24px 0 6px;color:#111">${escapeHtml(page.path)}</h3>
-        ${toTableHtml(["Métrique", "Sem. préc.", "Sem. actuelle", "Delta"], summaryRows)}
-        <p style="margin:0 0 6px;font-size:12px;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.04em">Requêtes qui expliquent la baisse</p>
-        ${toTableHtml(["Requête", "Clics avant", "Clics après", "Position"], queryRows)}
-      `;
-    })
-    .join("");
-
-  return layout(`
-    <h1 style="font-size:22px;font-weight:700;color:#111;margin:0 0 8px">Alerte trafic — baisse détectée</h1>
-    <p style="color:#888;font-size:13px;margin:0 0 24px">
-      Semaine actuelle: ${escapeHtml(current.startDate)} → ${escapeHtml(current.endDate)}
-      &nbsp;vs&nbsp; précédente: ${escapeHtml(previous.startDate)} → ${escapeHtml(previous.endDate)}
-    </p>
-    <p style="color:#555;font-size:14px;margin:0 0 8px">
-      ${flagged.length} page(s) ont perdu ${pct(TRAFFIC_DROP_THRESHOLD)} ou plus de sessions et/ou de clics SEO.
-    </p>
-    ${sections}
-  `);
-}
-
-async function sendViaResend({ from, to, subject, html }) {
-  const response = await fetch("https://api.resend.com/emails", {
+async function sendViaTelegram(text) {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+  const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
     method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ from, to, subject, html })
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ chat_id: chatId, text })
   });
   const raw = await response.text();
   if (!response.ok) {
-    throw new Error(`Erreur Resend ${response.status}: ${raw.slice(0, 500)}`);
+    throw new Error(`Erreur Telegram ${response.status}: ${raw.slice(0, 500)}`);
   }
-  return raw ? JSON.parse(raw) : {};
+  return JSON.parse(raw);
 }
 
 function computeDrop(prevValue, currValue) {
@@ -409,7 +335,7 @@ async function run() {
   const topCandidates = candidates.slice(0, MAX_FLAGGED_PAGES);
 
   if (!topCandidates.length) {
-    console.log(`[traffic-drop-watcher] Aucune page en baisse de ${pct(TRAFFIC_DROP_THRESHOLD)}+. Aucun email envoyé.`);
+    console.log(`[traffic-drop-watcher] Aucune page en baisse de ${pct(TRAFFIC_DROP_THRESHOLD)}+. Aucune notification envoyée.`);
     return;
   }
 
@@ -425,13 +351,9 @@ async function run() {
     });
   }
 
-  const html = buildEmailHtml({ current, previous, flagged });
-  const from = process.env.MAIL_FROM || "MSD Media <maxens.soldan@msd-media.com>";
-  const to = process.env.MAIL_TO;
-  const subject = `⚠️ Trafic — ${flagged.length} page(s) en baisse (${current.startDate} → ${current.endDate})`;
-
-  const sent = await sendViaResend({ from, to, subject, html });
-  console.log(`[traffic-drop-watcher] Email envoyé (${flagged.length} pages): ${sent.id || JSON.stringify(sent)}`);
+  const text = buildTelegramText({ current, previous, flagged });
+  await sendViaTelegram(text);
+  console.log(`[traffic-drop-watcher] Notification Telegram envoyée (${flagged.length} pages, 1 message groupé).`);
 }
 
 run().catch((error) => {

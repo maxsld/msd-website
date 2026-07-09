@@ -373,37 +373,43 @@ ${decaying
   await fs.writeFile(reportPath, reportHeader + outline, "utf8");
   console.log(`[content-decay-refresh] Rapport écrit: ${reportPath}`);
 
-  // Optional low-noise notification, same Resend pattern as the other loops.
-  if (process.env.RESEND_API_KEY && process.env.MAIL_TO) {
-    const from = process.env.MAIL_FROM || "MSD Media <maxens.soldan@msd-media.com>";
-    const to = process.env.MAIL_TO;
-    const subject = `Content decay — nouveau rapport prêt (${article?.title || slug})`;
-    const html = `<!DOCTYPE html>
-<html lang="fr"><body style="font-family:Inter,Arial,sans-serif;background:#f9f9f7;margin:0;padding:32px">
-  <div style="max-width:560px;margin:0 auto;background:#fff;border-radius:12px;padding:32px;border:1px solid #e8e8e8">
-    <h1 style="font-size:18px;color:#111;margin:0 0 12px">Rapport de decay de contenu généré</h1>
-    <p style="font-size:14px;color:#555;line-height:1.6">
-      Article le plus en décroissance : <strong>${article?.title || slug}</strong><br/>
-      Clics: ${worst.prior.clicks} → ${worst.recent.clicks} · Position: ${worst.prior.position.toFixed(1)} → ${worst.recent.position.toFixed(1)}
-    </p>
-    <p style="font-size:13px;color:#888">Fichier: <code>seo-reports/${reportFileName}</code> (à committer/consulter dans le repo).</p>
-  </div>
-</body></html>`;
+  // Notification Telegram groupée (1 message + le rapport en pièce jointe —
+  // indispensable en CI où le fichier écrit dans le runner est perdu à la fin du job).
+  if (process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_ID) {
+    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
 
-    const response = await fetch("https://api.resend.com/emails", {
+    const text = [
+      `📝 Content decay — plan de mise à jour prêt`,
+      `Article le plus en décroissance : ${article?.title || slug}`,
+      `Clics: ${worst.prior.clicks} → ${worst.recent.clicks} · Position: ${worst.prior.position.toFixed(1)} → ${worst.recent.position.toFixed(1)}`,
+      ``,
+      `Le plan complet (sections, entités, maillage) est en pièce jointe.`
+    ].join("\n").slice(0, 4000);
+
+    const msgResponse = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: "POST",
-      headers: {
-        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ from, to, subject, html })
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: chatId, text })
     });
-    const raw = await response.text();
-    if (!response.ok) {
-      console.warn(`[content-decay-refresh] Echec envoi email de notification: ${response.status} ${raw.slice(0, 300)}`);
-    } else {
-      console.log("[content-decay-refresh] Email de notification envoyé.");
+    if (!msgResponse.ok) {
+      console.warn(`[content-decay-refresh] Echec message Telegram: ${msgResponse.status} ${(await msgResponse.text()).slice(0, 300)}`);
     }
+
+    const formData = new FormData();
+    formData.append("chat_id", chatId);
+    formData.append("document", new Blob([reportHeader + outline], { type: "text/markdown" }), reportFileName);
+    const docResponse = await fetch(`https://api.telegram.org/bot${token}/sendDocument`, {
+      method: "POST",
+      body: formData
+    });
+    if (!docResponse.ok) {
+      console.warn(`[content-decay-refresh] Echec envoi du rapport Telegram: ${docResponse.status} ${(await docResponse.text()).slice(0, 300)}`);
+    } else {
+      console.log("[content-decay-refresh] Notification Telegram envoyée (message + rapport).");
+    }
+  } else {
+    console.warn("[content-decay-refresh] TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID absents — pas de notification.");
   }
 }
 

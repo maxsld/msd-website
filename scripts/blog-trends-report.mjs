@@ -307,6 +307,38 @@ Règles : appuie chaque recommandation sur les chiffres fournis, pas de généra
 
 // ─── TELEGRAM ───────────────────────────────────────────────────────────────
 
+// Envoie le rapport directement en texte (pas de pièce jointe), découpé en
+// messages de moins de 4096 caractères (limite Telegram), coupés sur les
+// frontières de sections pour rester lisibles.
+function splitForTelegram(text, maxLength = 3900) {
+  const chunks = [];
+  let current = "";
+  for (const block of text.split(/\n(?=## )/)) {
+    const candidate = current ? `${current}\n${block}` : block;
+    if (candidate.length <= maxLength) {
+      current = candidate;
+      continue;
+    }
+    if (current) chunks.push(current);
+    if (block.length <= maxLength) {
+      current = block;
+    } else {
+      // Section trop longue à elle seule : coupe par lignes.
+      current = "";
+      for (const line of block.split("\n")) {
+        if ((current + "\n" + line).length > maxLength) {
+          chunks.push(current);
+          current = line;
+        } else {
+          current = current ? `${current}\n${line}` : line;
+        }
+      }
+    }
+  }
+  if (current) chunks.push(current);
+  return chunks;
+}
+
 async function sendTelegram(report, summaryLines) {
   if (!process.env.TELEGRAM_BOT_TOKEN || !process.env.TELEGRAM_CHAT_ID) {
     console.warn("[blog-trends] TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID absents — pas de notification.");
@@ -315,32 +347,20 @@ async function sendTelegram(report, summaryLines) {
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
 
-  const text = summaryLines.join("\n").slice(0, 4000);
-  const msgResponse = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ chat_id: chatId, text })
-  });
-  if (!msgResponse.ok) {
-    console.warn(`[blog-trends] Echec message Telegram: ${msgResponse.status} ${(await msgResponse.text()).slice(0, 300)}`);
+  const chunks = [summaryLines.join("\n"), ...splitForTelegram(report)];
+  for (const [index, chunk] of chunks.entries()) {
+    const msgResponse = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: chatId, text: chunk.slice(0, 4096) })
+    });
+    if (!msgResponse.ok) {
+      console.warn(`[blog-trends] Echec message Telegram ${index + 1}/${chunks.length}: ${msgResponse.status} ${(await msgResponse.text()).slice(0, 300)}`);
+    }
+    // Petite pause pour respecter le rate limit Telegram (1 msg/s par chat).
+    await new Promise((resolve) => setTimeout(resolve, 1100));
   }
-
-  const formData = new FormData();
-  formData.append("chat_id", chatId);
-  formData.append(
-    "document",
-    new Blob([report], { type: "text/markdown" }),
-    `blog-trends-${formatDate(new Date())}.md`
-  );
-  const docResponse = await fetch(`https://api.telegram.org/bot${token}/sendDocument`, {
-    method: "POST",
-    body: formData
-  });
-  if (!docResponse.ok) {
-    console.warn(`[blog-trends] Echec envoi du rapport Telegram: ${docResponse.status} ${(await docResponse.text()).slice(0, 300)}`);
-  } else {
-    console.log("[blog-trends] Notification Telegram envoyée (message + rapport).");
-  }
+  console.log(`[blog-trends] Notification Telegram envoyée (${chunks.length} messages).`);
 }
 
 // ─── MAIN ───────────────────────────────────────────────────────────────────
@@ -435,7 +455,7 @@ async function run() {
     `Clics blog 90j : ${totalPrior} → ${totalRecent}`,
     `Articles suivis : ${manifest.length} · Requêtes en croissance : ${risingQueries.length}`,
     "",
-    "Le rapport complet (supprimer / mettre à jour / créer) est en pièce jointe."
+    "Rapport complet dans les messages suivants ⬇️"
   ]);
 }
 

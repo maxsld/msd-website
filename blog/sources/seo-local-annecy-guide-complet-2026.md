@@ -91,7 +91,7 @@ Agence web spécialisée à Annecy
 ```
 Agence web à Annecy fondée par Maxens Soldan. 
 Création de sites web et landing pages sur mesure, 
-livrés en 14 jours. SEO local intégré. Appelez-nous.
+livrés en 21 jours. SEO local intégré. Appelez-nous.
 ```
 
 **Votre adresse en texte** sur chaque page. Google doit pouvoir lire votre adresse complète — rue, code postal, ville — pour vous associer géographiquement à Annecy. Beaucoup d'entreprises anneciennes mettent leur adresse uniquement dans une image ou dans Google Maps — Google ne peut pas la lire.
@@ -355,6 +355,6 @@ Les entreprises anneciennes qui investissent dans leur SEO local maintenant cons
 
 ## Vous voulez dominer le SEO local à Annecy ?
 
-MSD Media est l'agence web à Annecy spécialisée en SEO local et création de sites web sur mesure. On vous accompagne de l'audit initial à la position n°1 sur vos requêtes cibles — avec une méthode éprouvée, des résultats mesurables et une livraison en 14 jours.
+MSD Media est l'agence web à Annecy spécialisée en SEO local et création de sites web sur mesure. On vous accompagne de l'audit initial à la position n°1 sur vos requêtes cibles — avec une méthode éprouvée, des résultats mesurables et une livraison en 21 jours.
 
 **[Réserver un appel gratuit avec MSD Media →](https://msd-media.com/reserver/)**

@@ -164,12 +164,12 @@ Pour la vente en ligne — chaque solution a ses avantages selon la taille du ca
 
 ---
 
-## Votre site web à Strasbourg en 14 jours avec MSD Media
+## Votre site web à Strasbourg en 21 jours avec MSD Media
 
 MSD Media est une agence web spécialisée dans la création de sites web et landing pages à fort taux de conversion. Nous accompagnons les entreprises, les professionnels libéraux et les commerçants strasbourgeois dans la création d'une présence numérique performante.
 
 Notre promesse :
-- **Livraison en 14 jours** : votre site en ligne en deux semaines, pas en deux mois
+- **Livraison en 21 jours** : votre site en ligne en deux semaines, pas en deux mois
 - **Prix fixe** : pas de mauvaises surprises, tout est inclus dès le devis
 - **SEO intégré** : votre site est optimisé pour Google dès la mise en ligne
 - **Mobile-first** : conçu d'abord pour les smartphones
@@ -179,7 +179,7 @@ Notre promesse :
 
 ## Vous voulez créer votre site web à Strasbourg ?
 
-MSD Media crée des sites web professionnels pour les entreprises à Strasbourg — rapides, optimisés pour Google et livrés en 14 jours.
+MSD Media crée des sites web professionnels pour les entreprises à Strasbourg — rapides, optimisés pour Google et livrés en 21 jours.
 
 **Autres guides utiles :**
 - [Choisir une agence web à Strasbourg](/blog/articles/choisir-agence-web-strasbourg/)

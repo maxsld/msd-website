@@ -151,4 +151,4 @@ Les réseaux sociaux et l'IA ne remplacent pas un site web — ils le complèten
 
 ## Vous n'avez pas encore de site web à Annecy, ou le vôtre ne convertit plus ?
 
-MSD Media conçoit des sites vitrines et landing pages sur mesure à Annecy : rapides, optimisés pour le SEO local, pensés pour convertir. De l'idée au site en ligne en 14 jours chrono.
+MSD Media conçoit des sites vitrines et landing pages sur mesure à Annecy : rapides, optimisés pour le SEO local, pensés pour convertir. De l'idée au site en ligne en 21 jours chrono.

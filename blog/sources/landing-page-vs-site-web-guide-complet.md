@@ -29,7 +29,7 @@ Une **landing page** (page d'atterrissage) constitue une page web unique, spéci
 **MSD Media** crée des landing pages haute performance qui maximisent vos résultats :
 
 - **Taux de conversion optimisé** grâce à une architecture CRO (Conversion Rate Optimization)
-- **Développement rapide** : livraison en 14 jours avec révisions illimitées
+- **Développement rapide** : livraison en 21 jours avec révisions illimitées
 - **Design personnalisé** sans utilisation de templates génériques
 - **Message marketing ultra-ciblé** pour chaque segment d'audience
 - **Parfaitement adaptée** aux campagnes Google Ads, Facebook Ads et emailing
@@ -88,7 +88,7 @@ Le site internet complet s'impose dans ces cas :
 |---------|--------------|------------------|
 | **Objectif principal** | Conversion immédiate | Présence globale + SEO |
 | **Nombre de pages** | 1 page unique | Plusieurs pages (5 à 50+) |
-| **Temps de création** | 7 à 14 jours | 3 à 12 semaines |
+| **Temps de création** | 7 à 21 jours | 3 à 12 semaines |
 | **Budget indicatif** | sur devisà sur devis| sur devisà sur devis+ |
 | **Utilisation idéale** | Campagnes publicitaires | Stratégie digitale long terme |
 | **Navigation** | Minimaliste ou absente | Menu complet et hiérarchisé |
@@ -147,7 +147,7 @@ Que vous choisissiez une landing page ou un site complet, **MSD Media** applique
 
 ### Nos Garanties Qualité
 
-- **Livraison rapide** : 14 jours pour landing page, délais garantis pour sites
+- **Livraison rapide** : 21 jours pour landing page, délais garantis pour sites
 - **Révisions illimitées** jusqu'à votre satisfaction complète
 - **Responsive design** : parfait sur mobile, tablette et desktop
 - **Support continu** : assistance technique post-livraison
@@ -233,7 +233,7 @@ Le choix entre **landing page** et **site web complet** dépend de trois facteur
 
 ### Passez à l'Action avec MSD Media
 
-✅ **Besoin d'une landing page haute conversion ?** Livraison en 14 jours, optimisée pour vos campagnes marketing.
+✅ **Besoin d'une landing page haute conversion ?** Livraison en 21 jours, optimisée pour vos campagnes marketing.
 
 ✅ **Vous voulez un site web complet et performant ?** Architecture SEO, design sur mesure, accompagnement personnalisé.
 

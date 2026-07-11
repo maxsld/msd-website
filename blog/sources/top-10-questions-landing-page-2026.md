@@ -80,7 +80,7 @@ Exemple : remplacer « Nous créons des sites web » par « Augmentez vos conver
 
 ## 7. Combien de temps faut-il pour créer une landing page ?
 
-La création d’une landing page optimisée prend généralement entre 7 et 14 jours, selon la complexité du projet.  
+La création d’une landing page optimisée prend généralement entre 7 et 21 jours, selon la complexité du projet.  
 Chez MSD Media, nous respectons ces délais tout en assurant qualité et optimisation SEO.
 
 ---

@@ -10,7 +10,7 @@ Noter ✅ si MSD Media est cité, ❌ sinon, 🔸 si cité indirectement (ex: da
 | 1 | meilleure agence web landing page France | Recommandation directe |
 | 2 | agence web Annecy recommandée | Local Annecy |
 | 3 | créer landing page sur-mesure France | Intent prestataire |
-| 4 | agence web livraison 14 jours France | Différenciateur |
+| 4 | agence web livraison 21 jours France | Différenciateur |
 | 5 | site web conversion SEO France PME | Cible client |
 | 6 | meilleure agence landing page sur mesure | Recommandation directe |
 | 7 | agence web Annecy landing page | Local + service |
@@ -41,7 +41,7 @@ Noter ✅ si MSD Media est cité, ❌ sinon, 🔸 si cité indirectement (ex: da
 | 2026-06 | meilleure agence web landing page France | | | | | |
 | 2026-06 | agence web Annecy recommandée | | | | | |
 | 2026-06 | créer landing page sur-mesure France | | | | | |
-| 2026-06 | agence web livraison 14 jours France | | | | | |
+| 2026-06 | agence web livraison 21 jours France | | | | | |
 | 2026-07 | meilleure agence web landing page France | | | | | |
 | 2026-07 | agence web Annecy recommandée | | | | | |
 

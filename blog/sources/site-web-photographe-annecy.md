@@ -186,7 +186,7 @@ MSD Media est une agence web à Annecy spécialisée dans la création de sites 
 - **Design pensé pour la photographie** : mise en valeur de vos images sans sacrifier la vitesse de chargement
 - **SEO local intégré** : optimisation des textes alternatifs, pages géolocalisées, Google Business Profile
 - **Structure orientée conversion** : pages par spécialité, tarifs bien présentés, formulaires adaptés
-- **Livraison en 14 jours** : votre portfolio en ligne rapidement
+- **Livraison en 21 jours** : votre portfolio en ligne rapidement
 - **Ajustements illimités** jusqu'à satisfaction complète
 
 ---
@@ -201,5 +201,5 @@ Instagram complète votre présence — il ne la remplace pas. Dans une ville au
 
 ## Vous êtes photographe à Annecy et vous voulez un site web qui attire des clients qualifiés ?
 
-MSD Media conçoit des sites web sur mesure pour les photographes à Annecy — portfolio optimisé, SEO local complet, pages par spécialité et tarifs bien présentés. Livraison en 14 jours, ajustements illimités, satisfaction garantie.
+MSD Media conçoit des sites web sur mesure pour les photographes à Annecy — portfolio optimisé, SEO local complet, pages par spécialité et tarifs bien présentés. Livraison en 21 jours, ajustements illimités, satisfaction garantie.
 

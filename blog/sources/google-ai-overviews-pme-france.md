@@ -73,7 +73,7 @@ L'IA extrait facilement des informations depuis :
 - Les listes à puces et numérotées
 - Les tableaux avec données comparatives
 - Les réponses directes en début de paragraphe (Question → Réponse)
-- Les citations chiffrées ("livraison en 14 jours", "à partir de sur devis")
+- Les citations chiffrées ("livraison en 21 jours", "à partir de sur devis")
 
 ### Critère 4 : Données structurées LocalBusiness + FAQPage
 

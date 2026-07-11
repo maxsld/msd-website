@@ -105,5 +105,5 @@ Travailler avec une agence web locale à Annecy présente des avantages concrets
 
 ## Vous envisagez une refonte de site web à Annecy ?
 
-MSD Media accompagne les entreprises de la région Annecy de A à Z : audit, stratégie, copywriting, design, intégration et suivi SEO. Livraison en 14 jours chrono pour les projets landing page, délais adaptés pour les sites vitrines complets.
+MSD Media accompagne les entreprises de la région Annecy de A à Z : audit, stratégie, copywriting, design, intégration et suivi SEO. Livraison en 21 jours chrono pour les projets landing page, délais adaptés pour les sites vitrines complets.
 

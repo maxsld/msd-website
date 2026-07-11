@@ -43,7 +43,7 @@ MSD Media est bien plus qu’une agence web : c’est un véritable partenaire s
 - **SEO intégré** dès la conception.
 - **Tests A/B continus** pour maximiser le taux de conversion.
 - **Suivi en temps réel** avec communication directe via WhatsApp.
-- **Livraison rapide** : moins de 14 jours pour un projet complet.
+- **Livraison rapide** : moins de 21 jours pour un projet complet.
 
 **Points forts :**
 - **Approche humaine** : communication directe, échanges constants, compréhension profonde de vos besoins.

@@ -126,26 +126,22 @@
     padding: 2.2rem 1rem 0.7rem;
   }
 
-  .realisations-carousel {
-    padding-inline: 3.75rem;
+  .realisations-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
-  .realisations-track {
-    height: clamp(210px, 44vw, 360px);
-  }
-
-  .realisations-slide {
-    width: min(74vw, 520px);
+  .realisations-card {
     border-radius: 18px;
   }
 
-  .realisations-nav {
-    width: 44px;
-    height: 44px;
+  .realisations-card__overlay {
+    padding: 1rem;
   }
 
-  .realisations-nav--prev { left: 0.35rem; }
-  .realisations-nav--next { right: 0.35rem; }
+  .realisations-card__overlay strong {
+    font-size: 1.05rem;
+  }
 
   .realisations-ctas {
     gap: 0.55rem;
@@ -566,39 +562,12 @@
     align-items: stretch;
   }
 
-  .realisations-carousel {
-    padding-inline: 3.1rem;
+  .realisations-grid {
+    gap: 0.85rem;
   }
 
-  .realisations-track {
-    height: 200px;
-  }
-
-  .realisations-slide {
-    width: 76vw;
+  .realisations-card {
     border-radius: 15px;
-  }
-
-  .realisations-slide.is-far-left {
-    transform: translate(calc(-50% - 88%), -50%) scale(0.7);
-  }
-
-  .realisations-slide.is-far-right {
-    transform: translate(calc(-50% + 88%), -50%) scale(0.7);
-  }
-
-  .realisations-nav {
-    width: 38px;
-    height: 38px;
-    font-size: 0.85rem;
-  }
-
-  .realisations-nav--prev {
-    left: 0.2rem;
-  }
-
-  .realisations-nav--next {
-    right: 0.2rem;
   }
 
   .contact-button,

@@ -15,7 +15,7 @@ const KEYWORD_POOL = [
   "landing page vs site vitrine",
   "agence web Genève",
   "combien coûte une landing page",
-  "site web 14 jours livraison",
+  "site web 21 jours livraison",
   "agence web Lyon B2B",
   "landing page startup",
   "agence web Suisse",
@@ -64,7 +64,7 @@ Rédige un article de blog SEO complet en français pour le mot-clé : "${keywor
 
 CONTEXTE MSD MEDIA :
 - Agence positionnée sur la qualité premium, le sur-mesure (zéro template)
-- Livraison en 14 jours
+- Livraison en 21 jours
 - Clients : France, Suisse, Belgique
 - Ton : direct, expert, sans bullshit marketing. Jamais condescendant.
 - CTA : toujours vers https://cal.com/maxens-soldan-msd-media/30min

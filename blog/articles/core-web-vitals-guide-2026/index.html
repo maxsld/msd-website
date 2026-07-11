@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS) | MSD Media</title>
+  <meta name="description" content="Core Web Vitals expliqués simplement : LCP, INP et CLS, seuils Google 2026, outils de mesure gratuits et méthode concrète pour passer au vert." />
+  <meta name="keywords" content="core web vitals, core web vitals, vitesse site web, LCP, INP, CLS, performance web, SEO, MSD Media" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://msd-media.com/blog/articles/core-web-vitals-guide-2026/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS)" />
+  <meta property="og:description" content="Core Web Vitals expliqués simplement : LCP, INP et CLS, seuils Google 2026, outils de mesure gratuits et méthode concrète pour passer au vert." />
+  <meta property="og:url" content="https://msd-media.com/blog/articles/core-web-vitals-guide-2026/" />
+  <meta property="og:image" content="https://msd-media.com/assets/img/blog/top-5-applications-productivite-2026.jpg" />
+  <meta property="og:site_name" content="MSD Media" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS)" />
+  <meta name="twitter:description" content="Core Web Vitals expliqués simplement : LCP, INP et CLS, seuils Google 2026, outils de mesure gratuits et méthode concrète pour passer au vert." />
+  <meta name="twitter:image" content="https://msd-media.com/assets/img/blog/top-5-applications-productivite-2026.jpg" />
+
+  <link rel="icon" type="image/png" href="https://msd-media.com/assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="https://msd-media.com/assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="https://msd-media.com/assets/img/favicon.ico" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../../assets/css/animations.css" />
+  <link rel="stylesheet" href="../../../assets/css/responsive.css" />
+  <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous"></script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS)","description":"Core Web Vitals expliqués simplement : LCP, INP et CLS, seuils Google 2026, outils de mesure gratuits et méthode concrète pour passer au vert.","image":"https://msd-media.com/assets/img/blog/top-5-applications-productivite-2026.jpg","author":{"@type":"Person","name":"Maxens Soldan","url":"https://msd-media.com/blog/articles/maxens-soldan/","jobTitle":"Fondateur & CEO","worksFor":{"@type":"Organization","name":"MSD Media"},"sameAs":["https://www.linkedin.com/in/maxens-soldan/"]},"publisher":{"@type":"Organization","name":"MSD Media","logo":{"@type":"ImageObject","url":"https://msd-media.com/assets/img/logo-black.webp"}},"datePublished":"2026-07-11","dateModified":"2026-07-11","mainEntityOfPage":{"@type":"WebPage","@id":"https://msd-media.com/blog/articles/core-web-vitals-guide-2026/"},"articleSection":"Blog SEO","inLanguage":"fr-FR","keywords":"core web vitals, vitesse site web, LCP, INP, CLS, performance web, SEO, MSD Media"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":{"@id":"https://msd-media.com/"}},{"@type":"ListItem","position":2,"name":"Blog","item":{"@id":"https://msd-media.com/blog/"}},{"@type":"ListItem","position":3,"name":"Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS)","item":{"@id":"https://msd-media.com/blog/articles/core-web-vitals-guide-2026/"}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Que sont les Core Web Vitals de Google ?","acceptedAnswer":{"@type":"Answer","text":"Les Core Web Vitals sont trois métriques d&#39;expérience utilisateur mesurées par Google : le LCP (vitesse d&#39;affichage du contenu principal, seuil 2,5 s), l&#39;INP (réactivité aux interactions, seuil 200 ms) et le CLS (stabilité visuelle, seuil 0,1). Ils sont intégrés à l&#39;algorithme de classement et mesurés sur les visiteurs réels via le rapport CrUX."}},{"@type":"Question","name":"Les Core Web Vitals influencent-ils vraiment le référencement ?","acceptedAnswer":{"@type":"Answer","text":"Oui, Google confirme qu&#39;ils font partie des signaux de classement, avec un poids modéré : le contenu et la pertinence restent prioritaires. Leur impact indirect est en revanche majeur : un site lent augmente le taux de rebond, réduit les pages vues et diminue les conversions, trois signaux qui dégradent la performance globale du site."}},{"@type":"Question","name":"Quel score PageSpeed faut-il viser en 2026 ?","acceptedAnswer":{"@type":"Answer","text":"Visez 90/100 ou plus sur mobile pour un site vitrine ou une landing page. Entre 50 et 89, des optimisations ciblées s&#39;imposent ; sous 50, le problème est généralement structurel (thème surchargé, hébergement inadapté) et une refonte technique est souvent plus rentable qu&#39;une série de correctifs."}},{"@type":"Question","name":"Comment améliorer son LCP rapidement ?","acceptedAnswer":{"@type":"Answer","text":"Les trois actions au meilleur ratio effort/impact : compresser l&#39;image principale en WebP (gain souvent supérieur à 1 seconde), la précharger avec fetchpriority=&quot;high&quot;, et passer tous les scripts non essentiels en defer. Sur la plupart des sites, l&#39;image hero non optimisée est à elle seule la cause principale d&#39;un mauvais LCP."}},{"@type":"Question","name":"Pourquoi mon score est-il bon sur ordinateur mais mauvais sur mobile ?","acceptedAnswer":{"@type":"Answer","text":"PageSpeed Insights simule sur mobile un appareil de milieu de gamme en connexion 4G lente, conditions bien plus exigeantes qu&#39;un ordinateur en fibre. Comme Google utilise l&#39;index mobile-first, c&#39;est le score mobile qui compte pour le référencement. Un écart important signale presque toujours un excès de JavaScript et d&#39;images non optimisées."}}],"mainEntityOfPage":{"@type":"WebPage","@id":"https://msd-media.com/blog/articles/core-web-vitals-guide-2026/"}}</script>
+<!-- AI referrer detection — runs immediately, no consent required (aucun cookie) -->
+<script>
+(function(){
+  var AI_SOURCES = {
+    'perplexity.ai': 'perplexity',
+    'chatgpt.com': 'chatgpt',
+    'chat.openai.com': 'chatgpt',
+    'claude.ai': 'claude',
+    'gemini.google.com': 'gemini',
+    'bard.google.com': 'gemini',
+    'copilot.microsoft.com': 'copilot',
+    'bing.com/chat': 'copilot',
+    'you.com': 'you',
+    'phind.com': 'phind',
+    'deepseek.com': 'deepseek'
+  };
+  var ref = document.referrer;
+  var aiSource = null;
+  for (var domain in AI_SOURCES) {
+    if (ref.indexOf(domain) !== -1) { aiSource = AI_SOURCES[domain]; break; }
+  }
+  window.dataLayer = window.dataLayer || [];
+  if (aiSource) {
+    window.dataLayer.push({ event: 'ai_referral', ai_source: aiSource, referrer: ref });
+    sessionStorage.setItem('_msd_ai_source', aiSource);
+  }
+  // Also expose for GTM variable use
+  window._msdAiSource = aiSource;
+})();
+</script>
+<!-- Tracking — chargé uniquement après consentement cookie -->
+<script>
+function _msdLoadTracking(){
+  // MSD Analytics
+  (function(){
+    var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
+    sessionStorage.setItem('_msd',sid);
+    var t=Date.now();
+    var iv;
+    function send(d){
+      var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
+      var ok=false;
+      try { ok=navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p)); } catch(e) {}
+      if(!ok){
+        fetch('https://app.msd-media.com/api/track',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(p),
+          keepalive:true
+        }).catch(function(){});
+      }
+    }
+    function start(){
+      if(iv) return;
+      iv=setInterval(function(){send(Date.now()-t);},15000);
+    }
+    function stop(){
+      if(!iv) return;
+      clearInterval(iv);
+      iv=undefined;
+    }
+    document.addEventListener('visibilitychange',function(){
+      if(document.visibilityState==='hidden'){send(Date.now()-t);stop();}
+      else{t=Date.now();send(0);start();}
+    });
+    send(0);
+    start();
+    // Scroll heatmap tracking
+    (function(){
+      var path=location.pathname;
+      var scrollEvts=[];
+      var lastPct=0;
+      var pauseTimer=null;
+      function getPct(){return Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight||1))*100);}
+      function bucket(p){return Math.floor(p/5)*5;}
+      function flush(){
+        if(!scrollEvts.length)return;
+        var evts=scrollEvts.splice(0);
+        navigator.sendBeacon('https://app.msd-media.com/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
+      }
+      window.addEventListener('scroll',function(){
+        var pct=getPct();
+        if(Math.abs(pct-lastPct)>10&&pct<lastPct){scrollEvts.push({type:'backtrack',pct:bucket(pct)});}
+        lastPct=pct;
+        if(pauseTimer)clearTimeout(pauseTimer);
+        pauseTimer=setTimeout(function(){scrollEvts.push({type:'pause',pct:bucket(pct)});flush();},1500);
+      },{passive:true});
+      window.addEventListener('beforeunload',function(){scrollEvts.push({type:'exit',pct:bucket(getPct())});flush();});
+      setInterval(flush,30000);
+    })();
+  })();
+  // Google Analytics (GA4)
+  (function(){
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-VKSH9YQXZS';
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-VKSH9YQXZS');
+  })();
+}
+(function(){
+  var consent=localStorage.getItem('msd_cookie_consent');
+  if(consent==='accepted'){_msdLoadTracking();return;}
+  if(consent==='refused'){return;}
+  if(window.innerWidth<=680){_msdLoadTracking();return;}
+  function init(){
+  var banner=document.getElementById('cookie-consent');
+  if(!banner)return;
+  function show(){banner.hidden=false;}
+  function hide(){banner.hidden=true;}
+  show();
+  document.getElementById('cookie-accept').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','accepted');
+    hide();
+    _msdLoadTracking();
+  });
+  document.getElementById('cookie-refuse').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','refused');
+    hide();
+  });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>
+</head>
+<body class="blog-article-page" data-asset-base="../../../assets">
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="https://msd-media.com/"><img src="../../../assets/img/logo-black.webp" alt="MSD Media logo" class="logo" /></a>
+      <div class="nav-menu" data-nav-menu>
+        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
+          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
+          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
+          <a href="https://msd-media.com/">Accueil</a>
+          <a href="https://msd-media.com/blog/">Blog</a>
+          <a href="https://msd-media.com/etudes-de-cas/">Études de cas</a>
+          <a href="https://msd-media.com/contact/">Contact</a>
+          <a href="https://msd-media.com/recrutement/">Recrutement</a>
+          <a href="https://msd-media.com/affiliation/">Affiliation</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
+      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="section-tag section-tag--dark">Article</h2>
+      <h1 class="hero__title"><span>Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS)</span></h1>
+      <p class="blog-article-meta">Publié le 11 juillet 2026 • 7 min de lecture — par <a href="/blog/articles/maxens-soldan/" class="blog-article-author-link">Maxens Soldan</a>, Fondateur &amp; CEO de MSD Media</p>
+      <div class="hero__actions" aria-label="Actions principales">
+        <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank">Réserver un appel</a>
+        <a class="hero__btn hero__btn--secondary" href="/blog/">Retour au blog</a>
+      </div>
+    </section>
+
+    <section class="section-grid blog-article-shell">
+      <article class="blog-article-content" itemscope itemtype="https://schema.org/Article">
+        <meta itemprop="headline" content="Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS)" />
+        <meta itemprop="datePublished" content="2026-07-11" />
+        <meta itemprop="dateModified" content="2026-07-11" />
+        <meta itemprop="author" content="Maxens Soldan" />
+        
+        <p>Les <strong>Core Web Vitals</strong> sont les trois métriques par lesquelles Google mesure l&#39;expérience réelle des visiteurs d&#39;un site : le <strong>LCP</strong> (vitesse d&#39;affichage), l&#39;<strong>INP</strong> (réactivité aux interactions) et le <strong>CLS</strong> (stabilité visuelle). Depuis leur intégration à l&#39;algorithme, ils influencent directement le classement dans les résultats de recherche — et surtout, ils déterminent si un visiteur reste ou repart.</p>
+<p>Les chiffres parlent : selon les données de Google, la probabilité qu&#39;un visiteur quitte une page <strong>augmente de 32 % quand le chargement passe de 1 à 3 secondes</strong>, et de 90 % quand il passe de 1 à 5 secondes. Un site lent ne perd pas seulement des positions : il perd des clients avant même de leur avoir parlé.</p>
+<p>Ce guide explique chaque métrique simplement, donne les seuils à atteindre, les outils gratuits pour se mesurer et la méthode pour passer au vert.</p>
+<hr />
+<h2 id="les-3-metriques-expliquees-simplement">Les 3 métriques expliquées simplement</h2>
+<h3 id="lcp-largest-contentful-paint-la-vitesse-d-affichage">LCP (Largest Contentful Paint) — la vitesse d&#39;affichage</h3>
+<p>Le <strong>LCP mesure le temps nécessaire pour afficher le plus gros élément visible de la page</strong> : généralement l&#39;image principale ou le titre. C&#39;est le moment où le visiteur a l&#39;impression que « la page est chargée ».</p>
+<div class="blog-table-wrap"><table class="blog-table"><thead><tr><th>Verdict</th><th>Seuil</th></tr></thead><tbody><tr><td>🟢 Bon</td><td>≤ 2,5 secondes</td></tr><tr><td>🟠 À améliorer</td><td>2,5 – 4 secondes</td></tr><tr><td>🔴 Mauvais</td><td>&gt; 4 secondes</td></tr></tbody></table></div>
+<p>Les causes classiques d&#39;un mauvais LCP : images trop lourdes (une photo de 3 Mo en tête de page), serveur lent, scripts qui bloquent le rendu, polices web chargées en cascade.</p>
+<h3 id="inp-interaction-to-next-paint-la-reactivite">INP (Interaction to Next Paint) — la réactivité</h3>
+<p>L&#39;<strong>INP mesure le délai entre une interaction (clic, saisie, tap) et la réponse visible de la page</strong>. Il a remplacé le FID en mars 2024 et c&#39;est aujourd&#39;hui la métrique la plus exigeante, car il mesure <strong>toutes</strong> les interactions de la visite, pas seulement la première.</p>
+<div class="blog-table-wrap"><table class="blog-table"><thead><tr><th>Verdict</th><th>Seuil</th></tr></thead><tbody><tr><td>🟢 Bon</td><td>≤ 200 ms</td></tr><tr><td>🟠 À améliorer</td><td>200 – 500 ms</td></tr><tr><td>🔴 Mauvais</td><td>&gt; 500 ms</td></tr></tbody></table></div>
+<p>Le coupable presque systématique : le <strong>JavaScript excessif</strong>. Chaque script de tracking, widget de chat, slider ou pop-up ajoute du travail au navigateur. Les sites construits sur des builders visuels chargés d&#39;extensions sont les premiers touchés.</p>
+<h3 id="cls-cumulative-layout-shift-la-stabilite-visuelle">CLS (Cumulative Layout Shift) — la stabilité visuelle</h3>
+<p>Le <strong>CLS mesure les déplacements inattendus des éléments pendant le chargement</strong> : vous alliez cliquer sur un bouton, une bannière apparaît, et vous cliquez sur une publicité. Ce phénomène a un score.</p>
+<div class="blog-table-wrap"><table class="blog-table"><thead><tr><th>Verdict</th><th>Seuil</th></tr></thead><tbody><tr><td>🟢 Bon</td><td>≤ 0,1</td></tr><tr><td>🟠 À améliorer</td><td>0,1 – 0,25</td></tr><tr><td>🔴 Mauvais</td><td>&gt; 0,25</td></tr></tbody></table></div>
+<p>Causes principales : images sans dimensions déclarées, polices qui changent la mise en page en se chargeant, bannières et embeds injectés après coup.</p>
+<hr />
+<h2 id="pourquoi-les-core-web-vitals-comptent-double-en-2026">Pourquoi les Core Web Vitals comptent double en 2026</h2>
+<p><strong>Pour Google</strong> : les Core Web Vitals sont un facteur de classement confirmé. À contenu équivalent, la page la plus rapide gagne. Ils conditionnent aussi l&#39;exploration : un site lent est crawlé moins souvent.</p>
+<p><strong>Pour vos visiteurs</strong> : l&#39;impact business est plus direct encore. Les études de référence (Google/Deloitte, « Milliseconds Make Millions », 2020) ont mesuré qu&#39;<strong>une amélioration de 0,1 seconde du temps de chargement augmente les conversions de 8 % en moyenne</strong> sur les sites analysés.</p>
+<p><strong>Pour les IA</strong> : les crawlers de ChatGPT, Perplexity et Google AI Overviews explorent le web avec des budgets de crawl limités. Un site rapide et techniquement propre est mieux exploré, donc plus susceptible d&#39;être cité. Nous détaillons ce point dans notre guide <a href="https://msd-media.com/blog/articles/aeo-seo-geo-guide-2026/">AEO vs SEO vs GEO</a>.</p>
+<hr />
+<h2 id="comment-mesurer-vos-core-web-vitals-outils-gratuits">Comment mesurer vos Core Web Vitals (outils gratuits)</h2>
+<ol><li><strong><a href="https://pagespeed.web.dev/">PageSpeed Insights</a></strong> — l&#39;outil de référence. Entrez votre URL : il donne les données réelles de vos visiteurs (si le trafic est suffisant) et un diagnostic labo avec la liste des problèmes.</li><li><strong>Google Search Console</strong> — rapport « Signaux Web essentiels » : la vue d&#39;ensemble de toutes vos pages, groupées par problème.</li><li><strong>Chrome DevTools (onglet Performance)</strong> — pour le diagnostic fin, notamment l&#39;INP.</li></ol>
+<p><strong>Attention au piège classique</strong> : mesurer depuis un bon ordinateur en fibre ne reflète rien. Google évalue vos pages sur <strong>mobile, en connexion moyenne</strong>. C&#39;est la colonne « Mobile » de PageSpeed Insights qui compte.</p>
+<p>Il existe une différence essentielle entre les <strong>données labo</strong> (test instantané, reproductible) et les <strong>données terrain</strong> (vos vrais visiteurs sur 28 jours, collectées via le rapport CrUX). C&#39;est le terrain qui compte pour le classement — un bon score labo avec un mauvais terrain signifie que vos visiteurs réels ont des conditions plus difficiles que votre test.</p>
+<hr />
+<h2 id="la-methode-pour-passer-au-vert-metrique-par-metrique">La méthode pour passer au vert, métrique par métrique</h2>
+<h3 id="ameliorer-le-lcp">Améliorer le LCP</h3>
+<ul><li><strong>Compresser et convertir les images</strong> en WebP ou AVIF (une photo passe de 2 Mo à 80 Ko sans perte visible)</li><li><strong>Précharger l&#39;image principale</strong> (<code>fetchpriority=&quot;high&quot;</code>) et différer les images sous la ligne de flottaison (<code>loading=&quot;lazy&quot;</code>)</li><li><strong>Réduire le temps de réponse serveur</strong> : hébergement de qualité + CDN</li><li><strong>Éliminer les scripts bloquants</strong> : tout JavaScript non essentiel passe en <code>defer</code></li></ul>
+<h3 id="ameliorer-l-inp">Améliorer l&#39;INP</h3>
+<ul><li><strong>Supprimer les scripts inutiles</strong> : chaque widget se paie. L&#39;audit honnête consiste à lister tous les scripts tiers et à justifier chacun</li><li><strong>Charger le tracking après consentement et en différé</strong>, pas dans le chemin critique</li><li><strong>Découper les longues tâches JavaScript</strong> pour laisser le navigateur répondre aux interactions</li></ul>
+<h3 id="ameliorer-le-cls">Améliorer le CLS</h3>
+<ul><li><strong>Déclarer les dimensions de toutes les images et vidéos</strong> (<code>width</code>/<code>height</code>) : le navigateur réserve l&#39;espace</li><li><strong>Réserver l&#39;espace des bannières et embeds</strong> avant leur chargement</li><li><strong>Charger les polices avec <code>font-display: swap</code></strong> et précharger les fichiers de polices critiques</li></ul>
+<hr />
+<h2 id="le-vrai-probleme-la-dette-technique-des-sites-a-templates">Le vrai problème : la dette technique des sites à templates</h2>
+<p>Voici ce que nous constatons en auditant les sites de PME françaises : la plupart des sites construits sur des thèmes WordPress génériques avec constructeurs de page (Elementor, Divi...) cumulent 15 à 30 scripts tiers, 2 à 4 Mo de page et des scores mobiles entre 25 et 55/100. Ce n&#39;est pas une fatalité technique, c&#39;est un choix de construction : chaque extension ajoutée pour « gagner du temps » se paie en performance.</p>
+<p>C&#39;est la raison pour laquelle les sites MSD Media sont <strong>codés sur mesure, sans CMS lourd ni constructeur visuel</strong> : HTML/CSS/JS optimisés, images WebP, zéro script superflu. Résultat structurel : des scores PageSpeed mobiles supérieurs à 90/100 et un LCP sous 2 secondes. La performance n&#39;est pas une option qu&#39;on ajoute à la fin, c&#39;est une propriété de l&#39;architecture.</p>
+<p>Notre guide sur la <a href="https://msd-media.com/blog/articles/vitesse-performance-site-web-annecy-2026/">vitesse et performance web</a> détaille l&#39;impact business, et si votre site actuel convertit mal, la vitesse est le premier suspect à examiner — voir <a href="https://msd-media.com/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/">pourquoi votre site ne convertit pas</a>.</p>
+<hr />
+<h2 id="faq-core-web-vitals">FAQ — Core Web Vitals</h2>
+<h3 id="que-sont-les-core-web-vitals-de-google">Que sont les Core Web Vitals de Google ?</h3>
+<p>Les Core Web Vitals sont trois métriques d&#39;expérience utilisateur mesurées par Google : le LCP (vitesse d&#39;affichage du contenu principal, seuil 2,5 s), l&#39;INP (réactivité aux interactions, seuil 200 ms) et le CLS (stabilité visuelle, seuil 0,1). Ils sont intégrés à l&#39;algorithme de classement et mesurés sur les visiteurs réels via le rapport CrUX.</p>
+<h3 id="les-core-web-vitals-influencent-ils-vraiment-le-referencement">Les Core Web Vitals influencent-ils vraiment le référencement ?</h3>
+<p>Oui, Google confirme qu&#39;ils font partie des signaux de classement, avec un poids modéré : le contenu et la pertinence restent prioritaires. Leur impact indirect est en revanche majeur : un site lent augmente le taux de rebond, réduit les pages vues et diminue les conversions, trois signaux qui dégradent la performance globale du site.</p>
+<h3 id="quel-score-pagespeed-faut-il-viser-en-2026">Quel score PageSpeed faut-il viser en 2026 ?</h3>
+<p>Visez 90/100 ou plus sur mobile pour un site vitrine ou une landing page. Entre 50 et 89, des optimisations ciblées s&#39;imposent ; sous 50, le problème est généralement structurel (thème surchargé, hébergement inadapté) et une refonte technique est souvent plus rentable qu&#39;une série de correctifs.</p>
+<h3 id="comment-ameliorer-son-lcp-rapidement">Comment améliorer son LCP rapidement ?</h3>
+<p>Les trois actions au meilleur ratio effort/impact : compresser l&#39;image principale en WebP (gain souvent supérieur à 1 seconde), la précharger avec fetchpriority=&quot;high&quot;, et passer tous les scripts non essentiels en defer. Sur la plupart des sites, l&#39;image hero non optimisée est à elle seule la cause principale d&#39;un mauvais LCP.</p>
+<h3 id="pourquoi-mon-score-est-il-bon-sur-ordinateur-mais-mauvais-sur-mobile">Pourquoi mon score est-il bon sur ordinateur mais mauvais sur mobile ?</h3>
+<p>PageSpeed Insights simule sur mobile un appareil de milieu de gamme en connexion 4G lente, conditions bien plus exigeantes qu&#39;un ordinateur en fibre. Comme Google utilise l&#39;index mobile-first, c&#39;est le score mobile qui compte pour le référencement. Un écart important signale presque toujours un excès de JavaScript et d&#39;images non optimisées.</p>
+<hr />
+<h2 id="conclusion-la-vitesse-est-un-choix-d-architecture">Conclusion : la vitesse est un choix d&#39;architecture</h2>
+<p>Les Core Web Vitals ne sont pas une case technique à cocher : ils mesurent ce que vivent vos visiteurs pendant les 3 premières secondes — celles qui décident s&#39;ils restent. Les seuils à retenir : <strong>LCP ≤ 2,5 s, INP ≤ 200 ms, CLS ≤ 0,1</strong>, mesurés sur mobile, sur données réelles.</p>
+<p><strong>Envie de savoir où en est votre site ?</strong> Testez-le sur PageSpeed Insights, ou <a href="https://msd-media.com/audit-seo-gratuit/">demandez un audit de performance gratuit</a> : nous analysons vos Core Web Vitals et identifions les 3 actions au meilleur retour sur investissement pour votre cas précis.</p>
+      </article>
+      
+      
+    <section class="blog-internal-links"><h2>Liens utiles</h2><ul class="blog-internal-links__list"><li><a href="/seo-local-annecy/">SEO local à Annecy</a></li><li><a href="/refonte-site-web-annecy/">Refonte de site web à Annecy</a></li><li><a href="/contact/">Tarifs site web à Annecy</a></li><li><a href="/creation-site-web-annecy/">Création de site web à Annecy</a></li></ul></section><section class="blog-related"><h2>Articles liés</h2><ul class="blog-related-links"><li><a href="/blog/articles/vitesse-performance-site-web-annecy-2026/">Vitesse de site web à Annecy : pourquoi ça coûte des clients (et comment y remédier en 2026)</a></li><li><a href="/blog/articles/agence-landing-page-site-web-france-msd-media/">Agences Spécialisées en Landing Page et Site Web en France : Avis et Réalisations (2026)</a></li><li><a href="/blog/articles/creation-site-internet-strasbourg/">Création de site internet à Strasbourg</a></li><li><a href="/blog/articles/top-10-questions-landing-page-2026/">Top 10 des questions sur les landing pages que se posent les entrepreneurs en 2026</a></li></ul></section></section>
+  </main>
+
+  <section class="booking-section" id="rdv">
+    <div class="booking-section__inner">
+      <h2 class="section-tag section-tag--light">Réserver un appel</h2>
+      <h2 class="section-title section-title--light">Libérez le véritable <br> potentiel de votre site.</h2>
+      <div class="booking-section__embed">
+        <iframe
+          src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&theme=dark"
+          title="Prendre rendez-vous avec MSD Media"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="../../../assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo">
+        <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+      </div>
+      <div class="footer-offices">
+        <article class="footer-office-card">
+          <h4 class="footer-office-city">Annecy</h4>
+          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
+          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
+        </article>
+        <article class="footer-office-card">
+          <h4 class="footer-office-city">Munich</h4>
+          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
+          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+        </article>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:maxens.soldan@msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-cities">
+      <ul>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
+        <li><a href="https://msd-media.com/agence-web-lyon/">Lyon</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-paris/">Paris</a></li>
+        <li><a href="https://msd-media.com/agence-web-marseille/">Marseille</a></li>
+        <li><a href="https://msd-media.com/agence-web-toulouse/">Toulouse</a></li>
+        <li><a href="https://msd-media.com/agence-web-bordeaux/">Bordeaux</a></li>
+        <li><a href="https://msd-media.com/agence-web-lille/">Lille</a></li>
+        <li><a href="https://msd-media.com/agence-web-nantes/">Nantes</a></li>
+        <li><a href="https://msd-media.com/agence-web-montpellier/">Montpellier</a></li>
+        <li><a href="https://msd-media.com/agence-web-nice/">Nice</a></li>
+        <li><a href="https://msd-media.com/agence-web-rennes/">Rennes</a></li>
+        <li><a href="https://msd-media.com/agence-web-clermont-ferrand/">Clermont-Ferrand</a></li>
+      </ul>
+    </div>
+    <div class="footer-legal">
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">Politique de confidentialité</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 MSD Media. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="../../../assets/js/script.js"></script>
+  <div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Consentement cookies" hidden>
+    <div class="cookie-consent__inner">
+      <p class="cookie-consent__text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">En savoir plus</a></p>
+      <div class="cookie-consent__actions">
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse">Refuser</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept">Accepter</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

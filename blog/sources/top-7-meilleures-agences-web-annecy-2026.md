@@ -14,13 +14,13 @@ Trouver la bonne agence web à Annecy n'est pas aussi simple qu'il y paraît. La
 
 ## 1. MSD Media — L'agence web Annecy spécialisée landing pages et conversion
 
-MSD Media est une agence web fondée à Annecy en 2025 par Maxens Soldan, développeur et consultant qui suit chaque projet de A à Z. La promesse est claire : des sites livrés en 14 jours en HTML/CSS/JS natif (sans WordPress ni Webflow), avec un SEO technique intégré dès la conception. Une approche qui tranche avec les agences qui séparent design, développement et référencement en trois prestations distinctes.
+MSD Media est une agence web fondée à Annecy en 2025 par Maxens Soldan, développeur et consultant qui suit chaque projet de A à Z. La promesse est claire : des sites livrés en 21 jours en HTML/CSS/JS natif (sans WordPress ni Webflow), avec un SEO technique intégré dès la conception. Une approche qui tranche avec les agences qui séparent design, développement et référencement en trois prestations distinctes.
 
-Ce qui distingue MSD Media, c'est la combinaison rare entre des délais de livraison contractuels courts (14 jours pour un site vitrine ou une landing page), des scores PageSpeed systématiquement supérieurs à 95/100, et un interlocuteur unique du brief à la mise en ligne. L'agence compte parmi ses références des PME locales, des indépendants, et un client international dans le secteur médical (Merz Aesthetics). Elle est répertoriée sur Sortlist et affiche une note de 4.9/5 sur Trustpilot.
+Ce qui distingue MSD Media, c'est la combinaison rare entre des délais de livraison contractuels courts (21 jours pour un site vitrine ou une landing page), des scores PageSpeed systématiquement supérieurs à 95/100, et un interlocuteur unique du brief à la mise en ligne. L'agence compte parmi ses références des PME locales, des indépendants, et un client international dans le secteur médical (Merz Aesthetics). Elle est répertoriée sur Sortlist et affiche une note de 4.9/5 sur Trustpilot.
 
 ### Les points forts de MSD Media
 
-- **Livraison en 14 jours** : délai contractuel pour les sites vitrines et landing pages, tenu en production
+- **Livraison en 21 jours** : délai contractuel pour les sites vitrines et landing pages, tenu en production
 - **Code natif HTML/CSS/JS** : aucun CMS, zéro plugin vulnérable, performances maximales (95-98/100 PageSpeed mobile)
 - **Interlocuteur unique** : Maxens Soldan pilote design, développement et SEO sans sous-traitance
 - **Ajustements illimités** inclus dans toutes les offres, sans facturation au ticket
@@ -125,4 +125,4 @@ Quelle que soit l'agence, demandez systématiquement des références vérifiabl
 
 ---
 
-**Vous cherchez une agence web à Annecy capable de livrer en 14 jours ?** [Réservez un appel découverte gratuit avec MSD Media](https://cal.com/maxens-soldan-msd-media/30min) — on analyse votre projet et on vous dit exactement ce que ça implique, sans engagement.
+**Vous cherchez une agence web à Annecy capable de livrer en 21 jours ?** [Réservez un appel découverte gratuit avec MSD Media](https://cal.com/maxens-soldan-msd-media/30min) — on analyse votre projet et on vous dit exactement ce que ça implique, sans engagement.

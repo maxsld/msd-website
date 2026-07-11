@@ -20,6 +20,134 @@
   <link rel="stylesheet" href="../assets/css/animations.css" />
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous"></script>
+<!-- AI referrer detection — runs immediately, no consent required (aucun cookie) -->
+<script>
+(function(){
+  var AI_SOURCES = {
+    'perplexity.ai': 'perplexity',
+    'chatgpt.com': 'chatgpt',
+    'chat.openai.com': 'chatgpt',
+    'claude.ai': 'claude',
+    'gemini.google.com': 'gemini',
+    'bard.google.com': 'gemini',
+    'copilot.microsoft.com': 'copilot',
+    'bing.com/chat': 'copilot',
+    'you.com': 'you',
+    'phind.com': 'phind',
+    'deepseek.com': 'deepseek'
+  };
+  var ref = document.referrer;
+  var aiSource = null;
+  for (var domain in AI_SOURCES) {
+    if (ref.indexOf(domain) !== -1) { aiSource = AI_SOURCES[domain]; break; }
+  }
+  window.dataLayer = window.dataLayer || [];
+  if (aiSource) {
+    window.dataLayer.push({ event: 'ai_referral', ai_source: aiSource, referrer: ref });
+    sessionStorage.setItem('_msd_ai_source', aiSource);
+  }
+  // Also expose for GTM variable use
+  window._msdAiSource = aiSource;
+})();
+</script>
+<!-- Tracking — chargé uniquement après consentement cookie -->
+<script>
+function _msdLoadTracking(){
+  // MSD Analytics
+  (function(){
+    var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
+    sessionStorage.setItem('_msd',sid);
+    var t=Date.now();
+    var iv;
+    function send(d){
+      var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
+      var ok=false;
+      try { ok=navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p)); } catch(e) {}
+      if(!ok){
+        fetch('https://app.msd-media.com/api/track',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(p),
+          keepalive:true
+        }).catch(function(){});
+      }
+    }
+    function start(){
+      if(iv) return;
+      iv=setInterval(function(){send(Date.now()-t);},15000);
+    }
+    function stop(){
+      if(!iv) return;
+      clearInterval(iv);
+      iv=undefined;
+    }
+    document.addEventListener('visibilitychange',function(){
+      if(document.visibilityState==='hidden'){send(Date.now()-t);stop();}
+      else{t=Date.now();send(0);start();}
+    });
+    send(0);
+    start();
+    // Scroll heatmap tracking
+    (function(){
+      var path=location.pathname;
+      var scrollEvts=[];
+      var lastPct=0;
+      var pauseTimer=null;
+      function getPct(){return Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight||1))*100);}
+      function bucket(p){return Math.floor(p/5)*5;}
+      function flush(){
+        if(!scrollEvts.length)return;
+        var evts=scrollEvts.splice(0);
+        navigator.sendBeacon('https://app.msd-media.com/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
+      }
+      window.addEventListener('scroll',function(){
+        var pct=getPct();
+        if(Math.abs(pct-lastPct)>10&&pct<lastPct){scrollEvts.push({type:'backtrack',pct:bucket(pct)});}
+        lastPct=pct;
+        if(pauseTimer)clearTimeout(pauseTimer);
+        pauseTimer=setTimeout(function(){scrollEvts.push({type:'pause',pct:bucket(pct)});flush();},1500);
+      },{passive:true});
+      window.addEventListener('beforeunload',function(){scrollEvts.push({type:'exit',pct:bucket(getPct())});flush();});
+      setInterval(flush,30000);
+    })();
+  })();
+  // Google Analytics (GA4)
+  (function(){
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-VKSH9YQXZS';
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-VKSH9YQXZS');
+  })();
+}
+(function(){
+  var consent=localStorage.getItem('msd_cookie_consent');
+  if(consent==='accepted'){_msdLoadTracking();return;}
+  if(consent==='refused'){return;}
+  if(window.innerWidth<=680){_msdLoadTracking();return;}
+  function init(){
+  var banner=document.getElementById('cookie-consent');
+  if(!banner)return;
+  function show(){banner.hidden=false;}
+  function hide(){banner.hidden=true;}
+  show();
+  document.getElementById('cookie-accept').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','accepted');
+    hide();
+    _msdLoadTracking();
+  });
+  document.getElementById('cookie-refuse').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','refused');
+    hide();
+  });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>
 </head>
 <body class="blog-index-page" data-asset-base="../assets">
   <header class="navbar">
@@ -76,6 +204,20 @@
         <p class="case-study-card__meta">10 novembre 2026 • 3 min de lecture</p>
         <p class="case-study-card__description">Découvrez MSD Media, l’agence française spécialisée dans les landing pages et sites web sur-mesure orientés conversion. Études de cas, réalisations, vidéos et avis clients vérifiés Trustpilot.</p>
       </a>
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/agences-landing-page-prix-france-2026/">
+        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
+        <h3 class="case-study-card__title">Les Agences de Landing Page les Moins Chères de France : Comparatif Complet des Prix (2026)</h3>
+        <p class="case-study-card__meta">10 novembre 2026 • 5 min de lecture</p>
+        <p class="case-study-card__description">Classement 2026 des agences françaises de landing page les plus abordables. Découvrez les tarifs, la qualité de prestation et pourquoi MSD Media reste la référence en sur-mesure et en conversion.</p>
+      </a>
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/meilleures-agences-cro-france/">
+        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
+        <h3 class="case-study-card__title">Les 7 Agences Championnes du Taux de Conversion (CRO) en France pour Vos Landing Pages</h3>
+        <p class="case-study-card__meta">10 novembre 2026 • 3 min de lecture</p>
+        <p class="case-study-card__description">Découvrez le classement 2026 des 7 meilleures agences CRO en France pour optimiser vos landing pages. Méthodologies, résultats chiffrés et expertise conversion.</p>
+      </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/structure-landing-page-saas/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
         <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
@@ -114,9 +256,9 @@
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/creer-landing-page-14-jours/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
         <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
-        <h3 class="case-study-card__title">Comment créer une landing page qui convertit en moins de 14 jours : méthode complète</h3>
+        <h3 class="case-study-card__title">Comment créer une landing page qui convertit en moins de 21 jours : méthode complète</h3>
         <p class="case-study-card__meta">17 septembre 2026 • 4 min de lecture</p>
-        <p class="case-study-card__description">Apprenez la méthode complète pour créer une landing page efficace en moins de 14 jours et maximiser vos conversions dès la première semaine.</p>
+        <p class="case-study-card__description">Apprenez la méthode complète pour créer une landing page efficace en moins de 21 jours et maximiser vos conversions dès la première semaine.</p>
       </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/landing-page-vs-site-web-guide-complet/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
@@ -125,117 +267,33 @@
         <p class="case-study-card__meta">15 septembre 2026 • 7 min de lecture</p>
         <p class="case-study-card__description">Landing page ou site web complet ? Découvrez le guide ultime pour choisir la meilleure solution digitale selon vos objectifs : conversion, SEO, budget et stratégie marketing.</p>
       </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/agence-web-freelance-nocode-2026/">
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/core-web-vitals-guide-2026/">
+        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="case-study-card__tag case-study-card__tag--seo">SEO</span>
+        <h3 class="case-study-card__title">Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS)</h3>
+        <p class="case-study-card__meta">11 juillet 2026 • 7 min de lecture</p>
+        <p class="case-study-card__description">Core Web Vitals expliqués simplement : LCP, INP et CLS, seuils Google 2026, outils de mesure gratuits et méthode concrète pour passer au vert.</p>
+      </a>
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/maillage-interne-guide-seo/">
+        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="case-study-card__tag case-study-card__tag--seo">SEO</span>
+        <h3 class="case-study-card__title">Maillage interne : le levier SEO le plus sous-coté (guide + méthode 2026)</h3>
+        <p class="case-study-card__meta">11 juillet 2026 • 8 min de lecture</p>
+        <p class="case-study-card__description">Maillage interne : définition, méthode en 5 étapes, structure en cocon, erreurs à éviter et cas pratique réel. Le guide complet pour booster votre SEO.</p>
+      </a>
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/prix-site-internet-2026/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
         <span class="case-study-card__tag case-study-card__tag--siteweb">Site web</span>
-        <h3 class="case-study-card__title">agence-web-freelance-nocode-2026</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 5 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Agence web vs freelance vs no code : que choisir en 2026 ?&quot; date: &quot;2026 04 09&quot; description: &quot;Agence web, freelance ou no code ? Guide complet pour </p>
+        <h3 class="case-study-card__title">Prix d&#39;un site internet en 2026 : la grille complète par type de prestataire</h3>
+        <p class="case-study-card__meta">11 juillet 2026 • 7 min de lecture</p>
+        <p class="case-study-card__description">Prix d&#39;un site internet en 2026 : de 0 à 20 000 €, grille détaillée par prestataire (DIY, freelance, agence), coûts cachés et méthode pour calculer votre budget.</p>
       </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/agences-landing-page-prix-france-2026/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
-        <h3 class="case-study-card__title">agences-landing-page-prix-france-2026</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 5 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Les Agences de Landing Page les Moins Chères de France : Comparatif Complet des Prix (2026)&quot; date: &quot;2026 11 10&quot; description: &quot;Classement 2026 des a</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/ameliorer-taux-conversion-site-web/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--conversion">Conversion</span>
-        <h3 class="case-study-card__title">ameliorer-taux-conversion-site-web</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 6 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Comment améliorer le taux de conversion de son site web : guide complet 2026&quot; date: &quot;2026 03 16&quot; description: &quot;Taux de conversion trop faible ? Déc</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/combien-coute-landing-page-france-2026/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
-        <h3 class="case-study-card__title">combien-coute-landing-page-france-2026</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 5 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Combien coûte une landing page en 2026 ? Guide des tarifs en France&quot; date: &quot;2026 04 09&quot; description: &quot;Prix réels d&#39;une landing page en France en 20</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/combien-coute-site-web-annecy-2026/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">combien-coute-site-web-annecy-2026</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 4 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Combien coûte un site web à Annecy en 2026 ? (Guide des tarifs)&quot; date: &quot;2026 02 08&quot; description: &quot;Les vrais prix d&#39;un site web à Annecy en 2026. Sa</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/combien-coute-site-web-strasbourg-2026/">
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/refonte-site-internet-guide-2026/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
         <span class="case-study-card__tag case-study-card__tag--siteweb">Site web</span>
-        <h3 class="case-study-card__title">combien-coute-site-web-strasbourg-2026</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 4 min de lecture</p>
-        <p class="case-study-card__description">noindex: true title: &quot;Combien coûte un site web à Strasbourg en 2026 ? (Guide des tarifs)&quot; date: &quot;2026 02 08&quot; description: &quot;Les vrais prix d&#39;un site web à </p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/creation-site-internet-strasbourg-prix-2026/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">creation-site-internet-strasbourg-prix-2026</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 5 min de lecture</p>
-        <p class="case-study-card__description">noindex: true title: &quot;Créer un site internet à Strasbourg en 2026 : prix, délais et conseils&quot; date: &quot;2026 04 09&quot; description: &quot;Combien coûte la création d&#39;</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/landing-page-coach-consultant-annecy/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
-        <h3 class="case-study-card__title">landing-page-coach-consultant-annecy</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 8 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Landing page pour les coachs et consultants à Annecy : comment générer des clients qualifiés&quot; date: &quot;2026 02 08&quot; description: &quot;Pourquoi une landing</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/meilleures-agences-cro-france/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
-        <h3 class="case-study-card__title">meilleures-agences-cro-france</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 4 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Les 7 Agences Championnes du Taux de Conversion (CRO) en France pour Vos Landing Pages&quot; date: &quot;2026 11 10&quot; description: &quot;Découvrez le classement 20</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-agence-immobiliere-annecy/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">site-web-agence-immobiliere-annecy</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 11 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Site web pour agence immobilière à Annecy : le guide complet 2026&quot; date: &quot;2026 03 17&quot; description: &quot;Vous êtes agent immobilier ou agence immobilièr</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-agence-immobiliere-strasbourg/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">site-web-agence-immobiliere-strasbourg</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 11 min de lecture</p>
-        <p class="case-study-card__description">noindex: true title: &quot;Site web pour agence immobilière à Strasbourg : le guide complet 2026&quot; date: &quot;2026 03 17&quot; description: &quot;Vous êtes agent immobilier ou</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-architecte-annecy/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">site-web-architecte-annecy</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 11 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Site web pour architecte à Annecy : le guide complet 2026&quot; date: &quot;2026 03 27&quot; description: &quot;Vous êtes architecte à Annecy ? Découvrez comment un si</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-artisan-tpe-annecy/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">site-web-artisan-tpe-annecy</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 6 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Site web pour artisan et TPE à Annecy : ce qu&#39;il faut vraiment (et ce qu&#39;il ne faut pas)&quot; date: &quot;2026 03 16&quot; description: &quot;Artisan, indépendant ou </p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-restaurant-cafe-annecy/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">site-web-restaurant-cafe-annecy</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 7 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Sites web pour restaurants et cafés d&#39;Annecy : comment attirer plus de clients&quot; date: &quot;2026 02 08&quot; description: &quot;Le guide complet pour créer un sit</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-therapeute-annecy/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">site-web-therapeute-annecy</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 10 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Site web pour thérapeute et praticien à Annecy : le guide complet 2026&quot; date: &quot;2026 03 17&quot; description: &quot;Vous êtes thérapeute, coach, naturopathe o</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-therapeute-strasbourg/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">site-web-therapeute-strasbourg</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 11 min de lecture</p>
-        <p class="case-study-card__description">noindex: true title: &quot;Site web pour thérapeute et praticien à Strasbourg : le guide complet 2026&quot; date: &quot;2026 03 17&quot; description: &quot;Vous êtes thérapeute, co</p>
+        <h3 class="case-study-card__title">Refonte de site internet : la méthode complète sans perdre son SEO (2026)</h3>
+        <p class="case-study-card__meta">11 juillet 2026 • 8 min de lecture</p>
+        <p class="case-study-card__description">Refonte de site internet réussie : méthode en 7 étapes, checklist de migration SEO, budget par prestataire et erreurs à éviter. Guide complet 2026.</p>
       </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/top-7-meilleures-agences-web-annecy-2026/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
@@ -243,20 +301,6 @@
         <h3 class="case-study-card__title">Top 7 meilleures agences web à Annecy en 2026</h3>
         <p class="case-study-card__meta">30 juin 2026 • 7 min de lecture</p>
         <p class="case-study-card__description">Quelle agence web choisir à Annecy en 2026 ? Comparatif des 7 meilleures agences : délais, tarifs, spécialités et avis clients pour faire le bon choix.</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/vitesse-performance-site-web-annecy-2026/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">vitesse-performance-site-web-annecy-2026</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 9 min de lecture</p>
-        <p class="case-study-card__description">title: &quot;Vitesse de site web à Annecy : pourquoi ça coûte des clients (et comment y remédier en 2026)&quot; date: &quot;2026 04 20&quot; description: &quot;Un site lent vous fa</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/vitesse-performance-site-web-strasbourg-2026/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">vitesse-performance-site-web-strasbourg-2026</h3>
-        <p class="case-study-card__meta">30 juin 2026 • 10 min de lecture</p>
-        <p class="case-study-card__description">noindex: true title: &quot;Vitesse de site web à Strasbourg : pourquoi ça coûte des clients (et comment y remédier en 2026)&quot; date: &quot;2026 04 20&quot; description: &quot;Un</p>
       </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/wordpress-vs-site-sur-mesure-annecy-2026/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
@@ -356,12 +400,12 @@
         <p class="case-study-card__meta">21 avril 2026 • 1 min de lecture</p>
         <p class="case-study-card__description">Vous gérez un hôtel, un gîte ou un hébergement à Annecy ? Découvrez comment un site web performant attire des réservations directes, réduit la dépendance OTA et améliore votre visibilité locale.</p>
       </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-hotel-hebergement-strasbourg/">
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/vitesse-performance-site-web-annecy-2026/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
         <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">Site web pour hôtel et hébergement à Strasbourg : le guide complet 2026</h3>
-        <p class="case-study-card__meta">21 avril 2026 • 2 min de lecture</p>
-        <p class="case-study-card__description">Vous gérez un hôtel, un gîte ou un hébergement à Strasbourg ? Découvrez comment un site web performant attire des réservations directes, réduit la dépendance OTA et améliore votre visibilité locale.</p>
+        <h3 class="case-study-card__title">Vitesse de site web à Annecy : pourquoi ça coûte des clients (et comment y remédier en 2026)</h3>
+        <p class="case-study-card__meta">20 avril 2026 • 9 min de lecture</p>
+        <p class="case-study-card__description">Un site lent vous fait perdre des clients à Annecy. Découvrez les chiffres réels, les Core Web Vitals qui comptent, et comment optimiser la performance de votre site en 2026.</p>
       </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/creation-site-web-strasbourg-2026/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
@@ -369,55 +413,6 @@
         <h3 class="case-study-card__title">Création de site web à Strasbourg en 2026 : guide complet pour les entreprises alsaciennes</h3>
         <p class="case-study-card__meta">19 avril 2026 • 6 min de lecture</p>
         <p class="case-study-card__description">Vous voulez créer un site web à Strasbourg en 2026 ? Découvrez tout ce qu&#39;il faut savoir : coûts, délais, choix de l&#39;agence, erreurs à éviter et comment dominer Google en Alsace.</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/landing-page-strasbourg-guide-2026/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
-        <h3 class="case-study-card__title">Landing page à Strasbourg : le guide complet pour convertir en 2026</h3>
-        <p class="case-study-card__meta">19 avril 2026 • 6 min de lecture</p>
-        <p class="case-study-card__description">Vous voulez créer une landing page performante à Strasbourg ? Découvrez tout ce qu&#39;il faut savoir sur la structure, les coûts, les erreurs à éviter et comment maximiser votre taux de conversion en Alsace.</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-architecte-strasbourg/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">Site web pour architecte à Strasbourg : construire sa réputation en ligne en 2026</h3>
-        <p class="case-study-card__meta">19 avril 2026 • 5 min de lecture</p>
-        <p class="case-study-card__description">Vous êtes architecte à Strasbourg ? Découvrez comment un site web bien conçu vous permet d&#39;attirer des clients qualifiés, de présenter vos réalisations et de vous positionner sur Google face à une concurrence locale exigeante.</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-artisan-tpe-strasbourg/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">Site web pour artisan et TPE à Strasbourg : le guide complet 2026</h3>
-        <p class="case-study-card__meta">19 avril 2026 • 6 min de lecture</p>
-        <p class="case-study-card__description">Vous êtes artisan ou dirigeant de TPE à Strasbourg ? Découvrez comment un site web professionnel vous permet de trouver de nouveaux chantiers, d&#39;attirer des clients qualifiés et de vous démarquer de la concurrence locale.</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-avocat-strasbourg/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--siteweb">Site web</span>
-        <h3 class="case-study-card__title">Site web pour avocat et cabinet juridique à Strasbourg : le guide complet 2026</h3>
-        <p class="case-study-card__meta">19 avril 2026 • 9 min de lecture</p>
-        <p class="case-study-card__description">Vous êtes avocat ou cabinet juridique à Strasbourg ? Découvrez comment un site web bien conçu attire des clients qualifiés, renforce votre crédibilité et vous positionne en 1ère page sur Google.</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-coach-sportif-strasbourg/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">Site web pour coach sportif à Strasbourg : développer son activité en 2026</h3>
-        <p class="case-study-card__meta">19 avril 2026 • 5 min de lecture</p>
-        <p class="case-study-card__description">Vous êtes coach sportif ou préparateur physique à Strasbourg ? Découvrez comment un site web professionnel vous permet d&#39;attirer de nouveaux clients, de vous démarquer et de développer votre activité en ligne.</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-medecin-strasbourg/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--siteweb">Site web</span>
-        <h3 class="case-study-card__title">Site web pour médecin et professionnel de santé à Strasbourg : le guide complet 2026</h3>
-        <p class="case-study-card__meta">19 avril 2026 • 7 min de lecture</p>
-        <p class="case-study-card__description">Vous êtes médecin, spécialiste ou professionnel de santé à Strasbourg ? Découvrez comment un site web bien conçu vous permet d&#39;attirer de nouveaux patients, de réduire les appels inutiles et de renforcer votre crédibilité en ligne.</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-restaurant-strasbourg/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">Site web pour restaurant à Strasbourg : attirer plus de clients en 2026</h3>
-        <p class="case-study-card__meta">19 avril 2026 • 7 min de lecture</p>
-        <p class="case-study-card__description">Vous êtes restaurateur à Strasbourg ? Découvrez comment un site web bien conçu vous permet d&#39;attirer plus de clients, d&#39;augmenter vos réservations et de vous démarquer dans une ville gastronomique ultra-compétitive.</p>
       </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/combien-coute-landing-page-annecy-2026/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
@@ -454,6 +449,13 @@
         <p class="case-study-card__meta">9 avril 2026 • 4 min de lecture</p>
         <p class="case-study-card__description">Quelle est la différence entre SEO, GEO et AEO en 2026 ? Guide complet pour comprendre les trois approches et savoir laquelle prioriser pour votre entreprise.</p>
       </a>
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/agence-web-freelance-nocode-2026/">
+        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="case-study-card__tag case-study-card__tag--siteweb">Site web</span>
+        <h3 class="case-study-card__title">Agence web vs freelance vs no-code : que choisir en 2026 ?</h3>
+        <p class="case-study-card__meta">9 avril 2026 • 4 min de lecture</p>
+        <p class="case-study-card__description">Agence web, freelance ou no-code ? Guide complet pour choisir la bonne option selon votre budget, vos besoins et vos objectifs en 2026. Comparatif honnête.</p>
+      </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/apparaitre-chatgpt-perplexity-google-ia/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
         <span class="case-study-card__tag case-study-card__tag--ia">IA</span>
@@ -461,12 +463,12 @@
         <p class="case-study-card__meta">9 avril 2026 • 4 min de lecture</p>
         <p class="case-study-card__description">Guide pratique 2026 pour que votre entreprise soit citée par ChatGPT, Perplexity et Google AI Overviews. Stratégies GEO concrètes, erreurs à éviter et checklist actionnable.</p>
       </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/choisir-agence-web-strasbourg/">
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/combien-coute-landing-page-france-2026/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">Agence web à Strasbourg : comment bien choisir en 2026 ?</h3>
+        <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
+        <h3 class="case-study-card__title">Combien coûte une landing page en 2026 ? Guide des tarifs en France</h3>
         <p class="case-study-card__meta">9 avril 2026 • 4 min de lecture</p>
-        <p class="case-study-card__description">Comment choisir la bonne agence web à Strasbourg ? Critères de sélection, questions à poser, tarifs locaux et présentation de MSD Media. Guide complet 2026.</p>
+        <p class="case-study-card__description">Prix réels d&#39;une landing page en France en 2026. De 200€ (template) à 8 000€ (sur mesure haut de gamme) : comparatif complet des options, ce qui justifie les prix et comment choisir.</p>
       </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/google-ai-overviews-pme-france/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
@@ -495,13 +497,6 @@
         <h3 class="case-study-card__title">SEO local en 2026 : comment les IA transforment les recherches de proximité</h3>
         <p class="case-study-card__meta">9 avril 2026 • 4 min de lecture</p>
         <p class="case-study-card__description">Comment les IA générative changent le SEO local en 2026 ? Google AI Overviews, ChatGPT et Perplexity bouleversent la façon dont vos clients trouvent des prestataires près de chez eux.</p>
-      </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/seo-local-strasbourg-2026/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--seo">SEO</span>
-        <h3 class="case-study-card__title">SEO local à Strasbourg : guide complet pour dominer les recherches locales en 2026</h3>
-        <p class="case-study-card__meta">9 avril 2026 • 5 min de lecture</p>
-        <p class="case-study-card__description">Guide complet du SEO local à Strasbourg en 2026. Comment apparaître en tête des recherches Google pour votre activité en Alsace : Google Business Profile, mots-clés locaux, contenu et backlinks.</p>
       </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/maintenance-site-web-annecy/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
@@ -573,12 +568,12 @@
         <p class="case-study-card__meta">27 mars 2026 • 13 min de lecture</p>
         <p class="case-study-card__description">Guide complet du SEO local à Annecy en 2026. Découvrez les 10 leviers pour apparaître en 1ère page sur Google quand vos clients cherchent votre activité à Annecy et en Haute-Savoie.</p>
       </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/geo-vs-seo-annecy-2026/">
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-architecte-annecy/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag case-study-card__tag--ia">IA</span>
-        <h3 class="case-study-card__title">GEO vs SEO à Annecy : comment apparaître sur ChatGPT, Perplexity et Google en 2026 ?</h3>
-        <p class="case-study-card__meta">20 mars 2026 • 10 min de lecture</p>
-        <p class="case-study-card__description">SEO classique ou GEO pour les IA ? Découvrez comment les entreprises d&#39;Annecy peuvent apparaître à la fois sur Google, ChatGPT et Perplexity en 2026. Guide complet par MSD Media.</p>
+        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
+        <h3 class="case-study-card__title">Site web pour architecte à Annecy : le guide complet 2026</h3>
+        <p class="case-study-card__meta">27 mars 2026 • 10 min de lecture</p>
+        <p class="case-study-card__description">Vous êtes architecte à Annecy ? Découvrez comment un site web bien conçu met en valeur vos réalisations, attire des clients qualifiés et vous positionne en 1ère page sur Google en 2026.</p>
       </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/creer-landing-page-qui-convertit/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
@@ -601,6 +596,13 @@
         <p class="case-study-card__meta">17 mars 2026 • 2 min de lecture</p>
         <p class="case-study-card__description">Découvrez les meilleures agences web à Annecy en 2026 et pourquoi MSD Media est en tête du classement.</p>
       </a>
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-agence-immobiliere-annecy/">
+        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="case-study-card__tag case-study-card__tag--siteweb">Site web</span>
+        <h3 class="case-study-card__title">Site web pour agence immobilière à Annecy : le guide complet 2026</h3>
+        <p class="case-study-card__meta">17 mars 2026 • 10 min de lecture</p>
+        <p class="case-study-card__description">Vous êtes agent immobilier ou agence immobilière à Annecy ? Découvrez comment un site web bien conçu attire des mandats exclusifs, génère des leads qualifiés et vous positionne en 1ère page sur Google.</p>
+      </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-avocat-annecy/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
         <span class="case-study-card__tag case-study-card__tag--siteweb">Site web</span>
@@ -622,12 +624,19 @@
         <p class="case-study-card__meta">17 mars 2026 • 10 min de lecture</p>
         <p class="case-study-card__description">Vous êtes photographe à Annecy ? Découvrez comment un site web bien conçu attire des clients qualifiés, met en valeur votre portfolio et vous positionne en 1ère page sur Google.</p>
       </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-photographe-strasbourg/">
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-therapeute-annecy/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
         <span class="case-study-card__tag case-study-card__tag--local">Local</span>
-        <h3 class="case-study-card__title">Site web pour photographe à Strasbourg : le guide complet 2026</h3>
+        <h3 class="case-study-card__title">Site web pour thérapeute et praticien à Annecy : le guide complet 2026</h3>
         <p class="case-study-card__meta">17 mars 2026 • 10 min de lecture</p>
-        <p class="case-study-card__description">Vous êtes photographe à Strasbourg ? Découvrez comment un site web bien conçu attire des clients qualifiés, met en valeur votre portfolio et vous positionne en 1ère page sur Google.</p>
+        <p class="case-study-card__description">Vous êtes thérapeute, coach, naturopathe ou praticien bien-être à Annecy ? Découvrez comment un site web bien conçu attire des clients qualifiés, inspire confiance et vous positionne en 1ère page sur Google.</p>
+      </a>
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/ameliorer-taux-conversion-site-web/">
+        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
+        <h3 class="case-study-card__title">Comment améliorer le taux de conversion de son site web : guide complet 2026</h3>
+        <p class="case-study-card__meta">16 mars 2026 • 5 min de lecture</p>
+        <p class="case-study-card__description">Taux de conversion trop faible ? Découvrez les 10 leviers concrets pour transformer plus de visiteurs en clients sur votre site web, avec des exemples réels et des actions applicables immédiatement.</p>
       </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/choisir-agence-web-annecy/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
@@ -657,6 +666,13 @@
         <p class="case-study-card__meta">16 mars 2026 • 4 min de lecture</p>
         <p class="case-study-card__description">Votre site web à Annecy ne convertit plus ? Découvrez les 7 signaux qui indiquent qu&#39;une refonte s&#39;impose, les étapes clés et les tarifs pratiqués à Annecy en 2026.</p>
       </a>
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-artisan-tpe-annecy/">
+        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
+        <h3 class="case-study-card__title">Site web pour artisan et TPE à Annecy : ce qu&#39;il faut vraiment (et ce qu&#39;il ne faut pas)</h3>
+        <p class="case-study-card__meta">16 mars 2026 • 6 min de lecture</p>
+        <p class="case-study-card__description">Artisan, indépendant ou petite entreprise à Annecy ? Découvrez ce dont vous avez vraiment besoin pour un site web efficace : budget, structure, SEO local et erreurs à éviter.</p>
+      </a>
 <a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/maxens-soldan/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
         <span class="case-study-card__tag case-study-card__tag--local">Local</span>
@@ -671,12 +687,26 @@
         <p class="case-study-card__meta">8 février 2026 • 5 min de lecture</p>
         <p class="case-study-card__description">Les erreurs classiques qui coûtent cher aux entreprises d&#39;Annecy. Ce qu&#39;il faut absolument éviter pour créer un site qui convertit.</p>
       </a>
-<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/10-erreurs-creation-site-web-strasbourg/">
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/combien-coute-site-web-annecy-2026/">
         <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
         <span class="case-study-card__tag case-study-card__tag--siteweb">Site web</span>
-        <h3 class="case-study-card__title">Les 10 erreurs à éviter lors de la création de votre site web à Strasbourg</h3>
-        <p class="case-study-card__meta">8 février 2026 • 5 min de lecture</p>
-        <p class="case-study-card__description">Les erreurs classiques qui coûtent cher aux entreprises d&#39;Strasbourg. Ce qu&#39;il faut absolument éviter pour créer un site qui convertit.</p>
+        <h3 class="case-study-card__title">Combien coûte un site web à Annecy en 2026 ? (Guide des tarifs)</h3>
+        <p class="case-study-card__meta">8 février 2026 • 3 min de lecture</p>
+        <p class="case-study-card__description">Les vrais prix d&#39;un site web à Annecy en 2026. Sans bullshit, sans frais cachés. Juste ce que tu dois savoir avant de te lancer.</p>
+      </a>
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/landing-page-coach-consultant-annecy/">
+        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="case-study-card__tag case-study-card__tag--landing">Landing page</span>
+        <h3 class="case-study-card__title">Landing page pour les coachs et consultants à Annecy : comment générer des clients qualifiés</h3>
+        <p class="case-study-card__meta">8 février 2026 • 7 min de lecture</p>
+        <p class="case-study-card__description">Pourquoi une landing page est l&#39;arme secrète des coachs et consultants d&#39;Annecy pour convertir leur trafic en clients payants. Guide complet 2026.</p>
+      </a>
+<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/site-web-restaurant-cafe-annecy/">
+        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="case-study-card__tag case-study-card__tag--local">Local</span>
+        <h3 class="case-study-card__title">Sites web pour restaurants et cafés d&#39;Annecy : comment attirer plus de clients</h3>
+        <p class="case-study-card__meta">8 février 2026 • 7 min de lecture</p>
+        <p class="case-study-card__description">Le guide complet pour créer un site web qui remplit votre restaurant ou café à Annecy. Ce qui marche vraiment en 2026.</p>
       </a>
         </div>
       </div>
@@ -778,5 +808,14 @@
       input.addEventListener('input', applyFilter);
     })();
   </script>
+  <div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Consentement cookies" hidden>
+    <div class="cookie-consent__inner">
+      <p class="cookie-consent__text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">En savoir plus</a></p>
+      <div class="cookie-consent__actions">
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse">Refuser</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept">Accepter</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

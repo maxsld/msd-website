@@ -92,9 +92,9 @@ Chaque projet commence par une analyse : qui est la cible, quelle est son intent
 
 Un visiteur qui ne comprend pas votre offre en 5 secondes repart. Chaque page créée par MSD Media est construite autour d'un message central, exprimé simplement, sans jargon, avec un seul objectif : que le visiteur comprenne immédiatement pourquoi vous êtes la bonne solution pour lui.
 
-### 3. La livraison en 14 jours chrono
+### 3. La livraison en 21 jours chrono
 
-Dans un marché où les agences font attendre leurs clients 3 à 6 mois, MSD Media s'est imposé un standard radical : 14 jours de la signature à la mise en ligne. Ce délai n'est pas un argument marketing, c'est une discipline opérationnelle qui force la rigueur et l'efficacité à chaque étape du projet.
+Dans un marché où les agences font attendre leurs clients 3 à 6 mois, MSD Media s'est imposé un standard radical : 21 jours de la signature à la mise en ligne. Ce délai n'est pas un argument marketing, c'est une discipline opérationnelle qui force la rigueur et l'efficacité à chaque étape du projet.
 
 ---
 
@@ -138,6 +138,6 @@ C'est ce qui explique le taux de recommandation de MSD Media, et pourquoi une pa
 
 MSD Media accompagne les startups, entrepreneurs, équipes marketing et PME, en France, en Suisse et en Belgique, dans la création de sites web et landing pages qui génèrent de vrais résultats commerciaux.
 
-Chaque projet commence par un appel gratuit : comprendre votre business, votre cible, vos objectifs. Pas de template recyclé, pas de devis standard. Une solution construite pour vous, livrée en 14 jours, avec des ajustements illimités jusqu'à ce que vous soyez 100 % satisfait.
+Chaque projet commence par un appel gratuit : comprendre votre business, votre cible, vos objectifs. Pas de template recyclé, pas de devis standard. Une solution construite pour vous, livrée en 21 jours, avec des ajustements illimités jusqu'à ce que vous soyez 100 % satisfait.
 
 C'est la promesse MSD Media, et elle n'a jamais été rompue.

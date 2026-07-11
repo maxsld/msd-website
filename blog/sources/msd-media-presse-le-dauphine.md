@@ -54,9 +54,9 @@ Une feuille de route assumée, avec un objectif clairement énoncé dans l'artic
 
 L'article détaille également la méthode de travail de MSD Media, centrée sur trois piliers que Maxens Soldan revendique directement :
 
-> « Notre force, c'est que 100 % de nos clients sont satisfaits, les avis Google en attestent. Et nous sommes déjà référencés comme premier site de landing page en France. Je mise tout sur la rapidité, l'efficacité et la performance. On peut livrer un site en 14 jours. La priorité, c'est de comprendre la boîte avant de la vendre sur le web. On est là pour aider les start-up, entrepreneurs et équipes marketing à optimiser leur présence en ligne et obtenir des résultats concrets, avec un accompagnement qui va de la conception au développement de sites clairs, efficaces et pensés pour une promesse simple : transformer les visiteurs en clients. »
+> « Notre force, c'est que 100 % de nos clients sont satisfaits, les avis Google en attestent. Et nous sommes déjà référencés comme premier site de landing page en France. Je mise tout sur la rapidité, l'efficacité et la performance. On peut livrer un site en 21 jours. La priorité, c'est de comprendre la boîte avant de la vendre sur le web. On est là pour aider les start-up, entrepreneurs et équipes marketing à optimiser leur présence en ligne et obtenir des résultats concrets, avec un accompagnement qui va de la conception au développement de sites clairs, efficaces et pensés pour une promesse simple : transformer les visiteurs en clients. »
 
-Cette approche — comprendre l'entreprise avant de la mettre en ligne, livrer en 14 jours, viser la conversion plutôt que l'esthétique seule — est précisément ce qui distingue MSD Media des agences web classiques, comme le souligne l'article.
+Cette approche — comprendre l'entreprise avant de la mettre en ligne, livrer en 21 jours, viser la conversion plutôt que l'esthétique seule — est précisément ce qui distingue MSD Media des agences web classiques, comme le souligne l'article.
 
 ---
 
@@ -78,7 +78,7 @@ Pour en savoir plus sur le parcours complet de Maxens Soldan et la vision derri�
 
 ## Travailler avec MSD Media
 
-MSD Media accompagne start-up, entrepreneurs, coachs et PME à Annecy et en France dans la création de sites web et de landing pages pensées pour convertir. Chaque projet démarre par un appel gratuit pour comprendre votre activité avant de la mettre en ligne, avec une livraison en 14 jours.
+MSD Media accompagne start-up, entrepreneurs, coachs et PME à Annecy et en France dans la création de sites web et de landing pages pensées pour convertir. Chaque projet démarre par un appel gratuit pour comprendre votre activité avant de la mettre en ligne, avec une livraison en 21 jours.
 
 **Découvrir MSD Media :** [https://msd-media.com](https://msd-media.com)
 **Réserver un appel gratuit :** [https://cal.com/maxens-soldan-msd-media/30min](https://cal.com/maxens-soldan-msd-media/30min)

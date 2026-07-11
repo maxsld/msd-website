@@ -1,14 +1,14 @@
 ---
-title: "Comment créer une landing page qui convertit en moins de 14 jours : méthode complète"
+title: "Comment créer une landing page qui convertit en moins de 21 jours : méthode complète"
 date: "2026-09-17"
-description: "Apprenez la méthode complète pour créer une landing page efficace en moins de 14 jours et maximiser vos conversions dès la première semaine."
+description: "Apprenez la méthode complète pour créer une landing page efficace en moins de 21 jours et maximiser vos conversions dès la première semaine."
 image: "https://gradients.mijo-design.com/public/uploads/files/db16.png"
 tags: ["landing page", "conversion", "marketing digital", "SEO", "Annecy", "MSD Media"]
 slug: "creer-landing-page-14-jours"
 keyword: "landing page"
 ---
 
-# Comment créer une landing page qui convertit en moins de 14 jours : méthode complète
+# Comment créer une landing page qui convertit en moins de 21 jours : méthode complète
 
 Lancer une landing page performante est l’une des stratégies les plus rapides pour générer des prospects, valider une idée et convertir des visiteurs en clients.  
 Chez **MSD Media**, nous avons accompagné des dizaines de startups à Annecy et en France dans la création de landing pages sur-mesure, et nous avons identifié une méthode en **6 étapes clés** qui garantit des résultats rapides, mesurables et durables.
@@ -39,7 +39,7 @@ Avant de coder ou de rédiger quoi que ce soit, il faut poser le cadre :
 Le texte de votre landing page doit capter et convaincre rapidement. Voici comment faire :
 
 1. **Accroche irrésistible**  
-   Le titre doit communiquer immédiatement le bénéfice pour le visiteur. Ex : "Générez vos premiers clients en moins de 14 jours".  
+   Le titre doit communiquer immédiatement le bénéfice pour le visiteur. Ex : "Générez vos premiers clients en moins de 21 jours".  
 
 2. **Définir le problème**  
    Expliquez que vous comprenez la douleur de votre client cible. Exemple : "Vos prospects visitent votre site mais ne remplissent jamais le formulaire ?".  
@@ -74,7 +74,7 @@ Le design doit **mettre en valeur votre message**, pas le diluer :
 
 ## Étape 4 : Développement rapide et performant
 
-Pour tenir un délai de **14 jours**, il faut structurer le développement :
+Pour tenir un délai de **21 jours**, il faut structurer le développement :
 
 1. **Utiliser un framework léger** : HTML/CSS/JS propre, minimaliste, ou builder rapide.  
 2. **Optimiser la performance** : temps de chargement < 2 secondes.  
@@ -125,7 +125,7 @@ Même une page courte peut attirer du trafic organique si elle est optimisée :
 
 ## Conclusion
 
-Créer une landing page performante en moins de 14 jours est un objectif atteignable avec une méthode structurée, orientée conversion et performance.  
+Créer une landing page performante en moins de 21 jours est un objectif atteignable avec une méthode structurée, orientée conversion et performance.  
 
 Chez [MSD Media](https://msd-media.com), nous combinons **expertise technique, copywriting avancé et design stratégique** pour livrer des landing pages **sur-mesure, rapides et optimisées SEO**, prêtes à générer des prospects dès la première semaine.  
 

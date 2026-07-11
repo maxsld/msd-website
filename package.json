@@ -16,6 +16,7 @@
     "seo:rank-tracking": "node scripts/rank-tracking-daily.mjs",
     "seo:traffic-watch": "node scripts/traffic-drop-watcher.mjs",
     "seo:content-decay": "node scripts/content-decay-refresh.mjs",
+    "blog:trends-report": "node scripts/blog-trends-report.mjs",
     "hooks:setup": "git config core.hooksPath .githooks && echo 'Hooks installés ✓'"
   },
   "dependencies": {

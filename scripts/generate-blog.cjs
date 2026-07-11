@@ -20,6 +20,21 @@ const PUBLIC_IMAGE_FALLBACKS = [
 const LEGACY_ALIASES = {
   'template-2026-landing-page': 'creer-landing-page-qui-convertit'
 };
+
+// Blocs analytics/consentement partagés avec le reste du site (extraits des
+// pages villes). Injectés sur chaque page du blog pour que GA4 + analytics
+// maison couvrent aussi les 70+ pages générées.
+const TRACKING_BLOCK = fs.readFileSync(path.join(__dirname, 'templates', 'tracking-block.html'), 'utf8');
+const COOKIE_BANNER = fs.readFileSync(path.join(__dirname, 'templates', 'cookie-banner.html'), 'utf8');
+
+function injectTracking(html) {
+  if (html.includes('_msdLoadTracking')) return html;
+  let out = html.replace('</head>', `${TRACKING_BLOCK}\n</head>`);
+  if (!out.includes('id="cookie-consent"')) {
+    out = out.replace('</body>', `  ${COOKIE_BANNER}\n</body>`);
+  }
+  return out;
+}
 const LEGACY_DATE_OVERRIDES = {
   'maintenance-site-web-annecy': '2026-04-09',
   'referencement-naturel-annecy': '2026-04-09',
@@ -439,12 +454,42 @@ function extractHeadingsFromHtml(html = '', max = 3) {
     .slice(0, max);
 }
 
+// Extrait les vraies paires question/réponse d'une section FAQ (h2 "FAQ" ou
+// "questions fréquentes" suivi de h3 interrogatifs + paragraphe de réponse).
+function extractFaqPairsFromHtml(html = '') {
+  const faqStart = String(html).search(/<h2[^>]*>(?:(?!<\/h2>)[\s\S])*?(FAQ|[Qq]uestions?\s+fr[ée]quentes)[\s\S]*?<\/h2>/);
+  if (faqStart === -1) return [];
+  const rest = String(html).slice(faqStart);
+  const endOfSection = rest.slice(5).search(/<h2[\s>]/);
+  const section = endOfSection === -1 ? rest : rest.slice(0, endOfSection + 5);
+  const pairs = [...section.matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)<\/p>/gi)]
+    .map((m) => ({
+      question: m[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(),
+      answer: m[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
+    }))
+    .filter((p) => p.question && p.answer);
+  return pairs.slice(0, 8);
+}
+
 function buildArticleFaqJsonLd(post = {}, pageUrl = '') {
-  const headings = extractHeadingsFromHtml(post.html || '', 3);
   const webPageRef = {
     '@type': 'WebPage',
     '@id': pageUrl
   };
+  const faqPairs = extractFaqPairsFromHtml(post.html || '');
+  if (faqPairs.length >= 2) {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqPairs.map((p) => ({
+        '@type': 'Question',
+        name: p.question,
+        acceptedAnswer: { '@type': 'Answer', text: p.answer }
+      })),
+      mainEntityOfPage: webPageRef
+    };
+  }
+  const headings = extractHeadingsFromHtml(post.html || '', 3);
   const baseQuestions = headings.length
     ? headings.map((h) => ({
         '@type': 'Question',
@@ -679,14 +724,6 @@ function renderArticlePage(post, allPosts) {
     inLanguage: 'fr-FR',
     keywords: (post.tags || []).join(', ')
   };
-  articleJsonLd.aggregateRating = {
-    '@type': 'AggregateRating',
-    ratingValue: '5',
-    reviewCount: '100',
-    bestRating: '5',
-    worstRating: '1'
-  };
-
   const faqJsonLd = buildArticleFaqJsonLd(post, pageUrl);
 
   const related = getRelated(allPosts, post);
@@ -1007,28 +1044,26 @@ function enforceTextOnlyPolicyOnAllArticlePages() {
       );
     }
 
-    if (!/"aggregateRating"\s*:/i.test(html)) {
-      const ratingJsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'Organization',
-        name: BRAND,
-        url: SITE_URL,
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '5',
-          reviewCount: '100',
-          bestRating: '5',
-          worstRating: '1'
-        },
-        mainEntityOfPage: pageUrl
-      };
-      html = html.replace(
-        '</head>',
-        `  <script type="application/ld+json">${JSON.stringify(ratingJsonLd)}</script>\n</head>`
-      );
-    }
+    // Les notes fabriquées (aggregateRating) sur des articles violent les
+    // consignes structured data de Google : on les retire de tout JSON-LD.
+    html = html.replace(
+      /(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>\n?)/gi,
+      (match, open, json, close) => {
+        if (!/"aggregateRating"/.test(json)) return match;
+        try {
+          const obj = JSON.parse(json);
+          if (obj['@type'] === 'Organization' && obj.aggregateRating && obj.mainEntityOfPage) {
+            return '';
+          }
+          delete obj.aggregateRating;
+          return `${open}${JSON.stringify(obj)}${close}`;
+        } catch (_) {
+          return match;
+        }
+      }
+    );
 
-    fs.writeFileSync(filePath, html, 'utf8');
+    fs.writeFileSync(filePath, injectTracking(html), 'utf8');
   });
 }
 
@@ -1199,7 +1234,7 @@ function main() {
   posts.forEach((post) => {
     const dir = path.join(OUTPUT_DIR, post.slug);
     ensureDir(dir);
-    const html = renderArticlePage(post, posts);
+    const html = injectTracking(renderArticlePage(post, posts));
     fs.writeFileSync(path.join(dir, 'index.html'), html, 'utf8');
   });
 
@@ -1212,7 +1247,7 @@ function main() {
     fs.copyFileSync(targetFile, path.join(legacyDir, 'index.html'));
   });
 
-  fs.writeFileSync(path.join(ROOT, 'blog', 'index.html'), renderBlogIndex(allPostsForIndex), 'utf8');
+  fs.writeFileSync(path.join(ROOT, 'blog', 'index.html'), injectTracking(renderBlogIndex(allPostsForIndex)), 'utf8');
   fs.writeFileSync(path.join(ROOT, 'blog', 'feed.xml'), renderRss(posts), 'utf8');
   fs.writeFileSync(path.join(ROOT, 'blog', 'sitemap.xml'), renderBlogSitemap(allPostsForIndex), 'utf8');
   fs.writeFileSync(path.join(ROOT, 'blog', 'articles-manifest.json'), JSON.stringify(posts, null, 2), 'utf8');

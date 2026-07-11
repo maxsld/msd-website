@@ -202,7 +202,7 @@ La longueur moyenne d'une phrase efficace sur le web : 12 à 15 mots. Au-delà d
 
 ### Règle 4 — Éliminer les adjectifs superlatifs
 
-"Meilleur", "exceptionnel", "unique", "incontournable" — ces mots ne signifient rien parce que tout le monde les utilise. Remplacez-les par des données : "+37 % de conversion en moyenne", "livré en 14 jours", "9 clients sur 10 recommandent".
+"Meilleur", "exceptionnel", "unique", "incontournable" — ces mots ne signifient rien parce que tout le monde les utilise. Remplacez-les par des données : "+37 % de conversion en moyenne", "livré en 21 jours", "9 clients sur 10 recommandent".
 
 ### Règle 5 — Tester avant de conclure
 

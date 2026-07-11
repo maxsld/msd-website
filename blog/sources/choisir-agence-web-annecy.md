@@ -152,7 +152,7 @@ Ce qui distingue MSD Media des autres agences web à Annecy :
 
 **Un positionnement laser sur la conversion.** Chaque projet commence par une analyse stratégique : cible, intention de recherche, objections, déclencheurs d'achat. Le design vient en dernier — la stratégie en premier.
 
-**Une livraison en 14 jours chrono.** Là où la plupart des agences web à Annecy font attendre leurs clients 2 à 6 mois, MSD Media s'engage sur un délai de 14 jours de la signature à la mise en ligne — avec des ajustements illimités jusqu'à satisfaction complète.
+**Une livraison en 21 jours chrono.** Là où la plupart des agences web à Annecy font attendre leurs clients 2 à 6 mois, MSD Media s'engage sur un délai de 21 jours de la signature à la mise en ligne — avec des ajustements illimités jusqu'à satisfaction complète.
 
 **Une expertise SEO local Annecy intégrée.** Chaque site livré est optimisé pour les requêtes géolocalisées dès le départ : structure, balises, schema markup, vitesse mobile. Pas de SEO en option — c'est inclus par défaut.
 
@@ -195,5 +195,5 @@ Prenez le temps de poser les bonnes questions. Un bon site web fait la différen
 
 ## Vous cherchez une agence web à Annecy pour votre projet ?
 
-MSD Media accompagne les entreprises d'Annecy et de Haute-Savoie dans la création de sites web et de landing pages sur mesure — stratégie, design, SEO local et copywriting inclus. Livraison en 14 jours, ajustements illimités, satisfaction garantie.
+MSD Media accompagne les entreprises d'Annecy et de Haute-Savoie dans la création de sites web et de landing pages sur mesure — stratégie, design, SEO local et copywriting inclus. Livraison en 21 jours, ajustements illimités, satisfaction garantie.
 

@@ -46,7 +46,7 @@ Le SEO nécessite des mots-clés ciblés et une structure de liens internes. Le 
 Votre H1 doit contenir le mot-clé principal ET une réponse directe à la question que se pose votre prospect.
 
 ❌ Mauvais : "Bienvenue chez MSD Media"
-✅ Bon : "Agence web à Strasbourg – Landing pages et sites sur mesure livrés en 14 jours"
+✅ Bon : "Agence web à Strasbourg – Landing pages et sites sur mesure livrés en 21 jours"
 
 Ajoutez immédiatement sous le titre :
 - La promesse principale (chiffrée si possible)
@@ -60,10 +60,10 @@ C'est contre-intuitif, mais placer une mini-FAQ dans les premiers 500 mots de vo
 Format idéal :
 
 **Combien coûte une landing page à Strasbourg ?**
-Une landing page sur mesure à Strasbourg coûte entre sur devis et sur devis selon la complexité, le copywriting et l'intégration. MSD Media propose des landing pages à partir de sur devis avec livraison en 14 jours.
+Une landing page sur mesure à Strasbourg coûte entre sur devis et sur devis selon la complexité, le copywriting et l'intégration. MSD Media propose des landing pages à partir de sur devis avec livraison en 21 jours.
 
 **Combien de temps pour créer une landing page ?**
-MSD Media livre une première version en 14 jours calendaires. Les révisions sont illimitées jusqu'à validation.
+MSD Media livre une première version en 21 jours calendaires. Les révisions sont illimitées jusqu'à validation.
 
 Ces réponses directes, chiffrées et signées de votre nom d'entreprise sont exactement ce que les IA extraient pour leurs réponses.
 

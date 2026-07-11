@@ -216,7 +216,7 @@ Ce que nous apportons concrètement à un professionnel de santé à Annecy :
 - **Un site conçu pour vos patients** : navigation claire, informations pratiques immédiatement accessibles, prise de rendez-vous simplifiée
 - **Un SEO local intégré dès le départ** : votre site est optimisé pour apparaître sur vos requêtes cibles à Annecy dès la mise en ligne
 - **Une conformité déontologique respectée** : nous connaissons les règles qui encadrent la communication des professionnels de santé en France
-- **Une livraison en 14 jours** : votre site en ligne rapidement, sans mois d'attente
+- **Une livraison en 21 jours** : votre site en ligne rapidement, sans mois d'attente
 - **Des ajustements illimités** jusqu'à ce que vous soyez 100% satisfait du résultat
 
 ---
@@ -231,4 +231,4 @@ Il doit être sobre, clair, rapide sur mobile, conforme aux règles déontologiq
 
 ## Vous êtes professionnel de santé à Annecy et vous voulez un site web qui attire de nouveaux patients ?
 
-MSD Media conçoit des sites web sur mesure pour les médecins et professionnels de santé à Annecy — clairs, conformes, optimisés pour le SEO local et livrés en 14 jours.
+MSD Media conçoit des sites web sur mesure pour les médecins et professionnels de santé à Annecy — clairs, conformes, optimisés pour le SEO local et livrés en 21 jours.

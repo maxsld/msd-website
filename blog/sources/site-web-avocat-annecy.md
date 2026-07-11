@@ -224,7 +224,7 @@ Ce que nous apportons concrètement :
 - **Un site pensé pour convertir** : structure claire, informations pratiques accessibles immédiatement, formulaire de contact optimisé
 - **Un SEO local intégré dès le départ** : balises, schema markup, pages par domaine, maillage interne — votre site est optimisé pour apparaître sur vos requêtes cibles à Annecy
 - **Une conformité déontologique respectée** : nous connaissons les règles encadrant la communication des avocats en France
-- **Une livraison en 14 jours** : votre cabinet en ligne rapidement, sans mois d'attente
+- **Une livraison en 21 jours** : votre cabinet en ligne rapidement, sans mois d'attente
 - **Des ajustements illimités** jusqu'à satisfaction complète
 
 ---
@@ -239,4 +239,4 @@ Dans un barreau aussi actif que celui d'Annecy, les avocats qui ont compris l'im
 
 ## Vous êtes avocat ou cabinet juridique à Annecy et vous voulez un site web qui attire des clients qualifiés ?
 
-MSD Media conçoit des sites web sur mesure pour les avocats et cabinets juridiques à Annecy — sobres, professionnels, conformes et optimisés pour le SEO local. Livraison en 14 jours, ajustements illimités, satisfaction garantie.
+MSD Media conçoit des sites web sur mesure pour les avocats et cabinets juridiques à Annecy — sobres, professionnels, conformes et optimisés pour le SEO local. Livraison en 21 jours, ajustements illimités, satisfaction garantie.

@@ -463,8 +463,23 @@ document.addEventListener("DOMContentLoaded", () => {
     stopHeroWordRotation();
     heroWordLang = lang;
     heroWordIndex = 0;
-    heroLead.textContent = wordSet.lead;
+    // Ne réécrit le DOM que si le contenu change : une écriture identique
+    // au DOMContentLoaded repeint le H1 et repousse le LCP de plusieurs secondes.
+    if (heroLead.textContent !== wordSet.lead) {
+      heroLead.textContent = wordSet.lead;
+    }
     const isMobileView = window.matchMedia("(max-width: 768px)").matches;
+
+    // Un seul mot (FR) : le HTML statique est déjà correct, aucune écriture.
+    if (wordSet.words.length < 2) {
+      const staticHtml = renderHeroWord(wordSet.words[0]);
+      if (heroWord.innerHTML !== staticHtml) {
+        heroWord.innerHTML = staticHtml;
+      }
+      if (heroWordWrap.style.width) heroWordWrap.style.width = "";
+      return;
+    }
+
     swapHeroWord(wordSet.words[heroWordIndex], false);
 
     // Sur mobile on garde le mot fixe pour éviter tout décalage de page.
@@ -472,8 +487,6 @@ document.addEventListener("DOMContentLoaded", () => {
       heroWordWrap.style.width = "auto";
       return;
     }
-
-    if (wordSet.words.length < 2) return;
 
     heroWordIntervalId = window.setInterval(() => {
       if (heroWordLang !== lang) return;

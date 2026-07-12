@@ -1610,11 +1610,19 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
     }, { rootMargin: "400px" });
     vids.forEach(function (v) { io.observe(v); });
   }
-  if (document.readyState === "complete") {
+  // Déclenchement à la première interaction (le poster est la première frame,
+  // la transition est invisible) avec repli à 15s pour les visiteurs immobiles.
+  var armed = false;
+  function arm() {
+    if (armed) return;
+    armed = true;
     observeAll();
-  } else {
-    window.addEventListener("load", function () {
-      window.setTimeout(observeAll, 300);
+    ["pointerdown", "scroll", "mousemove", "touchstart", "keydown"].forEach(function (evt) {
+      window.removeEventListener(evt, arm);
     });
   }
+  ["pointerdown", "scroll", "mousemove", "touchstart", "keydown"].forEach(function (evt) {
+    window.addEventListener(evt, arm, { passive: true, once: true });
+  });
+  window.setTimeout(arm, 15000);
 })();

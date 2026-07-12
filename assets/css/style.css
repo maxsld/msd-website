@@ -1264,6 +1264,12 @@ position: relative;
   margin-top: 1.8rem;
 }
 
+.realisations-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
 .realisations-card {
   position: relative;
   display: block;
@@ -1341,6 +1347,33 @@ position: relative;
 .realisations-card:hover .realisations-card__arrow i,
 .realisations-card:focus-visible .realisations-card__arrow i {
   transform: translate(1px, -1px) rotate(-45deg);
+}
+
+.realisations-brand {
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.realisations-brand__logo {
+  display: block;
+  max-width: 176px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.realisations-brand__logo--merz {
+  max-width: 188px;
+  max-height: 32px;
+}
+
+.realisations-brand__logo--3xl {
+  max-width: 274px;
+  max-height: 36px;
 }
 
 .realisations-more {

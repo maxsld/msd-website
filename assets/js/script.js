@@ -1579,17 +1579,29 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
     v.load();
     v.play().catch(function () {});
   }
-  if (!("IntersectionObserver" in window)) {
-    vids.forEach(hydrate);
-    return;
+  // Hydratation seulement après l'événement load : le poster (léger) se peint
+  // tôt et reste le candidat LCP, la vidéo ne monopolise pas la bande passante
+  // pendant le chargement critique de la page.
+  function observeAll() {
+    if (!("IntersectionObserver" in window)) {
+      vids.forEach(hydrate);
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          io.unobserve(e.target);
+          hydrate(e.target);
+        }
+      });
+    }, { rootMargin: "400px" });
+    vids.forEach(function (v) { io.observe(v); });
   }
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) {
-        io.unobserve(e.target);
-        hydrate(e.target);
-      }
+  if (document.readyState === "complete") {
+    observeAll();
+  } else {
+    window.addEventListener("load", function () {
+      window.setTimeout(observeAll, 300);
     });
-  }, { rootMargin: "400px" });
-  vids.forEach(function (v) { io.observe(v); });
+  }
 })();

@@ -1565,3 +1565,31 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
     openModal();
   }, 5000);
 })();
+
+// Lazy-load des vidéos data-lazy-video : la source ne se charge qu'à l'approche
+// du viewport (économise ~3 Mo au chargement initial sur les pages avec vidéo).
+(function () {
+  var vids = document.querySelectorAll("video[data-lazy-video]");
+  if (!vids.length) return;
+  function hydrate(v) {
+    v.querySelectorAll("source[data-src]").forEach(function (s) {
+      s.src = s.getAttribute("data-src");
+      s.removeAttribute("data-src");
+    });
+    v.load();
+    v.play().catch(function () {});
+  }
+  if (!("IntersectionObserver" in window)) {
+    vids.forEach(hydrate);
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        io.unobserve(e.target);
+        hydrate(e.target);
+      }
+    });
+  }, { rootMargin: "400px" });
+  vids.forEach(function (v) { io.observe(v); });
+})();

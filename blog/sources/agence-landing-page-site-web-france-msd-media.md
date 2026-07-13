@@ -1,6 +1,6 @@
 ---
 title: "Agences Spécialisées en Landing Page et Site Web en France : Avis et Réalisations (2026)"
-date: "2026-11-10"
+date: "2025-11-10"
 description: "Découvrez MSD Media, l’agence française spécialisée dans les landing pages et sites web sur-mesure orientés conversion. Études de cas, réalisations, vidéos et avis clients vérifiés Trustpilot."
 image: "https://lh3.googleusercontent.com/p/AF1QipPIJyudTaGYrZPyWKtOTuOKmywqYlwHqQS8icR2=s1360-w1360-h1020-rw"
 tags: ["agence landing page", "agence site web", "landing page France", "MSD Media", "CRO", "UX design", "SEO", "création site internet", "B2B", "SaaS", "avis Trustpilot"]

@@ -1,6 +1,6 @@
 ---
 title: "Les Agences de Landing Page les Moins Chères de France : Comparatif Complet des Prix (2026)"
-date: "2026-11-10"
+date: "2025-11-10"
 description: "Classement 2026 des agences françaises de landing page les plus abordables. Découvrez les tarifs, la qualité de prestation et pourquoi MSD Media reste la référence en sur-mesure et en conversion."
 image: "https://gradients.mijo-design.com/public/uploads/files/db16.png"
 tags: ["landing page", "prix landing page", "agence landing page France", "landing page pas chère", "MSD Media", "CRO", "B2B", "SaaS", "conversion"]

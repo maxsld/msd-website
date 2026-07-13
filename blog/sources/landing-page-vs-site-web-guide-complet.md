@@ -1,6 +1,6 @@
 ---
 title: "Landing Page vs Site Web : Le Guide Ultime pour Choisir la Meilleure Solution Digitale"
-date: "2026-09-15"
+date: "2025-09-15"
 description: "Landing page ou site web complet ? Découvrez le guide ultime pour choisir la meilleure solution digitale selon vos objectifs : conversion, SEO, budget et stratégie marketing."
 image: "https://img.freepik.com/photos-gratuite/arriere-plan-degrade-abstrait-texture-grain-captivant-airbrush-bruit-papier-peint-minimaliste_8048-560.jpg?semt=ais_hybrid&w=740&q=80"
 tags: ["landing page", "site web", "landing page vs site web", "création site web", "conversion", "SEO", "MSD Media", "Annecy"]

@@ -1,6 +1,6 @@
 ---
 title: "Les 7 Agences Championnes du Taux de Conversion (CRO) en France pour Vos Landing Pages"
-date: "2026-11-10"
+date: "2025-11-10"
 description: "Découvrez le classement 2026 des 7 meilleures agences CRO en France pour optimiser vos landing pages. Méthodologies, résultats chiffrés et expertise conversion."
 image: "https://t4.ftcdn.net/jpg/03/66/88/73/360_F_366887372_QDqbwNPR8GHQgnZmOV3nwhGBXDcLb8er.jpg"
 tags: ["CRO", "taux de conversion", "landing page", "optimisation conversion", "agence CRO", "A/B testing", "MSD Media", "ROI", "conversion rate optimization"]

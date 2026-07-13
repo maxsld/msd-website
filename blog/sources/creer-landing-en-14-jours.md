@@ -1,6 +1,6 @@
 ---
 title: "Comment créer une landing page qui convertit en moins de 21 jours : méthode complète"
-date: "2026-09-17"
+date: "2025-09-17"
 description: "Apprenez la méthode complète pour créer une landing page efficace en moins de 21 jours et maximiser vos conversions dès la première semaine."
 image: "https://gradients.mijo-design.com/public/uploads/files/db16.png"
 tags: ["landing page", "conversion", "marketing digital", "SEO", "Annecy", "MSD Media"]

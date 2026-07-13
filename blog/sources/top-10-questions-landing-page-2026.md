@@ -1,6 +1,6 @@
 ---
 title: "Top 10 des questions sur les landing pages que se posent les entrepreneurs en 2026"
-date: "2026-10-01"
+date: "2025-10-01"
 description: "Découvrez les réponses aux 10 questions les plus fréquentes sur les landing pages et comment les optimiser pour convertir et dominer Google en 2026."
 image: "https://gradients.mijo-design.com/public/uploads/files/db16.png"
 tags: ["landing page", "conversion", "marketing digital", "SEO", "Annecy", "MSD Media"]

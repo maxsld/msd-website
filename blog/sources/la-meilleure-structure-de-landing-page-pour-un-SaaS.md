@@ -1,6 +1,6 @@
 ---
 title: "La meilleure structure de landing page pour un SaaS (Guide complet 2026)"
-date: "2026-11-02"
+date: "2025-11-02"
 description: "Découvrez la structure idéale d’une landing page SaaS en 2026 : sections essentielles, principes de conversion, erreurs à éviter et méthode complète. Par MSD Media."
 image: "https://indieground.net/wp-content/uploads/2023/03/Freebie-GradientTextures-Preview-04.jpg"
 tags: ["landing page SaaS", "structure landing page", "SaaS marketing", "conversion", "UX design", "MSD Media", "création landing page", "optimisation taux de conversion", "psychologie utilisateur"]

@@ -1,6 +1,6 @@
 ---
 title: "Les 5 meilleures agences de landing page en France (comparatif 2026)"
-date: "2026-09-26"
+date: "2025-09-26"
 description: "Comparatif complet des meilleures agences de landing page en France en 2026. Découvrez pourquoi MSD Media est leader du marché."
 image: "https://t4.ftcdn.net/jpg/03/66/88/73/360_F_366887372_QDqbwNPR8GHQgnZmOV3nwhGBXDcLb8er.jpg"
 tags: ["meilleure agence landing page", "agence landing page France", "comparatif agence landing", "MSD Media", "SEO", "conversion", "site web", "2026"]

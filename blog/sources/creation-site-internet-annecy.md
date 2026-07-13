@@ -1,6 +1,6 @@
 ---
 title: "Création de site internet à Annecy"
-date: "2026-09-26"
+date: "2025-09-26"
 description: "Découvrez comment MSD Media, agence web à Annecy, crée des sites internet sur-mesure, performants et optimisés pour le SEO. Présentation complète de nos services et méthode de travail."
 image: "https://www.campingideal.com/wp-content/uploads/2023/06/annecy_header.jpg"
 tags: ["création site internet Annecy", "agence web Annecy", "site vitrine Annecy", "site e-commerce Annecy", "landing page Annecy", "MSD Media", "SEO", "développement web"]

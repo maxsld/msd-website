@@ -1,7 +1,7 @@
 ---
 noindex: true
 title: "Création de site internet à Strasbourg"
-date: "2026-10-15"
+date: "2025-10-15"
 description: "Découvrez comment MSD Media, agence web à Strasbourg, crée des sites internet sur-mesure, performants et optimisés pour le SEO. Présentation complète de nos services et de notre méthode de travail."
 image: "https://im.qccdn.fr/node/conseils-tourisme-en-france-strasbourg-107546/thumbnail_800x480px-116874.jpg"
 tags: ["création site internet Strasbourg", "agence web Strasbourg", "site vitrine Strasbourg", "site e-commerce Strasbourg", "landing page Strasbourg", "MSD Media", "SEO", "développement web"]

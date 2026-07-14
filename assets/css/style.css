@@ -4938,3 +4938,17 @@ body.page-404 .site-footer {
     display: none !important;
   }
 }
+
+/* Ligne prix sous les CTA du hero */
+.hero__pricing {
+  margin: 1.1rem 0 0;
+  font-size: 0.95rem;
+  color: rgba(12, 12, 13, 0.62);
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.hero__pricing strong {
+  color: #0c0c0d;
+  font-weight: 600;
+}

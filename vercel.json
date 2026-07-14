@@ -424,6 +424,10 @@
         {
           "key": "Permissions-Policy",
           "value": "geolocation=(), microphone=(), camera=()"
+        },
+        {
+          "key": "Content-Security-Policy-Report-Only",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://challenges.cloudflare.com https://cdnjs.cloudflare.com https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://ka-f.fontawesome.com; img-src 'self' data: https: blob:; media-src 'self' blob: https://app.videas.fr; connect-src 'self' https://app.msd-media.com https://formspree.io https://www.google-analytics.com https://region1.google-analytics.com https://ka-f.fontawesome.com https://*.clarity.ms https://cal.com https://www.googletagmanager.com; frame-src https://www.googletagmanager.com https://challenges.cloudflare.com https://cal.com https://app.videas.fr https://maxsld.github.io https://agence3xl.fr https://nation-startup.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io"
         }
       ]
     },

@@ -127,8 +127,49 @@
   }
 
   .realisations-grid {
+    gap: 1rem;
+  }
+
+  .realisations-item,
+  .realisations-item:nth-child(even) {
     grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .realisations-copy,
+  .realisations-item:nth-child(even) .realisations-copy,
+  .realisations-media,
+  .realisations-item:nth-child(even) .realisations-media {
+    order: initial;
+  }
+
+  .realisations-copy {
+    gap: 0.8rem;
+  }
+
+  .realisations-item__description {
+    max-width: none;
+    font-size: 0.95rem;
+  }
+
+  .realisations-item__actions {
+    margin-top: 0.15rem;
+  }
+
+  .realisations-brand__logo {
+    max-width: 168px;
+    max-height: 30px;
+  }
+
+  .realisations-brand__logo--merz {
+    max-width: 182px;
+    max-height: 32px;
+  }
+
+  .realisations-brand__logo--3xl {
+    max-width: 220px;
+    max-height: 40px;
   }
 
   .realisations-card {
@@ -564,6 +605,11 @@
 
   .realisations-grid {
     gap: 0.85rem;
+  }
+
+  .realisations-item,
+  .realisations-item:nth-child(even) {
+    padding: 0.85rem 0;
   }
 
   .realisations-card {

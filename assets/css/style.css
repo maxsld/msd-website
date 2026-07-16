@@ -1258,16 +1258,69 @@ position: relative;
 }
 
 .realisations-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
   margin-top: 1.8rem;
 }
 
 .realisations-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 1.08fr);
+  align-items: stretch;
+  gap: 5.2rem;
+  padding: 3rem 0;
+  border-top: 0;
+}
+
+.realisations-item:nth-child(even) {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1.02fr);
+}
+
+.realisations-item:nth-child(even) .realisations-copy {
+  order: 2;
+}
+
+.realisations-item:nth-child(even) .realisations-media {
+  order: 1;
+}
+
+.realisations-copy {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 2.25rem;
+  min-width: 0;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.realisations-item__description {
+  margin: 0;
+  max-width: 32rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: rgba(17, 17, 17, 0.72);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.realisations-item__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   gap: 0.75rem;
+  margin-top: 0.45rem;
+}
+
+.realisations-item__cta {
+  margin: 0;
+}
+
+.realisations-media {
+  min-width: 0;
 }
 
 .realisations-card {
@@ -1279,7 +1332,8 @@ position: relative;
   text-decoration: none;
   color: #ffffff;
   background: #f4f4f6;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9.3;
+  width: min(100%, 92%);
 }
 
 .realisations-card img {
@@ -1350,16 +1404,15 @@ position: relative;
 }
 
 .realisations-brand {
-  min-height: 2.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .realisations-brand__logo {
   display: block;
-  max-width: 176px;
-  max-height: 30px;
+  max-width: 220px;
+  max-height: 42px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -1367,13 +1420,13 @@ position: relative;
 }
 
 .realisations-brand__logo--merz {
-  max-width: 188px;
-  max-height: 32px;
+  max-width: 240px;
+  max-height: 44px;
 }
 
 .realisations-brand__logo--3xl {
-  max-width: 274px;
-  max-height: 36px;
+  max-width: 320px;
+  max-height: 56px;
 }
 
 .realisations-more {

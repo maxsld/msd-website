@@ -850,18 +850,63 @@ document.addEventListener("DOMContentLoaded", () => {
     const previewAddress = previewModal ? previewModal.querySelector("[data-project-preview-address]") : null;
     const previewCloseButtons = previewModal ? previewModal.querySelectorAll("[data-project-preview-close]") : [];
     let previewCloseTimeoutId = null;
+    let previewLoadTimeoutId = null;
+    let activePreviewUrl = "";
+    let activePreviewDisplayUrl = "";
+    let previewLoaded = false;
 
     const PREVIEW_CLOSE_DURATION = 240;
+    const PREVIEW_LOAD_TIMEOUT = 2600;
 
     if (previewModal) {
       previewModal.hidden = !previewModal.classList.contains("is-open");
       previewModal.inert = !previewModal.classList.contains("is-open");
     }
 
+    const openPreviewInNewTab = (url) => {
+      if (!url) return;
+      const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+      if (newWindow) return;
+      window.location.href = url;
+    };
+
+    const clearPreviewLoadTimeout = () => {
+      if (!previewLoadTimeoutId) return;
+      window.clearTimeout(previewLoadTimeoutId);
+      previewLoadTimeoutId = null;
+    };
+
+    const shouldFallbackToExternal = () => {
+      if (!previewIframe) return true;
+
+      try {
+        const frameWindow = previewIframe.contentWindow;
+        const frameDocument = previewIframe.contentDocument;
+        const frameHref = frameWindow && frameWindow.location ? frameWindow.location.href : "";
+        const frameText = ((frameDocument && frameDocument.body && frameDocument.body.textContent) || "")
+          .replace(/\s+/g, " ")
+          .trim()
+          .toLowerCase();
+
+        if (!frameHref || frameHref === "about:blank") return true;
+        if (
+          frameText &&
+          /(refused to connect|a refusé la connexion|blocked|x-frame-options|content security policy|can.t be displayed|ne peut pas être affichée)/i.test(frameText)
+        ) {
+          return true;
+        }
+
+        return false;
+      } catch (_) {
+        return false;
+      }
+    };
+
     const closePreview = () => {
       if (!previewModal || !previewIframe) return;
       if (!previewModal.classList.contains("is-open")) return;
 
+      clearPreviewLoadTimeout();
       previewModal.classList.remove("is-open");
       previewModal.classList.add("is-closing");
       previewModal.setAttribute("aria-hidden", "true");
@@ -876,6 +921,9 @@ document.addEventListener("DOMContentLoaded", () => {
         previewModal.classList.remove("is-closing");
         previewIframe.src = "";
         previewModal.hidden = true;
+        activePreviewUrl = "";
+        activePreviewDisplayUrl = "";
+        previewLoaded = false;
       }, PREVIEW_CLOSE_DURATION);
     };
 
@@ -887,22 +935,61 @@ document.addEventListener("DOMContentLoaded", () => {
         previewCloseTimeoutId = null;
       }
 
+      clearPreviewLoadTimeout();
+      activePreviewUrl = url;
+      activePreviewDisplayUrl = displayUrl || url;
+      previewLoaded = false;
       previewModal.hidden = false;
       previewModal.inert = false;
       previewModal.classList.remove("is-closing");
-      if (previewAddress) previewAddress.textContent = displayUrl || url;
+      if (previewAddress) previewAddress.textContent = activePreviewDisplayUrl;
       previewIframe.src = url;
       previewModal.classList.add("is-open");
       previewModal.setAttribute("aria-hidden", "false");
       syncBodyScrollLock();
+
+      previewLoadTimeoutId = window.setTimeout(() => {
+        if (previewLoaded || !previewModal.classList.contains("is-open")) return;
+        closePreview();
+        openPreviewInNewTab(activePreviewDisplayUrl || activePreviewUrl);
+      }, PREVIEW_LOAD_TIMEOUT);
     };
+
+    if (previewIframe) {
+      previewIframe.addEventListener("load", () => {
+        previewLoaded = true;
+        window.setTimeout(() => {
+          if (!activePreviewUrl || !previewModal || !previewModal.classList.contains("is-open")) return;
+          if (!shouldFallbackToExternal()) {
+            clearPreviewLoadTimeout();
+            return;
+          }
+
+          clearPreviewLoadTimeout();
+          closePreview();
+          openPreviewInNewTab(activePreviewDisplayUrl || activePreviewUrl);
+        }, 180);
+      });
+
+      previewIframe.addEventListener("error", () => {
+        clearPreviewLoadTimeout();
+        if (!activePreviewUrl) return;
+        closePreview();
+        openPreviewInNewTab(activePreviewDisplayUrl || activePreviewUrl);
+      });
+    }
 
     standalonePreviewTriggers.forEach((trigger) => {
       trigger.addEventListener("click", (event) => {
         const previewUrl = trigger.getAttribute("data-preview-url");
         const previewDisplayUrl = trigger.getAttribute("data-preview-display-url");
+        const previewExternalOnly = trigger.hasAttribute("data-preview-external-only");
         if (!previewUrl) return;
         event.preventDefault();
+        if (previewExternalOnly) {
+          openPreviewInNewTab(previewDisplayUrl || previewUrl);
+          return;
+        }
         openPreview(previewUrl, previewDisplayUrl);
       });
     });
@@ -925,20 +1012,65 @@ document.addEventListener("DOMContentLoaded", () => {
     const previewAddress = previewModal ? previewModal.querySelector("[data-project-preview-address]") : null;
     const previewCloseButtons = previewModal ? previewModal.querySelectorAll("[data-project-preview-close]") : [];
     let previewCloseTimeoutId = null;
+    let previewLoadTimeoutId = null;
+    let activePreviewUrl = "";
+    let activePreviewDisplayUrl = "";
+    let previewLoaded = false;
     let stopRealisationsAutoplay = () => {};
     let startRealisationsAutoplay = () => {};
 
     const PREVIEW_CLOSE_DURATION = 240;
+    const PREVIEW_LOAD_TIMEOUT = 2600;
 
     if (previewModal) {
       previewModal.hidden = !previewModal.classList.contains("is-open");
       previewModal.inert = !previewModal.classList.contains("is-open");
     }
 
+    const openPreviewInNewTab = (url) => {
+      if (!url) return;
+      const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+      if (newWindow) return;
+      window.location.href = url;
+    };
+
+    const clearPreviewLoadTimeout = () => {
+      if (!previewLoadTimeoutId) return;
+      window.clearTimeout(previewLoadTimeoutId);
+      previewLoadTimeoutId = null;
+    };
+
+    const shouldFallbackToExternal = () => {
+      if (!previewIframe) return true;
+
+      try {
+        const frameWindow = previewIframe.contentWindow;
+        const frameDocument = previewIframe.contentDocument;
+        const frameHref = frameWindow && frameWindow.location ? frameWindow.location.href : "";
+        const frameText = ((frameDocument && frameDocument.body && frameDocument.body.textContent) || "")
+          .replace(/\s+/g, " ")
+          .trim()
+          .toLowerCase();
+
+        if (!frameHref || frameHref === "about:blank") return true;
+        if (
+          frameText &&
+          /(refused to connect|a refusé la connexion|blocked|x-frame-options|content security policy|can.t be displayed|ne peut pas être affichée)/i.test(frameText)
+        ) {
+          return true;
+        }
+
+        return false;
+      } catch (_) {
+        return false;
+      }
+    };
+
     const closePreview = () => {
       if (!previewModal) return;
       if (!previewModal.classList.contains("is-open")) return;
 
+      clearPreviewLoadTimeout();
       previewModal.classList.remove("is-open");
       previewModal.classList.add("is-closing");
       previewModal.setAttribute("aria-hidden", "true");
@@ -953,6 +1085,9 @@ document.addEventListener("DOMContentLoaded", () => {
         previewModal.classList.remove("is-closing");
         if (previewIframe) previewIframe.src = "";
         previewModal.hidden = true;
+        activePreviewUrl = "";
+        activePreviewDisplayUrl = "";
+        previewLoaded = false;
       }, PREVIEW_CLOSE_DURATION);
 
       startRealisationsAutoplay();
@@ -967,15 +1102,49 @@ document.addEventListener("DOMContentLoaded", () => {
         previewCloseTimeoutId = null;
       }
 
+      clearPreviewLoadTimeout();
+      activePreviewUrl = url;
+      activePreviewDisplayUrl = displayUrl || url;
+      previewLoaded = false;
       previewModal.hidden = false;
       previewModal.inert = false;
       previewModal.classList.remove("is-closing");
-      if (previewAddress) previewAddress.textContent = displayUrl || url;
+      if (previewAddress) previewAddress.textContent = activePreviewDisplayUrl;
       previewIframe.src = url;
       previewModal.classList.add("is-open");
       previewModal.setAttribute("aria-hidden", "false");
       syncBodyScrollLock();
+
+      previewLoadTimeoutId = window.setTimeout(() => {
+        if (previewLoaded || !previewModal.classList.contains("is-open")) return;
+        closePreview();
+        openPreviewInNewTab(activePreviewDisplayUrl || activePreviewUrl);
+      }, PREVIEW_LOAD_TIMEOUT);
     };
+
+    if (previewIframe) {
+      previewIframe.addEventListener("load", () => {
+        previewLoaded = true;
+        window.setTimeout(() => {
+          if (!activePreviewUrl || !previewModal || !previewModal.classList.contains("is-open")) return;
+          if (!shouldFallbackToExternal()) {
+            clearPreviewLoadTimeout();
+            return;
+          }
+
+          clearPreviewLoadTimeout();
+          closePreview();
+          openPreviewInNewTab(activePreviewDisplayUrl || activePreviewUrl);
+        }, 180);
+      });
+
+      previewIframe.addEventListener("error", () => {
+        clearPreviewLoadTimeout();
+        if (!activePreviewUrl) return;
+        closePreview();
+        openPreviewInNewTab(activePreviewDisplayUrl || activePreviewUrl);
+      });
+    }
 
     previewCloseButtons.forEach((btn) => {
       btn.addEventListener("click", closePreview);
@@ -1626,3 +1795,4 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
   });
   window.setTimeout(arm, 15000);
 })();
+

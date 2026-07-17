@@ -400,7 +400,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
-  padding: 1.25rem 2rem 2rem;
+  padding: 0.6rem 2rem 2rem;
 }
 
 .hero-proof {
@@ -435,18 +435,24 @@ main {
 
 .feature-tag-main-second-page {
   font-size: var(--font-sm);
-  font-weight: 500;
+  font-weight: 400;
   color: var(--global-color-black);
-    margin: 0 auto;
+  margin: 0 auto;
   margin-bottom: 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: fit-content;
   border-radius: 999px;
   text-align: center;
   padding: 10px;
   gap: 6px;
+}
+
+.hero-laurel-badge__text {
+  display: block;
+  line-height: 1.15;
+  padding-top: .7rem;
 }
 
 .hero-laurel-badge::before,
@@ -462,19 +468,19 @@ main {
 }
 
 .hero-laurel-badge::before {
-  background-image: url("../img/lauriet-gauche.avif");
+  background-image: url("../../lauriet-gauche.png");
   opacity: .85;
 }
 
 .hero-laurel-badge::after {
-  background-image: url("../img/lauriet-droit.avif");
+  background-image: url("../../lauriet-droit.png");
   opacity: .85;
 }
 
 .hero__title {
   margin: 0;
   font-family: "Inter", sans-serif;
-  font-size: clamp(1.5rem, 5.2vw, 3.7rem);
+  font-size: clamp(1.7rem, 6vw, 4.4rem);
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.05em;
@@ -722,7 +728,7 @@ position: relative;
 .logo-marquee {
   width: 100%;
   max-width: 1200px;
-  margin-top: 2.2rem;
+  margin: 1.5rem 0;
   overflow: hidden;
   mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
   -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
@@ -737,7 +743,7 @@ position: relative;
 }
 
 .hero-companies-proof {
-  margin-top: 6rem;
+  margin-top: 4.9rem;
   margin-bottom: 0.2rem;
   font-size: clamp(0.95rem, 1.8vw, 1.1rem);
   font-weight: 400;
@@ -764,7 +770,7 @@ position: relative;
 }
 
 .logo-marquee__img {
-  height: 36px;
+  height: 32px;
   width: auto;
   object-fit: contain;
   flex: 0 0 auto;
@@ -780,12 +786,12 @@ position: relative;
 }
 
 .logo-marquee__img--carroz {
-  height: 30px;
+  height: 27px;
   max-width: 220px;
 }
 
 .logo-marquee__img--merz {
-  height: 24px;
+  height: 21px;
 }
 
 .hero-scroll-indicator {
@@ -1271,6 +1277,11 @@ position: relative;
   gap: 5.2rem;
   padding: 3rem 0;
   border-top: 0;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.08);
+}
+
+.realisations-item:last-child {
+  border-bottom: 0;
 }
 
 .realisations-item:nth-child(even) {
@@ -1333,7 +1344,7 @@ position: relative;
   color: #ffffff;
   background: #f4f4f6;
   aspect-ratio: 16 / 9.3;
-  width: min(100%, 92%);
+  width: min(100%, 98%);
 }
 
 .realisations-card img {
@@ -1437,6 +1448,11 @@ position: relative;
 
 .realisations-more-button {
   margin: 0;
+}
+
+.hero-companies-proof__highlight {
+  color: #2253ff;
+  font-weight: 700;
 }
 
 .project-preview-modal {
@@ -4990,4 +5006,23 @@ body.page-404 .site-footer {
   .cookie-consent {
     display: none !important;
   }
+}
+
+/* Description sous le H1 du hero */
+.hero__subtitle {
+  margin: 1.15rem auto 0;
+  max-width: 115ch;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.95rem, 1.6vw, 1.12rem);
+  line-height: 1.55;
+  letter-spacing: -0.015em;
+  color: rgba(12, 12, 13, 0.64);
+  text-align: center;
+}
+
+.hero__subtitle-highlight {
+  color: var(--global-color-blue);
+  font-weight: 600;
+}
+
 }

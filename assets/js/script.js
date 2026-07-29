@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroWordSets = {
     fr: {
       lead: "On fait des sites web et des landing pages",
-      words: ["inoubliables."]
+      words: ["inoubliables.", "mémorables.", "performants.", "captivants."]
     },
     en: {
       lead: "We build websites and landing pages",
@@ -685,10 +685,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const logoTracks = document.querySelectorAll(".logo-marquee__track");
   const clientLogos = [
-    { src: "https://msd-media.com/assets/img/logo-track1.webp", alt: "Logo client 1" },
-    { src: "https://msd-media.com/assets/img/logo-track2.webp", alt: "Logo client 2" },
-    { src: "https://msd-media.com/assets/img/logo-track3.webp", alt: "Logo client 3" },
-    { src: "https://msd-media.com/assets/img/logo-track4.webp", alt: "Logo client 4" },
+    { src: "https://msd-media.com/assets/img/logo-ultherapy-prime.webp", alt: "Logo Ultherapy Prime" },
+    { src: "https://msd-media.com/assets/img/logo-radiesse.webp", alt: "Logo Radiesse" },
     { src: "https://msd-media.com/assets/img/logo-track5.webp", alt: "Logo client 5" },
     { src: "https://msd-media.com/assets/img/logo-merz-aesthetics.webp", alt: "Logo Merz Aesthetics", className: "logo-marquee__img--merz" },
     { src: "https://msd-media.com/assets/img/logo-track6.webp", alt: "Logo client 6" },
@@ -839,6 +837,40 @@ document.addEventListener("DOMContentLoaded", () => {
         if (icon) icon.textContent = "−";
       });
     });
+  }
+
+  const faqTabs = document.querySelectorAll(".faq-tab");
+  if (faqTabs.length && faqItems.length) {
+    const applyFaqFilter = (category) => {
+      faqItems.forEach((item) => {
+        const matches = item.getAttribute("data-faq-category") === category;
+        item.hidden = !matches;
+        if (!matches) {
+          const question = item.querySelector(".faq-question");
+          const answer = item.querySelector(".faq-answer");
+          const icon = item.querySelector(".icon");
+          item.classList.remove("is-open");
+          if (question) question.setAttribute("aria-expanded", "false");
+          if (answer) answer.style.maxHeight = "0px";
+          if (icon) icon.textContent = "+";
+        }
+      });
+    };
+
+    faqTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        faqTabs.forEach((otherTab) => {
+          otherTab.classList.remove("is-active");
+          otherTab.setAttribute("aria-selected", "false");
+        });
+        tab.classList.add("is-active");
+        tab.setAttribute("aria-selected", "true");
+        applyFaqFilter(tab.getAttribute("data-faq-category"));
+      });
+    });
+
+    const initialTab = document.querySelector(".faq-tab.is-active") || faqTabs[0];
+    applyFaqFilter(initialTab.getAttribute("data-faq-category"));
   }
 
   const realisationsCarousel = document.querySelector("[data-realisations-carousel]");
@@ -1702,7 +1734,7 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
     return;
   }
 
-  var CAL_URL = "https://cal.com/maxens-soldan-msd-media/30min?embed=true&embedType=inline&layout=month_view";
+  var CAL_URL = "https://cal.com/maxens-soldan-msd-media/30min?embed=true&embedType=inline&layout=month_view&theme=dark";
 
   // Overlay + modal
   var overlay = document.createElement("div");
@@ -1719,8 +1751,10 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
   var btn = document.createElement("button");
   btn.className = "cal-float-btn";
   btn.type = "button";
-  btn.setAttribute("aria-label", "Prendre rendez-vous");
-  btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
+  btn.setAttribute("aria-label", "Planifiez un appel");
+  btn.innerHTML =
+    '<span class="cal-float-btn__label">Planifiez un appel</span>' +
+    '<span class="cal-float-btn__notif" aria-hidden="true">1</span>';
   document.body.appendChild(btn);
 
   function openModal() {
@@ -1742,8 +1776,9 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
     if (e.key === "Escape") closeModal();
   });
 
+  btn.classList.add("cal-float-btn--visible");
+
   setTimeout(function() {
-    btn.classList.add("cal-float-btn--visible");
     openModal();
   }, 5000);
 })();
@@ -1796,3 +1831,73 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
   window.setTimeout(arm, 15000);
 })();
 
+// Nav mega-menu: position the full-width dropdown right below the navbar
+// (recomputed on open since navbar height varies with the announcement banner),
+// and keep it open on a short delay so moving the mouse down into the menu
+// (across the gap created by its fixed positioning) doesn't close it early.
+(function () {
+  var navbar = document.querySelector(".navbar");
+  if (!navbar) return;
+  document.querySelectorAll(".nav-dropdown-item").forEach(function (item) {
+    var menu = item.querySelector(".nav-megamenu");
+    if (!menu) return;
+    var closeTimer;
+    var open = function () {
+      clearTimeout(closeTimer);
+      menu.style.top = navbar.getBoundingClientRect().bottom + "px";
+      item.classList.add("is-open");
+    };
+    var scheduleClose = function () {
+      clearTimeout(closeTimer);
+      closeTimer = setTimeout(function () {
+        item.classList.remove("is-open");
+      }, 250);
+    };
+    item.addEventListener("mouseenter", open);
+    item.addEventListener("mouseleave", scheduleClose);
+    menu.addEventListener("mouseenter", open);
+    menu.addEventListener("mouseleave", scheduleClose);
+  });
+})();
+
+// Blog article: auto-build the table of contents from the article's own h2s,
+// and populate the share buttons with the current page URL.
+(function () {
+  var toc = document.getElementById("blog-toc");
+  var content = document.querySelector(".blog-article-content");
+  if (toc && content) {
+    var headings = Array.from(content.querySelectorAll("h2[id]"));
+    if (headings.length) {
+      var list = document.createElement("ul");
+      headings.forEach(function (h) {
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.href = "#" + h.id;
+        a.textContent = h.textContent;
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+      var title = document.createElement("h2");
+      title.textContent = "Dans cet article :";
+      toc.appendChild(title);
+      toc.appendChild(list);
+    } else {
+      toc.remove();
+    }
+  }
+
+  var shareLinks = document.querySelectorAll("[data-share]");
+  if (shareLinks.length) {
+    var url = encodeURIComponent(location.href);
+    var title = encodeURIComponent(document.title);
+    var targets = {
+      linkedin: "https://www.linkedin.com/sharing/share-offsite/?url=" + url,
+      x: "https://twitter.com/intent/tweet?url=" + url + "&text=" + title,
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=" + url
+    };
+    shareLinks.forEach(function (link) {
+      var network = link.getAttribute("data-share");
+      if (targets[network]) link.href = targets[network];
+    });
+  }
+})();

@@ -1288,7 +1288,7 @@ position: relative;
 }
 
 .realisations-inner {
-  width: min(100%, 1200px);
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -2395,8 +2395,7 @@ position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 440px);
   align-items: center;
-  row-gap: 0;
-  column-gap: 2.4rem;
+  gap: 2.4rem;
   max-width: 1180px;
   width: 100%;
   padding: 2.2rem 2rem;

@@ -12,8 +12,6 @@ const BRAND = 'MSD Media';
 const AUTHOR = 'Maxens Soldan';
 const DEFAULT_IMAGE = '/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp';
 const DEFAULT_LISTING_IMAGE = '/assets/img/blog/top-5-applications-productivite-2026.jpg';
-// Image de couverture unique pour tous les articles (cover, og:image, twitter:image, JSON-LD).
-const ARTICLE_COVER_IMAGE = '/assets/img/img-cover.webp';
 const BLOG_IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp', '.avif'];
 const PUBLIC_IMAGE_FALLBACKS = [
   DEFAULT_LISTING_IMAGE,
@@ -22,27 +20,6 @@ const PUBLIC_IMAGE_FALLBACKS = [
 const LEGACY_ALIASES = {
   'template-2026-landing-page': 'creer-landing-page-qui-convertit'
 };
-
-const AUTHOR_AVATAR = '../../../assets/img/maxens-soldan.webp';
-const AUTHOR_ROLE = 'Fondateur &amp; CEO de MSD Media';
-const TOP_ANNOUNCEMENT_HTML = `<div class="top-announcement" role="banner">
-    <span class="top-announcement__badge">Nouveau</span>
-    <span class="top-announcement__text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
-    <a class="top-announcement__link" href="https://www.noqode.fr/apporteur-affaires">Découvrir le programme</a>
-  </div>`;
-const AI_SUMMARY_HTML = `<div class="blog-ai-summary">
-          <p class="blog-ai-summary__label">Résumé généré par l'IA</p>
-          <div class="blog-ai-summary__actions">
-            <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt" href="https://chatgpt.com/?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web" target="_blank" rel="noopener noreferrer" aria-label="Poser la question dans ChatGPT">
-              <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
-              <span>Demander à ChatGPT</span>
-            </a>
-            <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude" href="https://claude.ai/new?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web" target="_blank" rel="noopener noreferrer" aria-label="Poser la question dans Claude">
-              <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
-              <span>Demander à Claude</span>
-            </a>
-          </div>
-        </div>`;
 
 // Blocs analytics/consentement partagés avec le reste du site (extraits des
 // pages villes). Injectés sur chaque page du blog pour que GA4 + analytics
@@ -557,7 +534,7 @@ function buildArticleFaqJsonLd(post = {}, pageUrl = '') {
   };
 }
 
-function getRelated(posts, current, max = 3) {
+function getRelated(posts, current, max = 4) {
   const currentTags = new Set(current.tags || []);
   return posts
     .filter((p) => p.slug !== current.slug)
@@ -568,35 +545,6 @@ function getRelated(posts, current, max = 3) {
     .sort((a, b) => b.score - a.score || new Date(b.post.date) - new Date(a.post.date))
     .slice(0, max)
     .map((x) => x.post);
-}
-
-function renderRelatedCards(related = []) {
-  const cards = related.slice(0, 3).map((postOrLink) => {
-    const slug = postOrLink.slug || slugFromBlogHref(postOrLink.href || '');
-    const href = postOrLink.href || `/blog/articles/${slug}/`;
-    const title = postOrLink.title || postOrLink.text || slug.replace(/-/g, ' ');
-    const imageSource = postOrLink.image || normalizePostImage('', slug);
-    const image = imagePathForPage(getListingImage({ ...postOrLink, slug, image: imageSource }), '../../../assets');
-
-    return `<a class="blog-related-card" href="${escapeHtml(href)}">
-          <span class="blog-related-card__media">
-            <img src="${escapeHtml(image)}" alt="" loading="lazy" decoding="async">
-            <span class="blog-related-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-          </span>
-          <span class="blog-related-card__content">
-            <h3>${escapeHtml(title)}</h3>
-          </span>
-        </a>`;
-  });
-
-  return cards.length
-    ? `<section class="blog-related"><h2>Articles liés</h2><div class="blog-related-grid">${cards.join('')}</div></section>`
-    : '';
-}
-
-function slugFromBlogHref(href = '') {
-  const match = String(href).match(/\/blog\/articles\/([^/]+)\//i);
-  return match ? match[1] : '';
 }
 
 function getInternalServiceLinks(post = {}, extraContext = '') {
@@ -729,7 +677,7 @@ function renderFullFooter(assetPrefix) {
 
 function renderArticlePage(post, allPosts) {
   const pageUrl = `${SITE_URL}/blog/articles/${post.slug}/`;
-  const imageRaw = ARTICLE_COVER_IMAGE;
+  const imageRaw = post.image || DEFAULT_IMAGE;
   const image = imagePathForPage(imageRaw, '../../../assets');
   const imageAbsolute = toAbsoluteUrl(imageRaw);
   const keywords = [post.keyword, ...(post.tags || [])].filter(Boolean).join(', ');
@@ -779,10 +727,16 @@ function renderArticlePage(post, allPosts) {
   const faqJsonLd = buildArticleFaqJsonLd(post, pageUrl);
 
   const related = getRelated(allPosts, post);
-  const minutesLabel = post.reading.minutes === 1 ? '1 minute' : `${post.reading.minutes} minutes`;
+  const articleMetaLine = `Publié le ${formatFrenchDate(post.date)} • ${post.reading.minutes} min de lecture`;
   const internalLinksHtml = renderInternalLinksSection(post, post.html || '');
 
-  const relatedHtml = renderRelatedCards(related);
+  const relatedHtml = related.length
+    ? `<section class="blog-related"><h2>Articles liés</h2><ul class="blog-related-links">${related
+        .map(
+          (r) => `<li><a href="/blog/articles/${r.slug}/">${escapeHtml(r.title)}</a></li>`
+        )
+        .join('')}</ul></section>`
+    : '';
 
   return `<!DOCTYPE html>
 <html lang="fr">
@@ -822,7 +776,6 @@ function renderArticlePage(post, allPosts) {
   <script type="application/ld+json">${JSON.stringify(faqJsonLd)}</script>
 </head>
 <body class="blog-article-page" data-asset-base="../../../assets">
-  ${TOP_ANNOUNCEMENT_HTML}
   <header class="navbar">
     <div class="nav-left">
       <a href="${SITE_URL}/"><img src="../../../assets/img/logo-black.webp" alt="MSD Media logo" class="logo" /></a>
@@ -851,47 +804,23 @@ function renderArticlePage(post, allPosts) {
 
   <main>
     <section class="hero">
-      <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${escapeHtml(post.title)}</span></p>
-      <h2 class="section-tag section-tag--dark">IA</h2>
+      <h2 class="section-tag section-tag--dark">Article</h2>
       <h1 class="hero__title"><span>${escapeHtml(post.title)}</span></h1>
-      <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> ${escapeHtml(formatFrenchDate(post.date))}</p>
-      <div class="blog-article-author blog-article-author--hero">
-        <img class="blog-article-author__avatar" src="${AUTHOR_AVATAR}" alt="${escapeHtml(AUTHOR)}" width="44" height="44" loading="lazy" decoding="async">
-        <span class="blog-article-author__info">
-          <span class="blog-article-author__name">${escapeHtml(AUTHOR)}</span>
-          <span class="blog-article-author__role">${AUTHOR_ROLE}</span>
-        </span>
-      </div>
-      <div class="blog-article-cover">
-        <img src="${image}" alt="" loading="eager" width="1600" height="686">
+      <p class="blog-article-meta">${escapeHtml(articleMetaLine)} — par <a href="/blog/articles/maxens-soldan/" class="blog-article-author-link">${escapeHtml(AUTHOR)}</a>, Fondateur &amp; CEO de MSD Media</p>
+      <div class="hero__actions" aria-label="Actions principales">
+        <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank">Réserver un appel</a>
+        <a class="hero__btn hero__btn--secondary" href="/blog/">Retour au blog</a>
       </div>
     </section>
 
     <section class="section-grid blog-article-shell">
-      <div class="blog-toc" id="blog-toc"></div>
       <article class="blog-article-content" itemscope itemtype="https://schema.org/Article">
         <meta itemprop="headline" content="${escapeHtml(post.title)}" />
         <meta itemprop="datePublished" content="${escapeHtml(post.date)}" />
         <meta itemprop="dateModified" content="${escapeHtml(post.date)}" />
         <meta itemprop="author" content="${AUTHOR}" />
-
-        <div class="blog-article-share">
-          <span class="blog-article-share__label">Partager :</span>
-          <a href="#" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Partager sur LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" data-share="x" target="_blank" rel="noopener noreferrer" aria-label="Partager sur X"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" data-share="facebook" target="_blank" rel="noopener noreferrer" aria-label="Partager sur Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        </div>
-
-        ${AI_SUMMARY_HTML}
         ${post.slug === 'maxens-soldan' ? `<img src="${escapeHtml(image)}" alt="${escapeHtml(post.title)}" loading="lazy" style="width:100%;border-radius:18px;margin-bottom:1.25rem;" />` : ''}
         ${post.html}
-
-        <div class="blog-article-share blog-article-share--bottom">
-          <span class="blog-article-share__label">Partager :</span>
-          <a href="#" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Partager sur LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" data-share="x" target="_blank" rel="noopener noreferrer" aria-label="Partager sur X"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" data-share="facebook" target="_blank" rel="noopener noreferrer" aria-label="Partager sur Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        </div>
       </article>
       ${internalLinksHtml}
       ${relatedHtml}
@@ -1055,56 +984,17 @@ function enforceTextOnlyPolicyOnAllArticlePages() {
       (html.match(/<title>([^<]+)<\/title>/i) || [])[1] ||
       slug.replace(/-/g, ' ');
     const readTime = estimateReadTimeFromHtml(articleBlock);
-    const minutesLabel = readTime.minutes === 1 ? '1 minute' : `${readTime.minutes} minutes`;
+    const metaLine = `Publié le ${formatFrenchDate(dateRaw)} • ${readTime.minutes} min de lecture`;
+    const metaHtml = `<p class="blog-article-meta">${escapeHtml(metaLine)} — par <a href="/blog/articles/maxens-soldan/" class="blog-article-author-link">${escapeHtml(AUTHOR)}</a>, Fondateur &amp; CEO de MSD Media</p>`;
 
-    // Rebuild the hero (breadcrumb, tag, title, meta, author, cover image —
-    // no CTA buttons) whether or not it's already in the new shape, keeping
-    // this pass idempotent and self-healing for hand-authored/legacy pages.
-    const heroRe = /<section class="hero">[\s\S]*?<\/section>\s*(?:<div class="blog-article-cover">[\s\S]*?<\/div>\s*)?/i;
-    const heroMatch = html.match(heroRe);
-    if (heroMatch) {
-      const oldBlock = heroMatch[0];
-      const titleSpan =
-        (oldBlock.match(/<h1 class="hero__title"><span>([\s\S]*?)<\/span><\/h1>/i) || [])[1] || escapeHtml(pageTitle);
-      // Image de couverture unique pour tous les articles (y compris legacy).
-      const coverSrc = '../../../assets/img/img-cover.webp';
-      const newBlock = `<section class="hero">
-      <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${titleSpan}</span></p>
-      <h2 class="section-tag section-tag--dark">IA</h2>
-      <h1 class="hero__title"><span>${titleSpan}</span></h1>
-      <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> ${escapeHtml(formatFrenchDate(dateRaw))}</p>
-      <div class="blog-article-author blog-article-author--hero">
-        <img class="blog-article-author__avatar" src="${AUTHOR_AVATAR}" alt="${escapeHtml(AUTHOR)}" width="44" height="44" loading="lazy" decoding="async">
-        <span class="blog-article-author__info">
-          <span class="blog-article-author__name">${escapeHtml(AUTHOR)}</span>
-          <span class="blog-article-author__role">${AUTHOR_ROLE}</span>
-        </span>
-      </div>
-      <div class="blog-article-cover">
-        <img src="${coverSrc}" alt="" loading="eager" width="1600" height="686">
-      </div>
-    </section>
-
-`;
-      html = html.replace(oldBlock, newBlock);
+    if (/class="blog-article-meta"/i.test(html)) {
+      html = html.replace(/<p class="blog-article-meta">[\s\S]*?<\/p>/i, metaHtml);
+    } else {
+      html = html.replace(/(<h1 class="hero__title">[\s\S]*?<\/h1>)/i, `$1\n      ${metaHtml}`);
     }
 
-    // Drop the duplicated author block that used to live in the white
-    // content area now that it lives in the hero.
-    html = html.replace(
-      /\s*<div class="blog-article-author">[\s\S]*?<\/div>\s*(?=<div class="blog-article-share">)/i,
-      '\n\n        '
-    );
-
-    // Drop any existing AI-summary badge first — it's rebuilt from the
-    // canonical constant below, after the image-stripping pass, since that
-    // pass would otherwise silently eat its icons on every future run.
-    html = html.replace(/\s*<div class="blog-ai-summary">[\s\S]*?<\/div>\s*/i, '\n        ');
-
     html = html.replace(/(<section class="section-grid blog-article-shell">[\s\S]*?<\/section>)/i, (sectionHtml) => {
-      let cleaned = sectionHtml.replace(/<article\b[^>]*>[\s\S]*?<\/article>/i, (articleHtml) =>
-        articleHtml.replace(/<img\b[^>]*>\s*/gi, '')
-      );
+      let cleaned = sectionHtml.replace(/<img\b[^>]*>\s*/gi, '');
       if (slug === 'maxens-soldan') {
         cleaned = cleaned.replace(
           /(<article[^>]*>[\s\S]*?<meta itemprop="author"[^>]*>\s*)/i,
@@ -1114,15 +1004,6 @@ function enforceTextOnlyPolicyOnAllArticlePages() {
       return cleaned;
     });
 
-    // Re-add the AI-summary badge inside the article. Its icons must survive
-    // the text-only image policy above, so it's injected after that pass runs.
-    if (/<div class="blog-article-share">[\s\S]*?<\/div>/i.test(html)) {
-      html = html.replace(
-        /(<div class="blog-article-share">[\s\S]*?<\/div>)/i,
-        (m) => `${m}\n        ${AI_SUMMARY_HTML}`
-      );
-    }
-
     const relatedSections = [...html.matchAll(/<section class="blog-related">[\s\S]*?<\/section>/gi)].map((m) => m[0]);
     const relatedLinks = [];
     relatedSections.forEach((section) => {
@@ -1130,23 +1011,21 @@ function enforceTextOnlyPolicyOnAllArticlePages() {
       let m;
       while ((m = linkRegex.exec(section))) {
         const href = m[1].trim();
-        const inner = m[2];
-        const cardTitle =
-          (inner.match(/<h3[^>]*>([\s\S]*?)<\/h3>/i) || [])[1]?.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-        const text = cardTitle || inner
+        const text = m[2]
           .replace(/<[^>]+>/g, ' ')
           .replace(/\s+/g, ' ')
           .trim();
-        const image =
-          (inner.match(/<img[^>]*src="([^"]+)"/i) || [])[1] ||
-          normalizePostImage('', slugFromBlogHref(href));
-        if (href && text) relatedLinks.push({ href, text, title: text, image });
+        if (href && text) relatedLinks.push({ href, text });
       }
     });
     const uniqueRelatedLinks = relatedLinks.filter(
       (link, idx, arr) => arr.findIndex((x) => x.href === link.href) === idx
     );
-    const relatedHtml = renderRelatedCards(uniqueRelatedLinks);
+    const relatedHtml = uniqueRelatedLinks.length
+      ? `<section class="blog-related"><h2>Articles liés</h2><ul class="blog-related-links">${uniqueRelatedLinks
+          .map((link) => `<li><a href="${escapeHtml(link.href)}">${escapeHtml(link.text)}</a></li>`)
+          .join('')}</ul></section>`
+      : '';
 
     html = html.replace(/<section class="blog-related">[\s\S]*?<\/section>/gi, '');
     html = html.replace(/<section class="blog-internal-links">[\s\S]*?<\/section>/gi, '');

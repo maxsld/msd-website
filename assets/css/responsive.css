@@ -10,7 +10,7 @@
   .footer-container,
   .founder-section,
   .section-reviews {
-    width: min(100%, 1200px);
+    width: min(100%, 1060px);
     margin-left: auto;
     margin-right: auto;
   }
@@ -75,28 +75,12 @@
     gap: 0.6rem;
   }
 
-  .top-announcement {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    text-align: left;
-  }
-
-  .nav-center {
-    display: none;
-  }
-
   .nav-right {
     gap: 0.5rem;
   }
 
   .hero {
     padding: 0.9rem 1rem 1.5rem;
-  }
-
-  .home-page .hero-badges {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.65rem;
   }
 
   .hero__actions {
@@ -142,25 +126,35 @@
     padding: 2.2rem 1rem 0.7rem;
   }
 
+  .realisations-grid {
+    gap: 1rem;
+  }
+
   .realisations-item,
-  .realisations-item--reverse {
+  .realisations-item:nth-child(even) {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem 0;
   }
 
-  .realisations-item--reverse .realisations-media,
-  .realisations-item--reverse .realisations-panel {
+  .realisations-copy,
+  .realisations-item:nth-child(even) .realisations-copy,
+  .realisations-media,
+  .realisations-item:nth-child(even) .realisations-media {
     order: initial;
   }
 
-  .realisations-panel {
-    gap: 0.9rem;
-    padding: 1.4rem;
+  .realisations-copy {
+    gap: 0.8rem;
   }
 
-  .realisations-media__note {
-    font-size: 1.05rem;
+  .realisations-item__description {
+    max-width: none;
+    font-size: 0.95rem;
+  }
+
+  .realisations-item__actions {
+    margin-top: 0.15rem;
   }
 
   .realisations-brand__logo {
@@ -179,7 +173,7 @@
   }
 
   .realisations-card {
-    border-radius: 0.2rem;
+    border-radius: 18px;
   }
 
   .realisations-card__overlay {
@@ -354,11 +348,6 @@
 
   .footer-cities ul {
     gap: 0.55rem 0.95rem;
-  }
-
-  .footer-columns {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 1.5rem;
   }
 }
 
@@ -614,16 +603,17 @@
     align-items: stretch;
   }
 
-  .realisations-item {
+  .realisations-grid {
+    gap: 0.85rem;
+  }
+
+  .realisations-item,
+  .realisations-item:nth-child(even) {
     padding: 0.85rem 0;
   }
 
-  .realisations-panel {
-    padding: 1.2rem;
-  }
-
   .realisations-card {
-    border-radius: 0.2rem;
+    border-radius: 15px;
   }
 
   .contact-button,
@@ -689,7 +679,6 @@
     grid-template-columns: 1fr;
     gap: 0.85rem;
     margin-bottom: 2rem;
-    padding: 1.5rem 1rem 2rem;
   }
 
   .blog-toc {

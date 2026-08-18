@@ -12,6 +12,8 @@ const BRAND = 'MSD Media';
 const AUTHOR = 'Maxens Soldan';
 const DEFAULT_IMAGE = '/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp';
 const DEFAULT_LISTING_IMAGE = '/assets/img/blog/top-5-applications-productivite-2026.jpg';
+// Image de couverture unique pour tous les articles (cover, og:image, twitter:image, JSON-LD).
+const ARTICLE_COVER_IMAGE = '/assets/img/img-cover.webp';
 const BLOG_IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp', '.avif'];
 const PUBLIC_IMAGE_FALLBACKS = [
   DEFAULT_LISTING_IMAGE,
@@ -20,6 +22,32 @@ const PUBLIC_IMAGE_FALLBACKS = [
 const LEGACY_ALIASES = {
   'template-2026-landing-page': 'creer-landing-page-qui-convertit'
 };
+
+const AUTHOR_AVATAR = '../../../assets/img/maxens-soldan.webp';
+const AUTHOR_ROLE = 'Fondateur &amp; CEO de MSD Media';
+const TOP_ANNOUNCEMENT_HTML = `<div class="top-announcement" role="banner">
+    <span class="top-announcement__badge">Nouveau</span>
+    <span class="top-announcement__text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/">Découvrir le programme</a>
+  </div>`;
+function renderAiSummaryHtml(pageUrl) {
+  const prompt = `Résume-moi cet article MSD Media : ${pageUrl}`;
+  const encodedPrompt = encodeURIComponent(prompt);
+
+  return `<div class="blog-ai-summary">
+          <p class="blog-ai-summary__label">Résumé généré par l'IA</p>
+          <div class="blog-ai-summary__actions">
+            <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt" href="https://chatgpt.com/?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Résumer cet article dans ChatGPT">
+              <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
+              <span>Demander à ChatGPT</span>
+            </a>
+            <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude" href="https://claude.ai/new?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Résumer cet article dans Claude">
+              <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+              <span>Demander à Claude</span>
+            </a>
+          </div>
+        </div>`;
+}
 
 // Blocs analytics/consentement partagés avec le reste du site (extraits des
 // pages villes). Injectés sur chaque page du blog pour que GA4 + analytics
@@ -138,11 +166,10 @@ function imagePathForPage(imagePath = '', assetPrefix = '../assets') {
   return normalized;
 }
 
-function getListingImage(post) {
-  const image = post?.image || DEFAULT_IMAGE;
-  if (post?.slug === 'maxens-soldan') return DEFAULT_LISTING_IMAGE;
-  if (String(image).includes('maxens-soldan-fondateur-ceo-msd-media-annecy')) return DEFAULT_LISTING_IMAGE;
-  return image;
+// Simplifié : plus de logique par article, toutes les cartes (articles liés,
+// listing) utilisent la même image de couverture que les pages d'articles.
+function getListingImage() {
+  return ARTICLE_COVER_IMAGE;
 }
 
 function slugify(input = '') {
@@ -534,7 +561,7 @@ function buildArticleFaqJsonLd(post = {}, pageUrl = '') {
   };
 }
 
-function getRelated(posts, current, max = 4) {
+function getRelated(posts, current, max = 3) {
   const currentTags = new Set(current.tags || []);
   return posts
     .filter((p) => p.slug !== current.slug)
@@ -545,6 +572,80 @@ function getRelated(posts, current, max = 4) {
     .sort((a, b) => b.score - a.score || new Date(b.post.date) - new Date(a.post.date))
     .slice(0, max)
     .map((x) => x.post);
+}
+
+function renderRelatedCards(related = []) {
+  const cards = related.slice(0, 3).map((postOrLink) => {
+    const slug = postOrLink.slug || slugFromBlogHref(postOrLink.href || '');
+    const href = postOrLink.href || `/blog/articles/${slug}/`;
+    const title = postOrLink.title || postOrLink.text || slug.replace(/-/g, ' ');
+    const topicTag = getCardTopicTag(postOrLink);
+    const image = imagePathForPage(getListingImage(postOrLink), '../../../assets');
+    const minutes = postOrLink.reading?.minutes || 1;
+
+    return `<a class="blog-card" href="${escapeHtml(href)}">
+          <img src="${escapeHtml(image)}" alt="" loading="lazy" decoding="async">
+          <span class="blog-card__content">
+            <h3 class="blog-card__title">${escapeHtml(title)}</h3>
+            <span class="blog-card__details">
+              <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutes} min</span>
+              <span class="blog-card__tag">${escapeHtml(topicTag.label)}</span>
+            </span>
+          </span>
+        </a>`;
+  });
+
+  return cards.length
+    ? `<section class="blog-related"><h2>Articles liés</h2><div class="blog-related-grid">${cards.join('')}</div></section>`
+    : '';
+}
+
+function renderBlogFeaturedCarousel(posts = []) {
+  const slides = posts.slice(0, 5).map((post, index) => {
+    const topicTag = getCardTopicTag(post);
+    const image = imagePathForPage(getListingImage(post), '../assets');
+    return `<a class="blog-hero-carousel__slide" href="/blog/articles/${post.slug}/" aria-label="${escapeHtml(post.title)}">
+            <span class="blog-hero-carousel__media">
+              <img src="${escapeHtml(image)}" alt="" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async">
+            </span>
+            <span class="blog-hero-carousel__content">
+              <span class="blog-hero-carousel__meta">
+                <span class="blog-featured__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${post.reading?.minutes || 1} min</span>
+                <span class="blog-featured__tag">${escapeHtml(topicTag.label)}</span>
+              </span>
+              <span class="blog-hero-carousel__title">${escapeHtml(post.title)}</span>
+              <span class="blog-hero-carousel__desc">${escapeHtml(post.description || '')}</span>
+            </span>
+          </a>`;
+  });
+
+  const dots = posts.slice(0, 5).map((post, index) =>
+    `<button class="blog-hero-carousel__dot${index === 0 ? ' is-active' : ''}" type="button" aria-label="Afficher l'article ${index + 1}" data-blog-carousel-dot="${index}"></button>`
+  );
+
+  return `<section class="blog-hero-carousel" aria-label="Derniers articles">
+      <div class="blog-hero-carousel__inner" data-blog-carousel>
+        <button class="blog-hero-carousel__arrow blog-hero-carousel__arrow--prev" type="button" aria-label="Article précédent" data-blog-carousel-prev>
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <div class="blog-hero-carousel__viewport">
+          <div class="blog-hero-carousel__track" data-blog-carousel-track>
+            ${slides.join('\n')}
+          </div>
+        </div>
+        <button class="blog-hero-carousel__arrow blog-hero-carousel__arrow--next" type="button" aria-label="Article suivant" data-blog-carousel-next>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        </button>
+        <div class="blog-hero-carousel__dots" aria-hidden="true">
+          ${dots.join('\n')}
+        </div>
+      </div>
+    </section>`;
+}
+
+function slugFromBlogHref(href = '') {
+  const match = String(href).match(/\/blog\/articles\/([^/]+)\//i);
+  return match ? match[1] : '';
 }
 
 function getInternalServiceLinks(post = {}, extraContext = '') {
@@ -593,19 +694,136 @@ function getInternalServiceLinks(post = {}, extraContext = '') {
   ];
 }
 
-function renderInternalLinksSection(post = {}, extraContext = '') {
-  const links = getInternalServiceLinks(post, extraContext);
-  if (!links.length) return '';
-  return `<section class="blog-internal-links"><h2>Liens utiles</h2><ul class="blog-internal-links__list">${links
-    .map((link) => `<li><a href="${escapeHtml(link.href)}">${escapeHtml(link.label)}</a></li>`)
-    .join('')}</ul></section>`;
+function renderSiteHeader() {
+  return `<header class="navbar">
+    <div class="nav-left">
+      <a href="${SITE_URL}/" aria-label="Accueil MSD Media">
+        <img height="151" width="372" src="${SITE_URL}/assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager">
+        <span style="position:absolute;left:-9999px;">Accueil MSD Media</span>
+      </a>
+      <div class="nav-menu" data-nav-menu>
+        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
+          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
+          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
+          <a href="${SITE_URL}/">Accueil</a>
+          <a href="${SITE_URL}/realisations/">Études de cas</a>
+          <a href="${SITE_URL}/blog/">Blog</a>
+          <a href="${SITE_URL}/contact/">Contact</a>
+          <a href="${SITE_URL}/recrutement/">Recrutement</a>
+          <a href="${SITE_URL}/affiliation/">Affiliation</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-center" aria-label="Navigation principale">
+      <div class="nav-dropdown-item">
+        <a href="${SITE_URL}/#services">Services <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="${SITE_URL}/landing-page-annecy/">Landing page</a>
+              <a href="${SITE_URL}/creation-site-web-annecy/">Création de site web</a>
+              <a href="${SITE_URL}/refonte-site-web-annecy/">Refonte de site web</a>
+              <a href="${SITE_URL}/audit-seo-annecy/">Audit SEO</a>
+              <a href="${SITE_URL}/seo-local-annecy/">SEO local</a>
+              <a href="${SITE_URL}/#ai-proof">GEO &amp; visibilité IA</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="${SITE_URL}/assets/img/img-cover.webp" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown-item">
+        <a href="${SITE_URL}/blog/">Ressources <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="${SITE_URL}/blog/">Blog</a>
+              <a href="${SITE_URL}/glossaire/">Glossaire Web &amp; SEO</a>
+              <a href="${SITE_URL}/realisations/">Réalisations</a>
+              <a href="${SITE_URL}/avis-clients/">Avis clients</a>
+              <a href="${SITE_URL}/recrutement/">Recrutement</a>
+              <a href="${SITE_URL}/#faq">FAQ</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="${SITE_URL}/assets/img/img-cover.webp" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown-item">
+        <a href="${SITE_URL}/#secteurs">Secteur <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="${SITE_URL}/site-web-avocat/">Avocats &amp; juristes</a>
+              <a href="${SITE_URL}/site-web-medecin/">Médecins &amp; santé</a>
+              <a href="${SITE_URL}/site-web-immobilier/">Immobilier</a>
+              <a href="${SITE_URL}/site-web-restaurant/">Restaurants &amp; cafés</a>
+              <a href="${SITE_URL}/site-web-artisan/">Artisans &amp; TPE</a>
+              <a href="${SITE_URL}/site-web-architecte/">Architectes</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="${SITE_URL}/assets/img/img-cover.webp" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="${SITE_URL}/realisations/">Références</a>
+      <a href="${SITE_URL}/tarifs/">Tarifs</a>
+    </nav>
+
+    <div class="nav-right">
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank" data-i18n="nav_call">Réserver un appel</a>
+      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </header>`;
 }
 
 function renderBookingSection(assetPrefix) {
-  return `<section class="booking-section" id="rdv">
+  return `<section class="ai-proof section-grid" id="ai-proof">
+    <div class="ai-proof__inner">
+      <img
+        class="ai-proof__msd-logo"
+        src="https://msd-media.com/assets/img/logo-black.webp"
+        alt="MSD Media"
+        loading="lazy"
+        decoding="async"
+      >
+      <h3 class="section-title section-title--dark">Toujours pas sûr que MSD Media soit fait pour vous ?</h3>
+      <p class="ai-proof__lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
+      <div class="ai-proof__actions">
+        <a
+          class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt"
+          href="https://chatgpt.com/?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Poser la question dans ChatGPT"
+        >
+          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
+          <span>Demander à ChatGPT</span>
+        </a>
+        <a
+          class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude"
+          href="https://claude.ai/new?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Poser la question dans Claude"
+        >
+          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+          <span>Demander à Claude</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section" id="rdv">
     <div class="booking-section__inner">
-      <h2 class="section-tag section-tag--light">Réserver un appel</h2>
-      <h2 class="section-title section-title--light">Libérez le véritable <br> potentiel de votre site.</h2>
       <div class="booking-section__embed">
         <iframe
           src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&theme=dark"
@@ -622,18 +840,16 @@ function renderFullFooter(assetPrefix) {
   return `<footer class="site-footer">
     <div class="footer-container">
       <div class="footer-left">
-        <img src="${assetPrefix}/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo">
+        <img height="151" width="372" src="${SITE_URL}/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
         <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
       </div>
       <div class="footer-offices">
         <article class="footer-office-card">
-          <h4 class="footer-office-city">Annecy</h4>
-          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
+          <p class="footer-office-city">Annecy</p>
           <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
         </article>
         <article class="footer-office-card">
-          <h4 class="footer-office-city">Munich</h4>
-          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
+          <p class="footer-office-city">Munich</p>
           <p class="footer-office-address">Munich, Bavière, Allemagne</p>
         </article>
       </div>
@@ -665,19 +881,67 @@ function renderFullFooter(assetPrefix) {
         <li><a href="https://msd-media.com/agence-web-clermont-ferrand/">Clermont-Ferrand</a></li>
       </ul>
     </div>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="footer-column__title">Entreprise</p>
+        <ul>
+          <li><a href="https://msd-media.com/a-propos/">À propos</a></li>
+          <li><a href="https://msd-media.com/realisations/">Références</a></li>
+          <li><a href="https://msd-media.com/tarifs/">Tarifs</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/contact/">Contact commercial</a></li>
+          <li><a href="https://msd-media.com/affiliation/">Apporteur d'affaires</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="services">
+        <p class="footer-column__title">Services</p>
+        <ul>
+          <li><a href="https://msd-media.com/landing-page-annecy/">Landing page</a></li>
+          <li><a href="https://msd-media.com/creation-site-web-annecy/">Création de site web</a></li>
+          <li><a href="https://msd-media.com/refonte-site-web-annecy/">Refonte de site web</a></li>
+          <li><a href="https://msd-media.com/audit-seo-annecy/">Audit SEO</a></li>
+          <li><a href="https://msd-media.com/seo-local-annecy/">SEO local</a></li>
+          <li><a href="https://msd-media.com/#ai-proof">GEO & visibilité IA</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-column__title">Ressources</p>
+        <ul>
+          <li><a href="https://msd-media.com/blog/">Blog</a></li>
+          <li><a href="https://msd-media.com/glossaire/">Glossaire Web & SEO</a></li>
+          <li><a href="https://msd-media.com/realisations/">Réalisations</a></li>
+          <li><a href="https://msd-media.com/recrutement/">Recrutement</a></li>
+          <li><a href="https://msd-media.com/#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="secteurs">
+        <p class="footer-column__title">Secteurs</p>
+        <ul>
+          <li><a href="https://msd-media.com/site-web-avocat/">Avocats & juristes</a></li>
+          <li><a href="https://msd-media.com/site-web-medecin/">Médecins & santé</a></li>
+          <li><a href="https://msd-media.com/site-web-immobilier/">Immobilier</a></li>
+          <li><a href="https://msd-media.com/site-web-restaurant/">Restaurants & cafés</a></li>
+          <li><a href="https://msd-media.com/site-web-artisan/">Artisans & TPE</a></li>
+          <li><a href="https://msd-media.com/site-web-architecte/">Architectes</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="footer-legal">
       <a href="https://msd-media.com/terms/mentions.html" target="_blank">Mentions légales</a>
       <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">Politique de confidentialité</a>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 MSD Media. Tous droits réservés.</p>
+      <p>&copy; <span class="copyright-year">2026</span> MSD Media. Tous droits réservés.</p>
     </div>
   </footer>`;
 }
 
 function renderArticlePage(post, allPosts) {
   const pageUrl = `${SITE_URL}/blog/articles/${post.slug}/`;
-  const imageRaw = post.image || DEFAULT_IMAGE;
+  const imageRaw = ARTICLE_COVER_IMAGE;
   const image = imagePathForPage(imageRaw, '../../../assets');
   const imageAbsolute = toAbsoluteUrl(imageRaw);
   const keywords = [post.keyword, ...(post.tags || [])].filter(Boolean).join(', ');
@@ -727,16 +991,8 @@ function renderArticlePage(post, allPosts) {
   const faqJsonLd = buildArticleFaqJsonLd(post, pageUrl);
 
   const related = getRelated(allPosts, post);
-  const articleMetaLine = `Publié le ${formatFrenchDate(post.date)} • ${post.reading.minutes} min de lecture`;
-  const internalLinksHtml = renderInternalLinksSection(post, post.html || '');
-
-  const relatedHtml = related.length
-    ? `<section class="blog-related"><h2>Articles liés</h2><ul class="blog-related-links">${related
-        .map(
-          (r) => `<li><a href="/blog/articles/${r.slug}/">${escapeHtml(r.title)}</a></li>`
-        )
-        .join('')}</ul></section>`
-    : '';
+  const minutesLabel = post.reading.minutes === 1 ? '1 minute' : `${post.reading.minutes} minutes`;
+  const relatedHtml = renderRelatedCards(related);
 
   return `<!DOCTYPE html>
 <html lang="fr">
@@ -776,55 +1032,38 @@ function renderArticlePage(post, allPosts) {
   <script type="application/ld+json">${JSON.stringify(faqJsonLd)}</script>
 </head>
 <body class="blog-article-page" data-asset-base="../../../assets">
-  <header class="navbar">
-    <div class="nav-left">
-      <a href="${SITE_URL}/"><img src="../../../assets/img/logo-black.webp" alt="MSD Media logo" class="logo" /></a>
-      <div class="nav-menu" data-nav-menu>
-        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
-          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
-        </button>
-        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
-          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
-          <a href="${SITE_URL}/">Accueil</a>
-          <a href="${SITE_URL}/blog/">Blog</a>
-          <a href="${SITE_URL}/etudes-de-cas/">Études de cas</a>
-          <a href="${SITE_URL}/contact/">Contact</a>
-          <a href="${SITE_URL}/recrutement/">Recrutement</a>
-          <a href="${SITE_URL}/affiliation/">Affiliation</a>
-        </div>
-      </div>
-    </div>
-    <div class="nav-right">
-      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
-      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-    </div>
-  </header>
+  ${TOP_ANNOUNCEMENT_HTML}
+  ${renderSiteHeader()}
 
   <main>
     <section class="hero">
-      <h2 class="section-tag section-tag--dark">Article</h2>
-      <h1 class="hero__title"><span>${escapeHtml(post.title)}</span></h1>
-      <p class="blog-article-meta">${escapeHtml(articleMetaLine)} — par <a href="/blog/articles/maxens-soldan/" class="blog-article-author-link">${escapeHtml(AUTHOR)}</a>, Fondateur &amp; CEO de MSD Media</p>
-      <div class="hero__actions" aria-label="Actions principales">
-        <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank">Réserver un appel</a>
-        <a class="hero__btn hero__btn--secondary" href="/blog/">Retour au blog</a>
+      <div class="blog-article-hero__row">
+        <div class="blog-article-hero__text">
+          <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${escapeHtml(post.title)}</span></p>
+          <h2 class="section-tag section-tag--dark">IA</h2>
+          <h1 class="hero__title"><span>${escapeHtml(post.title)}</span></h1>
+          <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> ${escapeHtml(formatFrenchDate(post.date))}</p>
+        </div>
+        <div class="blog-article-cover">
+          <img src="${image}" alt="" loading="eager" width="1600" height="686">
+        </div>
       </div>
     </section>
 
     <section class="section-grid blog-article-shell">
+      <div class="blog-toc" id="blog-toc"></div>
       <article class="blog-article-content" itemscope itemtype="https://schema.org/Article">
         <meta itemprop="headline" content="${escapeHtml(post.title)}" />
         <meta itemprop="datePublished" content="${escapeHtml(post.date)}" />
         <meta itemprop="dateModified" content="${escapeHtml(post.date)}" />
         <meta itemprop="author" content="${AUTHOR}" />
+
+        ${renderAiSummaryHtml(pageUrl)}
         ${post.slug === 'maxens-soldan' ? `<img src="${escapeHtml(image)}" alt="${escapeHtml(post.title)}" loading="lazy" style="width:100%;border-radius:18px;margin-bottom:1.25rem;" />` : ''}
         ${post.html}
       </article>
-      ${internalLinksHtml}
-      ${relatedHtml}
     </section>
+    ${relatedHtml}
   </main>
 
   ${renderBookingSection('../../../assets')}
@@ -839,12 +1078,16 @@ function renderBlogIndex(posts) {
   const cards = posts
     .map((post) => {
       const topicTag = getCardTopicTag(post);
-      return `<a class="case-study-card case-study-card--text case-study-card--clickable" href="/blog/articles/${post.slug}/">
-        <span class="case-study-card__overlay" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
-        <span class="case-study-card__tag ${topicTag.className}">${escapeHtml(topicTag.label)}</span>
-        <h3 class="case-study-card__title">${escapeHtml(post.title)}</h3>
-        <p class="case-study-card__meta">${escapeHtml(formatFrenchDate(post.date))} • ${post.reading?.minutes || 1} min de lecture</p>
-        <p class="case-study-card__description">${escapeHtml(post.description)}</p>
+      const image = imagePathForPage(getListingImage(post), '../assets');
+      return `<a href="/blog/articles/${post.slug}/" class="blog-card" data-title="${escapeHtml(post.title.toLowerCase())}" data-desc="${escapeHtml((post.description || '').toLowerCase())}">
+        <img src="${escapeHtml(image)}" alt="" loading="lazy" decoding="async">
+        <span class="blog-card__content">
+          <h3 class="blog-card__title">${escapeHtml(post.title)}</h3>
+          <span class="blog-card__details">
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${post.reading?.minutes || 1} min</span>
+            <span class="blog-card__tag">${escapeHtml(topicTag.label)}</span>
+          </span>
+        </span>
       </a>`;
     })
     .join('\n');
@@ -873,44 +1116,24 @@ function renderBlogIndex(posts) {
   <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous"></script>
 </head>
 <body class="blog-index-page" data-asset-base="../assets">
-  <header class="navbar">
-    <div class="nav-left">
-      <a href="${SITE_URL}/"><img src="../assets/img/logo-black.webp" alt="MSD Media logo" class="logo" /></a>
-      <div class="nav-menu" data-nav-menu>
-        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
-          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
-        </button>
-        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
-          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
-          <a href="${SITE_URL}/">Accueil</a>
-          <a href="${SITE_URL}/etudes-de-cas/">Études de cas</a>
-          <a href="${SITE_URL}/blog/">Blog</a>
-          <a href="${SITE_URL}/contact/">Contact</a>
-          <a href="${SITE_URL}/recrutement/">Recrutement</a>
-          <a href="${SITE_URL}/affiliation/">Affiliation</a>
-        </div>
-      </div>
-    </div>
-    <div class="nav-right">
-      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
-      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-    </div>
-  </header>
+  ${renderSiteHeader()}
 
   <main>
     <section class="hero">
-      <h2 class="section-tag section-tag--dark">Blog</h2>
-      <h1 class="hero__title"><span>Blog MSD Media</span><span class="hero__title-word-wrap"><span>articles web, SEO et conversion.</span></span></h1>
+      <h2 class="section-tag section-tag--dark">Blog MSD Media</h2>
+      <h1 class="hero__title"><span>Conseils, analyses et stratégies</span></h1>
+      <p class="hero__subheading">Des guides concrets pour mieux comprendre le web, améliorer votre visibilité et transformer votre site en levier de croissance.</p>
       <div class="hero__actions" aria-label="Actions principales">
         <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank">Réserver un appel</a>
         <a class="hero__btn hero__btn--secondary" href="/agence-web-annecy/">Découvrir l'agence</a>
       </div>
     </section>
 
+    ${renderBlogFeaturedCarousel(posts)}
+
     <section class="blog-search" aria-label="Recherche d'articles">
       <div class="blog-search__inner">
+        <h2 class="blog-grid-heading">Nos derniers articles</h2>
         <span class="blog-search__icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></span>
         <input id="blog-search-input" class="blog-search__input" type="search" placeholder="Rechercher un article..." autocomplete="off" />
         <p id="blog-search-empty" class="blog-search__empty" hidden>Aucun article trouvé.</p>
@@ -919,7 +1142,7 @@ function renderBlogIndex(posts) {
 
     <section class="case-studies-section">
       <div class="case-studies-inner">
-        <div class="case-studies-grid">
+        <div class="blog-grid">
           ${cards}
         </div>
       </div>
@@ -932,18 +1155,41 @@ function renderBlogIndex(posts) {
   <script src="../assets/js/script.js"></script>
   <script>
     (() => {
+      const root = document.querySelector('[data-blog-carousel]');
+      if (!root) return;
+      if (root.dataset.carouselReady === 'true') return;
+      const track = root.querySelector('[data-blog-carousel-track]');
+      const slides = Array.from(root.querySelectorAll('.blog-hero-carousel__slide'));
+      const dots = Array.from(root.querySelectorAll('[data-blog-carousel-dot]'));
+      const prev = root.querySelector('[data-blog-carousel-prev]');
+      const next = root.querySelector('[data-blog-carousel-next]');
+      if (!track || !slides.length) return;
+
+      let current = 0;
+      const goTo = (index) => {
+        current = (index + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + current * 100 + '%)';
+        dots.forEach((dot, dotIndex) => dot.classList.toggle('is-active', dotIndex === current));
+      };
+
+      prev?.addEventListener('click', () => goTo(current - 1));
+      next?.addEventListener('click', () => goTo(current + 1));
+      dots.forEach((dot, index) => dot.addEventListener('click', () => goTo(index)));
+    })();
+
+    (() => {
       const input = document.getElementById('blog-search-input');
       const empty = document.getElementById('blog-search-empty');
-      const cards = Array.from(document.querySelectorAll('.case-study-card'));
+      const cards = Array.from(document.querySelectorAll('.blog-card'));
       if (!input || !cards.length) return;
 
       const applyFilter = () => {
         const query = input.value.trim().toLowerCase();
         let visible = 0;
         cards.forEach((card) => {
-          const title = card.querySelector('.case-study-card__title')?.textContent || '';
-          const tag = card.querySelector('.case-study-card__tag')?.textContent || '';
-          const description = card.querySelector('.case-study-card__description')?.textContent || '';
+          const title = card.querySelector('.blog-card__title')?.textContent || '';
+          const tag = card.querySelector('.blog-card__tag')?.textContent || '';
+          const description = card.dataset.desc || '';
           const haystack = (title + ' ' + tag + ' ' + description).toLowerCase();
           const matches = !query || haystack.includes(query);
           card.style.display = matches ? '' : 'none';
@@ -959,8 +1205,44 @@ function renderBlogIndex(posts) {
 </html>`;
 }
 
-function enforceTextOnlyPolicyOnAllArticlePages() {
+function removeClassedDivBlock(html, className) {
+  const classNeedle = `class="${className}`;
+  let output = html;
+  let start = output.indexOf(classNeedle);
+
+  while (start !== -1) {
+    start = output.lastIndexOf('<div', start);
+    if (start === -1) break;
+
+    const tagRe = /<\/?div\b[^>]*>/gi;
+    tagRe.lastIndex = start;
+    let depth = 0;
+    let end = -1;
+    let match;
+
+    while ((match = tagRe.exec(output))) {
+      if (match[0].startsWith('</')) {
+        depth -= 1;
+        if (depth === 0) {
+          end = tagRe.lastIndex;
+          break;
+        }
+      } else {
+        depth += 1;
+      }
+    }
+
+    if (end === -1) break;
+    output = `${output.slice(0, start)}\n        ${output.slice(end)}`;
+    start = output.indexOf(classNeedle, start);
+  }
+
+  return output;
+}
+
+function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
   if (!fs.existsSync(OUTPUT_DIR)) return;
+  const postsBySlug = new Map(allPosts.map((post) => [post.slug, post]));
   const dirs = fs
     .readdirSync(OUTPUT_DIR, { withFileTypes: true })
     .filter((d) => d.isDirectory())
@@ -970,6 +1252,7 @@ function enforceTextOnlyPolicyOnAllArticlePages() {
     const filePath = path.join(OUTPUT_DIR, slug, 'index.html');
     if (!fs.existsSync(filePath)) return;
     let html = fs.readFileSync(filePath, 'utf8');
+    html = html.replace(/<header class="navbar">[\s\S]*?<\/header>/i, renderSiteHeader());
 
     const dateRaw =
       (html.match(/"datePublished"\s*:\s*"([^"]+)"/i) || [])[1] ||
@@ -984,17 +1267,53 @@ function enforceTextOnlyPolicyOnAllArticlePages() {
       (html.match(/<title>([^<]+)<\/title>/i) || [])[1] ||
       slug.replace(/-/g, ' ');
     const readTime = estimateReadTimeFromHtml(articleBlock);
-    const metaLine = `Publié le ${formatFrenchDate(dateRaw)} • ${readTime.minutes} min de lecture`;
-    const metaHtml = `<p class="blog-article-meta">${escapeHtml(metaLine)} — par <a href="/blog/articles/maxens-soldan/" class="blog-article-author-link">${escapeHtml(AUTHOR)}</a>, Fondateur &amp; CEO de MSD Media</p>`;
+    const minutesLabel = readTime.minutes === 1 ? '1 minute' : `${readTime.minutes} minutes`;
 
-    if (/class="blog-article-meta"/i.test(html)) {
-      html = html.replace(/<p class="blog-article-meta">[\s\S]*?<\/p>/i, metaHtml);
-    } else {
-      html = html.replace(/(<h1 class="hero__title">[\s\S]*?<\/h1>)/i, `$1\n      ${metaHtml}`);
+    // Rebuild the hero (breadcrumb, tag, title, meta, author, cover image —
+    // no CTA buttons) whether or not it's already in the new shape, keeping
+    // this pass idempotent and self-healing for hand-authored/legacy pages.
+    const heroRe = /<section class="hero">[\s\S]*?<\/section>\s*(?:<div class="blog-article-cover">[\s\S]*?<\/div>\s*)?/i;
+    const heroMatch = html.match(heroRe);
+    if (heroMatch) {
+      const oldBlock = heroMatch[0];
+      const titleSpan =
+        (oldBlock.match(/<h1 class="hero__title"><span>([\s\S]*?)<\/span><\/h1>/i) || [])[1] || escapeHtml(pageTitle);
+      // Image de couverture unique pour tous les articles (y compris legacy).
+      const coverSrc = '../../../assets/img/img-cover.webp';
+      const newBlock = `<section class="hero">
+      <div class="blog-article-hero__row">
+        <div class="blog-article-hero__text">
+          <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${titleSpan}</span></p>
+          <h2 class="section-tag section-tag--dark">IA</h2>
+          <h1 class="hero__title"><span>${titleSpan}</span></h1>
+          <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> ${escapeHtml(formatFrenchDate(dateRaw))}</p>
+        </div>
+        <div class="blog-article-cover">
+          <img src="${coverSrc}" alt="" loading="eager" width="1600" height="686">
+        </div>
+      </div>
+    </section>
+
+`;
+      html = html.replace(oldBlock, newBlock);
     }
 
+    // Drop the duplicated author block that used to live in the white
+    // content area now that it lives in the hero.
+    html = html.replace(
+      /\s*<div class="blog-article-author">[\s\S]*?<\/div>\s*(?=<div class="blog-article-share">)/i,
+      '\n\n        '
+    );
+
+    // Drop share widgets and rebuild the AI summary from the canonical
+    // constant below. The summary has nested divs, so remove it structurally.
+    html = html.replace(/\s*<div class="blog-article-share(?: blog-article-share--bottom)?">[\s\S]*?<\/div>\s*/gi, '\n        ');
+    html = removeClassedDivBlock(html, 'blog-ai-summary');
+
     html = html.replace(/(<section class="section-grid blog-article-shell">[\s\S]*?<\/section>)/i, (sectionHtml) => {
-      let cleaned = sectionHtml.replace(/<img\b[^>]*>\s*/gi, '');
+      let cleaned = sectionHtml.replace(/<article\b[^>]*>[\s\S]*?<\/article>/i, (articleHtml) =>
+        articleHtml.replace(/<img\b[^>]*>\s*/gi, '')
+      );
       if (slug === 'maxens-soldan') {
         cleaned = cleaned.replace(
           /(<article[^>]*>[\s\S]*?<meta itemprop="author"[^>]*>\s*)/i,
@@ -1004,6 +1323,15 @@ function enforceTextOnlyPolicyOnAllArticlePages() {
       return cleaned;
     });
 
+    // Re-add the AI-summary badge inside the article. Its icons must survive
+    // the text-only image policy above, so it's injected after that pass runs.
+    if (/<meta itemprop="author"[^>]*>\s*/i.test(html)) {
+      html = html.replace(
+        /(<meta itemprop="author"[^>]*>\s*)/i,
+        (m) => `${m}\n        ${renderAiSummaryHtml(pageUrl)}`
+      );
+    }
+
     const relatedSections = [...html.matchAll(/<section class="blog-related">[\s\S]*?<\/section>/gi)].map((m) => m[0]);
     const relatedLinks = [];
     relatedSections.forEach((section) => {
@@ -1011,30 +1339,47 @@ function enforceTextOnlyPolicyOnAllArticlePages() {
       let m;
       while ((m = linkRegex.exec(section))) {
         const href = m[1].trim();
-        const text = m[2]
+        const inner = m[2];
+        const cardTitle =
+          (inner.match(/<h3[^>]*>([\s\S]*?)<\/h3>/i) || [])[1]?.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+        const text = cardTitle || inner
           .replace(/<[^>]+>/g, ' ')
           .replace(/\s+/g, ' ')
           .trim();
-        if (href && text) relatedLinks.push({ href, text });
+        const image =
+          (inner.match(/<img[^>]*src="([^"]+)"/i) || [])[1] ||
+          normalizePostImage('', slugFromBlogHref(href));
+        if (href && text) {
+          const relatedSlug = slugFromBlogHref(href);
+          relatedLinks.push(postsBySlug.get(relatedSlug) || { slug: relatedSlug, href, text, title: text, image });
+        }
       }
     });
-    const uniqueRelatedLinks = relatedLinks.filter(
-      (link, idx, arr) => arr.findIndex((x) => x.href === link.href) === idx
-    );
-    const relatedHtml = uniqueRelatedLinks.length
-      ? `<section class="blog-related"><h2>Articles liés</h2><ul class="blog-related-links">${uniqueRelatedLinks
-          .map((link) => `<li><a href="${escapeHtml(link.href)}">${escapeHtml(link.text)}</a></li>`)
-          .join('')}</ul></section>`
-      : '';
+    const currentPost = postsBySlug.get(slug) || {
+      slug,
+      title: pageTitle,
+      date: dateRaw,
+      tags: []
+    };
+    const relatedFallbacks = getRelated(allPosts, currentPost, 3);
+    const uniqueRelatedLinks = [...relatedLinks, ...relatedFallbacks].filter((link, idx, arr) => {
+      const linkSlug = link.slug || slugFromBlogHref(link.href || '');
+      const linkKey = linkSlug || link.href;
+      if (!linkKey || linkSlug === slug) return false;
+      return arr.findIndex((x) => {
+        const xSlug = x.slug || slugFromBlogHref(x.href || '');
+        return (xSlug || x.href) === linkKey;
+      }) === idx;
+    });
+    const relatedHtml = renderRelatedCards(uniqueRelatedLinks);
 
     html = html.replace(/<section class="blog-related">[\s\S]*?<\/section>/gi, '');
     html = html.replace(/<section class="blog-internal-links">[\s\S]*?<\/section>/gi, '');
-    const legacyTitle =
-      (html.match(/<meta property="og:title" content="([^"]+)"/i) || [])[1] ||
-      (html.match(/<h1 class="hero__title">[\s\S]*?<span>([\s\S]*?)<\/span>/i) || [])[1] ||
-      slug.replace(/-/g, ' ');
-    const internalLinksHtml = renderInternalLinksSection({ slug, title: legacyTitle }, articleBlock);
-    html = html.replace(/(<\/article>\s*)<\/section>/i, `$1${internalLinksHtml || ''}${relatedHtml || ''}</section>`);
+    html = html.replace(/(<\/article>\s*)<\/section>/i, `$1</section>${relatedHtml || ''}`);
+    html = html.replace(/\s*<section class="ai-proof[\s\S]*?<\/section>\s*/gi, '\n');
+    html = html.replace(/\s*<section class="booking-section"[\s\S]*?<\/section>\s*/gi, '\n');
+    html = html.replace(/\s*<footer class="site-footer">[\s\S]*?<\/footer>\s*/gi, '\n');
+    html = html.replace(/<\/main>/i, `</main>\n\n  ${renderBookingSection('../../../assets')}\n\n  ${renderFullFooter('../../../assets')}`);
 
     if (!/"@type"\s*:\s*"FAQPage"/i.test(html)) {
       const faqJsonLd = buildArticleFaqJsonLd({ title: pageTitle, html: articleBlock }, pageUrl);
@@ -1252,7 +1597,7 @@ function main() {
   fs.writeFileSync(path.join(ROOT, 'blog', 'sitemap.xml'), renderBlogSitemap(allPostsForIndex), 'utf8');
   fs.writeFileSync(path.join(ROOT, 'blog', 'articles-manifest.json'), JSON.stringify(posts, null, 2), 'utf8');
 
-  enforceTextOnlyPolicyOnAllArticlePages();
+  enforceTextOnlyPolicyOnAllArticlePages(allPostsForIndex);
   patchMainSitemap(allPostsForIndex);
 
   console.log(`✅ ${posts.length} articles générés dans blog/articles/`);

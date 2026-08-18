@@ -137,4 +137,4 @@ Pas systématiquement — la bonne question est : cet article a-t-il du trafic, 
 
 Le réflexe naturel face à un SEO qui stagne est de publier plus de contenu. Le maillage interne inverse la logique : **avant d'ajouter des pages, faites travailler ensemble celles qui existent**. Auditez, priorisez vos pages business, corrigez les ancres, comblez les trous, élaguez les doublons — la plupart des sites gagnent plus avec cette méthode qu'avec six mois de publication supplémentaire.
 
-**Vous voulez savoir ce que vaut le maillage de votre site ?** [Demandez un audit SEO gratuit](https://msd-media.com/audit-seo-gratuit/) : nous cartographions vos liens internes, identifions vos pages orphelines et vos cannibalisations, et vous livrons un plan d'action priorisé.
+**Vous voulez savoir ce que vaut le maillage de votre site ?** [Demandez un audit SEO gratuit](https://msd-media.com/audit-seo-annecy/) : nous cartographions vos liens internes, identifions vos pages orphelines et vos cannibalisations, et vous livrons un plan d'action priorisé.

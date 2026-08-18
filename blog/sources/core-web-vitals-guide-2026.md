@@ -141,4 +141,4 @@ PageSpeed Insights simule sur mobile un appareil de milieu de gamme en connexion
 
 Les Core Web Vitals ne sont pas une case technique à cocher : ils mesurent ce que vivent vos visiteurs pendant les 3 premières secondes — celles qui décident s'ils restent. Les seuils à retenir : **LCP ≤ 2,5 s, INP ≤ 200 ms, CLS ≤ 0,1**, mesurés sur mobile, sur données réelles.
 
-**Envie de savoir où en est votre site ?** Testez-le sur PageSpeed Insights, ou [demandez un audit de performance gratuit](https://msd-media.com/audit-seo-gratuit/) : nous analysons vos Core Web Vitals et identifions les 3 actions au meilleur retour sur investissement pour votre cas précis.
+**Envie de savoir où en est votre site ?** Testez-le sur PageSpeed Insights, ou [demandez un audit de performance gratuit](https://msd-media.com/audit-seo-annecy/) : nous analysons vos Core Web Vitals et identifions les 3 actions au meilleur retour sur investissement pour votre cas précis.

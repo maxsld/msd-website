@@ -1,105 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recrutement MSD Media | Setter (Commercial)</title>
   <meta name="description" content="Postulez chez MSD Media sur le poste Setter (commercial)." />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#000000" />
   <link rel="canonical" href="https://msd-media.com/recrutement/" />
   <meta property="og:title" content="Recrutement MSD Media | Setter (Commercial)" />
   <meta property="og:description" content="Postulez chez MSD Media sur le poste Setter (commercial)." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://msd-media.com/recrutement/" />
   <meta property="og:image" content="https://msd-media.com/assets/img/img-cover.webp" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="https://msd-media.com/assets/img/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="https://msd-media.com/assets/img/favicon.svg" />
   <link rel="shortcut icon" href="https://msd-media.com/assets/img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous"></script>
   <style>
-    :root {
-      --bg: #000;
-      --text: #f6f6f6;
-      --muted: #b7b7b7;
-      --line: rgba(255, 255, 255, 0.18);
-      --chip: rgba(255, 255, 255, 0.1);
+    /* Section candidature — spécifique à cette page, sur les tokens du design system */
+    .recruit-page .hero .section-tag--dark {
+      border-color: rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.82);
+      border-radius: 0.2rem;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      min-height: 100vh;
-      background: var(--bg);
-      color: var(--text);
-      font-family: "Inter", sans-serif;
-      letter-spacing: -0.02em;
-      display: grid;
-      place-items: center;
-      padding: 2.5rem 1rem;
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: -180px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: min(920px, 94vw);
-      height: 390px;
-      border-radius: 999px;
-      background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.07) 35%, rgba(255, 255, 255, 0) 75%);
-      filter: blur(36px);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .recruitment {
-      width: min(1000px, 100%);
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-
-    .recruitment__logo {
-      width: 72px;
-      height: auto;
-      margin: 0 auto 1.1rem;
-      filter: invert(1) brightness(1.9);
-      display: block;
+    .recruit-page .hero__title {
+      font-size: clamp(2.05rem, 5.8vw, 3rem);
       margin-bottom: 4rem;
     }
 
-    .recruitment h1 {
-      font-size: clamp(1.65rem, 5vw, 4rem);
-      font-weight: 600;
-      line-height: 1.05;
-      letter-spacing: -0.05em;
-      margin-bottom: 3rem;
+    .recruit-apply {
+      max-width: 700px;
+      margin: 0 auto 5rem;
+      padding: 0 2rem;
     }
 
-    .chips {
+    .recruit-chips {
       display: flex;
       justify-content: center;
       gap: 0.55rem;
       flex-wrap: wrap;
-      margin-bottom: 3rem;
+      margin-bottom: 2.2rem;
+      margin-top: -1.5rem;
     }
 
-    .chip {
+    .recruit-chip {
       display: inline-flex;
-      border: 1px solid var(--line);
+      border: 1px solid #2f6bff;
       padding: .6rem 1.2rem;
-      border-radius: 999px;
-      background: var(--chip);
-      color: #fff;
+      border-radius: 0.2rem;
+      background: #1b2033;
+      color: #ffffff;
       font-family: "Inter", sans-serif;
       font-size: 0.86rem;
       font-weight: 400;
@@ -110,93 +66,89 @@
       transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
     }
 
-    .chip.is-active {
-      background: #fff;
-      color: #000;
-      border-color: #fff;
+    .recruit-chip.is-active {
+      background: #2f6bff;
+      color: #fff;
+      border-color: #2f6bff;
     }
 
-    .form {
-      text-align: left;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .field {
+    .recruit-field {
       display: grid;
       gap: 0.45rem;
       margin-bottom: 0.82rem;
     }
 
-    .field-row {
+    .recruit-field-row {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 0.82rem;
     }
 
-    .field input,
-    .field select,
-    .field textarea {
+    .recruit-field input,
+    .recruit-field select,
+    .recruit-field textarea {
       width: 100%;
-      border: 1px solid var(--line);
-      border-radius: 0.78rem;
-      background: transparent;
-      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 0.2rem;
+      background: rgba(255, 255, 255, 0.04);
+      color: #ffffff;
       font: inherit;
-      padding: 0.75rem 0.82rem;
+      font-family: "Inter", sans-serif;
+      padding: 0.78rem 0.85rem;
       outline: none;
+      transition: border-color 160ms ease;
     }
 
-    .field textarea {
+    .recruit-field textarea {
       min-height: 130px;
       resize: vertical;
     }
 
-    .field input::placeholder,
-    .field textarea::placeholder {
-      color: rgba(255, 255, 255, 0.45);
+    .recruit-field input::placeholder,
+    .recruit-field textarea::placeholder {
+      color: rgba(255, 255, 255, 0.4);
       font-weight: 400;
     }
 
-    .field input:focus,
-    .field select:focus,
-    .field textarea:focus {
-      border-color: rgba(255, 255, 255, 0.45);
+    .recruit-field input:focus,
+    .recruit-field select:focus,
+    .recruit-field textarea:focus {
+      border-color: var(--global-color-blue);
     }
 
-    .submit {
-      margin-top: 0.25rem;
+    .recruit-submit {
+      margin-top: 0.35rem;
       width: 100%;
-      padding: 0.7rem 1rem;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: #fff;
-      color: #000;
+      padding: 0.85rem 1rem;
+      border: 1px solid #2f6bff;
+      border-radius: 0.2rem;
+      background: #2f6bff;
+      color: #fff;
       font: inherit;
-      font-size: 0.94rem;
-      font-weight: 500;
+      font-family: "Inter", sans-serif;
+      font-size: 0.96rem;
+      font-weight: 600;
       letter-spacing: -0.02em;
       cursor: pointer;
+      transition: opacity 160ms ease, transform 160ms ease;
+    }
+
+    .recruit-submit:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
     }
 
     @media (max-width: 680px) {
-      .field-row {
+      .recruit-field-row {
         grid-template-columns: 1fr;
+      }
+
+      .recruit-chips {
+        margin-top: -0.8rem;
       }
     }
   </style>
-
-<!-- auto-schema:start -->
-<script id="schema-breadcrumb-auto" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://msd-media.com/"},{"@type":"ListItem","position":2,"name":"Recrutement MSD Media","item":"https://msd-media.com/recrutement/"}]}</script>
-<!-- auto-schema:end -->
-<!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-P28B6QRF');</script>
-  <!-- End Google Tag Manager -->
-<!-- AI referrer detection — runs immediately, no consent required (aucun cookie) -->
+<!-- AI referrer detection — runs immédiatement, no consent required (aucun cookie) -->
 <script>
 (function(){
   var AI_SOURCES = {
@@ -222,14 +174,12 @@
     window.dataLayer.push({ event: 'ai_referral', ai_source: aiSource, referrer: ref });
     sessionStorage.setItem('_msd_ai_source', aiSource);
   }
-  // Also expose for GTM variable use
   window._msdAiSource = aiSource;
 })();
 </script>
 <!-- Tracking — chargé uniquement après consentement cookie -->
 <script>
 function _msdLoadTracking(){
-  // MSD Analytics
   (function(){
     var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
     sessionStorage.setItem('_msd',sid);
@@ -263,7 +213,6 @@ function _msdLoadTracking(){
     });
     send(0);
     start();
-    // Scroll heatmap tracking
     (function(){
       var path=location.pathname;
       var scrollEvts=[];
@@ -287,7 +236,6 @@ function _msdLoadTracking(){
       setInterval(flush,30000);
     })();
   })();
-  // Google Analytics (GA4)
   (function(){
     var s=document.createElement('script');
     s.async=true;
@@ -325,62 +273,238 @@ function _msdLoadTracking(){
 })();
 </script>
 </head>
+<body class="recruit-page" data-asset-base="../assets">
+  <div class="top-announcement" role="banner">
+    <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
+    <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
+  </div>
+<header class="navbar">
+    <div class="nav-left">
+      <a href="https://msd-media.com/" aria-label="Accueil MSD Media">
+        <img height="151" width="372" src="../assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager">
+        <span style="position:absolute;left:-9999px;">Accueil MSD Media</span>
+      </a>
+      <div class="nav-menu" data-nav-menu>
+        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
+          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
+          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
+          <a href="https://msd-media.com/" data-i18n="nav_home">Accueil</a>
+          <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+          <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+          <a href="https://msd-media.com/contact/" data-i18n="nav_contact">Contact</a>
+          <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+          <a href="https://msd-media.com/affiliation/" data-i18n="nav_affiliation">Affiliation</a>
+        </div>
+      </div>
+    </div>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28B6QRF"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <nav class="nav-center" aria-label="Navigation principale">
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/blog/"><span class="nav-link-label" data-i18n="nav_resources">Ressources</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+              <a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a>
+              <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+              <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+              <a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/#secteurs"><span class="nav-link-label" data-i18n="nav_sector">Secteur</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
+              <a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
+              <a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
+              <a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
+              <a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
+              <a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img2.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+      <a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a>
+    </nav>
+
+    <div class="nav-right">
+      <label class="lang-switch" for="lang-select">
+        <span class="lang-switch__label">Langue</span>
+        <select class="lang-switch__select" id="lang-select" data-lang-select aria-label="Choisir la langue">
+          <option value="fr">🇫🇷 FR</option>
+          <option value="en">🇬🇧 EN</option>
+        </select>
+      </label>
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
+      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="section-tag section-tag--dark">Recrutement</h2>
+      <h1 class="hero__title"><span>Recrutement MSD Media</span></h1>
+    </section>
+
+    <section class="recruit-apply">
+      <div class="recruit-chips" aria-label="Postes ouverts">
+        <button type="button" class="recruit-chip is-active" data-offer="Setter (commercial)">Setter (commercial)</button>
+        <button type="button" class="recruit-chip" data-offer="Candidature spontanée">Candidature spontanée</button>
+      </div>
+
+      <form action="https://formspree.io/f/mkopvwap" method="POST">
+        <input type="hidden" name="_subject" value="Candidature recrutement" />
+        <div class="recruit-field">
+          <select id="poste" name="poste" required>
+            <option value="Setter (commercial)" selected>Offre : Setter (commercial)</option>
+            <option value="Candidature spontanée">Offre : Candidature spontanée</option>
+          </select>
+        </div>
+
+        <div class="recruit-field-row">
+          <div class="recruit-field">
+            <input id="nom" name="nom" type="text" required placeholder="Nom *" />
+          </div>
+          <div class="recruit-field">
+            <input id="whatsapp" name="whatsapp" type="tel" required placeholder="WhatsApp *" />
+          </div>
+        </div>
+
+        <div class="recruit-field">
+          <input id="portfolio" name="portfolio" type="url" placeholder="Lien vers votre portfolio / LinkedIn" />
+        </div>
+
+        <div class="recruit-field">
+          <textarea id="motivations" name="motivations" required placeholder="Quelles sont vos motivations pour rejoindre MSD Media ? *"></textarea>
+        </div>
+
+        <button type="submit" class="recruit-submit">Envoyer ma candidature</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img height="151" width="372" src="../assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+      </div>
+
+      <div class="footer-offices">
+        <article class="footer-office-card">
+          <p class="footer-office-city">Annecy</p>          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
+        </article>
+        <article class="footer-office-card">
+          <p class="footer-office-city">Munich</p>          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+        </article>
+      </div>
+
+      <div class="footer-contact">
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:maxens.soldan@msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cities">
+      <ul>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
+        <li><a href="https://msd-media.com/agence-web-lyon/">Lyon</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-paris/">Paris</a></li>
+        <li><a href="https://msd-media.com/agence-web-marseille/">Marseille</a></li>
+        <li><a href="https://msd-media.com/agence-web-toulouse/">Toulouse</a></li>
+        <li><a href="https://msd-media.com/agence-web-bordeaux/">Bordeaux</a></li>
+        <li><a href="https://msd-media.com/agence-web-lille/">Lille</a></li>
+        <li><a href="https://msd-media.com/agence-web-nantes/">Nantes</a></li>
+        <li><a href="https://msd-media.com/agence-web-montpellier/">Montpellier</a></li>
+        <li><a href="https://msd-media.com/agence-web-nice/">Nice</a></li>
+        <li><a href="https://msd-media.com/agence-web-rennes/">Rennes</a></li>
+        <li><a href="https://msd-media.com/agence-web-clermont-ferrand/">Clermont-Ferrand</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_company">Entreprise</p>
+        <ul>
+          <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
+          <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
+          <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_resources">Ressources</p>
+        <ul>
+          <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a></li>
+          <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
+          <li><a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="secteurs">
+        <p class="footer-column__title" data-i18n="footer_col_sectors">Secteurs</p>
+        <ul>
+          <li><a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a></li>
+          <li><a href="https://msd-media.com/site-web-medecin/">M&eacute;decins &amp; sant&eacute;</a></li>
+          <li><a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a></li>
+          <li><a href="https://msd-media.com/site-web-restaurant/">Restaurants &amp; caf&eacute;s</a></li>
+          <li><a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a></li>
+          <li><a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale">Conditions générales de vente</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
   <div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Consentement cookies" hidden>
     <div class="cookie-consent__inner">
-      <p class="cookie-consent__text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">En savoir plus</a></p>
+      <p class="cookie-consent__text" data-i18n="cookie_text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="cookie_learn_more">En savoir plus</a></p>
       <div class="cookie-consent__actions">
-        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse">Refuser</button>
-        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept">Accepter</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse" data-i18n="cookie_refuse">Refuser</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept" data-i18n="cookie_accept">Accepter</button>
       </div>
     </div>
   </div>
-
-  <main class="recruitment">
-    <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media" class="recruitment__logo" loading="lazy" decoding="async">
-    <h1>Recrutement MSD Media</h1>
-    <div class="chips" aria-label="Postes ouverts">
-      <button type="button" class="chip is-active" data-offer="Setter (commercial)">Setter (commercial)</button>
-      <button type="button" class="chip" data-offer="Candidature spontanée">Candidature spontanée</button>
-    </div>
-
-    <form class="form" action="https://formspree.io/f/mkopvwap" method="POST">
-      <input type="hidden" name="_subject" value="Candidature recrutement" />
-      <div class="field">
-        <select id="poste" name="poste" required>
-          <option value="Setter (commercial)" selected>Offre : Setter (commercial)</option>
-          <option value="Candidature spontanée">Offre : Candidature spontanée</option>
-        </select>
-      </div>
-
-      <div class="field-row">
-        <div class="field">
-          <input id="nom" name="nom" type="text" required placeholder="Nom *" />
-        </div>
-        <div class="field">
-          <input id="whatsapp" name="whatsapp" type="tel" required placeholder="WhatsApp *" />
-        </div>
-      </div>
-
-      <div class="field">
-        <input id="portfolio" name="portfolio" type="url" placeholder="Lien vers votre portfolio / LinkedIn" />
-      </div>
-
-      <div class="field">
-        <textarea id="motivations" name="motivations" required placeholder="Quelles sont vos motivations pour rejoindre MSD Media ? *"></textarea>
-      </div>
-
-      <button type="submit" class="submit">Envoyer ma candidature</button>
-    </form>
-  </main>
   <script>
     (function () {
-      const chips = Array.from(document.querySelectorAll('.chip[data-offer]'));
+      const chips = Array.from(document.querySelectorAll('.recruit-chip[data-offer]'));
       const offerSelect = document.getElementById('poste');
       if (!chips.length || !offerSelect) return;
 
@@ -401,5 +525,4 @@ function _msdLoadTracking(){
     })();
   </script>
 </body>
-
 </html>

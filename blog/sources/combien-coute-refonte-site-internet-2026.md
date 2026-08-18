@@ -41,7 +41,7 @@ Trois lectures de ce tableau :
 
 **La refonte totale (3 000 – 15 000 €)** s'impose quand le site freine l'activité sur tous les plans : non responsive, CMS obsolète, vitesse irrécupérable, arborescence incohérente, zéro conversion. On repart de la stratégie, avec un plan de migration SEO complet. Délai : 4 à 10 semaines.
 
-**Le test simple pour trancher** : si votre site reçoit du trafic organique et génère des demandes, mais paraît daté → partielle. S'il ne génère rien ou repose sur une technique morte → totale. Dans le doute, un [audit gratuit de l'existant](https://msd-media.com/audit-seo-gratuit/) coûte zéro et évite de payer une refonte totale là où une partielle suffisait — ou l'inverse.
+**Le test simple pour trancher** : si votre site reçoit du trafic organique et génère des demandes, mais paraît daté → partielle. S'il ne génère rien ou repose sur une technique morte → totale. Dans le doute, un [audit gratuit de l'existant](https://msd-media.com/audit-seo-annecy/) coûte zéro et évite de payer une refonte totale là où une partielle suffisait — ou l'inverse.
 
 Pour la méthode complète étape par étape (audit, redirections 301, recette, suivi), consultez notre [guide de la refonte de site internet](https://msd-media.com/blog/articles/refonte-site-internet-guide-2026/).
 
@@ -79,7 +79,7 @@ Le plus important de tous : **le manque à gagner d'une refonte qui ne convertit
 2. **Estimez le potentiel de récupération.** Si votre site actuel reçoit 500 visites/mois et convertit à 0,5 %, passer à 2 % de conversion (standard d'un site bien refait) multiplie vos demandes par 4 — sans un visiteur de plus.
 3. **Comparez les devis sur le périmètre, pas sur le prix.** Les 7 questions à poser : propriété du code, contenus inclus ou non, plan de redirections 301 écrit, engagement de performance chiffré, design mobile conçu, garantie post-livraison, autonomie de modification.
 
-Pour une fourchette personnalisée en 2 minutes, notre [configurateur en ligne](https://msd-media.com/configurateur/) chiffre votre projet — et notre guide du [prix d'un site internet en 2026](https://msd-media.com/blog/articles/prix-site-internet-2026/) couvre les tarifs de création complète.
+Pour une fourchette personnalisée en 2 minutes, notre [configurateur en ligne](https://msd-media.com/configurateur/) chiffre votre projet — et notre guide du [prix d'un site internet en 2026](https://msd-media.com/tarifs/) couvre les tarifs de création complète.
 
 ---
 

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presse MSD Media | Articles, interviews et mentions</title>
+  <meta name="description" content="Retrouvez les articles, interviews et mentions presse autour de MSD Media." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://msd-media.com/presse/" />
+  <meta property="og:title" content="Presse MSD Media | Articles, interviews et mentions" />
+  <meta property="og:description" content="Retrouvez les articles, interviews et mentions presse autour de MSD Media." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://msd-media.com/presse/" />
+  <meta property="og:image" content="https://msd-media.com/assets/img/blog/maxens-soldan.webp" />
+  <link rel="icon" type="image/png" href="https://msd-media.com/assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="https://msd-media.com/assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="https://msd-media.com/assets/img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous"></script>
+<!-- AI referrer detection — runs immediately, no consent required (aucun cookie) -->
+<script>
+(function(){
+  var AI_SOURCES = {
+    'perplexity.ai': 'perplexity',
+    'chatgpt.com': 'chatgpt',
+    'chat.openai.com': 'chatgpt',
+    'claude.ai': 'claude',
+    'gemini.google.com': 'gemini',
+    'bard.google.com': 'gemini',
+    'copilot.microsoft.com': 'copilot',
+    'bing.com/chat': 'copilot',
+    'you.com': 'you',
+    'phind.com': 'phind',
+    'deepseek.com': 'deepseek'
+  };
+  var ref = document.referrer;
+  var aiSource = null;
+  for (var domain in AI_SOURCES) {
+    if (ref.indexOf(domain) !== -1) { aiSource = AI_SOURCES[domain]; break; }
+  }
+  window.dataLayer = window.dataLayer || [];
+  if (aiSource) {
+    window.dataLayer.push({ event: 'ai_referral', ai_source: aiSource, referrer: ref });
+    sessionStorage.setItem('_msd_ai_source', aiSource);
+  }
+  window._msdAiSource = aiSource;
+})();
+</script>
+<!-- Tracking — chargé uniquement après consentement cookie -->
+<script>
+function _msdLoadTracking(){
+  (function(){
+    var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
+    sessionStorage.setItem('_msd',sid);
+    var t=Date.now();
+    var iv;
+    function send(d){
+      var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
+      var ok=false;
+      try { ok=navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p)); } catch(e) {}
+      if(!ok){
+        fetch('https://app.msd-media.com/api/track',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(p),
+          keepalive:true
+        }).catch(function(){});
+      }
+    }
+    function start(){
+      if(iv) return;
+      iv=setInterval(function(){send(Date.now()-t);},15000);
+    }
+    function stop(){
+      if(!iv) return;
+      clearInterval(iv);
+      iv=undefined;
+    }
+    document.addEventListener('visibilitychange',function(){
+      if(document.visibilityState==='hidden'){send(Date.now()-t);stop();}
+      else{t=Date.now();send(0);start();}
+    });
+    send(0);
+    start();
+    (function(){
+      var path=location.pathname;
+      var scrollEvts=[];
+      var lastPct=0;
+      var pauseTimer=null;
+      function getPct(){return Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight||1))*100);}
+      function bucket(p){return Math.floor(p/5)*5;}
+      function flush(){
+        if(!scrollEvts.length)return;
+        var evts=scrollEvts.splice(0);
+        navigator.sendBeacon('https://app.msd-media.com/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
+      }
+      window.addEventListener('scroll',function(){
+        var pct=getPct();
+        if(Math.abs(pct-lastPct)>10&&pct<lastPct){scrollEvts.push({type:'backtrack',pct:bucket(pct)});}
+        lastPct=pct;
+        if(pauseTimer)clearTimeout(pauseTimer);
+        pauseTimer=setTimeout(function(){scrollEvts.push({type:'pause',pct:bucket(pct)});flush();},1500);
+      },{passive:true});
+      window.addEventListener('beforeunload',function(){scrollEvts.push({type:'exit',pct:bucket(getPct())});flush();});
+      setInterval(flush,30000);
+    })();
+  })();
+  (function(){
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-VKSH9YQXZS';
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-VKSH9YQXZS');
+  })();
+}
+(function(){
+  var consent=localStorage.getItem('msd_cookie_consent');
+  if(consent==='accepted'){_msdLoadTracking();return;}
+  if(consent==='refused'){return;}
+  if(window.innerWidth<=680){_msdLoadTracking();return;}
+  function init(){
+  var banner=document.getElementById('cookie-consent');
+  if(!banner)return;
+  function show(){banner.hidden=false;}
+  function hide(){banner.hidden=true;}
+  show();
+  document.getElementById('cookie-accept').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','accepted');
+    hide();
+    _msdLoadTracking();
+  });
+  document.getElementById('cookie-refuse').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','refused');
+    hide();
+  });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>
+</head>
+<body class="press-page" data-asset-base="../assets">
+  <div class="top-announcement" role="banner">
+    <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
+    <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
+  </div>
+<header class="navbar">
+    <div class="nav-left">
+      <a href="https://msd-media.com/" aria-label="Accueil MSD Media">
+        <img height="151" width="372" src="../assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager">
+        <span style="position:absolute;left:-9999px;">Accueil MSD Media</span>
+      </a>
+      <div class="nav-menu" data-nav-menu>
+        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
+          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
+          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
+          <a href="https://msd-media.com/" data-i18n="nav_home">Accueil</a>
+          <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+          <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+          <a href="https://msd-media.com/contact/" data-i18n="nav_contact">Contact</a>
+          <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+          <a href="https://msd-media.com/affiliation/" data-i18n="nav_affiliation">Affiliation</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-center" aria-label="Navigation principale">
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/blog/"><span class="nav-link-label" data-i18n="nav_resources">Ressources</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+              <a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a>
+              <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+              <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+              <a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/#secteurs"><span class="nav-link-label" data-i18n="nav_sector">Secteur</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
+              <a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
+              <a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
+              <a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
+              <a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
+              <a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img2.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+      <a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a>
+    </nav>
+
+    <div class="nav-right">
+      <label class="lang-switch" for="lang-select">
+        <span class="lang-switch__label">Langue</span>
+        <select class="lang-switch__select" id="lang-select" data-lang-select aria-label="Choisir la langue">
+          <option value="fr">🇫🇷 FR</option>
+          <option value="en">🇬🇧 EN</option>
+        </select>
+      </label>
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
+      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="press-badges" aria-label="Plateformes d'avis">
+        <div class="press-badge">
+          <img
+            class="press-badge__logo press-badge__logo--google"
+            src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg"
+            alt="Google"
+            width="20"
+            height="20"
+            loading="lazy"
+            decoding="async"
+          >
+          <span class="press-badge__rating">5.0</span>
+          <span class="press-badge__label">Avis clients</span>
+        </div>
+        <div class="press-badge">
+          <img
+            class="press-badge__logo press-badge__logo--trustpilot"
+            src="https://cdn.iconscout.com/icon/free/png-256/free-trustpilot-icon-svg-download-png-8715838.png?f=webp"
+            alt=""
+            width="48"
+            height="48"
+            loading="lazy"
+            decoding="async"
+          >
+          <span class="press-badge__rating">4.8</span>
+          <span class="press-badge__label">Excellent</span>
+        </div>
+      </div>
+      <h1 class="hero__title"><span>La presse parle de MSD Media</span></h1>
+      <p class="hero__subheading">Articles, interviews, portraits et citations média autour de l'agence. La grille ci-dessous est en placeholder pour le moment.</p>
+    </section>
+
+    <section class="case-studies-section press-section" id="articles-presse">
+      <div class="case-studies-inner">
+        <div class="press-grid">
+          <article class="press-card">
+            <img
+              class="press-card__logo press-card__logo--dauphine"
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Logo_Journal_Le_Dauphin%C3%A9_Lib%C3%A9r%C3%A9_-_2022.svg"
+              alt="Le Dauphiné Libéré"
+              width="144"
+              height="81"
+              loading="lazy"
+              decoding="async"
+            >
+            <h3 class="press-card__title">Le Dauphiné Libéré met en avant MSD Media</h3>
+            <p class="press-card__excerpt">Portrait de l'agence, positionnement sur la conversion et retour sur la trajectoire entrepreneuriale de Maxens Soldan à Annecy.</p>
+            <a class="press-card__cta" href="/blog/articles/msd-media-presse-le-dauphine/">Lire l'article</a>
+          </article>
+
+          <article class="press-card">
+            <img
+              class="press-card__logo press-card__logo--polytech"
+              src="https://www.polytech.univ-smb.fr/typo3conf/ext/sav_ilsontfaitpolytech/Resources/Public/Images/logo-polytech-annecy-chambery-blanc-vertical.png"
+              alt="Polytech"
+              width="84"
+              height="24"
+              loading="lazy"
+              decoding="async"
+            >
+            <h3 class="press-card__title">Polytech relaie le parcours de Maxens Soldan</h3>
+            <p class="press-card__excerpt">Mise en lumière du double parcours études et entrepreneuriat, avec un focus sur la création de MSD Media et sa logique d'exécution.</p>
+            <a class="press-card__cta" href="https://www.univ-smb.fr/polytech/2026/02/12/etudier-et-entreprendre-le-double-challenge-de-maxens/">Lire l'article</a>
+          </article>
+
+          <article class="press-card">
+            <img
+              class="press-card__logo"
+              src="../assets/img/logo-black.webp"
+              alt="MSD Media"
+              width="84"
+              height="34"
+              loading="lazy"
+              decoding="async"
+            >
+            <h3 class="press-card__title">Une troisième mention presse viendra s'ajouter ici</h3>
+            <p class="press-card__excerpt">Placeholder provisoire pour une prochaine reprise média autour de l'agence, de ses clients ou de son positionnement en création web.</p>
+            <a class="press-card__cta" href="/blog/articles/msd-media-presse-le-dauphine/">Lire l'article</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="ai-proof section-grid" id="ai-proof">
+    <div class="ai-proof__inner">
+      <img
+        class="ai-proof__msd-logo"
+        src="../assets/img/logo-black.webp"
+        alt="MSD Media"
+        width="372"
+        height="151"
+        loading="lazy"
+        decoding="async"
+      >
+      <h3 class="section-title section-title--dark" data-i18n="ai_proof_title">Toujours pas sûr que MSD Media soit fait pour vous ?</h3>
+      <p class="ai-proof__lead" data-i18n="ai_proof_lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
+      <div class="ai-proof__actions">
+        <a
+          class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt"
+          href="https://chatgpt.com/?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Poser la question dans ChatGPT"
+        >
+          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
+          <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
+        </a>
+        <a
+          class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude"
+          href="https://claude.ai/new?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Poser la question dans Claude"
+        >
+          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+          <span data-i18n="ai_proof_claude">Demander à Claude</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section" id="rdv">
+    <div class="booking-section__inner">
+      <div class="booking-section__embed">
+        <iframe
+          src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&amp;theme=dark"
+          title="Prendre rendez-vous avec MSD Media"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img height="151" width="372" src="../assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+      </div>
+
+      <div class="footer-offices">
+        <article class="footer-office-card">
+          <p class="footer-office-city">Annecy</p>          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
+        </article>
+        <article class="footer-office-card">
+          <p class="footer-office-city">Munich</p>          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+        </article>
+      </div>
+
+      <div class="footer-contact">
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:maxens.soldan@msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cities">
+      <ul>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
+        <li><a href="https://msd-media.com/agence-web-lyon/">Lyon</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-paris/">Paris</a></li>
+        <li><a href="https://msd-media.com/agence-web-marseille/">Marseille</a></li>
+        <li><a href="https://msd-media.com/agence-web-toulouse/">Toulouse</a></li>
+        <li><a href="https://msd-media.com/agence-web-bordeaux/">Bordeaux</a></li>
+        <li><a href="https://msd-media.com/agence-web-lille/">Lille</a></li>
+        <li><a href="https://msd-media.com/agence-web-nantes/">Nantes</a></li>
+        <li><a href="https://msd-media.com/agence-web-montpellier/">Montpellier</a></li>
+        <li><a href="https://msd-media.com/agence-web-nice/">Nice</a></li>
+        <li><a href="https://msd-media.com/agence-web-rennes/">Rennes</a></li>
+        <li><a href="https://msd-media.com/agence-web-clermont-ferrand/">Clermont-Ferrand</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_company">Entreprise</p>
+        <ul>
+          <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
+          <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
+          <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_resources">Ressources</p>
+        <ul>
+          <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a></li>
+          <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
+          <li><a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="secteurs">
+        <p class="footer-column__title" data-i18n="footer_col_sectors">Secteurs</p>
+        <ul>
+          <li><a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a></li>
+          <li><a href="https://msd-media.com/site-web-medecin/">M&eacute;decins &amp; sant&eacute;</a></li>
+          <li><a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a></li>
+          <li><a href="https://msd-media.com/site-web-restaurant/">Restaurants &amp; caf&eacute;s</a></li>
+          <li><a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a></li>
+          <li><a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale">Conditions générales de vente</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+  <div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Consentement cookies" hidden>
+    <div class="cookie-consent__inner">
+      <p class="cookie-consent__text" data-i18n="cookie_text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="cookie_learn_more">En savoir plus</a></p>
+      <div class="cookie-consent__actions">
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse" data-i18n="cookie_refuse">Refuser</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept" data-i18n="cookie_accept">Accepter</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

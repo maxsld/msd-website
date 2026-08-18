@@ -1015,8 +1015,13 @@
 <!-- auto-schema:end -->
 </head>
 
-<body>
-  <header class="navbar">
+<body class="home-page">
+  <div class="top-announcement" role="banner">
+    <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
+    <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
+  </div>
+<header class="navbar">
     <div class="nav-left">
       <a href="https://msd-media.com/" aria-label="Accueil MSD Media">
         <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager">
@@ -1028,14 +1033,62 @@
         </button>
         <div class="nav-menu-dropdown" data-nav-menu-dropdown>
           <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
-          <a href="https://msd-media.com/">Accueil</a>
-          <a href="https://msd-media.com/etudes-de-cas/">Études de cas</a>
-          <a href="https://msd-media.com/blog/">Blog</a>
-          <a href="https://msd-media.com/contact/">Contact</a>
+          <a href="https://msd-media.com/" data-i18n="nav_home">Accueil</a>
+          <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+          <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+          <a href="https://msd-media.com/contact/" data-i18n="nav_contact">Contact</a>
         </div>
       </div>
     </div>
+
+    <nav class="nav-center" aria-label="Navigation principale">
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/blog/"><span class="nav-link-label" data-i18n="nav_resources">Ressources</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+              <a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a>
+              <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+              <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+              <a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/#secteurs"><span class="nav-link-label" data-i18n="nav_sector">Secteur</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
+              <a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
+              <a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
+              <a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
+              <a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
+              <a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img2.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+      <a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a>
+    </nav>
+
     <div class="nav-right">
+      <label class="lang-switch" for="lang-select">
+        <span class="lang-switch__label">Langue</span>
+        <select class="lang-switch__select" id="lang-select" data-lang-select aria-label="Choisir la langue">
+          <option value="fr">🇫🇷 FR</option>
+          <option value="en">🇬🇧 EN</option>
+        </select>
+      </label>
       <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
       <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
@@ -1272,36 +1325,39 @@
 
   </main>
 
-  <footer class="site-footer">
+      <footer class="site-footer">
     <div class="footer-container">
+
+      <!-- Bloc gauche : logo + slogan -->
       <div class="footer-left">
         <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
-        <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
       </div>
 
       <div class="footer-offices">
         <article class="footer-office-card">
-          <p class="footer-office-city">Annecy</p>
-          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
-          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
+          <p class="footer-office-city">Annecy</p>          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
         </article>
         <article class="footer-office-card">
-          <p class="footer-office-city">Munich</p>
-          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
-          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+          <p class="footer-office-city">Munich</p>          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
         </article>
       </div>
 
+      <!-- Bloc droit : contact + réseaux -->
       <div class="footer-contact">
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i
+              class="fa-brands fa-whatsapp"></i></a>
           <a href="/cdn-cgi/l/email-protection#5734383923363423173a24337a3a32333e367934383a" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </div>
 
+    <!-- Villes SEO -->
     <div class="footer-cities">
       <ul>
         <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
@@ -1322,61 +1378,55 @@
       </ul>
     </div>
 
-    <div class="footer-city-services">
-      <p class="footer-city-services__title">Nos spécialités</p>
-      <ul>
-        <li><a href="https://msd-media.com/agence-web-annecy/">Agence web Annecy</a></li>
-        <li><a href="https://msd-media.com/agence-web-strasbourg/">Agence web Strasbourg</a></li>
-        <li><a href="https://msd-media.com/agence-web-paris/">Agence web Paris</a></li>
-        <li><a href="https://msd-media.com/agence-web-lyon/">Agence web Lyon</a></li>
-        <li><a href="https://msd-media.com/agence-web-geneve/">Agence web Genève</a></li>
-        <li><a href="https://msd-media.com/blog/">Blog web & SEO</a></li>
-      </ul>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_company">Entreprise</p>
+        <ul>
+          <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
+          <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
+          <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_resources">Ressources</p>
+        <ul>
+          <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="https://msd-media.com/glossaire/" data-i18n="footer_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a></li>
+          <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
+          <li><a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="secteurs">
+        <p class="footer-column__title" data-i18n="footer_col_sectors">Secteurs</p>
+        <ul>
+          <li><a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats & juristes</a></li>
+          <li><a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins & santé</a></li>
+          <li><a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a></li>
+          <li><a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants & cafés</a></li>
+          <li><a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans & TPE</a></li>
+          <li><a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="footer-city-services">
-      <p class="footer-city-services__title">Sites web à Annecy par métier</p>
-      <ul>
-        <li><a href="https://msd-media.com/blog/articles/site-web-avocat-annecy/">Site web avocat Annecy</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-medecin-annecy/">Site web médecin Annecy</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-restaurant-cafe-annecy/">Site web restaurant Annecy</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-artisan-tpe-annecy/">Site web artisan Annecy</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-architecte-annecy/">Site web architecte Annecy</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-agence-immobiliere-annecy/">Site web immobilier Annecy</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-photographe-annecy/">Site web photographe Annecy</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-therapeute-annecy/">Site web thérapeute Annecy</a></li>
-      </ul>
-    </div>
 
-    <div class="footer-city-services">
-      <p class="footer-city-services__title">Sites web à Strasbourg par métier</p>
-      <ul>
-        <li><a href="https://msd-media.com/blog/articles/site-web-avocat-annecy/">Site web avocat Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-medecin-annecy/">Site web médecin Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-restaurant-cafe-annecy/">Site web restaurant Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-artisan-tpe-annecy/">Site web artisan Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-architecte-annecy/">Site web architecte Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-coach-sportif-annecy/">Site web coach sportif Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-agence-immobiliere-annecy/">Site web immobilier Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-photographe-annecy/">Site web photographe Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-therapeute-annecy/">Site web thérapeute Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/site-web-hotel-hebergement-annecy/">Site web hôtel Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/combien-coute-site-web-annecy-2026/">Prix site web Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/vitesse-performance-site-web-annecy-2026/">Performance site Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/creation-site-web-strasbourg-2026/">Création site web Strasbourg 2026</a></li>
-        <li><a href="https://msd-media.com/blog/articles/landing-page-vs-site-web-guide-complet/">Landing page Strasbourg</a></li>
-      </ul>
-    </div>
-
+    <!-- Mentions légales -->
     <div class="footer-legal">
-      <a href="https://msd-media.com/terms/mentions.html" target="_blank">Mentions légales</a>
-      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale">Conditions générales de vente</a>
     </div>
 
+    <!-- Copyright -->
     <div class="footer-bottom">
-      <p>&copy; <span class="copyright-year">2026</span> MSD Media. Tous droits réservés.</p>
+      <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
     </div>
-  </footer>
+</footer>
 
   <script src="../assets/js/script.js" defer></script>
 

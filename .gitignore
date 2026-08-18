@@ -1,4 +1,4 @@
-/.DS_Store
+.DS_Store
 /.claude
 /node_modules
 /.env.analytics
@@ -6,9 +6,20 @@
 # SEO audit outputs
 /FULL-AUDIT-REPORT.md
 /ACTION-PLAN.md
+/seo-reports/
 
 # Claude SEO skill
 /skills/
 
 # Cerveau SEO privé — jamais push, jamais déployé
 /msd-media-seo/
+
+# Artefact de build régénéré à chaque `npm run blog:build`
+/scripts/generate-blog.cjs
+
+# Vercel CLI local
+/.vercel
+
+# Logs
+npm-debug.log*
+*.log

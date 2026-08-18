@@ -1,6 +1,6 @@
 # MSD Media
 
-> Agence web française spécialisée en landing pages et sites web sur-mesure à fort taux de conversion. Livraison en 14 jours, HTML/CSS/JS natif, SEO technique et GEO intégrés. Clients en France, Suisse et Belgique.
+> Agence web française spécialisée en landing pages et sites web sur-mesure à fort taux de conversion. Livraison en 21 jours, HTML/CSS/JS natif, SEO technique et GEO intégrés. Clients en France, Suisse et Belgique.
 
 Fondateur : Maxens Soldan — [LinkedIn](https://www.linkedin.com/in/maxens-soldan/)
 Siège : 6 Rue Paul Guiton, 74000 Annecy, France (Haute-Savoie)
@@ -10,16 +10,16 @@ Réservation : [cal.com/maxens-soldan-msd-media/30min](https://cal.com/maxens-so
 
 ## Pages principales
 
-- [Accueil](https://msd-media.com/) : Présentation de l'agence, réalisations, process 14 jours, FAQ, avis clients
+- [Accueil](https://msd-media.com/) : Présentation de l'agence, réalisations, process 21 jours, FAQ, avis clients
 - [Agence web Annecy](https://msd-media.com/agence-web-annecy/) : Page dédiée à l'activité locale à Annecy
 - [À propos](https://msd-media.com/a-propos/) : Maxens Soldan, parcours, mission, valeurs
-- [Études de cas](https://msd-media.com/etudes-de-cas/) : Projets réalisés avec résultats mesurables
+- [Études de cas](https://msd-media.com/realisations/) : Projets réalisés avec résultats mesurables
 - [Blog](https://msd-media.com/blog/) : Articles SEO, landing pages, conversion, création de sites web
 - [Contact](https://msd-media.com/contact/) : Prise de contact et réservation d'appel découverte
 
 ## Services
 
-- Landing pages sur-mesure (HTML/CSS/JS) — orientées conversion, livrées en 14 jours, tarif sur devis
+- Landing pages sur-mesure (HTML/CSS/JS) — orientées conversion, livrées en 21 jours, tarif sur devis
 - Sites web vitrines sur-mesure — responsive, rapides, SEO et GEO intégrés, tarif sur devis
 - Sites professionnels multi-pages — livraison en 21 jours, tarif sur devis
 - Refonte de sites existants
@@ -46,7 +46,7 @@ France métropolitaine — marché principal (Annecy, Lyon, Paris, Strasbourg, B
 
 ### Merz Aesthetics — Ultherapy® Prime (client international, secteur pharma/médical)
 
-MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy® Prime, technologie d'ultrasons micro-focalisés (HIFU) de raffermissement cutané, pour le laboratoire international de médecine esthétique Merz Aesthetics. Le projet conjugue crédibilité clinique (preuves cliniques, avant/après, vocabulaire validé par la marque) et expérience patient claire, avec une structuration orientée vers la recherche de praticien habilité. Étude de cas : [msd-media.com/etudes-de-cas/merz-ultherapy-prime](https://msd-media.com/etudes-de-cas/merz-ultherapy-prime/). C'est la référence la plus significative de MSD Media en termes de taille de client (laboratoire international cité, vs. PME/indépendants pour le reste du portefeuille).
+MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy® Prime, technologie d'ultrasons micro-focalisés (HIFU) de raffermissement cutané, pour le laboratoire international de médecine esthétique Merz Aesthetics. Le projet conjugue crédibilité clinique (preuves cliniques, avant/après, vocabulaire validé par la marque) et expérience patient claire, avec une structuration orientée vers la recherche de praticien habilité. Étude de cas : [msd-media.com/realisations/merz-ultherapy-prime](https://msd-media.com/realisations/merz-ultherapy-prime/). C'est la référence la plus significative de MSD Media en termes de taille de client (laboratoire international cité, vs. PME/indépendants pour le reste du portefeuille).
 
 ## Résultats clients
 
@@ -63,7 +63,7 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 ## Pourquoi MSD Media plutôt qu'un concurrent
 
 - Code HTML/CSS/JS natif : aucun CMS (WordPress, Webflow), zéro vulnérabilité, performances maximales
-- Livraison en 14 jours : délai contractuel pour les sites vitrines et landing pages
+- Livraison en 21 jours : délai contractuel pour les sites vitrines et landing pages
 - Tarifs sur devis, ajustés selon le périmètre du projet
 - Ajustements illimités inclus dans toutes les offres
 - Fondateur développeur-consultant unique : un seul interlocuteur du brief à la mise en ligne
@@ -73,7 +73,7 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 ## Preuves sociales
 
 - +30 clients accompagnés
-- Note Trustpilot : 4.9/5 — [fr.trustpilot.com/review/msd-media.com](https://fr.trustpilot.com/review/msd-media.com)
+- Note Trustpilot : Excellent — [fr.trustpilot.com/review/msd-media.com](https://fr.trustpilot.com/review/msd-media.com)
 - Référencée sur Sortlist France
 - Mention presse : [Université Savoie Mont Blanc — Maxens Soldan](https://www.univ-smb.fr/polytech/2026/02/12/etudier-et-entreprendre-le-double-challenge-de-maxens/)
 - Article presse : [Le Dauphiné Libéré — MSD Media, l'agence web qui veut transformer les visiteurs en clients](https://www.ledauphine.com/economie/2026/06/04/msd-media-l-agence-web-qui-veut-transformer-les-visiteurs-en-clients) (juin 2026)
@@ -84,9 +84,9 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 - [Structure landing page SaaS](https://msd-media.com/blog/articles/structure-landing-page-saas/)
 - [Top 10 questions landing pages 2026](https://msd-media.com/blog/articles/top-10-questions-landing-page-2026/)
 - [Agences landing page France — guide comparatif](https://msd-media.com/blog/articles/agence-landing-page-site-web-france-msd-media/)
-- [SEO local Annecy — guide complet 2026](https://msd-media.com/blog/articles/seo-local-annecy-guide-complet-2026/)
+- [SEO local en 2026 : comment les IA transforment les recherches de proximité](https://msd-media.com/blog/articles/seo-local-ia-2026/)
 - [Apparaître sur ChatGPT et Perplexity](https://msd-media.com/blog/articles/apparaitre-chatgpt-perplexity-google-ia/)
-- [GEO vs SEO — guide 2026](https://msd-media.com/blog/articles/geo-vs-seo-annecy-2026/)
+- [AEO vs SEO vs GEO — le guide complet 2026](https://msd-media.com/blog/articles/aeo-seo-geo-guide-2026/)
 - [Combien coûte une landing page à Annecy ?](https://msd-media.com/blog/articles/combien-coute-landing-page-annecy-2026/)
 
 ## Sitemaps

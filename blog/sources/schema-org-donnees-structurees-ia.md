@@ -175,4 +175,4 @@ JSON-LD sans hésitation. C'est le format recommandé par Google, le plus facile
 Autant que pertinent. Une page peut avoir Organization + WebPage + FAQPage + BreadcrumbList simultanément. L'important est que chaque schema soit complet et cohérent.
 
 **MSD Media intègre-t-il ces schemas dans ses sites ?**
-Oui, systématiquement. Chaque site que nous créons inclut Organization, LocalBusiness, FAQPage et BreadcrumbList. C'est notre standard. [Voir nos réalisations.](https://msd-media.com/etudes-de-cas/)
+Oui, systématiquement. Chaque site que nous créons inclut Organization, LocalBusiness, FAQPage et BreadcrumbList. C'est notre standard. [Voir nos réalisations.](https://msd-media.com/realisations/)

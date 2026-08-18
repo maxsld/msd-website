@@ -16,65 +16,9 @@
   <meta name="description" content="Mentions légales de MSD Media — micro-entreprise de création de landing pages. Informations légales, contact, hébergement, propriété intellectuelle et cookies.">
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://msd-media.com/terms/mentions.html" />
-  <style>
-    :root{
-      --bg:#ffffff;
-      --text:#0b0b0b;
-      --muted:#6b7280;
-      --accent:#1b44fe;
-      --card:#fbfbfb;
-      --maxw:920px;
-      --radius:12px;
-      --gap:20px;
-      font-family: Inter, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    html,body{height:100%}
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding:48px 20px;
-      display:flex;
-      justify-content:center;
-    }
-    .container{
-      width:100%;
-      max-width:var(--maxw);
-    }
-    header{
-      display:flex;
-      align-items:flex-end;
-      gap:16px;
-      margin-bottom:28px;
-    }
-    .logo{
-      width:56px;height:56px;border-radius:10px;background:#111;margin-right:8px;
-      display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;
-      font-size:18px; filter: invert(0);
-    }
-
-    .logo img{
-        width: 40px;
-    }
-    h1{margin:0;font-size:28px;letter-spacing:-0.02em}
-    .sub{color:var(--muted);margin-top:6px;font-size:14px}
-    .card{padding:28px;margin-bottom:16px}
-    h2{margin:0 0 8px 0;font-size:22px}
-    p{margin:8px 0;color:var(--muted);line-height:1.55}
-    dl{display:grid;grid-template-columns:220px 1fr;gap:8px 20px;align-items:start;margin:10px 0 18px 0}
-    dt{font-weight:600;color:var(--text)}
-    dd{margin:0;color:var(--muted)}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    footer{margin-top:18px;color:var(--muted);font-size:13px}
-    @media (max-width:640px){
-      dl{grid-template-columns:1fr}
-      header{align-items:flex-start}
-    }
-    .note{font-size:13px;color:var(--muted);margin-top:12px}
-  </style>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
 <script id="localbusiness-msd" type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -104,14 +48,49 @@
   })(window,document,'script','dataLayer','GTM-P28B6QRF');</script>
   <!-- End Google Tag Manager -->
 </head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
+<body class="home-page legal-page">
+  <div class="top-announcement" role="banner">
+    <span class="top-announcement__badge">Nouveau</span>
+    <span class="top-announcement__text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/">Découvrir le programme</a>
+  </div>
+<!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28B6QRF"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div class="container">
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="https://msd-media.com/" aria-label="Accueil MSD Media">
+        <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager">
+      </a>
+      <div class="nav-menu" data-nav-menu>
+        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
+          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
+          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
+          <a href="https://msd-media.com/">Accueil</a>
+          <a href="https://msd-media.com/realisations/">Réalisations</a>
+          <a href="https://msd-media.com/blog/">Blog</a>
+          <a href="https://msd-media.com/contact/">Contact</a>
+        </div>
+      </div>
+    </div>
+    <nav class="nav-center" aria-label="Navigation principale">
+      <a href="https://msd-media.com/realisations/">Réalisations</a>
+      <a href="https://msd-media.com/tarifs/">Tarifs</a>
+      <a href="https://msd-media.com/blog/">Blog</a>
+      <a href="https://msd-media.com/contact/">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
+      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Contacter sur WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </header>
+  <main class="container">
     <header>
-      <div class="logo"><img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp"  alt="Logo MSD Media blanc" loading="lazy" decoding="async"></div>
       <div>
         <h1>Mentions légales</h1>
         <div class="sub">Micro-entreprise — Création de sites web et landing pages pour les entreprises</div>
@@ -148,9 +127,9 @@
     <h2 id="hebergement">2 — Hébergement</h2>
     <p>Le site <strong>https://msd-media.com</strong> est hébergé par :</p>
     <dl>
-        <dt>Hébergeur</dt><dd>PlanetHoster</dd>
-        <dt>Adresse</dt><dd>4416 Louis-B.-Mayer, Laval (Québec) H7P 0G1 — Canada</dd>
-        <dt>Site</dt><dd><a href="https://www.planethoster.com" target="_blank" rel="noopener">https://www.planethoster.com</a></dd>
+        <dt>Hébergeur</dt><dd>Vercel Inc.</dd>
+        <dt>Adresse</dt><dd>440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis</dd>
+        <dt>Site</dt><dd><a href="https://vercel.com" target="_blank" rel="noopener">https://vercel.com</a></dd>
     </dl>
     </section>
 
@@ -179,28 +158,132 @@
       <dl>
         <dt>Exercer vos droits</dt><dd>Contactez : <a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></dd>
       </dl>
-      <p>Pour plus d’informations sur les types de données traitées, leurs finalités et les durées de conservation, consultez la <a href="/politique-confidentialite.html">Politique de confidentialité</a>.</p>
+      <p>Pour plus d’informations sur les types de données traitées, leurs finalités et les durées de conservation, consultez la <a href="/terms/politique-confidentialite.html">Politique de confidentialité</a>.</p>
     </section>
 
     <section class="card" aria-labelledby="liens">
       <h2 id="liens">7 — Liens hypertextes et cookies</h2>
       <br>
-      <h3 style="margin-top:8px;">Liens hypertextes</h3>
+      <h3>Liens hypertextes</h3>
       <p>Le site peut contenir des liens vers des sites tiers. MSD Media n’est pas responsable du contenu des sites externes ni des conséquences de leur utilisation.</p>
 
-      <h3 style="margin-top:12px;">Cookies</h3>
+      <h3>Cookies</h3>
       <p>La navigation sur le site est susceptible d’entraîner l’installation de cookies. Un cookie est un petit fichier enregistré sur votre terminal qui permet d’analyser la fréquentation et d’améliorer votre expérience.</p>
       <p>Aucun cookie non essentiel n’est installé sans votre consentement. Vous pouvez accepter ou refuser les cookies via le bandeau prévu à cet effet.</p>
       <p><strong>Durée de conservation des cookies :</strong> 1 mois maximum.</p>
-      <p>Pour plus d’informations, consultez la <a href="/politique-confidentialite.html">Politique de confidentialité</a>.</p>
+      <p>Pour plus d’informations, consultez la <a href="/terms/politique-confidentialite.html">Politique de confidentialité</a>.</p>
     </section>
 
     <footer class="card" aria-labelledby="maj">
       <h2 id="maj">Mise à jour</h2>
-      <p>Dernière mise à jour : <strong>8 août 2025</strong>.</p>
+      <p>Dernière mise à jour : <strong>9 août 2026</strong>.</p>
       <p>Pour toute question relative aux présentes mentions légales, contactez : <a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a>.</p>
-      <p style="margin-top:8px;color:var(--muted)">Ce document est fourni à titre informatif. Il ne remplace pas un avis juridique personnalisé. Si nécessaire, consultez un professionnel du droit.</p>
+      <p class="note">Ce document est fourni à titre informatif. Il ne remplace pas un avis juridique personnalisé. Si nécessaire, consultez un professionnel du droit.</p>
 </footer>
-  </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <!-- Bloc gauche : logo + slogan -->
+      <div class="footer-left">
+        <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+      </div>
+
+      <div class="footer-offices">
+        <article class="footer-office-card">
+          <p class="footer-office-city">Annecy</p>          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
+        </article>
+        <article class="footer-office-card">
+          <p class="footer-office-city">Munich</p>          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+        </article>
+      </div>
+
+      <!-- Bloc droit : contact + réseaux -->
+      <div class="footer-contact">
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i
+              class="fa-brands fa-whatsapp"></i></a>
+          <a href="/cdn-cgi/l/email-protection#5734383923363423173a24337a3a32333e367934383a" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Villes SEO -->
+    <div class="footer-cities">
+      <ul>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
+        <li><a href="https://msd-media.com/agence-web-lyon/">Lyon</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-paris/">Paris</a></li>
+        <li><a href="https://msd-media.com/agence-web-marseille/">Marseille</a></li>
+        <li><a href="https://msd-media.com/agence-web-toulouse/">Toulouse</a></li>
+        <li><a href="https://msd-media.com/agence-web-bordeaux/">Bordeaux</a></li>
+        <li><a href="https://msd-media.com/agence-web-lille/">Lille</a></li>
+        <li><a href="https://msd-media.com/agence-web-nantes/">Nantes</a></li>
+        <li><a href="https://msd-media.com/agence-web-montpellier/">Montpellier</a></li>
+        <li><a href="https://msd-media.com/agence-web-nice/">Nice</a></li>
+        <li><a href="https://msd-media.com/agence-web-rennes/">Rennes</a></li>
+        <li><a href="https://msd-media.com/agence-web-clermont-ferrand/">Clermont-Ferrand</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_company">Entreprise</p>
+        <ul>
+          <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
+          <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
+          <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_resources">Ressources</p>
+        <ul>
+          <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="https://msd-media.com/glossaire/" data-i18n="footer_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a></li>
+          <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
+          <li><a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="secteurs">
+        <p class="footer-column__title" data-i18n="footer_col_sectors">Secteurs</p>
+        <ul>
+          <li><a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats & juristes</a></li>
+          <li><a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins & santé</a></li>
+          <li><a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a></li>
+          <li><a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants & cafés</a></li>
+          <li><a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans & TPE</a></li>
+          <li><a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Mentions légales -->
+    <div class="footer-legal">
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale">CGV</a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
+    </div>
+</footer>
+  <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous" defer></script>
+  <script src="../assets/js/script.js" defer></script>
 </body>
 </html>

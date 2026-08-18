@@ -9,6 +9,16 @@
   },
   "redirects": [
     {
+      "source": "/template-landing-page/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/template-landing-page",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/blog/articles/bloquer-crawlers-ia-robots-txt/",
       "destination": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
       "permanent": true
@@ -121,12 +131,12 @@
     },
     {
       "source": "/blog/articles/top-5-applications-productivite-2025.html",
-      "destination": "/blog/articles/top-5-applications-productivite-2026/",
+      "destination": "/blog/",
       "permanent": true
     },
     {
       "source": "/blog/articles/top-5-applications-productivite-2025",
-      "destination": "/blog/articles/top-5-applications-productivite-2026/",
+      "destination": "/blog/",
       "permanent": true
     },
     {
@@ -141,12 +151,12 @@
     },
     {
       "source": "/blog/articles/meilleure-agence-web-annecy-2025.html",
-      "destination": "/blog/articles/meilleure-agence-web-annecy-2026/",
+      "destination": "/blog/articles/top-7-meilleures-agences-web-annecy-2026/",
       "permanent": true
     },
     {
       "source": "/blog/articles/meilleure-agence-web-annecy-2025",
-      "destination": "/blog/articles/meilleure-agence-web-annecy-2026/",
+      "destination": "/blog/articles/top-7-meilleures-agences-web-annecy-2026/",
       "permanent": true
     },
     {
@@ -166,12 +176,12 @@
     },
     {
       "source": "/portfolio/",
-      "destination": "/etudes-de-cas/",
+      "destination": "/realisations/",
       "permanent": true
     },
     {
       "source": "/portfolio",
-      "destination": "/etudes-de-cas/",
+      "destination": "/realisations/",
       "permanent": true
     },
     {
@@ -181,27 +191,27 @@
     },
     {
       "source": "/etudes-de-cas/cas/laurence-daien.html",
-      "destination": "/etudes-de-cas/laurence-daien-maestripieri/",
+      "destination": "/realisations/laurence-daien-maestripieri/",
       "permanent": true
     },
     {
       "source": "/etudes-de-cas/cas/maxime-sciare.html",
-      "destination": "/etudes-de-cas/maxime-sciare/",
+      "destination": "/realisations/maxime-sciare/",
       "permanent": true
     },
     {
       "source": "/etudes-de-cas/cas/l-agence-3xl.html",
-      "destination": "/etudes-de-cas/agence-3xl/",
+      "destination": "/realisations/agence-3xl/",
       "permanent": true
     },
     {
       "source": "/etudes-de-cas/cas/l-o-morel.html",
-      "destination": "/etudes-de-cas/",
+      "destination": "/realisations/",
       "permanent": true
     },
     {
       "source": "/etudes-de-cas/cas/:slug.html",
-      "destination": "/etudes-de-cas/",
+      "destination": "/realisations/",
       "permanent": true
     },
     {
@@ -225,183 +235,603 @@
       "permanent": true
     },
     {
-      "source": "/blog/articles/10-erreurs-creation-site-web-annecy/",
-      "destination": "/blog/articles/10-erreurs-creation-site-web-annecy/",
+      "source": "/creation-site-internet-strasbourg/",
+      "destination": "/creation-site-web-strasbourg/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/10-erreurs-creation-site-web-annecy/",
-      "destination": "/blog/articles/10-erreurs-creation-site-web-annecy/",
+      "source": "/devis-landing-page/",
+      "destination": "/configurateur/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/vitesse-performance-site-web-annecy-2026/",
-      "destination": "/blog/articles/vitesse-performance-site-web-annecy-2026/",
+      "source": "/devis-landing-page",
+      "destination": "/configurateur/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/vitesse-performance-site-web-annecy-2026/",
-      "destination": "/blog/articles/vitesse-performance-site-web-annecy-2026/",
+      "source": "/chatgpt-vous-connait/",
+      "destination": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-hotel-hebergement-annecy/",
-      "destination": "/blog/articles/site-web-hotel-hebergement-annecy/",
+      "source": "/chatgpt-vous-connait",
+      "destination": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-hotel-hebergement-annecy/",
-      "destination": "/blog/articles/site-web-hotel-hebergement-annecy/",
+      "source": "/creation-site-internet-annecy/",
+      "destination": "/creation-site-web-annecy/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-agence-immobiliere-annecy/",
-      "destination": "/blog/articles/site-web-agence-immobiliere-annecy/",
+      "source": "/prix-site-internet/",
+      "destination": "/tarifs/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-agence-immobiliere-annecy/",
-      "destination": "/blog/articles/site-web-agence-immobiliere-annecy/",
+      "source": "/prix-site-internet",
+      "destination": "/tarifs/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-avocat-annecy/",
-      "destination": "/blog/articles/site-web-avocat-annecy/",
+      "source": "/creation-site-internet-annecy",
+      "destination": "/creation-site-web-annecy/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-avocat-annecy/",
-      "destination": "/blog/articles/site-web-avocat-annecy/",
+      "source": "/creation-site-vitrine-annecy/",
+      "destination": "/creation-site-web-annecy/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-medecin-annecy/",
-      "destination": "/blog/articles/site-web-medecin-annecy/",
+      "source": "/creation-site-vitrine-annecy",
+      "destination": "/creation-site-web-annecy/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-medecin-annecy/",
-      "destination": "/blog/articles/site-web-medecin-annecy/",
+      "source": "/creation-site-internet-strasbourg",
+      "destination": "/creation-site-web-strasbourg/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-photographe-annecy/",
-      "destination": "/blog/articles/site-web-photographe-annecy/",
+      "source": "/creation-site-vitrine-strasbourg/",
+      "destination": "/creation-site-web-strasbourg/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-photographe-annecy/",
-      "destination": "/blog/articles/site-web-photographe-annecy/",
+      "source": "/creation-site-vitrine-strasbourg",
+      "destination": "/creation-site-web-strasbourg/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-therapeute-annecy/",
-      "destination": "/blog/articles/site-web-therapeute-annecy/",
+      "source": "/etudes-de-cas/",
+      "destination": "/realisations/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-therapeute-annecy/",
-      "destination": "/blog/articles/site-web-therapeute-annecy/",
+      "source": "/etudes-de-cas",
+      "destination": "/realisations/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-artisan-tpe-annecy/",
-      "destination": "/blog/articles/site-web-artisan-tpe-annecy/",
+      "source": "/etudes-de-cas/maxime-sciare/",
+      "destination": "/realisations/maxime-sciare/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-artisan-tpe-annecy/",
-      "destination": "/blog/articles/site-web-artisan-tpe-annecy/",
+      "source": "/etudes-de-cas/maxime-sciare",
+      "destination": "/realisations/maxime-sciare/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/combien-coute-site-web-annecy-2026/",
-      "destination": "/blog/articles/combien-coute-site-web-annecy-2026/",
+      "source": "/etudes-de-cas/marie-troccaz/",
+      "destination": "/realisations/marie-troccaz/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/combien-coute-site-web-annecy-2026/",
-      "destination": "/blog/articles/combien-coute-site-web-annecy-2026/",
+      "source": "/etudes-de-cas/marie-troccaz",
+      "destination": "/realisations/marie-troccaz/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/choisir-agence-web-annecy/",
-      "destination": "/blog/articles/choisir-agence-web-annecy/",
+      "source": "/etudes-de-cas/agence-3xl/",
+      "destination": "/realisations/agence-3xl/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/choisir-agence-web-annecy/",
-      "destination": "/blog/articles/choisir-agence-web-annecy/",
+      "source": "/etudes-de-cas/agence-3xl",
+      "destination": "/realisations/agence-3xl/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-architecte-annecy/",
-      "destination": "/blog/articles/site-web-architecte-annecy/",
+      "source": "/etudes-de-cas/hairtattoo/",
+      "destination": "/realisations/hairtattoo/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-architecte-annecy/",
-      "destination": "/blog/articles/site-web-architecte-annecy/",
+      "source": "/etudes-de-cas/hairtattoo",
+      "destination": "/realisations/hairtattoo/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-restaurant-cafe-annecy/",
-      "destination": "/blog/articles/site-web-restaurant-cafe-annecy/",
+      "source": "/etudes-de-cas/laurence-daien-maestripieri/",
+      "destination": "/realisations/laurence-daien-maestripieri/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-restaurant-cafe-annecy/",
-      "destination": "/blog/articles/site-web-restaurant-cafe-annecy/",
+      "source": "/etudes-de-cas/laurence-daien-maestripieri",
+      "destination": "/realisations/laurence-daien-maestripieri/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-coach-sportif-annecy/",
-      "destination": "/blog/articles/site-web-coach-sportif-annecy/",
+      "source": "/etudes-de-cas/aristoi-academia/",
+      "destination": "/realisations/aristoi-academia/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-coach-sportif-annecy/",
-      "destination": "/blog/articles/site-web-coach-sportif-annecy/",
+      "source": "/etudes-de-cas/aristoi-academia",
+      "destination": "/realisations/aristoi-academia/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/seo-local-ia-2026/",
-      "destination": "/blog/articles/seo-local-ia-2026/",
+      "source": "/etudes-de-cas/nation-startup/",
+      "destination": "/realisations/nation-startup/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/seo-local-ia-2026/",
-      "destination": "/blog/articles/seo-local-ia-2026/",
+      "source": "/etudes-de-cas/nation-startup",
+      "destination": "/realisations/nation-startup/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/aeo-seo-geo-guide-2026/",
-      "destination": "/blog/articles/aeo-seo-geo-guide-2026/",
+      "source": "/etudes-de-cas/em-motors/",
+      "destination": "/realisations/em-motors/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/aeo-seo-geo-guide-2026/",
-      "destination": "/blog/articles/aeo-seo-geo-guide-2026/",
+      "source": "/etudes-de-cas/em-motors",
+      "destination": "/realisations/em-motors/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/landing-page-vs-site-web-guide-complet/",
-      "destination": "/blog/articles/landing-page-vs-site-web-guide-complet/",
+      "source": "/etudes-de-cas/merz-ultherapy-prime/",
+      "destination": "/realisations/merz-ultherapy-prime/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/landing-page-vs-site-web-guide-complet/",
-      "destination": "/blog/articles/landing-page-vs-site-web-guide-complet/",
+      "source": "/etudes-de-cas/merz-ultherapy-prime",
+      "destination": "/realisations/merz-ultherapy-prime/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/creation-site-internet-strasbourg/",
-      "destination": "/blog/articles/creation-site-internet-strasbourg/",
+      "source": "/etudes-de-cas/carroz-sports/",
+      "destination": "/realisations/carroz-sports/",
       "permanent": true
     },
     {
-      "source": "/blog/articles/creation-site-internet-strasbourg/",
-      "destination": "/blog/articles/creation-site-internet-strasbourg/",
+      "source": "/etudes-de-cas/carroz-sports",
+      "destination": "/realisations/carroz-sports/",
+      "permanent": true
+    },
+    {
+      "source": "/analyse-seo/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/analyse-seo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/audit-seo-gratuit/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/audit-seo-gratuit",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/glossaire-web-seo-annecy/",
+      "destination": "/glossaire/",
+      "permanent": true
+    },
+    {
+      "source": "/glossaire-web-seo-annecy",
+      "destination": "/glossaire/",
+      "permanent": true
+    },
+    {
+      "source": "/glossaire-web-seo-strasbourg/",
+      "destination": "/glossaire/",
+      "permanent": true
+    },
+    {
+      "source": "/glossaire-web-seo-strasbourg",
+      "destination": "/glossaire/",
+      "permanent": true
+    },
+    {
+      "source": "/glossaire-web-seo/",
+      "destination": "/glossaire/",
+      "permanent": true
+    },
+    {
+      "source": "/glossaire-web-seo",
+      "destination": "/glossaire/",
+      "permanent": true
+    },
+    {
+      "source": "/faq-seo-annecy/",
+      "destination": "/faq-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/faq-seo-annecy",
+      "destination": "/faq-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/faq-seo-strasbourg/",
+      "destination": "/faq-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/faq-seo-strasbourg",
+      "destination": "/faq-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-munich/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-munich",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-montpellier/",
+      "destination": "/agence-web-montpellier/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-montpellier",
+      "destination": "/agence-web-montpellier/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-montpellier/",
+      "destination": "/agence-web-montpellier/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-montpellier",
+      "destination": "/agence-web-montpellier/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-rennes/",
+      "destination": "/agence-web-rennes/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-rennes",
+      "destination": "/agence-web-rennes/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-rennes/",
+      "destination": "/agence-web-rennes/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-rennes",
+      "destination": "/agence-web-rennes/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-clermont-ferrand/",
+      "destination": "/agence-web-clermont-ferrand/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-clermont-ferrand",
+      "destination": "/agence-web-clermont-ferrand/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-clermont-ferrand/",
+      "destination": "/agence-web-clermont-ferrand/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-clermont-ferrand",
+      "destination": "/agence-web-clermont-ferrand/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-chambery/",
+      "destination": "/agence-web-chambery/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-chambery",
+      "destination": "/agence-web-chambery/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-chambery/",
+      "destination": "/agence-web-chambery/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-chambery",
+      "destination": "/agence-web-chambery/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-cluses/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-cluses",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-thonon-les-bains/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-thonon-les-bains",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-chamonix/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-chamonix",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/qui-est-maxens-parcours-et-vision/",
+      "destination": "/blog/articles/maxens-soldan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/qui-est-maxens-parcours-et-vision",
+      "destination": "/blog/articles/maxens-soldan/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-bordeaux/",
+      "destination": "/agence-web-bordeaux/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-bordeaux",
+      "destination": "/agence-web-bordeaux/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-bordeaux/",
+      "destination": "/agence-web-bordeaux/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-bordeaux",
+      "destination": "/agence-web-bordeaux/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-geneve/",
+      "destination": "/agence-web-geneve/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-geneve",
+      "destination": "/agence-web-geneve/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-geneve/",
+      "destination": "/agence-web-geneve/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-geneve",
+      "destination": "/agence-web-geneve/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-lille/",
+      "destination": "/agence-web-lille/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-lille",
+      "destination": "/agence-web-lille/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-lille/",
+      "destination": "/agence-web-lille/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-lille",
+      "destination": "/agence-web-lille/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-lyon/",
+      "destination": "/agence-web-lyon/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-lyon",
+      "destination": "/agence-web-lyon/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-lyon/",
+      "destination": "/agence-web-lyon/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-lyon",
+      "destination": "/agence-web-lyon/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-marseille/",
+      "destination": "/agence-web-marseille/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-marseille",
+      "destination": "/agence-web-marseille/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-marseille/",
+      "destination": "/agence-web-marseille/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-marseille",
+      "destination": "/agence-web-marseille/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-nantes/",
+      "destination": "/agence-web-nantes/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-nantes",
+      "destination": "/agence-web-nantes/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-nantes/",
+      "destination": "/agence-web-nantes/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-nantes",
+      "destination": "/agence-web-nantes/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-nice/",
+      "destination": "/agence-web-nice/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-nice",
+      "destination": "/agence-web-nice/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-nice/",
+      "destination": "/agence-web-nice/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-nice",
+      "destination": "/agence-web-nice/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-paris/",
+      "destination": "/agence-web-paris/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-paris",
+      "destination": "/agence-web-paris/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-paris/",
+      "destination": "/agence-web-paris/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-paris",
+      "destination": "/agence-web-paris/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-toulouse/",
+      "destination": "/agence-web-toulouse/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-toulouse",
+      "destination": "/agence-web-toulouse/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-toulouse/",
+      "destination": "/agence-web-toulouse/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-toulouse",
+      "destination": "/agence-web-toulouse/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-alsace/",
+      "destination": "/agence-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-alsace",
+      "destination": "/agence-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-haute-savoie/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-haute-savoie",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-annecy-le-vieux/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-annecy-le-vieux",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/avis-clients/",
+      "destination": "/#landing-reviews",
+      "permanent": true
+    },
+    {
+      "source": "/avis-clients",
+      "destination": "/#landing-reviews",
       "permanent": true
     }
   ],
@@ -409,6 +839,10 @@
     {
       "source": "/(.*)",
       "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
         {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
@@ -426,7 +860,7 @@
           "value": "geolocation=(), microphone=(), camera=()"
         },
         {
-          "key": "Content-Security-Policy-Report-Only",
+          "key": "Content-Security-Policy",
           "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://challenges.cloudflare.com https://cdnjs.cloudflare.com https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://ka-f.fontawesome.com; img-src 'self' data: https: blob:; media-src 'self' blob: https://app.videas.fr; connect-src 'self' https://app.msd-media.com https://formspree.io https://www.google-analytics.com https://region1.google-analytics.com https://ka-f.fontawesome.com https://*.clarity.ms https://cal.com https://www.googletagmanager.com; frame-src https://www.googletagmanager.com https://challenges.cloudflare.com https://cal.com https://app.videas.fr https://maxsld.github.io https://agence3xl.fr https://nation-startup.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io"
         }
       ]

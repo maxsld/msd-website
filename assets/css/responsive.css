@@ -10,7 +10,7 @@
   .footer-container,
   .founder-section,
   .section-reviews {
-    width: min(100%, 1060px);
+    width: min(100%, 1200px);
     margin-left: auto;
     margin-right: auto;
   }
@@ -62,6 +62,7 @@
   .case-studies-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
 }
 
 @media (max-width: 992px) {
@@ -75,12 +76,28 @@
     gap: 0.6rem;
   }
 
+  .top-announcement {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
   .nav-right {
     gap: 0.5rem;
   }
 
   .hero {
     padding: 0.9rem 1rem 1.5rem;
+  }
+
+  .home-page .hero-badges {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.65rem;
   }
 
   .hero__actions {
@@ -90,6 +107,17 @@
 
   .hero__btn {
     min-height: 42px;
+  }
+
+  .legal-page main.container {
+    width: calc(100% - 1.5rem);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .legal-page dl {
+    grid-template-columns: 1fr;
+    gap: 0.25rem 0;
   }
 
   .video-hero {
@@ -126,35 +154,25 @@
     padding: 2.2rem 1rem 0.7rem;
   }
 
-  .realisations-grid {
-    gap: 1rem;
-  }
-
   .realisations-item,
-  .realisations-item:nth-child(even) {
+  .realisations-item--reverse {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem 0;
   }
 
-  .realisations-copy,
-  .realisations-item:nth-child(even) .realisations-copy,
-  .realisations-media,
-  .realisations-item:nth-child(even) .realisations-media {
+  .realisations-item--reverse .realisations-media,
+  .realisations-item--reverse .realisations-panel {
     order: initial;
   }
 
-  .realisations-copy {
-    gap: 0.8rem;
+  .realisations-panel {
+    gap: 0.9rem;
+    padding: 1.4rem;
   }
 
-  .realisations-item__description {
-    max-width: none;
-    font-size: 0.95rem;
-  }
-
-  .realisations-item__actions {
-    margin-top: 0.15rem;
+  .realisations-media__note {
+    font-size: 1.05rem;
   }
 
   .realisations-brand__logo {
@@ -172,8 +190,13 @@
     max-height: 40px;
   }
 
+  .realisations-brand__logo--marie {
+    max-width: 210px;
+    max-height: 42px;
+  }
+
   .realisations-card {
-    border-radius: 18px;
+    border-radius: 0.2rem;
   }
 
   .realisations-card__overlay {
@@ -188,8 +211,33 @@
     gap: 0.55rem;
   }
 
+  .case-study-page .hero {
+    padding: 3.4rem 1rem 1.6rem;
+  }
+
+  .case-study-page .hero .hero__actions {
+    flex-wrap: wrap;
+  }
+
+  .case-study-detail-section {
+    padding: 1.2rem 1rem 4rem;
+  }
+
+  .case-study-detail-inner {
+    gap: 1.4rem;
+  }
+
+  .case-study-detail-content p,
+  .case-study-detail-content li {
+    font-size: 0.98rem;
+  }
+
   .process-section {
     padding: 2.6rem 1rem 0.6rem;
+  }
+
+  #process.process-section--metier {
+    margin-top: 2rem;
   }
 
   .process-steps {
@@ -349,6 +397,11 @@
   .footer-cities ul {
     gap: 0.55rem 0.95rem;
   }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -392,8 +445,8 @@
   }
 
   .lang-switch__select {
-    min-width: 66px;
-    max-width: 84px;
+    min-width: 88px;
+    max-width: 96px;
     padding-right: 1.2rem;
   }
 
@@ -406,6 +459,12 @@
     max-width: calc(100vw - 2rem);
     white-space: nowrap;
     overflow: hidden;
+  }
+
+  .hero__title--city-two-line .hero__title-word-wrap {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   .trustpilot_content img {
@@ -542,7 +601,7 @@
 
   .lang-switch__select {
     height: 36px;
-    min-width: 64px;
+    min-width: 84px;
   }
 
   .hero {
@@ -603,17 +662,16 @@
     align-items: stretch;
   }
 
-  .realisations-grid {
-    gap: 0.85rem;
-  }
-
-  .realisations-item,
-  .realisations-item:nth-child(even) {
+  .realisations-item {
     padding: 0.85rem 0;
   }
 
+  .realisations-panel {
+    padding: 1.2rem;
+  }
+
   .realisations-card {
-    border-radius: 15px;
+    border-radius: 0.2rem;
   }
 
   .contact-button,
@@ -679,6 +737,7 @@
     grid-template-columns: 1fr;
     gap: 0.85rem;
     margin-bottom: 2rem;
+    padding: 1.5rem 1rem 2rem;
   }
 
   .blog-toc {
@@ -706,8 +765,19 @@
     margin-bottom: 1.35rem;
   }
 
+  .case-study-page .blog-article-shell {
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+  }
+
+  .case-study-page .blog-article-content.case-study-detail-content {
+    grid-column: 1;
+    max-width: none;
+    margin: 0;
+  }
+
   .blog-related {
-    grid-column: auto;
+    padding: 0 1rem 2rem;
   }
 
   .blog-related-grid {
@@ -856,5 +926,16 @@
   .footer-affiliate-conditions__text {
     font-size: 0.66rem;
     line-height: 1.4;
+  }
+}
+
+@media (max-width: 720px) {
+  .blog-article-hero__row {
+    flex-wrap: wrap;
+  }
+
+  .blog-article-page .hero .blog-article-cover {
+    flex: 1 1 100%;
+    width: 100%;
   }
 }

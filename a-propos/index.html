@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>À Propos | Agence Web Annecy — Maxens Soldan — MSD Media</title>
+  <title>À Propos</title>
   <meta name="description" content="À propos de MSD Media, agence web basée à Annecy : fondateur Maxens Soldan, méthode en 4 étapes, clients nommés, chiffres réels et couverture France..." />
-  <meta name="title" content="À Propos | Agence Web Annecy — Maxens Soldan — MSD Media" />
+  <meta name="title" content="À Propos" />
   <meta name="keywords" content="à propos msd media, maxens soldan, agence web annecy, seo geo ia, e-e-a-t agence web, références clients msd media" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -75,18 +75,57 @@
       padding-right: 3rem;
     }
 
-    .about-page .section-grid + .section-grid {
-      margin-top: 7rem;
+    /* ── Gap harmonisé entre toutes les sections de la page ── */
+    .about-page #histoire,
+    .about-page #valeurs,
+    .about-page #agence,
+    .about-page #landing-reviews,
+    .about-page #faq,
+    .about-page #ai-proof,
+    .about-page #rdv {
+      margin-top: 5rem;
     }
 
-    .about-hero-lead {
-      margin: 1.1rem 0 0;
-      max-width: 720px;
-      text-align: center;
-      font-size: 1rem;
-      line-height: 1.65;
-      color: rgba(17, 17, 17, 0.78);
-      letter-spacing: -0.01em;
+    .about-page #ai-proof {
+      margin-bottom: 0;
+    }
+
+    /* ── Titres Avis / FAQ / IA alignés sur la taille du H1 ── */
+    .about-page #landing-reviews .section-title,
+    .about-page #faq .section-title,
+    .about-page #ai-proof .section-title {
+      font-size: clamp(1.9rem, 4vw, 2.75rem);
+    }
+
+    @media (max-width: 680px) {
+      .about-page #histoire,
+      .about-page #valeurs,
+      .about-page #agence,
+      .about-page #landing-reviews,
+      .about-page #faq,
+      .about-page #ai-proof,
+      .about-page #rdv {
+        margin-top: 3.5rem;
+      }
+    }
+
+    /* Le fond de page est sombre (--global-color-background) : le hero doit donc
+       utiliser du texte clair, comme sur les pages home-page / sector-page. */
+    .about-page .hero .section-tag--dark {
+      border-color: rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.82);
+      border-radius: 0.2rem;
+    }
+
+    .about-page .hero__title {
+      color: #ffffff;
+    }
+
+    .about-page .hero__btn--secondary {
+      color: #ffffff;
+      background: transparent;
+      border-color: rgba(247, 245, 246, 0.34);
     }
 
     .about-bio {
@@ -377,10 +416,264 @@
       text-align: left;
     }
 
+    /* ── Hero photo plein cadre ── */
+    .hero-photo {
+      position: relative;
+      width: calc(100% - 3.4rem);
+      max-width: 1200px;
+      margin: 0 auto;
+      border-radius: 0.2rem;
+      overflow: hidden;
+      height: min(78vh, 700px);
+    }
+
+    .hero-photo__media {
+      position: absolute;
+      inset: 0;
+    }
+
+    .hero-photo__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 10%;
+      display: block;
+    }
+
+    .hero-photo__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(17, 17, 17, 0) 35%, rgba(17, 17, 17, 0.92) 100%);
+    }
+
+    .hero-photo__content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      text-align: left;
+      padding: 3rem;
+    }
+
+    .hero-photo__content .section-tag {
+      margin: 0 0 1rem;
+      margin-left: 0;
+      border-radius: 0.2rem;
+    }
+
+    .hero-photo__title {
+      margin: 0 0 1rem;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: #ffffff;
+      font-size: clamp(1.9rem, 4vw, 2.75rem);
+      max-width: 24ch;
+    }
+
+    .hero-photo__desc {
+      margin: 0;
+      max-width: 55ch;
+      font-size: 0.98rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    @media (max-width: 680px) {
+      .hero-photo {
+        width: calc(100% - 1rem);
+        height: min(85vh, 560px);
+      }
+
+      .hero-photo__content {
+        padding: 1.5rem;
+      }
+    }
+
+    /* ── Bandeau logos clients ── */
+    .about-logos {
+      max-width: 1200px;
+      margin: 3.5rem auto 0;
+      padding: 0 3rem;
+      text-align: center;
+    }
+
+    .about-logos__label {
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      margin: 0 0 1.2rem;
+    }
+
+    /* ── Timeline ── */
+    .about-timeline {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
+    .about-timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .about-timeline-card {
+      border-left: 2px solid rgba(255, 255, 255, 0.18);
+      padding: 0 0 0 1.3rem;
+    }
+
+    .about-timeline-card__date {
+      font-family: "Instrument Serif", serif;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      color: #ffffff;
+      display: block;
+      margin: 0 0 0.5rem;
+    }
+
+    .about-timeline-card h4 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+
+    .about-timeline-card p {
+      margin: 0;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .about-timeline-card p a {
+      color: #ffffff;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* ── Valeurs ── */
+    .about-values {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
+    .about-values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .about-value-card {
+      border: 1px solid rgba(17, 17, 17, 0.12);
+      border-radius: 1.25rem;
+      padding: 1.4rem 1.2rem;
+      background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .about-value-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(17, 17, 17, 0.25);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .about-value-card__num {
+      font-family: "Instrument Serif", serif;
+      font-size: 1.3rem;
+      color: rgba(17, 17, 17, 0.35);
+      margin: 0 0 0.6rem;
+    }
+
+    .about-value-card h4 {
+      margin: 0 0 0.5rem;
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: #101010;
+    }
+
+    .about-value-card__quote {
+      margin: 0 0 0.6rem;
+      font-style: italic;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: rgba(17, 17, 17, 0.85);
+    }
+
+    .about-value-card p {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: rgba(17, 17, 17, 0.72);
+    }
+
+    /* ── Témoignages ── */
+    .about-testimonials {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
+    .about-testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+      margin-top: 2.5rem;
+    }
+
+    .about-testimonial-card {
+      border: 1px solid rgba(17, 17, 17, 0.12);
+      border-radius: 1.25rem;
+      padding: 1.4rem 1.3rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-testimonial-card__stars {
+      color: #f5a623;
+      font-size: 0.85rem;
+      margin: 0 0 0.7rem;
+      letter-spacing: 0.1em;
+    }
+
+    .about-testimonial-card p {
+      margin: 0 0 1rem;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #202020;
+      flex: 1;
+    }
+
+    .about-testimonial-card__author {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #101010;
+    }
+
+    .about-testimonial-card__role {
+      font-size: 0.8rem;
+      color: rgba(17, 17, 17, 0.6);
+    }
+
     @media (max-width: 980px) {
       .about-metrics-grid,
       .about-clients-grid,
-      .about-signals-grid {
+      .about-signals-grid,
+      .about-timeline-grid,
+      .about-testimonials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .about-values-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
@@ -389,7 +682,11 @@
       .about-clients,
       .about-signals,
       .about-sources,
-      .about-story {
+      .about-story,
+      .about-logos,
+      .about-timeline,
+      .about-values,
+      .about-testimonials {
         padding-left: 1.2rem;
         padding-right: 1.2rem;
       }
@@ -417,12 +714,320 @@
 
       .about-metrics-grid,
       .about-clients-grid,
-      .about-signals-grid {
+      .about-signals-grid,
+      .about-timeline-grid,
+      .about-values-grid,
+      .about-testimonials-grid {
         grid-template-columns: 1fr;
       }
 
       .about-sources-card {
         padding: 1.3rem 1rem;
+      }
+    }
+
+    .about-page .hero {
+      width: calc(100% - 3.4rem);
+      max-width: 1200px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .about-page .hero__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: clamp(2.35rem, 8vw, 3.75rem);
+      width: 100%;
+      max-width: none;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      text-align: center;
+    }
+
+    .about-page .hero__title > span {
+      display: block;
+      width: max-content;
+      max-width: 100%;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .about-page .hero-badges {
+      margin-bottom: 0;
+    }
+
+    .about-page .hero-badges .section-tag {
+      margin-bottom: 1.5rem;
+    }
+
+    .about-page .hero__subtitle {
+      margin-top: 0.8rem;
+      max-width: 70ch;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--global-color-white);
+      opacity: 0.7;
+    }
+
+    .about-page .hero__actions {
+      margin-top: 3rem;
+    }
+
+    .about-page .hero__btn--primary,
+    .about-page .about-alt-text .hero__btn--primary,
+    .about-page .ai-proof .hero__btn--primary {
+      color: var(--global-color-white);
+      background: #2f6bff;
+      border-color: #2f6bff;
+      border-radius: 0.2rem;
+    }
+
+    .about-page .hero__btn--secondary {
+      border-radius: 0.2rem;
+    }
+
+    .about-visual-grid {
+      width: calc(100% - 3.4rem);
+      max-width: 1200px;
+      margin: 1.8rem auto 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-auto-rows: 64px;
+      grid-auto-flow: dense;
+      gap: 0.75rem;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      padding-bottom: 2rem;
+    }
+
+    .about-visual-grid::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 34%;
+      z-index: 2;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, #111111 92%);
+    }
+
+    .about-visual-grid__item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.2rem;
+      background: #181818;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      min-height: 0;
+    }
+
+    .about-visual-grid__item img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .about-visual-grid__item--wide {
+      grid-column: span 2;
+      grid-row: span 4;
+    }
+
+    .about-visual-grid__item--tall {
+      grid-column: span 1;
+      grid-row: span 6;
+    }
+
+    .about-visual-grid__item--medium {
+      grid-column: span 1;
+      grid-row: span 3;
+    }
+
+    .about-visual-grid__item--large {
+      grid-column: span 2;
+      grid-row: span 4;
+    }
+
+    .about-visual-grid__item--small {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+
+    .about-visual-grid__item--square {
+      grid-column: span 1;
+      grid-row: span 4;
+    }
+
+    .about-visual-grid__item--portrait img {
+      object-position: center 22%;
+    }
+
+    .about-page .section-title {
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    .about-page .section-title--dark,
+    .about-page .section-title--light {
+      font-size: clamp(2rem, 3.8vw, 3.8rem);
+      font-weight: 600;
+    }
+
+    .about-page .about-metric-card,
+    .about-page .about-signal-card,
+    .about-page .about-client-link,
+    .about-page .about-sources-card,
+    .about-page .about-value-card,
+    .about-page .about-testimonial-card {
+      border-radius: 0.2rem;
+      box-shadow: none;
+      background: #ffffff;
+    }
+
+    .about-page .about-metric-card:hover,
+    .about-page .about-signal-card:hover,
+    .about-page .about-client-link:hover,
+    .about-page .about-value-card:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    .about-page .about-metric-card__value,
+    .about-page .about-timeline-card__date,
+    .about-page .about-value-card__num {
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+
+    .about-page .about-metric-card__value {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+
+    .about-page .about-metrics-grid,
+    .about-page .about-values-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .about-page .about-testimonials-grid,
+    .about-page .about-signals-grid {
+      gap: 1rem;
+    }
+
+    .about-page .about-alt-img img {
+      border-radius: 0.2rem;
+    }
+
+    .about-page .about-alt-text h2,
+    .about-page .about-sources-card h3,
+    .about-page .about-signal-card h4,
+    .about-page .about-value-card h4,
+    .about-page .about-testimonial-card__author {
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+
+    .about-page .about-alt-text h2 {
+      font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+      line-height: 1.2;
+    }
+
+    .about-page .about-timeline-card {
+      border-left-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .about-page .about-timeline-card__date {
+      font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+    }
+
+    /* ── Valeurs : tag carré, titre réduit, cards noires, grille 2x2 ── */
+    #valeurs .section-tag {
+      border-radius: 0.2rem;
+    }
+
+    #valeurs .section-title {
+      font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+    }
+
+    #valeurs .about-values-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #valeurs .about-value-card {
+      background: #181818;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 0.2rem;
+      padding: 2rem 1.5rem 1.5rem;
+    }
+
+    #valeurs .about-value-card p.about-value-card__num {
+      font-size: 2.2rem;
+      color: #ffffff;
+    }
+
+    #valeurs .about-value-card h4 {
+      color: #ffffff;
+    }
+
+    #valeurs .about-value-card__quote {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    #valeurs .about-value-card p {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    @media (max-width: 680px) {
+      #valeurs .about-values-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .about-page .about-metrics-grid,
+      .about-page .about-values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .about-page .hero {
+        width: calc(100% - 1rem);
+      }
+
+      .about-page .hero__title {
+        font-size: clamp(1.45rem, 7vw, 2.05rem);
+      }
+
+      .about-visual-grid {
+        width: calc(100% - 1rem);
+        grid-template-columns: 1fr;
+        grid-auto-rows: 82px;
+      }
+
+      .about-visual-grid__item,
+      .about-visual-grid__item--wide,
+      .about-visual-grid__item--tall,
+      .about-visual-grid__item--medium,
+      .about-visual-grid__item--large,
+      .about-visual-grid__item--small {
+        grid-column: span 1;
+        grid-row: span 3;
+      }
+
+      .about-page .section-grid + .section-grid {
+        margin-top: 7rem;
+      }
+
+      .about-page .about-metrics-grid,
+      .about-page .about-values-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -542,7 +1147,7 @@
         "@type": "WebPage",
         "@id": "https://msd-media.com/a-propos/#webpage",
         "url": "https://msd-media.com/a-propos/",
-        "name": "À Propos | Agence Web Annecy — Maxens Soldan — MSD Media",
+        "name": "À Propos",
         "isPartOf": {
           "@id": "https://msd-media.com/#website"
         },
@@ -612,55 +1217,55 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Agence 3XL",
-            "url": "https://msd-media.com/etudes-de-cas/agence-3xl/"
+            "url": "https://msd-media.com/realisations/agence-3xl/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Aristoi Academia",
-            "url": "https://msd-media.com/etudes-de-cas/aristoi-academia/"
+            "url": "https://msd-media.com/realisations/aristoi-academia/"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Carroz Sports",
-            "url": "https://msd-media.com/etudes-de-cas/carroz-sports/"
+            "url": "https://msd-media.com/realisations/carroz-sports/"
           },
           {
             "@type": "ListItem",
             "position": 4,
             "name": "EM Motors",
-            "url": "https://msd-media.com/etudes-de-cas/em-motors/"
+            "url": "https://msd-media.com/realisations/em-motors/"
           },
           {
             "@type": "ListItem",
             "position": 5,
             "name": "HairTattoo",
-            "url": "https://msd-media.com/etudes-de-cas/hairtattoo/"
+            "url": "https://msd-media.com/realisations/hairtattoo/"
           },
           {
             "@type": "ListItem",
             "position": 6,
             "name": "Laurence Daien Maestripieri",
-            "url": "https://msd-media.com/etudes-de-cas/laurence-daien-maestripieri/"
+            "url": "https://msd-media.com/realisations/laurence-daien-maestripieri/"
           },
           {
             "@type": "ListItem",
             "position": 7,
             "name": "Marie Troccaz",
-            "url": "https://msd-media.com/etudes-de-cas/marie-troccaz/"
+            "url": "https://msd-media.com/realisations/marie-troccaz/"
           },
           {
             "@type": "ListItem",
             "position": 8,
             "name": "Maxime Sciare",
-            "url": "https://msd-media.com/etudes-de-cas/maxime-sciare/"
+            "url": "https://msd-media.com/realisations/maxime-sciare/"
           },
           {
             "@type": "ListItem",
             "position": 9,
             "name": "Nation Startup",
-            "url": "https://msd-media.com/etudes-de-cas/nation-startup/"
+            "url": "https://msd-media.com/realisations/nation-startup/"
           }
         ]
       },
@@ -882,22 +1487,26 @@ function _msdLoadTracking(){
 </script>
 </head>
 
-<body class="about-page">
-  <!-- Google Tag Manager (noscript) -->
+<body class="home-page about-page">
+    <div class="top-announcement" role="banner">
+    <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
+    <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
+  </div>
+<!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28B6QRF"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Consentement cookies" hidden>
     <div class="cookie-consent__inner">
-      <p class="cookie-consent__text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">En savoir plus</a></p>
+      <p class="cookie-consent__text" data-i18n="cookie_text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="cookie_learn_more">En savoir plus</a></p>
       <div class="cookie-consent__actions">
-        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse">Refuser</button>
-        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept">Accepter</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse" data-i18n="cookie_refuse">Refuser</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept" data-i18n="cookie_accept">Accepter</button>
       </div>
     </div>
   </div>
-
-  <header class="navbar">
+<header class="navbar">
     <div class="nav-left">
       <a href="https://msd-media.com/"><img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager"></a>
       <div class="nav-menu" data-nav-menu>
@@ -906,19 +1515,66 @@ function _msdLoadTracking(){
         </button>
         <div class="nav-menu-dropdown" data-nav-menu-dropdown>
           <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
-          <a href="https://msd-media.com/">Accueil</a>
-          <a href="https://msd-media.com/a-propos/">À propos</a>
-          <a href="https://msd-media.com/etudes-de-cas/">Études de cas</a>
-          <a href="https://msd-media.com/blog/">Blog</a>
-          <a href="https://msd-media.com/contact/">Contact</a>
-          <a href="https://msd-media.com/recrutement/">Recrutement</a>
-                  <a href="https://msd-media.com/affiliation/">Affiliation</a>
+          <a href="https://msd-media.com/" data-i18n="nav_home">Accueil</a>
+          <a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a>
+          <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+          <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+          <a href="https://msd-media.com/contact/" data-i18n="nav_contact">Contact</a>
+          <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+                  <a href="https://msd-media.com/affiliation/" data-i18n="nav_affiliation">Affiliation</a>
 </div>
       </div>
     </div>
 
+    <nav class="nav-center" aria-label="Navigation principale">
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/blog/"><span class="nav-link-label" data-i18n="nav_resources">Ressources</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+              <a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a>
+              <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+              <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+              <a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/#secteurs"><span class="nav-link-label" data-i18n="nav_sector">Secteur</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
+              <a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
+              <a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
+              <a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
+              <a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
+              <a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img2.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+      <a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a>
+    </nav>
+
     <div class="nav-right">
-      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
+      <label class="lang-switch" for="lang-select">
+        <span class="lang-switch__label">Langue</span>
+        <select class="lang-switch__select" id="lang-select" data-lang-select aria-label="Choisir la langue">
+          <option value="fr">🇫🇷 FR</option>
+          <option value="en">🇬🇧 EN</option>
+        </select>
+      </label>
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank" data-i18n="nav_call">Réserver un appel</a>
       <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
       </a>
@@ -926,322 +1582,420 @@ function _msdLoadTracking(){
   </header>
 
   <main>
-    <section class="hero">
-      <p class="section-tag section-tag--dark">À propos</p>
-      <h1 class="hero__title"><span>L'agence web à Annecy </span><span class="hero__title-word-wrap"><span>qui crée des sites qui convertissent.</span></span></h1>
-      <p class="about-hero-lead">MSD Media est une agence web basée à Annecy, fondée par Maxens Soldan, spécialisée en création de sites web et landing pages SEO/GEO avec une logique orientée résultats.</p>
-      <div class="hero__actions" aria-label="Actions principales">
-        <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank">Réserver un appel</a>
-        <a class="hero__btn hero__btn--secondary" href="https://msd-media.com/etudes-de-cas/">Voir les études de cas</a>
+    <section class="hero-photo">
+      <div class="hero-photo__media">
+        <img src="https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp" alt="Maxens Soldan, fondateur de MSD Media, agence web à Annecy" loading="eager" fetchpriority="high" decoding="async">
+        <div class="hero-photo__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="hero-photo__content">
+        <p class="section-tag section-tag--light" data-i18n="about_hero_tag">À propos</p>
+        <h1 class="hero-photo__title" data-i18n="about_hero_title">L'agence web<br>au service de votre réussite.</h1>
+        <p class="hero-photo__desc" data-i18n="about_hero_desc">MSD Media est une agence web basée à Annecy, fondée par Maxens Soldan, spécialisée en création de sites web et landing pages SEO/GEO avec une logique orientée résultats.</p>
       </div>
     </section>
 
-    <section class="about-story section-grid" id="histoire" aria-label="Présentation MSD Media, fondateur et clients">
+    <section class="about-logos" aria-label="Logos clients">
+      <div class="logo-marquee" aria-label="Logos clients">
+        <div class="logo-marquee__track"></div>
+      </div>
+    </section>
 
-      <!-- Bloc 1 : MSD Media — photo gauche, texte droite -->
+    <section class="section-grid content-alt-section" id="histoire" aria-label="Histoire et fondateur de MSD Media">
       <article class="about-alt-block">
         <div class="about-alt-img">
-          <img src="https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp" alt="MSD Media, agence web à Annecy spécialisée en création de sites et landing pages SEO" loading="lazy" decoding="async">
+          <img src="https://msd-media.com/assets/img/navbar-img2.png" alt="MSD Media, agence web fondée à Annecy en juin 2025" loading="lazy" decoding="async">
         </div>
         <div class="about-alt-text">
-          <h2>MSD Media, agence web à Annecy, orientée résultats.</h2>
-          <p>MSD Media crée des <a href="https://msd-media.com/creation-site-web-annecy/">sites web</a> et <a href="https://msd-media.com/landing-page-annecy/">landing pages</a> conçus pour convertir, pas seulement pour plaire. Fondée en juin 2025 à Annecy, l’agence accompagne PME, indépendants et porteurs de projets en France, Suisse et Belgique. Chaque site est livré en 21 jours, optimisé <a href="https://msd-media.com/seo-local-annecy/">SEO local</a> et visible dans Google, ChatGPT et les moteurs IA. Une logique simple : un site qui ne génère pas de business n’est pas un bon site.</p>
-          <a href="https://cal.com/maxens-soldan-msd-media/30min" class="hero__btn hero__btn--primary" target="_blank">Réserver un appel</a>
+          <h2 data-i18n="about_origin_title">MSD Media, une agence née à Annecy</h2>
+          <p data-i18n="about_origin_p1">MSD Media est fondée en juin 2025 à Annecy. L'agence crée des sites web et landing pages conçus pour convertir, pas seulement pour plaire, et accompagne des indépendants, PME et startups en France, Suisse et Belgique.</p>
+          <p data-i18n="about_origin_p2">Chaque projet est livré en 21 jours, sans template générique ni CMS superflu : du code sur mesure, une structure de conversion claire et une base SEO/GEO pensée dès la conception.</p>
         </div>
       </article>
 
-      <!-- Bloc 2 : Maxens le fondateur — texte gauche, photo droite -->
       <article class="about-alt-block about-alt-block--reverse" id="fondateur">
         <div class="about-alt-img">
-          <img src="https://msd-media.com/assets/img/maxens-soldan.webp" alt="Maxens Soldan, fondateur et CEO de MSD Media, agence web à Annecy" loading="lazy" decoding="async" style="object-position: center 25%;">
+          <img src="../assets/img/maxens-soldan-bureau.webp" alt="Maxens Soldan, fondateur et CEO de MSD Media, au bureau" loading="lazy" decoding="async" style="object-position: center 30%;">
         </div>
         <div class="about-alt-text">
-          <h2>Maxens Soldan, étudiant-entrepreneur, fondateur & CEO.</h2>
-          <p>Maxens Soldan lance MSD Media depuis Annecy en parallèle de ses études à Polytech. Sa méthode : stratégie d’abord, design ensuite. Il pilote chaque projet de A à Z : cadrage business, structure de conversion, développement, mise en ligne, avec une exigence de résultat. Son parcours inclut un hackathon gagnant et plus de 30 clients accompagnés. <a href="https://www.ledauphine.com/economie/2026/06/04/msd-media-l-agence-web-qui-veut-transformer-les-visiteurs-en-clients" target="_blank" rel="noopener">Portrait de Maxens Soldan dans Le Dauphiné Libéré →</a></p>
-          <a href="https://msd-media.com/blog/articles/maxens-soldan/" class="hero__btn hero__btn--primary">Lire sa bio complète</a>
+          <h2 data-i18n="about_founder_title">Maxens Soldan, fondateur & unique interlocuteur</h2>
+          <p data-i18n="about_founder_p1">Maxens Soldan lance MSD Media depuis Annecy en parallèle de ses études à Polytech. Sa méthode : stratégie d'abord, design ensuite. Il pilote chaque projet de A à Z, du cadrage business à la mise en ligne, sans passer par un chef de projet intermédiaire.</p>
+          <p data-i18n="about_founder_p2">Son parcours a été relayé dans <a href="https://www.ledauphine.com/economie/2026/06/04/msd-media-l-agence-web-qui-veut-transformer-les-visiteurs-en-clients" target="_blank" rel="noopener noreferrer">Le Dauphiné Libéré</a> et par <a href="https://www.univ-smb.fr/polytech/2026/02/12/etudier-et-entreprendre-le-double-challenge-de-maxens/" target="_blank" rel="noopener noreferrer">Polytech Annecy-Chambéry</a>, après plus de 30 clients accompagnés.</p>
         </div>
       </article>
-
-      <!-- Bloc 3 : Nos clients — photo gauche, texte droite -->
-      <article class="about-alt-block">
-        <div class="about-alt-img">
-          <img src="https://msd-media.com/assets/img/nation-mockup.webp" alt="Exemples de sites web réalisés par MSD Media pour ses clients, références nommées" loading="lazy" decoding="async">
-        </div>
-        <div class="about-alt-text">
-          <h2>+30 clients accompagnés et 9 études de cas publiées.</h2>
-          <p>Coachs, PME, organismes de formation, studios créatifs : nos clients ont en commun un objectif business précis et un projet qui mérite un vrai site. Neuf références nommées sont publiées sur le site, avec contexte, défi et résultat. Des projets vérifiables, pas des screenshots anonymes.</p>
-          <a href="https://msd-media.com/etudes-de-cas/" class="hero__btn hero__btn--primary">Voir les études de cas</a>
-        </div>
-      </article>
-
     </section>
 
-    <section class="about-signals section-grid" id="seo-geo-ia" aria-label="Signaux SEO GEO IA" style="display:none">
-      <h2 class="section-tag section-tag--dark">SEO / GEO / IA</h2>
-      <h3 class="section-title section-title--dark">Signaux d’entité clairs pour Google et les LLMs.</h3>
-
-      <div class="about-signals-grid">
-        <article class="about-signal-card">
-          <h4>Identité d’entité cohérente</h4>
-          <p>Nom de marque, fondateur, localisation et services sont alignés sur les pages stratégiques du site.</p>
-          <ul>
-            <li>Base principale: Annecy (Haute-Savoie)</li>
-            <li>Couverture: France, Suisse, Belgique</li>
-            <li><a href="https://msd-media.com/agence-web-annecy/">Page locale principale Annecy</a></li>
-          </ul>
+    <section class="about-values section-grid" id="valeurs" aria-label="Valeurs de MSD Media">
+      <h3 class="section-title section-title--light" data-i18n="about_values_title">Nos valeurs sont le socle de chaque collaboration, <br> du premier échange jusqu'à la livraison.</h3>
+      <div class="about-values-grid">
+        <article class="about-value-card">
+          <p class="about-value-card__num">01</p>
+          <h4 data-i18n="about_value_1_title">Satisfaction</h4>
+          <p class="about-value-card__quote" data-i18n="about_value_1_quote">« Un projet réussi, c'est un client satisfait à 100 %. »</p>
+          <p data-i18n="about_value_1_desc">Chaque avis publié est réel et vérifiable : 5/5 sur Google, note "Excellent" sur Trustpilot, ajustements illimités inclus jusqu'à ce que le résultat corresponde vraiment à l'attente.</p>
         </article>
-        <article class="about-signal-card">
-          <h4>Preuves vérifiables</h4>
-          <p>Les références client sont nommées, publiées et accessibles avec des cas concrets.</p>
-          <ul>
-            <li><a href="https://msd-media.com/etudes-de-cas/">9 études de cas consultables</a></li>
-            <li><a href="https://msd-media.com/blog/articles/maxens-soldan/">Bio détaillée du fondateur</a></li>
-            <li><a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" rel="noopener noreferrer">Profil LinkedIn public</a></li>
-          </ul>
+        <article class="about-value-card">
+          <p class="about-value-card__num">02</p>
+          <h4 data-i18n="about_value_2_title">Réactivité</h4>
+          <p class="about-value-card__quote" data-i18n="about_value_2_quote">« Un seul interlocuteur, une réponse rapide à chaque étape. »</p>
+          <p data-i18n="about_value_2_desc">Pas de chef de projet intermédiaire ni de ticket qui traîne : les clients citent systématiquement la fluidité des échanges et le respect des délais annoncés.</p>
         </article>
-        <article class="about-signal-card">
-          <h4>Formats lisibles IA</h4>
-          <p>Le contenu est structuré pour être compris, cité et recoupé par les moteurs génératifs.</p>
-          <ul>
-            <li>Données structurées Organization, Person, AboutPage et FAQPage</li>
-            <li><a href="https://msd-media.com/llms.txt">Fichier llms.txt</a> et <a href="https://msd-media.com/llms-full.txt">llms-full.txt</a></li>
-            <li><a href="https://msd-media.com/blog/articles/schema-org-donnees-structurees-ia/">Guide Schema.org pour IA</a></li>
-          </ul>
+        <article class="about-value-card">
+          <p class="about-value-card__num">03</p>
+          <h4 data-i18n="about_value_3_title">Sur-mesure</h4>
+          <p class="about-value-card__quote" data-i18n="about_value_3_quote">« Aucun template, aucun CMS générique. »</p>
+          <p data-i18n="about_value_3_desc">Chaque site est codé à la main en HTML/CSS/JS natif, pensé pour l'activité réelle du client plutôt que pour rentrer dans un moule préfabriqué.</p>
+        </article>
+        <article class="about-value-card">
+          <p class="about-value-card__num">04</p>
+          <h4 data-i18n="about_value_4_title">Rapidité</h4>
+          <p class="about-value-card__quote" data-i18n="about_value_4_quote">« Une première version en 21 jours, pas en plusieurs mois. »</p>
+          <p data-i18n="about_value_4_desc">Le délai de livraison est un engagement identique sur chaque projet, du cadrage business à la mise en ligne.</p>
         </article>
       </div>
     </section>
 
-    <section class="process-section section-grid" id="methode">
-      <div class="process-inner">
-        <h2 class="section-tag section-tag--dark">Méthode</h2>
-        <h3 class="section-title section-title--dark">Comment on travaille <br> chez MSD Media.</h3>
-        <div class="process-steps">
-          <article class="process-step">
-            <span class="process-step__day">Étape 1</span>
-            <img class="process-step__image" src="https://msd-media.com/assets/img/process1.avif" alt="Cadrage business et objectifs" loading="lazy" decoding="async">
-            <h4>Cadrage business</h4>
-            <p>Objectifs, cible, offre et priorités. Aucun design avant la stratégie.</p>
-          </article>
-          <article class="process-step">
-            <span class="process-step__day">Étape 2</span>
-            <img class="process-step__image" src="https://msd-media.com/assets/img/process2.avif" alt="Structure UX et parcours de conversion" loading="lazy" decoding="async">
-            <h4>Structure de conversion</h4>
-            <p>Architecture, hiérarchie des contenus et parcours pour convertir.</p>
-          </article>
-          <article class="process-step">
-            <span class="process-step__day">Étape 3</span>
-            <img class="process-step__image" src="https://msd-media.com/assets/img/process3.avif" alt="Développement et SEO technique" loading="lazy" decoding="async">
-            <h4>Développement & SEO</h4>
-            <p>Code sur mesure, performance, balisage technique et base SEO propre.</p>
-          </article>
-          <article class="process-step">
-            <span class="process-step__day">Étape 4</span>
-            <img class="process-step__image" src="https://msd-media.com/assets/img/process4.avif" alt="Livraison et ajustements" loading="lazy" decoding="async">
-            <h4>Livraison rapide</h4>
-            <p>Première version en 21 jours, retours clients intégrés sans friction.</p>
-          </article>
+    <section class="section-grid founder-section" id="agence" aria-label="MSD Media dans la presse">
+      <div class="founder-inner">
+        <div class="founder-video-card">
+          <a href="https://msd-media.com/blog/articles/msd-media-presse-le-dauphine/" class="founder-video-link">
+            <img width="600" height="338" src="../assets/img/mockup-img-dauphine.png" alt="Article du Dauphiné Libéré sur MSD Media" class="founder-video-thumb" loading="lazy" decoding="async">
+          </a>
+        </div>
+        <div class="founder-quote">
+          <p class="founder-text" data-i18n="founder_text">« Une agence web reconnue par Le Dauphiné Libéré pour sa vitesse d'exécution, sa clarté stratégique et sa capacité à transformer les visiteurs en clients. »</p>
+          <a href="https://msd-media.com/blog/articles/msd-media-presse-le-dauphine/" class="contact-button founder-cta">
+            <span class="cta-text" data-i18n="founder_cta">Lire l'article</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>
 
+    <section class="section-reviews section-grid" id="landing-reviews">
+    <div class="section-reviews-inner">
+    <h3 class="section-title section-title--dark avis-title" data-i18n="reviews_title">Des clients toujours <br> plus satisfaits.</h3>
 
-    <section class="about-sources section-grid" id="preuves">
-      <div class="about-sources-card">
-        <h3>Parcours et crédibilité externe</h3>
-        <p>La page « À propos » de MSD Media est construite pour l’E-E-A-T: identité du fondateur, preuves de projets, sources externes, données chiffrées et cohérence éditoriale sur l’ensemble du site.</p>
-        <ul>
-          <li><a href="https://msd-media.com/blog/articles/maxens-soldan/">Profil détaillé du fondateur (article dédié)</a></li>
-          <li><a href="https://www.univ-smb.fr/polytech/2026/02/12/etudier-et-entreprendre-le-double-challenge-de-maxens/" target="_blank" rel="noopener noreferrer">Portrait Polytech Annecy-Chambéry (source externe)</a></li>
-          <li><a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" rel="noopener noreferrer">Profil LinkedIn du fondateur</a></li>
-          <li><a href="https://msd-media.com/etudes-de-cas/">Toutes les études de cas publiées</a></li>
-        </ul>
-        <h3>Ressources SEO/GEO/IA</h3>
-        <p>Pour faciliter l’interprétation par les moteurs de recherche et les moteurs IA, MSD Media publie des ressources techniques dédiées.</p>
-        <ul>
-          <li><a href="https://msd-media.com/blog/articles/aeo-seo-geo-guide-2026/">Guide AEO / SEO / GEO 2026</a></li>
-          <li><a href="https://msd-media.com/blog/articles/schema-org-donnees-structurees-ia/">Données structurées Schema.org pour IA</a></li>
-          <li><a href="https://msd-media.com/blog/articles/apparaitre-chatgpt-perplexity-google-ia/">Apparaître dans ChatGPT, Perplexity et Google IA</a></li>
-          <li><a href="https://msd-media.com/llms.txt">Index LLM principal (llms.txt)</a></li>
-        </ul>
-        <h3>Villes couvertes</h3>
-        <p>MSD Media accompagne des entreprises à Annecy, Strasbourg, Paris, Lyon, Genève, Toulouse, Bordeaux, Lille, Nantes, Nice, Rennes, Montpellier et Clermont‑Ferrand, avec une présence opérationnelle à Annecy et Munich.</p>
+    <div class="review-videos">
+      <div class="review-video" data-review-video>
+        <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 1">
+          <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-1.webp" alt="Cover video 1" loading="lazy" aria-hidden="true" decoding="async">
+          <span class="review-video__veil" aria-hidden="true"></span>
+          <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+          <span class="review-video__label">Lire l'avis vidéo</span>
+        </button>
+        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/86a9d3f0-7d81-462a-afbd-3a3f5c4e8a2f/"
+          frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 1"></iframe>
       </div>
-    </section>
 
-    <section class="faq section-grid" id="faq-a-propos">
-      <div class="faq-container">
-        <h2 class="section-tag section-tag--dark">FAQ À propos</h2>
-        <h3 class="section-title section-title--dark">Questions fréquentes</h3>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Qui a fondé MSD Media ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>MSD Media a été fondée par Maxens Soldan, basé à Annecy, avec un positionnement orienté sites web et landing pages à fort impact business.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Depuis quand l’agence est-elle active ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>MSD Media a été fondée en juin 2025 à Annecy, avec un historique de projets consultables dans les études de cas.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Quels services sont proposés ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>MSD Media accompagne la création de sites web, la création de landing pages, la refonte de sites existants et l’optimisation SEO local / GEO.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Dans quelles zones intervient MSD Media ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>L’agence accompagne des clients en France, en Suisse et en Belgique, avec une base à Annecy et une présence opérationnelle à Munich.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Où voir des projets réels réalisés par MSD Media ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Les projets sont publiés dans la section <a href="https://msd-media.com/etudes-de-cas/">Études de cas</a>, avec des entreprises nommées et des objectifs précis.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Comment contacter directement l’agence ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Vous pouvez réserver un appel via Cal.com ou écrire à <a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a> pour discuter du projet.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Quel est le délai de livraison d’un site web chez MSD Media ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>La première version d’un site ou d’une landing page est livrée en 21 jours. Ce délai est un engagement répété sur l’ensemble des pages services de MSD Media.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Combien coûte un site web chez MSD Media ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Les tarifs varient selon la nature du projet. Vous pouvez <a href="https://msd-media.com/contact/">nous contacter</a> ou réserver un appel gratuit pour obtenir un devis personnalisé.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>MSD Media travaille-t-elle à distance ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Oui. MSD Media accompagne des clients partout en France, en Suisse et en Belgique à distance. Des rendez-vous en visio sont organisés à chaque étape du projet.</p>
-          </div>
-        </div>
+      <div class="review-video" data-review-video>
+        <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 2">
+          <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-2.webp" alt="Cover video 2" loading="lazy" aria-hidden="true" decoding="async">
+          <span class="review-video__veil" aria-hidden="true"></span>
+          <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+          <span class="review-video__label">Lire l'avis vidéo</span>
+        </button>
+        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/b7624277-5a5c-4593-bd02-867d509c7927/"
+          frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 2"></iframe>
       </div>
-    </section>
 
-  <section class="ai-proof section-grid" id="ai-proof">
-    <div class="ai-proof__inner">
-      <img
-        class="ai-proof__msd-logo"
-        src="https://msd-media.com/assets/img/logo-black.webp"
-        alt="MSD Media"
-        loading="lazy"
-        decoding="async"
-      >
-      <h3 class="section-title section-title--dark">Toujours pas sûr que MSD Media soit fait pour vous ?</h3>
-      <p class="ai-proof__lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
-      <div class="ai-proof__actions">
-        <a
-          class="hero__btn hero__btn--primary"
-          href="https://chatgpt.com/?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Poser la question dans ChatGPT"
-        >
-          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="">
-          <span>Demander à ChatGPT</span>
-        </a>
-        <a
-          class="hero__btn hero__btn--primary"
-          href="https://claude.ai/new?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Poser la question dans Claude"
-        >
-          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="">
-          <span>Demander à Claude</span>
-        </a>
+      <div class="review-video" data-review-video>
+        <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 3">
+          <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-3.webp" alt="Cover video 3" loading="lazy" aria-hidden="true" decoding="async">
+          <span class="review-video__veil" aria-hidden="true"></span>
+          <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+          <span class="review-video__label">Lire l'avis vidéo</span>
+        </button>
+        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/a5877649-ae66-446b-9abd-de12da540604/"
+          frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 3"></iframe>
       </div>
+
+      <div class="review-video" data-review-video>
+        <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 4">
+          <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-4.webp" alt="Cover video 4" loading="lazy" aria-hidden="true" decoding="async">
+          <span class="review-video__veil" aria-hidden="true"></span>
+          <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+          <span class="review-video__label">Lire l'avis vidéo</span>
+        </button>
+        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/bb45034f-a7f3-4f4d-ad6e-e07de17fe338/"
+          frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 4"></iframe>
+      </div>
+    </div>
+
+    <!-- Carrousels avis -->
+    <div class="avis-carousel-container animate-fade-in">
+      <div class="avis-track track-left" id="track-left"></div>
+    </div>
+
+    <div class="logo-marquee logo-marquee--reviews" aria-label="Logos clients">
+      <div class="logo-marquee__track"></div>
+    </div>
+
+    <br><br>
+    <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button hero-primary-cta">
+      <span class="cta-text" data-i18n="nav_call">Réserver un appel</span>
+    </a>
     </div>
   </section>
 
-    <section class="booking-section" id="rdv">
-      <div class="booking-section__inner">
-        <h2 class="section-tag section-tag--light">Réserver un appel</h2>
-        <h2 class="section-title section-title--light">Discutons de votre objectif <br> et de votre projet.</h2>
-        <div class="booking-section__embed">
-          <iframe src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&theme=dark" title="Prendre rendez-vous avec MSD Media" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="faq section-grid" id="faq">
+      <div class="faq-container">
+        <h3 class="section-title section-title--dark faq-title" data-i18n="about_faq_title">Questions fréquentes <br> sur MSD Media</h3>
+
+        <div class="faq-tabs" role="tablist">
+          <button type="button" class="faq-tab is-active" data-faq-category="general" role="tab" aria-selected="true" data-i18n="about_faq_tab_general">Général</button>
+          <button type="button" class="faq-tab" data-faq-category="fondateur" role="tab" aria-selected="false" data-i18n="about_faq_tab_founder">Fondateur</button>
+          <button type="button" class="faq-tab" data-faq-category="services" role="tab" aria-selected="false" data-i18n="about_faq_tab_services">Services</button>
+          <button type="button" class="faq-tab" data-faq-category="seo-ia" role="tab" aria-selected="false" data-i18n="about_faq_tab_seoia">SEO & IA</button>
+          <button type="button" class="faq-tab" data-faq-category="preuves" role="tab" aria-selected="false" data-i18n="about_faq_tab_proof">Preuves</button>
+        </div>
+
+        <div class="faq-item" data-faq-category="general">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q1">Qu'est-ce que MSD Media ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a1">MSD Media est une agence web basée à Annecy qui crée des sites internet et landing pages sur mesure pour aider les entreprises à convertir davantage de visiteurs en prospects qualifiés.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="fondateur">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q2">Qui a fondé MSD Media ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a2">MSD Media a été fondée par Maxens Soldan, à Annecy. L'agence accompagne les entreprises dans la création de sites web et landing pages orientés conversion.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="fondateur">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q3">Qui est Maxens Soldan ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a3">Maxens Soldan est le fondateur de MSD Media. Il pilote les projets autour d'une approche directe : cadrage business, structure de conversion, design, développement et mise en ligne.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="general">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q4">Où est basée l'agence ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a4">MSD Media est basée à Annecy, avec une présence opérationnelle à Munich. Les projets sont menés à distance pour des clients en France, Suisse et Belgique.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="general">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q5">Dans quelles zones MSD Media intervient-elle ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a5">MSD Media accompagne des clients à Annecy, en Haute-Savoie, partout en France, ainsi qu'en Suisse et en Belgique. Les échanges peuvent se faire entièrement à distance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="services">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q6">Quelle est la spécialité de MSD Media ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a6">L'agence conçoit des sites web et landing pages sur mesure, pensés pour convertir, être rapides et rester lisibles par Google, ChatGPT et les moteurs IA.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="services">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q7">MSD Media crée-t-elle des sites web sur mesure ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a7">Oui. Chaque site est construit autour de l'offre, du marché, des objectifs et des preuves du client. L'agence évite les templates génériques pour privilégier une structure claire et orientée conversion.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="services">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q8">MSD Media crée-t-elle aussi des landing pages ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a8">Oui. MSD Media conçoit des landing pages pour vendre une offre, générer des demandes qualifiées, lancer une campagne ou améliorer le taux de conversion d'un trafic existant.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="services">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q9">Quel est le délai de livraison ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a9">Une première version est livrée en 21 jours, avec un cadrage clair, une structure de conversion, le développement et les ajustements avant mise en ligne.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="seo-ia">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q10">Les sites MSD Media sont-ils optimisés pour le SEO ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a10">Oui. Les bases SEO sont intégrées dès la conception : structure des titres, performance, maillage interne, balisage clair, contenu indexable et pages construites autour des intentions de recherche.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="seo-ia">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q11">Qu'est-ce que le GEO ou l'optimisation pour les IA ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a11">Le GEO consiste à structurer un site pour qu'il soit compris, cité et recommandé par les moteurs IA comme ChatGPT, Perplexity, Claude ou Google AI Overviews, en complément du SEO classique.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="seo-ia">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q12">Pourquoi une page À propos aide-t-elle le SEO et l'AEO ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a12">Une page À propos claire renforce les signaux d'entité : nom de l'entreprise, fondateur, localisation, expertise, preuves, services et zone d'intervention. Ces informations aident Google et les IA à comprendre qui fait quoi.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="seo-ia">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q13">MSD Media peut-elle aider à apparaître dans ChatGPT ou Perplexity ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a13">MSD Media structure les sites pour améliorer leur lisibilité par les moteurs de recherche et les assistants IA : contenus explicites, données cohérentes, preuves accessibles et pages pensées pour répondre aux questions des utilisateurs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="preuves">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q14">Comment voir les projets réalisés ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a14">Les projets publiés sont disponibles dans la page <a href="https://msd-media.com/realisations/">Réalisations</a>, avec des références nommées et des cas concrets.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="preuves">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q15">Quels types de clients font appel à MSD Media ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a15">MSD Media accompagne des indépendants, PME, startups, coachs, organismes de formation, commerces locaux et entreprises de services qui ont besoin d'un site plus clair, plus crédible et plus performant.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-category="preuves">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="about_faq_q16">Pourquoi choisir MSD Media plutôt qu'un template ou un CMS standard ?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="about_faq_a16">Un template peut suffire pour une présence basique. MSD Media intervient quand le site doit porter une offre, rassurer vite, convertir, se charger rapidement et être structuré pour le référencement naturel et les moteurs IA.</p>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="ai-proof section-grid" id="ai-proof">
+      <div class="ai-proof__inner">
+        <img
+          class="ai-proof__msd-logo"
+          src="https://msd-media.com/assets/img/logo-black.webp"
+          alt="MSD Media"
+          width="372"
+          height="151"
+          loading="lazy"
+          decoding="async"
+        >
+        <h3 class="section-title section-title--dark" data-i18n="ai_proof_title">Toujours pas sûr que MSD Media soit fait pour vous ?</h3>
+        <p class="ai-proof__lead" data-i18n="ai_proof_lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
+        <div class="ai-proof__actions">
+          <a
+            class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt"
+            href="https://chatgpt.com/?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Poser la question dans ChatGPT"
+          >
+            <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
+            <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
+          </a>
+          <a
+            class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude"
+            href="https://claude.ai/new?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Poser la question dans Claude"
+          >
+            <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+            <span data-i18n="ai_proof_claude">Demander à Claude</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="rdv">
+      <div class="booking-section__inner">
+        <div class="booking-section__embed">
+          <iframe
+            src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&theme=dark"
+            title="Prendre rendez-vous avec MSD Media"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="footer-container">
+
+      <!-- Bloc gauche : logo + slogan -->
       <div class="footer-left">
         <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
-        <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
       </div>
 
       <div class="footer-offices">
         <article class="footer-office-card">
-          <p class="footer-office-city">Annecy</p>
-          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
-          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
+          <p class="footer-office-city">Annecy</p>          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
         </article>
         <article class="footer-office-card">
-          <p class="footer-office-city">Munich</p>
-          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
-          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+          <p class="footer-office-city">Munich</p>          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
         </article>
       </div>
 
+      <!-- Bloc droit : contact + réseaux -->
       <div class="footer-contact">
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="mailto:maxens.soldan@msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i
+              class="fa-brands fa-whatsapp"></i></a>
+          <a href="/cdn-cgi/l/email-protection#5734383923363423173a24337a3a32333e367934383a" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </div>
 
+    <!-- Villes SEO -->
     <div class="footer-cities">
       <ul>
         <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
@@ -1262,25 +2016,53 @@ function _msdLoadTracking(){
       </ul>
     </div>
 
-    <div class="footer-city-services">
-      <p class="footer-city-services__title">Nos spécialités</p>
-      <ul>
-        <li><a href="https://msd-media.com/agence-web-annecy/">Agence web Annecy</a></li>
-        <li><a href="https://msd-media.com/agence-web-strasbourg/">Agence web Strasbourg</a></li>
-        <li><a href="https://msd-media.com/agence-web-paris/">Agence web Paris</a></li>
-        <li><a href="https://msd-media.com/agence-web-lyon/">Agence web Lyon</a></li>
-        <li><a href="https://msd-media.com/agence-web-geneve/">Agence web Genève</a></li>
-        <li><a href="https://msd-media.com/blog/">Blog web & SEO</a></li>
-      </ul>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_company">Entreprise</p>
+        <ul>
+          <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
+          <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
+          <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_resources">Ressources</p>
+        <ul>
+          <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="https://msd-media.com/glossaire/" data-i18n="footer_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a></li>
+          <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
+          <li><a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="secteurs">
+        <p class="footer-column__title" data-i18n="footer_col_sectors">Secteurs</p>
+        <ul>
+          <li><a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats & juristes</a></li>
+          <li><a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins & santé</a></li>
+          <li><a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a></li>
+          <li><a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants & cafés</a></li>
+          <li><a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans & TPE</a></li>
+          <li><a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a></li>
+        </ul>
+      </div>
     </div>
 
+
+    <!-- Mentions légales -->
     <div class="footer-legal">
-      <a href="https://msd-media.com/terms/mentions.html" target="_blank">Mentions légales</a>
-      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale">Conditions générales de vente</a>
     </div>
 
+    <!-- Copyright -->
     <div class="footer-bottom">
-      <p>&copy; <span class="copyright-year">2026</span> MSD Media. Tous droits réservés.</p>
+      <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
     </div>
 </footer>
 

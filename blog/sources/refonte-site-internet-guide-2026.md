@@ -27,7 +27,7 @@ Une refonte se justifie quand le site existant freine activement votre activité
 - **L'image renvoyée ne correspond plus à votre positionnement** : un site daté de 2018 dessert une entreprise premium
 - **Le site est invisible sur Google et sur les IA** (ChatGPT, Perplexity, Google AI Overviews) pour vos requêtes métier
 
-À l'inverse, si le site ranke bien et convertit correctement, une **optimisation ciblée** (vitesse, contenus, appels à l'action) coûte 5 à 10 fois moins cher qu'une refonte et suffit souvent. Un [audit gratuit](https://msd-media.com/audit-seo-gratuit/) permet de trancher objectivement.
+À l'inverse, si le site ranke bien et convertit correctement, une **optimisation ciblée** (vitesse, contenus, appels à l'action) coûte 5 à 10 fois moins cher qu'une refonte et suffit souvent. Un [audit gratuit](https://msd-media.com/audit-seo-annecy/) permet de trancher objectivement.
 
 ---
 

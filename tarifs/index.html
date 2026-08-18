@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarifs | MSD Media — Landing page, site web &amp; sur-mesure</title>
+  <meta name="description" content="Les tarifs de MSD Media : landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis. Livraison en 21 jours, SEO intégré dès la conception." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://msd-media.com/tarifs/" />
+  <meta property="og:title" content="Tarifs | MSD Media — Landing page, site web &amp; sur-mesure" />
+  <meta property="og:description" content="Les tarifs de MSD Media : landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis. Livraison en 21 jours, SEO intégré dès la conception." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://msd-media.com/tarifs/" />
+  <meta property="og:image" content="https://msd-media.com/assets/img/img-cover.webp" />
+  <link rel="icon" type="image/png" href="https://msd-media.com/assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="https://msd-media.com/assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="https://msd-media.com/assets/img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous"></script>
+<!-- AI referrer detection — runs immediately, no consent required (aucun cookie) -->
+<script>
+(function(){
+  var AI_SOURCES = {
+    'perplexity.ai': 'perplexity',
+    'chatgpt.com': 'chatgpt',
+    'chat.openai.com': 'chatgpt',
+    'claude.ai': 'claude',
+    'gemini.google.com': 'gemini',
+    'bard.google.com': 'gemini',
+    'copilot.microsoft.com': 'copilot',
+    'bing.com/chat': 'copilot',
+    'you.com': 'you',
+    'phind.com': 'phind',
+    'deepseek.com': 'deepseek'
+  };
+  var ref = document.referrer;
+  var aiSource = null;
+  for (var domain in AI_SOURCES) {
+    if (ref.indexOf(domain) !== -1) { aiSource = AI_SOURCES[domain]; break; }
+  }
+  window.dataLayer = window.dataLayer || [];
+  if (aiSource) {
+    window.dataLayer.push({ event: 'ai_referral', ai_source: aiSource, referrer: ref });
+    sessionStorage.setItem('_msd_ai_source', aiSource);
+  }
+  // Also expose for GTM variable use
+  window._msdAiSource = aiSource;
+})();
+</script>
+<!-- Tracking — chargé uniquement après consentement cookie -->
+<script>
+function _msdLoadTracking(){
+  // MSD Analytics
+  (function(){
+    var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
+    sessionStorage.setItem('_msd',sid);
+    var t=Date.now();
+    var iv;
+    function send(d){
+      var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
+      var ok=false;
+      try { ok=navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p)); } catch(e) {}
+      if(!ok){
+        fetch('https://app.msd-media.com/api/track',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(p),
+          keepalive:true
+        }).catch(function(){});
+      }
+    }
+    function start(){
+      if(iv) return;
+      iv=setInterval(function(){send(Date.now()-t);},15000);
+    }
+    function stop(){
+      if(!iv) return;
+      clearInterval(iv);
+      iv=undefined;
+    }
+    document.addEventListener('visibilitychange',function(){
+      if(document.visibilityState==='hidden'){send(Date.now()-t);stop();}
+      else{t=Date.now();send(0);start();}
+    });
+    send(0);
+    start();
+    // Scroll heatmap tracking
+    (function(){
+      var path=location.pathname;
+      var scrollEvts=[];
+      var lastPct=0;
+      var pauseTimer=null;
+      function getPct(){return Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight||1))*100);}
+      function bucket(p){return Math.floor(p/5)*5;}
+      function flush(){
+        if(!scrollEvts.length)return;
+        var evts=scrollEvts.splice(0);
+        navigator.sendBeacon('https://app.msd-media.com/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
+      }
+      window.addEventListener('scroll',function(){
+        var pct=getPct();
+        if(Math.abs(pct-lastPct)>10&&pct<lastPct){scrollEvts.push({type:'backtrack',pct:bucket(pct)});}
+        lastPct=pct;
+        if(pauseTimer)clearTimeout(pauseTimer);
+        pauseTimer=setTimeout(function(){scrollEvts.push({type:'pause',pct:bucket(pct)});flush();},1500);
+      },{passive:true});
+      window.addEventListener('beforeunload',function(){scrollEvts.push({type:'exit',pct:bucket(getPct())});flush();});
+      setInterval(flush,30000);
+    })();
+  })();
+  // Google Analytics (GA4)
+  (function(){
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-VKSH9YQXZS';
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-VKSH9YQXZS');
+  })();
+}
+(function(){
+  var consent=localStorage.getItem('msd_cookie_consent');
+  if(consent==='accepted'){_msdLoadTracking();return;}
+  if(consent==='refused'){return;}
+  if(window.innerWidth<=680){_msdLoadTracking();return;}
+  function init(){
+  var banner=document.getElementById('cookie-consent');
+  if(!banner)return;
+  function show(){banner.hidden=false;}
+  function hide(){banner.hidden=true;}
+  show();
+  document.getElementById('cookie-accept').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','accepted');
+    hide();
+    _msdLoadTracking();
+  });
+  document.getElementById('cookie-refuse').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','refused');
+    hide();
+  });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://msd-media.com/tarifs/#webpage",
+      "url": "https://msd-media.com/tarifs/",
+      "name": "Tarifs | MSD Media — Landing page, site web & sur-mesure",
+      "description": "Les tarifs de MSD Media : landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis. Livraison en 21 jours, SEO intégré dès la conception.",
+      "isPartOf": { "@id": "https://msd-media.com/#website" },
+      "inLanguage": "fr"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://msd-media.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Tarifs", "item": "https://msd-media.com/tarifs/" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Création de site web et landing page",
+      "provider": { "@type": "Organization", "name": "MSD Media", "url": "https://msd-media.com/" },
+      "areaServed": "France",
+      "url": "https://msd-media.com/tarifs/",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Tarifs MSD Media",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Landing Page",
+            "description": "Une page unique, pensée pour convertir vos visiteurs en clients. Livraison en 21 jours.",
+            "price": "1990",
+            "priceCurrency": "EUR",
+            "url": "https://msd-media.com/tarifs/"
+          },
+          {
+            "@type": "Offer",
+            "name": "Site Vitrine",
+            "description": "Un site complet pour asseoir votre présence et générer des demandes. Livraison en 21 jours.",
+            "price": "3990",
+            "priceCurrency": "EUR",
+            "url": "https://msd-media.com/tarifs/"
+          },
+          {
+            "@type": "Offer",
+            "name": "Sur-mesure & Refonte",
+            "description": "Projets complexes : e-commerce, multilingue, dashboards, refontes. Devis personnalisé.",
+            "priceCurrency": "EUR",
+            "url": "https://msd-media.com/tarifs/"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Quel est le prix moyen d'un site internet en 2026 ?","acceptedAnswer":{"@type":"Answer","text":"Chez MSD Media, une landing page démarre à 1 990 €, un site vitrine complet à 3 990 €. Les projets sur-mesure (e-commerce, multilingue, dashboards) font l'objet d'un devis personnalisé après un premier échange."}},
+        {"@type":"Question","name":"Combien de temps faut-il pour créer mon site ?","acceptedAnswer":{"@type":"Answer","text":"Une première version est livrée en 21 jours, quel que soit le projet. Le process se déroule en 4 étapes : brief et lancement, UX/UI, développement, puis livraison et ajustements."}},
+        {"@type":"Question","name":"Le SEO est-il inclus dans le prix ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Structure sémantique, données structurées Schema.org et optimisation Core Web Vitals sont inclus dès la formule Site Vitrine. La formule Landing Page inclut un SEO on-page de base."}},
+        {"@type":"Question","name":"Quels sont les coûts après la création ?","acceptedAnswer":{"@type":"Answer","text":"Comptez le nom de domaine (10-30 €/an) et l'hébergement. Un site codé sur-mesure comme les nôtres s'héberge quasi gratuitement et ne nécessite pas de maintenance lourde, contrairement à WordPress."}},
+        {"@type":"Question","name":"Comment se passe le paiement ?","acceptedAnswer":{"@type":"Answer","text":"Un acompte au lancement du projet, le solde à la livraison. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet."}}
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body class="pricing-page" data-asset-base="../assets">
+  <div class="top-announcement" role="banner">
+    <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
+    <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
+  </div>
+<header class="navbar">
+    <div class="nav-left">
+      <a href="https://msd-media.com/" aria-label="Accueil MSD Media">
+        <img height="151" width="372" src="../assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager">
+        <span style="position:absolute;left:-9999px;">Accueil MSD Media</span>
+      </a>
+      <div class="nav-menu" data-nav-menu>
+        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
+          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
+          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
+          <a href="https://msd-media.com/" data-i18n="nav_home">Accueil</a>
+          <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+          <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+          <a href="https://msd-media.com/contact/" data-i18n="nav_contact">Contact</a>
+          <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+          <a href="https://msd-media.com/affiliation/" data-i18n="nav_affiliation">Affiliation</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-center" aria-label="Navigation principale">
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/blog/"><span class="nav-link-label" data-i18n="nav_resources">Ressources</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+              <a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a>
+              <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+              <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+              <a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/#secteurs"><span class="nav-link-label" data-i18n="nav_sector">Secteur</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
+              <a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
+              <a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
+              <a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
+              <a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
+              <a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img2.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+      <a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a>
+    </nav>
+
+    <div class="nav-right">
+      <label class="lang-switch" for="lang-select">
+        <span class="lang-switch__label">Langue</span>
+        <select class="lang-switch__select" id="lang-select" data-lang-select aria-label="Choisir la langue">
+          <option value="fr">🇫🇷 FR</option>
+          <option value="en">🇬🇧 EN</option>
+        </select>
+      </label>
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
+      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="section-tag section-tag--dark" data-i18n="tarifs_tag">Tarifs</h2>
+      <h1 class="hero__title" data-i18n="tarifs_h1"><span>Des tarifs clairs, sans surprise.</span></h1>
+      <p class="hero__subheading" data-i18n="tarifs_subheading">Vous savez exactement ce que vous payez. SEO intégré dès la conception, livraison en 21 jours, aucun abonnement caché.</p>
+      <div class="hero__actions" aria-label="Actions principales">
+        <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="hero_primary">Réserver un appel</a>
+        <a class="hero__btn hero__btn--secondary" href="https://msd-media.com/realisations/" data-i18n="tarifs_see_work">Voir nos réalisations</a>
+      </div>
+    </section>
+
+    <section class="pricing-section" aria-label="Nos formules">
+      <div class="pricing-inner">
+        <div class="pricing-currency-tabs" role="tablist" aria-label="Devise" id="currency-tabs">
+          <button type="button" class="currency-tab is-active" data-currency="eur" role="tab" aria-selected="true" data-i18n="tarifs_currency_eur">€ EUR</button>
+          <button type="button" class="currency-tab" data-currency="usd" role="tab" aria-selected="false" data-i18n="tarifs_currency_usd">$ USD</button>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 class="pricing-card__title" data-i18n="tarifs_card1_title">Landing Page</h3>
+            <p class="pricing-card__desc" data-i18n="tarifs_card1_desc">Une page unique, pensée pour convertir vos visiteurs en clients.</p>
+            <div class="pricing-card__price-row">
+              <span class="pricing-card__price-from" data-i18n="tarifs_from">à partir de</span>
+              <span class="pricing-card__price" data-eur="1 990 €" data-usd="$2 200">1 990 €</span>
+            </div>
+            <span class="pricing-card__delay" data-i18n="tarifs_delay_21"><i class="fa-regular fa-clock"></i>Livraison en 21 jours</span>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f1">Design sur-mesure, pas de template</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f2">Copywriting orienté conversion</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f3">Formulaire ou prise de RDV intégrée</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f4">Optimisation mobile &amp; vitesse</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f5">SEO on-page de base</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f6">Tracking &amp; analytics installés</span></li>
+            </ul>
+            <a class="pricing-card__cta" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="tarifs_cta_call">Réserver un appel</a>
+          </div>
+
+          <div class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge" data-i18n="tarifs_card2_badge">Le plus choisi</span>
+            <h3 class="pricing-card__title" data-i18n="tarifs_card2_title">Site Vitrine</h3>
+            <p class="pricing-card__desc" data-i18n="tarifs_card2_desc">Un site complet pour asseoir votre présence et générer des demandes.</p>
+            <div class="pricing-card__price-row">
+              <span class="pricing-card__price-from" data-i18n="tarifs_from">à partir de</span>
+              <span class="pricing-card__price" data-eur="3 990 €" data-usd="$4 400">3 990 €</span>
+            </div>
+            <span class="pricing-card__delay" data-i18n="tarifs_delay_21"><i class="fa-regular fa-clock"></i>Livraison en 21 jours</span>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card2_f1">Tout ce qui est inclus dans Landing Page</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card2_f2">Jusqu'à 10 pages sur-mesure</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card2_f3">SEO technique complet (Core Web Vitals, Schema.org)</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card2_f4">Blog intégré</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card2_f5">CMS pour gérer votre contenu en autonomie</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card2_f6">Optimisation visibilité IA (ChatGPT, Perplexity)</span></li>
+            </ul>
+            <a class="pricing-card__cta" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="tarifs_cta_call">Réserver un appel</a>
+          </div>
+
+          <div class="pricing-card">
+            <h3 class="pricing-card__title" data-i18n="tarifs_card3_title">Sur-mesure &amp; Refonte</h3>
+            <p class="pricing-card__desc" data-i18n="tarifs_card3_desc">Projets complexes : e-commerce, multilingue, dashboards, refontes.</p>
+            <div class="pricing-card__price-row">
+              <span class="pricing-card__price" data-i18n="tarifs_card3_price">Devis personnalisé</span>
+            </div>
+            <span class="pricing-card__delay" data-i18n="tarifs_card3_delay"><i class="fa-regular fa-clock"></i>Délai selon le périmètre</span>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card3_f1">Tout ce qui est inclus dans Site Vitrine</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card3_f2">Architecture technique avancée</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card3_f3">Intégrations API &amp; automatisations</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card3_f4">E-commerce &amp; paiement en ligne</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card3_f5">Multilingue</span></li>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card3_f6">Accompagnement SEO continu</span></li>
+            </ul>
+            <a class="pricing-card__cta" href="https://msd-media.com/contact/" data-i18n="tarifs_cta_contact">Nous contacter</a>
+          </div>
+        </div>
+
+        <h2 class="pricing-table-question" data-i18n="tarifs_table_question">Combien coûte un site web ou une landing page chez MSD Media ?</h2>
+        <p class="pricing-table-answer" data-i18n="tarifs_table_answer">À partir de 1 990 € pour une landing page, 3 990 € pour un site vitrine complet, sur devis pour un projet sur-mesure — livraison en 21 jours pour les deux premières formules.</p>
+        <div class="glossary-table-wrap glossary-table-wrap--dark pricing-table-wrap">
+          <table class="glossary-table glossary-table--dark pricing-table">
+            <thead>
+              <tr>
+                <th data-i18n="tarifs_table_th_formule">Formule</th>
+                <th data-i18n="tarifs_table_th_prix">Prix</th>
+                <th data-i18n="tarifs_table_th_delai">Délai</th>
+                <th data-i18n="tarifs_table_th_pour">Pour qui</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="tarifs_card1_title">Landing Page</td>
+                <td>1 990 €</td>
+                <td data-i18n="tarifs_table_delay21">21 jours</td>
+                <td data-i18n="tarifs_table_for1">Lancement produit, campagne, pré-lancement</td>
+              </tr>
+              <tr>
+                <td data-i18n="tarifs_card2_title">Site Vitrine</td>
+                <td>3 990 €</td>
+                <td data-i18n="tarifs_table_delay21">21 jours</td>
+                <td data-i18n="tarifs_table_for2">Présence complète, génération de demandes</td>
+              </tr>
+              <tr>
+                <td data-i18n="tarifs_card3_title">Sur-mesure &amp; Refonte</td>
+                <td data-i18n="tarifs_card3_price">Devis personnalisé</td>
+                <td data-i18n="tarifs_table_delay3">Selon périmètre</td>
+                <td data-i18n="tarifs_table_for3">E-commerce, multilingue, dashboards</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="realisations-section section-grid" id="realisations">
+    <div class="realisations-inner">
+      <h2 class="section-title section-title--dark realisations-title" data-i18n="realisations_title">Explorez nos derniers projets</h2>
+
+      <div class="realisations-grid" aria-label="Derniers projets">
+        <p class="realisations-media__note">Refonte complète de la landing page, du design à la mise en ligne.</p>
+        <div class="realisations-item realisations-item--reverse">
+          <div class="realisations-media">
+            <a class="realisations-card" href="https://merzaesthetics.fr/produits/ultherapyprime/" target="_blank" rel="noopener noreferrer">
+              <img height="1085" width="1450" src="https://msd-media.com/assets/img/merz-ultherapy-prime-mockup.webp" alt="Réalisation Merz Aesthetics Ultherapy Prime" loading="lazy" decoding="async">
+              <span class="realisations-card__overlay">
+                <span class="realisations-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="realisations-card__label">Voir le resultat en ligne</span>
+              </span>
+            </a>
+          </div>
+          <div class="realisations-panel realisations-panel--left">
+            <div class="realisations-brand">
+              <img width="1500" height="131" src="https://msd-media.com/assets/img/logo-merz-aesthetics.webp" alt="Logo Merz Aesthetics" class="realisations-brand__logo realisations-brand__logo--merz" loading="lazy" decoding="async">
+            </div>
+            <p class="realisations-panel__description">Merz Aesthetics est un laboratoire international de référence en médecine esthétique. Pour le lancement d'Ultherapy® Prime, nous avons conçu une landing page conciliant rigueur clinique et accessibilité, du bénéfice patient jusqu'au localisateur de praticiens.</p>
+            <a href="https://msd-media.com/realisations/merz-ultherapy-prime/" class="realisations-panel__cta">Voir l'étude de cas</a>
+          </div>
+        </div>
+
+        <p class="realisations-media__note">Landing page de pre-lancement conçue et développée de A à Z, du branding à la mise en ligne.</p>
+        <div class="realisations-item">
+          <div class="realisations-media">
+            <a class="realisations-card" href="https://nation-startup.com/">
+              <img height="1024" width="1536" src="https://msd-media.com/assets/img/nation-mockup.webp" alt="Réalisation Nation" loading="lazy" decoding="async">
+              <span class="realisations-card__overlay">
+                <span class="realisations-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="realisations-card__label">Voir le resultat en ligne</span>
+              </span>
+            </a>
+          </div>
+          <div class="realisations-panel">
+            <div class="realisations-brand">
+              <img width="188" height="53" src="https://msd-media.com/assets/img/logo-track5.webp" alt="Logo Nation Startup" class="realisations-brand__logo" loading="lazy" decoding="async">
+            </div>
+            <p class="realisations-panel__description">Nation préparait la sortie beta de son application de networking pour startups. Nous avons conçu une landing page capable de rendre le produit concret, d'installer une perception premium et de capter les premiers utilisateurs.</p>
+            <a href="https://msd-media.com/realisations/nation-startup/" class="realisations-panel__cta">Voir l'étude de cas</a>
+          </div>
+        </div>
+
+        <p class="realisations-media__note">Design et développement d'une landing page sur-mesure, de la maquette à la mise en ligne.</p>
+        <div class="realisations-item realisations-item--reverse">
+          <div class="realisations-media">
+            <a class="realisations-card" href="https://agence3xl.fr/">
+              <img height="1024" width="1536" src="https://msd-media.com/assets/img/agence3xl-mockup.webp" alt="Réalisation Agence 3XL" loading="lazy" decoding="async">
+              <span class="realisations-card__overlay">
+                <span class="realisations-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="realisations-card__label">Voir le resultat en ligne</span>
+              </span>
+            </a>
+          </div>
+          <div class="realisations-panel">
+            <div class="realisations-brand">
+              <img width="450" height="160" src="https://msd-media.com/assets/img/logo-track6.webp" alt="Logo Agence 3XL" class="realisations-brand__logo realisations-brand__logo--3xl" loading="lazy" decoding="async">
+            </div>
+            <p class="realisations-panel__description">Agence 3XL réunit trois univers sous une même marque : podcast, mentoring et broadcasting. Nous avons construit une page claire et haut de gamme, avec trois prises de rendez-vous générées dès le jour du lancement.</p>
+            <a href="https://msd-media.com/realisations/agence-3xl/" class="realisations-panel__cta">Voir l'étude de cas</a>
+          </div>
+        </div>
+
+        <p class="realisations-media__note">Création d'un site vitrine sur-mesure, de la direction artistique à la mise en ligne.</p>
+        <div class="realisations-item">
+          <div class="realisations-media">
+            <a class="realisations-card" href="https://marietroccaz.com/">
+              <img height="1024" width="1536" src="https://msd-media.com/assets/img/marie-troccaz-mockup.webp" alt="Réalisation Marie Troccaz" loading="lazy" decoding="async">
+              <span class="realisations-card__overlay">
+                <span class="realisations-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="realisations-card__label">Voir le resultat en ligne</span>
+              </span>
+            </a>
+          </div>
+          <div class="realisations-panel">
+            <div class="realisations-brand">
+              <img width="478" height="91" src="https://marietroccaz.com/assets/img/logo.png" alt="Logo Marie Troccaz" class="realisations-brand__logo realisations-brand__logo--marie" loading="lazy" decoding="async">
+            </div>
+            <p class="realisations-panel__description">Marie Troccaz avait besoin d'un site vitrine élégant et direct pour présenter son univers, clarifier son offre et transformer l'intérêt en demandes de contact qualifiées.</p>
+            <a href="https://msd-media.com/realisations/marie-troccaz/" class="realisations-panel__cta">Voir l'étude de cas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="project-preview-modal" data-project-preview-modal aria-hidden="true">
+    <div class="project-preview-backdrop" data-project-preview-close></div>
+    <div class="project-preview-window" role="dialog" aria-modal="true" aria-label="Aperçu du projet">
+      <div class="project-preview-toolbar">
+        <div class="project-preview-traffic" aria-hidden="true">
+          <span class="project-dot project-dot--red" data-project-preview-close></span>
+          <span class="project-dot project-dot--yellow"></span>
+          <span class="project-dot project-dot--green"></span>
+        </div>
+        <div class="project-preview-address">
+          <i class="fa-solid fa-globe"></i>
+          <span data-project-preview-address>https://nation-startup.com/</span>
+        </div>
+        <button class="project-preview-close" type="button" data-project-preview-close aria-label="Fermer l'aperçu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <iframe
+        data-project-preview-iframe
+        title="Aperçu du projet"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+
+  <section class="section-reviews section-grid" id="landing-reviews">
+    <div class="section-reviews-inner">
+      <h3 class="section-title section-title--dark avis-title" data-i18n="reviews_title">Des clients toujours <br> plus satisfaits.</h3>
+
+      <div class="review-videos">
+        <div class="review-video" data-review-video>
+          <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 1">
+            <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-1.webp" alt="Cover video 1" loading="lazy" aria-hidden="true" decoding="async">
+            <span class="review-video__veil" aria-hidden="true"></span>
+            <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+            <span class="review-video__label">Lire l'avis vidéo</span>
+          </button>
+          <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/86a9d3f0-7d81-462a-afbd-3a3f5c4e8a2f/"
+            frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 1"></iframe>
+        </div>
+
+        <div class="review-video" data-review-video>
+          <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 2">
+            <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-2.webp" alt="Cover video 2" loading="lazy" aria-hidden="true" decoding="async">
+            <span class="review-video__veil" aria-hidden="true"></span>
+            <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+            <span class="review-video__label">Lire l'avis vidéo</span>
+          </button>
+          <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/b7624277-5a5c-4593-bd02-867d509c7927/"
+            frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 2"></iframe>
+        </div>
+
+        <div class="review-video" data-review-video>
+          <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 3">
+            <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-3.webp" alt="Cover video 3" loading="lazy" aria-hidden="true" decoding="async">
+            <span class="review-video__veil" aria-hidden="true"></span>
+            <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+            <span class="review-video__label">Lire l'avis vidéo</span>
+          </button>
+          <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/a5877649-ae66-446b-9abd-de12da540604/"
+            frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 3"></iframe>
+        </div>
+
+        <div class="review-video" data-review-video>
+          <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 4">
+            <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-4.webp" alt="Cover video 4" loading="lazy" aria-hidden="true" decoding="async">
+            <span class="review-video__veil" aria-hidden="true"></span>
+            <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+            <span class="review-video__label">Lire l'avis vidéo</span>
+          </button>
+          <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/bb45034f-a7f3-4f4d-ad6e-e07de17fe338/"
+            frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 4"></iframe>
+        </div>
+      </div>
+
+      <div class="avis-carousel-container animate-fade-in">
+        <div class="avis-track track-left" id="track-left"></div>
+      </div>
+
+      <div class="logo-marquee logo-marquee--reviews" aria-label="Logos clients">
+        <div class="logo-marquee__track"></div>
+      </div>
+
+      <br><br>
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button hero-primary-cta">
+        <span class="cta-text">Réserver un appel</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="faq section-grid" id="faq">
+    <div class="faq-container">
+      <h3 class="section-title section-title--dark faq-title" data-i18n="tarifs_faq_title">FAQ</h3>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="tarifs_faq_q1_q">Quel est le prix moyen d'un site internet en 2026 ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p data-i18n="tarifs_faq_q1_a">Chez MSD Media, une landing page démarre à 1 990 €, un site vitrine complet à 3 990 €. Les projets sur-mesure (e-commerce, multilingue, dashboards) font l'objet d'un devis personnalisé après un premier échange.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="tarifs_faq_q2_q">Combien de temps faut-il pour créer mon site ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p data-i18n="tarifs_faq_q2_a">Une première version est livrée en 21 jours, quel que soit le projet. Le process se déroule en 4 étapes : brief et lancement, UX/UI, développement, puis livraison et ajustements.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="tarifs_faq_q3_q">Le SEO est-il inclus dans le prix ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p data-i18n="tarifs_faq_q3_a">Oui. Structure sémantique, données structurées Schema.org et optimisation Core Web Vitals sont inclus dès la formule Site Vitrine. La formule Landing Page inclut un SEO on-page de base.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="tarifs_faq_q4_q">Quels sont les coûts après la création ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p data-i18n="tarifs_faq_q4_a">Comptez le nom de domaine (10-30 €/an) et l'hébergement. Un site codé sur-mesure comme les nôtres s'héberge quasi gratuitement et ne nécessite pas de maintenance lourde, contrairement à WordPress.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="tarifs_faq_q5_q">Comment se passe le paiement ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p data-i18n="tarifs_faq_q5_a">Un acompte au lancement du projet, le solde à la livraison. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-proof section-grid" id="ai-proof">
+    <div class="ai-proof__inner">
+      <img
+        class="ai-proof__msd-logo"
+        src="../assets/img/logo-black.webp"
+        alt="MSD Media"
+        width="372"
+        height="151"
+        loading="lazy"
+        decoding="async"
+      >
+      <h3 class="section-title section-title--dark" data-i18n="ai_proof_title">Toujours pas sûr que MSD Media soit fait pour vous ?</h3>
+      <p class="ai-proof__lead" data-i18n="ai_proof_lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
+      <div class="ai-proof__actions">
+        <a
+          class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt"
+          href="https://chatgpt.com/?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Poser la question dans ChatGPT"
+        >
+          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
+          <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
+        </a>
+        <a
+          class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude"
+          href="https://claude.ai/new?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Poser la question dans Claude"
+        >
+          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+          <span data-i18n="ai_proof_claude">Demander à Claude</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section" id="rdv">
+    <div class="booking-section__inner">
+      <div class="booking-section__embed">
+        <iframe
+          src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&theme=dark"
+          title="Prendre rendez-vous avec MSD Media"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-left">
+        <img height="151" width="372" src="../assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+      </div>
+
+      <div class="footer-offices">
+        <article class="footer-office-card">
+          <p class="footer-office-city">Annecy</p>          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
+        </article>
+        <article class="footer-office-card">
+          <p class="footer-office-city">Munich</p>          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+        </article>
+      </div>
+
+      <div class="footer-contact">
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:maxens.soldan@msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cities">
+      <ul>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
+        <li><a href="https://msd-media.com/agence-web-lyon/">Lyon</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-paris/">Paris</a></li>
+        <li><a href="https://msd-media.com/agence-web-marseille/">Marseille</a></li>
+        <li><a href="https://msd-media.com/agence-web-toulouse/">Toulouse</a></li>
+        <li><a href="https://msd-media.com/agence-web-bordeaux/">Bordeaux</a></li>
+        <li><a href="https://msd-media.com/agence-web-lille/">Lille</a></li>
+        <li><a href="https://msd-media.com/agence-web-nantes/">Nantes</a></li>
+        <li><a href="https://msd-media.com/agence-web-montpellier/">Montpellier</a></li>
+        <li><a href="https://msd-media.com/agence-web-nice/">Nice</a></li>
+        <li><a href="https://msd-media.com/agence-web-rennes/">Rennes</a></li>
+        <li><a href="https://msd-media.com/agence-web-clermont-ferrand/">Clermont-Ferrand</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_company">Entreprise</p>
+        <ul>
+          <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
+          <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
+          <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_resources">Ressources</p>
+        <ul>
+          <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a></li>
+          <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
+          <li><a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="secteurs">
+        <p class="footer-column__title" data-i18n="footer_col_sectors">Secteurs</p>
+        <ul>
+          <li><a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a></li>
+          <li><a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a></li>
+          <li><a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a></li>
+          <li><a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a></li>
+          <li><a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a></li>
+          <li><a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale">Conditions générales de vente</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+  <script>
+    (() => {
+      const tabs = document.querySelectorAll('#currency-tabs .currency-tab');
+      const prices = document.querySelectorAll('.pricing-card__price[data-eur]');
+      if (!tabs.length || !prices.length) return;
+
+      const setCurrency = (currency) => {
+        const nextCurrency = currency === 'usd' ? 'usd' : 'eur';
+        tabs.forEach((tab) => {
+          const isActive = tab.dataset.currency === nextCurrency;
+          tab.classList.toggle('is-active', isActive);
+          tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        prices.forEach((price) => {
+          price.textContent = price.dataset[nextCurrency];
+        });
+      };
+
+      const syncCurrencyWithLanguage = () => {
+        const lang = String(document.documentElement.lang || '').toLowerCase();
+        setCurrency(lang.startsWith('en') ? 'usd' : 'eur');
+      };
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => setCurrency(tab.dataset.currency));
+      });
+
+      document.addEventListener('DOMContentLoaded', syncCurrencyWithLanguage);
+
+      document.querySelectorAll('[data-lang-select], #lang-select').forEach((select) => {
+        select.addEventListener('change', () => {
+          setCurrency(select.value === 'en' ? 'usd' : 'eur');
+        });
+      });
+    })();
+  </script>
+  <div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Consentement cookies" hidden>
+    <div class="cookie-consent__inner">
+      <p class="cookie-consent__text" data-i18n="cookie_text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="cookie_learn_more">En savoir plus</a></p>
+      <div class="cookie-consent__actions">
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse" data-i18n="cookie_refuse">Refuser</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept" data-i18n="cookie_accept">Accepter</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

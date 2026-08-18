@@ -247,8 +247,8 @@
       "priceRange": "Sur devis",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "7",
+        "ratingValue": "5",
+        "reviewCount": "8",
         "bestRating": "5",
         "worstRating": "1"
       },
@@ -448,41 +448,96 @@ function _msdLoadTracking(){
 </script>
 </head>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
+<body class="home-page">
+<div class="top-announcement" role="banner">
+    <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
+    <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
+  </div>
+<!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28B6QRF" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
   <div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Consentement cookies" hidden>
     <div class="cookie-consent__inner">
-      <p class="cookie-consent__text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">En savoir plus</a></p>
+      <p class="cookie-consent__text" data-i18n="cookie_text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="cookie_learn_more">En savoir plus</a></p>
       <div class="cookie-consent__actions">
-        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse">Refuser</button>
-        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept">Accepter</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse" data-i18n="cookie_refuse">Refuser</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept" data-i18n="cookie_accept">Accepter</button>
       </div>
     </div>
   </div>
-
-
-  <header class="navbar">
+<header class="navbar">
     <div class="nav-left">
-      <a href="https://msd-media.com/"><img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager"></a>
+      <a href="https://msd-media.com/" aria-label="Accueil MSD Media">
+        <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager">
+        <span style="position:absolute;left:-9999px;">Accueil MSD Media</span>
+      </a>
       <div class="nav-menu" data-nav-menu>
         <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
           <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
         </button>
         <div class="nav-menu-dropdown" data-nav-menu-dropdown>
           <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
-          <a href="https://msd-media.com/">Accueil</a>
-          <a href="https://msd-media.com/etudes-de-cas/">Études de cas</a>
-          <a href="https://msd-media.com/contact/">Contact</a>
-          <a href="https://msd-media.com/recrutement/">Recrutement</a>
-                    <a href="https://msd-media.com/affiliation/">Affiliation</a>
-        </div>
+          <a href="https://msd-media.com/" data-i18n="nav_home">Accueil</a>
+          <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+          <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+          <a href="https://msd-media.com/contact/" data-i18n="nav_contact">Contact</a>
+          <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+                  <a href="https://msd-media.com/affiliation/" data-i18n="nav_affiliation">Affiliation</a>
+</div>
       </div>
     </div>
 
+    <nav class="nav-center" aria-label="Navigation principale">
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/blog/"><span class="nav-link-label" data-i18n="nav_resources">Ressources</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+              <a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a>
+              <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+              <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+              <a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/#secteurs"><span class="nav-link-label" data-i18n="nav_sector">Secteur</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
+              <a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
+              <a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
+              <a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
+              <a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
+              <a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img src="https://msd-media.com/assets/img/navbar-img2.png" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+      <a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a>
+    </nav>
+
     <div class="nav-right">
+      <label class="lang-switch" for="lang-select">
+        <span class="lang-switch__label">Langue</span>
+        <select class="lang-switch__select" id="lang-select" data-lang-select aria-label="Choisir la langue">
+          <option value="fr">🇫🇷 FR</option>
+          <option value="en">🇬🇧 EN</option>
+        </select>
+      </label>
       <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank" data-i18n="nav_call">Réserver un appel</a>
       <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
@@ -491,35 +546,37 @@ function _msdLoadTracking(){
   </header>
 
   <main>
-  <nav class="breadcrumb" aria-label="Fil d'Ariane">
-    <ol class="breadcrumb__list">
-      <li class="breadcrumb__item"><a href="https://msd-media.com/">Accueil</a></li>
-      <li class="breadcrumb__item" aria-current="page">Refonte de site web Strasbourg</li>
-    </ol>
-  </nav>
-
     <section class="hero">
       <!--<div class="hero-proof" aria-label="Clients accompagnés">
         <div class="hero-proof__avatars" aria-hidden="true">
-          <img  class="hero-proof__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80" alt="Témoignage client — agence web à Strasbourg" loading="lazy" referrerpolicy="no-referrer" decoding="async">
-          <img  class="hero-proof__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80" alt="Témoignage client — agence web à Strasbourg" loading="lazy" referrerpolicy="no-referrer" decoding="async">
-          <img  class="hero-proof__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&h=120&q=80" alt="Témoignage client — agence web à Strasbourg" loading="lazy" referrerpolicy="no-referrer" decoding="async">
+          <img width="120" height="120" class="hero-proof__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80" alt="Client accompagné par MSD Media" loading="lazy" referrerpolicy="no-referrer" decoding="async">
+          <img width="120" height="120" class="hero-proof__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80" alt="Client accompagné par MSD Media" loading="lazy" referrerpolicy="no-referrer" decoding="async">
+          <img width="120" height="120" class="hero-proof__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&h=120&q=80" alt="Client accompagné par MSD Media" loading="lazy" referrerpolicy="no-referrer" decoding="async">
         </div>
         <p class="hero-proof__text" data-i18n="clients_supported">+30 clients accompagnés</p>
       </div>-->
 
-    <h3 class="feature-tag-main-second-page hero-laurel-badge animate-fade-opacity">
-        Refonte de site web à Strasbourg<br>pour un cap de performance
-    </h3>
+      <div class="hero-intro">
+        <div class="hero-intro__copy">
+          <div class="hero-badges">
+            <h3 class="feature-tag-main-second-page hero-laurel-badge">
+              <span class="hero-laurel-badge__text" data-i18n="hero_badge">Agence citée comme référence<br>pour les landing pages en <strong>France 🇫🇷</strong></span>
+            </h3>
+          </div>
 
-      <h1 class="hero__title"><span>Refonte de site web à Strasbourg :</span><span class="hero__title-word-wrap"><span>design, SEO et conversion alignés.</span></span></h1>
-      <div class="hero__actions" aria-label="Actions principales">
-        <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="hero_primary">Réserver un appel</a>
-        <a class="hero__btn hero__btn--secondary" href="#agence" data-i18n="hero_secondary">Découvrir l'agence</a>
+          <h1 class="hero__title" data-i18n="h1_refonte_site_web_strasbourg" style="font-size: clamp(1.45rem, 4.7vw, 3.0rem); max-width: 38ch;"><span>Refonte de site web à Strasbourg</span> <span class="hero__title-word-wrap"><span>design, SEO et conversion alignés.</span></span></h1>
+          <p class="hero__subtitle" data-i18n="subtitle_refonte_site_web_strasbourg">Refonte de site web à Strasbourg : design sur mesure, SEO local, performance et conversion. Repartir sur des bases solides sans perdre votre visibilité en Alsace. <strong class="hero__subtitle-highlight">Livré en 21 jours chrono.</strong></p>
+          <div class="hero__actions" aria-label="Actions principales">
+            <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="hero_primary">Réserver un appel</a>
+            <a class="hero__btn hero__btn--secondary" href="#agence" data-i18n="hero_secondary">Découvrir l'agence</a>
+          </div>
+        </div>
       </div>
-          <a class="trustpilot_content animate-fade-in" href="https://fr.trustpilot.com/review/msd-media.com">
-        <img height="69" width="927" src="https://msd-media.com/assets/img/trustpilot-color.webp" alt="Official Trustpilot logo" loading="lazy" decoding="async">
-      </a>
+      <p class="hero-companies-proof" aria-label="Preuve sociale" data-i18n="hero_companies_proof">
+        <span class="hero-companies-proof__highlight">+30 entreprises</span> nous font confiance</p>
+      <div class="logo-marquee" aria-label="Logos clients">
+        <div class="logo-marquee__track"></div>
+      </div>
       <div class="video-hero video-hero-player">
       <video class="video-hero-content" muted loop playsinline preload="none" poster="https://msd-media.com/assets/img/poster-video-motion.webp" data-lazy-video>
         <source data-src="https://msd-media.com/assets/video/video-motion-msd.mp4" type="video/mp4">
@@ -535,164 +592,173 @@ function _msdLoadTracking(){
         </button>
       </div>
       </div>
-      <p class="hero-companies-proof" aria-label="Preuve sociale">
-        <strong>+30 clients accompagnés</strong> en France, Suisse et Belgique.
-      </p>
-      <div class="logo-marquee" aria-label="Logos clients">
-        <div class="logo-marquee__track"></div>
-      </div>
       <br><br><br>
-      <a class="hero-scroll-indicator" href="#scroll-manifesto" aria-label="Scroller vers les réalisations">
-        <svg class="hero-scroll-indicator__ring" viewBox="0 0 120 120" role="img" aria-hidden="true">
-          <defs>
-            <path id="hero-scroll-ring-path" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"></path>
-          </defs>
-          <text>
-            <textPath href="#hero-scroll-ring-path">* SCROLL DOWN * SCROLL DOWN * </textPath>
-          </text>
-        </svg>
-        <span class="hero-scroll-indicator__arrow" aria-hidden="true">↓</span>
-      </a>
     </section>
   </main>
 
-  <section class="scroll-manifesto" id="scroll-manifesto" aria-label="Message manifeste">
-    <div class="scroll-manifesto__pin">
-      <p class="scroll-manifesto__text" data-scroll-manifesto-text>
-        Un site ancien peut freiner votre croissance.<br>On refond sur des bases propres, rapides et orientées résultats.
-      </p>
-    </div>
+  <section class="section-grid content-alt-section" id="refonte-strasbourg-diagnostic" aria-label="Pourquoi refondre votre site à Strasbourg">
+    <article class="about-alt-block">
+      <div class="about-alt-img">
+        <img src="https://msd-media.com/assets/img/img-cover.webp" alt="MSD Media, agence web à Strasbourg" loading="lazy" decoding="async">
+      </div>
+      <div class="about-alt-text">
+        <span class="section-tag section-tag--dark">Pourquoi refondre votre site</span>
+        <h2>Un site vieillissant coûte plus cher qu'une refonte</h2>
+        <p>À Strasbourg, un site lent ou daté perd des clients face à des concurrents mieux positionnés sur Google. Nous commençons chaque refonte par un diagnostic complet : technique, SEO, contenus et parcours de conversion.</p>
+        <p>Rien n'est jeté sans raison : ce qui fonctionne déjà (positions Google, contenus qui convertissent) est conservé et renforcé, le reste est reconstruit sur des bases saines.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="section-grid content-alt-section" id="refonte-strasbourg-secteurs" aria-label="Secteurs accompagnés pour une refonte à Strasbourg">
+    <article class="about-alt-block about-alt-block--reverse">
+      <div class="about-alt-img">
+        <img src="https://msd-media.com/assets/img/img-cover.webp" alt="MSD Media, agence web à Strasbourg" loading="lazy" decoding="async">
+      </div>
+      <div class="about-alt-text">
+        <span class="section-tag section-tag--dark">Secteurs accompagnés</span>
+        <h2>Une refonte sans perte de visibilité</h2>
+        <p>Institutions, cabinets de conseil, PME industrielles et commerces : chaque refonte est pilotée pour préserver et améliorer le référencement déjà acquis, jamais pour repartir de zéro au détriment du SEO existant.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="section-grid content-alt-section" id="refonte-strasbourg-livraison" aria-label="Délais pour une refonte de site à Strasbourg">
+    <article class="about-alt-block">
+      <div class="about-alt-img">
+        <img src="https://msd-media.com/assets/img/img-cover.webp" alt="MSD Media, agence web à Strasbourg" loading="lazy" decoding="async">
+      </div>
+      <div class="about-alt-text">
+        <span class="section-tag section-tag--dark">Livraison en 21 jours</span>
+        <h2>Une refonte livrée en 21 jours</h2>
+        <p>Même méthode que pour une création : brief et audit, UX/UI, développement, puis livraison avec redirections propres pour ne perdre aucun historique SEO.</p>
+        <p>Résultat : un site modernisé, plus rapide, mieux structuré, sans rupture dans votre visibilité à Strasbourg.</p>
+      </div>
+    </article>
   </section>
 
   <section class="realisations-section section-grid" id="realisations">
     <div class="realisations-inner">
-      <h2 class="animate-fade-opacity section-tag section-tag--dark">Réalisations</h2>
-      <h2 class="animate-fade-opacity section-title section-title--dark">Des interfaces sur mesure <br> pensées pour convertir.</h2>
+      <h2 class="section-title section-title--dark realisations-title" data-i18n="realisations_title">Explorez nos derniers projets</h2>
 
-      <div class="realisations-carousel animate-fade-opacity" data-realisations-carousel>
-        <button class="realisations-nav realisations-nav--prev" type="button" data-realisations-prev aria-label="Slide précédent">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <div class="realisations-track" data-realisations-track>
-          <figure class="realisations-slide is-active" data-preview-url="https://maxsld.github.io/nation-startup-project-msd-media/" data-preview-display-url="https://nation-startup.com/" data-preview-title="Nation">
-            <img height="1024" width="1536" src="https://msd-media.com/assets/img/nation-mockup.webp" alt="Réalisation Nation" loading="lazy" decoding="async">
-            <figcaption class="realisations-slide-overlay">Voir le résultat en ligne <i class="fa-solid fa-arrow-right"></i></figcaption>
-          </figure>
-          <figure class="realisations-slide" data-preview-url="https://agence3xl.fr/" data-preview-title="Agence 3XL">
-            <img height="1024" width="1536" src="https://msd-media.com/assets/img/agence3xl-mockup.webp" alt="Réalisation Agence 3XL" loading="lazy" decoding="async">
-            <figcaption class="realisations-slide-overlay">Voir le résultat en ligne <i class="fa-solid fa-arrow-right"></i></figcaption>
-          </figure>
-          <figure class="realisations-slide" data-preview-url="https://maximesciare.com/" data-preview-title="Maxime Sciare">
-            <img height="1024" width="1536" src="https://msd-media.com/assets/img/maxime-sciare-mockup.webp" alt="Réalisation Maxime Sciare" loading="lazy" decoding="async">
-            <figcaption class="realisations-slide-overlay">Voir le résultat en ligne <i class="fa-solid fa-arrow-right"></i></figcaption>
-          </figure>
-          <figure class="realisations-slide" data-preview-url="https://laurencedaienmaestripieri.com/" data-preview-title="Laurence Daien Maestripieri">
-            <img height="1024" width="1536" src="https://msd-media.com/assets/img/laurence-mockup.webp" alt="Réalisation Motion Design" loading="lazy" decoding="async">
-            <figcaption class="realisations-slide-overlay">Voir le résultat en ligne <i class="fa-solid fa-arrow-right"></i></figcaption>
-          </figure>
-          <figure class="realisations-slide" data-preview-url="https://em-motors-azure.vercel.app/" data-preview-title="EM Motors">
-            <img height="600" width="800" src="https://msd-media.com/assets/img/em-motors-mockup.webp" alt="Réalisation EM Motors" loading="lazy" decoding="async">
-            <figcaption class="realisations-slide-overlay">Voir le résultat en ligne <i class="fa-solid fa-arrow-right"></i></figcaption>
-          </figure>
-          <figure class="realisations-slide" data-preview-url="https://marietroccaz.com/" data-preview-title="Marie Troccaz">
-            <img height="604" width="800" src="https://msd-media.com/assets/img/marie-troccaz-mockup.webp" alt="Réalisation Marie Troccaz" loading="lazy" decoding="async">
-            <figcaption class="realisations-slide-overlay">Voir le résultat en ligne <i class="fa-solid fa-arrow-right"></i></figcaption>
-          </figure>
-          <figure class="realisations-slide" data-preview-url="https://www.aristoiacademia.fr/" data-preview-title="Aristoi Academia">
-            <img height="1024" width="1536" src="https://msd-media.com/assets/img/aristoi-academia-mockup.webp" alt="Réalisation Aristoi Academia" loading="lazy" decoding="async">
-            <figcaption class="realisations-slide-overlay">Voir le résultat en ligne <i class="fa-solid fa-arrow-right"></i></figcaption>
-          </figure>
-          <figure class="realisations-slide" data-preview-url="https://www.carrozsports.com/" data-preview-title="Carroz Sports">
-            <img height="1024" width="1536" src="https://msd-media.com/assets/img/carroz-sports-mockup.webp" alt="Réalisation Carroz Sports" loading="lazy" decoding="async">
-            <figcaption class="realisations-slide-overlay">Voir le résultat en ligne <i class="fa-solid fa-arrow-right"></i></figcaption>
-          </figure>
-          <figure class="realisations-slide" data-preview-url="http://micro-pigmentation-capillaire.com/" data-preview-title="HairTattoo">
-            <img height="1024" width="1536" src="https://msd-media.com/assets/img/hairtattoo-mockup.webp" alt="Réalisation Hair Tattoo" loading="lazy" decoding="async">
-            <figcaption class="realisations-slide-overlay">Voir le résultat en ligne <i class="fa-solid fa-arrow-right"></i></figcaption>
-          </figure>
-          <figure class="realisations-slide" data-preview-url="https://merzaesthetics.fr/produits/ultherapyprime/" data-preview-title="Merz Aesthetics">
-            <img height="1085" width="1450" src="https://msd-media.com/assets/img/merz-ultherapy-prime-mockup.webp" alt="Réalisation Merz Aesthetics Ultherapy Prime" loading="lazy" decoding="async">
-            <figcaption class="realisations-slide-overlay">Voir le résultat en ligne <i class="fa-solid fa-arrow-right"></i></figcaption>
-          </figure>
+      <div class="realisations-grid" aria-label="Derniers projets">
+        <p class="realisations-media__note">Refonte complète de la landing page, du design à la mise en ligne.</p>
+        <div class="realisations-item realisations-item--reverse">
+          <div class="realisations-media">
+            <a class="realisations-card" href="https://merzaesthetics.fr/produits/ultherapyprime/" target="_blank" rel="noopener noreferrer">
+              <img height="1085" width="1450" src="https://msd-media.com/assets/img/merz-ultherapy-prime-mockup.webp" alt="Réalisation Merz Aesthetics Ultherapy Prime" loading="lazy" decoding="async">
+              <span class="realisations-card__overlay">
+                <span class="realisations-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="realisations-card__label">Voir le resultat en ligne</span>
+              </span>
+            </a>
+          </div>
+          <div class="realisations-panel realisations-panel--left">
+            <div class="realisations-brand">
+              <img width="1500" height="131" src="https://msd-media.com/assets/img/logo-merz-aesthetics.webp" alt="Logo Merz Aesthetics" class="realisations-brand__logo realisations-brand__logo--merz" loading="lazy" decoding="async">
+            </div>
+            <p class="realisations-panel__description">Merz Aesthetics est un laboratoire international de référence en médecine esthétique. Pour le lancement d'Ultherapy® Prime, nous avons conçu une landing page conciliant rigueur clinique et accessibilité, du bénéfice patient jusqu'au localisateur de praticiens.</p>
+            <a href="https://msd-media.com/realisations/merz-ultherapy-prime/" class="realisations-panel__cta">Voir l'étude de cas</a>
+          </div>
         </div>
-        <button class="realisations-nav realisations-nav--next" type="button" data-realisations-next aria-label="Slide suivant">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
-
-      <div class="realisations-ctas">
-        <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button hero-primary-cta realisations-cta">
-          <span class="cta-text">Démarrer mon projet à Strasbourg</span>
-        </a>
-        <a href="https://msd-media.com/etudes-de-cas/" class="contact-button realisations-cta realisations-cta--ghost" target="_blank" rel="noopener noreferrer">
-          <span class="cta-text">Voir les études de cas</span>
-        </a>
+        <p class="realisations-media__note">Landing page de pre-lancement conçue et développée de A à Z, du branding à la mise en ligne.</p>
+        <div class="realisations-item">
+          <div class="realisations-media">
+            <a class="realisations-card" href="https://nation-startup.com/">
+              <img height="1024" width="1536" src="https://msd-media.com/assets/img/nation-mockup.webp" alt="Réalisation Nation" loading="lazy" decoding="async">
+              <span class="realisations-card__overlay">
+                <span class="realisations-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="realisations-card__label">Voir le resultat en ligne</span>
+              </span>
+            </a>
+          </div>
+          <div class="realisations-panel">
+            <div class="realisations-brand">
+              <img width="188" height="53" src="https://msd-media.com/assets/img/logo-track5.webp" alt="Logo Nation Startup" class="realisations-brand__logo" loading="lazy" decoding="async">
+            </div>
+            <p class="realisations-panel__description">Nation préparait la sortie beta de son application de networking pour startups. Nous avons conçu une landing page capable de rendre le produit concret, d'installer une perception premium et de capter les premiers utilisateurs.</p>
+            <a href="https://msd-media.com/realisations/nation-startup/" class="realisations-panel__cta">Voir l'étude de cas</a>
+          </div>
+        </div>
+        <p class="realisations-media__note">Design et développement d'une landing page sur-mesure, de la maquette à la mise en ligne.</p>
+        <div class="realisations-item realisations-item--reverse">
+          <div class="realisations-media">
+            <a class="realisations-card" href="https://agence3xl.fr/">
+              <img height="1024" width="1536" src="https://msd-media.com/assets/img/agence3xl-mockup.webp" alt="Réalisation Agence 3XL" loading="lazy" decoding="async">
+              <span class="realisations-card__overlay">
+                <span class="realisations-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="realisations-card__label">Voir le resultat en ligne</span>
+              </span>
+            </a>
+          </div>
+          <div class="realisations-panel">
+            <div class="realisations-brand">
+              <img width="450" height="160" src="https://msd-media.com/assets/img/logo-track6.webp" alt="Logo Agence 3XL" class="realisations-brand__logo realisations-brand__logo--3xl" loading="lazy" decoding="async">
+            </div>
+            <p class="realisations-panel__description">Agence 3XL réunit trois univers sous une même marque : podcast, mentoring et broadcasting. Nous avons construit une page claire et haut de gamme, avec trois prises de rendez-vous générées dès le jour du lancement.</p>
+            <a href="https://msd-media.com/realisations/agence-3xl/" class="realisations-panel__cta">Voir l'étude de cas</a>
+          </div>
+        </div>
+        <p class="realisations-media__note">Création d'un site vitrine sur-mesure, de la direction artistique à la mise en ligne.</p>
+        <div class="realisations-item">
+          <div class="realisations-media">
+            <a class="realisations-card" href="https://marietroccaz.com/">
+              <img height="1024" width="1536" src="https://msd-media.com/assets/img/marie-troccaz-mockup.webp" alt="Réalisation Marie Troccaz" loading="lazy" decoding="async">
+              <span class="realisations-card__overlay">
+                <span class="realisations-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="realisations-card__label">Voir le resultat en ligne</span>
+              </span>
+            </a>
+          </div>
+          <div class="realisations-panel">
+            <div class="realisations-brand">
+              <img width="478" height="91" src="https://marietroccaz.com/assets/img/logo.png" alt="Logo Marie Troccaz" class="realisations-brand__logo realisations-brand__logo--marie" loading="lazy" decoding="async">
+            </div>
+            <p class="realisations-panel__description">Marie Troccaz avait besoin d'un site vitrine élégant et direct pour présenter son univers, clarifier son offre et transformer l'intérêt en demandes de contact qualifiées.</p>
+            <a href="https://msd-media.com/realisations/marie-troccaz/" class="realisations-panel__cta">Voir l'étude de cas</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="process-section section-grid" id="process">
     <div class="process-inner">
-      <h2 class="animate-fade-opacity section-tag section-tag--dark">Process refonte</h2>
-      <h3 class="animate-fade-opacity section-title section-title--dark">Votre refonte web à Strasbourg <br> cadrée et livrée en 21 jours.</h3>
+      <h3 class="section-title section-title--dark process-title" data-i18n="process_title">Votre site web sur mesure en 21 jours.</h3>
       <div class="process-steps">
-        <article class="process-step animate-fade-opacity">
-          <span class="process-step__day">Jour 1-4</span>
-          <img  class="process-step__image" src="https://msd-media.com/assets/img/process1.avif" alt="Phase de cadrage projet" loading="lazy" decoding="async">
-          <h4>Brief & lancement local</h4>
-          <p>Appel de cadrage avec votre entreprise à Strasbourg. On aligne vos objectifs business, votre positionnement local et l'architecture du site.</p>
+        <article class="process-step">
+          <span class="process-step__day" data-i18n="process_day_1">Jour 1-4</span>
+          <img width="380" height="238" class="process-step__image" src="../assets/img/process1.png" alt="Phase de cadrage projet" loading="lazy" decoding="async">
+          <h4 data-i18n="process_step1_title">Brief & lancement</h4>
+          <p data-i18n="process_step1_desc">Appel de cadrage avec vous + chef de projet. On aligne les objectifs, le positionnement et l’architecture
+            du site.</p>
         </article>
-        <article class="process-step animate-fade-opacity">
-          <span class="process-step__day">Jour 5-10</span>
-          <img  class="process-step__image" src="https://msd-media.com/assets/img/process2.avif" alt="Phase de design UX UI" loading="lazy" decoding="async">
-          <h4>UX/UI & validation</h4>
-          <p>Création d'une maquette sur mesure orientée conversion locale (desktop + mobile), puis validation avec vous avant développement.</p>
+        <article class="process-step">
+          <span class="process-step__day" data-i18n="process_day_2">Jour 5-10</span>
+          <img width="380" height="238" class="process-step__image" src="../assets/img/process2.png" alt="Phase de design UX UI" loading="lazy" decoding="async">
+          <h4 data-i18n="process_step2_title">UX/UI & validation</h4>
+          <p data-i18n="process_step2_desc">Création de la maquette sur mesure (desktop + mobile), puis validation avec vous avant développement.</p>
         </article>
-        <article class="process-step animate-fade-opacity">
-          <span class="process-step__day">Jour 11-17</span>
-          <img  class="process-step__image" src="https://msd-media.com/assets/img/process3.avif" alt="Phase de développement du site" loading="lazy" decoding="async">
-          <h4>Développement SEO</h4>
-          <p>Intégration propre et rapide. SEO technique local, performance mobile et tracking sont mis en place pour Strasbourg et la Alsace.</p>
+        <article class="process-step">
+          <span class="process-step__day" data-i18n="process_day_3">Jour 11-17</span>
+          <img width="380" height="238" class="process-step__image" src="../assets/img/process3.png" alt="Phase de développement du site" loading="lazy" decoding="async">
+          <h4 data-i18n="process_step3_title">Développement</h4>
+          <p data-i18n="process_step3_desc">Intégration propre, rapide et responsive. SEO technique, GEO IA, performance et tracking sont mis
+            en place.</p>
         </article>
-        <article class="process-step animate-fade-opacity">
-          <span class="process-step__day">Jour 18-21</span>
-          <img  class="process-step__image" src="https://msd-media.com/assets/img/process4.avif" alt="Phase de livraison finale" loading="lazy" decoding="async">
-          <h4>Livraison & ajustements</h4>
-          <p>Présentation de la V1, retours, derniers ajustements puis mise en ligne de votre site internet pour capter des demandes locales qualifiées.</p>
+        <article class="process-step">
+          <span class="process-step__day" data-i18n="process_day_4">Jour 18-21</span>
+          <img width="380" height="238" class="process-step__image" src="../assets/img/process4.png" alt="Phase de livraison finale" loading="lazy" decoding="async">
+          <h4 data-i18n="process_step4_title">Livraison & ajustements</h4>
+          <p data-i18n="process_step4_desc">Présentation de la V1, retours, derniers ajustements puis mise en ligne finale de votre site web.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <div class="project-preview-modal" data-project-preview-modal aria-hidden="true">
-    <div class="project-preview-backdrop" data-project-preview-close></div>
-    <div class="project-preview-window" role="dialog" aria-modal="true" aria-label="Aperçu du projet">
-      <div class="project-preview-toolbar">
-        <div class="project-preview-traffic" aria-hidden="true">
-          <span class="project-dot project-dot--red" data-project-preview-close></span>
-          <span class="project-dot project-dot--yellow"></span>
-          <span class="project-dot project-dot--green"></span>
-        </div>
-        <div class="project-preview-address">
-          <i class="fa-solid fa-globe"></i>
-          <span data-project-preview-address>https://nation-startup.com/</span>
-        </div>
-        <button class="project-preview-close" type="button" data-project-preview-close aria-label="Fermer l’aperçu">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <iframe
-        data-project-preview-iframe
-        title="Aperçu du projet"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-  </div>
-
     <section class="section-reviews section-grid" id="landing-reviews">
-      <h2 class="section-tag section-tag--dark">Avis</h2>
-    <h3 class="section-title section-title--dark">Des clients toujours <br> plus satisfaits.</h3>
+    <div class="section-reviews-inner">
+    <h3 class="section-title section-title--dark avis-title" data-i18n="reviews_title">Des clients toujours <br> plus satisfaits.</h3>
 
     <div class="review-videos">
       <div class="review-video" data-review-video>
@@ -755,31 +821,39 @@ function _msdLoadTracking(){
     <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button hero-primary-cta">
       <span class="cta-text">Réserver un appel</span>
     </a>
-
+    </div>
   </section>
 
-  <section class="section-grid founder-section animate-fade-in">    <div class="founder-video-card">
+  <section class="section-grid founder-section animate-fade-in" id="agence">
+    <div class="founder-inner">
+    <div class="founder-video-card">
       <a href="https://youtu.be/mLVqVknv2VA?si=qAgiIhJUew3sbyE8" target="_blank" rel="noreferrer"
         class="founder-video-link">
-        <img src="https://msd-media.com/assets/img/mockup-img-dauphine.png" alt="Article du Dauphiné Libéré sur MSD Media" class="founder-video-thumb" loading="lazy" decoding="async">
+        <img width="600" height="338" src="../assets/img/mockup-img-dauphine.png" alt="Article du Dauphiné Libéré sur MSD Media" class="founder-video-thumb" loading="lazy" decoding="async">
       </a>
     </div>
     <div class="founder-quote">
-      <div class="section-tag section-tag--dark" style="text-align: left; margin-left: 0">À propos de l'agence</div>
-      <p class="founder-text">« Une agence web reconnue par Le Dauphiné Libéré pour sa vitesse d'exécution, sa clarté stratégique et sa capacité à transformer les visiteurs en clients. »</p>
-      <a href="https://msd-media.com/blog/articles/msd-media-presse-le-dauphine/" class="founder-link">
-        Lire l'article <span><i class="fa-solid fa-arrow-right"></i></span>
+      <p class="founder-text" data-i18n="founder_text">« Une agence web reconnue par Le Dauphiné Libéré pour sa vitesse d'exécution, sa clarté
+        stratégique et sa capacité à transformer les visiteurs en clients. »</p>
+      <a href="https://msd-media.com/blog/articles/msd-media-presse-le-dauphine/" class="contact-button founder-cta">
+        <span class="cta-text" data-i18n="founder_cta">Lire l'article</span> <i class="fa-solid fa-arrow-right"></i>
       </a>
+    </div>
     </div>
   </section>
 
-
   <section class="faq section-grid" id="faq">
     <div class="faq-container">
-      <h2 class="animate-fade-opacity section-tag section-tag--dark">FAQ Refonte Strasbourg</h2>
-      <h3 class="animate-fade-opacity section-title section-title--dark">Questions fréquentes <br> sur la refonte de site à Strasbourg</h3>
+      <h3 class="section-title section-title--dark faq-title" data-i18n="faq_title">Des questions ? <br> On a les réponses</h3>
 
-      <div class="faq-item animate-fade-opacity">
+      <div class="faq-tabs" role="tablist">
+        <button type="button" class="faq-tab is-active" data-faq-category="general" role="tab" aria-selected="true" data-i18n="faq_tab_general">Général</button>
+        <button type="button" class="faq-tab" data-faq-category="tarifs" role="tab" aria-selected="false" data-i18n="faq_tab_tarifs">Tarifs</button>
+        <button type="button" class="faq-tab" data-faq-category="delais" role="tab" aria-selected="false" data-i18n="faq_tab_delais">Délais</button>
+        <button type="button" class="faq-tab" data-faq-category="technique" role="tab" aria-selected="false" data-i18n="faq_tab_technique">Technique</button>
+      </div>
+
+      <div class="faq-item" data-faq-category="delais">
         <button class="faq-question" aria-expanded="false">
           <span>Combien de temps faut-il pour créer un site internet à Strasbourg ?</span>
           <span class="icon">+</span>
@@ -789,7 +863,7 @@ function _msdLoadTracking(){
         </div>
       </div>
 
-      <div class="faq-item animate-fade-opacity">
+      <div class="faq-item" data-faq-category="general">
         <button class="faq-question" aria-expanded="false">
           <span>Proposez-vous du SEO local Strasbourg dès la création du site ?</span>
           <span class="icon">+</span>
@@ -799,7 +873,7 @@ function _msdLoadTracking(){
         </div>
       </div>
 
-      <div class="faq-item animate-fade-opacity">
+      <div class="faq-item" data-faq-category="general">
         <button class="faq-question" aria-expanded="false">
           <span>Landing page ou site vitrine pour une entreprise à Strasbourg: que choisir ?</span>
           <span class="icon">+</span>
@@ -809,7 +883,7 @@ function _msdLoadTracking(){
         </div>
       </div>
 
-      <div class="faq-item animate-fade-opacity">
+      <div class="faq-item" data-faq-category="general">
         <button class="faq-question" aria-expanded="false">
           <span>Puis-je modifier mon site internet moi-même après livraison ?</span>
           <span class="icon">+</span>
@@ -819,7 +893,7 @@ function _msdLoadTracking(){
         </div>
       </div>
 
-      <div class="faq-item animate-fade-opacity">
+      <div class="faq-item" data-faq-category="general">
         <button class="faq-question" aria-expanded="false">
           <span>Faites-vous aussi la refonte de sites web à Strasbourg ?</span>
           <span class="icon">+</span>
@@ -829,7 +903,7 @@ function _msdLoadTracking(){
         </div>
       </div>
 
-      <div class="faq-item animate-fade-opacity">
+      <div class="faq-item" data-faq-category="general">
         <button class="faq-question" aria-expanded="false">
           <span>Pourquoi les entreprises de Strasbourg recommandent MSD Media ?</span>
           <span class="icon">+</span>
@@ -847,41 +921,40 @@ function _msdLoadTracking(){
         class="ai-proof__msd-logo"
         src="https://msd-media.com/assets/img/logo-black.webp"
         alt="MSD Media"
+        width="372"
+        height="151"
         loading="lazy"
         decoding="async"
       >
-      <h3 class="section-title section-title--dark">Toujours pas sûr que MSD Media soit fait pour vous ?</h3>
-      <p class="ai-proof__lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
+      <h3 class="section-title section-title--dark" data-i18n="ai_proof_title">Toujours pas sûr que MSD Media soit fait pour vous ?</h3>
+      <p class="ai-proof__lead" data-i18n="ai_proof_lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
       <div class="ai-proof__actions">
         <a
-          class="hero__btn hero__btn--primary"
+          class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt"
           href="https://chatgpt.com/?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Poser la question dans ChatGPT"
         >
-          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="">
-          <span>Demander à ChatGPT</span>
+          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
+          <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
         </a>
         <a
-          class="hero__btn hero__btn--primary"
+          class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude"
           href="https://claude.ai/new?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Poser la question dans Claude"
         >
-          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="">
-          <span>Demander à Claude</span>
+          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+          <span data-i18n="ai_proof_claude">Demander à Claude</span>
         </a>
       </div>
     </div>
   </section>
 
-
   <section class="booking-section" id="rdv">
     <div class="booking-section__inner">
-      <h2 class="section-tag section-tag--light">Réserver un appel refonte</h2>
-      <h2 class="section-title section-title--light">Refondez votre site avec une <br> stratégie claire à Strasbourg.</h2>
       <div class="booking-section__embed">
         <iframe
           src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&theme=dark"
@@ -893,26 +966,21 @@ function _msdLoadTracking(){
     </div>
   </section>
 
-
     <footer class="site-footer">
     <div class="footer-container">
 
       <!-- Bloc gauche : logo + slogan -->
       <div class="footer-left">
         <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
-        <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
       </div>
 
       <div class="footer-offices">
         <article class="footer-office-card">
-          <p class="footer-office-city">Strasbourg</p>
-          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
-          <p class="footer-office-address">Strasbourg, Alsace <br> 67000 Strasbourg, France</p>
+          <p class="footer-office-city">Annecy</p>          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
         </article>
         <article class="footer-office-card">
-          <p class="footer-office-city">Munich</p>
-          <p class="footer-office-time" data-office-time data-timezone="Europe/Paris">--:--</p>
-          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+          <p class="footer-office-city">Munich</p>          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
         </article>
       </div>
 
@@ -933,11 +1001,11 @@ function _msdLoadTracking(){
     <!-- Villes SEO -->
     <div class="footer-cities">
       <ul>
-        <li><a href="https://msd-media.com/refonte-site-web-strasbourg/">Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
         <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
         <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
         <li><a href="https://msd-media.com/agence-web-lyon/">Lyon</a></li>
-        <li><a href="https://msd-media.com/refonte-site-web-strasbourg/">Strasbourg Refonte</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
         <li><a href="https://msd-media.com/agence-web-paris/">Paris</a></li>
         <li><a href="https://msd-media.com/agence-web-marseille/">Marseille</a></li>
         <li><a href="https://msd-media.com/agence-web-toulouse/">Toulouse</a></li>
@@ -951,50 +1019,71 @@ function _msdLoadTracking(){
       </ul>
     </div>
 
-    <div class="footer-city-services">
-      <p class="footer-city-services__title">Nos spécialités</p>
-      <ul>
-        <li><a href="https://msd-media.com/agence-web-annecy/">Agence web Annecy</a></li>
-        <li><a href="https://msd-media.com/agence-web-strasbourg/">Agence web Strasbourg</a></li>
-        <li><a href="https://msd-media.com/agence-web-paris/">Agence web Paris</a></li>
-        <li><a href="https://msd-media.com/agence-web-lyon/">Agence web Lyon</a></li>
-        <li><a href="https://msd-media.com/agence-web-geneve/">Agence web Genève</a></li>
-        <li><a href="https://msd-media.com/blog/">Blog web & SEO</a></li>
-      </ul>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_company">Entreprise</p>
+        <ul>
+          <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
+          <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
+          <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_resources">Ressources</p>
+        <ul>
+          <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="https://msd-media.com/glossaire/" data-i18n="footer_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a></li>
+          <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
+          <li><a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="secteurs">
+        <p class="footer-column__title" data-i18n="footer_col_sectors">Secteurs</p>
+        <ul>
+          <li><a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats & juristes</a></li>
+          <li><a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins & santé</a></li>
+          <li><a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a></li>
+          <li><a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants & cafés</a></li>
+          <li><a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans & TPE</a></li>
+          <li><a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a></li>
+        </ul>
+      </div>
     </div>
 
 
-
-    <!-- Services locaux -->    <!-- Mentions légales -->
-
-    <div class="footer-city-services">
-      <p class="footer-city-services__title">Ressources Strasbourg</p>
-      <ul>
-        <li><a href="https://msd-media.com/blog/articles/choisir-agence-web-annecy/">Choisir une agence web à Strasbourg</a></li>
-        <li><a href="https://msd-media.com/blog/articles/creation-site-web-strasbourg-2026/">Création site web Strasbourg 2026</a></li>
-        <li><a href="https://msd-media.com/blog/articles/landing-page-vs-site-web-guide-complet/">Landing page Strasbourg : guide 2026</a></li>
-        <li><a href="https://msd-media.com/blog/articles/refonte-site-web-strasbourg-2026/">Refonte site web Strasbourg 2026</a></li>
-        <li><a href="https://msd-media.com/blog/articles/seo-local-ia-2026/">SEO local Strasbourg 2026</a></li>
-        <li><a href="https://msd-media.com/blog/articles/combien-coute-site-web-annecy-2026/">Prix site web Strasbourg 2026</a></li>
-        <li><a href="https://msd-media.com/blog/articles/vitesse-performance-site-web-annecy-2026/">Vitesse site web Strasbourg 2026</a></li>
-      </ul>
-    </div>
-
+    <!-- Mentions légales -->
     <div class="footer-legal">
-      <a href="https://msd-media.com/terms/mentions.html" target="_blank">Mentions légales</a>
-      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale">Conditions générales de vente</a>
     </div>
 
     <!-- Copyright -->
     <div class="footer-bottom">
-      <p>&copy; <span class="copyright-year">2026</span> MSD Media. Tous droits réservés.</p>
+      <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
     </div>
 </footer>
 
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../assets/js/script.js" defer></script>
+<script>
+  (function () {
+    var CAL_BASE = "https://cal.com/maxens-soldan-msd-media/30min";
+    var CONFIRM_URL = "https://msd-media.com/confirmation/";
+    var ref = new URLSearchParams(window.location.search).get("aff");
+    if (!ref) return;
+    window.location.replace(
+      CAL_BASE +
+      "?metadata[ref]=" + encodeURIComponent(ref) +
+      "&redirectUrl=" + encodeURIComponent(CONFIRM_URL)
+    );
+  })();
+</script>
 
 </html>

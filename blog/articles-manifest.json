@@ -1,5 +1,95 @@
 [
   {
+    "title": "Accessibilité web obligatoire en 2026 : ce que la loi impose à votre entreprise (RGAA, amendes)",
+    "slug": "accessibilite-web-obligatoire-entreprises-2026",
+    "date": "2026-08-18",
+    "description": "European Accessibility Act, RGAA, sanctions jusqu'à 300 000 € : qui est concerné en 2026, ce qu'il faut mettre en place et comment vérifier votre site.",
+    "tags": [
+      "accessibilité web",
+      "RGAA",
+      "European Accessibility Act",
+      "conformité site web",
+      "WCAG",
+      "MSD Media"
+    ],
+    "keyword": "accessibilité web obligatoire entreprise",
+    "image": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?fm=jpg&q=80&w=1600&auto=format&fit=crop",
+    "html": "</div><p>Depuis juin 2025, le <strong>European Accessibility Act (EAA)</strong> a élargi le champ des entreprises concernées par l&#39;accessibilité numérique. Ce n&#39;est plus un sujet réservé au secteur public : les <strong>sociétés privées de plus de 10 salariés ou réalisant plus de 2 millions d&#39;euros de chiffre d&#39;affaires</strong> doivent désormais s&#39;y conformer, sous peine de sanctions financières. En 2026, les premiers contrôles ont commencé.</p>\n<p>Ce guide explique qui est concerné, ce que la loi impose concrètement, les sanctions encourues et la méthode pour mettre votre site en conformité — sans jargon juridique inutile.</p>\n<hr />\n<h2 id=\"qui-est-concerne-en-2026\">Qui est concerné en 2026 ?</h2>\n<p>Le durcissement du cadre tient à la combinaison de deux textes : le RGAA (Référentiel Général d&#39;Amélioration de l&#39;Accessibilité), historiquement réservé au secteur public et parapublic, et l&#39;EAA, directive européenne transposée en droit français, qui étend l&#39;obligation au secteur privé depuis juin 2025.</p>\n<div class=\"blog-table-wrap\"><table class=\"blog-table\"><thead><tr><th>Type de structure</th><th>Obligation</th></tr></thead><tbody><tr><td>Administrations, collectivités, établissements publics</td><td>Obligatoires depuis 2019 (loi handicap)</td></tr><tr><td>Entreprises privées de +10 salariés ou +2 M€ de CA</td><td>Obligatoires depuis juin 2025 (EAA)</td></tr><tr><td>Sites e-commerce, banque en ligne, plateformes de réservation</td><td>Concernés en priorité en 2026, quel que soit l&#39;effectif</td></tr><tr><td>Micro-entreprises (-10 salariés et -2 M€ de CA)</td><td>Exemptées</td></tr></tbody></table></div>\n<p>Concrètement : si vous vendez en ligne, gérez des réservations, ou dépassez ces seuils, votre site entre dans le périmètre de l&#39;EAA — même si votre activité n&#39;a rien à voir avec le handicap.</p>\n<hr />\n<h2 id=\"le-cadre-technique-rgaa-et-wcag\">Le cadre technique : RGAA et WCAG</h2>\n<p>Le référentiel applicable est le <strong>RGAA 4.1</strong>, qui traduit les standards internationaux <strong>WCAG</strong> en <strong>106 critères vérifiables</strong>, organisés en 13 thématiques (images, couleurs, formulaires, navigation, structuration de l&#39;information...).</p>\n<p>Une <strong>déclaration d&#39;accessibilité</strong> est obligatoire sur la page d&#39;accueil, accompagnée d&#39;un <strong>schéma pluriannuel de mise en conformité</strong>. Ce n&#39;est pas une simple mention légale : elle doit indiquer le taux de conformité réel du site et les actions prévues pour les points non conformes.</p>\n<hr />\n<h2 id=\"les-sanctions-ce-que-ca-coute-de-ne-rien-faire\">Les sanctions : ce que ça coûte de ne rien faire</h2>\n<div class=\"blog-table-wrap\"><table class=\"blog-table\"><thead><tr><th>Structure</th><th>Sanction</th></tr></thead><tbody><tr><td>Service public non conforme</td><td>Jusqu&#39;à 20 000 € d&#39;amende par an</td></tr><tr><td>Entreprise privée (manquement EAA)</td><td>Jusqu&#39;à 50 000 € par manquement</td></tr><tr><td>Entreprise soumise à l&#39;EAA (+10 salariés / +2 M€ CA)</td><td>Jusqu&#39;à 300 000 € ou 3 000 €/jour d&#39;astreinte</td></tr></tbody></table></div>\n<p>Le contrôle est assuré par l&#39;<strong>ARCOM</strong> (Autorité de régulation de la communication audiovisuelle et numérique), et les premiers contrôles de la <strong>DGCCRF</strong> ont débuté en <strong>janvier 2026</strong>. Autrement dit : ce n&#39;est plus une menace théorique, les vérifications sont en cours.</p>\n<hr />\n<h2 id=\"ce-qu-il-faut-concretement-mettre-en-place\">Ce qu&#39;il faut concrètement mettre en place</h2>\n<p>Pas besoin de tout refaire pour progresser. Les points qui pèsent le plus dans un audit RGAA :</p>\n<ul><li><strong>Textes alternatifs</strong> sur toutes les images porteuses d&#39;information (pas juste <code>alt=&quot;&quot;</code> par défaut)</li><li><strong>Contraste des couleurs</strong> suffisant entre texte et fond (ratio 4,5:1 minimum pour le texte courant)</li><li><strong>Navigation au clavier</strong> complète, sans piège de focus, pour les visiteurs qui n&#39;utilisent pas de souris</li><li><strong>Formulaires labellisés</strong> : chaque champ associé à un <code>&lt;label&gt;</code> explicite, messages d&#39;erreur clairs</li><li><strong>Structure sémantique</strong> : hiérarchie de titres H1 → H2 → H3 cohérente, balises HTML utilisées pour leur sens (et non pour leur apparence)</li><li><strong>Vidéos sous-titrées</strong> et lecteurs multimédias accessibles au clavier</li><li><strong>Déclaration d&#39;accessibilité</strong> publiée avec le taux de conformité et le plan d&#39;action</li></ul>\n<hr />\n<h2 id=\"comment-verifier-votre-site-gratuitement\">Comment vérifier votre site gratuitement</h2>\n<ol><li><strong><a href=\"https://wave.webaim.org/\">WAVE</a></strong> — extension et outil en ligne qui liste les erreurs directement sur la page</li><li><strong>Audit clavier manuel</strong> — débranchez la souris et naviguez uniquement au clavier (Tab, Entrée) : tout ce qui est injoignable est un point de blocage</li><li><strong>Contraste</strong> — vérifiez vos couleurs de texte avec le <a href=\"https://webaim.org/resources/contrastchecker/\">WebAIM Contrast Checker</a></li><li><strong>Lighthouse (Chrome DevTools)</strong> — l&#39;onglet « Accessibilité » donne un score et une liste priorisée de correctifs</li></ol>\n<p>Ces outils donnent un état des lieux rapide, mais ne remplacent pas un audit RGAA complet pour une déclaration de conformité officielle.</p>\n<hr />\n<h2 id=\"pourquoi-les-sites-a-widgets-tiers-sont-les-plus-exposes\">Pourquoi les sites à widgets tiers sont les plus exposés</h2>\n<p>Les correctifs d&#39;accessibilité vendus comme des « overlays » (widgets JavaScript ajoutés en une ligne de code, souvent en surcouche d&#39;un site WordPress ou Wix) sont explicitement déconseillés par les associations d&#39;usagers et ne suffisent pas à obtenir une conformité RGAA réelle : ils masquent les problèmes sans les corriger à la source, et certains aggravent même l&#39;expérience des utilisateurs de lecteurs d&#39;écran.</p>\n<p>C&#39;est pourquoi les sites <strong>codés sur mesure</strong> (HTML sémantique, sans constructeur visuel ni thème surchargé) partent avec un avantage structurel : la hiérarchie de titres, les formulaires et la navigation clavier sont pensés dès la construction, pas ajoutés après coup en rustine. Notre article sur les <a href=\"https://msd-media.com/blog/articles/core-web-vitals-guide-2026/\">Core Web Vitals</a> détaille la même logique appliquée à la performance : un site propre à la base coûte moins cher à mettre en conformité qu&#39;un site bâti sur des extensions empilées.</p>\n<hr />\n<h2 id=\"faq-accessibilite-web-obligatoire\">FAQ — Accessibilité web obligatoire</h2>\n<h3 id=\"mon-entreprise-est-elle-concernee-par-l-eaa\">Mon entreprise est-elle concernée par l&#39;EAA ?</h3>\n<p>Oui si vous employez plus de 10 salariés ou réalisez plus de 2 millions d&#39;euros de chiffre d&#39;affaires, et particulièrement si vous exploitez un site e-commerce, une plateforme de réservation ou un service bancaire en ligne. Les micro-entreprises sous ces deux seuils sont exemptées.</p>\n<h3 id=\"quelle-est-l-amende-si-mon-site-n-est-pas-conforme\">Quelle est l&#39;amende si mon site n&#39;est pas conforme ?</h3>\n<p>Pour une entreprise soumise à l&#39;EAA, la sanction peut atteindre 300 000 € ou 3 000 € par jour d&#39;astreinte en cas de manquement persistant. Pour un manquement isolé au titre de l&#39;EAA côté privé, l&#39;amende peut atteindre 50 000 €.</p>\n<h3 id=\"dois-je-refaire-tout-mon-site-pour-etre-conforme\">Dois-je refaire tout mon site pour être conforme ?</h3>\n<p>Non. La conformité RGAA se construit par une déclaration d&#39;accessibilité indiquant votre taux de conformité réel et un plan d&#39;action pluriannuel — vous n&#39;êtes pas tenu d&#39;atteindre 100 % immédiatement, mais de démontrer une trajectoire d&#39;amélioration continue et sincère.</p>\n<h3 id=\"quelle-est-la-difference-entre-rgaa-et-wcag\">Quelle est la différence entre RGAA et WCAG ?</h3>\n<p>WCAG (Web Content Accessibility Guidelines) est le standard international. Le RGAA 4.1 est sa déclinaison française officielle, qui traduit ces recommandations en 106 critères vérifiables et opposables, utilisés pour les audits et les déclarations de conformité en France.</p>\n<h3 id=\"comment-savoir-si-mon-site-est-accessible-sans-payer-d-audit\">Comment savoir si mon site est accessible sans payer d&#39;audit ?</h3>\n<p>Testez-le avec WAVE (gratuit, en ligne), naviguez-y entièrement au clavier sans souris, et vérifiez le score de l&#39;onglet Accessibilité dans Chrome DevTools (Lighthouse). Ces trois vérifications gratuites suffisent à repérer 70 à 80 % des problèmes courants, même si elles ne remplacent pas un audit RGAA officiel pour la déclaration de conformité.</p>\n<hr />\n<h2 id=\"conclusion-une-obligation-mais-aussi-une-opportunite\">Conclusion : une obligation, mais aussi une opportunité</h2>\n<p>L&#39;accessibilité web n&#39;est plus une case à cocher pour le secteur public : depuis juin 2025, elle concerne toute entreprise privée dépassant 10 salariés ou 2 M€ de CA, avec des sanctions qui montent jusqu&#39;à 300 000 €. Au-delà de la contrainte légale, un site accessible touche aussi un public plus large — en France, 12 millions de personnes vivent avec un handicap — et améliore mécaniquement le SEO, puisque les deux disciplines partagent les mêmes fondamentaux (structure sémantique, alternatives textuelles, hiérarchie claire).</p>\n<p><strong>Envie de savoir où en est votre site ?</strong> <a href=\"https://msd-media.com/audit-seo-annecy/\">Demandez un audit gratuit</a> : nous vérifions vos points de blocage RGAA prioritaires en même temps que votre SEO technique.</p>",
+    "toc": [
+      {
+        "level": 2,
+        "text": "Qui est concerné en 2026 ?",
+        "id": "qui-est-concerne-en-2026"
+      },
+      {
+        "level": 2,
+        "text": "Le cadre technique : RGAA et WCAG",
+        "id": "le-cadre-technique-rgaa-et-wcag"
+      },
+      {
+        "level": 2,
+        "text": "Les sanctions : ce que ça coûte de ne rien faire",
+        "id": "les-sanctions-ce-que-ca-coute-de-ne-rien-faire"
+      },
+      {
+        "level": 2,
+        "text": "Ce qu'il faut concrètement mettre en place",
+        "id": "ce-qu-il-faut-concretement-mettre-en-place"
+      },
+      {
+        "level": 2,
+        "text": "Comment vérifier votre site gratuitement",
+        "id": "comment-verifier-votre-site-gratuitement"
+      },
+      {
+        "level": 2,
+        "text": "Pourquoi les sites à widgets tiers sont les plus exposés",
+        "id": "pourquoi-les-sites-a-widgets-tiers-sont-les-plus-exposes"
+      },
+      {
+        "level": 2,
+        "text": "FAQ — Accessibilité web obligatoire",
+        "id": "faq-accessibilite-web-obligatoire"
+      },
+      {
+        "level": 3,
+        "text": "Mon entreprise est-elle concernée par l'EAA ?",
+        "id": "mon-entreprise-est-elle-concernee-par-l-eaa"
+      },
+      {
+        "level": 3,
+        "text": "Quelle est l'amende si mon site n'est pas conforme ?",
+        "id": "quelle-est-l-amende-si-mon-site-n-est-pas-conforme"
+      },
+      {
+        "level": 3,
+        "text": "Dois-je refaire tout mon site pour être conforme ?",
+        "id": "dois-je-refaire-tout-mon-site-pour-etre-conforme"
+      },
+      {
+        "level": 3,
+        "text": "Quelle est la différence entre RGAA et WCAG ?",
+        "id": "quelle-est-la-difference-entre-rgaa-et-wcag"
+      },
+      {
+        "level": 3,
+        "text": "Comment savoir si mon site est accessible sans payer d'audit ?",
+        "id": "comment-savoir-si-mon-site-est-accessible-sans-payer-d-audit"
+      },
+      {
+        "level": 2,
+        "text": "Conclusion : une obligation, mais aussi une opportunité",
+        "id": "conclusion-une-obligation-mais-aussi-une-opportunite"
+      }
+    ],
+    "reading": {
+      "words": 1145,
+      "minutes": 6
+    },
+    "noindex": false,
+    "sourceFile": "accessibilite-web-obligatoire-entreprises-2026.md"
+  },
+  {
     "title": "MSD Media : agence landing page et site web sur-mesure en France (2026)",
     "slug": "agence-landing-page-site-web-france-msd-media",
     "date": "2026-07-30",

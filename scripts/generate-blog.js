@@ -26,9 +26,9 @@ const LEGACY_ALIASES = {
 const AUTHOR_AVATAR = '../../../assets/img/maxens-soldan.webp';
 const AUTHOR_ROLE = 'Fondateur &amp; CEO de MSD Media';
 const TOP_ANNOUNCEMENT_HTML = `<div class="top-announcement" role="banner">
-    <span class="top-announcement__badge">Nouveau</span>
-    <span class="top-announcement__text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
-    <a class="top-announcement__link" href="https://msd-media.com/affiliation/">Découvrir le programme</a>
+    <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
+    <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
   </div>`;
 function renderAiSummaryHtml(pageUrl) {
   const prompt = `Résume-moi cet article MSD Media : ${pageUrl}`;
@@ -39,11 +39,11 @@ function renderAiSummaryHtml(pageUrl) {
           <div class="blog-ai-summary__actions">
             <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt" href="https://chatgpt.com/?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Résumer cet article dans ChatGPT">
               <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
-              <span>Demander à ChatGPT</span>
+              <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
             </a>
             <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude" href="https://claude.ai/new?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Résumer cet article dans Claude">
               <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
-              <span>Demander à Claude</span>
+              <span data-i18n="ai_proof_claude">Demander à Claude</span>
             </a>
           </div>
         </div>`;
@@ -166,10 +166,34 @@ function imagePathForPage(imagePath = '', assetPrefix = '../assets') {
   return normalized;
 }
 
-// Simplifié : plus de logique par article, toutes les cartes (articles liés,
-// listing) utilisent la même image de couverture que les pages d'articles.
-function getListingImage() {
-  return ARTICLE_COVER_IMAGE;
+// Chaque article garde sa propre image (frontmatter `image`, généralement une
+// URL Unsplash absolue ; sinon image locale nommée par slug, avec repli sur
+// les fallbacks publics génériques).
+function resolvePostImage(post = {}) {
+  const raw = String(post.image || '').trim();
+  if (raw) return raw;
+  return normalizePostImage('', post.slug || '');
+}
+
+// Une fois un article publié, son image live (og:image du HTML déjà généré)
+// fait foi — le frontmatter markdown peut avoir dérivé depuis (retouche
+// manuelle de l'image en prod) sans qu'on ait pensé à resynchroniser la
+// source. Sans ce garde-fou, chaque rebuild réécrase l'image en prod par
+// celle, potentiellement obsolète, du fichier .md.
+function getLiveArticleImage(slug) {
+  const filePath = path.join(OUTPUT_DIR, slug, 'index.html');
+  if (!fs.existsSync(filePath)) return '';
+  try {
+    const html = fs.readFileSync(filePath, 'utf8');
+    const match = html.match(/<meta property="og:image" content="([^"]+)"/i);
+    return match ? match[1].replace(/&amp;/g, '&') : '';
+  } catch (_) {
+    return '';
+  }
+}
+
+function getListingImage(postOrLink = {}) {
+  return resolvePostImage(postOrLink);
 }
 
 function slugify(input = '') {
@@ -707,76 +731,64 @@ function renderSiteHeader() {
         </button>
         <div class="nav-menu-dropdown" data-nav-menu-dropdown>
           <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
-          <a href="${SITE_URL}/">Accueil</a>
-          <a href="${SITE_URL}/realisations/">Études de cas</a>
-          <a href="${SITE_URL}/blog/">Blog</a>
-          <a href="${SITE_URL}/contact/">Contact</a>
-          <a href="${SITE_URL}/recrutement/">Recrutement</a>
-          <a href="${SITE_URL}/affiliation/">Affiliation</a>
+          <a href="${SITE_URL}/" data-i18n="nav_home">Accueil</a>
+          <a href="${SITE_URL}/realisations/" data-i18n="nav_realisations">Réalisations</a>
+          <a href="${SITE_URL}/blog/" data-i18n="nav_blog">Blog</a>
+          <a href="${SITE_URL}/contact/" data-i18n="nav_contact">Contact</a>
+          <a href="${SITE_URL}/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+          <a href="${SITE_URL}/affiliation/" data-i18n="nav_affiliation">Affiliation</a>
         </div>
       </div>
     </div>
 
     <nav class="nav-center" aria-label="Navigation principale">
       <div class="nav-dropdown-item">
-        <a href="${SITE_URL}/#services">Services <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <a href="${SITE_URL}/blog/"><span class="nav-link-label" data-i18n="nav_resources">Ressources</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
         <div class="nav-megamenu">
           <div class="nav-megamenu__inner">
             <div class="nav-megamenu__links">
-              <a href="${SITE_URL}/landing-page-annecy/">Landing page</a>
-              <a href="${SITE_URL}/creation-site-web-annecy/">Création de site web</a>
-              <a href="${SITE_URL}/refonte-site-web-annecy/">Refonte de site web</a>
-              <a href="${SITE_URL}/audit-seo-annecy/">Audit SEO</a>
-              <a href="${SITE_URL}/seo-local-annecy/">SEO local</a>
-              <a href="${SITE_URL}/#ai-proof">GEO &amp; visibilité IA</a>
+              <a href="${SITE_URL}/blog/" data-i18n="nav_blog">Blog</a>
+              <a href="${SITE_URL}/glossaire/" data-i18n="nav_glossary">Glossaire</a>
+              <a href="${SITE_URL}/realisations/" data-i18n="nav_realisations">Réalisations</a>
+              <a href="${SITE_URL}/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+              <a href="${SITE_URL}/#faq" data-i18n="nav_faq">FAQ</a>
             </div>
             <div class="nav-megamenu__media">
-              <img src="${SITE_URL}/assets/img/img-cover.webp" alt="" loading="lazy" decoding="async">
+              <img src="${SITE_URL}/assets/img/navbar-img.png" alt="" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
       </div>
       <div class="nav-dropdown-item">
-        <a href="${SITE_URL}/blog/">Ressources <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <a href="${SITE_URL}/#secteurs"><span class="nav-link-label" data-i18n="nav_sector">Secteur</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
         <div class="nav-megamenu">
           <div class="nav-megamenu__inner">
             <div class="nav-megamenu__links">
-              <a href="${SITE_URL}/blog/">Blog</a>
-              <a href="${SITE_URL}/glossaire/">Glossaire Web &amp; SEO</a>
-              <a href="${SITE_URL}/realisations/">Réalisations</a>
-              <a href="${SITE_URL}/avis-clients/">Avis clients</a>
-              <a href="${SITE_URL}/recrutement/">Recrutement</a>
-              <a href="${SITE_URL}/#faq">FAQ</a>
+              <a href="${SITE_URL}/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
+              <a href="${SITE_URL}/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
+              <a href="${SITE_URL}/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
+              <a href="${SITE_URL}/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
+              <a href="${SITE_URL}/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
+              <a href="${SITE_URL}/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
             </div>
             <div class="nav-megamenu__media">
-              <img src="${SITE_URL}/assets/img/img-cover.webp" alt="" loading="lazy" decoding="async">
+              <img src="${SITE_URL}/assets/img/navbar-img2.png" alt="" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
       </div>
-      <div class="nav-dropdown-item">
-        <a href="${SITE_URL}/#secteurs">Secteur <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
-        <div class="nav-megamenu">
-          <div class="nav-megamenu__inner">
-            <div class="nav-megamenu__links">
-              <a href="${SITE_URL}/site-web-avocat/">Avocats &amp; juristes</a>
-              <a href="${SITE_URL}/site-web-medecin/">Médecins &amp; santé</a>
-              <a href="${SITE_URL}/site-web-immobilier/">Immobilier</a>
-              <a href="${SITE_URL}/site-web-restaurant/">Restaurants &amp; cafés</a>
-              <a href="${SITE_URL}/site-web-artisan/">Artisans &amp; TPE</a>
-              <a href="${SITE_URL}/site-web-architecte/">Architectes</a>
-            </div>
-            <div class="nav-megamenu__media">
-              <img src="${SITE_URL}/assets/img/img-cover.webp" alt="" loading="lazy" decoding="async">
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="${SITE_URL}/realisations/">Références</a>
-      <a href="${SITE_URL}/tarifs/">Tarifs</a>
+      <a href="${SITE_URL}/realisations/" data-i18n="nav_realisations">Réalisations</a>
+      <a href="${SITE_URL}/tarifs/" data-i18n="nav_pricing">Tarifs</a>
     </nav>
 
     <div class="nav-right">
+      <label class="lang-switch" for="lang-select">
+        <span class="lang-switch__label">Langue</span>
+        <select class="lang-switch__select" id="lang-select" data-lang-select aria-label="Choisir la langue">
+          <option value="fr">🇫🇷 FR</option>
+          <option value="en">🇬🇧 EN</option>
+        </select>
+      </label>
       <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank" data-i18n="nav_call">Réserver un appel</a>
       <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
@@ -795,8 +807,8 @@ function renderBookingSection(assetPrefix) {
         loading="lazy"
         decoding="async"
       >
-      <h3 class="section-title section-title--dark">Toujours pas sûr que MSD Media soit fait pour vous ?</h3>
-      <p class="ai-proof__lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
+      <h3 class="section-title section-title--dark" data-i18n="ai_proof_title">Toujours pas sûr que MSD Media soit fait pour vous ?</h3>
+      <p class="ai-proof__lead" data-i18n="ai_proof_lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
       <div class="ai-proof__actions">
         <a
           class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt"
@@ -806,7 +818,7 @@ function renderBookingSection(assetPrefix) {
           aria-label="Poser la question dans ChatGPT"
         >
           <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
-          <span>Demander à ChatGPT</span>
+          <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
         </a>
         <a
           class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude"
@@ -816,7 +828,7 @@ function renderBookingSection(assetPrefix) {
           aria-label="Poser la question dans Claude"
         >
           <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
-          <span>Demander à Claude</span>
+          <span data-i18n="ai_proof_claude">Demander à Claude</span>
         </a>
       </div>
     </div>
@@ -841,7 +853,7 @@ function renderFullFooter(assetPrefix) {
     <div class="footer-container">
       <div class="footer-left">
         <img height="151" width="372" src="${SITE_URL}/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
-        <p class="footer-contact-text"><span class="footer-contact-title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
       </div>
       <div class="footer-offices">
         <article class="footer-office-card">
@@ -883,65 +895,53 @@ function renderFullFooter(assetPrefix) {
     </div>
     <div class="footer-columns">
       <div class="footer-column">
-        <p class="footer-column__title">Entreprise</p>
+        <p class="footer-column__title" data-i18n="footer_col_company">Entreprise</p>
         <ul>
-          <li><a href="https://msd-media.com/a-propos/">À propos</a></li>
-          <li><a href="https://msd-media.com/realisations/">Références</a></li>
-          <li><a href="https://msd-media.com/tarifs/">Tarifs</a></li>
-          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank">Réserver un appel</a></li>
-          <li><a href="https://msd-media.com/contact/">Contact commercial</a></li>
-          <li><a href="https://msd-media.com/affiliation/">Apporteur d'affaires</a></li>
+          <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
+          <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
+          <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
         </ul>
       </div>
-
-      <div class="footer-column" id="services">
-        <p class="footer-column__title">Services</p>
-        <ul>
-          <li><a href="https://msd-media.com/landing-page-annecy/">Landing page</a></li>
-          <li><a href="https://msd-media.com/creation-site-web-annecy/">Création de site web</a></li>
-          <li><a href="https://msd-media.com/refonte-site-web-annecy/">Refonte de site web</a></li>
-          <li><a href="https://msd-media.com/audit-seo-annecy/">Audit SEO</a></li>
-          <li><a href="https://msd-media.com/seo-local-annecy/">SEO local</a></li>
-          <li><a href="https://msd-media.com/#ai-proof">GEO & visibilité IA</a></li>
-        </ul>
-      </div>
-
       <div class="footer-column">
-        <p class="footer-column__title">Ressources</p>
+        <p class="footer-column__title" data-i18n="footer_col_resources">Ressources</p>
         <ul>
-          <li><a href="https://msd-media.com/blog/">Blog</a></li>
-          <li><a href="https://msd-media.com/glossaire/">Glossaire Web & SEO</a></li>
-          <li><a href="https://msd-media.com/realisations/">Réalisations</a></li>
-          <li><a href="https://msd-media.com/recrutement/">Recrutement</a></li>
-          <li><a href="https://msd-media.com/#faq">FAQ</a></li>
+          <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="https://msd-media.com/glossaire/" data-i18n="footer_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a></li>
+          <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
+          <li><a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a></li>
         </ul>
       </div>
 
       <div class="footer-column" id="secteurs">
-        <p class="footer-column__title">Secteurs</p>
+        <p class="footer-column__title" data-i18n="footer_col_sectors">Secteurs</p>
         <ul>
-          <li><a href="https://msd-media.com/site-web-avocat/">Avocats & juristes</a></li>
-          <li><a href="https://msd-media.com/site-web-medecin/">Médecins & santé</a></li>
-          <li><a href="https://msd-media.com/site-web-immobilier/">Immobilier</a></li>
-          <li><a href="https://msd-media.com/site-web-restaurant/">Restaurants & cafés</a></li>
-          <li><a href="https://msd-media.com/site-web-artisan/">Artisans & TPE</a></li>
-          <li><a href="https://msd-media.com/site-web-architecte/">Architectes</a></li>
+          <li><a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats & juristes</a></li>
+          <li><a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins & santé</a></li>
+          <li><a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a></li>
+          <li><a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants & cafés</a></li>
+          <li><a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans & TPE</a></li>
+          <li><a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-legal">
-      <a href="https://msd-media.com/terms/mentions.html" target="_blank">Mentions légales</a>
-      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale">Conditions générales de vente</a>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span class="copyright-year">2026</span> MSD Media. Tous droits réservés.</p>
+      <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
     </div>
   </footer>`;
 }
 
 function renderArticlePage(post, allPosts) {
   const pageUrl = `${SITE_URL}/blog/articles/${post.slug}/`;
-  const imageRaw = ARTICLE_COVER_IMAGE;
+  const imageRaw = resolvePostImage(post);
   const image = imagePathForPage(imageRaw, '../../../assets');
   const imageAbsolute = toAbsoluteUrl(imageRaw);
   const keywords = [post.keyword, ...(post.tags || [])].filter(Boolean).join(', ');
@@ -964,10 +964,11 @@ function renderArticlePage(post, allPosts) {
     image: imageAbsolute,
     author: {
       '@type': 'Person',
+      '@id': `${SITE_URL}/#maxens-soldan`,
       name: AUTHOR,
       url: `${SITE_URL}/blog/articles/maxens-soldan/`,
       jobTitle: 'Fondateur & CEO',
-      worksFor: { '@type': 'Organization', name: BRAND },
+      worksFor: { '@id': `${SITE_URL}/#organization` },
       sameAs: ['https://www.linkedin.com/in/maxens-soldan/']
     },
     publisher: {
@@ -1278,13 +1279,19 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
       const oldBlock = heroMatch[0];
       const titleSpan =
         (oldBlock.match(/<h1 class="hero__title"><span>([\s\S]*?)<\/span><\/h1>/i) || [])[1] || escapeHtml(pageTitle);
-      // Image de couverture unique pour tous les articles (y compris legacy).
-      const coverSrc = '../../../assets/img/img-cover.webp';
+      const existingTag =
+        (oldBlock.match(/<h2 class="section-tag section-tag--dark">([\s\S]*?)<\/h2>/i) || [])[1];
+      const tagLabel = existingTag && existingTag.trim() ? existingTag.trim() : 'IA';
+      // Chaque article garde sa propre image (frontmatter), plus de cover unique forcée.
+      const postForImage = postsBySlug.get(slug);
+      const coverSrc = postForImage
+        ? imagePathForPage(resolvePostImage(postForImage), '../../../assets')
+        : '../../../assets/img/img-cover.webp';
       const newBlock = `<section class="hero">
       <div class="blog-article-hero__row">
         <div class="blog-article-hero__text">
           <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${titleSpan}</span></p>
-          <h2 class="section-tag section-tag--dark">IA</h2>
+          <h2 class="section-tag section-tag--dark">${escapeHtml(tagLabel)}</h2>
           <h1 class="hero__title"><span>${titleSpan}</span></h1>
           <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> ${escapeHtml(formatFrenchDate(dateRaw))}</p>
         </div>
@@ -1446,7 +1453,7 @@ function parseLegacyArticleIndex(slug = '') {
     description,
     tags: [],
     keyword: '',
-    image: normalizePostImage(image, slug),
+    image: resolvePostImage({ image, slug }),
     reading: estimateReadTimeFromHtml((html.match(/<article\b[\s\S]*?<\/article>/i) || [''])[0] || '')
   };
 }
@@ -1550,7 +1557,7 @@ function main() {
     const description = data.description || plain.slice(0, 155);
     const tags = Array.isArray(data.tags) ? data.tags : [];
     const keyword = data.keyword || tags[0] || '';
-    const image = normalizePostImage(data.image, slug);
+    const image = getLiveArticleImage(slug) || resolvePostImage({ image: data.image, slug });
     const noindex = data.noindex === true || data.noindex === 'true';
 
     const { html, toc } = markdownToHtml(cleanedBody);

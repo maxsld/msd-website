@@ -1,0 +1,53 @@
+name: Weekly SEO Report (PDF)
+
+# Remplace rank-tracking-daily.yml + cwv-weekly.yml + traffic-drop-watch.yml
+# (crons désactivés le 2026-08-18) par un seul rapport PDF consolidé, chaque
+# dimanche, envoyé par email.
+on:
+  schedule:
+    # Tous les dimanches à 08:00 UTC (10:00 Paris en été, 09:00 en hiver).
+    - cron: "0 8 * * 0"
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run weekly SEO report
+        run: node scripts/weekly-seo-report.mjs
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_SECURE: ${{ secrets.SMTP_SECURE }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+
+      - name: Commit CWV history
+        run: |
+          git config user.name "msd-seo-bot"
+          git config user.email "seo@msd-media.com"
+          git add scripts/.cwv-history.json
+          git diff --cached --quiet || git commit -m "chore(cwv): update history [skip ci]"
+          git push

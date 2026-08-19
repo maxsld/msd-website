@@ -1,9 +1,8 @@
 name: Traffic Drop Watch
 
+# Cron désactivé le 2026-08-18 à la demande de l'utilisateur.
+# Déclenchement manuel toujours possible depuis l'onglet Actions.
 on:
-  schedule:
-    # Tous les lundis à 08:00 UTC (après les routines keyword-research/technical-audit du matin)
-    - cron: "0 8 * * 1"
   workflow_dispatch:
 
 jobs:

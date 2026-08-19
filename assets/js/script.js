@@ -1610,14 +1610,14 @@ function createAvisCard(item) {
   div.classList.add("avis-card");
   div.innerHTML = `
     <div class="avis-header">
-      <img src="${assetBase}/img/icon-citation.webp" alt="Icône citation bleue">
+      <img src="${assetBase}/img/icon-citation.webp" alt="Icône citation bleue" width="32" height="32" loading="lazy" decoding="async">
       <div class="avis-stars" aria-hidden="true">
         <img src="${assetBase}/img/stars.svg" alt="">
       </div>
     </div>
     <p>${item.text}</p>
     <div class="avis-author">
-      <img src="${item.photo}" alt="${item.name}" class="avis-photo">
+      <img src="${item.photo}" alt="${item.name}" class="avis-photo" width="50" height="50" loading="lazy" decoding="async">
       <div class="avis-info">
         <div class="avis-name">${item.name}</div>
         <div class="avis-description">${item.desc}</div>

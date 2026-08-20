@@ -253,7 +253,7 @@ function _msdLoadTracking(){
           <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">Vitesse de site web à Annecy : pourquoi ça coûte des clients (et comment y remédier en 2026)</span></p>
           <h2 class="section-tag section-tag--dark">IA</h2>
           <h1 class="hero__title"><span>Vitesse de site web à Annecy : pourquoi ça coûte des clients (et comment y remédier en 2026)</span></h1>
-          <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> 9 minutes <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> 20 avril 2026</p>
+          <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 minutes <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> 20 avril 2026</p>
         </div>
         <div class="blog-article-cover">
           <img src="https://images.unsplash.com/photo-1611760357505-922600d8ffa6?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="" loading="eager" width="1600" height="686">
@@ -311,7 +311,7 @@ function _msdLoadTracking(){
 <p>Ce problème est fréquent sur les sites qui chargent des polices web ou des publicités sans réserver l&#39;espace nécessaire.</p>
 <hr />
 <h2 id="comment-mesurer-la-vitesse-de-votre-site-a-annecy">Comment mesurer la vitesse de votre site à Annecy</h2>
-<p>Avant d&#39;optimiser, il faut mesurer. Voici les outils gratuits à utiliser, dans l&#39;ordre.</p>
+<p>Mesurer la vitesse de son site avant de l&#39;optimiser demande trois outils gratuits complémentaires : Google PageSpeed Insights pour un score global sur 100, GTmetrix pour une cascade de chargement détaillée qui identifie la ressource qui ralentit le site, et Google Search Console pour les données réelles des visiteurs segmentées par type d&#39;appareil.</p>
 <h3 id="1-google-pagespeed-insights-pagespeed-web-dev">1. Google PageSpeed Insights (pagespeed.web.dev)</h3>
 <p>Entrez l&#39;URL de votre site et obtenez un score sur 100 pour mobile et desktop, avec le détail des 3 Core Web Vitals. C&#39;est l&#39;outil de référence, car il utilise les données réelles de Google Chrome collectées sur vos visiteurs.</p>
 <p><strong>Score à viser :</strong> 90+ sur mobile (c&#39;est le plus difficile et le plus important).</p>
@@ -321,7 +321,7 @@ function _msdLoadTracking(){
 <p>Dans la section &quot;Expérience &gt; Core Web Vitals&quot;, vous accédez aux données réelles de vos visiteurs, segmentées par type d&#39;appareil. C&#39;est la source la plus fiable pour savoir comment votre site se comporte vraiment.</p>
 <hr />
 <h2 id="les-causes-les-plus-frequentes-de-lenteur-sur-les-sites-pme-a-annecy">Les causes les plus fréquentes de lenteur sur les sites PME à Annecy</h2>
-<p>Après avoir audité des dizaines de sites de TPE/PME annéciennes, voici ce qu&#39;on trouve le plus souvent :</p>
+<p>Les causes les plus fréquentes de lenteur sur les sites de TPE/PME à Annecy sont, par ordre de fréquence : des images non optimisées (environ 60 % des cas), un hébergement mutualisé bas de gamme, des scripts tiers non contrôlés, des thèmes WordPress surchargés, et l&#39;absence de cache ou de CDN. Corriger ces cinq causes résout la grande majorité des problèmes de performance observés.</p>
 <h3 id="images-non-optimisees-cause-n-1-60-des-cas">Images non optimisées (cause n°1 — ~60 % des cas)</h3>
 <p>Une photo prise avec un iPhone en 4K fait 8 à 12 Mo. Chargée telle quelle sur un site web, elle met 15 secondes à s&#39;afficher sur mobile avec une connexion 4G moyenne. La solution : convertir en WebP, redimensionner au format d&#39;affichage réel, utiliser le chargement différé (<code>lazy loading</code>).</p>
 <p><strong>Cas réel :</strong> Un hôtel à Annecy-le-Vieux avait 47 photos de 3 Mo chacune sur sa page d&#39;accueil. Score PageSpeed : 21/100. Après optimisation des images seule : 68/100. Gain de temps : +4,2 secondes de LCP.</p>
@@ -341,7 +341,7 @@ function _msdLoadTracking(){
 <ul><li><strong>Avant</strong> : Score mobile 31/100 — Chargement 8 secondes sur 4G</li><li><strong>Optimisations</strong> : Refonte avec framework léger, images lazy-loaded, cache Cloudflare</li><li><strong>Après</strong> : Score mobile 94/100 — Chargement 1,4 seconde</li><li><strong>Résultat business</strong> : Taux de demande de devis multiplié par 2,3 en 6 semaines</li></ul>
 <hr />
 <h2 id="ce-qu-il-faut-faire-concretement-pour-ameliorer-la-vitesse-de-votre-site">Ce qu&#39;il faut faire concrètement pour améliorer la vitesse de votre site</h2>
-<p>Voici un plan d&#39;action priorisé, de l&#39;impact le plus fort au plus faible :</p>
+<p>Améliorer la vitesse d&#39;un site passe par un plan d&#39;action priorisé selon l&#39;impact : optimiser les images en premier (ROI maximal, effort modéré), puis auditer et réduire les scripts tiers, améliorer l&#39;hébergement, corriger le CLS, et enfin minifier et regrouper les fichiers CSS/JS. Traiter ces cinq priorités dans cet ordre donne les gains de vitesse les plus rapides pour l&#39;effort le plus faible.</p>
 <h3 id="priorite-1-optimiser-les-images-roi-maximal-effort-modere">Priorité 1 — Optimiser les images (ROI maximal, effort modéré)</h3>
 <ol><li>Convertir toutes les images en WebP (format moderne 30 à 50 % plus léger que JPEG)</li><li>Redimensionner au format d&#39;affichage réel (inutile de charger une image 2400px pour une colonne de 600px)</li><li>Activer le lazy loading (<code>loading=&quot;lazy&quot;</code> sur toutes les images hors ligne de flottaison)</li><li>Précharger l&#39;image hero (<code>&lt;link rel=&quot;preload&quot;&gt;</code>) pour améliorer le LCP</li></ol>
 <h3 id="priorite-2-auditer-et-reduire-les-scripts-tiers">Priorité 2 — Auditer et réduire les scripts tiers</h3>
@@ -354,8 +354,7 @@ function _msdLoadTracking(){
 <ol><li>Activer la minification (supprime les espaces et commentaires)</li><li>Activer la compression Gzip ou Brotli sur le serveur</li><li>Éliminer le CSS inutilisé (outil : PurgeCSS)</li></ol>
 <hr />
 <h2 id="la-vitesse-premier-filtre-de-credibilite-pour-les-pme-locales">La vitesse, premier filtre de crédibilité pour les PME locales</h2>
-<p>Il y a une dimension souvent oubliée dans les discussions sur la performance web : l&#39;impact sur la perception de votre marque.</p>
-<p>Un visiteur qui arrive sur un site lent ne pense pas &quot;ce site est mal optimisé&quot;. Il pense &quot;cette entreprise n&#39;est peut-être pas sérieuse&quot;. La vitesse est devenue un signal de confiance implicite, au même titre que le design ou la qualité des textes.</p>
+<p>La vitesse d&#39;un site est un signal de confiance implicite pour les visiteurs, au même titre que le design ou la qualité des textes : un site lent donne l&#39;impression que l&#39;entreprise n&#39;est pas sérieuse, même si son contenu est excellent. Un visiteur qui arrive sur un site lent ne pense pas &quot;ce site est mal optimisé&quot;, il pense &quot;cette entreprise n&#39;est peut-être pas sérieuse&quot;.</p>
 <p>À Annecy, où une grande partie des décisions d&#39;achat locales se font via mobile (un touriste cherche un restaurant, un résident cherche un artisan depuis son canapé), ce filtre est particulièrement fort. Un site qui s&#39;ouvre en moins de 2 secondes inspire confiance. Un site qui tourne en 8 secondes pousse à cliquer sur le concurrent juste en dessous.</p>
 <hr />
 <h2 id="ce-que-propose-msd-media-pour-l-optimisation-de-performance-a-annecy">Ce que propose MSD Media pour l&#39;optimisation de performance à Annecy</h2>

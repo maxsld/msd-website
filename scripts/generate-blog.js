@@ -38,11 +38,11 @@ function renderAiSummaryHtml(pageUrl) {
           <p class="blog-ai-summary__label">Résumé généré par l'IA</p>
           <div class="blog-ai-summary__actions">
             <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt" href="https://chatgpt.com/?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Résumer cet article dans ChatGPT">
-              <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
+              <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="ChatGPT" width="18" height="18" loading="lazy" decoding="async">
               <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
             </a>
             <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude" href="https://claude.ai/new?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Résumer cet article dans Claude">
-              <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+              <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="Claude AI" width="18" height="18" loading="lazy" decoding="async">
               <span data-i18n="ai_proof_claude">Demander à Claude</span>
             </a>
           </div>
@@ -754,7 +754,7 @@ function renderSiteHeader() {
               <a href="${SITE_URL}/#faq" data-i18n="nav_faq">FAQ</a>
             </div>
             <div class="nav-megamenu__media">
-              <img src="${SITE_URL}/assets/img/navbar-img.png" alt="" loading="lazy" decoding="async">
+              <img src="${SITE_URL}/assets/img/navbar-img.png" alt="Aperçu des ressources MSD Media : blog, glossaire, réalisations" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
@@ -772,7 +772,7 @@ function renderSiteHeader() {
               <a href="${SITE_URL}/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
             </div>
             <div class="nav-megamenu__media">
-              <img src="${SITE_URL}/assets/img/navbar-img2.png" alt="" loading="lazy" decoding="async">
+              <img src="${SITE_URL}/assets/img/navbar-img2.png" alt="Aperçu des secteurs accompagnés par MSD Media" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
@@ -817,7 +817,7 @@ function renderBookingSection(assetPrefix) {
           rel="noopener noreferrer"
           aria-label="Poser la question dans ChatGPT"
         >
-          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="" width="18" height="18" loading="lazy" decoding="async">
+          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="ChatGPT" width="18" height="18" loading="lazy" decoding="async">
           <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
         </a>
         <a
@@ -827,7 +827,7 @@ function renderBookingSection(assetPrefix) {
           rel="noopener noreferrer"
           aria-label="Poser la question dans Claude"
         >
-          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="Claude AI" width="18" height="18" loading="lazy" decoding="async">
           <span data-i18n="ai_proof_claude">Demander à Claude</span>
         </a>
       </div>
@@ -1024,7 +1024,7 @@ function renderArticlePage(post, allPosts) {
 
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../../assets/css/style.css" />
-  <link rel="stylesheet" href="../../../assets/css/animations.css" />
+  <link rel="preload" href="../../../assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="../../../assets/css/responsive.css" />
   <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous"></script>
 
@@ -1112,7 +1112,7 @@ function renderBlogIndex(posts) {
   <link rel="shortcut icon" href="${SITE_URL}/assets/img/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="preload" href="../assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous"></script>
 </head>

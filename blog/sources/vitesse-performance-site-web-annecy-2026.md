@@ -74,7 +74,7 @@ Ce problème est fréquent sur les sites qui chargent des polices web ou des pub
 
 ## Comment mesurer la vitesse de votre site à Annecy
 
-Avant d'optimiser, il faut mesurer. Voici les outils gratuits à utiliser, dans l'ordre.
+Mesurer la vitesse de son site avant de l'optimiser demande trois outils gratuits complémentaires : Google PageSpeed Insights pour un score global sur 100, GTmetrix pour une cascade de chargement détaillée qui identifie la ressource qui ralentit le site, et Google Search Console pour les données réelles des visiteurs segmentées par type d'appareil.
 
 ### 1. Google PageSpeed Insights (pagespeed.web.dev)
 
@@ -94,7 +94,7 @@ Dans la section "Expérience > Core Web Vitals", vous accédez aux données rée
 
 ## Les causes les plus fréquentes de lenteur sur les sites PME à Annecy
 
-Après avoir audité des dizaines de sites de TPE/PME annéciennes, voici ce qu'on trouve le plus souvent :
+Les causes les plus fréquentes de lenteur sur les sites de TPE/PME à Annecy sont, par ordre de fréquence : des images non optimisées (environ 60 % des cas), un hébergement mutualisé bas de gamme, des scripts tiers non contrôlés, des thèmes WordPress surchargés, et l'absence de cache ou de CDN. Corriger ces cinq causes résout la grande majorité des problèmes de performance observés.
 
 ### Images non optimisées (cause n°1 — ~60 % des cas)
 
@@ -140,7 +140,7 @@ Sans cache, chaque visiteur force votre serveur à reconstruire la page depuis z
 
 ## Ce qu'il faut faire concrètement pour améliorer la vitesse de votre site
 
-Voici un plan d'action priorisé, de l'impact le plus fort au plus faible :
+Améliorer la vitesse d'un site passe par un plan d'action priorisé selon l'impact : optimiser les images en premier (ROI maximal, effort modéré), puis auditer et réduire les scripts tiers, améliorer l'hébergement, corriger le CLS, et enfin minifier et regrouper les fichiers CSS/JS. Traiter ces cinq priorités dans cet ordre donne les gains de vitesse les plus rapides pour l'effort le plus faible.
 
 ### Priorité 1 — Optimiser les images (ROI maximal, effort modéré)
 
@@ -178,9 +178,7 @@ Voici un plan d'action priorisé, de l'impact le plus fort au plus faible :
 
 ## La vitesse, premier filtre de crédibilité pour les PME locales
 
-Il y a une dimension souvent oubliée dans les discussions sur la performance web : l'impact sur la perception de votre marque.
-
-Un visiteur qui arrive sur un site lent ne pense pas "ce site est mal optimisé". Il pense "cette entreprise n'est peut-être pas sérieuse". La vitesse est devenue un signal de confiance implicite, au même titre que le design ou la qualité des textes.
+La vitesse d'un site est un signal de confiance implicite pour les visiteurs, au même titre que le design ou la qualité des textes : un site lent donne l'impression que l'entreprise n'est pas sérieuse, même si son contenu est excellent. Un visiteur qui arrive sur un site lent ne pense pas "ce site est mal optimisé", il pense "cette entreprise n'est peut-être pas sérieuse".
 
 À Annecy, où une grande partie des décisions d'achat locales se font via mobile (un touriste cherche un restaurant, un résident cherche un artisan depuis son canapé), ce filtre est particulièrement fort. Un site qui s'ouvre en moins de 2 secondes inspire confiance. Un site qui tourne en 8 secondes pousse à cliquer sur le concurrent juste en dessous.
 

@@ -26,37 +26,19 @@ Et comment les éviter.
 
 ## Erreur n°1 : Choisir le moins cher
 
-**Le piège :**  
-Tu vois une annonce : "Site web pro à sur devis".  
-Tu te dis "parfait, j'économise".
+Choisir le prestataire le moins cher pour créer son site à Annecy coûte presque toujours plus cher au final. Les offres "sur devis" cachent en général un template copié-collé, aucune optimisation SEO, des bugs partout et un prestataire injoignable après la livraison — résultat, tu paies 3 fois : le site raté, sa réparation, puis sa refonte. La solution : choisir un partenaire qui comprend ton business, pas le prix le plus bas.
 
-**La réalité :**  
 Un site à sur devis, c'est :
 - Un template copié-collé
 - Aucune optimisation SEO
 - Des bugs partout
 - Un prestataire qui disparaît après la livraison
 
-**Résultat :** Tu paies 3 fois.  
-Une fois pour le site pourri.  
-Une deuxième pour le réparer.  
-Une troisième pour le refaire.
-
-**Solution :**  
-Ne choisis pas le moins cher.  
-Choisis celui qui **comprend ton business**.
-
 ---
 
 ## Erreur n°2 : Négliger le référencement local Annecy
 
-**Le piège :**  
-Tu crées un beau site.  
-Mais personne ne le trouve sur Google.
-
-**La réalité :**  
-À Annecy, 70% des recherches locales aboutissent à une action sous 24h.  
-Si tu n'es pas visible, tu n'existes pas.
+Négliger le référencement local rend un site invisible même s'il est réussi visuellement. À Annecy, 70% des recherches locales aboutissent à une action sous 24h : si le site n'apparaît pas dans ces résultats, il n'existe pas pour ces clients. Les causes habituelles sont une fiche Google Business Profile mal configurée, aucune mention d'Annecy dans le contenu et une structure technique non optimisée. La solution : optimiser dès le départ pour "ton activité + Annecy".
 
 **Ce qui manque souvent :**
 - Google Business Profile mal configuré
@@ -73,14 +55,7 @@ C'est là que sont tes clients.
 
 ## Erreur n°3 : Oublier le mobile
 
-**Le piège :**  
-Ton site est magnifique sur ton écran 27 pouces.  
-Mais illisible sur smartphone.
-
-**La réalité :**  
-À Annecy, avec les touristes et les locaux en déplacement, 75% du trafic web est mobile.
-
-Un site non-responsive = 75% de visiteurs perdus.
+Oublier l'optimisation mobile revient à perdre la majorité de ses visiteurs. À Annecy, entre touristes et locaux en déplacement, 75% du trafic web est mobile : un site non-responsive, magnifique sur un écran 27 pouces mais illisible sur smartphone, fait donc fuir 75% des visiteurs potentiels. La solution : penser mobile-first et tester le site sur iPhone, Android et tablette avant même de le publier.
 
 **Ce qu'on voit trop souvent :**
 - Texte trop petit
@@ -97,12 +72,7 @@ Avant même de le publier.
 
 ## Erreur n°4 : Un site lent
 
-**Le piège :**  
-Ton site met 7 secondes à charger.  
-"C'est pas grave, il est beau."
-
-**La réalité :**  
-53% des visiteurs quittent un site qui met plus de 3 secondes à charger.
+Un site lent fait fuir ses visiteurs avant même qu'ils ne le découvrent : 53% des internautes quittent un site qui met plus de 3 secondes à charger, quel que soit son design. Les causes habituelles sont des images non compressées, trop de plugins WordPress et un hébergement bas de gamme. La solution : viser un temps de chargement inférieur à 2 secondes ; chez MSD Media, nos sites chargent en moins de 1,5 seconde.
 
 **Pourquoi c'est lent :**
 - Images non compressées (3 Mo par photo)
@@ -111,24 +81,15 @@ Ton site met 7 secondes à charger.
 - Code mal optimisé
 
 **Solution :**  
-Vise un temps de chargement < 2 secondes.  
 Compresse tes images.  
 Choisis un bon hébergeur.  
 Code proprement.
-
-Chez MSD Media, nos sites chargent en < 1,5 sec.
 
 ---
 
 ## Erreur n°5 : Vouloir tout dire en même temps
 
-**Le piège :**  
-Ta page d'accueil explique 15 services différents.  
-Avec 8 boutons qui vont dans tous les sens.
-
-**La réalité :**  
-Un visiteur décide en 3 secondes s'il reste ou s'il part.  
-Trop d'infos = confusion = fuite.
+Vouloir tout dire sur sa page d'accueil dilue le message et fait fuir les visiteurs : un internaute décide en 3 secondes s'il reste ou s'il part, et trop d'informations créent de la confusion. Le piège classique combine 15 services listés et 8 boutons d'appel à l'action différents, sans hiérarchie visuelle. La solution : un message clair, une action principale, le reste du contenu en retrait.
 
 **Ce qu'on voit trop :**
 - 10 call-to-action différents
@@ -145,12 +106,7 @@ Le reste vient après.
 
 ## Erreur n°6 : Pas de vraie stratégie de conversion
 
-**Le piège :**  
-Tu as un site joli.  
-Mais aucun visiteur ne te contacte.
-
-**La réalité :**  
-Avoir du trafic ne sert à rien si personne n'agit.
+Ne pas avoir de stratégie de conversion signifie qu'un site peut recevoir du trafic sans générer aucun contact, car avoir des visiteurs ne sert à rien si personne n'agit. Les manques habituels sont l'absence d'appel à l'action visible, un formulaire de contact caché et aucun téléphone cliquable. La solution : pousser chaque page vers une action précise (appeler, réserver, demander un devis, s'inscrire) et rendre cette action évidente.
 
 **Ce qui manque souvent :**
 - Aucun appel à l'action visible
@@ -165,19 +121,11 @@ Chaque page doit pousser à **une action précise** :
 - Demander un devis
 - S'inscrire
 
-Et rends cette action **évidente**.
-
 ---
 
 ## Erreur n°7 : Copier les concurrents
 
-**Le piège :**  
-Tu regardes les sites de tes concurrents à Annecy.  
-Tu te dis "je vais faire pareil".
-
-**La réalité :**  
-Si tu copies, tu restes invisible.  
-Et Google déteste le contenu dupliqué.
+Copier les sites de ses concurrents à Annecy maintient l'invisibilité : Google pénalise le contenu dupliqué, et un site sans personnalité ne se démarque jamais dans les résultats. Les signes typiques sont des textes génériques, des photos de banque d'images et une structure identique aux autres. La solution : raconter sa propre histoire et montrer ce qui rend l'entreprise unique — c'est la seule façon de se démarquer à Annecy.
 
 **Ce qu'on voit :**
 - Mêmes textes génériques
@@ -190,18 +138,11 @@ Sois différent.
 Raconte TON histoire.  
 Montre ce qui te rend unique.
 
-C'est la seule façon de te démarquer à Annecy.
-
 ---
 
 ## Erreur n°8 : Oublier la maintenance
 
-**Le piège :**  
-Ton site est en ligne.  
-Tu l'oublies pendant 2 ans.
-
-**La réalité :**  
-Un site non maintenu = un site mort.
+Oublier la maintenance transforme un site en ligne en site mort en quelques mois : WordPress non mis à jour crée des failles de sécurité, les plugins obsolètes provoquent des bugs, et l'absence de sauvegardes expose à une perte de données totale, avec une position Google qui dégringole. La solution : prévoir un budget maintenance dès le départ, ou choisir un prestataire qui l'inclut — chez MSD Media, elle est offerte la première année.
 
 **Ce qui arrive :**
 - WordPress n'est plus à jour → failles de sécurité
@@ -210,24 +151,13 @@ Un site non maintenu = un site mort.
 - Position Google qui dégringole
 
 **Solution :**  
-Prévois un budget maintenance :  
-sur devis minimum.
-
-Ou choisis un prestataire qui inclut la maintenance.  
-(C'est inclus la 1ère année chez MSD Media)
+Prévois un budget maintenance dès le départ.
 
 ---
 
 ## Erreur n°9 : Ne pas mesurer les résultats
 
-**Le piège :**  
-Ton site est en ligne.  
-Tu ne sais pas combien de visiteurs tu as.  
-Ni d'où ils viennent.  
-Ni ce qu'ils font.
-
-**La réalité :**  
-Tu ne peux pas améliorer ce que tu ne mesures pas.
+Ne pas mesurer les résultats d'un site empêche de savoir combien de visiteurs il reçoit, d'où ils viennent et ce qu'ils font une fois sur place — on ne peut pas améliorer ce qu'on ne mesure pas. Les indicateurs clés à suivre sont le nombre de visiteurs, le taux de conversion, les pages les plus vues et les sources de trafic. La solution : installer Google Analytics dès le jour 1 et ajuster le site en fonction des données chaque mois.
 
 **Ce qu'il faut tracker :**
 - Nombre de visiteurs
@@ -238,21 +168,13 @@ Tu ne peux pas améliorer ce que tu ne mesures pas.
 
 **Solution :**  
 Installe Google Analytics dès le jour 1.  
-Regarde tes stats chaque mois.  
-Ajuste en fonction des données.
+Regarde tes stats chaque mois.
 
 ---
 
 ## Erreur n°10 : Partir sans stratégie
 
-**Le piège :**  
-Tu te dis "je veux un site".  
-Sans savoir pourquoi.  
-Sans savoir pour qui.  
-Sans savoir quel résultat tu veux.
-
-**La réalité :**  
-Un site sans stratégie = de l'argent jeté.
+Partir sans stratégie signifie créer un site sans savoir pourquoi, pour qui, ni quel résultat en attendre — ce qui revient à jeter de l'argent. Les questions à se poser avant de commencer sont : qui est la cible à Annecy, quel problème le site résout, quelle action doivent faire les visiteurs, et comment mesurer le succès. La solution : commencer toujours par la stratégie, le design venant après.
 
 **Les questions à te poser AVANT :**
 - Qui est ma cible à Annecy ?
@@ -273,18 +195,13 @@ Pour comprendre.
 
 ## Ce qu'il faut retenir
 
-Créer un site web à Annecy, c'est pas juste choisir des couleurs et mettre ton logo.
+Créer un site web qui convertit à Annecy demande une stratégie complète, pas seulement un logo et des couleurs bien choisis : comprendre sa cible locale, optimiser le référencement pour Annecy, prioriser la conversion dès la conception, puis mesurer et ajuster en continu. Les erreurs listées ci-dessus coûtent cher en temps, en argent et en opportunités ratées — mieux vaut structurer le projet correctement dès le départ que corriger après coup.
 
 C'est :
 - Comprendre ta cible locale
 - Optimiser pour le référencement Annecy
 - Penser conversion avant design
 - Mesurer et ajuster en continu
-
-Les erreurs coûtent cher.  
-En temps. En argent. En opportunités ratées.
-
-Mieux vaut investir correctement dès le départ.
 
 ---
 

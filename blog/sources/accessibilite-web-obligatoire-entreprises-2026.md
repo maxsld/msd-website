@@ -18,7 +18,7 @@ Ce guide explique qui est concerné, ce que la loi impose concrètement, les san
 
 ## Qui est concerné en 2026 ?
 
-Le durcissement du cadre tient à la combinaison de deux textes : le RGAA (Référentiel Général d'Amélioration de l'Accessibilité), historiquement réservé au secteur public et parapublic, et l'EAA, directive européenne transposée en droit français, qui étend l'obligation au secteur privé depuis juin 2025.
+Sont concernés en 2026 par l'obligation d'accessibilité web : les administrations et établissements publics (obligatoires depuis 2019), les entreprises privées de plus de 10 salariés ou réalisant plus de 2 millions d'euros de chiffre d'affaires (obligatoires depuis juin 2025 via l'European Accessibility Act), et en priorité les sites e-commerce, banques en ligne et plateformes de réservation, quel que soit leur effectif. Les micro-entreprises sous ces deux seuils sont exemptées.
 
 | Type de structure | Obligation |
 |---|---|

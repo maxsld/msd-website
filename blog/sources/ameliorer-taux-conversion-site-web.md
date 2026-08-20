@@ -31,7 +31,7 @@ Un site qui reçoit 500 visites par mois et génère 10 prises de contact a un t
 
 ## Levier 1 : Clarifier votre proposition de valeur en 5 secondes
 
-La première question d'un visiteur sur votre site : "Est-ce que c'est pour moi ?" S'il ne trouve pas la réponse en 5 secondes, il part.
+Une proposition de valeur claire répond, dès la hero section et en moins de 5 secondes, à trois questions : qui vous êtes, pour qui vous travaillez, et pourquoi vous plutôt qu'un concurrent. Si le visiteur ne trouve pas cette réponse immédiatement, il part sans chercher à comprendre — c'est la première cause d'abandon sur un site vitrine.
 
 Votre hero section — le premier écran visible — doit répondre à trois questions simultanément :
 - **Qui vous êtes** (ou ce que vous faites)
@@ -103,9 +103,7 @@ Intégrez une section FAQ sur vos pages de services. Abordez frontalement les qu
 
 ## Levier 7 : Optimiser votre page pour l'intention de recherche
 
-Un visiteur qui arrive via la requête "agence web Annecy tarif" n'a pas les mêmes attentes que celui qui arrive via "comment créer un site web". Le premier est prêt à acheter, le second cherche de l'information.
-
-Si vos pages cibles sont conçues pour du trafic commercial (création de site, refonte, landing page), elles doivent être orientées conversion de bout en bout : prix accessibles, CTA direct, processus clair. Pas d'article de blog déguisé en page de service.
+Optimiser pour l'intention de recherche signifie aligner chaque page sur ce que l'utilisateur veut faire, pas seulement sur le mot-clé qu'il tape. Un visiteur qui cherche "agence web Annecy tarif" est prêt à acheter ; celui qui cherche "comment créer un site web" cherche de l'information. Les pages à trafic commercial (création, refonte, landing page) doivent donc être orientées conversion de bout en bout : prix accessibles, CTA direct, processus clair — pas un article de blog déguisé en page de service.
 
 ---
 

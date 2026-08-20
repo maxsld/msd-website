@@ -20,7 +20,7 @@ En 2026, le copywriting web évolue : Google AI Overviews, ChatGPT et Perplexity
 
 ## Pourquoi la plupart des textes de sites web ne convertissent pas
 
-Avant de voir ce qui fonctionne, comprenons ce qui bloque.
+La plupart des textes de sites web ne convertissent pas pour trois raisons : ils parlent de l'entreprise au lieu de répondre au problème du visiteur, ils utilisent un jargon professionnel qui ne veut rien dire ("solutions à valeur ajoutée", "approche holistique"), et ils gomment toute tension en présentant l'offre sans jamais nommer le problème ni son urgence.
 
 ### L'erreur la plus fréquente : parler de soi plutôt que du client
 
@@ -85,7 +85,7 @@ Idéal pour les landing pages de services B2C ou B2B :
 
 ## La structure d'une page qui convertit
 
-Au-delà du framework, voici la structure des éléments dans l'ordre qui maximise la conversion.
+L'ordre qui maximise la conversion sur une page web est : titre principal (H1) porteur du message central, sous-titre qui qualifie le prospect, bénéfices concrets (pas des features), preuve sociale vérifiable, puis un CTA clair. Chaque élément prépare le suivant — inverser cet ordre dilue l'impact du message et fait fuir le lecteur avant qu'il n'atteigne l'action.
 
 ### 1. Le titre principal (H1) — La décision se prend ici
 
@@ -140,6 +140,8 @@ La règle : le CTA doit décrire ce que le visiteur **reçoit**, pas ce qu'il **
 
 ## Le copywriting à l'ère de l'IA : ce qui change en 2026
 
+En 2026, trois changements majeurs affectent le copywriting web : Google AI Overviews résume le contenu avant le clic, ChatGPT et Perplexity recommandent directement des prestataires à partir du contenu web, et le texte court seul ne suffit plus — il doit être complété par du contenu de profondeur structuré. Ignorer ces évolutions revient à écrire uniquement pour des visiteurs humains, alors qu'une part croissante du trafic passe désormais par un résumé généré par IA.
+
 ### Google AI Overviews résume votre contenu avant le clic
 
 Depuis mi-2024, Google affiche des résumés générés par IA en haut des résultats pour de nombreuses requêtes. Votre texte peut être cité dans ces résumés — ou ignoré.
@@ -166,7 +168,7 @@ En 2026, les pages qui performent le mieux combinent copywriting de conversion (
 
 ## Les textes à optimiser en priorité sur votre site
 
-Vous n'avez pas besoin de tout réécrire d'un coup. Voici les pages à fort impact, dans l'ordre.
+Quatre pages concentrent l'essentiel de l'impact, dans cet ordre de priorité : la section hero de la page d'accueil (vue par 100 % des visiteurs), la page du service qui génère le plus de revenus, la page contact/devis, puis les balises title et meta description qui déterminent le clic depuis Google. Inutile de tout réécrire d'un coup — commencez par ces quatre pages.
 
 ### 1. La page d'accueil — Section hero
 
@@ -187,6 +189,8 @@ Votre balise title est un texte de copywriting : elle détermine si le prospect 
 ---
 
 ## Les 5 règles du copywriting web qui restent vraies en 2026
+
+Cinq règles restent vraies quel que soit l'algorithme en place : écrire pour une personne précise plutôt qu'un public vague, commencer par la conclusion (pyramide inversée), utiliser des phrases de 12 à 15 mots maximum, éliminer les adjectifs superlatifs au profit de données chiffrées, et tester chaque décision au lieu de la trancher à l'instinct.
 
 ### Règle 1 — Écrire pour une personne, pas pour un public
 

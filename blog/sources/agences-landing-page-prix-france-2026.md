@@ -173,15 +173,11 @@ C’est l’option la plus économique, mais aussi la plus aléatoire.
 
 ## Le vrai coût d’une landing page “pas chère”
 
-Une landing page à bas prix peut sembler rentable à court terme,  
-mais le manque de stratégie et d’optimisation la rend souvent inefficace à long terme.
+Le vrai coût ne se lit pas sur le devis, mais dans le **coût par lead** généré une fois la page en ligne. Une page à 500 € qui convertit à 0,5 % coûte 200 € par lead ; une page à 2 000 € qui convertit à 3 % revient à 67 € par lead — trois fois moins cher, malgré un prix d’achat quatre fois plus élevé. Le prix affiché n’est donc pas le bon indicateur : le véritable critère est le **coût d’acquisition réel**.
 
 Exemple :  
 - Une page à 500 € avec 0,5 % de conversion coûte 200 € par lead.  
 - Une page à 2 000 € avec 3 % de conversion revient à 67 € par lead.
-
-Le prix affiché n’est donc pas le bon indicateur.  
-Le véritable critère est le **coût d’acquisition réel**.
 
 ---
 

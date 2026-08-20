@@ -89,7 +89,7 @@ Votre nom, adresse et téléphone doivent être identiques partout sur le web : 
 
 ## Quel budget prévoir pour un artisan ou TPE à Annecy ?
 
-Voici une fourchette honnête selon les options disponibles :
+Le budget va de 0 à 3 500 € selon la solution : gratuit en autonomie sur Wix ou Squarespace (SEO faible), 500 à 1 500 € pour un WordPress avec template (SEO moyen), et 1 500 à 3 500 € pour un site vitrine réalisé par une agence web à Annecy (SEO élevé, résultats durables). Une landing page sur mesure pour une offre unique coûte 800 à 1 500 €.
 
 | Solution | Budget indicatif | Niveau SEO | Recommandé pour |
 |---|---|---|---|

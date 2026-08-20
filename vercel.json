@@ -884,15 +884,6 @@
       ]
     },
     {
-      "source": "/assets/img/favicon:name*",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex"
-        }
-      ]
-    },
-    {
       "source": "/assets/img/profiles/:name*",
       "headers": [
         {

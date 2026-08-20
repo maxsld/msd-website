@@ -5668,6 +5668,7 @@ position: relative;
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
+  border-radius: 0.2rem;
 }
 
 .realisations-page-carousel .blog-hero-carousel__arrow {
@@ -5716,6 +5717,7 @@ position: relative;
   border-color: rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(10px);
   white-space: nowrap;
+  border-radius: 0.2rem;
 }
 
 .realisations-library .realisations-item {

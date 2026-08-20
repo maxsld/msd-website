@@ -65,9 +65,6 @@ Disallow: /assets/img/logo-track6.webp
 Disallow: /assets/img/logo-track7.webp
 Disallow: /assets/img/logo-track8.webp
 Disallow: /assets/img/logo-track9.webp
-Disallow: /assets/img/favicon-96x96.png
-Disallow: /assets/img/favicon.ico
-Disallow: /assets/img/favicon.svg
 Disallow: /assets/img/profiles/
 
 # ── Sitemaps ───────────────────────────────────────────────────────────────────

@@ -101,7 +101,7 @@ Ce n'est pas obligatoire, mais c'est un levier SEO extrêmement puissant. Des ar
 
 ## Les règles déontologiques pour un site web d'architecte
 
-L'Ordre des Architectes encadre la communication des architectes en France. Les points essentiels :
+Les règles déontologiques pour un site web d'architecte sont fixées par l'Ordre des Architectes : il est autorisé de présenter ses réalisations, ses diplômes, son inscription à l'Ordre et des témoignages clients avec leur accord, mais il est interdit de comparer directement avec des confrères, de garantir des prix ou de démarcher activement — les honoraires peuvent seulement être évoqués de façon générale.
 
 **Ce qui est autorisé :**
 - Présenter vos réalisations avec photos et descriptions

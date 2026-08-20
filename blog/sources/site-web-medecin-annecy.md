@@ -34,9 +34,7 @@ Votre site web est votre présence digitale propre, celle que vous contrôlez en
 
 ### La confiance se construit en ligne avant la consultation
 
-Un patient qui envisage de consulter un nouveau spécialiste à Annecy va systématiquement chercher des informations sur lui avant le rendez-vous. Qui est ce médecin ? Quelle est sa formation ? Comment travaille-t-il ? Accepte-t-il les nouveaux patients ?
-
-Un site web bien construit répond à toutes ces questions et installe la confiance avant même la première consultation. Un patient qui arrive en ayant lu votre site est déjà rassuré, déjà convaincu — la relation thérapeutique commence dans de bien meilleures conditions.
+Un site web bien construit installe la confiance avant même la première consultation, en répondant en amont aux questions que tout patient se pose sur un nouveau praticien : qui il est, quelle est sa formation, comment il travaille, et s'il accepte de nouveaux patients. Un patient qui arrive en ayant lu votre site est déjà rassuré, déjà convaincu — la relation thérapeutique commence dans de bien meilleures conditions.
 
 ---
 
@@ -162,7 +160,7 @@ Vos patients ont souvent un besoin urgent ou une question précise. La navigatio
 
 ### Un site non adapté au mobile
 
-Comme mentionné, la majorité des recherches médicales se font sur smartphone. Un site non responsive qui s'affiche mal sur mobile n'est pas seulement frustrant pour vos patients — il est pénalisé par Google.
+Plus de 70% des recherches médicales locales se font sur smartphone. Un site non responsive qui s'affiche mal sur mobile n'est pas seulement frustrant pour vos patients — il est pénalisé par Google.
 
 ### Un site avec des informations médicales erronées ou obsolètes
 

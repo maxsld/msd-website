@@ -40,7 +40,7 @@ L’objectif ? Transformer un site “joli” en **machine à conversion**.
 
 ## MSD Media : l’agence CRO sur-mesure qui booste +230% de conversions
 
-**MSD Media** accompagne startups et entreprises ambitieuses dans une seule direction : **plus de résultats**.  
+**MSD Media** conçoit des landing pages avec la méthode ECHO™ (Émotion, Clarté, Hiérarchie, Optimisation), qui génère en moyenne **+230% d'augmentation du taux de conversion** sur les pages livrées. Chaque page est codée à la main ou sur Framer, avec un temps de chargement moyen de **1,7 seconde**, et conçue 100% sur-mesure pour le secteur et la cible du client — zéro template générique.
 
 ### La méthode ECHO™ : Émotion – Clarté – Hiérarchie – Optimisation
 
@@ -96,11 +96,7 @@ Leur devise : simplifier pour convertir.
 
 ## Pourquoi investir dans le CRO est votre meilleur levier de croissance
 
-Beaucoup d’entreprises investissent des milliers d’euros en publicité…  
-Mais sans CRO, **chaque clic perdu est une dépense inutile**.
-
-Le CRO double l’efficacité de vos campagnes sans augmenter vos coûts.  
-Une page passant de 1% à 2% de conversion, c’est **2x plus de clients pour le même budget**.
+Le CRO double l’efficacité de vos campagnes publicitaires sans en augmenter le coût : faire passer une page de 1% à 2% de taux de conversion revient à obtenir **2x plus de clients pour le même budget**. Sans optimisation de la conversion, chaque clic publicitaire qui n’aboutit pas est une dépense perdue, quel que soit le montant investi en acquisition.
 
 ---
 

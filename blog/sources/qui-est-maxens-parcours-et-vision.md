@@ -82,7 +82,7 @@ Ce portrait institutionnel n'est pas anodin. Il signale que Maxens ne joue pas d
 
 ## La méthode MSD Media en 3 principes
 
-Au fil des projets et des clients, Maxens a formalisé une façon de travailler qui ne change pas, quel que soit le secteur ou la taille du client.
+La méthode MSD Media repose sur trois principes appliqués à chaque projet, quel que soit le secteur ou la taille du client : la stratégie avant le design, la clarté du message comme levier de conversion, et une livraison garantie en 21 jours. Cette méthode, formalisée par Maxens au fil des projets, ne varie jamais.
 
 ### 1. La stratégie avant tout
 
@@ -122,9 +122,7 @@ Ce n'est pas une question de talent. C'est une question d'action.
 
 ## La satisfaction client : une ligne rouge non négociable
 
-Il y a une chose sur laquelle Maxens ne transige pas : **la satisfaction de ses clients**.
-
-Pas dans le sens "le client est roi et on dit oui à tout". Dans le sens où chaque projet livré doit produire un résultat réel, mesurable, qui justifie l'investissement du client. Et si ce n'est pas le cas, on ne s'arrête pas là.
+Chez MSD Media, **la satisfaction client** ne veut pas dire « le client est roi et on dit oui à tout » : c'est l'exigence que chaque projet livré produise un résultat réel et mesurable, qui justifie l'investissement du client. Si ce n'est pas le cas, le travail ne s'arrête pas là — Maxens ne considère jamais un projet terminé tant que le résultat n'est pas au rendez-vous.
 
 C'est pour ça que MSD Media propose des **ajustements illimités** sur chaque projet. Pas parce que c'est un argument commercial facile à mettre en avant, mais parce que Maxens considère qu'un site livré n'est pas un site terminé tant que le client n'est pas pleinement satisfait du résultat.
 

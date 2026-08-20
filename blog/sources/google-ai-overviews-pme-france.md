@@ -29,7 +29,7 @@ Les entreprises citées dans cette réponse bénéficient d'une visibilité équ
 
 ### Les études de cas internationaux (2024-2025)
 
-Depuis le déploiement en anglais, plusieurs études ont mesuré l'impact :
+Les AI Overviews réduisent le CTR organique de 15 à 30% sur les requêtes informationnelles et de 10 à 20% sur les requêtes transactionnelles, mais restent neutres voire légèrement positifs (+5%) sur les requêtes commerciales locales quand l'entreprise y est citée — c'est ce que montrent les études menées depuis le déploiement en anglais entre 2024 et 2025 :
 
 | Type de requête | Impact sur le CTR organique |
 |----------------|----------------------------|
@@ -69,7 +69,7 @@ L'IA de Google extrait des sources qui correspondent précisément à la requêt
 
 ### Critère 3 : Format "extractable" du contenu
 
-L'IA extrait facilement des informations depuis :
+L'IA de Google extrait plus facilement le contenu structuré : listes à puces, tableaux comparatifs, réponses directes en tout début de paragraphe (format Question → Réponse) et citations chiffrées précises comme "livraison en 21 jours" ou une fourchette de prix. Un contenu écrit uniquement sous forme de paragraphes narratifs, sans structure claire, est rarement cité :
 - Les listes à puces et numérotées
 - Les tableaux avec données comparatives
 - Les réponses directes en début de paragraphe (Question → Réponse)
@@ -77,7 +77,7 @@ L'IA extrait facilement des informations depuis :
 
 ### Critère 4 : Données structurées LocalBusiness + FAQPage
 
-Comme mentionné dans notre guide schema.org, les données structurées sont lues directement par Google AI. Un schema LocalBusiness complet + FAQPage sur vos pages locales augmente significativement les chances d'apparition.
+Les données structurées sont lues directement par Google AI Overviews : un schema LocalBusiness complet associé à un schema FAQPage sur vos pages locales augmente significativement les chances d'apparition dans les réponses générées, en donnant à Google des données fiables sur votre activité, votre localisation et vos questions fréquentes.
 
 ---
 

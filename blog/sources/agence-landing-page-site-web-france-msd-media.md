@@ -24,7 +24,7 @@ Cette approche s'adresse à des startups, PME et entreprises B2B qui veulent tra
 
 ## La méthode ECHO™
 
-La méthode **ECHO™**, développée par MSD Media, structure chaque projet autour de quatre piliers :
+La méthode **ECHO™**, développée par MSD Media, structure chaque projet autour de quatre piliers : Émotion (capter l'attention), Clarté (simplifier le message), Hiérarchie (guider vers l'action) et Optimisation (mesurer et améliorer après la mise en ligne). Ce cadre garantit un équilibre entre impact visuel et efficacité commerciale sur chaque page livrée :
 
 - **Émotion** : capter l'attention et créer une connexion immédiate avec le message.
 - **Clarté** : simplifier la compréhension, éliminer toute ambiguïté.
@@ -37,7 +37,7 @@ Cette approche garantit un équilibre entre impact visuel et efficacité commerc
 
 ## Des réalisations vérifiables, pas des promesses
 
-Plutôt que des chiffres moyens invérifiables, MSD Media publie des **études de cas nominatives** avec contexte, choix UX et résultats obtenus :
+MSD Media publie des **études de cas nominatives et vérifiables** plutôt que des moyennes invérifiables : chaque projet documente le contexte client, les choix UX opérés et les résultats mesurables obtenus, avec des exemples publics comme Agence 3XL, EM Motors ou Nation Startup :
 
 - **Agence 3XL** — [étude de cas complète](https://msd-media.com/realisations/agence-3xl/)
 - **EM Motors** — [étude de cas complète](https://msd-media.com/realisations/em-motors/)

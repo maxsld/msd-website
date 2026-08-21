@@ -2095,6 +2095,29 @@ position: relative;
   font-style: normal;
 }
 
+.case-study-cta-band {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2.6rem;
+  padding-top: 2.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.case-study-cta-band a.hero__btn {
+  text-decoration: none;
+}
+
+.case-study-cta-band .hero__btn--secondary {
+  color: #0c0c0d;
+}
+
+.case-study-cta-band .hero__btn--primary {
+  color: var(--global-color-white);
+}
+
 .case-study-page main {
   background: #111111;
 }

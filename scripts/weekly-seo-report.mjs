@@ -23,7 +23,7 @@
  * Variables d'environnement :
  *   GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY
  *   GSC_SITE_URL, GA4_PROPERTY_ID
- *   SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, MAIL_FROM, MAIL_TO
+ *   RESEND_API_KEY, MAIL_FROM, MAIL_TO
  *   PAGESPEED_API_KEY (optionnel)
  *
  * Usage : node scripts/weekly-seo-report.mjs
@@ -35,7 +35,6 @@ import process from "node:process";
 import { fileURLToPath } from "node:url";
 
 import { JWT } from "google-auth-library";
-import nodemailer from "nodemailer";
 import { chromium } from "playwright";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -74,7 +73,7 @@ const CWV_THRESHOLDS = {
   ttfb: { good: 800, poor: 1800 }
 };
 
-const requiredEnvKeys = ["SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS", "MAIL_TO"];
+const requiredEnvKeys = ["RESEND_API_KEY", "MAIL_TO"];
 const googleEnvKeys = ["GOOGLE_SERVICE_ACCOUNT_EMAIL", "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY", "GSC_SITE_URL"];
 
 // ─── ENV / AUTH ─────────────────────────────────────────────────────────────
@@ -267,10 +266,10 @@ function gscPageToPath(page) {
 async function fetchGaSessionsByPage(token, current, previous) {
   const report = await runGaReport(token, {
     dateRanges: [
-      { startDate: current.startDate, endDate: current.endDate, name: "date_range_0" },
-      { startDate: previous.startDate, endDate: previous.endDate, name: "date_range_1" }
+      { startDate: current.startDate, endDate: current.endDate, name: "current" },
+      { startDate: previous.startDate, endDate: previous.endDate, name: "previous" }
     ],
-    dimensions: [{ name: "pagePath" }, { name: "dateRange" }],
+    dimensions: [{ name: "pagePath" }],
     metrics: [{ name: "sessions" }],
     limit: "2000"
   });
@@ -281,28 +280,22 @@ async function fetchGaSessionsByPage(token, current, previous) {
     const sessions = Number(row.metricValues?.[0]?.value || 0);
     if (!byPath.has(pagePath)) byPath.set(pagePath, { current: 0, previous: 0 });
     const entry = byPath.get(pagePath);
-    if (rangeName === "date_range_0") entry.current += sessions;
-    else if (rangeName === "date_range_1") entry.previous += sessions;
+    if (rangeName === "current") entry.current += sessions;
+    else if (rangeName === "previous") entry.previous += sessions;
   }
   return byPath;
 }
 
-async function fetchGaTotalSessions(token, current, previous) {
-  const report = await runGaReport(token, {
-    dateRanges: [
-      { startDate: current.startDate, endDate: current.endDate, name: "date_range_0" },
-      { startDate: previous.startDate, endDate: previous.endDate, name: "date_range_1" }
-    ],
-    dimensions: [{ name: "dateRange" }],
-    metrics: [{ name: "sessions" }]
-  });
+// Dérivé de fetchGaSessionsByPage (déjà groupé par page) plutôt qu'un appel
+// séparé avec dimensions: [{name: "dateRange"}] seul — l'API GA4 rejette ce
+// dimension seule sans dimension "réelle" à côté ("Field dateRange is not a
+// dimension"), vérifié empiriquement.
+function sumGaTotals(gaByPath) {
   let curr = 0;
   let prev = 0;
-  for (const row of report.rows || []) {
-    const rangeName = row.dimensionValues?.[0]?.value;
-    const sessions = Number(row.metricValues?.[0]?.value || 0);
-    if (rangeName === "date_range_0") curr += sessions;
-    else if (rangeName === "date_range_1") prev += sessions;
+  for (const entry of gaByPath.values()) {
+    curr += entry.current;
+    prev += entry.previous;
   }
   return { current: curr, previous: prev };
 }
@@ -361,9 +354,8 @@ function computeDrop(prevValue, currValue) {
   return (prevValue - currValue) / prevValue;
 }
 
-async function findTrafficDrops(token, current, previous) {
-  const [gaByPath, gscCurrentByPath, gscPreviousByPath] = await Promise.all([
-    fetchGaSessionsByPage(token, current, previous),
+async function findTrafficDrops(token, current, previous, gaByPath) {
+  const [gscCurrentByPath, gscPreviousByPath] = await Promise.all([
     fetchGscClicksByPage(token, current),
     fetchGscClicksByPage(token, previous)
   ]);
@@ -613,20 +605,24 @@ async function renderPdf(html) {
 // ─── EMAIL ──────────────────────────────────────────────────────────────────
 
 async function sendEmail({ pdfBuffer, filename, weekLabel, kpiSummary }) {
-  const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT ?? "587"),
-    secure: process.env.SMTP_SECURE === "true",
-    auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS }
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      from: process.env.MAIL_FROM ?? "MSD Media <agence@msd-media.com>",
+      to: process.env.MAIL_TO,
+      subject: `📊 [MSD Media] Rapport SEO hebdo — ${weekLabel}`,
+      html: `<p>Rapport SEO complet en pièce jointe (PDF).</p><p style="color:#6b7280;font-size:13px">${kpiSummary}</p>`,
+      attachments: [{ filename, content: pdfBuffer.toString("base64") }]
+    })
   });
-
-  await transporter.sendMail({
-    from: process.env.MAIL_FROM ?? process.env.SMTP_USER,
-    to: process.env.MAIL_TO,
-    subject: `📊 [MSD Media] Rapport SEO hebdo — ${weekLabel}`,
-    html: `<p>Rapport SEO complet en pièce jointe (PDF).</p><p style="color:#6b7280;font-size:13px">${kpiSummary}</p>`,
-    attachments: [{ filename, content: pdfBuffer, contentType: "application/pdf" }]
-  });
+  const raw = await response.text();
+  if (!response.ok) {
+    throw new Error(`Erreur Resend ${response.status}: ${raw.slice(0, 500)}`);
+  }
   log(`Email envoyé à ${process.env.MAIL_TO}.`);
 }
 
@@ -657,9 +653,13 @@ async function run() {
   topQueries.sort((a, b) => b.clicks - a.clicks);
 
   let gaTotals = null;
+  let trafficDrops = [];
   if (process.env.GA4_PROPERTY_ID) {
     log("Sessions GA4...");
-    gaTotals = await fetchGaTotalSessions(token, weeks.current, weeks.previous);
+    const gaByPath = await fetchGaSessionsByPage(token, weeks.current, weeks.previous);
+    gaTotals = sumGaTotals(gaByPath);
+    log("Baisses de trafic (GA4 + GSC)...");
+    trafficDrops = await findTrafficDrops(token, weeks.current, weeks.previous, gaByPath);
   } else {
     warn("GA4_PROPERTY_ID absent — KPI sessions/pages en baisse GA4 ignorés.");
   }
@@ -670,12 +670,6 @@ async function run() {
     runGscQuery(token, { ...rankWindows.previous, dimensions: ["query", "page"], rowLimit: 5000 })
   ]);
   const positionDrops = buildPositionDrops(rowsToMap(rankCurrent.rows || []), rowsToMap(rankPrevious.rows || []));
-
-  let trafficDrops = [];
-  if (process.env.GA4_PROPERTY_ID) {
-    log("Baisses de trafic (GA4 + GSC)...");
-    trafficDrops = await findTrafficDrops(token, weeks.current, weeks.previous);
-  }
 
   log("Core Web Vitals (PageSpeed Insights)...");
   const cwv = await runCwvChecks();

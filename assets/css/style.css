@@ -7298,6 +7298,26 @@ body.page-404 .site-footer {
   color: #ffffff;
 }
 
+.pricing-compare-title {
+  margin: 4rem 0 1.4rem;
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pricing-compare-table th:not(:first-child),
+.pricing-compare-table td:not(:first-child) {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.pricing-compare-table td:not(:first-child) i.fa-check {
+  color: #2f6bff;
+  font-size: 1.05rem;
+}
+
 .glossary-table--dark td:last-child {
   color: rgba(255, 255, 255, 0.68);
 }

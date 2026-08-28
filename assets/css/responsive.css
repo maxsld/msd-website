@@ -939,3 +939,145 @@
     width: 100%;
   }
 }
+
+/* Mobile consistency overrides */
+@media (max-width: 768px) {
+  :root {
+    --mobile-page-padding: 1rem;
+    --mobile-button-padding-block: 0.82rem;
+    --mobile-button-padding-inline: 1rem;
+  }
+
+  body {
+    padding-inline: var(--mobile-page-padding);
+  }
+
+  .top-announcement {
+    display: none !important;
+  }
+
+  .navbar,
+  .hero,
+  .realisations-section,
+  .process-section,
+  .case-studies-section,
+  .case-study-detail-section,
+  .section-reviews,
+  .contact-page,
+  .affiliate-audience,
+  .affiliate-estimator {
+    padding-left: var(--mobile-page-padding);
+    padding-right: var(--mobile-page-padding);
+  }
+
+  #process,
+  #ai-proof {
+    padding-left: var(--mobile-page-padding);
+    padding-right: var(--mobile-page-padding);
+  }
+
+  .home-page .hero {
+    width: 100%;
+    max-width: none;
+  }
+
+  .home-page .hero-badges {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .home-page .feature-tag-main-second-page {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .section-title,
+  .section-title--dark,
+  .section-title--light,
+  .realisations-title,
+  .process-title,
+  .avis-title,
+  .faq-title,
+  .ai-proof .section-title,
+  #ai-proof .section-title {
+    font-size: 2rem;
+    line-height: 1.08;
+    text-align: center;
+    width: 100%;
+  }
+
+  .realisations-inner,
+  #process .process-inner,
+  #ai-proof .ai-proof__inner,
+  .process-steps,
+  .ai-proof__actions {
+    width: 100%;
+    max-width: none;
+  }
+
+  .booking-section,
+  .site-footer {
+    width: calc(100% + (var(--mobile-page-padding) * 2));
+    margin-left: calc(var(--mobile-page-padding) * -1);
+    margin-right: calc(var(--mobile-page-padding) * -1);
+  }
+
+  .hero__actions,
+  .realisations-ctas,
+  .ai-presence-actions,
+  .blog-ai-summary__actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-proof__actions {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #ai-proof .ai-proof__actions .hero__btn {
+    width: 100%;
+    max-width: none;
+  }
+
+  .realisations-item,
+  .realisations-panel,
+  .realisations-card,
+  .process-step,
+  .ai-presence-tool,
+  .ai-presence-result {
+    width: 100%;
+    max-width: none;
+  }
+
+  .contact-button,
+  .hero__btn,
+  .realisations-cta,
+  .realisations-cta--ghost,
+  .ai-proof__btn,
+  .affiliate-submit,
+  .cookie-consent__btn {
+    width: 100%;
+    max-width: none;
+    min-height: 44px;
+    padding: var(--mobile-button-padding-block) var(--mobile-button-padding-inline);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar .contact-button {
+    width: auto;
+    min-height: 36px;
+    height: 36px;
+    padding: 0 0.72rem;
+  }
+
+  .whatsapp-nav-button {
+    flex: 0 0 36px;
+  }
+}

@@ -2118,6 +2118,25 @@ position: relative;
   color: var(--global-color-white);
 }
 
+.press-pitch-deck-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.6rem;
+}
+
+.press-pitch-deck-cta__btn.hero__btn--primary {
+  background: #2f6bff;
+  border-color: #2f6bff;
+  color: var(--global-color-white);
+  border-radius: 0.2rem;
+  text-decoration: none;
+}
+
+.press-pitch-deck-cta__btn.hero__btn--primary:hover {
+  background: #1a54e8;
+  border-color: #1a54e8;
+}
+
 .case-study-page main {
   background: #111111;
 }

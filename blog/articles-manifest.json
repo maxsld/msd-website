@@ -1,5 +1,94 @@
 [
   {
+    "title": "Mise à jour Google août 2026 : ce qui s'est vraiment passé (et comment réagir)",
+    "slug": "google-mise-a-jour-aout-2026",
+    "date": "2026-08-30",
+    "description": "Spam update confirmé du 18 au 21 août 2026, contenu à grande échelle visé, rumeurs de core update non confirmées. Ce qu'il faut vérifier sur votre site.",
+    "tags": [
+      "Google update",
+      "spam update",
+      "algorithme Google",
+      "SEO 2026",
+      "MSD Media"
+    ],
+    "keyword": "mise à jour Google août 2026",
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2070&auto=format&fit=crop",
+    "html": "<p><strong>Google a déployé son August 2026 Spam Update du 18 au 21 août 2026 (2 jours et 16 heures), confirmé sur le Search Status Dashboard.</strong> C&#39;est la 3ᵉ mise à jour anti-spam de l&#39;année, après celles de mars (19h30, la plus rapide jamais enregistrée) et de juin (2 jours et 1 heure). En parallèle, des éditeurs rapportent une volatilité de classement plus large — mais aucun core update n&#39;est confirmé par Google pour cette période : ne confondez pas les deux.</p>\n<p>Ce guide sépare ce qui est confirmé de ce qui ne l&#39;est pas, explique ce que la mise à jour cible réellement, et donne la méthode pour vérifier si votre site est concerné.</p>\n<hr />\n<h2 id=\"ce-que-google-a-officiellement-confirme\">Ce que Google a officiellement confirmé</h2>\n<p>Google a confirmé une seule chose pour août 2026 : le déploiement d&#39;un <strong>Spam Update</strong>, lancé le 18 août vers 12h30 (heure de l&#39;Est) et terminé le 21 août vers 4h50, pour une durée totale de 2 jours et 16 heures. L&#39;annonce officielle précise qu&#39;il s&#39;applique <strong>globalement et dans toutes les langues</strong> — Google n&#39;a donné aucun détail supplémentaire au-delà de « mise à jour anti-spam normale ».</p>\n<div class=\"blog-table-wrap\"><table class=\"blog-table\"><thead><tr><th>Mise à jour anti-spam 2026</th><th>Durée du déploiement</th></tr></thead><tbody><tr><td>Mars 2026</td><td>19h30 (la plus rapide jamais enregistrée)</td></tr><tr><td>Juin 2026</td><td>2 jours et 1 heure</td></tr><tr><td>Août 2026</td><td>2 jours et 16 heures</td></tr></tbody></table></div>\n<hr />\n<h2 id=\"ce-qu-elle-cible-reellement\">Ce qu&#39;elle cible réellement</h2>\n<p>D&#39;après le recoupement des analyses SEO indépendantes (Google n&#39;a pas détaillé la cible exacte), cette mise à jour vise en priorité le <strong>contenu généré à grande échelle</strong> (&quot;scaled content abuse&quot;) : un grand nombre de pages produites principalement pour manipuler le classement plutôt que pour aider l&#39;utilisateur, qu&#39;elles soient écrites par une personne ou générées par un modèle. À l&#39;inverse, le spam de liens (netlinking) et l&#39;abus de réputation de site ne sont <strong>pas</strong> la cible de ce déploiement précis — ces deux problématiques sont gérées par des systèmes séparés.</p>\n<hr />\n<h2 id=\"la-volatilite-rapportee-qui-n-est-pas-confirmee\">La volatilité rapportée qui n&#39;est PAS confirmée</h2>\n<p>Une distinction importante à faire : au 17 août 2026, le Search Status Dashboard de Google ne recensait <strong>aucun incident de classement, d&#39;indexation ou de crawl</strong> pour juillet ou août — c&#39;est-à-dire qu&#39;aucun core update n&#39;était confirmé à cette date. Certains éditeurs et outils SEO ont néanmoins rapporté des pertes de trafic brutales et un classement instable, avec des spéculations sur un ciblage des pages « à faible originalité, preuves insuffisantes ». Cette hypothèse reste non confirmée officiellement — traitez-la comme un signal à surveiller, pas comme un fait établi.</p>\n<hr />\n<h2 id=\"comment-savoir-si-votre-site-est-concerne\">Comment savoir si votre site est concerné</h2>\n<ol><li><strong>Comparez votre trafic organique</strong> sur la période du 18 au 21 août (et la semaine suivante) via Google Search Console — filtrez par page pour repérer si la baisse touche un type de contenu précis</li><li><strong>Identifiez un pattern de production en masse</strong> : pages quasi identiques, contenu généré automatiquement sans valeur ajoutée réelle, gabarits répétés sans personnalisation</li><li><strong>Vérifiez vos pages les plus exposées</strong> : celles créées principalement pour capter une requête, avec peu de contenu original ou de preuve concrète (données propres, cas clients, expertise démontrée)</li></ol>\n<hr />\n<h2 id=\"comment-reagir-concretement\">Comment réagir concrètement</h2>\n<ul><li><strong>Auditez avant de paniquer</strong> : une baisse ponctuelle de trafic n&#39;est pas automatiquement liée à cette mise à jour — vérifiez la corrélation temporelle exacte avant d&#39;agir</li><li><strong>Consolidez plutôt que supprimez</strong> : si plusieurs pages fines couvrent le même sujet, fusionnez-les en une page de référence complète plutôt que d&#39;en créer davantage</li><li><strong>Ajoutez de la preuve concrète</strong> : données propres, retours d&#39;expérience réels, exemples chiffrés — c&#39;est le signal que Google et les moteurs génératifs cherchent pour distinguer un contenu utile d&#39;un contenu produit à la chaîne</li><li><strong>Ne réagissez jamais dans la précipitation</strong> : un changement de position peut avoir de multiples causes (saisonnalité, concurrence, bug technique) avant d&#39;être lié à une mise à jour d&#39;algorithme</li></ul>\n<hr />\n<h2 id=\"pourquoi-les-sites-codes-sur-mesure-sont-structurellement-moins-exposes\">Pourquoi les sites codés sur mesure sont structurellement moins exposés</h2>\n<p>Le contenu généré à grande échelle repose presque toujours sur des gabarits automatisés — exactement l&#39;opposé d&#39;un site conçu page par page avec un contenu réellement écrit pour chaque page. Un site sur mesure, sans thème générique ni production automatisée de contenu, n&#39;a structurellement pas ce profil de risque. C&#39;est la même logique que nous détaillons dans notre guide sur la <a href=\"https://msd-media.com/blog/articles/core-web-vitals-guide-2026/\">performance web</a> et sur la <a href=\"https://msd-media.com/blog/articles/aeo-seo-geo-guide-2026/\">structure answer-first pour être cité par les IA</a> : la qualité structurelle protège à la fois du désaveu algorithmique et améliore la citabilité.</p>\n<hr />\n<h2 id=\"faq-mise-a-jour-google-aout-2026\">FAQ — Mise à jour Google août 2026</h2>\n<h3 id=\"quelle-mise-a-jour-google-a-eu-lieu-en-aout-2026\">Quelle mise à jour Google a eu lieu en août 2026 ?</h3>\n<p>Un Spam Update confirmé par Google, déployé du 18 au 21 août 2026 (2 jours et 16 heures), applicable globalement dans toutes les langues. C&#39;est la 3ᵉ mise à jour anti-spam de l&#39;année, après mars et juin 2026.</p>\n<h3 id=\"cette-mise-a-jour-cible-t-elle-les-liens-ou-la-e-reputation\">Cette mise à jour cible-t-elle les liens ou la e-réputation ?</h3>\n<p>Non. D&#39;après les analyses indépendantes, elle cible le contenu généré à grande échelle (&quot;scaled content abuse&quot;) — pas le spam de liens ni l&#39;abus de réputation de site, qui sont traités par des systèmes séparés.</p>\n<h3 id=\"y-a-t-il-eu-un-core-update-en-aout-2026\">Y a-t-il eu un core update en août 2026 ?</h3>\n<p>Aucun core update n&#39;était confirmé par le Search Status Dashboard de Google au 17 août 2026. Des rapports de volatilité circulent, mais restent non officiels — à distinguer clairement du Spam Update, lui bien confirmé.</p>\n<h3 id=\"mon-trafic-a-chute-fin-aout-est-ce-lie-a-cette-mise-a-jour\">Mon trafic a chuté fin août, est-ce lié à cette mise à jour ?</h3>\n<p>Pas nécessairement. Vérifiez d&#39;abord la corrélation temporelle exacte (18-21 août précisément), le type de pages touchées, et excluez les autres causes possibles (saisonnalité, concurrence, problème technique) avant de conclure à un lien avec cette mise à jour.</p>\n<h3 id=\"comment-proteger-mon-site-des-futures-mises-a-jour-anti-spam\">Comment protéger mon site des futures mises à jour anti-spam ?</h3>\n<p>En évitant toute production de contenu à grande échelle sans valeur ajoutée réelle : privilégiez un nombre de pages plus restreint mais avec une preuve concrète (données propres, expertise démontrée, cas réels) sur chacune, plutôt que du volume.</p>\n<hr />\n<h2 id=\"conclusion-distinguer-le-confirme-du-speculatif\">Conclusion : distinguer le confirmé du spéculatif</h2>\n<p>La mise à jour d&#39;août 2026 est réelle, datée et documentée par Google lui-même — mais elle ne cible que le contenu produit en masse, pas l&#39;ensemble du web. Le vrai risque n&#39;est pas cette mise à jour en particulier : c&#39;est la confusion entre ce qui est confirmé et ce qui relève de la spéculation, qui pousse à des réactions précipitées et contre-productives.</p>\n<p><strong>Vous voulez un diagnostic clair de votre situation ?</strong> <a href=\"https://msd-media.com/audit-seo-annecy/\">Demandez un audit SEO gratuit</a> : nous vérifions si votre trafic est réellement impacté et identifions les causes exactes avant toute action.</p>",
+    "toc": [
+      {
+        "level": 2,
+        "text": "Ce que Google a officiellement confirmé",
+        "id": "ce-que-google-a-officiellement-confirme"
+      },
+      {
+        "level": 2,
+        "text": "Ce qu'elle cible réellement",
+        "id": "ce-qu-elle-cible-reellement"
+      },
+      {
+        "level": 2,
+        "text": "La volatilité rapportée qui n'est PAS confirmée",
+        "id": "la-volatilite-rapportee-qui-n-est-pas-confirmee"
+      },
+      {
+        "level": 2,
+        "text": "Comment savoir si votre site est concerné",
+        "id": "comment-savoir-si-votre-site-est-concerne"
+      },
+      {
+        "level": 2,
+        "text": "Comment réagir concrètement",
+        "id": "comment-reagir-concretement"
+      },
+      {
+        "level": 2,
+        "text": "Pourquoi les sites codés sur mesure sont structurellement moins exposés",
+        "id": "pourquoi-les-sites-codes-sur-mesure-sont-structurellement-moins-exposes"
+      },
+      {
+        "level": 2,
+        "text": "FAQ — Mise à jour Google août 2026",
+        "id": "faq-mise-a-jour-google-aout-2026"
+      },
+      {
+        "level": 3,
+        "text": "Quelle mise à jour Google a eu lieu en août 2026 ?",
+        "id": "quelle-mise-a-jour-google-a-eu-lieu-en-aout-2026"
+      },
+      {
+        "level": 3,
+        "text": "Cette mise à jour cible-t-elle les liens ou la e-réputation ?",
+        "id": "cette-mise-a-jour-cible-t-elle-les-liens-ou-la-e-reputation"
+      },
+      {
+        "level": 3,
+        "text": "Y a-t-il eu un core update en août 2026 ?",
+        "id": "y-a-t-il-eu-un-core-update-en-aout-2026"
+      },
+      {
+        "level": 3,
+        "text": "Mon trafic a chuté fin août, est-ce lié à cette mise à jour ?",
+        "id": "mon-trafic-a-chute-fin-aout-est-ce-lie-a-cette-mise-a-jour"
+      },
+      {
+        "level": 3,
+        "text": "Comment protéger mon site des futures mises à jour anti-spam ?",
+        "id": "comment-proteger-mon-site-des-futures-mises-a-jour-anti-spam"
+      },
+      {
+        "level": 2,
+        "text": "Conclusion : distinguer le confirmé du spéculatif",
+        "id": "conclusion-distinguer-le-confirme-du-speculatif"
+      }
+    ],
+    "reading": {
+      "words": 1079,
+      "minutes": 5
+    },
+    "noindex": false,
+    "sourceFile": "google-mise-a-jour-aout-2026.md"
+  },
+  {
     "title": "Google AI Mode en 2026 : pourquoi votre site perd du trafic même bien classé",
     "slug": "google-ai-mode-zero-click-2026",
     "date": "2026-08-21",

@@ -17,6 +17,7 @@
     "seo:content-decay": "node scripts/content-decay-refresh.mjs",
     "blog:trends-report": "node scripts/blog-trends-report.mjs",
     "seo:weekly-pdf-report": "node scripts/weekly-seo-report.mjs",
+    "link-graph": "node scripts/link-graph.mjs",
     "hooks:setup": "git config core.hooksPath .githooks && echo 'Hooks installés ✓'"
   },
   "dependencies": {

@@ -779,6 +779,7 @@ function renderSiteHeader() {
       </div>
       <a href="${SITE_URL}/realisations/" data-i18n="nav_realisations">Réalisations</a>
       <a href="${SITE_URL}/tarifs/" data-i18n="nav_pricing">Tarifs</a>
+      <a href="${SITE_URL}/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
     </nav>
 
     <div class="nav-right">

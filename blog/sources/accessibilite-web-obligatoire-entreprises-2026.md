@@ -7,8 +7,9 @@ tags: ["accessibilité web", "RGAA", "European Accessibility Act", "conformité 
 slug: "accessibilite-web-obligatoire-entreprises-2026"
 keyword: "accessibilité web obligatoire entreprise"
 ---
+## Réponse courte
 
-# Accessibilité web obligatoire en 2026 : ce que la loi impose à votre entreprise (RGAA, amendes)
+En 2026, l'accessibilité web n'est plus un sujet secondaire : beaucoup d'entreprises privées sont concernées par l'European Accessibility Act et doivent rendre leurs parcours numériques utilisables par tous. Concrètement, il faut viser une interface lisible, navigable au clavier, compatible lecteurs d'écran, avec des formulaires compréhensibles et des contrastes suffisants. Le plus prudent est d'auditer votre site avec le RGAA comme grille de contrôle, puis de corriger les blocages prioritaires avant qu'ils ne deviennent juridiques ou commerciaux.
 
 Depuis juin 2025, le **European Accessibility Act (EAA)** a élargi le champ des entreprises concernées par l'accessibilité numérique. Ce n'est plus un sujet réservé au secteur public : les **sociétés privées de plus de 10 salariés ou réalisant plus de 2 millions d'euros de chiffre d'affaires** doivent désormais s'y conformer, sous peine de sanctions financières. En 2026, les premiers contrôles ont commencé.
 

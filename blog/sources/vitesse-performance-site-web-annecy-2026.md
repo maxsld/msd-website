@@ -7,8 +7,9 @@ tags: ["vitesse site web", "Core Web Vitals", "performance web", "site web Annec
 slug: "vitesse-performance-site-web-annecy-2026"
 keyword: "vitesse site web Annecy"
 ---
+## Réponse courte
 
-# Vitesse de site web à Annecy : pourquoi ça coûte des clients (et comment y remédier en 2026)
+Un site lent coûte des clients parce qu'il augmente les abandons, dégrade l'expérience mobile et affaiblit les conversions. À Annecy comme ailleurs, les visiteurs comparent vite et quittent une page qui tarde à s'afficher. Pour corriger le problème, il faut alléger les images, limiter les scripts, optimiser le chargement mobile et surveiller les Core Web Vitals.
 
 Vous avez investi dans un beau site web. Le design est soigné, les textes sont bien écrits, le référencement local est travaillé. Pourtant, les demandes de contact restent rares. La cause est souvent là, invisible au premier regard : votre site charge trop lentement.
 

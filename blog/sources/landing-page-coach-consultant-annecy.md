@@ -7,6 +7,9 @@ tags: ["landing page", "coach", "consultant", "Annecy", "conversion"]
 slug: "landing-page-coach-consultant-annecy"
 keyword: "landing page coach Annecy"
 ---
+## Réponse courte
+
+Pour un coach ou consultant à Annecy, une landing page est souvent plus efficace qu'un site complet si l'objectif est de générer des rendez-vous qualifiés. Elle doit expliquer clairement la cible, le problème traité, la méthode, les résultats possibles, les preuves et le prochain pas. Plus l'offre est spécifique, plus la landing page convertit.
 
 Vous êtes coach ou consultant à Annecy.  
 Vous avez des compétences solides.  

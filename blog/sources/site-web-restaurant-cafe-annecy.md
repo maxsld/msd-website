@@ -7,6 +7,9 @@ tags: ["site web", "restaurant", "café", "Annecy", "réservation"]
 slug: "site-web-restaurant-cafe-annecy"
 keyword: "site web restaurant Annecy"
 ---
+## Réponse courte
+
+Un restaurant ou café à Annecy a besoin d'un site web simple, rapide et à jour pour donner envie, afficher le menu, les horaires, l'adresse, les photos et le moyen de réserver. Le site doit surtout répondre aux questions immédiates des clients sur mobile. S'il est lent, incomplet ou mal référencé localement, il laisse les plateformes et concurrents capter la demande.
 
 Vous avez un restaurant ou un café à Annecy.  
 Vous voulez plus de clients.  

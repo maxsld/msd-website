@@ -7,8 +7,9 @@ tags: ["refonte site internet", "prix refonte", "budget site web", "migration SE
 slug: "combien-coute-refonte-site-internet-2026"
 keyword: "combien coûte une refonte de site internet"
 ---
+## Réponse courte
 
-# Combien coûte une refonte de site internet en 2026 ? Tarifs réels
+Une refonte de site internet coûte généralement entre 1 500 et 15 000 € en 2026 pour un site vitrine, selon l'ampleur du chantier. Une refonte légère modernise le design et quelques contenus ; une refonte complète reprend la structure, le SEO, les textes, la technique et les conversions. Le bon budget dépend surtout du risque à corriger et du rôle commercial du site.
 
 **Une refonte de site internet coûte entre 1 500 et 15 000 € en 2026** pour un site vitrine : comptez 1 500 à 4 000 € pour une refonte partielle (design modernisé, structure conservée) et 3 000 à 15 000 € pour une refonte totale chez un prestataire sérieux, migration SEO incluse. Le poste le plus souvent oublié des devis — la migration SEO — représente à lui seul 15 à 25 % du budget, et c'est pourtant lui qui protège le trafic que votre site a mis des années à construire.
 

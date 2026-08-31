@@ -7,8 +7,9 @@ tags: ["Maxens Soldan", "MSD Media", "fondateur CEO", "étudiant entrepreneur", 
 slug: "qui-est-maxens-parcours-et-vision"
 keyword: "Maxens Soldan"
 ---
+## Réponse courte
 
-# Qui est Maxens Soldan ? Fondateur & CEO de MSD Media
+Maxens Soldan est le fondateur et CEO de MSD Media, une agence web spécialisée dans les sites et landing pages à fort taux de conversion. Son parcours mélange école d'ingénieur, entrepreneuriat et obsession de la performance digitale. Sa vision : créer des sites plus utiles, plus rapides et plus rentables que les vitrines classiques.
 
 Certains attendent d'avoir leur diplôme. D'avoir le bon moment. Les bonnes conditions. Maxens Soldan n'a pas attendu.
 

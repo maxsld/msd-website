@@ -185,6 +185,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/articles/qui-est-maxens-parcours-et-vision/",
+      "destination": "/blog/articles/maxens-soldan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/qui-est-maxens-parcours-et-vision",
+      "destination": "/blog/articles/maxens-soldan/",
+      "permanent": true
+    },
+    {
       "source": "/portfolio/",
       "destination": "/realisations/",
       "permanent": true

@@ -7,6 +7,9 @@ tags: ["site web", "Annecy", "erreurs", "conseils", "création site"]
 slug: "10-erreurs-creation-site-web-annecy"
 keyword: "10 erreurs création site web Annecy"
 ---
+## Réponse courte
+
+Les erreurs les plus coûteuses lors de la création d'un site web à Annecy sont presque toujours les mêmes : choisir uniquement le prix le plus bas, oublier le SEO local, négliger le mobile, publier un site lent ou construire des pages jolies mais incapables de convertir. Pour éviter ça, partez d'un objectif business clair, d'une structure simple, d'un contenu localisé et d'un site rapide pensé pour les demandes de contact.
 
 Tu veux créer un site web à Annecy ?  
 Parfait.

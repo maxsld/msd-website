@@ -7,8 +7,9 @@ tags: ["refonte site internet", "migration SEO", "redirection 301", "création s
 slug: "refonte-site-internet-guide-2026"
 keyword: "refonte site internet"
 ---
+## Réponse courte
 
-# Refonte de site internet : la méthode complète sans perdre son SEO (2026)
+Une refonte de site internet réussie commence par un audit, pas par une maquette. Il faut comprendre ce qui fonctionne déjà, protéger le SEO, clarifier la structure, réécrire les pages importantes, gérer les redirections et tester avant mise en ligne. Une refonte doit améliorer le site sans effacer ce qui générait déjà du trafic ou des conversions.
 
 Une **refonte de site internet** consiste à reconstruire partiellement ou totalement un site existant : design, structure, contenus, technologie. Bien menée, elle augmente le trafic et les conversions. Mal menée, elle peut faire perdre **30 à 70 % du trafic organique en quelques semaines** — et ce trafic met des mois à revenir.
 

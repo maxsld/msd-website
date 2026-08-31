@@ -7,8 +7,9 @@ tags: ["SEO local", "IA", "Google AI Overviews", "GEO", "PME", "MSD Media"]
 slug: "seo-local-ia-2026"
 keyword: "SEO local IA 2026 recherches proximité PME France"
 ---
+## Réponse courte
 
-# SEO local en 2026 : comment les IA transforment les recherches de proximité
+Le SEO local en 2026 ne consiste plus seulement à apparaître dans Google Maps. Les IA recommandent directement des prestataires, comparent les options et synthétisent les avis. Pour être visible localement, il faut des pages par ville solides, une fiche Google Business Profile cohérente, des avis récents, des mentions externes et des réponses claires aux questions des clients proches de vous.
 
 "Plombier urgent Lyon", "meilleure agence web à Bordeaux", "restaurant gastronomique ouvert ce soir Rennes"... Les recherches locales représentent 46% de toutes les recherches Google. Et en 2026, elles sont en train d'être transformées par l'IA générative.
 

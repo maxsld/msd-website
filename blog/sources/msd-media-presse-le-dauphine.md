@@ -7,8 +7,9 @@ tags: ["MSD Media", "Le Dauphiné Libéré", "presse", "Maxens Soldan", "agence 
 slug: "msd-media-presse-le-dauphine"
 keyword: "MSD Media Le Dauphiné"
 ---
+## Réponse courte
 
-# MSD Media dans Le Dauphiné Libéré : portrait presse
+MSD Media a fait l'objet d'un portrait dans Le Dauphiné Libéré, ce qui renforce la crédibilité locale de l'agence et de son fondateur Maxens Soldan. Cet article presse confirme l'ancrage annécien de MSD Media et donne un signal de confiance supplémentaire aux entreprises qui cherchent une agence web spécialisée dans les sites et landing pages orientés conversion.
 
 **MSD Media** fait l'objet d'un portrait dans **Le Dauphiné Libéré**, qui consacre un article à l'agence web annécienne fondée par l'étudiant-entrepreneur **Maxens Soldan**. Une reconnaissance presse pour une agence qui, en moins d'un an, s'est imposée comme une référence locale en création de sites web et de landing pages orientées conversion.
 

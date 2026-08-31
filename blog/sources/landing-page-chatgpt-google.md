@@ -7,8 +7,9 @@ tags: ["landing page", "ChatGPT", "SEO", "GEO", "conversion", "MSD Media"]
 slug: "landing-page-chatgpt-google"
 keyword: "landing page ChatGPT Google ranking 2026 structure"
 ---
+## Réponse courte
 
-# Comment une landing page bien structurée ranke sur ChatGPT ET Google simultanément
+Une landing page peut ranker sur Google et être comprise par ChatGPT si elle combine une structure SEO propre avec des réponses explicites. Il faut une promesse claire, des sections bien nommées, des preuves, des données structurées, des FAQ utiles et un contenu assez précis pour être cité par une IA sans perdre sa force commerciale.
 
 La plupart des gens pensent que SEO et GEO nécessitent des contenus séparés. C'est faux. Une landing page bien construite peut simultanément :
 - Ranker sur Google pour des requêtes commerciales locales

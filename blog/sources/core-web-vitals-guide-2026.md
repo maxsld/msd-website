@@ -7,8 +7,9 @@ tags: ["core web vitals", "vitesse site web", "LCP", "INP", "CLS", "performance 
 slug: "core-web-vitals-guide-2026"
 keyword: "core web vitals"
 ---
+## Réponse courte
 
-# Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS)
+Les Core Web Vitals mesurent la vitesse perçue, la réactivité et la stabilité visuelle d'un site. Pour passer au vert en 2026, il faut surtout améliorer le LCP, réduire l'INP et éviter le CLS : images trop lourdes, scripts inutiles, polices mal chargées et éléments qui bougent au chargement sont les causes les plus fréquentes.
 
 Les **Core Web Vitals** sont les trois métriques par lesquelles Google mesure l'expérience réelle des visiteurs d'un site : le **LCP** (vitesse d'affichage), l'**INP** (réactivité aux interactions) et le **CLS** (stabilité visuelle). Depuis leur intégration à l'algorithme, ils influencent directement le classement dans les résultats de recherche — et surtout, ils déterminent si un visiteur reste ou repart.
 

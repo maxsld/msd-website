@@ -7,8 +7,9 @@ tags: ["site web artisan Annecy", "site web TPE Annecy", "création site web Ann
 slug: "site-web-artisan-tpe-annecy"
 keyword: "site web artisan Annecy"
 ---
+## Réponse courte
 
-# Site web pour artisan et TPE à Annecy : ce qu'il faut vraiment (et ce qu'il ne faut pas)
+Un artisan ou une TPE à Annecy n'a pas besoin d'un site compliqué : il lui faut un site clair, rapide, rassurant et visible localement. Les pages doivent expliquer les services, la zone d'intervention, les preuves de sérieux, les avis et le moyen de contact. Le bon site est celui qui génère des demandes qualifiées, pas celui qui accumule les effets visuels.
 
 Vous êtes plombier, électricien, coach, thérapeute, photographe ou consultant à Annecy. Vous savez que vous avez besoin d'un site web. Mais entre les offres à 300 € sur Wix, les agences qui vous proposent 15 000 € de développement sur mesure et les templates WordPress en libre accès, difficile de savoir quoi faire.
 

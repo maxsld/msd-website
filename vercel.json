@@ -195,6 +195,166 @@
       "permanent": true
     },
     {
+      "source": "/website/creation-sites-web-:city/",
+      "destination": "/agence-web-:city/",
+      "permanent": true
+    },
+    {
+      "source": "/website/creation-sites-web-:city",
+      "destination": "/agence-web-:city/",
+      "permanent": true
+    },
+    {
+      "source": "/website/aix-les-bains/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/website/aix-les-bains",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/website/:city/",
+      "destination": "/agence-web-:city/",
+      "permanent": true
+    },
+    {
+      "source": "/website/:city",
+      "destination": "/agence-web-:city/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/landing-page-agency-:city/",
+      "destination": "/agence-web-:city/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/landing-page-agency-:city",
+      "destination": "/agence-web-:city/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/annecy-innovation/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/chambery-startup/",
+      "destination": "/agence-web-chambery/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/geneve/",
+      "destination": "/agence-web-geneve/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/lyon/",
+      "destination": "/agence-web-lyon/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/strasbourg/",
+      "destination": "/agence-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/incubateur-la-motte-servolex/",
+      "destination": "/agence-web-chambery/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/startup-albertville/",
+      "destination": "/agence-web-chambery/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/incubateur-aix-les-bains/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/incubateur-annemasse/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/incubateur-la-roche-sur-foron/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/incubateur-bonneville/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/incubateur-thonon/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/startup-sallanches/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/startup-cluses/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/:slug*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/website/:slug*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/call/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/call",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/affiliation.html",
+      "destination": "/affiliation/",
+      "permanent": true
+    },
+    {
+      "source": "/confirmation-paiment-lancement-projet/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/confirmation-paiment-lancement-projet",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/freetools/best-template-landing-page-2025/",
+      "destination": "/blog/articles/template-2026-landing-page/",
+      "permanent": true
+    },
+    {
+      "source": "/freetools/best-template-landing-page-2025",
+      "destination": "/blog/articles/template-2026-landing-page/",
+      "permanent": true
+    },
+    {
+      "source": "/freetools/:slug*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
       "source": "/blog/blog.html",
       "destination": "/blog/",
       "permanent": true

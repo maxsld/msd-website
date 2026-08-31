@@ -2107,6 +2107,7 @@ position: relative;
 }
 
 .case-study-cta-band a.hero__btn {
+  border-radius: 0.2rem;
   text-decoration: none;
 }
 

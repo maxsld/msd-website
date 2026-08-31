@@ -1,0 +1,713 @@
+<title>Maillage MSD Media</title>
+<meta name="robots" content="noindex, nofollow" />
+<style>
+  :root {
+    --bg: #0a0a0b;
+    --surface: #131315;
+    --surface-2: #1a1a1d;
+    --border: rgba(255, 255, 255, 0.09);
+    --border-strong: rgba(255, 255, 255, 0.16);
+    --text: #f3f2f4;
+    --text-muted: rgba(243, 242, 244, 0.56);
+    --text-faint: rgba(243, 242, 244, 0.34);
+    --accent: #2f6bff;
+    --accent-soft: rgba(47, 107, 255, 0.16);
+    --orphan: #f5a623;
+    --dead: #ff5c6c;
+    --cat-home: #f3f2f4;
+    --cat-blog: #2f6bff;
+    --cat-city: #a78bfa;
+    --cat-case: #34d399;
+    --cat-legal: #6b7280;
+    --cat-page: #7dd3fc;
+    --font-display: "Instrument Serif", Georgia, serif;
+    --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  :root[data-theme="light"] {
+    --bg: #0a0a0b;
+    --surface: #131315;
+    --surface-2: #1a1a1d;
+    --border: rgba(255, 255, 255, 0.09);
+    --border-strong: rgba(255, 255, 255, 0.16);
+    --text: #f3f2f4;
+    --text-muted: rgba(243, 242, 244, 0.56);
+    --text-faint: rgba(243, 242, 244, 0.34);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  ::selection { background: var(--accent-soft); }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 400; margin: 0; text-wrap: balance; }
+
+  /* ---------- Top bar ---------- */
+  .topbar {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 0.85rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, var(--surface), var(--bg));
+    z-index: 10;
+  }
+  .topbar__title {
+    font-size: 1.3rem;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+  .topbar__title small {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-faint);
+    margin-top: 0.15rem;
+  }
+  .stats {
+    display: flex;
+    gap: 1.4rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat { display: flex; flex-direction: column; line-height: 1.15; cursor: default; }
+  .stat b { font-size: 1.05rem; font-weight: 600; }
+  .stat span { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-faint); }
+  .stat.is-clickable { cursor: pointer; }
+  .stat.is-clickable:hover b { color: var(--accent); }
+  .stat.warn b { color: var(--orphan); }
+  .stat.dead b { color: var(--dead); }
+
+  .search-wrap { margin-left: auto; position: relative; }
+  #search {
+    width: 220px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    padding: 0.48rem 0.7rem;
+    outline: none;
+    transition: border-color 150ms ease, width 150ms ease;
+  }
+  #search:focus { border-color: var(--accent); width: 260px; }
+  #search::placeholder { color: var(--text-faint); }
+
+  /* ---------- Layout ---------- */
+  .layout { flex: 1 1 auto; display: flex; min-height: 0; }
+  #canvas-wrap { position: relative; flex: 1 1 auto; min-width: 0; }
+  canvas { display: block; width: 100%; height: 100%; cursor: grab; }
+  canvas.is-dragging { cursor: grabbing; }
+
+  .sidebar {
+    flex: 0 0 300px;
+    border-left: 1px solid var(--border);
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .sidebar__section {
+    padding: 1rem 1.1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .sidebar__label {
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    margin-bottom: 0.65rem;
+  }
+
+  .toggle-row { display: flex; align-items: center; justify-content: space-between; padding: 0.3rem 0; font-size: 0.84rem; }
+  .toggle-row .n { color: var(--text-faint); font-variant-numeric: tabular-nums; font-size: 0.76rem; }
+  .switch { position: relative; width: 34px; height: 19px; flex: 0 0 auto; }
+  .switch input { opacity: 0; width: 100%; height: 100%; margin: 0; position: absolute; cursor: pointer; }
+  .switch .track { position: absolute; inset: 0; background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: 999px; transition: background 150ms ease; }
+  .switch .thumb { position: absolute; top: 2px; left: 2px; width: 13px; height: 13px; border-radius: 50%; background: var(--text-faint); transition: transform 150ms ease, background 150ms ease; }
+  .switch input:checked ~ .track { background: var(--accent-soft); border-color: var(--accent); }
+  .switch input:checked ~ .track ~ .thumb { transform: translateX(15px); background: var(--accent); }
+
+  .legend-row { display: flex; align-items: center; gap: 0.55rem; padding: 0.28rem 0; font-size: 0.82rem; cursor: pointer; user-select: none; }
+  .legend-row.is-off { opacity: 0.35; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; }
+  .legend-row .n { margin-left: auto; color: var(--text-faint); font-size: 0.74rem; font-variant-numeric: tabular-nums; }
+
+  .empty-hint {
+    padding: 1.4rem 1.1rem;
+    color: var(--text-faint);
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+
+  .node-card { padding: 1rem 1.1rem; }
+  .node-card__cat { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-faint); margin-bottom: 0.3rem; }
+  .node-card__path { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.86rem; color: var(--text); word-break: break-all; margin-bottom: 0.7rem; line-height: 1.4; }
+  .node-card__metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 0.85rem; }
+  .metric { background: var(--surface-2); border: 1px solid var(--border); border-radius: 0.4rem; padding: 0.5rem 0.6rem; }
+  .metric b { display: block; font-size: 1rem; font-variant-numeric: tabular-nums; }
+  .metric span { font-size: 0.66rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.06em; }
+  .node-card__open {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    color: var(--accent); text-decoration: none; font-size: 0.82rem; font-weight: 500;
+    border: 1px solid var(--accent); border-radius: 0.4rem; padding: 0.42rem 0.7rem;
+  }
+  .node-card__open:hover { background: var(--accent-soft); }
+  .link-list { margin-top: 0.9rem; }
+  .link-list h4 { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-faint); font-weight: 500; font-family: var(--font-body); margin: 0 0 0.4rem; }
+  .link-list ul { list-style: none; margin: 0; padding: 0; max-height: 140px; overflow-y: auto; }
+  .link-list li { font-size: 0.78rem; padding: 0.22rem 0; color: var(--text-muted); font-family: ui-monospace, monospace; cursor: pointer; border-radius: 0.25rem; }
+  .link-list li:hover { color: var(--accent); }
+
+  .panel-list { padding: 0.4rem 1.1rem 1rem; }
+  .panel-list ul { list-style: none; margin: 0; padding: 0; }
+  .panel-list li { font-size: 0.78rem; font-family: ui-monospace, monospace; padding: 0.3rem 0; border-bottom: 1px dashed var(--border); color: var(--text-muted); cursor: pointer; }
+  .panel-list li:hover { color: var(--orphan); }
+  .panel-list li.dead-item { color: var(--dead); cursor: default; }
+  .panel-list .arrow { color: var(--text-faint); margin: 0 0.3rem; }
+
+  #tooltip {
+    position: fixed;
+    pointer-events: none;
+    background: var(--surface-2);
+    border: 1px solid var(--border-strong);
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.78rem;
+    font-family: ui-monospace, monospace;
+    color: var(--text);
+    opacity: 0;
+    transition: opacity 100ms ease;
+    z-index: 50;
+    max-width: 320px;
+    word-break: break-all;
+  }
+
+  .zoom-controls {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .zoom-btn {
+    width: 30px; height: 30px;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 0.35rem;
+    color: var(--text-muted);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .zoom-btn:hover { color: var(--text); border-color: var(--accent); }
+
+  .credit {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.7rem;
+    color: var(--text-faint);
+    font-family: ui-monospace, monospace;
+  }
+
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+
+<div class="topbar">
+  <div class="topbar__title">Maillage<small>msd-media.com &middot; usage interne</small></div>
+  <div class="stats">
+    <div class="stat"><b id="stat-pages">0</b><span>Pages</span></div>
+    <div class="stat"><b id="stat-edges">0</b><span>Liens (contenu)</span></div>
+    <div class="stat warn is-clickable" id="stat-orphans-btn"><b id="stat-orphans">0</b><span>Orphelines</span></div>
+    <div class="stat dead is-clickable" id="stat-dead-btn"><b id="stat-dead">0</b><span>Liens morts</span></div>
+  </div>
+  <div class="search-wrap">
+    <input id="search" type="text" placeholder="Rechercher une page…" autocomplete="off" />
+  </div>
+</div>
+
+<div class="layout">
+  <div id="canvas-wrap">
+    <canvas id="graph"></canvas>
+    <div class="zoom-controls">
+      <button class="zoom-btn" id="zoom-in" title="Zoomer">+</button>
+      <button class="zoom-btn" id="zoom-out" title="Dézoomer">&minus;</button>
+      <button class="zoom-btn" id="zoom-reset" title="Réinitialiser">&#8634;</button>
+    </div>
+    <div id="tooltip"></div>
+    <div class="credit">généré le <span id="gen-date"></span></div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar__section">
+      <div class="sidebar__label">Zones de liens</div>
+      <label class="toggle-row">
+        <span>Contenu</span>
+        <span class="switch"><input type="checkbox" id="toggle-content" checked /><span class="track"></span><span class="thumb"></span></span>
+      </label>
+      <label class="toggle-row">
+        <span>Navigation</span>
+        <span class="switch"><input type="checkbox" id="toggle-nav" /><span class="track"></span><span class="thumb"></span></span>
+      </label>
+      <label class="toggle-row">
+        <span>Footer</span>
+        <span class="switch"><input type="checkbox" id="toggle-footer" /><span class="track"></span><span class="thumb"></span></span>
+      </label>
+    </div>
+
+    <div class="sidebar__section" id="legend-section">
+      <div class="sidebar__label">Catégories</div>
+      <!-- legend rows injected by JS -->
+    </div>
+
+    <div class="sidebar__section" id="detail-section" style="flex: 1 1 auto;">
+      <div class="empty-hint">Clique un nœud pour voir ses liens entrants et sortants, ou utilise la recherche. Glisse pour déplacer, molette pour zoomer.</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+  const DATA = __GRAPH_DATA_JSON__;
+
+  const CAT_LABEL = {
+    home: "Accueil",
+    "blog-article": "Article de blog",
+    "blog-index": "Index blog",
+    "city-page": "Page ville",
+    "case-study": "Étude de cas",
+    legal: "Légal",
+    page: "Page",
+  };
+  const CAT_COLOR = {
+    home: "#f3f2f4",
+    "blog-article": "#2f6bff",
+    "blog-index": "#2f6bff",
+    "city-page": "#a78bfa",
+    "case-study": "#34d399",
+    legal: "#6b7280",
+    page: "#7dd3fc",
+  };
+  const ORPHAN_COLOR = "#f5a623";
+  const DEAD_COLOR = "#ff5c6c";
+
+  document.getElementById("gen-date").textContent = new Date(DATA.generatedAt).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+  document.getElementById("stat-pages").textContent = DATA.stats.pages;
+  document.getElementById("stat-orphans").textContent = DATA.stats.orphans;
+  document.getElementById("stat-dead").textContent = DATA.stats.deadLinks;
+
+  // ---- Build legend ----
+  const catCounts = {};
+  DATA.nodes.forEach((n) => { if (n.exists) catCounts[n.category] = (catCounts[n.category] || 0) + 1; });
+  const activeCats = new Set(Object.keys(CAT_LABEL));
+  const legendSection = document.getElementById("legend-section");
+  Object.keys(CAT_LABEL).forEach((cat) => {
+    if (!catCounts[cat]) return;
+    const row = document.createElement("div");
+    row.className = "legend-row";
+    row.dataset.cat = cat;
+    row.innerHTML = `<span class="dot" style="background:${CAT_COLOR[cat]}"></span><span>${CAT_LABEL[cat]}</span><span class="n">${catCounts[cat]}</span>`;
+    row.addEventListener("click", () => {
+      if (activeCats.has(cat)) { activeCats.delete(cat); row.classList.add("is-off"); }
+      else { activeCats.add(cat); row.classList.remove("is-off"); }
+      rebuildSimulation();
+    });
+    legendSection.appendChild(row);
+  });
+  const orphanRow = document.createElement("div");
+  orphanRow.className = "legend-row";
+  orphanRow.innerHTML = `<span class="dot" style="background:${ORPHAN_COLOR}"></span><span>Orpheline (0 lien entrant)</span>`;
+  legendSection.appendChild(orphanRow);
+
+  // ---- Node index ----
+  const nodeById = new Map(DATA.nodes.map((n) => [n.id, n]));
+  function label(id) {
+    const seg = id.replace(/\/$/, "").split("/").filter(Boolean).pop() || "accueil";
+    return seg.replace(/-/g, " ");
+  }
+  DATA.nodes.forEach((n) => { n.label = label(n.id); n.isOrphan = n.exists && n.inboundContent === 0 && n.id !== "/"; });
+
+  // ---- Simulation state ----
+  const canvas = document.getElementById("graph");
+  const ctx = canvas.getContext("2d");
+  const wrap = document.getElementById("canvas-wrap");
+  let width, height, dpr;
+  let transform = d3.zoomIdentity;
+  let simNodes = [];
+  let simLinks = [];
+  let simulation;
+  let hoveredNode = null;
+  let selectedNode = null;
+
+  function resize() {
+    dpr = window.devicePixelRatio || 1;
+    width = wrap.clientWidth;
+    height = wrap.clientHeight;
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    canvas.style.width = width + "px";
+    canvas.style.height = height + "px";
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  resize();
+  window.addEventListener("resize", () => { resize(); draw(); });
+
+  function activeZones() {
+    const z = [];
+    if (document.getElementById("toggle-content").checked) z.push("content");
+    if (document.getElementById("toggle-nav").checked) z.push("nav");
+    if (document.getElementById("toggle-footer").checked) z.push("footer");
+    return new Set(z);
+  }
+
+  function rebuildSimulation() {
+    const zones = activeZones();
+    const visibleNodeIds = new Set(DATA.nodes.filter((n) => n.exists && activeCats.has(n.category)).map((n) => n.id));
+
+    const edgesFiltered = DATA.edges.filter((e) => zones.has(e.zone) && visibleNodeIds.has(e.source) && visibleNodeIds.has(e.target));
+    const connected = new Set();
+    edgesFiltered.forEach((e) => { connected.add(e.source); connected.add(e.target); });
+
+    const prevPos = new Map(simNodes.map((n) => [n.id, n]));
+    simNodes = [...visibleNodeIds].map((id) => {
+      const base = nodeById.get(id);
+      const prev = prevPos.get(id);
+      return {
+        id,
+        category: base.category,
+        isOrphan: base.isOrphan,
+        inboundContent: base.inboundContent,
+        inboundNav: base.inboundNav,
+        inboundFooter: base.inboundFooter,
+        outboundContent: base.outboundContent,
+        label: base.label,
+        degree: (connected.has(id) ? 1 : 0),
+        x: prev ? prev.x : width / 2 + (Math.random() - 0.5) * 40,
+        y: prev ? prev.y : height / 2 + (Math.random() - 0.5) * 40,
+      };
+    });
+    const nodeMap = new Map(simNodes.map((n) => [n.id, n]));
+    simLinks = edgesFiltered.map((e) => ({ source: nodeMap.get(e.source), target: nodeMap.get(e.target), zone: e.zone, weight: e.weight }));
+
+    document.getElementById("stat-edges").textContent = simLinks.length;
+
+    if (simulation) simulation.stop();
+    simulation = d3.forceSimulation(simNodes)
+      .force("link", d3.forceLink(simLinks).id((d) => d.id).distance(46).strength(0.25))
+      .force("charge", d3.forceManyBody().strength(-80).distanceMax(460))
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .force("collide", d3.forceCollide().radius((d) => nodeRadius(d) + 3))
+      .alpha(1)
+      .on("tick", draw)
+      .on("end", fitToView);
+
+    // Frame the graph early too, so the viewer doesn't sit on an empty
+    // canvas while the simulation is still settling.
+    clearTimeout(rebuildSimulation._fitTimer);
+    rebuildSimulation._fitTimer = setTimeout(fitToView, 600);
+  }
+
+  function nodeRadius(d) {
+    const base = d.id === "/" ? 13 : 5.5;
+    return base + Math.sqrt(d.inboundContent + d.inboundNav * 0.15 + d.inboundFooter * 0.05) * 2.1;
+  }
+
+  function nodeColor(d) {
+    if (d.isOrphan) return ORPHAN_COLOR;
+    return CAT_COLOR[d.category] || "#7dd3fc";
+  }
+
+  function draw() {
+    ctx.save();
+    ctx.clearRect(0, 0, width, height);
+    const bgGrad = ctx.createRadialGradient(width / 2, height / 2, 0, width / 2, height / 2, Math.max(width, height) * 0.7);
+    bgGrad.addColorStop(0, "#101013");
+    bgGrad.addColorStop(1, "#08080a");
+    ctx.fillStyle = bgGrad;
+    ctx.fillRect(0, 0, width, height);
+    ctx.translate(transform.x, transform.y);
+    ctx.scale(transform.k, transform.k);
+
+    const highlight = selectedNode || hoveredNode;
+    const neighborIds = highlight ? new Set(simLinks.filter((l) => l.source.id === highlight.id || l.target.id === highlight.id).flatMap((l) => [l.source.id, l.target.id])) : null;
+
+    // edges
+    simLinks.forEach((l) => {
+      const dim = highlight && !(neighborIds.has(l.source.id) && neighborIds.has(l.target.id));
+      ctx.beginPath();
+      ctx.moveTo(l.source.x, l.source.y);
+      ctx.lineTo(l.target.x, l.target.y);
+      const baseAlpha = l.zone === "content" ? 0.5 : l.zone === "nav" ? 0.18 : 0.12;
+      ctx.strokeStyle = highlight ? (dim ? `rgba(255,255,255,${baseAlpha * 0.12})` : "rgba(79,140,255,0.9)") : `rgba(255,255,255,${baseAlpha})`;
+      ctx.lineWidth = (highlight && !dim ? 1.6 : 0.85) / transform.k;
+      ctx.stroke();
+    });
+
+    // nodes
+    simNodes.forEach((n) => {
+      const dim = highlight && n.id !== highlight.id && !neighborIds.has(n.id);
+      const r = nodeRadius(n);
+      ctx.globalAlpha = dim ? 0.22 : 1;
+      if (!dim) {
+        ctx.shadowColor = nodeColor(n);
+        ctx.shadowBlur = (n.id === "/" ? 16 : 8) / transform.k;
+      }
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+      ctx.fillStyle = nodeColor(n);
+      ctx.fill();
+      ctx.shadowBlur = 0;
+      if (n.id === "/" || (highlight && n.id === highlight.id)) {
+        ctx.lineWidth = 2 / transform.k;
+        ctx.strokeStyle = "#ffffff";
+        ctx.stroke();
+      }
+      ctx.globalAlpha = 1;
+
+      const showLabel = !dim && (transform.k > 0.55 || n.id === "/" || n.inboundContent >= 6 || n.id === (highlight && highlight.id));
+      if (showLabel) {
+        const fontSize = Math.max(9.5, Math.min(13, 11 / Math.max(transform.k, 0.6)));
+        ctx.font = `${n.id === "/" ? 600 : 500} ${fontSize}px Inter, sans-serif`;
+        const tw = ctx.measureText(n.label).width;
+        ctx.fillStyle = "rgba(10,10,11,0.72)";
+        ctx.fillRect(n.x + r + 2, n.y - fontSize * 0.72, tw + 6, fontSize * 1.4);
+        ctx.fillStyle = highlight && n.id === highlight.id ? "#ffffff" : "rgba(243,242,244,0.86)";
+        ctx.fillText(n.label, n.x + r + 5, n.y + fontSize * 0.32);
+      }
+    });
+
+    ctx.restore();
+  }
+
+  // ---- Hit testing ----
+  function findNodeAt(simX, simY) {
+    let found = null;
+    let minDist = Infinity;
+    for (const n of simNodes) {
+      const r = nodeRadius(n) + 3;
+      const d = Math.hypot(n.x - simX, n.y - simY);
+      if (d < r && d < minDist) { found = n; minDist = d; }
+    }
+    return found;
+  }
+  function eventToSim(event) {
+    const [px, py] = d3.pointer(event, canvas);
+    return [(px - transform.x) / transform.k, (py - transform.y) / transform.k];
+  }
+
+  // ---- Zoom / pan (canonical d3.zoom on canvas) ----
+  // filter() runs synchronously on the same pointerdown/mousedown event that
+  // d3.drag's subject() also inspects -- deciding here (rather than via a
+  // flag toggled inside drag's "start" handler, which fires too late) is
+  // what keeps pan-the-canvas and drag-a-node from fighting over the same
+  // gesture.
+  const zoomBehavior = d3.zoom()
+    .scaleExtent([0.12, 8])
+    .filter((event) => {
+      if (event.button) return false;
+      if (event.type === "wheel") return true;
+      const [x, y] = eventToSim(event);
+      return !findNodeAt(x, y);
+    })
+    .on("zoom", (event) => { transform = event.transform; draw(); });
+  d3.select(canvas).call(zoomBehavior);
+
+  document.getElementById("zoom-in").addEventListener("click", () => d3.select(canvas).transition().duration(200).call(zoomBehavior.scaleBy, 1.4));
+  document.getElementById("zoom-out").addEventListener("click", () => d3.select(canvas).transition().duration(200).call(zoomBehavior.scaleBy, 1 / 1.4));
+  document.getElementById("zoom-reset").addEventListener("click", fitToView);
+
+  // ---- Drag (canonical d3.drag with a subject hit-test, composed alongside zoom) ----
+  let draggingNodeActive = false;
+  const dragBehavior = d3.drag()
+    .subject((event) => {
+      const [x, y] = eventToSim(event);
+      return findNodeAt(x, y);
+    })
+    .on("start", (event) => {
+      draggingNodeActive = true;
+      canvas.classList.add("is-dragging");
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      event.subject.fx = event.subject.x;
+      event.subject.fy = event.subject.y;
+    })
+    .on("drag", (event) => {
+      const [x, y] = eventToSim(event);
+      event.subject.fx = x;
+      event.subject.fy = y;
+    })
+    .on("end", (event) => {
+      draggingNodeActive = false;
+      canvas.classList.remove("is-dragging");
+      if (!event.active) simulation.alphaTarget(0);
+      event.subject.fx = null;
+      event.subject.fy = null;
+    });
+  d3.select(canvas).call(dragBehavior);
+
+  // ---- Hover tooltip (separate from drag/zoom, only when idle) ----
+  canvas.addEventListener("pointermove", (e) => {
+    if (draggingNodeActive) return;
+    const rect = canvas.getBoundingClientRect();
+    const px = e.clientX - rect.left, py = e.clientY - rect.top;
+    const [x, y] = [(px - transform.x) / transform.k, (py - transform.y) / transform.k];
+    const n = findNodeAt(x, y);
+    hoveredNode = n;
+    const tooltip = document.getElementById("tooltip");
+    if (n) {
+      tooltip.style.opacity = 1;
+      tooltip.style.left = e.clientX + 14 + "px";
+      tooltip.style.top = e.clientY + 14 + "px";
+      tooltip.textContent = n.id;
+      canvas.style.cursor = "pointer";
+    } else {
+      tooltip.style.opacity = 0;
+      canvas.style.cursor = "grab";
+    }
+    draw();
+  });
+  canvas.addEventListener("pointerleave", () => {
+    hoveredNode = null;
+    document.getElementById("tooltip").style.opacity = 0;
+    draw();
+  });
+
+  let downAt = null;
+  canvas.addEventListener("pointerdown", (e) => { downAt = [e.clientX, e.clientY]; });
+  canvas.addEventListener("click", (e) => {
+    if (downAt && Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) > 4) return;
+    const rect = canvas.getBoundingClientRect();
+    const px = e.clientX - rect.left, py = e.clientY - rect.top;
+    const [x, y] = [(px - transform.x) / transform.k, (py - transform.y) / transform.k];
+    selectNode(findNodeAt(x, y));
+  });
+  canvas.addEventListener("dblclick", (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const px = e.clientX - rect.left, py = e.clientY - rect.top;
+    const [x, y] = [(px - transform.x) / transform.k, (py - transform.y) / transform.k];
+    const n = findNodeAt(x, y);
+    if (n) window.open("https://msd-media.com" + n.id, "_blank");
+  });
+
+  // ---- Fit the whole graph in view ----
+  function fitToView() {
+    if (!simNodes.length) return;
+    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+    simNodes.forEach((n) => {
+      minX = Math.min(minX, n.x); maxX = Math.max(maxX, n.x);
+      minY = Math.min(minY, n.y); maxY = Math.max(maxY, n.y);
+    });
+    const gw = Math.max(maxX - minX, 60), gh = Math.max(maxY - minY, 60);
+    const scale = Math.min(6, Math.max(0.12, Math.min((width - 80) / gw, (height - 80) / gh)));
+    const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    const t = d3.zoomIdentity.translate(width / 2 - cx * scale, height / 2 - cy * scale).scale(scale);
+    d3.select(canvas).transition().duration(450).call(zoomBehavior.transform, t);
+  }
+
+  // ---- Selection / detail panel ----
+  function selectNode(n) {
+    selectedNode = n;
+    draw();
+    const section = document.getElementById("detail-section");
+    if (!n) {
+      section.innerHTML = '<div class="empty-hint">Clique un nœud pour voir ses liens entrants et sortants, ou utilise la recherche. Glisse pour déplacer, molette pour zoomer.</div>';
+      return;
+    }
+    const incoming = simLinks.filter((l) => l.target.id === n.id).map((l) => l.source.id);
+    const outgoing = simLinks.filter((l) => l.source.id === n.id).map((l) => l.target.id);
+    section.innerHTML = `
+      <div class="node-card">
+        <div class="node-card__cat">${CAT_LABEL[n.category] || n.category}${n.isOrphan ? " · orpheline" : ""}</div>
+        <div class="node-card__path">${n.id}</div>
+        <div class="node-card__metrics">
+          <div class="metric"><b>${n.inboundContent}</b><span>Entrants (contenu)</span></div>
+          <div class="metric"><b>${n.outboundContent}</b><span>Sortants (contenu)</span></div>
+          <div class="metric"><b>${n.inboundNav}</b><span>Entrants (nav)</span></div>
+          <div class="metric"><b>${n.inboundFooter}</b><span>Entrants (footer)</span></div>
+        </div>
+        <a class="node-card__open" href="https://msd-media.com${n.id}" target="_blank" rel="noopener">Ouvrir la page ↗</a>
+        <div class="link-list">
+          <h4>Reçoit un lien de (${incoming.length})</h4>
+          <ul>${incoming.length ? incoming.map((id) => `<li data-id="${id}">${id}</li>`).join("") : '<li style="cursor:default;color:var(--text-faint)">Aucun</li>'}</ul>
+        </div>
+        <div class="link-list">
+          <h4>Lie vers (${outgoing.length})</h4>
+          <ul>${outgoing.length ? outgoing.map((id) => `<li data-id="${id}">${id}</li>`).join("") : '<li style="cursor:default;color:var(--text-faint)">Aucun</li>'}</ul>
+        </div>
+      </div>
+    `;
+    section.querySelectorAll(".link-list li[data-id]").forEach((li) => {
+      li.addEventListener("click", () => {
+        const target = simNodes.find((sn) => sn.id === li.dataset.id);
+        if (target) { centerOn(target); selectNode(target); }
+      });
+    });
+  }
+
+  function centerOn(n) {
+    const scale = Math.max(transform.k, 1.4);
+    const t = d3.zoomIdentity.translate(width / 2 - n.x * scale, height / 2 - n.y * scale).scale(scale);
+    d3.select(canvas).transition().duration(400).call(zoomBehavior.transform, t);
+  }
+
+  // ---- Orphans / dead links panels ----
+  document.getElementById("stat-orphans-btn").addEventListener("click", () => {
+    const orphans = DATA.nodes.filter((n) => n.isOrphan);
+    const section = document.getElementById("detail-section");
+    section.innerHTML = `<div class="sidebar__label" style="padding:1rem 1.1rem 0;">${orphans.length} pages sans lien entrant depuis un contenu</div>
+      <div class="panel-list"><ul>${orphans.map((n) => `<li data-id="${n.id}">${n.id}</li>`).join("")}</ul></div>`;
+    section.querySelectorAll("li[data-id]").forEach((li) => {
+      li.addEventListener("click", () => {
+        const target = simNodes.find((sn) => sn.id === li.dataset.id);
+        if (target) { centerOn(target); selectNode(target); }
+      });
+    });
+  });
+  document.getElementById("stat-dead-btn").addEventListener("click", () => {
+    const section = document.getElementById("detail-section");
+    section.innerHTML = `<div class="sidebar__label" style="padding:1rem 1.1rem 0;">${DATA.deadLinks.length} liens vers une page inexistante</div>
+      <div class="panel-list"><ul>${DATA.deadLinks.map((d) => `<li class="dead-item">${d.from}<span class="arrow">→</span>${d.to}</li>`).join("")}</ul></div>`;
+  });
+
+  // ---- Search ----
+  const searchInput = document.getElementById("search");
+  searchInput.addEventListener("input", () => {
+    const q = searchInput.value.trim().toLowerCase();
+    if (!q) { selectNode(null); draw(); return; }
+    const match = simNodes.find((n) => n.id.toLowerCase().includes(q) || n.label.toLowerCase().includes(q));
+    if (match) { hoveredNode = match; centerOn(match); }
+    draw();
+  });
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      const q = searchInput.value.trim().toLowerCase();
+      const match = simNodes.find((n) => n.id.toLowerCase().includes(q) || n.label.toLowerCase().includes(q));
+      if (match) selectNode(match);
+    }
+  });
+
+  // ---- Zone toggles ----
+  ["toggle-content", "toggle-nav", "toggle-footer"].forEach((id) => {
+    document.getElementById(id).addEventListener("change", rebuildSimulation);
+  });
+
+  rebuildSimulation();
+</script>

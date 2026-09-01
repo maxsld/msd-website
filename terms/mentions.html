@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
   <link rel="dns-prefetch" href="https://kit.fontawesome.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"></noscript>
   <link rel="icon" type="image/png" href="https://msd-media.com/assets/img/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="https://msd-media.com/assets/img/favicon.svg" />
   <link rel="shortcut icon" href="https://msd-media.com/assets/img/favicon.ico" />
@@ -47,6 +47,15 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-P28B6QRF');</script>
   <!-- End Google Tag Manager -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.js-email-link').forEach(function (el) {
+    var addr = el.getAttribute('data-u') + '@' + el.getAttribute('data-d');
+    el.setAttribute('href', 'mailto:' + addr);
+    if (el.textContent.trim() && !el.querySelector('i')) el.textContent = addr;
+  });
+});
+</script>
 </head>
 <body class="home-page legal-page">
   <div class="top-announcement" role="banner">
@@ -85,8 +94,8 @@
       <a href="https://msd-media.com/contact/">Contact</a>
     </nav>
     <div class="nav-right">
-      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank">Réserver un appel</a>
-      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Contacter sur WhatsApp">
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank" rel="noopener noreferrer">Réserver un appel</a>
+      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Contacter sur WhatsApp" rel="noopener noreferrer">
         <i class="fa-brands fa-whatsapp"></i>
       </a>
     </div>
@@ -119,7 +128,7 @@
 
         <dt>Siège social</dt><dd>6 rue Paul Guiton, 74000 ANNECY</dd>
 
-        <dt>Contact</dt><dd><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></dd>
+        <dt>Contact</dt><dd><a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" rel="nofollow">Envoyer un email</a></dd>
       </dl>
 
       <p class="note">Directeur de la publication : <strong>Maxens Soldan</strong>.</p>
@@ -131,7 +140,7 @@
     <dl>
         <dt>Hébergeur</dt><dd>Vercel Inc.</dd>
         <dt>Adresse</dt><dd>440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis</dd>
-        <dt>Site</dt><dd><a href="https://vercel.com" target="_blank" rel="noopener">https://vercel.com</a></dd>
+        <dt>Site</dt><dd><a href="https://vercel.com" target="_blank" rel="noopener noreferrer">https://vercel.com</a></dd>
     </dl>
     </section>
 
@@ -158,7 +167,7 @@
       <h2 id="donnees">6 — Données personnelles (CNIL / RGPD)</h2>
       <p>Conformément à la loi « Informatique et Libertés » et au Règlement Général sur la Protection des Données (RGPD), vous disposez d’un droit d’accès, de modification, de rectification et de suppression des données qui vous concernent.</p>
       <dl>
-        <dt>Exercer vos droits</dt><dd>Contactez : <a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></dd>
+        <dt>Exercer vos droits</dt><dd>Contactez : <a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" rel="nofollow">Envoyer un email</a></dd>
       </dl>
       <p>Pour plus d’informations sur les types de données traitées, leurs finalités et les durées de conservation, consultez la <a href="/terms/politique-confidentialite.html">Politique de confidentialité</a>.</p>
     </section>
@@ -179,7 +188,7 @@
     <footer class="card" aria-labelledby="maj">
       <h2 id="maj">Mise à jour</h2>
       <p>Dernière mise à jour : <strong>9 août 2026</strong>.</p>
-      <p>Pour toute question relative aux présentes mentions légales, contactez : <a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a>.</p>
+      <p>Pour toute question relative aux présentes mentions légales, contactez : <a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" rel="nofollow">Envoyer un email</a>.</p>
       <p class="note">Ce document est fourni à titre informatif. Il ne remplace pas un avis juridique personnalisé. Si nécessaire, consultez un professionnel du droit.</p>
 </footer>
   </main>
@@ -189,7 +198,7 @@
       <!-- Bloc gauche : logo + slogan -->
       <div class="footer-left">
         <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
-        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" rel="nofollow">Envoyer un email</a></p>
       </div>
 
       <div class="footer-offices">
@@ -204,13 +213,13 @@
       <!-- Bloc droit : contact + réseaux -->
       <div class="footer-contact">
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn" rel="noopener noreferrer"><i
               class="fa-brands fa-linkedin"></i></a>
-          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram" rel="noopener noreferrer"><i
               class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp" rel="noopener noreferrer"><i
               class="fa-brands fa-whatsapp"></i></a>
-          <a href="/cdn-cgi/l/email-protection#5734383923363423173a24337a3a32333e367934383a" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </div>
@@ -243,10 +252,10 @@
           <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
           <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
           <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
-          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call" rel="noopener noreferrer">Réserver un appel</a></li>
           <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
           <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
-          <li><a href="https://msd-media.com/assets/downloads/msd-media-pitch-deck.pdf" target="_blank" download data-i18n="footer_pitch_deck">Télécharger le pitch deck</a></li>
+          <li><a href="https://msd-media.com/assets/downloads/msd-media-pitch-deck.pdf" target="_blank" download data-i18n="footer_pitch_deck" rel="noopener noreferrer">Télécharger le pitch deck</a></li>
         </ul>
       </div>
       <div class="footer-column">
@@ -276,9 +285,9 @@
 
     <!-- Mentions légales -->
     <div class="footer-legal">
-      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions">Mentions légales</a>
-      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy">Politique de confidentialité</a>
-      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale">CGV</a>
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions" rel="noopener noreferrer">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy" rel="noopener noreferrer">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale" rel="noopener noreferrer">CGV</a>
     </div>
 
     <!-- Copyright -->

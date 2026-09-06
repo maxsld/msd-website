@@ -28,6 +28,15 @@
   window._msdAiSource = aiSource;
 })();
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.js-email-link').forEach(function (el) {
+    var addr = el.getAttribute('data-u') + '@' + el.getAttribute('data-d');
+    el.setAttribute('href', 'mailto:' + addr);
+    if (el.textContent.trim() && !el.querySelector('i')) el.textContent = addr;
+  });
+});
+</script>
 <!-- Tracking — chargé uniquement après consentement cookie -->
 <script>
 function _msdLoadTracking(){

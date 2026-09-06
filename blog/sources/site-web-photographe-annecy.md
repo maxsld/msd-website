@@ -145,7 +145,7 @@ L'écosystème économique annecien — PME industrielles, startups tech, entrep
 
 ### La proximité de Genève ouvre un marché premium
 
-Les entreprises genevoises et les expatriés travaillant en Suisse qui résident à Annecy ont souvent des budgets supérieurs à la moyenne française pour la photographie. Un positionnement sur des requêtes comme "photographe professionnel entre Annecy et Genève" ou "photographe corporate Haute-Savoie" peut capter ce segment à fort pouvoir d'achat.
+Les entreprises [genevoises](https://msd-media.com/agence-web-geneve/) et les expatriés travaillant en Suisse qui résident à Annecy ont souvent des budgets supérieurs à la moyenne française pour la photographie. Un positionnement sur des requêtes comme "photographe professionnel entre Annecy et Genève" ou "photographe corporate Haute-Savoie" peut capter ce segment à fort pouvoir d'achat.
 
 ---
 
@@ -153,11 +153,11 @@ Les entreprises genevoises et les expatriés travaillant en Suisse qui résident
 
 | Type de site | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Portfolio simple (3-5 galeries) | sur devis– sur devis| Design, galeries optimisées, SEO on-page, mobile |
-| Site complet avec pages spécialités | sur devis– sur devis| + pages par prestation, tarifs, formulaires adaptés |
-| Site premium avec blog SEO | sur devis– sur devis| + blog, articles locaux, optimisation Google Images |
+| Portfolio simple (3-5 galeries) | 1 990 € – 3 000 € | Design, galeries optimisées, SEO on-page, mobile |
+| Site complet avec pages spécialités | 3 000 € – 4 500 € | + pages par prestation, tarifs, formulaires adaptés |
+| Site premium avec blog SEO | 4 500 € – 6 000 € | + blog, articles locaux, optimisation Google Images |
 
-**Le ROI pour un photographe :** un seul mariage capté via votre site à Annecy — avec des tarifs qui commencent à sur devis pour un photographe débutant et dépassent sur devis pour un photographe établi — couvre largement le coût d'un site bien fait.
+**Le ROI pour un photographe :** un seul mariage capté via votre site à Annecy — avec des tarifs qui commencent à 1 500 € pour un photographe débutant et dépassent 3 500 € pour un photographe établi — couvre largement le coût d'un site bien fait.
 
 ---
 

@@ -31,7 +31,7 @@ Et comment les éviter.
 
 Choisir le prestataire le moins cher pour créer son site à Annecy coûte presque toujours plus cher au final. Les offres "sur devis" cachent en général un template copié-collé, aucune optimisation SEO, des bugs partout et un prestataire injoignable après la livraison — résultat, tu paies 3 fois : le site raté, sa réparation, puis sa refonte. La solution : choisir un partenaire qui comprend ton business, pas le prix le plus bas.
 
-Un site à sur devis, c'est :
+Un site à 200 €, c'est :
 - Un template copié-collé
 - Aucune optimisation SEO
 - Des bugs partout
@@ -80,7 +80,7 @@ Un site lent fait fuir ses visiteurs avant même qu'ils ne le découvrent : 53% 
 **Pourquoi c'est lent :**
 - Images non compressées (3 Mo par photo)
 - Trop de plugins WordPress
-- Hébergement pourri à sur devis
+- Hébergement pourri à 20 €/mois
 - Code mal optimisé
 
 **Solution :**  

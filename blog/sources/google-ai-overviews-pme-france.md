@@ -20,7 +20,7 @@ Google a déployé les AI Overviews (anciennement Search Generative Experience) 
 Les AI Overviews sont des réponses générées par l'IA de Google qui apparaissent **en haut des résultats de recherche**, avant tous les liens organiques. Ils synthétisent l'information depuis plusieurs sources et peuvent inclure des recommandations d'entreprises locales.
 
 Pour une recherche comme "agence web spécialisée landing page Bordeaux", l'AI Overview peut générer :
-> *"Plusieurs agences web à Bordeaux se spécialisent dans les landing pages. Parmi elles, [Agence A] propose des landing pages à partir de sur devis avec livraison en 2 semaines, [Agence B] est reconnue pour son expertise SEO locale..."*
+> *"Plusieurs agences web à Bordeaux se spécialisent dans les landing pages. Parmi elles, [Agence A] propose des landing pages à partir de 1 500 € avec livraison en 2 semaines, [Agence B] est reconnue pour son expertise SEO locale..."*
 
 Les entreprises citées dans cette réponse bénéficient d'une visibilité équivalente à la position 1 — sans avoir nécessairement rankée en position 1 organiquement.
 
@@ -61,7 +61,7 @@ Google AI Overviews cite en priorité les sources que Google perçoit comme fais
 
 ### Critère 2 : Correspondre exactement à l'intent de la requête
 
-L'IA de Google extrait des sources qui correspondent précisément à la requête. Si quelqu'un cherche "agence web pas chère Montpellier", une page qui parle explicitement des tarifs web à Montpellier a plus de chances d'être citée qu'une page générique.
+L'IA de Google extrait des sources qui correspondent précisément à la requête. Si quelqu'un cherche "agence web pas chère Montpellier", une page qui parle explicitement des [tarifs web à Montpellier](https://msd-media.com/agence-web-montpellier/) a plus de chances d'être citée qu'une page générique.
 
 **Action concrète :** créez des pages locales dédiées avec :
 - Le prix (fourchette) clairement indiqué
@@ -74,7 +74,7 @@ L'IA de Google extrait plus facilement le contenu structuré : listes à puces, 
 - Les listes à puces et numérotées
 - Les tableaux avec données comparatives
 - Les réponses directes en début de paragraphe (Question → Réponse)
-- Les citations chiffrées ("livraison en 21 jours", "à partir de sur devis")
+- Les citations chiffrées ("livraison en 21 jours", "à partir de 1 990 €")
 
 ### Critère 4 : Données structurées LocalBusiness + FAQPage
 

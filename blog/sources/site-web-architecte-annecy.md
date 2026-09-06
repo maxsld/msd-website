@@ -158,7 +158,7 @@ Ce balisage technique dit à Google que vous êtes un architecte basé à Annecy
 Des articles ciblés sur des problématiques architecturales spécifiques à Annecy — réglementations PLU, contraintes des zones protégées, spécificités de la construction en montagne — vous positionnent sur des requêtes très qualifiées avec quasi zéro concurrence.
 
 **6. L'angle frontalier Annecy-Genève**
-Annecy est à 40 kilomètres de Genève. De nombreux résidents genevois et frontaliers cherchent un architecte pour construire ou rénover en France. Des pages dédiées "Architecte pour les résidents de Genève" ou "Construction en Haute-Savoie pour les frontaliers" capturent un segment à très fort pouvoir d'achat avec une concurrence quasi nulle.
+Annecy est à 40 kilomètres de [Genève](https://msd-media.com/agence-web-geneve/). De nombreux résidents genevois et frontaliers cherchent un architecte pour construire ou rénover en France. Des pages dédiées "Architecte pour les résidents de Genève" ou "Construction en Haute-Savoie pour les frontaliers" capturent un segment à très fort pouvoir d'achat avec une concurrence quasi nulle.
 
 ---
 

@@ -754,7 +754,7 @@ function renderSiteHeader() {
               <a href="${SITE_URL}/#faq" data-i18n="nav_faq">FAQ</a>
             </div>
             <div class="nav-megamenu__media">
-              <img src="${SITE_URL}/assets/img/navbar-img.png" alt="Aperçu des ressources MSD Media : blog, glossaire, réalisations" loading="lazy" decoding="async">
+              <img src="${SITE_URL}/assets/img/navbar-img.webp" alt="Aperçu des ressources MSD Media : blog, glossaire, réalisations" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
@@ -772,7 +772,7 @@ function renderSiteHeader() {
               <a href="${SITE_URL}/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
             </div>
             <div class="nav-megamenu__media">
-              <img src="${SITE_URL}/assets/img/navbar-img2.png" alt="Aperçu des secteurs accompagnés par MSD Media" loading="lazy" decoding="async">
+              <img src="${SITE_URL}/assets/img/navbar-img2.webp" alt="Aperçu des secteurs accompagnés par MSD Media" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
@@ -790,8 +790,8 @@ function renderSiteHeader() {
           <option value="en">🇬🇧 EN</option>
         </select>
       </label>
-      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank" data-i18n="nav_call">Réserver un appel</a>
-      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank" data-i18n="nav_call" rel="noopener noreferrer">Réserver un appel</a>
+      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp" rel="noopener noreferrer">
         <i class="fa-brands fa-whatsapp"></i>
       </a>
     </div>
@@ -854,7 +854,7 @@ function renderFullFooter(assetPrefix) {
     <div class="footer-container">
       <div class="footer-left">
         <img height="151" width="372" src="${SITE_URL}/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
-        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="mailto:maxens.soldan@msd-media.com">maxens.soldan@msd-media.com</a></p>
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" rel="nofollow">Envoyer un email</a></p>
       </div>
       <div class="footer-offices">
         <article class="footer-office-card">
@@ -868,10 +868,10 @@ function renderFullFooter(assetPrefix) {
       </div>
       <div class="footer-contact">
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="mailto:maxens.soldan@msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </div>
@@ -901,9 +901,10 @@ function renderFullFooter(assetPrefix) {
           <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
           <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
           <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
-          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call" rel="noopener noreferrer">Réserver un appel</a></li>
           <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
           <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
+          <li><a href="https://msd-media.com/assets/downloads/msd-media-pitch-deck.pdf" target="_blank" download data-i18n="footer_pitch_deck" rel="noopener noreferrer">Télécharger le pitch deck</a></li>
         </ul>
       </div>
       <div class="footer-column">
@@ -930,9 +931,9 @@ function renderFullFooter(assetPrefix) {
       </div>
     </div>
     <div class="footer-legal">
-      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions">Mentions légales</a>
-      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy">Politique de confidentialité</a>
-      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale">Conditions générales de vente</a>
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions" rel="noopener noreferrer">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy" rel="noopener noreferrer">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale" rel="noopener noreferrer">Conditions générales de vente</a>
     </div>
     <div class="footer-bottom">
       <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
@@ -1023,7 +1024,7 @@ function renderArticlePage(post, allPosts) {
   <link rel="icon" type="image/svg+xml" href="${SITE_URL}/assets/img/favicon.svg" />
   <link rel="shortcut icon" href="${SITE_URL}/assets/img/favicon.ico" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="../../../assets/css/style.css" />
   <link rel="preload" href="../../../assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="../../../assets/css/responsive.css" />
@@ -1111,7 +1112,7 @@ function renderBlogIndex(posts) {
   <link rel="icon" type="image/png" href="${SITE_URL}/assets/img/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="${SITE_URL}/assets/img/favicon.svg" />
   <link rel="shortcut icon" href="${SITE_URL}/assets/img/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="preload" href="../assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="../assets/css/responsive.css" />
@@ -1126,7 +1127,7 @@ function renderBlogIndex(posts) {
       <h1 class="hero__title"><span>Conseils, analyses et stratégies</span></h1>
       <p class="hero__subheading">Des guides concrets pour mieux comprendre le web, améliorer votre visibilité et transformer votre site en levier de croissance.</p>
       <div class="hero__actions" aria-label="Actions principales">
-        <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank">Réserver un appel</a>
+        <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" rel="noopener noreferrer">Réserver un appel</a>
         <a class="hero__btn hero__btn--secondary" href="/agence-web-annecy/">Découvrir l'agence</a>
       </div>
     </section>

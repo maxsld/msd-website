@@ -179,7 +179,7 @@ Des articles qui traitent de problématiques juridiques spécifiques à Annecy e
 
 ## La proximité de Genève : un avantage SEO à exploiter
 
-Annecy est à 40 kilomètres de Genève. De nombreux résidents de la région travaillent en Suisse ou ont des intérêts des deux côtés de la frontière. Si vous avez une compétence en droit international privé, droit des frontaliers ou fiscalité franco-suisse, c'est un positionnement SEO extrêmement puissant.
+Annecy est à 40 kilomètres de [Genève](https://msd-media.com/agence-web-geneve/). De nombreux résidents de la région travaillent en Suisse ou ont des intérêts des deux côtés de la frontière. Si vous avez une compétence en droit international privé, droit des frontaliers ou fiscalité franco-suisse, c'est un positionnement SEO extrêmement puissant.
 
 Des requêtes comme "avocat droit des frontaliers Annecy", "avocat franco-suisse Haute-Savoie" ou "avocat fiscalité Genève Annecy" ont un fort volume de recherche et une concurrence très faible. Une page dédiée sur ces sujets peut vous positionner en première page de Google en quelques semaines.
 
@@ -189,9 +189,9 @@ Des requêtes comme "avocat droit des frontaliers Annecy", "avocat franco-suisse
 
 | Type de site | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Site vitrine simple (4-6 pages) | sur devis– sur devis| Design, intégration, mobile-first, SEO on-page |
-| Site complet avec pages par domaine (8-15 pages) | sur devis– sur devis| + pages domaines, blog, maillage SEO complet |
-| Refonte d'un site existant | sur devis– sur devis| Audit, redirections, nouveau design, SEO |
+| Site vitrine simple (4-6 pages) | 1 990 € – 3 500 € | Design, intégration, mobile-first, SEO on-page |
+| Site complet avec pages par domaine (8-15 pages) | 3 990 € – 6 500 € | + pages domaines, blog, maillage SEO complet |
+| Refonte d'un site existant | sur devis | Audit, redirections, nouveau design, SEO |
 
 **Le retour sur investissement :** un avocat à Annecy qui attire 3 à 5 nouveaux clients par mois via son site web récupère son investissement initial en quelques semaines. Un seul dossier important peut couvrir le coût total de la création du site.
 

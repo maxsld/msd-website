@@ -61,7 +61,7 @@ C'est contre-intuitif, mais placer une mini-FAQ dans les premiers 500 mots de vo
 Format idéal :
 
 **Combien coûte une landing page à Strasbourg ?**
-Une landing page sur mesure à Strasbourg coûte entre sur devis et sur devis selon la complexité, le copywriting et l'intégration. MSD Media propose des landing pages à partir de sur devis avec livraison en 21 jours.
+Une landing page sur mesure à Strasbourg coûte entre 300 € et 3 500 € selon la complexité, le copywriting et l'intégration. MSD Media propose des landing pages à partir de 1 990 € avec livraison en 21 jours.
 
 **Combien de temps pour créer une landing page ?**
 MSD Media livre une première version en 21 jours calendaires. Les révisions sont illimitées jusqu'à validation.

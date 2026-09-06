@@ -141,7 +141,7 @@ Cherchez à obtenir des liens depuis des sites locaux anneciens : médias locaux
 Annecy a des caractéristiques immobilières uniques que vous devez mettre en avant sur votre site :
 
 ### La proximité de Genève
-Une part significative des acheteurs à Annecy sont des frontaliers ou des expatriés travaillant en Suisse. Ces profils cherchent souvent en anglais ou avec des critères spécifiques (budget en CHF, proximité des routes vers Genève, qualité des écoles). Une page dédiée à ces acheteurs — "Buy a property near Geneva in Annecy" ou "Acheter à Annecy en tant que frontalier" — peut capter un segment très solvable que vos concurrents ignorent.
+Une part significative des acheteurs à Annecy sont des frontaliers ou des expatriés travaillant en Suisse. Ces profils cherchent souvent en anglais ou avec des critères spécifiques (budget en CHF, proximité des routes vers [Genève](https://msd-media.com/agence-web-geneve/), qualité des écoles). Une page dédiée à ces acheteurs — "Buy a property near Geneva in Annecy" ou "Acheter à Annecy en tant que frontalier" — peut capter un segment très solvable que vos concurrents ignorent.
 
 ### Le marché du lac
 Les biens avec vue sur le lac d'Annecy ou en bord de lac constituent un segment premium à part entière, avec des acheteurs nationaux et internationaux très actifs. Une page dédiée "Immobilier bord du lac Annecy" ou "Appartement vue lac Annecy" cible des requêtes à fort volume et forte valeur transactionnelle.

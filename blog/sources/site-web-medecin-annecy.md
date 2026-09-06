@@ -60,7 +60,7 @@ Votre page "À propos" doit contenir :
 - Votre parcours de formation et vos spécialités
 - Votre approche et vos valeurs (comment vous concevez la relation avec vos patients)
 - Une photo professionnelle — les patients veulent voir à qui ils vont confier leur santé
-- Les langues parlées si vous avez des patients étrangers (utile à Annecy avec la proximité de Genève et le tourisme)
+- Les langues parlées si vous avez des patients étrangers (utile à Annecy avec la proximité de [Genève](https://msd-media.com/agence-web-geneve/) et le tourisme)
 - Si vous acceptez de nouveaux patients
 
 ### 3. Une page par spécialité ou type de soin
@@ -179,9 +179,9 @@ Les tarifs varient selon la complexité et le niveau d'accompagnement souhaité 
 
 | Type de site | Fourchette indicative | Ce qui est inclus |
 |---|---|---|
-| Site vitrine simple (3-5 pages) | sur devis– sur devis| Design, intégration, mobile-first, SEO on-page |
-| Site vitrine complet (6-10 pages) | sur devis– sur devis| + blog, pages spécialités, optimisation SEO locale |
-| Refonte d'un site existant | sur devis– sur devis| Audit, redirections, nouveau design, SEO |
+| Site vitrine simple (3-5 pages) | 1 990 € – 3 500 € | Design, intégration, mobile-first, SEO on-page |
+| Site vitrine complet (6-10 pages) | 3 990 € – 6 000 € | + blog, pages spécialités, optimisation SEO locale |
+| Refonte d'un site existant | sur devis | Audit, redirections, nouveau design, SEO |
 
 **Ce qu'il faut savoir sur le ROI :** un médecin qui attire 5 nouveaux patients par mois grâce à son site web récupère son investissement en quelques semaines. La question n'est pas "combien ça coûte ?" mais "combien ça rapporte ?".
 

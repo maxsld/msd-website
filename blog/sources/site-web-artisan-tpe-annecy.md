@@ -62,7 +62,7 @@ Un blog est utile pour le SEO à long terme — mais uniquement si vous publiez 
 Sauf si votre activité le justifie directement, une boutique e-commerce ajoute de la complexité pour peu de résultats supplémentaires pour un artisan local.
 
 ### Un site en plusieurs langues
-Annecy est proche de la Suisse et de Genève, mais à moins que vous cibliez explicitement une clientèle internationale, un site en français suffit largement.
+Annecy est proche de la Suisse et de [Genève](https://msd-media.com/agence-web-geneve/), mais à moins que vous cibliez explicitement une clientèle internationale, un site en français suffit largement.
 
 ### Des animations élaborées
 Les effets visuels sophistiqués ralentissent votre site et distraient vos visiteurs de l'essentiel : comprendre ce que vous faites et comment vous contacter.

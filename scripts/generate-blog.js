@@ -38,11 +38,11 @@ function renderAiSummaryHtml(pageUrl) {
           <p class="blog-ai-summary__label">Résumé généré par l'IA</p>
           <div class="blog-ai-summary__actions">
             <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt" href="https://chatgpt.com/?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Résumer cet article dans ChatGPT">
-              <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="ChatGPT" width="18" height="18" loading="lazy" decoding="async">
+              <img class="ai-proof__logo" src="https://msd-media.com/assets/img/logos/chatgpt.webp" alt="ChatGPT" width="18" height="18" loading="lazy" decoding="async">
               <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
             </a>
             <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude" href="https://claude.ai/new?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Résumer cet article dans Claude">
-              <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="Claude AI" width="18" height="18" loading="lazy" decoding="async">
+              <img class="ai-proof__logo" src="https://msd-media.com/assets/img/logos/claude.svg" alt="Claude AI" width="18" height="18" loading="lazy" decoding="async">
               <span data-i18n="ai_proof_claude">Demander à Claude</span>
             </a>
           </div>
@@ -818,7 +818,7 @@ function renderBookingSection(assetPrefix) {
           rel="noopener noreferrer"
           aria-label="Poser la question dans ChatGPT"
         >
-          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png" alt="ChatGPT" width="18" height="18" loading="lazy" decoding="async">
+          <img class="ai-proof__logo" src="https://msd-media.com/assets/img/logos/chatgpt.webp" alt="ChatGPT" width="18" height="18" loading="lazy" decoding="async">
           <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
         </a>
         <a
@@ -828,7 +828,7 @@ function renderBookingSection(assetPrefix) {
           rel="noopener noreferrer"
           aria-label="Poser la question dans Claude"
         >
-          <img class="ai-proof__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg" alt="Claude AI" width="18" height="18" loading="lazy" decoding="async">
+          <img class="ai-proof__logo" src="https://msd-media.com/assets/img/logos/claude.svg" alt="Claude AI" width="18" height="18" loading="lazy" decoding="async">
           <span data-i18n="ai_proof_claude">Demander à Claude</span>
         </a>
       </div>
@@ -1209,7 +1209,7 @@ function renderBlogIndex(posts) {
 }
 
 function removeClassedDivBlock(html, className) {
-  const classNeedle = `class="${className}`;
+  const classNeedle = `class="${className}"`;
   let output = html;
   let start = output.indexOf(classNeedle);
 

@@ -1013,6 +1013,631 @@
       "source": "/avis-clients",
       "destination": "/#landing-reviews",
       "permanent": true
+    },
+    {
+      "source": "/a-propos",
+      "destination": "https://msd-media.com/a-propos/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-annecy",
+      "destination": "https://msd-media.com/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "https://msd-media.com/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations",
+      "destination": "https://msd-media.com/realisations/",
+      "permanent": true
+    },
+    {
+      "source": "/tarifs",
+      "destination": "https://msd-media.com/tarifs/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "https://msd-media.com/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-bordeaux",
+      "destination": "https://msd-media.com/agence-web-bordeaux/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-chambery",
+      "destination": "https://msd-media.com/agence-web-chambery/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-clermont-ferrand",
+      "destination": "https://msd-media.com/agence-web-clermont-ferrand/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-geneve",
+      "destination": "https://msd-media.com/agence-web-geneve/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-lille",
+      "destination": "https://msd-media.com/agence-web-lille/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-lyon",
+      "destination": "https://msd-media.com/agence-web-lyon/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-marseille",
+      "destination": "https://msd-media.com/agence-web-marseille/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-montpellier",
+      "destination": "https://msd-media.com/agence-web-montpellier/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-nantes",
+      "destination": "https://msd-media.com/agence-web-nantes/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-nice",
+      "destination": "https://msd-media.com/agence-web-nice/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-paris",
+      "destination": "https://msd-media.com/agence-web-paris/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-rennes",
+      "destination": "https://msd-media.com/agence-web-rennes/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-strasbourg",
+      "destination": "https://msd-media.com/agence-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-toulouse",
+      "destination": "https://msd-media.com/agence-web-toulouse/",
+      "permanent": true
+    },
+    {
+      "source": "/audit-seo-annecy",
+      "destination": "https://msd-media.com/audit-seo-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/audit-seo-strasbourg",
+      "destination": "https://msd-media.com/audit-seo-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-annecy",
+      "destination": "https://msd-media.com/creation-site-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web-strasbourg",
+      "destination": "https://msd-media.com/creation-site-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-annecy",
+      "destination": "https://msd-media.com/landing-page-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-bruxelles",
+      "destination": "https://msd-media.com/landing-page-bruxelles/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-strasbourg",
+      "destination": "https://msd-media.com/landing-page-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/refonte-site-web-annecy",
+      "destination": "https://msd-media.com/refonte-site-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/refonte-site-web-strasbourg",
+      "destination": "https://msd-media.com/refonte-site-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-local-annecy",
+      "destination": "https://msd-media.com/seo-local-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-local-strasbourg",
+      "destination": "https://msd-media.com/seo-local-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/site-web-architecte",
+      "destination": "https://msd-media.com/site-web-architecte/",
+      "permanent": true
+    },
+    {
+      "source": "/site-web-artisan",
+      "destination": "https://msd-media.com/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/site-web-avocat",
+      "destination": "https://msd-media.com/site-web-avocat/",
+      "permanent": true
+    },
+    {
+      "source": "/site-web-immobilier",
+      "destination": "https://msd-media.com/site-web-immobilier/",
+      "permanent": true
+    },
+    {
+      "source": "/site-web-medecin",
+      "destination": "https://msd-media.com/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/site-web-restaurant",
+      "destination": "https://msd-media.com/site-web-restaurant/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/agence-3xl",
+      "destination": "https://msd-media.com/realisations/agence-3xl/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/aristoi-academia",
+      "destination": "https://msd-media.com/realisations/aristoi-academia/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/carroz-sports",
+      "destination": "https://msd-media.com/realisations/carroz-sports/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/em-motors",
+      "destination": "https://msd-media.com/realisations/em-motors/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/hairtattoo",
+      "destination": "https://msd-media.com/realisations/hairtattoo/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/laurence-daien-maestripieri",
+      "destination": "https://msd-media.com/realisations/laurence-daien-maestripieri/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/marie-troccaz",
+      "destination": "https://msd-media.com/realisations/marie-troccaz/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/maxime-sciare",
+      "destination": "https://msd-media.com/realisations/maxime-sciare/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/merz-ultherapy-prime",
+      "destination": "https://msd-media.com/realisations/merz-ultherapy-prime/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/nation-startup",
+      "destination": "https://msd-media.com/realisations/nation-startup/",
+      "permanent": true
+    },
+    {
+      "source": "/affiliation",
+      "destination": "https://msd-media.com/affiliation/",
+      "permanent": true
+    },
+    {
+      "source": "/faq-seo",
+      "destination": "https://msd-media.com/faq-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/glossaire",
+      "destination": "https://msd-media.com/glossaire/",
+      "permanent": true
+    },
+    {
+      "source": "/presse",
+      "destination": "https://msd-media.com/presse/",
+      "permanent": true
+    },
+    {
+      "source": "/recrutement",
+      "destination": "https://msd-media.com/recrutement/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia",
+      "destination": "https://msd-media.com/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/combien-coute-landing-page-2026",
+      "destination": "https://msd-media.com/blog/articles/combien-coute-landing-page-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/pourquoi-concurrents-cites-ia-pas-vous",
+      "destination": "https://msd-media.com/blog/articles/pourquoi-concurrents-cites-ia-pas-vous/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/avis-clients-autorite-geo-2026",
+      "destination": "https://msd-media.com/blog/articles/avis-clients-autorite-geo-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/google-mise-a-jour-aout-2026",
+      "destination": "https://msd-media.com/blog/articles/google-mise-a-jour-aout-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/google-ai-mode-zero-click-2026",
+      "destination": "https://msd-media.com/blog/articles/google-ai-mode-zero-click-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/accessibilite-web-obligatoire-entreprises-2026",
+      "destination": "https://msd-media.com/blog/articles/accessibilite-web-obligatoire-entreprises-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/agence-landing-page-site-web-france-msd-media",
+      "destination": "https://msd-media.com/blog/articles/agence-landing-page-site-web-france-msd-media/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/combien-coute-refonte-site-internet-2026",
+      "destination": "https://msd-media.com/blog/articles/combien-coute-refonte-site-internet-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/core-web-vitals-guide-2026",
+      "destination": "https://msd-media.com/blog/articles/core-web-vitals-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/maillage-interne-guide-seo",
+      "destination": "https://msd-media.com/blog/articles/maillage-interne-guide-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/refonte-site-internet-guide-2026",
+      "destination": "https://msd-media.com/blog/articles/refonte-site-internet-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-7-meilleures-agences-web-annecy-2026",
+      "destination": "https://msd-media.com/blog/articles/top-7-meilleures-agences-web-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/wordpress-vs-site-sur-mesure-annecy-2026",
+      "destination": "https://msd-media.com/blog/articles/wordpress-vs-site-sur-mesure-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/msd-media-presse-le-dauphine",
+      "destination": "https://msd-media.com/blog/articles/msd-media-presse-le-dauphine/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/combien-coute-seo-annecy-2026",
+      "destination": "https://msd-media.com/blog/articles/combien-coute-seo-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-garage-carrosserie-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-garage-carrosserie-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-veterinaire-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-veterinaire-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-dentiste-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-dentiste-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-notaire-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-notaire-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/google-business-profile-annecy-2026",
+      "destination": "https://msd-media.com/blog/articles/google-business-profile-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/google-business-profile-strasbourg-2026",
+      "destination": "https://msd-media.com/blog/articles/google-business-profile-strasbourg-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/seo-local-alsace-2026",
+      "destination": "https://msd-media.com/blog/articles/seo-local-alsace-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coiffeur-strasbourg",
+      "destination": "https://msd-media.com/blog/articles/site-web-coiffeur-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/copywriting-web-2026-textes-qui-convertissent",
+      "destination": "https://msd-media.com/blog/articles/copywriting-web-2026-textes-qui-convertissent/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-hotel-hebergement-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-hotel-hebergement-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/vitesse-performance-site-web-annecy-2026",
+      "destination": "https://msd-media.com/blog/articles/vitesse-performance-site-web-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/combien-coute-landing-page-annecy-2026",
+      "destination": "https://msd-media.com/blog/articles/combien-coute-landing-page-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-web-annecy-2026",
+      "destination": "https://msd-media.com/blog/articles/creation-site-web-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/pourquoi-site-web-ne-convertit-pas-2026",
+      "destination": "https://msd-media.com/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-agence-immobiliere-alsace",
+      "destination": "https://msd-media.com/blog/articles/site-web-agence-immobiliere-alsace/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/aeo-seo-geo-guide-2026",
+      "destination": "https://msd-media.com/blog/articles/aeo-seo-geo-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/agence-web-freelance-nocode-2026",
+      "destination": "https://msd-media.com/blog/articles/agence-web-freelance-nocode-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/combien-coute-landing-page-france-2026",
+      "destination": "https://msd-media.com/blog/articles/combien-coute-landing-page-france-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/google-ai-overviews-pme-france",
+      "destination": "https://msd-media.com/blog/articles/google-ai-overviews-pme-france/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/landing-page-chatgpt-google",
+      "destination": "https://msd-media.com/blog/articles/landing-page-chatgpt-google/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/schema-org-donnees-structurees-ia",
+      "destination": "https://msd-media.com/blog/articles/schema-org-donnees-structurees-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/seo-local-ia-2026",
+      "destination": "https://msd-media.com/blog/articles/seo-local-ia-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/maintenance-site-web-annecy",
+      "destination": "https://msd-media.com/blog/articles/maintenance-site-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/referencement-naturel-annecy",
+      "destination": "https://msd-media.com/blog/articles/referencement-naturel-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-agence-immobiliere-haute-savoie",
+      "destination": "https://msd-media.com/blog/articles/site-web-agence-immobiliere-haute-savoie/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coach-sportif-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-coach-sportif-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coiffeur-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-coiffeur-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-expert-comptable-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-expert-comptable-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-kinesitherapeute-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-kinesitherapeute-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-osteopathe-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-osteopathe-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-station-ski-haute-savoie",
+      "destination": "https://msd-media.com/blog/articles/site-web-station-ski-haute-savoie/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-architecte-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-architecte-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creer-landing-page-qui-convertit",
+      "destination": "https://msd-media.com/blog/articles/creer-landing-page-qui-convertit/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-agence-immobiliere-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-agence-immobiliere-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-avocat-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-avocat-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-medecin-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-medecin-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-photographe-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-photographe-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-therapeute-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-therapeute-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/ameliorer-taux-conversion-site-web",
+      "destination": "https://msd-media.com/blog/articles/ameliorer-taux-conversion-site-web/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/faut-il-creer-site-web-2026",
+      "destination": "https://msd-media.com/blog/articles/faut-il-creer-site-web-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-artisan-tpe-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-artisan-tpe-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/maxens-soldan",
+      "destination": "https://msd-media.com/blog/articles/maxens-soldan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/10-erreurs-creation-site-web-annecy",
+      "destination": "https://msd-media.com/blog/articles/10-erreurs-creation-site-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/combien-coute-site-web-annecy-2026",
+      "destination": "https://msd-media.com/blog/articles/combien-coute-site-web-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/landing-page-coach-consultant-annecy",
+      "destination": "https://msd-media.com/blog/articles/landing-page-coach-consultant-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-restaurant-cafe-annecy",
+      "destination": "https://msd-media.com/blog/articles/site-web-restaurant-cafe-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/agences-landing-page-prix-france-2026",
+      "destination": "https://msd-media.com/blog/articles/agences-landing-page-prix-france-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/meilleures-agences-cro-france",
+      "destination": "https://msd-media.com/blog/articles/meilleures-agences-cro-france/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/structure-landing-page-saas",
+      "destination": "https://msd-media.com/blog/articles/structure-landing-page-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-10-questions-landing-page-2026",
+      "destination": "https://msd-media.com/blog/articles/top-10-questions-landing-page-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-5-agences-landing-page-france-2026",
+      "destination": "https://msd-media.com/blog/articles/top-5-agences-landing-page-france-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creer-landing-page-14-jours",
+      "destination": "https://msd-media.com/blog/articles/creer-landing-page-14-jours/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/landing-page-vs-site-web-guide-complet",
+      "destination": "https://msd-media.com/blog/articles/landing-page-vs-site-web-guide-complet/",
+      "permanent": true
+    },
+    {
+      "source": "/en",
+      "destination": "https://msd-media.com/en/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-medecin-strasbourg/",
+      "destination": "/blog/articles/site-web-medecin-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-medecin-strasbourg",
+      "destination": "/blog/articles/site-web-medecin-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/combien-coute-landing-page-2026/",
+      "destination": "/blog/articles/combien-coute-landing-page-france-2026/",
+      "permanent": true
     }
   ],
   "headers": [

@@ -3103,6 +3103,23 @@ position: relative;
   color: rgba(0, 0, 0, 0.55);
 }
 
+/* Encart de mise à jour datée dans les articles */
+.blog-update {
+  margin: 0 0 1.6rem;
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid #2563eb;
+  border-radius: 0 0.2rem 0.2rem 0;
+  background: rgba(37, 99, 235, 0.05);
+  font-size: 0.97rem;
+  line-height: 1.65;
+}
+
+.blog-update a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .blog-ai-summary {
   margin: 0 0 2rem;
   padding: 1rem 1.1rem;

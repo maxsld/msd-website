@@ -307,6 +307,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Animations d’apparition désactivées (fade/opacity)
 
 // Controles personnalises pour la video hero
+  // Libelles video adaptes a la langue de la page (/en/ est pre-rendu en anglais).
+  const isEN = document.documentElement.lang === "en";
+  const T_SOUND_ON = isEN ? "Enable sound" : "Activer le son";
+  const T_SOUND_OFF = isEN ? "Mute" : "Couper le son";
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
   const navMenus = document.querySelectorAll("[data-nav-menu]");
@@ -508,7 +512,13 @@ document.addEventListener("DOMContentLoaded", () => {
     return "fr";
   };
 
-  const preferredLang = readLanguagePreference() || getRequestedLanguage();
+  // Sur /en/, l'URL fait autorite : elle prime sur la preference stockee.
+  const pathLang = getRequestedLanguage();
+  const preferredLang = pathLang === "en" ? "en" : (readLanguagePreference() || "fr");
+
+  // La home dispose d'une vraie version anglaise pre-rendue (/en/) : on y navigue
+  // au lieu de traduire cote client, pour que Google indexe les deux versions.
+  const isHome = /^\/(?:en\/?)?$/i.test(window.location.pathname);
 
   // Rendu FR immédiat (déjà dans le HTML statique), aucune traduction distante requise pour ça.
   document.documentElement.lang = preferredLang;
@@ -538,6 +548,10 @@ document.addEventListener("DOMContentLoaded", () => {
     select.addEventListener("change", () => {
       const nextLang = normalizeLang(select.value) || "fr";
       saveLanguagePreference(nextLang);
+      if (isHome) {
+        window.location.assign(nextLang === "en" ? "/en/" : "/");
+        return;
+      }
       if (nextLang === "fr") {
         window.location.reload();
         return;
@@ -1426,8 +1440,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const unmuteHint = document.createElement("button");
     unmuteHint.type = "button";
     unmuteHint.className = "video-unmute-hint";
-    unmuteHint.innerHTML = '<i class="fa-solid fa-volume-xmark"></i><span>Activer le son</span>';
-    unmuteHint.setAttribute("aria-label", "Activer le son");
+    unmuteHint.innerHTML = '<i class="fa-solid fa-volume-xmark"></i><span>' + T_SOUND_ON + '</span>';
+    unmuteHint.setAttribute("aria-label", T_SOUND_ON);
     player.appendChild(unmuteHint);
 
     const syncPlayState = () => {
@@ -1445,7 +1459,7 @@ document.addEventListener("DOMContentLoaded", () => {
         soundIcon.classList.toggle("fa-volume-xmark", muted);
         soundIcon.classList.toggle("fa-volume-high", !muted);
       }
-      soundBtn.setAttribute("aria-label", muted ? "Activer le son" : "Couper le son");
+      soundBtn.setAttribute("aria-label", muted ? T_SOUND_ON : T_SOUND_OFF);
       unmuteHint.classList.toggle("is-hidden", !muted);
     };
 

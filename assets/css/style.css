@@ -108,7 +108,6 @@ ul {
 }
 
 
-
 /* Navbar */
 .top-announcement {
   width: 100%;
@@ -1298,8 +1297,6 @@ position: relative;
     pointer-events: auto;
   }
 }
-
-
 
 
 .realisations-section {
@@ -3172,13 +3169,13 @@ position: relative;
 }
 
 .blog-ai-summary__actions .ai-proof__btn--claude {
-  background: #da7756;
-  color: #1a1a1a;
-  border-color: #c9663f;
+  background: #b16046;
+  color: #ffffff;
+  border-color: #b16046;
 }
 
 .blog-ai-summary__actions .ai-proof__btn--claude .ai-proof__logo {
-  filter: brightness(0);
+  filter: brightness(0) invert(1);
 }
 
 .case-study-page .case-study-detail-image,
@@ -4895,8 +4892,6 @@ position: relative;
 }
 
 
-
-
 /* Carrousels avis */
 .avis-carousel-container {
   position: relative;
@@ -4962,7 +4957,6 @@ position: relative;
   width: auto;
   filter: brightness(0) saturate(100%) invert(18%) sepia(98%) saturate(7478%) hue-rotate(231deg) brightness(101%) contrast(99%);
 }
-
 
 
 .avis-card p {
@@ -5070,11 +5064,6 @@ position: relative;
 }
 
 
-
-
-
-
-
 .founder-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -5157,7 +5146,6 @@ position: relative;
 }
 
 
-
 .founder-text {
   font-size: clamp(1.45rem, 2.35vw, 1.95rem);
   line-height: 1.2;
@@ -5207,8 +5195,6 @@ position: relative;
 }
 
 
-
-
 /* FAQ SECTION */
 .faq {
   background: #ffffff;
@@ -5221,7 +5207,6 @@ position: relative;
   margin: 0 auto;
   text-align: left;
 }
-
 
 
 .faq-item {
@@ -5486,9 +5471,9 @@ position: relative;
 }
 
 #ai-proof .ai-proof__btn--claude {
-  background: #da7756;
-  color: #1a1a1a;
-  border-color: #c9663f;
+  background: #b16046;
+  color: #ffffff;
+  border-color: #b16046;
 }
 
 /* PRICING PAGE (/tarifs/) */
@@ -7065,6 +7050,31 @@ body.affiliate-modal-open {
 
 /* COPYRIGHT */
 /* Badge partenaire annuaire (DesignRush) — footer */
+/* Témoignage vidéo sur les études de cas — embed YouTube direct */
+.case-study-video {
+  margin: 1.5rem 0 2rem;
+  padding: 0;
+}
+
+.case-study-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: 0.2rem;
+}
+
+
+/* Badge partenaire annuaire (DesignRush) — footer */
+
+
+.case-study-video figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
 .footer-badges {
   display: flex;
   flex-wrap: wrap;

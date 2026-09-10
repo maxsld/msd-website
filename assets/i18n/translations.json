@@ -331,7 +331,8 @@
     "about_faq_q15": "Quels types de clients font appel à MSD Media ?",
     "about_faq_a15": "MSD Media accompagne des indépendants, PME, startups, coachs, organismes de formation, commerces locaux et entreprises de services qui ont besoin d'un site plus clair, plus crédible et plus performant.",
     "about_faq_q16": "Pourquoi choisir MSD Media plutôt qu'un template ou un CMS standard ?",
-    "about_faq_a16": "Un template peut suffire pour une présence basique. MSD Media intervient quand le site doit porter une offre, rassurer vite, convertir, se charger rapidement et être structuré pour le référencement naturel et les moteurs IA."
+    "about_faq_a16": "Un template peut suffire pour une présence basique. MSD Media intervient quand le site doit porter une offre, rassurer vite, convertir, se charger rapidement et être structuré pour le référencement naturel et les moteurs IA.",
+    "nav_coaches": "Coachs & consultants"
   },
   "en": {
     "cookie_text": "We use cookies to measure site traffic and improve your experience.",
@@ -665,6 +666,7 @@
     "about_faq_q15": "What types of clients work with MSD Media?",
     "about_faq_a15": "MSD Media supports freelancers, SMEs, startups, coaches, training organizations, local businesses and service companies that need a clearer, more credible and higher-performing website.",
     "about_faq_q16": "Why choose MSD Media over a template or standard CMS?",
-    "about_faq_a16": "A template may be enough for a basic presence. MSD Media steps in when a site needs to carry an offer, build trust quickly, convert, load fast, and be structured for organic search and AI engines."
+    "about_faq_a16": "A template may be enough for a basic presence. MSD Media steps in when a site needs to carry an offer, build trust quickly, convert, load fast, and be structured for organic search and AI engines.",
+    "nav_coaches": "Coaches & consultants"
   }
 }

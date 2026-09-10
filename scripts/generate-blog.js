@@ -37,11 +37,11 @@ function renderAiSummaryHtml(pageUrl) {
   return `<div class="blog-ai-summary">
           <p class="blog-ai-summary__label">Résumé généré par l'IA</p>
           <div class="blog-ai-summary__actions">
-            <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt" href="https://chatgpt.com/?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Résumer cet article dans ChatGPT">
+            <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--chatgpt" href="https://chatgpt.com/?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Demander à ChatGPT de résumer cet article">
               <img class="ai-proof__logo" src="https://msd-media.com/assets/img/logos/chatgpt.webp" alt="ChatGPT" width="18" height="18" loading="lazy" decoding="async">
               <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
             </a>
-            <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude" href="https://claude.ai/new?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Résumer cet article dans Claude">
+            <a class="hero__btn hero__btn--primary ai-proof__btn ai-proof__btn--claude" href="https://claude.ai/new?q=${encodedPrompt}" target="_blank" rel="noopener noreferrer" aria-label="Demander à Claude de résumer cet article">
               <img class="ai-proof__logo" src="https://msd-media.com/assets/img/logos/claude.svg" alt="Claude AI" width="18" height="18" loading="lazy" decoding="async">
               <span data-i18n="ai_proof_claude">Demander à Claude</span>
             </a>
@@ -628,7 +628,7 @@ function renderBlogFeaturedCarousel(posts = []) {
   const slides = posts.slice(0, 5).map((post, index) => {
     const topicTag = getCardTopicTag(post);
     const image = imagePathForPage(getListingImage(post), '../assets');
-    return `<a class="blog-hero-carousel__slide" href="/blog/articles/${post.slug}/" aria-label="${escapeHtml(post.title)}">
+    return `<a class="blog-hero-carousel__slide" href="/blog/articles/${post.slug}/">
             <span class="blog-hero-carousel__media">
               <img src="${escapeHtml(image)}" alt="" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async">
             </span>
@@ -660,7 +660,7 @@ function renderBlogFeaturedCarousel(posts = []) {
         <button class="blog-hero-carousel__arrow blog-hero-carousel__arrow--next" type="button" aria-label="Article suivant" data-blog-carousel-next>
           <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
         </button>
-        <div class="blog-hero-carousel__dots" aria-hidden="true">
+        <div class="blog-hero-carousel__dots">
           ${dots.join('\n')}
         </div>
       </div>
@@ -816,7 +816,7 @@ function renderBookingSection(assetPrefix) {
           href="https://chatgpt.com/?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Poser la question dans ChatGPT"
+          aria-label="Demander à ChatGPT pourquoi MSD Media"
         >
           <img class="ai-proof__logo" src="https://msd-media.com/assets/img/logos/chatgpt.webp" alt="ChatGPT" width="18" height="18" loading="lazy" decoding="async">
           <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
@@ -826,7 +826,7 @@ function renderBookingSection(assetPrefix) {
           href="https://claude.ai/new?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Poser la question dans Claude"
+          aria-label="Demander à Claude pourquoi MSD Media"
         >
           <img class="ai-proof__logo" src="https://msd-media.com/assets/img/logos/claude.svg" alt="Claude AI" width="18" height="18" loading="lazy" decoding="async">
           <span data-i18n="ai_proof_claude">Demander à Claude</span>

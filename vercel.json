@@ -785,16 +785,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/articles/qui-est-maxens-parcours-et-vision/",
-      "destination": "/blog/articles/maxens-soldan/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/qui-est-maxens-parcours-et-vision",
-      "destination": "/blog/articles/maxens-soldan/",
-      "permanent": true
-    },
-    {
       "source": "/creation-site-web-bordeaux/",
       "destination": "/agence-web-bordeaux/",
       "permanent": true
@@ -1637,6 +1627,246 @@
     {
       "source": "/blog/articles/combien-coute-landing-page-2026/",
       "destination": "/blog/articles/combien-coute-landing-page-france-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-artisan-tpe-strasbourg",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-artisan-tpe-strasbourg/",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-strasbourg/",
+      "destination": "/creation-site-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-strasbourg",
+      "destination": "/creation-site-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-annecy/",
+      "destination": "/creation-site-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-annecy",
+      "destination": "/creation-site-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-strasbourg-prix-2026",
+      "destination": "/creation-site-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-strasbourg-prix-2026/",
+      "destination": "/creation-site-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/seo-local-annecy-guide-complet-2026/",
+      "destination": "/seo-local-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/seo-local-annecy-guide-complet-2026",
+      "destination": "/seo-local-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-annecy.html",
+      "destination": "/creation-site-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/choisir-agence-web-strasbourg/",
+      "destination": "/agence-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/choisir-agence-web-strasbourg",
+      "destination": "/agence-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/creation-site-internet-strasbourg.html",
+      "destination": "/creation-site-web-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/choisir-agence-web-annecy",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/choisir-agence-web-annecy/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/seo-local-strasbourg-2026",
+      "destination": "/seo-local-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/seo-local-strasbourg-2026/",
+      "destination": "/seo-local-strasbourg/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/meilleure-agence-web-annecy-2026.html",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coach-sportif-strasbourg/",
+      "destination": "/blog/articles/site-web-coach-sportif-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coach-sportif-strasbourg",
+      "destination": "/blog/articles/site-web-coach-sportif-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/meilleure-agence-web-annecy-2026/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/meilleure-agence-web-annecy-2026",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/geo-vs-seo-annecy-2026",
+      "destination": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/geo-vs-seo-annecy-2026/",
+      "destination": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-architecte-strasbourg/",
+      "destination": "/site-web-architecte/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-architecte-strasbourg",
+      "destination": "/site-web-architecte/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-restaurant-strasbourg/",
+      "destination": "/site-web-restaurant/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-restaurant-strasbourg",
+      "destination": "/site-web-restaurant/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/vitesse-performance-site-web-strasbourg-2026/",
+      "destination": "/blog/articles/vitesse-performance-site-web-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/vitesse-performance-site-web-strasbourg-2026",
+      "destination": "/blog/articles/vitesse-performance-site-web-annecy-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-avocat-strasbourg",
+      "destination": "/site-web-avocat/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-avocat-strasbourg/",
+      "destination": "/site-web-avocat/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/refonte-site-web-annecy",
+      "destination": "/refonte-site-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/refonte-site-web-annecy/",
+      "destination": "/refonte-site-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/terms/conformite_rgpd.html",
+      "destination": "/terms/politique-confidentialite.html",
+      "permanent": true
+    },
+    {
+      "source": "/glossaire-web/",
+      "destination": "/glossaire/",
+      "permanent": true
+    },
+    {
+      "source": "/glossaire-web",
+      "destination": "/glossaire/",
+      "permanent": true
+    },
+    {
+      "source": "/etudes-de-cas/templates/cas-template.html",
+      "destination": "/realisations/",
+      "permanent": true
+    },
+    {
+      "source": "/tarifs-site-web-annecy",
+      "destination": "/tarifs/",
+      "permanent": true
+    },
+    {
+      "source": "/tarifs-site-web-annecy/",
+      "destination": "/tarifs/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/templates/article-template.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/templates/article-template.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/freetools/checklist-landing-page-2025/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/freetools/checklist-landing-page-2025",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-coach/",
+      "destination": "/site-web-coach/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-coach",
+      "destination": "/site-web-coach/",
+      "permanent": true
+    },
+    {
+      "source": "/site-web-coach",
+      "destination": "/site-web-coach/",
       "permanent": true
     }
   ],

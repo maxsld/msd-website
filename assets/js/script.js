@@ -79,15 +79,59 @@
     document.head.appendChild(script);
   };
 
+  // Evenements de conversion relayes vers GA4. Les autres (scroll, temps passe,
+  // page_view) sont deja couverts par la mesure amelioree de GA4 : on ne les
+  // duplique pas, ca consommerait du quota pour rien.
+  const GA4_FORWARDED = new Set([
+    "cta_click",
+    "booking_intent",
+    "booking_completed",
+    "form_submit_attempt",
+    "lead_submit_attempt",
+    "lead_confirmed"
+  ]);
+
+  // GA4 (gtag.js) n'est charge qu'apres consentement cookie : on tamponne les
+  // evenements emis avant, puis on vide la file des que gtag devient disponible.
+  const ga4Buffer = [];
+  let ga4FlushTimer = null;
+
+  const ga4Params = (payload) => {
+    const out = {};
+    Object.keys(payload).forEach((key) => {
+      const clean = String(key).slice(0, 40);
+      const value = payload[key];
+      if (value === null || value === undefined || value === "") return;
+      out[clean] = typeof value === "string" ? value.slice(0, 100) : value;
+    });
+    return out;
+  };
+
+  const sendToGa4 = (eventName, payload) => {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", eventName, ga4Params(payload));
+      return;
+    }
+    if (ga4Buffer.length < 40) ga4Buffer.push([eventName, payload]);
+    if (ga4FlushTimer) return;
+    ga4FlushTimer = setInterval(() => {
+      if (typeof window.gtag !== "function") return;
+      clearInterval(ga4FlushTimer);
+      ga4FlushTimer = null;
+      ga4Buffer.splice(0).forEach(([name, data]) => window.gtag("event", name, ga4Params(data)));
+    }, 1000);
+  };
+
   const pushTrack = (eventName, payload = {}) => {
-    window.dataLayer.push({
-      event: eventName,
+    const data = {
       event_source: "msd_site",
       page_path: window.location.pathname,
       page_title: document.title,
       page_type: getPageType(),
       ...payload
-    });
+    };
+    window.dataLayer.push({ event: eventName, ...data });
+    if (GA4_FORWARDED.has(eventName)) sendToGa4(eventName, data);
   };
 
   window.msdTrack = pushTrack;

@@ -1868,6 +1868,11 @@
       "source": "/site-web-coach",
       "destination": "/site-web-coach/",
       "permanent": true
+    },
+    {
+      "source": "/blog/articles/pourquoi-concurrents-cites-ia-pas-vous/",
+      "destination": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
+      "permanent": true
     }
   ],
   "headers": [

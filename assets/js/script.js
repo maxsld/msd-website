@@ -320,20 +320,54 @@
     pushTrack("lead_confirmed", { form_id: "contact-form", source: "confirmation_page" });
   }
 
+  // Clarity enregistre les sessions : il ne doit demarrer qu'apres consentement,
+  // au meme titre que GA4. Si le visiteur n'a pas encore repondu, on attend sa
+  // decision plutot que de charger le tag immediatement.
   if (CLARITY_PROJECT_ID) {
-    (function (c, l, a, r, i, t, y) {
-      c[a] =
-        c[a] ||
-        function () {
-          (c[a].q = c[a].q || []).push(arguments);
-        };
-      t = l.createElement(r);
-      t.async = 1;
-      t.src = "https://www.clarity.ms/tag/" + i;
-      y = l.getElementsByTagName(r)[0];
-      y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
-    pushTrack("heatmap_loaded", { provider: "clarity" });
+    let clarityStarted = false;
+
+    const startClarity = () => {
+      if (clarityStarted) return;
+      clarityStarted = true;
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
+      pushTrack("heatmap_loaded", { provider: "clarity" });
+    };
+
+    const readConsent = () => {
+      try {
+        return localStorage.getItem("msd_cookie_consent");
+      } catch (_) {
+        return null;
+      }
+    };
+
+    if (readConsent() === "accepted") {
+      startClarity();
+    } else if (readConsent() !== "refused") {
+      // Le visiteur n'a pas encore tranche : on surveille sa reponse, sans
+      // depasser deux minutes pour ne pas laisser tourner un intervalle.
+      const watcher = setInterval(() => {
+        const consent = readConsent();
+        if (consent === "accepted") {
+          clearInterval(watcher);
+          startClarity();
+        } else if (consent === "refused") {
+          clearInterval(watcher);
+        }
+      }, 1000);
+      setTimeout(() => clearInterval(watcher), 120000);
+    }
   }
 })();
 

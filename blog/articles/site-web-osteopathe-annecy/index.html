@@ -201,10 +201,20 @@ function _msdLoadTracking(){
     gtag('config','G-VKSH9YQXZS');
   })();
 }
+// Signal de consentement pour Google Tag Manager. Les balises qui deposent des
+// cookies (Clarity, GA4) doivent se declencher sur msd_consent_accepted et non
+// sur le chargement de la page.
+function _msdConsentSignal(state){
+  window.dataLayer=window.dataLayer||[];
+  window.dataLayer.push({
+    event: state==='accepted' ? 'msd_consent_accepted' : 'msd_consent_refused',
+    msd_consent: state
+  });
+}
 (function(){
   var consent=localStorage.getItem('msd_cookie_consent');
-  if(consent==='accepted'){_msdLoadTracking();return;}
-  if(consent==='refused'){return;}
+  if(consent==='accepted'){_msdConsentSignal('accepted');_msdLoadTracking();return;}
+  if(consent==='refused'){_msdConsentSignal('refused');return;}
   if(window.innerWidth<=680){_msdLoadTracking();return;}
   function init(){
   var banner=document.getElementById('cookie-consent');
@@ -214,11 +224,13 @@ function _msdLoadTracking(){
   show();
   document.getElementById('cookie-accept').addEventListener('click',function(){
     localStorage.setItem('msd_cookie_consent','accepted');
+    _msdConsentSignal('accepted');
     hide();
     _msdLoadTracking();
   });
   document.getElementById('cookie-refuse').addEventListener('click',function(){
     localStorage.setItem('msd_cookie_consent','refused');
+    _msdConsentSignal('refused');
     hide();
   });
   }

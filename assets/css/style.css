@@ -986,6 +986,13 @@ position: relative;
   height: 21px;
 }
 
+/* Logo French Tech : officiel en rouge et noir, passe en monochrome pour le
+   bandeau sombre comme les autres logos du carrousel. */
+.logo-marquee__img--frenchtech {
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
 .hero-scroll-indicator {
   position: relative;
   width: 100px;

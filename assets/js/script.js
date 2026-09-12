@@ -797,6 +797,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { src: "https://msd-media.com/assets/img/logo-radiesse.webp", alt: "Logo Radiesse" },
     { src: "https://msd-media.com/assets/img/logo-track5.webp", alt: "Logo client 5" },
     { src: "https://msd-media.com/assets/img/logo-merz-aesthetics.webp", alt: "Logo Merz Aesthetics", className: "logo-marquee__img--merz" },
+    { src: "https://msd-media.com/assets/img/logos/french-tech-full.webp", alt: "La French Tech", className: "logo-marquee__img--frenchtech" },
     { src: "https://msd-media.com/assets/img/logo-track6.webp", alt: "Logo client 6" },
     { src: "https://msd-media.com/assets/img/logo-track7.webp", alt: "Logo client 7", className: "logo-marquee__img--carroz" },
     { src: "https://msd-media.com/assets/img/logo-track8.webp", alt: "Logo client 8" },

@@ -517,6 +517,10 @@
     height: 30px;
   }
 
+  .logo-marquee__img--frenchtech {
+    height: 48px;
+  }
+
   .logo-marquee__img--carroz {
     height: 22px;
     max-width: 120px;

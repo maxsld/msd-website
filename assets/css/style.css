@@ -7075,6 +7075,57 @@ body.affiliate-modal-open {
   color: rgba(255, 255, 255, 0.55);
 }
 
+/* Logo membre French Tech — carte claire, le logo officiel étant en texte noir */
+.footer-membership {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-membership__card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.1rem;
+  background: #ffffff;
+  border-radius: 0.2rem;
+  transition: transform 200ms ease;
+}
+
+.footer-membership__card:hover,
+.footer-membership__card:focus-visible {
+  transform: translateY(-2px);
+}
+
+.footer-membership__logo {
+  display: block;
+  height: 86px;
+  width: auto;
+}
+
+.footer-membership__text {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 34ch;
+}
+
+.footer-membership__text strong {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  margin-bottom: 0.15rem;
+}
+
+@media (max-width: 680px) {
+  .footer-membership { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+  .footer-membership__logo { height: 68px; }
+}
+
 .footer-badges {
   display: flex;
   flex-wrap: wrap;

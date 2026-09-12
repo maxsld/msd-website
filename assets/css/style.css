@@ -7049,70 +7049,51 @@ body.affiliate-modal-open {
 }
 
 /* COPYRIGHT */
-/* Badge partenaire annuaire (DesignRush) — footer */
-/* Témoignage vidéo sur les études de cas — embed YouTube direct */
-.case-study-video {
-  margin: 1.5rem 0 2rem;
-  padding: 0;
-}
-
-.case-study-video iframe {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  border: 0;
-  border-radius: 0.2rem;
-}
-
-
-/* Badge partenaire annuaire (DesignRush) — footer */
-
-
-.case-study-video figcaption {
-  margin-top: 0.6rem;
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.55);
-}
-
-.footer-badges {
+/* Logos partenaires / appartenances — footer */
+.footer-partners {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
-  align-items: center;
-  margin-top: 2rem;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-top: 2.25rem;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.footer-badge {
+.footer-partner {
   display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.38rem 0.7rem 0.38rem 0.45rem;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 0.2rem;
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.78rem;
-  line-height: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
   text-decoration: none;
-  transition: border-color 200ms ease, color 200ms ease;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  line-height: 1.3;
+  transition: color 200ms ease, opacity 200ms ease;
 }
 
-.footer-badge:hover,
-.footer-badge:focus-visible {
-  border-color: rgba(255, 255, 255, 0.38);
+.footer-partner:hover,
+.footer-partner:focus-visible {
   color: #ffffff;
+  opacity: 0.9;
 }
 
-.footer-badge__icon {
-  width: 18px;
-  height: 18px;
-  border-radius: 0.15rem;
-  flex-shrink: 0;
+.footer-partner__logo {
   display: block;
+  height: 64px;
+  width: auto;
+}
+
+/* Le logo French Tech officiel est rouge et noir : version monochrome blanche
+   pour rester lisible sur le footer sombre. */
+.footer-partner__logo--invert {
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 680px) {
+  .footer-partners { gap: 1.8rem; }
+  .footer-partner__logo { height: 52px; }
 }
 
 .footer-bottom {

@@ -7090,21 +7090,21 @@ body.affiliate-modal-open {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.9rem 1.1rem;
-  background: #ffffff;
-  border-radius: 0.2rem;
-  transition: transform 200ms ease;
+  transition: opacity 200ms ease;
 }
 
 .footer-membership__card:hover,
 .footer-membership__card:focus-visible {
-  transform: translateY(-2px);
+  opacity: 0.75;
 }
 
 .footer-membership__logo {
   display: block;
   height: 86px;
   width: auto;
+  /* Le logo officiel est en texte noir : version monochrome blanche pour le
+     footer sombre, plutot qu'un fond clair rapporte. */
+  filter: brightness(0) invert(1);
 }
 
 .footer-membership__text {

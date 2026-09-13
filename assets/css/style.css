@@ -7091,7 +7091,7 @@ body.affiliate-modal-open {
 
 .footer-partner__logo {
   display: block;
-  height: 64px;
+  height: 76px;
   width: auto;
 }
 
@@ -7103,7 +7103,7 @@ body.affiliate-modal-open {
 
 @media (max-width: 680px) {
   .footer-partners { gap: 1.8rem; }
-  .footer-partner__logo { height: 52px; }
+  .footer-partner__logo { height: 64px; }
 }
 
 .footer-bottom {

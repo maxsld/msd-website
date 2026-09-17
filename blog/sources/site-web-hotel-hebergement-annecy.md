@@ -1,7 +1,8 @@
 ---
-title: "Site web pour hôtel et hébergement à Annecy : le guide complet 2026"
+status: "published"
+title: "Site Web Hôtel Annecy : Remplir Ses Chambres"
 date: "2026-04-21"
-description: "Vous gérez un hôtel, un gîte ou un hébergement à Annecy ? Découvrez comment un site web performant attire des réservations directes, réduit la dépendance OTA et améliore votre visibilité locale."
+description: "Réservation directe, photos, référencement local : comment un hôtel d'Annecy réduit sa dépendance aux plateformes et augmente sa marge."
 image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg"
 tags: ["site web hôtel Annecy", "site web hébergement Annecy", "réservations directes Annecy", "création site web Annecy", "SEO hôtel Annecy", "MSD Media"]
 slug: "site-web-hotel-hebergement-annecy"

@@ -133,20 +133,10 @@ function _msdLoadTracking(){
     gtag('config','G-VKSH9YQXZS');
   })();
 }
-// Signal de consentement pour Google Tag Manager. Les balises qui deposent des
-// cookies (Clarity, GA4) doivent se declencher sur msd_consent_accepted et non
-// sur le chargement de la page.
-function _msdConsentSignal(state){
-  window.dataLayer=window.dataLayer||[];
-  window.dataLayer.push({
-    event: state==='accepted' ? 'msd_consent_accepted' : 'msd_consent_refused',
-    msd_consent: state
-  });
-}
 (function(){
   var consent=localStorage.getItem('msd_cookie_consent');
-  if(consent==='accepted'){_msdConsentSignal('accepted');_msdLoadTracking();return;}
-  if(consent==='refused'){_msdConsentSignal('refused');return;}
+  if(consent==='accepted'){_msdLoadTracking();return;}
+  if(consent==='refused'){return;}
   if(window.innerWidth<=680){_msdLoadTracking();return;}
   function init(){
   var banner=document.getElementById('cookie-consent');
@@ -156,13 +146,11 @@ function _msdConsentSignal(state){
   show();
   document.getElementById('cookie-accept').addEventListener('click',function(){
     localStorage.setItem('msd_cookie_consent','accepted');
-    _msdConsentSignal('accepted');
     hide();
     _msdLoadTracking();
   });
   document.getElementById('cookie-refuse').addEventListener('click',function(){
     localStorage.setItem('msd_cookie_consent','refused');
-    _msdConsentSignal('refused');
     hide();
   });
   }
@@ -222,7 +210,6 @@ function _msdConsentSignal(state){
               <a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
               <a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
               <a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
-            <a href="https://msd-media.com/site-web-coach/" data-i18n="nav_coaches">Coachs &amp; consultants</a>
             </div>
             <div class="nav-megamenu__media">
               <img src="https://msd-media.com/assets/img/navbar-img2.webp" alt="Aperçu des secteurs accompagnés par MSD Media" loading="lazy" decoding="async">
@@ -268,69 +255,69 @@ function _msdConsentSignal(state){
         </button>
         <div class="blog-hero-carousel__viewport">
           <div class="blog-hero-carousel__track" data-blog-carousel-track>
-            <a class="blog-hero-carousel__slide" href="/blog/articles/apparaitre-chatgpt-perplexity-google-ia/">
+            <a class="blog-hero-carousel__slide" href="/blog/articles/coaching-maxime-sciare-dirigeant-agence/">
             <span class="blog-hero-carousel__media">
-              <img src="https://msd-media.com/assets/img/stock/photo-1762341119630-7cbf68227969-h.webp" alt="" loading="eager" decoding="async">
+              <img src="https://msd-media.com/assets/img/blog/coaching-maxime-sciare.webp" alt="" loading="eager" decoding="async">
             </span>
             <span class="blog-hero-carousel__content">
               <span class="blog-hero-carousel__meta">
-                <span class="blog-featured__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min</span>
-                <span class="blog-featured__tag">IA</span>
+                <span class="blog-featured__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 3 min</span>
+                <span class="blog-featured__tag">Blog</span>
               </span>
-              <span class="blog-hero-carousel__title">Comment apparaître dans ChatGPT en 2026 ? (+ Perplexity et Google AI Overviews)</span>
-              <span class="blog-hero-carousel__desc">Comment apparaître dans ChatGPT en 2026 : les 3 facteurs qui font qu&#39;une IA cite une entreprise plutôt qu&#39;une autre, la méthode concrète, et ce que MSD Media a réellement mis en place.</span>
-            </span>
-          </a>
-<a class="blog-hero-carousel__slide" href="/blog/articles/combien-coute-landing-page-france-2026/">
-            <span class="blog-hero-carousel__media">
-              <img src="https://msd-media.com/assets/img/stock/photo-1460925895917-afdab827c52f-h.webp" alt="" loading="lazy" decoding="async">
-            </span>
-            <span class="blog-hero-carousel__content">
-              <span class="blog-hero-carousel__meta">
-                <span class="blog-featured__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
-                <span class="blog-featured__tag">Landing page</span>
-              </span>
-              <span class="blog-hero-carousel__title">Combien coûte une landing page en 2026 ? Le vrai prix, sans blabla</span>
-              <span class="blog-hero-carousel__desc">Combien coûte une landing page en 2026 : les vrais prix par type de prestataire (DIY, freelance, agence), les facteurs qui font varier la facture, et comment lire un devis sans se faire avoir.</span>
+              <span class="blog-hero-carousel__title">Ce que le coaching avec Maxime Sciare m&#39;a débloqué en tant que dirigeant d&#39;agence</span>
+              <span class="blog-hero-carousel__desc">Deux séances de coaching avec Maxime Sciare m&#39;ont aidé à lancer MSD Media, puis à retrouver ma vision et mon énergie de dirigeant. Mon retour d&#39;expérience.</span>
             </span>
           </a>
 <a class="blog-hero-carousel__slide" href="/blog/articles/apparaitre-chatgpt-perplexity-google-ia/">
             <span class="blog-hero-carousel__media">
-              <img src="https://msd-media.com/assets/img/stock/photo-1551288049-bebda4e38f71-h.webp" alt="" loading="lazy" decoding="async">
+              <img src="https://msd-media.com/assets/img/stock/photo-1762341119630-7cbf68227969.webp" alt="" loading="lazy" decoding="async">
             </span>
             <span class="blog-hero-carousel__content">
               <span class="blog-hero-carousel__meta">
-                <span class="blog-featured__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
+                <span class="blog-featured__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 min</span>
                 <span class="blog-featured__tag">IA</span>
               </span>
-              <span class="blog-hero-carousel__title">Pourquoi vos concurrents sont cités par ChatGPT et Perplexity (et pas vous)</span>
-              <span class="blog-hero-carousel__desc">Votre concurrent apparaît dans ChatGPT ou Perplexity et pas vous ? Les 4 causes techniques et éditoriales les plus fréquentes, et comment les diagnostiquer sur votre propre site.</span>
+              <span class="blog-hero-carousel__title">Apparaître dans ChatGPT : nos chiffres sur 12 mois</span>
+              <span class="blog-hero-carousel__desc">J&#39;ai appliqué tous les conseils GEO sur mon propre site : llms.txt, crawlers IA autorisés, 344 blocs de données structurées. Voici le trafic réel que ça a rapporté en 12 mois.</span>
             </span>
           </a>
 <a class="blog-hero-carousel__slide" href="/blog/articles/avis-clients-autorite-geo-2026/">
             <span class="blog-hero-carousel__media">
-              <img src="https://msd-media.com/assets/img/stock/photo-1553877522-43269d4ea984-h.webp" alt="" loading="lazy" decoding="async">
+              <img src="https://msd-media.com/assets/img/stock/photo-1553877522-43269d4ea984.webp" alt="" loading="lazy" decoding="async">
             </span>
             <span class="blog-hero-carousel__content">
               <span class="blog-hero-carousel__meta">
                 <span class="blog-featured__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
                 <span class="blog-featured__tag">IA</span>
               </span>
-              <span class="blog-hero-carousel__title">Avis clients et UGC : le nouveau facteur d&#39;autorité pour être cité par les IA en 2026</span>
-              <span class="blog-hero-carousel__desc">Les modèles génératifs évaluent le sentiment de marque avant de vous citer. Pourquoi les avis clients pèsent désormais autant que les backlinks pour le GEO.</span>
+              <span class="blog-hero-carousel__title">Avis Clients : le Nouveau Facteur d&#39;Autorité IA</span>
+              <span class="blog-hero-carousel__desc">Pourquoi les avis et contenus utilisateurs pèsent désormais autant dans les citations des IA que les backlinks dans le SEO classique.</span>
             </span>
           </a>
 <a class="blog-hero-carousel__slide" href="/blog/articles/google-mise-a-jour-aout-2026/">
             <span class="blog-hero-carousel__media">
-              <img src="https://msd-media.com/assets/img/stock/photo-1573164713988-8665fc963095-h.webp" alt="" loading="lazy" decoding="async">
+              <img src="https://msd-media.com/assets/img/stock/photo-1573164713988-8665fc963095.webp" alt="" loading="lazy" decoding="async">
             </span>
             <span class="blog-hero-carousel__content">
               <span class="blog-hero-carousel__meta">
                 <span class="blog-featured__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
                 <span class="blog-featured__tag">SEO</span>
               </span>
-              <span class="blog-hero-carousel__title">Mise à jour Google août 2026 : ce qui s&#39;est vraiment passé (et comment réagir)</span>
-              <span class="blog-hero-carousel__desc">Spam update confirmé du 18 au 21 août 2026, contenu à grande échelle visé, rumeurs de core update non confirmées. Ce qu&#39;il faut vérifier sur votre site.</span>
+              <span class="blog-hero-carousel__title">Mise à Jour Google Août 2026 : Ce qui a Changé</span>
+              <span class="blog-hero-carousel__desc">Ce que cette mise à jour a réellement modifié dans les classements, quels types de sites ont perdu, et comment réagir sans paniquer.</span>
+            </span>
+          </a>
+<a class="blog-hero-carousel__slide" href="/blog/articles/google-ai-mode-zero-click-2026/">
+            <span class="blog-hero-carousel__media">
+              <img src="https://msd-media.com/assets/img/stock/photo-1560472354-b33ff0c44a43.webp" alt="" loading="lazy" decoding="async">
+            </span>
+            <span class="blog-hero-carousel__content">
+              <span class="blog-hero-carousel__meta">
+                <span class="blog-featured__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min</span>
+                <span class="blog-featured__tag">IA</span>
+              </span>
+              <span class="blog-hero-carousel__title">Google AI Mode : Pourquoi Votre Trafic Baisse</span>
+              <span class="blog-hero-carousel__desc">Vous êtes bien classé et vous perdez des visites : l&#39;explication du zéro-clic, ce que ça change pour votre site et comment compenser.</span>
             </span>
           </a>
           </div>
@@ -360,120 +347,110 @@ function _msdConsentSignal(state){
     <section class="case-studies-section">
       <div class="case-studies-inner">
         <div class="blog-grid">
-          <a href="/blog/articles/apparaitre-chatgpt-perplexity-google-ia/" class="blog-card" data-title="comment apparaître dans chatgpt en 2026 ? (+ perplexity et google ai overviews)" data-desc="comment apparaître dans chatgpt en 2026 : les 3 facteurs qui font qu&#39;une ia cite une entreprise plutôt qu&#39;une autre, la méthode concrète, et ce que msd media a réellement mis en place.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1762341119630-7cbf68227969-t.webp" alt="" loading="lazy" decoding="async">
+          <a href="/blog/articles/coaching-maxime-sciare-dirigeant-agence/" class="blog-card" data-title="ce que le coaching avec maxime sciare m&#39;a débloqué en tant que dirigeant d&#39;agence" data-desc="deux séances de coaching avec maxime sciare m&#39;ont aidé à lancer msd media, puis à retrouver ma vision et mon énergie de dirigeant. mon retour d&#39;expérience.">
+        <img src="https://msd-media.com/assets/img/blog/coaching-maxime-sciare.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Comment apparaître dans ChatGPT en 2026 ? (+ Perplexity et Google AI Overviews)</h3>
+          <h3 class="blog-card__title">Ce que le coaching avec Maxime Sciare m&#39;a débloqué en tant que dirigeant d&#39;agence</h3>
           <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min</span>
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 3 min</span>
+            <span class="blog-card__tag">Blog</span>
+          </span>
+        </span>
+      </a>
+<a href="/blog/articles/apparaitre-chatgpt-perplexity-google-ia/" class="blog-card" data-title="apparaître dans chatgpt : nos chiffres sur 12 mois" data-desc="j&#39;ai appliqué tous les conseils geo sur mon propre site : llms.txt, crawlers ia autorisés, 344 blocs de données structurées. voici le trafic réel que ça a rapporté en 12 mois.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1762341119630-7cbf68227969.webp" alt="" loading="lazy" decoding="async">
+        <span class="blog-card__content">
+          <h3 class="blog-card__title">Apparaître dans ChatGPT : nos chiffres sur 12 mois</h3>
+          <span class="blog-card__details">
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 min</span>
             <span class="blog-card__tag">IA</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/combien-coute-landing-page-france-2026/" class="blog-card" data-title="combien coûte une landing page en 2026 ? le vrai prix, sans blabla" data-desc="combien coûte une landing page en 2026 : les vrais prix par type de prestataire (diy, freelance, agence), les facteurs qui font varier la facture, et comment lire un devis sans se faire avoir.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1460925895917-afdab827c52f-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/avis-clients-autorite-geo-2026/" class="blog-card" data-title="avis clients : le nouveau facteur d&#39;autorité ia" data-desc="pourquoi les avis et contenus utilisateurs pèsent désormais autant dans les citations des ia que les backlinks dans le seo classique.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1553877522-43269d4ea984.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Combien coûte une landing page en 2026 ? Le vrai prix, sans blabla</h3>
-          <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
-            <span class="blog-card__tag">Landing page</span>
-          </span>
-        </span>
-      </a>
-<a href="/blog/articles/apparaitre-chatgpt-perplexity-google-ia/" class="blog-card" data-title="pourquoi vos concurrents sont cités par chatgpt et perplexity (et pas vous)" data-desc="votre concurrent apparaît dans chatgpt ou perplexity et pas vous ? les 4 causes techniques et éditoriales les plus fréquentes, et comment les diagnostiquer sur votre propre site.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1551288049-bebda4e38f71-t.webp" alt="" loading="lazy" decoding="async">
-        <span class="blog-card__content">
-          <h3 class="blog-card__title">Pourquoi vos concurrents sont cités par ChatGPT et Perplexity (et pas vous)</h3>
-          <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
-            <span class="blog-card__tag">IA</span>
-          </span>
-        </span>
-      </a>
-<a href="/blog/articles/avis-clients-autorite-geo-2026/" class="blog-card" data-title="avis clients et ugc : le nouveau facteur d&#39;autorité pour être cité par les ia en 2026" data-desc="les modèles génératifs évaluent le sentiment de marque avant de vous citer. pourquoi les avis clients pèsent désormais autant que les backlinks pour le geo.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1553877522-43269d4ea984-t.webp" alt="" loading="lazy" decoding="async">
-        <span class="blog-card__content">
-          <h3 class="blog-card__title">Avis clients et UGC : le nouveau facteur d&#39;autorité pour être cité par les IA en 2026</h3>
+          <h3 class="blog-card__title">Avis Clients : le Nouveau Facteur d&#39;Autorité IA</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
             <span class="blog-card__tag">IA</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/google-mise-a-jour-aout-2026/" class="blog-card" data-title="mise à jour google août 2026 : ce qui s&#39;est vraiment passé (et comment réagir)" data-desc="spam update confirmé du 18 au 21 août 2026, contenu à grande échelle visé, rumeurs de core update non confirmées. ce qu&#39;il faut vérifier sur votre site.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1573164713988-8665fc963095-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/google-mise-a-jour-aout-2026/" class="blog-card" data-title="mise à jour google août 2026 : ce qui a changé" data-desc="ce que cette mise à jour a réellement modifié dans les classements, quels types de sites ont perdu, et comment réagir sans paniquer.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1573164713988-8665fc963095.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Mise à jour Google août 2026 : ce qui s&#39;est vraiment passé (et comment réagir)</h3>
+          <h3 class="blog-card__title">Mise à Jour Google Août 2026 : Ce qui a Changé</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
             <span class="blog-card__tag">SEO</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/google-ai-mode-zero-click-2026/" class="blog-card" data-title="google ai mode en 2026 : pourquoi votre site perd du trafic même bien classé" data-desc="92 à 94 % des sessions google ai mode se terminent sans clic. ce que ça change pour votre trafic, et comment rester visible quand google répond à votre place.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1560472354-b33ff0c44a43-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/google-ai-mode-zero-click-2026/" class="blog-card" data-title="google ai mode : pourquoi votre trafic baisse" data-desc="vous êtes bien classé et vous perdez des visites : l&#39;explication du zéro-clic, ce que ça change pour votre site et comment compenser.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1560472354-b33ff0c44a43.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Google AI Mode en 2026 : pourquoi votre site perd du trafic même bien classé</h3>
+          <h3 class="blog-card__title">Google AI Mode : Pourquoi Votre Trafic Baisse</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min</span>
             <span class="blog-card__tag">IA</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/accessibilite-web-obligatoire-entreprises-2026/" class="blog-card" data-title="accessibilité web obligatoire en 2026 : ce que la loi impose à votre entreprise (rgaa, amendes)" data-desc="european accessibility act, rgaa, sanctions jusqu&#39;à 300 000 € : qui est concerné en 2026, ce qu&#39;il faut mettre en place et comment vérifier votre site.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1516387938699-a93567ec168e-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/accessibilite-web-obligatoire-entreprises-2026/" class="blog-card" data-title="accessibilité web 2026 : ce que la loi impose" data-desc="rgaa, entreprises concernées, sanctions réelles : ce que la réglementation 2026 impose à votre site web, et les corrections à faire en priorité.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1516387938699-a93567ec168e.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Accessibilité web obligatoire en 2026 : ce que la loi impose à votre entreprise (RGAA, amendes)</h3>
+          <h3 class="blog-card__title">Accessibilité Web 2026 : Ce que la Loi Impose</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min</span>
             <span class="blog-card__tag">Site web</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/agence-landing-page-site-web-france-msd-media/" class="blog-card" data-title="msd media : agence landing page et site web sur-mesure en france (2026)" data-desc="msd media, agence française spécialisée en landing pages et sites web sur-mesure orientés conversion. études de cas chiffrées, méthode echo™, avis clients vérifiés trustpilot.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1642132652806-8aa09801c2ab-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/agence-landing-page-site-web-france-msd-media/" class="blog-card" data-title="msd media : agence landing page et site web" data-desc="qui nous sommes, comment nous travaillons et ce que vaut une livraison en 21 jours. notre méthode, nos références et nos tarifs, sans détour.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1642132652806-8aa09801c2ab.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">MSD Media : agence landing page et site web sur-mesure en France (2026)</h3>
+          <h3 class="blog-card__title">MSD Media : Agence Landing Page et Site Web</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
             <span class="blog-card__tag">Landing page</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/combien-coute-refonte-site-internet-2026/" class="blog-card" data-title="combien coûte une refonte de site internet en 2026 ? tarifs réels" data-desc="combien coûte une refonte de site internet en 2026 ? grille tarifaire par prestataire, refonte partielle vs totale, coûts cachés et méthode pour budgéter.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1709880945165-d2208c6ad2ec-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/combien-coute-refonte-site-internet-2026/" class="blog-card" data-title="prix d&#39;une refonte de site internet en 2026" data-desc="les fourchettes réelles selon le type de site, ce qui fait grimper la facture et les postes sur lesquels vous pouvez légitimement négocier.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1709880945165-d2208c6ad2ec.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Combien coûte une refonte de site internet en 2026 ? Tarifs réels</h3>
+          <h3 class="blog-card__title">Prix d&#39;une Refonte de Site Internet en 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 min</span>
             <span class="blog-card__tag">Site web</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/core-web-vitals-guide-2026/" class="blog-card" data-title="core web vitals : le guide complet pour un site rapide en 2026 (lcp, inp, cls)" data-desc="core web vitals expliqués simplement : lcp, inp et cls, seuils google 2026, outils de mesure gratuits et méthode concrète pour passer au vert.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1625296276188-1d149bdaf560-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/core-web-vitals-guide-2026/" class="blog-card" data-title="core web vitals 2026 : guide lcp, inp et cls" data-desc="les trois métriques que google mesure vraiment, ce qu&#39;elles signifient, les seuils à atteindre et les corrections qui ont le plus d&#39;effet.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1625296276188-1d149bdaf560.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS)</h3>
+          <h3 class="blog-card__title">Core Web Vitals 2026 : Guide LCP, INP et CLS</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min</span>
             <span class="blog-card__tag">SEO</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/maillage-interne-guide-seo/" class="blog-card" data-title="maillage interne : le levier seo le plus sous-coté (guide + méthode 2026)" data-desc="maillage interne : définition, méthode en 5 étapes, structure en cocon, erreurs à éviter et cas pratique réel. le guide complet pour booster votre seo.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1644088379091-d574269d422f-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/maillage-interne-guide-seo/" class="blog-card" data-title="maillage interne : le levier seo le plus sous-coté" data-desc="comment vos liens internes distribuent l&#39;autorité, pourquoi un méga-footer nuit à votre référencement et la méthode pour construire de vrais clusters.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1644088379091-d574269d422f.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Maillage interne : le levier SEO le plus sous-coté (guide + méthode 2026)</h3>
+          <h3 class="blog-card__title">Maillage Interne : le Levier SEO le Plus Sous-Coté</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 min</span>
             <span class="blog-card__tag">SEO</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/refonte-site-internet-guide-2026/" class="blog-card" data-title="refonte de site internet : la méthode complète sans perdre son seo (2026)" data-desc="refonte de site internet réussie : méthode en 7 étapes, checklist de migration seo, budget par prestataire et erreurs à éviter. guide complet 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1522542550221-31fd19575a2d-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/refonte-site-internet-guide-2026/" class="blog-card" data-title="refonte de site internet sans perdre son seo" data-desc="la méthode complète pour refondre un site sans effondrement de trafic : mapping des redirections, checklist de mise en ligne et suivi post-lancement.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1522542550221-31fd19575a2d.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Refonte de site internet : la méthode complète sans perdre son SEO (2026)</h3>
+          <h3 class="blog-card__title">Refonte de Site Internet Sans Perdre Son SEO</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 min</span>
             <span class="blog-card__tag">Site web</span>
@@ -481,7 +458,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/top-7-meilleures-agences-web-annecy-2026/" class="blog-card" data-title="top 7 meilleures agences web à annecy en 2026" data-desc="quelle agence web choisir à annecy en 2026 ? comparatif des 7 meilleures agences : délais, tarifs, spécialités et avis clients pour faire le bon choix.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1633613286991-611fe299c4be-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1633613286991-611fe299c4be.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Top 7 meilleures agences web à Annecy en 2026</h3>
           <span class="blog-card__details">
@@ -490,20 +467,20 @@ function _msdConsentSignal(state){
           </span>
         </span>
       </a>
-<a href="/blog/articles/wordpress-vs-site-sur-mesure-annecy-2026/" class="blog-card" data-title="wordpress vs développement sur mesure à annecy : que choisir en 2026 ?" data-desc="wordpress ou code sur mesure pour votre site à annecy ? comparatif honnête : coûts, sécurité, performance, seo. ce qui convient vraiment à votre projet.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1705904506592-d8a0d5392c66-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/wordpress-vs-site-sur-mesure-annecy-2026/" class="blog-card" data-title="wordpress ou sur mesure : que choisir en 2026 ?" data-desc="coût réel, vitesse, sécurité, maintenance : la comparaison honnête entre wordpress et un site codé sur mesure, selon la taille de votre projet.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1705904506592-d8a0d5392c66.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">WordPress vs développement sur mesure à Annecy : que choisir en 2026 ?</h3>
+          <h3 class="blog-card__title">WordPress ou Sur Mesure : Que Choisir en 2026 ?</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 3 min</span>
             <span class="blog-card__tag">Site web</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/msd-media-presse-le-dauphine/" class="blog-card" data-title="msd media dans le dauphiné libéré : portrait presse" data-desc="msd media, agence web annécienne fondée par l&#39;étudiant-entrepreneur maxens soldan, fait l&#39;objet d&#39;un portrait dans le dauphiné libéré. lire l&#39;article.">
+<a href="/blog/articles/msd-media-presse-le-dauphine/" class="blog-card" data-title="msd media dans le dauphiné libéré : le portrait" data-desc="retour sur le portrait consacré à msd media et à son fondateur par le dauphiné libéré : le parcours, l&#39;agence et les projets en cours.">
         <img src="https://msd-media.com/assets/img/mockup-img-dauphine.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">MSD Media dans Le Dauphiné Libéré : portrait presse</h3>
+          <h3 class="blog-card__title">MSD Media dans Le Dauphiné Libéré : le Portrait</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
             <span class="blog-card__tag">Landing page</span>
@@ -511,7 +488,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/combien-coute-seo-annecy-2026/" class="blog-card" data-title="prix du seo local à annecy en 2026 : ce que ça coûte vraiment" data-desc="budget seo à annecy : ce que coûte un accompagnement local en 2026. audit, stratégie, suivi mensuel — comprenez les différentes formules disponibles.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1776519685019-bbe8ef2b9919-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1776519685019-bbe8ef2b9919.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Prix du SEO local à Annecy en 2026 : ce que ça coûte vraiment</h3>
           <span class="blog-card__details">
@@ -520,48 +497,48 @@ function _msdConsentSignal(state){
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-garage-carrosserie-annecy/" class="blog-card" data-title="site web pour garage et carrosserie à annecy : guide 2026" data-desc="garagiste ou carrossier à annecy ? découvrez comment un site web optimisé génère des demandes de devis locales et vous distingue de la concurrence.&#39;attirer de nouveaux clients locaux, d&#39;afficher vos services et de vous positionner sur google avant vos concurrents.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1615906655593-ad0386982a0f-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-garage-carrosserie-annecy/" class="blog-card" data-title="site web garage annecy : remplir son atelier" data-desc="devis en ligne, avis clients et référencement local : ce qui amène réellement des véhicules dans l&#39;atelier d&#39;un garage ou d&#39;une carrosserie.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1615906655593-ad0386982a0f.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour garage et carrosserie à Annecy : guide 2026</h3>
+          <h3 class="blog-card__title">Site Web Garage Annecy : Remplir Son Atelier</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 9 min</span>
             <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-veterinaire-annecy/" class="blog-card" data-title="site web pour vétérinaire à annecy : le guide complet 2026" data-desc="vétérinaire à annecy ? découvrez comment un site web bien conçu vous positionne sur google, attire de nouveaux clients et simplifie la prise de rdv.&#39;attirer de nouveaux clients, de réduire les appels inutiles et de vous démarquer des cliniques vétérinaires de la région.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1770836037793-95bdbf190f71-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-veterinaire-annecy/" class="blog-card" data-title="site web vétérinaire annecy : le guide 2026" data-desc="urgences, horaires, prise de contact : les informations que cherchent vraiment les propriétaires d&#39;animaux, et comment structurer votre site.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1770836037793-95bdbf190f71.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour vétérinaire à Annecy : le guide complet 2026</h3>
+          <h3 class="blog-card__title">Site Web Vétérinaire Annecy : le Guide 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 9 min</span>
-            <span class="blog-card__tag">Site web</span>
+            <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-dentiste-annecy/" class="blog-card" data-title="site web pour dentiste à annecy : guide complet 2026 | msd" data-desc="dentiste ou cabinet dentaire à annecy ? découvrez comment un site web professionnel attire de nouveaux patients et renforce votre réputation locale.&#39;un site web professionnel doit contenir pour attirer de nouveaux patients, respecter la déontologie et vous positionner sur google.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1629909613654-28e377c37b09-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-dentiste-annecy/" class="blog-card" data-title="site web dentiste annecy : le guide complet 2026" data-desc="prise de rendez-vous, informations pratiques et référencement local : ce qu&#39;un cabinet dentaire d&#39;annecy doit vraiment mettre sur son site.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1629909613654-28e377c37b09.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour dentiste à Annecy : guide complet 2026 | MSD</h3>
+          <h3 class="blog-card__title">Site Web Dentiste Annecy : le Guide Complet 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 11 min</span>
-            <span class="blog-card__tag">Site web</span>
+            <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-notaire-annecy/" class="blog-card" data-title="site web pour notaire à annecy : ce qu&#39;il faut vraiment 2026&#39;il faut vraiment en 2026" data-desc="notaire à annecy : découvrez comment un site web professionnel renforce votre crédibilité et attire de nouveaux clients en 2026. guide complet.&#39;un site web professionnel doit contenir, comment respecter les règles déontologiques et attirer des clients qualifiés via google.">
+<a href="/blog/articles/site-web-notaire-annecy/" class="blog-card" data-title="site web notaire annecy : ce qui compte vraiment" data-desc="cadre déontologique, clarté des prestations et référencement local : comment une étude notariale d&#39;annecy construit un site utile et conforme.">
         <img src="https://msd-media.com/assets/img/stock/photo-1473186505569-9c61870c11f9.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour notaire à Annecy : ce qu&#39;il faut vraiment 2026&#39;il faut vraiment en 2026</h3>
+          <h3 class="blog-card__title">Site Web Notaire Annecy : Ce qui Compte Vraiment</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</span>
-            <span class="blog-card__tag">Site web</span>
+            <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
 <a href="/blog/articles/google-business-profile-annecy-2026/" class="blog-card" data-title="optimiser sa fiche google business à annecy en 2026 | msd" data-desc="guide complet pour optimiser votre fiche google business profile à annecy : catégories, photos, avis, publications. résultats visibles en 30 jours.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1694928850410-b209896782a2-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1694928850410-b209896782a2.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Optimiser sa fiche Google Business à Annecy en 2026 | MSD</h3>
           <span class="blog-card__details">
@@ -571,7 +548,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/google-business-profile-strasbourg-2026/" class="blog-card" data-title="optimiser sa fiche google business à strasbourg en 2026" data-desc="guide complet pour optimiser votre fiche google business profile à strasbourg : catégories, photos, avis et publications locales. résultats rapides.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1764347923709-fc48487f2486-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1764347923709-fc48487f2486.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Optimiser sa fiche Google Business à Strasbourg en 2026</h3>
           <span class="blog-card__details">
@@ -580,10 +557,10 @@ function _msdConsentSignal(state){
           </span>
         </span>
       </a>
-<a href="/blog/articles/seo-local-alsace-2026/" class="blog-card" data-title="seo local en alsace : guide complet pour entreprises 2026" data-desc="guide seo local complet pour les entreprises alsaciennes : strasbourg, colmar, mulhouse. référencement google maps et recherches locales en 2026.&#39;alsace : strasbourg, colmar, mulhouse, haguenau. apparaître sur google, chatgpt et perplexity en 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1701921729931-28722c1b747e-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/seo-local-alsace-2026/" class="blog-card" data-title="seo local en alsace : le guide complet 2026" data-desc="google business profile, avis, contenus locaux : la méthode pour qu&#39;une entreprise alsacienne remonte dans les recherches de proximité.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1701921729931-28722c1b747e.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">SEO local en Alsace : guide complet pour entreprises 2026</h3>
+          <h3 class="blog-card__title">SEO Local en Alsace : le Guide Complet 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
             <span class="blog-card__tag">SEO</span>
@@ -591,7 +568,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/site-web-coiffeur-strasbourg/" class="blog-card" data-title="site web pour salon de coiffure à strasbourg : guide 2026" data-desc="salon de coiffure à strasbourg : comment un site web et les réservations en ligne remplissent votre agenda. les essentiels pour 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1761931403671-d020a14928d9-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1761931403671-d020a14928d9.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Site web pour salon de coiffure à Strasbourg : guide 2026</h3>
           <span class="blog-card__details">
@@ -600,58 +577,58 @@ function _msdConsentSignal(state){
           </span>
         </span>
       </a>
-<a href="/blog/articles/copywriting-web-2026-textes-qui-convertissent/" class="blog-card" data-title="copywriting web en 2026 : comment écrire des textes qui convertissent vraiment" data-desc="le copywriting web décide si vos visiteurs contactent ou repartent. découvrez les frameworks, les erreurs à éviter et les techniques qui fonctionnent en 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1510442650500-93217e634e4c-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/copywriting-web-2026-textes-qui-convertissent/" class="blog-card" data-title="copywriting web : écrire des textes qui vendent" data-desc="les principes de copywriting qui font vraiment convertir une page web en 2026, avec des avant/après concrets tirés de projets réels.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1510442650500-93217e634e4c.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Copywriting web en 2026 : comment écrire des textes qui convertissent vraiment</h3>
+          <h3 class="blog-card__title">Copywriting Web : Écrire des Textes qui Vendent</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 11 min</span>
             <span class="blog-card__tag">Landing page</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-hotel-hebergement-annecy/" class="blog-card" data-title="site web pour hôtel et hébergement à annecy : le guide complet 2026" data-desc="vous gérez un hôtel, un gîte ou un hébergement à annecy ? découvrez comment un site web performant attire des réservations directes, réduit la dépendance ota et améliore votre visibilité locale.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1549638441-b787d2e11f14-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-hotel-hebergement-annecy/" class="blog-card" data-title="site web hôtel annecy : remplir ses chambres" data-desc="réservation directe, photos, référencement local : comment un hôtel d&#39;annecy réduit sa dépendance aux plateformes et augmente sa marge.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1549638441-b787d2e11f14.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour hôtel et hébergement à Annecy : le guide complet 2026</h3>
+          <h3 class="blog-card__title">Site Web Hôtel Annecy : Remplir Ses Chambres</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 2 min</span>
             <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/vitesse-performance-site-web-annecy-2026/" class="blog-card" data-title="vitesse de site web à annecy : pourquoi ça coûte des clients (et comment y remédier en 2026)" data-desc="un site lent vous fait perdre des clients à annecy. découvrez les chiffres réels, les core web vitals qui comptent, et comment optimiser la performance de votre site en 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1611760357505-922600d8ffa6-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/vitesse-performance-site-web-annecy-2026/" class="blog-card" data-title="vitesse d&#39;un site web : ce que la lenteur coûte" data-desc="chaque seconde de chargement se paie en clients perdus. les chiffres, les causes réelles de lenteur et les corrections qui changent tout.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1611760357505-922600d8ffa6.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Vitesse de site web à Annecy : pourquoi ça coûte des clients (et comment y remédier en 2026)</h3>
+          <h3 class="blog-card__title">Vitesse d&#39;un Site Web : ce que la Lenteur Coûte</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</span>
-            <span class="blog-card__tag">Local</span>
+            <span class="blog-card__tag">Site web</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/combien-coute-landing-page-annecy-2026/" class="blog-card" data-title="prix d&#39;une landing page à annecy en 2026 : tarifs réels" data-desc="tarifs réels d&#39;une landing page à annecy en 2026 : de la page simple au funnel complet. comparez les formules et trouvez la meilleure option.&#39;une landing page à annecy en 2026 ? découvrez les offres réels, les facteurs qui font varier le valeur et comment choisir la bonne option...">
-        <img src="https://msd-media.com/assets/img/stock/photo-1579846704347-39fcfab0994d-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/combien-coute-landing-page-annecy-2026/" class="blog-card" data-title="prix d&#39;une landing page à annecy en 2026" data-desc="les tarifs réellement pratiqués à annecy pour une landing page, ce que chaque fourchette contient, et comment juger si un devis est cohérent.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1579846704347-39fcfab0994d.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Prix d&#39;une landing page à Annecy en 2026 : tarifs réels</h3>
+          <h3 class="blog-card__title">Prix d&#39;une Landing Page à Annecy en 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min</span>
             <span class="blog-card__tag">Landing page</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/creation-site-web-annecy-2026/" class="blog-card" data-title="créer son site web à annecy en 2026 : guide complet | msd" data-desc="tout ce qu&#39;il faut savoir pour créer un site web performant à annecy en 2026 : étapes, prestataires et pièges à éviter. guide sans jargon.&#39;il faut savoir pour créer un site web à annecy en 2026 : étapes, projet, choix du prestataire, seo local et erreurs à éviter. guide complet par...">
-        <img src="https://msd-media.com/assets/img/stock/photo-1547658719-da2b51169166-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/creation-site-web-annecy-2026/" class="blog-card" data-title="créer son site web à annecy en 2026 : le guide" data-desc="budget, prestataires, délais et pièges : le guide complet pour lancer un site internet à annecy sans se tromper ni payer deux fois.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1547658719-da2b51169166.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Créer son site web à Annecy en 2026 : guide complet | MSD</h3>
+          <h3 class="blog-card__title">Créer Son Site Web à Annecy en 2026 : le Guide</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min</span>
-            <span class="blog-card__tag">Local</span>
+            <span class="blog-card__tag">Site web</span>
           </span>
         </span>
       </a>
 <a href="/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/" class="blog-card" data-title="pourquoi votre site ne génère pas de clients : 7 causes 2026" data-desc="votre site a du trafic mais pas de leads ? découvrez les 7 raisons les plus fréquentes et comment y remédier concrètement pour convertir en 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1638481826540-7710b13f7d53-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1638481826540-7710b13f7d53.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Pourquoi votre site ne génère pas de clients : 7 causes 2026</h3>
           <span class="blog-card__details">
@@ -661,7 +638,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/site-web-agence-immobiliere-alsace/" class="blog-card" data-title="site web pour agence immobilière en alsace : guide 2026" data-desc="le marché immobilier alsacien est dopé par la proximité allemande et suisse. comment un site web optimisé génère des mandats qualifiés en alsace.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1763729805496-b5dbf7f00c79-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1763729805496-b5dbf7f00c79.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Site web pour agence immobilière en Alsace : guide 2026</h3>
           <span class="blog-card__details">
@@ -671,7 +648,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/aeo-seo-geo-guide-2026/" class="blog-card" data-title="aeo vs seo vs geo : le guide complet pour 2026" data-desc="quelle est la différence entre seo, geo et aeo en 2026 ? guide complet pour comprendre les trois approches et savoir laquelle prioriser pour votre entreprise.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1516382799247-87df95d790b7-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1516382799247-87df95d790b7.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">AEO vs SEO vs GEO : le guide complet pour 2026</h3>
           <span class="blog-card__details">
@@ -680,68 +657,68 @@ function _msdConsentSignal(state){
           </span>
         </span>
       </a>
-<a href="/blog/articles/agence-web-freelance-nocode-2026/" class="blog-card" data-title="agence web vs freelance vs no-code : que choisir en 2026 ?" data-desc="agence web, freelance ou no-code ? guide complet pour choisir la bonne option selon votre budget, vos besoins et vos objectifs en 2026. comparatif honnête.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1776455569504-47b44afc8662-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/agence-web-freelance-nocode-2026/" class="blog-card" data-title="agence, freelance ou no-code : que choisir ?" data-desc="budget, délais, autonomie, risques : les trois options comparées sans complaisance, avec les cas où chacune est objectivement le bon choix.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1776455569504-47b44afc8662.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Agence web vs freelance vs no-code : que choisir en 2026 ?</h3>
+          <h3 class="blog-card__title">Agence, Freelance ou No-Code : Que Choisir ?</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
             <span class="blog-card__tag">Site web</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/combien-coute-landing-page-france-2026/" class="blog-card" data-title="combien coûte une landing page en 2026 ? guide des tarifs en france" data-desc="prix réels d&#39;une landing page en france en 2026. de 200€ (template) à 8 000€ (sur mesure haut de gamme) : comparatif complet des options, ce qui justifie les prix et comment choisir.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1776520283713-beaab91e6552-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/combien-coute-landing-page-france-2026/" class="blog-card" data-title="prix d&#39;une landing page en france : guide 2026" data-desc="fourchettes de prix par type de prestataire, ce qui justifie les écarts et les questions à poser avant de signer un devis de landing page.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1776520283713-beaab91e6552.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Combien coûte une landing page en 2026 ? Guide des tarifs en France</h3>
+          <h3 class="blog-card__title">Prix d&#39;une Landing Page en France : Guide 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
             <span class="blog-card__tag">Landing page</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/google-ai-overviews-pme-france/" class="blog-card" data-title="google ai overviews et seo local : ce qui change pour les pme françaises en 2026" data-desc="google ai overviews est déployé en france. ce que ça change concrètement pour le seo local des pme : opportunités, risques et stratégie d&#39;adaptation.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1586125674857-4eb86880905d-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/google-ai-overviews-pme-france/" class="blog-card" data-title="google ai overviews : ce qui change pour les pme" data-desc="les ai overviews absorbent les clics des pme françaises. ce qui change concrètement dans les serp locales et comment continuer à capter du trafic.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1586125674857-4eb86880905d.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Google AI Overviews et SEO local : ce qui change pour les PME françaises en 2026</h3>
+          <h3 class="blog-card__title">Google AI Overviews : Ce qui Change pour les PME</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
             <span class="blog-card__tag">IA</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/landing-page-chatgpt-google/" class="blog-card" data-title="comment une landing page bien structurée ranke sur chatgpt et google simultanément" data-desc="il est possible d&#39;optimiser une landing page pour à la fois ranker sur google et apparaître dans les réponses chatgpt. voici la structure exacte à adopter en 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1762330465551-5217a6dec84f-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/landing-page-chatgpt-google/" class="blog-card" data-title="ranker sur chatgpt et google avec une seule page" data-desc="comment structurer une landing page pour qu&#39;elle satisfasse à la fois l&#39;algorithme de google et les moteurs de réponse génératifs.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1762330465551-5217a6dec84f.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Comment une landing page bien structurée ranke sur ChatGPT ET Google simultanément</h3>
+          <h3 class="blog-card__title">Ranker sur ChatGPT et Google avec une Seule Page</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
             <span class="blog-card__tag">IA</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/schema-org-donnees-structurees-ia/" class="blog-card" data-title="schema.org et données structurées : pourquoi les ia les lisent mieux que google" data-desc="comprendre pourquoi schema.org est devenu essentiel pour le geo en 2026. quels schemas implémenter, comment les tester, et pourquoi les ia s&#39;en servent plus que google.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1518773553398-650c184e0bb3-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/schema-org-donnees-structurees-ia/" class="blog-card" data-title="schema.org : pourquoi les ia le lisent mieux" data-desc="les données structurées ne servent plus seulement aux rich results. comment les llm s&#39;en servent pour comprendre et citer votre entreprise.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1518773553398-650c184e0bb3.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Schema.org et données structurées : pourquoi les IA les lisent mieux que Google</h3>
+          <h3 class="blog-card__title">Schema.org : Pourquoi les IA le Lisent Mieux</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 3 min</span>
             <span class="blog-card__tag">IA</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/seo-local-ia-2026/" class="blog-card" data-title="seo local en 2026 : comment les ia transforment les recherches de proximité" data-desc="comment les ia générative changent le seo local en 2026 ? google ai overviews, chatgpt et perplexity bouleversent la façon dont vos clients trouvent des prestataires près de chez eux.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1519558260268-cde7e03a0152-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/seo-local-ia-2026/" class="blog-card" data-title="seo local 2026 : comment l&#39;ia change la donne" data-desc="chatgpt, perplexity et ai overviews réécrivent la recherche de proximité. ce que les commerces et indépendants doivent changer dès maintenant.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1519558260268-cde7e03a0152.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">SEO local en 2026 : comment les IA transforment les recherches de proximité</h3>
+          <h3 class="blog-card__title">SEO Local 2026 : Comment l&#39;IA Change la Donne</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
-            <span class="blog-card__tag">SEO</span>
+            <span class="blog-card__tag">IA</span>
           </span>
         </span>
       </a>
 <a href="/blog/articles/maintenance-site-web-annecy/" class="blog-card" data-title="maintenance site web à annecy : prestataire local réactif" data-desc="maintenance de site web et wordpress à annecy : sécurité, mises à jour, sauvegardes, support réactif sous 24h. devis gratuit en 5 minutes.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1607799279861-4dd421887fb3-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1607799279861-4dd421887fb3.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Maintenance site web à Annecy : prestataire local réactif</h3>
           <span class="blog-card__details">
@@ -751,7 +728,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/referencement-naturel-annecy/" class="blog-card" data-title="référencement naturel à annecy : stratégie seo google 2026" data-desc="guide complet sur le référencement naturel (seo) à annecy en 2026. stratégie, contenu, technique et seo local pour apparaître en 1ère page google.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1642572739651-cb7716cb5d3f-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1642572739651-cb7716cb5d3f.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Référencement naturel à Annecy : stratégie SEO Google 2026</h3>
           <span class="blog-card__details">
@@ -761,7 +738,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/site-web-agence-immobiliere-haute-savoie/" class="blog-card" data-title="site web pour agence immobilière en haute-savoie 2026" data-desc="le marché immobilier de haute-savoie est parmi les plus dynamiques de france. comment créer un site web qui génère des mandats qualifiés en 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1759428679273-11d914866394-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1759428679273-11d914866394.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Site web pour agence immobilière en Haute-Savoie 2026</h3>
           <span class="blog-card__details">
@@ -771,7 +748,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/site-web-coach-sportif-annecy/" class="blog-card" data-title="site web pour coach sportif à annecy : trouver des clients" data-desc="annecy est la ville idéale pour un coach sportif. comment votre site web et votre seo local vous apportent des clients réguliers en 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1758875569256-f37c438cac65-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1758875569256-f37c438cac65.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Site web pour coach sportif à Annecy : trouver des clients</h3>
           <span class="blog-card__details">
@@ -781,7 +758,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/site-web-coiffeur-annecy/" class="blog-card" data-title="site web pour salon de coiffure à annecy : remplir l&#39;agenda" data-desc="comment créer un site web efficace pour votre salon de coiffure à annecy. réservations en ligne, seo local et design qui inspire confiance.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1647462741268-e5724e5886c0-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1647462741268-e5724e5886c0.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Site web pour salon de coiffure à Annecy : remplir l&#39;agenda</h3>
           <span class="blog-card__details">
@@ -790,10 +767,10 @@ function _msdConsentSignal(state){
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-expert-comptable-annecy/" class="blog-card" data-title="site web pour expert-comptable à annecy : guide 2026 | msd" data-desc="expert-comptable à annecy : comment créer un site web professionnel qui attire des clients qualifiés et développe votre cabinet en 2026.&#39;expertise comptable à annecy. générer des leads qualifiés, crédibilité en ligne et...">
-        <img src="https://msd-media.com/assets/img/stock/photo-1707157284454-553ef0a4ed0d-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-expert-comptable-annecy/" class="blog-card" data-title="site web expert-comptable annecy : guide 2026" data-desc="comment un cabinet d&#39;expertise comptable à annecy se différencie en ligne, rassure les dirigeants et génère des demandes de rendez-vous qualifiées.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1707157284454-553ef0a4ed0d.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour expert-comptable à Annecy : guide 2026 | MSD</h3>
+          <h3 class="blog-card__title">Site Web Expert-Comptable Annecy : Guide 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
             <span class="blog-card__tag">Local</span>
@@ -801,7 +778,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/site-web-kinesitherapeute-annecy/" class="blog-card" data-title="site web pour kinésithérapeute à annecy : guide complet 2026" data-desc="comment créer un site web efficace pour votre cabinet de kinésithérapie à annecy. référencement local, prise de rdv en ligne et design professionnel.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1649751361457-01d3a696c7e6-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1649751361457-01d3a696c7e6.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Site web pour kinésithérapeute à Annecy : guide complet 2026</h3>
           <span class="blog-card__details">
@@ -810,10 +787,10 @@ function _msdConsentSignal(state){
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-osteopathe-annecy/" class="blog-card" data-title="site web pour ostéopathe à annecy : attirer plus de patients" data-desc="guide complet pour créer un site web professionnel pour votre cabinet d&#39;ostéopathie à annecy. seo local, prise de rdv et design qui inspire confiance.&#39;ostéopathie à annecy. seo local, prise de rdv en ligne et conformité déontologique.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1553267570-9becda98edf8-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-osteopathe-annecy/" class="blog-card" data-title="site web ostéopathe annecy : plus de patients" data-desc="ce qui fait qu&#39;un patient choisit un ostéopathe plutôt qu&#39;un autre en ligne, et comment le traduire concrètement sur votre site à annecy.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1553267570-9becda98edf8.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour ostéopathe à Annecy : attirer plus de patients</h3>
+          <h3 class="blog-card__title">Site Web Ostéopathe Annecy : Plus de Patients</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
             <span class="blog-card__tag">Local</span>
@@ -821,7 +798,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/site-web-station-ski-haute-savoie/" class="blog-card" data-title="site web pour station de ski en haute-savoie : guide 2026" data-desc="comment créer un site web efficace pour une station de ski, un esf ou un loueur de matériel en haute-savoie. réservations, seo local et visibilité.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1646297226339-febd1eaee532-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1646297226339-febd1eaee532.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Site web pour station de ski en Haute-Savoie : guide 2026</h3>
           <span class="blog-card__details">
@@ -830,10 +807,10 @@ function _msdConsentSignal(state){
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-architecte-annecy/" class="blog-card" data-title="site web pour architecte à annecy : le guide complet 2026" data-desc="vous êtes architecte à annecy ? découvrez comment un site web bien conçu met en valeur vos réalisations, attire des clients qualifiés et vous positionne en 1ère page sur google en 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1503387762-592deb58ef4e-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-architecte-annecy/" class="blog-card" data-title="site web architecte annecy : le guide 2026" data-desc="portfolio, mise en scène des projets et référencement local : comment un architecte d&#39;annecy transforme son site en source de nouveaux projets.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1503387762-592deb58ef4e.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour architecte à Annecy : le guide complet 2026</h3>
+          <h3 class="blog-card__title">Site Web Architecte Annecy : le Guide 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 11 min</span>
             <span class="blog-card__tag">Local</span>
@@ -841,7 +818,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/creer-landing-page-qui-convertit/" class="blog-card" data-title="créer une landing page qui convertit : méthode testée 2026" data-desc="découvrez la méthode complète de msd media pour créer une landing page qui convertit vraiment. structure, copywriting, cta et optimisation seo.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1648134859211-4a1b57575f4e-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1648134859211-4a1b57575f4e.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Créer une landing page qui convertit : méthode testée 2026</h3>
           <span class="blog-card__details">
@@ -851,7 +828,7 @@ function _msdConsentSignal(state){
         </span>
       </a>
 <a href="/blog/articles/template-2026-landing-page/" class="blog-card" data-title="créer une landing page qui convertit : méthode testée 2026" data-desc="découvrez la méthode complète de msd media pour créer une landing page qui convertit vraiment. structure, copywriting, cta et optimisation seo.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1648134859211-4a1b57575f4e-t.webp" alt="" loading="lazy" decoding="async">
+        <img src="https://msd-media.com/assets/img/stock/photo-1648134859211-4a1b57575f4e.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
           <h3 class="blog-card__title">Créer une landing page qui convertit : méthode testée 2026</h3>
           <span class="blog-card__details">
@@ -860,90 +837,90 @@ function _msdConsentSignal(state){
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-agence-immobiliere-annecy/" class="blog-card" data-title="site web pour agence immobilière à annecy : le guide complet 2026" data-desc="vous êtes agent immobilier ou agence immobilière à annecy ? découvrez comment un site web bien conçu attire des mandats exclusifs, génère des leads qualifiés et vous positionne en 1ère page sur google.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1741156386380-0236c72eb6f9-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-agence-immobiliere-annecy/" class="blog-card" data-title="site web agence immobilière annecy : guide 2026" data-desc="estimation en ligne, mise en valeur des biens, seo local : comment une agence immobilière d&#39;annecy capte des mandats via son site internet.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1741156386380-0236c72eb6f9.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour agence immobilière à Annecy : le guide complet 2026</h3>
+          <h3 class="blog-card__title">Site Web Agence Immobilière Annecy : Guide 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</span>
-            <span class="blog-card__tag">Site web</span>
+            <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-avocat-annecy/" class="blog-card" data-title="site web pour avocat et cabinet juridique à annecy : le guide complet 2026" data-desc="vous êtes avocat ou cabinet juridique à annecy ? découvrez comment un site web bien conçu attire des clients qualifiés, renforce votre crédibilité et vous positionne en 1ère page sur google.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1618771623063-6c3faa854a61-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-avocat-annecy/" class="blog-card" data-title="site web avocat annecy : le guide complet 2026" data-desc="déontologie, contenu, référencement local : comment construire le site d&#39;un cabinet d&#39;avocats à annecy qui inspire confiance et génère des appels.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1618771623063-6c3faa854a61.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour avocat et cabinet juridique à Annecy : le guide complet 2026</h3>
+          <h3 class="blog-card__title">Site Web Avocat Annecy : Le Guide Complet 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 11 min</span>
-            <span class="blog-card__tag">Site web</span>
+            <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-medecin-annecy/" class="blog-card" data-title="site web pour médecin et professionnel de santé à annecy : le guide complet 2026" data-desc="vous êtes médecin, spécialiste ou professionnel de santé à annecy ? découvrez comment un site web bien conçu vous permet d&#39;attirer de nouveaux patients, de réduire les appels inutiles et de renforcer votre crédibilité en ligne.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1758691461935-202e2ef6b69f-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-medecin-annecy/" class="blog-card" data-title="site web médecin annecy : le guide complet 2026" data-desc="ce qu&#39;un médecin peut et ne peut pas publier, quelles informations rassurent les patients et comment être trouvé sur google depuis annecy.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1758691461935-202e2ef6b69f.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour médecin et professionnel de santé à Annecy : le guide complet 2026</h3>
-          <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</span>
-            <span class="blog-card__tag">Site web</span>
-          </span>
-        </span>
-      </a>
-<a href="/blog/articles/site-web-photographe-annecy/" class="blog-card" data-title="site web pour photographe à annecy : le guide complet 2026" data-desc="vous êtes photographe à annecy ? découvrez comment un site web bien conçu attire des clients qualifiés, met en valeur votre portfolio et vous positionne en 1ère page sur google.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1590486803833-1c5dc8ddd4c8-t.webp" alt="" loading="lazy" decoding="async">
-        <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour photographe à Annecy : le guide complet 2026</h3>
+          <h3 class="blog-card__title">Site Web Médecin Annecy : Le Guide Complet 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</span>
             <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-therapeute-annecy/" class="blog-card" data-title="site web pour thérapeute et praticien à annecy : le guide complet 2026" data-desc="vous êtes thérapeute, coach, naturopathe ou praticien bien-être à annecy ? découvrez comment un site web bien conçu attire des clients qualifiés, inspire confiance et vous positionne en 1ère page sur google.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1758437053604-dc65da64c7d7-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-photographe-annecy/" class="blog-card" data-title="site web photographe annecy : le guide 2026" data-desc="galerie, vitesse de chargement, référencement local : comment un photographe d&#39;annecy construit un site qui montre son travail et remplit son agenda.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1590486803833-1c5dc8ddd4c8.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour thérapeute et praticien à Annecy : le guide complet 2026</h3>
+          <h3 class="blog-card__title">Site Web Photographe Annecy : le Guide 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</span>
             <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/ameliorer-taux-conversion-site-web/" class="blog-card" data-title="comment améliorer le taux de conversion de son site web : guide complet 2026" data-desc="taux de conversion trop faible ? découvrez les 10 leviers concrets pour transformer plus de visiteurs en clients sur votre site web, avec des exemples réels et des actions applicables immédiatement.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1633307057722-a4740ba0c5d0-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-therapeute-annecy/" class="blog-card" data-title="site web thérapeute annecy : le guide 2026" data-desc="comment un thérapeute ou praticien de bien-être à annecy construit un site qui rassure, respecte le cadre légal et remplit son agenda.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1758437053604-dc65da64c7d7.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Comment améliorer le taux de conversion de son site web : guide complet 2026</h3>
+          <h3 class="blog-card__title">Site Web Thérapeute Annecy : le Guide 2026</h3>
+          <span class="blog-card__details">
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</span>
+            <span class="blog-card__tag">Local</span>
+          </span>
+        </span>
+      </a>
+<a href="/blog/articles/ameliorer-taux-conversion-site-web/" class="blog-card" data-title="améliorer le taux de conversion de son site" data-desc="les leviers qui font vraiment bouger un taux de conversion : hiérarchie du message, preuve sociale, friction et vitesse. avec des exemples chiffrés.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1633307057722-a4740ba0c5d0.webp" alt="" loading="lazy" decoding="async">
+        <span class="blog-card__content">
+          <h3 class="blog-card__title">Améliorer le Taux de Conversion de Son Site</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min</span>
             <span class="blog-card__tag">Landing page</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/faut-il-creer-site-web-2026/" class="blog-card" data-title="faut-il encore créer un site web en 2026 ? (ia, réseaux sociaux et nouvelles tendances)" data-desc="à l&#39;heure de l&#39;ia et des réseaux sociaux, est-il encore utile de créer un site web en 2026 ? on répond honnêtement à cette question que se posent de plus en plus d&#39;entrepreneurs.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1726066012749-f81bf4422d4e-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/faut-il-creer-site-web-2026/" class="blog-card" data-title="faut-il encore créer un site web en 2026 ?" data-desc="entre réseaux sociaux, marketplaces et ia, le site web garde-t-il un intérêt ? la réponse honnête, selon votre activité et vos objectifs.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1726066012749-f81bf4422d4e.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Faut-il encore créer un site web en 2026 ? (IA, réseaux sociaux et nouvelles tendances)</h3>
+          <h3 class="blog-card__title">Faut-il Encore Créer un Site Web en 2026 ?</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min</span>
             <span class="blog-card__tag">Site web</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/qui-est-maxens-parcours-et-vision/" class="blog-card" data-title="qui est maxens soldan ? fondateur &amp; ceo de msd media" data-desc="maxens soldan est fondateur et ceo de msd media, agence web spécialisée en création de sites web et landing pages à fort taux de conversion. étudiant-entrepreneur en école d&#39;ingénieur à annecy, il accompagne startups, entrepreneurs et pme en france, suisse et belgique.">
+<a href="/blog/articles/qui-est-maxens-parcours-et-vision/" class="blog-card" data-title="qui est maxens soldan, fondateur de msd media ?" data-desc="parcours, convictions et vision du fondateur de msd media : pourquoi une agence web à annecy, et pourquoi le sur-mesure plutôt que le template.">
         <img src="https://msd-media.com/assets/img/blog/maxens-soldan.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Qui est Maxens Soldan ? Fondateur &amp; CEO de MSD Media</h3>
+          <h3 class="blog-card__title">Qui est Maxens Soldan, Fondateur de MSD Media ?</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min</span>
-            <span class="blog-card__tag">Landing page</span>
+            <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-artisan-tpe-annecy/" class="blog-card" data-title="site web pour artisan et tpe à annecy : ce qu&#39;il faut vraiment (et ce qu&#39;il ne faut pas)" data-desc="artisan, indépendant ou petite entreprise à annecy ? découvrez ce dont vous avez vraiment besoin pour un site web efficace : budget, structure, seo local et erreurs à éviter.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1497219055242-93359eeed651-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-artisan-tpe-annecy/" class="blog-card" data-title="site web artisan annecy : ce qui compte vraiment" data-desc="un artisan n&#39;a pas besoin d&#39;un beau site, il a besoin de devis. ce qui fonctionne, ce qui est du gaspillage, et combien ça coûte réellement.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1497219055242-93359eeed651.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Site web pour artisan et TPE à Annecy : ce qu&#39;il faut vraiment (et ce qu&#39;il ne faut pas)</h3>
+          <h3 class="blog-card__title">Site Web Artisan Annecy : Ce qui Compte Vraiment</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min</span>
             <span class="blog-card__tag">Local</span>
@@ -960,112 +937,112 @@ function _msdConsentSignal(state){
           </span>
         </span>
       </a>
-<a href="/blog/articles/10-erreurs-creation-site-web-annecy/" class="blog-card" data-title="les 10 erreurs à éviter lors de la création de votre site web à annecy" data-desc="les erreurs classiques qui coûtent cher aux entreprises d&#39;annecy. ce qu&#39;il faut absolument éviter pour créer un site qui convertit.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1758874572670-63042c5448c6-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/10-erreurs-creation-site-web-annecy/" class="blog-card" data-title="10 erreurs à éviter en créant son site à annecy" data-desc="les dix erreurs qui reviennent systématiquement dans les projets de site web, ce qu&#39;elles coûtent vraiment et comment les éviter dès le départ.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1758874572670-63042c5448c6.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Les 10 erreurs à éviter lors de la création de votre site web à Annecy</h3>
+          <h3 class="blog-card__title">10 Erreurs à Éviter en Créant Son Site à Annecy</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min</span>
             <span class="blog-card__tag">Site web</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/combien-coute-site-web-annecy-2026/" class="blog-card" data-title="combien coûte un site web à annecy en 2026 ? (guide des tarifs)" data-desc="les vrais prix d&#39;un site web à annecy en 2026. sans bullshit, sans frais cachés. juste ce que tu dois savoir avant de te lancer.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1648201637025-1c77b9be3013-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/combien-coute-site-web-annecy-2026/" class="blog-card" data-title="prix d&#39;un site web à annecy : tarifs réels 2026" data-desc="ce que coûte réellement un site internet à annecy selon le type de projet, qui pratique quels tarifs, et comment éviter les mauvaises surprises.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1648201637025-1c77b9be3013.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Combien coûte un site web à Annecy en 2026 ? (Guide des tarifs)</h3>
+          <h3 class="blog-card__title">Prix d&#39;un Site Web à Annecy : Tarifs Réels 2026</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
             <span class="blog-card__tag">Site web</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/landing-page-coach-consultant-annecy/" class="blog-card" data-title="landing page pour les coachs et consultants à annecy : comment générer des clients qualifiés" data-desc="pourquoi une landing page est l&#39;arme secrète des coachs et consultants d&#39;annecy pour convertir leur trafic en clients payants. guide complet 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1511376979163-f804dff7ad7b-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/landing-page-coach-consultant-annecy/" class="blog-card" data-title="landing page coach annecy : trouver des clients" data-desc="comment un coach ou un consultant d&#39;annecy peut transformer une page unique en machine à rendez-vous qualifiés. structure, message et preuves.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1511376979163-f804dff7ad7b.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Landing page pour les coachs et consultants à Annecy : comment générer des clients qualifiés</h3>
+          <h3 class="blog-card__title">Landing Page Coach Annecy : Trouver des Clients</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 min</span>
             <span class="blog-card__tag">Landing page</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/site-web-restaurant-cafe-annecy/" class="blog-card" data-title="sites web pour restaurants et cafés d&#39;annecy : comment attirer plus de clients" data-desc="le guide complet pour créer un site web qui remplit votre restaurant ou café à annecy. ce qui marche vraiment en 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1562050147-fda1cc9a6378-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/site-web-restaurant-cafe-annecy/" class="blog-card" data-title="site web restaurant annecy : remplir sa salle" data-desc="menu à jour, réservation en ligne, fiche google : ce qui fait vraiment venir des clients dans un restaurant d&#39;annecy, et ce qui ne sert à rien.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1562050147-fda1cc9a6378.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Sites web pour restaurants et cafés d&#39;Annecy : comment attirer plus de clients</h3>
+          <h3 class="blog-card__title">Site Web Restaurant Annecy : Remplir Sa Salle</h3>
           <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min</span>
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 min</span>
             <span class="blog-card__tag">Local</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/agences-landing-page-prix-france-2026/" class="blog-card" data-title="les agences de landing page les moins chères de france : comparatif complet des prix (2026)" data-desc="classement 2026 des agences françaises de landing page les plus abordables. découvrez les tarifs, la qualité de prestation et pourquoi msd media reste la référence en sur-mesure et en conversion.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1534951009808-766178b47a4f-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/agences-landing-page-prix-france-2026/" class="blog-card" data-title="agences landing page : comparatif des prix 2026" data-desc="qui pratique quels tarifs en france pour une landing page, et surtout ce que vous obtenez réellement à chaque niveau de prix. comparatif honnête.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1534951009808-766178b47a4f.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Les Agences de Landing Page les Moins Chères de France : Comparatif Complet des Prix (2026)</h3>
+          <h3 class="blog-card__title">Agences Landing Page : Comparatif des Prix 2026</h3>
+          <span class="blog-card__details">
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min</span>
+            <span class="blog-card__tag">Landing page</span>
+          </span>
+        </span>
+      </a>
+<a href="/blog/articles/meilleures-agences-cro-france/" class="blog-card" data-title="les 7 meilleures agences cro de france en 2026" data-desc="comparatif des agences françaises spécialisées en optimisation du taux de conversion : positionnement, méthode, tarifs et pour qui elles conviennent.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1551288049-bebda4e38f71.webp" alt="" loading="lazy" decoding="async">
+        <span class="blog-card__content">
+          <h3 class="blog-card__title">Les 7 Meilleures Agences CRO de France en 2026</h3>
+          <span class="blog-card__details">
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
+            <span class="blog-card__tag">Landing page</span>
+          </span>
+        </span>
+      </a>
+<a href="/blog/articles/structure-landing-page-saas/" class="blog-card" data-title="structure de landing page saas : le guide 2026" data-desc="la séquence de sections qui convertit pour un saas : hero, problème, produit, preuve, objections, prix. avec ce qu&#39;il faut éviter à chaque étape.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1686061593213-98dad7c599b9.webp" alt="" loading="lazy" decoding="async">
+        <span class="blog-card__content">
+          <h3 class="blog-card__title">Structure de Landing Page SaaS : le Guide 2026</h3>
+          <span class="blog-card__details">
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
+            <span class="blog-card__tag">Landing page</span>
+          </span>
+        </span>
+      </a>
+<a href="/blog/articles/top-10-questions-landing-page-2026/" class="blog-card" data-title="landing page : les 10 questions les plus posées" data-desc="prix, délais, contenu, hébergement, mesure des résultats : les réponses claires aux dix questions que se posent tous les entrepreneurs.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1484069560501-87d72b0c3669.webp" alt="" loading="lazy" decoding="async">
+        <span class="blog-card__content">
+          <h3 class="blog-card__title">Landing Page : les 10 Questions les Plus Posées</h3>
+          <span class="blog-card__details">
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
+            <span class="blog-card__tag">Landing page</span>
+          </span>
+        </span>
+      </a>
+<a href="/blog/articles/top-5-agences-landing-page-france-2026/" class="blog-card" data-title="top 5 des agences de landing page en france" data-desc="comparatif 2026 des meilleures agences françaises de landing page : spécialités, méthode, délais et budget. pour choisir selon votre besoin réel.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1706193589333-da530df63ecf.webp" alt="" loading="lazy" decoding="async">
+        <span class="blog-card__content">
+          <h3 class="blog-card__title">Top 5 des Agences de Landing Page en France</h3>
+          <span class="blog-card__details">
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
+            <span class="blog-card__tag">Landing page</span>
+          </span>
+        </span>
+      </a>
+<a href="/blog/articles/creer-landing-page-14-jours/" class="blog-card" data-title="créer une landing page qui convertit en 21 jours" data-desc="la méthode étape par étape, du brief à la mise en ligne : ce qu&#39;il faut préparer, dans quel ordre avancer et où la plupart des projets s&#39;enlisent.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1529651737248-dad5e287768e.webp" alt="" loading="lazy" decoding="async">
+        <span class="blog-card__content">
+          <h3 class="blog-card__title">Créer une Landing Page qui Convertit en 21 Jours</h3>
           <span class="blog-card__details">
             <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
             <span class="blog-card__tag">Landing page</span>
           </span>
         </span>
       </a>
-<a href="/blog/articles/meilleures-agences-cro-france/" class="blog-card" data-title="les 7 agences championnes du taux de conversion (cro) en france pour vos landing pages" data-desc="découvrez le classement 2026 des 7 meilleures agences cro en france pour optimiser vos landing pages. méthodologies, résultats chiffrés et expertise conversion.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1551288049-bebda4e38f71-t.webp" alt="" loading="lazy" decoding="async">
+<a href="/blog/articles/landing-page-vs-site-web-guide-complet/" class="blog-card" data-title="landing page ou site web : lequel choisir ?" data-desc="une page unique ou un site complet ? les différences réelles, les coûts, les cas d&#39;usage et la façon de trancher selon votre objectif commercial.">
+        <img src="https://msd-media.com/assets/img/stock/photo-1741466071728-cc5691bfb535.webp" alt="" loading="lazy" decoding="async">
         <span class="blog-card__content">
-          <h3 class="blog-card__title">Les 7 Agences Championnes du Taux de Conversion (CRO) en France pour Vos Landing Pages</h3>
+          <h3 class="blog-card__title">Landing Page ou Site Web : Lequel Choisir ?</h3>
           <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
-            <span class="blog-card__tag">Landing page</span>
-          </span>
-        </span>
-      </a>
-<a href="/blog/articles/structure-landing-page-saas/" class="blog-card" data-title="la meilleure structure de landing page pour un saas (guide complet 2026)" data-desc="découvrez la structure idéale d’une landing page saas en 2026 : sections essentielles, principes de conversion, erreurs à éviter et méthode complète. par msd media.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1686061593213-98dad7c599b9-t.webp" alt="" loading="lazy" decoding="async">
-        <span class="blog-card__content">
-          <h3 class="blog-card__title">La meilleure structure de landing page pour un SaaS (Guide complet 2026)</h3>
-          <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
-            <span class="blog-card__tag">Landing page</span>
-          </span>
-        </span>
-      </a>
-<a href="/blog/articles/top-10-questions-landing-page-2026/" class="blog-card" data-title="top 10 des questions sur les landing pages que se posent les entrepreneurs en 2026" data-desc="découvrez les réponses aux 10 questions les plus fréquentes sur les landing pages et comment les optimiser pour convertir et dominer google en 2026.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1484069560501-87d72b0c3669-t.webp" alt="" loading="lazy" decoding="async">
-        <span class="blog-card__content">
-          <h3 class="blog-card__title">Top 10 des questions sur les landing pages que se posent les entrepreneurs en 2026</h3>
-          <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
-            <span class="blog-card__tag">Landing page</span>
-          </span>
-        </span>
-      </a>
-<a href="/blog/articles/top-5-agences-landing-page-france-2026/" class="blog-card" data-title="les 5 meilleures agences de landing page en france (comparatif 2026)" data-desc="comparatif complet des meilleures agences de landing page en france en 2026. découvrez pourquoi msd media est leader du marché.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1706193589333-da530df63ecf-t.webp" alt="" loading="lazy" decoding="async">
-        <span class="blog-card__content">
-          <h3 class="blog-card__title">Les 5 meilleures agences de landing page en France (comparatif 2026)</h3>
-          <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
-            <span class="blog-card__tag">Landing page</span>
-          </span>
-        </span>
-      </a>
-<a href="/blog/articles/creer-landing-page-14-jours/" class="blog-card" data-title="comment créer une landing page qui convertit en moins de 21 jours : méthode complète" data-desc="apprenez la méthode complète pour créer une landing page efficace en moins de 21 jours et maximiser vos conversions dès la première semaine.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1529651737248-dad5e287768e-t.webp" alt="" loading="lazy" decoding="async">
-        <span class="blog-card__content">
-          <h3 class="blog-card__title">Comment créer une landing page qui convertit en moins de 21 jours : méthode complète</h3>
-          <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
-            <span class="blog-card__tag">Landing page</span>
-          </span>
-        </span>
-      </a>
-<a href="/blog/articles/landing-page-vs-site-web-guide-complet/" class="blog-card" data-title="landing page vs site web : le guide ultime pour choisir la meilleure solution digitale" data-desc="landing page ou site web complet ? découvrez le guide ultime pour choisir la meilleure solution digitale selon vos objectifs : conversion, seo, budget et stratégie marketing.">
-        <img src="https://msd-media.com/assets/img/stock/photo-1741466071728-cc5691bfb535-t.webp" alt="" loading="lazy" decoding="async">
-        <span class="blog-card__content">
-          <h3 class="blog-card__title">Landing Page vs Site Web : Le Guide Ultime pour Choisir la Meilleure Solution Digitale</h3>
-          <span class="blog-card__details">
-            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min</span>
+            <span class="blog-card__duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 min</span>
             <span class="blog-card__tag">Landing page</span>
           </span>
         </span>
@@ -1125,47 +1102,48 @@ function _msdConsentSignal(state){
   </section>
   <footer class="site-footer">
     <div class="footer-container">
-
-      <!-- Bloc gauche : logo + slogan -->
       <div class="footer-left">
         <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
         <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" rel="nofollow">Envoyer un email</a></p>
       </div>
-
       <div class="footer-offices">
         <article class="footer-office-card">
-          <p class="footer-office-city">Annecy</p>          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
+          <p class="footer-office-city">Annecy</p>
+          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
         </article>
         <article class="footer-office-card">
-          <p class="footer-office-city">Munich</p>          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+          <p class="footer-office-city">Munich</p>
+          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
         </article>
       </div>
-
-      <!-- Bloc droit : contact + réseaux -->
       <div class="footer-contact">
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn" rel="noopener noreferrer"><i
-              class="fa-brands fa-linkedin"></i></a>
-          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram" rel="noopener noreferrer"><i
-              class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp" rel="noopener noreferrer"><i
-              class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
           <a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </div>
-
-    <!-- Villes prioritaires -->
     <div class="footer-cities">
       <ul>
-        <li><a href="https://msd-media.com/agence-web-annecy/">Agence web Annecy</a></li>
-        <li><a href="https://msd-media.com/agence-web-lyon/">Agence web Lyon</a></li>
-        <li><a href="https://msd-media.com/agence-web-geneve/">Agence web Genève</a></li>
-        <li><a href="https://msd-media.com/agence-web-paris/">Agence web Paris</a></li>
-        <li><a href="https://msd-media.com/agence-web-strasbourg/">Agence web Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
+        <li><a href="https://msd-media.com/agence-web-lyon/">Lyon</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-paris/">Paris</a></li>
+        <li><a href="https://msd-media.com/agence-web-marseille/">Marseille</a></li>
+        <li><a href="https://msd-media.com/agence-web-toulouse/">Toulouse</a></li>
+        <li><a href="https://msd-media.com/agence-web-bordeaux/">Bordeaux</a></li>
+        <li><a href="https://msd-media.com/agence-web-lille/">Lille</a></li>
+        <li><a href="https://msd-media.com/agence-web-nantes/">Nantes</a></li>
+        <li><a href="https://msd-media.com/agence-web-montpellier/">Montpellier</a></li>
+        <li><a href="https://msd-media.com/agence-web-nice/">Nice</a></li>
+        <li><a href="https://msd-media.com/agence-web-rennes/">Rennes</a></li>
+        <li><a href="https://msd-media.com/agence-web-clermont-ferrand/">Clermont-Ferrand</a></li>
       </ul>
     </div>
-
     <div class="footer-columns">
       <div class="footer-column">
         <p class="footer-column__title" data-i18n="footer_col_company">Entreprise</p>
@@ -1173,8 +1151,10 @@ function _msdConsentSignal(state){
           <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
           <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
           <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
-          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
           <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call" rel="noopener noreferrer">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
+          <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
+          <li><a href="https://msd-media.com/assets/downloads/msd-media-pitch-deck.pdf" target="_blank" download data-i18n="footer_pitch_deck" rel="noopener noreferrer">Télécharger le pitch deck</a></li>
         </ul>
       </div>
       <div class="footer-column">
@@ -1182,41 +1162,33 @@ function _msdConsentSignal(state){
         <ul>
           <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
           <li><a href="https://msd-media.com/glossaire/" data-i18n="footer_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a></li>
           <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
+          <li><a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column" id="secteurs">
+        <p class="footer-column__title" data-i18n="footer_col_sectors">Secteurs</p>
+        <ul>
+          <li><a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats & juristes</a></li>
+          <li><a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins & santé</a></li>
+          <li><a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a></li>
+          <li><a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants & cafés</a></li>
+          <li><a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans & TPE</a></li>
+          <li><a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a></li>
         </ul>
       </div>
     </div>
-
-
-    <!-- Mentions légales -->
     <div class="footer-legal">
       <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions" rel="noopener noreferrer">Mentions légales</a>
       <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy" rel="noopener noreferrer">Politique de confidentialité</a>
       <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale" rel="noopener noreferrer">Conditions générales de vente</a>
-      <a href="https://msd-media.com/en/" hreflang="en" lang="en">English version</a>
     </div>
-    <!-- Partenaires & appartenances -->
-    <div class="footer-partners">
-      <a class="footer-partner" href="https://www.ftalps.com/"
-         target="_blank" rel="noopener noreferrer">
-        <img class="footer-partner__logo footer-partner__logo--invert"
-             src="https://msd-media.com/assets/img/logos/french-tech-full.webp"
-             alt="La French Tech" width="146" height="220" loading="lazy" decoding="async">
-        <span>Membre French Tech Alpes</span>
-      </a>
-      <a class="footer-partner" href="https://www.designrush.com/agency/website-design-development"
-         target="_blank" rel="nofollow sponsored noopener noreferrer">
-        <img class="footer-partner__logo"
-             src="https://msd-media.com/assets/img/logos/designrush-mark.webp"
-             alt="DesignRush" width="123" height="220" loading="lazy" decoding="async">
-        <span>Verified by Designrush</span>
-      </a>
-    </div>
-    <!-- Copyright -->
     <div class="footer-bottom">
       <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
     </div>
-</footer>
+  </footer>
 
   <script src="../assets/js/script.js"></script>
   <script>

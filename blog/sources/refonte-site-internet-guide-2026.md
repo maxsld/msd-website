@@ -1,8 +1,9 @@
 ---
-title: "Refonte de site internet : la méthode complète sans perdre son SEO (2026)"
+status: "published"
+title: "Refonte de Site Internet Sans Perdre Son SEO"
 date: "2026-07-11"
-description: "Refonte de site internet réussie : méthode en 7 étapes, checklist de migration SEO, budget par prestataire et erreurs à éviter. Guide complet 2026."
-image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069&auto=format&fit=crop"
+description: "La méthode complète pour refondre un site sans effondrement de trafic : mapping des redirections, checklist de mise en ligne et suivi post-lancement."
+image: "https://msd-media.com/assets/img/stock/photo-1522542550221-31fd19575a2d.webp"
 tags: ["refonte site internet", "migration SEO", "redirection 301", "création site internet", "SEO", "MSD Media"]
 slug: "refonte-site-internet-guide-2026"
 keyword: "refonte site internet"

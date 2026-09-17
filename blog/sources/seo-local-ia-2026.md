@@ -1,7 +1,8 @@
 ---
-title: "SEO local en 2026 : comment les IA transforment les recherches de proximité"
+status: "published"
+title: "SEO Local 2026 : Comment l'IA Change la Donne"
 date: "2026-04-09"
-description: "Comment les IA générative changent le SEO local en 2026 ? Google AI Overviews, ChatGPT et Perplexity bouleversent la façon dont vos clients trouvent des prestataires près de chez eux."
+description: "ChatGPT, Perplexity et AI Overviews réécrivent la recherche de proximité. Ce que les commerces et indépendants doivent changer dès maintenant."
 image: "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp"
 tags: ["SEO local", "IA", "Google AI Overviews", "GEO", "PME", "MSD Media"]
 slug: "seo-local-ia-2026"

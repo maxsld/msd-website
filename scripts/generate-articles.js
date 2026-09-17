@@ -73,6 +73,7 @@ FORMAT OBLIGATOIRE (retourne UNIQUEMENT le markdown, rien d'autre) :
 
 ---
 title: "[Titre optimisé SEO, accrocheur, 55-65 caractères]"
+status: "draft"
 date: "${today}"
 description: "[Meta description 140-155 caractères, avec le mot-clé]"
 image: "UNSPLASH_PLACEHOLDER"

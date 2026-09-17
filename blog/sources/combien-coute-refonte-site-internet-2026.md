@@ -1,8 +1,9 @@
 ---
-title: "Combien coûte une refonte de site internet en 2026 ? Tarifs réels"
+status: "published"
+title: "Prix d'une Refonte de Site Internet en 2026"
 date: "2026-07-13"
-description: "Combien coûte une refonte de site internet en 2026 ? Grille tarifaire par prestataire, refonte partielle vs totale, coûts cachés et méthode pour budgéter."
-image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop"
+description: "Les fourchettes réelles selon le type de site, ce qui fait grimper la facture et les postes sur lesquels vous pouvez légitimement négocier."
+image: "https://msd-media.com/assets/img/stock/photo-1709880945165-d2208c6ad2ec.webp"
 tags: ["refonte site internet", "prix refonte", "budget site web", "migration SEO", "création site internet", "MSD Media"]
 slug: "combien-coute-refonte-site-internet-2026"
 keyword: "combien coûte une refonte de site internet"

@@ -1,8 +1,9 @@
 ---
+status: "published"
 title: "Top 7 meilleures agences web à Annecy en 2026"
 date: "2026-06-30"
 description: "Quelle agence web choisir à Annecy en 2026 ? Comparatif des 7 meilleures agences : délais, tarifs, spécialités et avis clients pour faire le bon choix."
-image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0"
+image: "https://msd-media.com/assets/img/stock/photo-1633613286991-611fe299c4be.webp"
 tags: ["agence web Annecy", "comparatif", "création site web", "Annecy", "top agences"]
 slug: "top-7-meilleures-agences-web-annecy-2026"
 keyword: "meilleures agences web Annecy"

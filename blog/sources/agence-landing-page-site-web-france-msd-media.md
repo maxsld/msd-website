@@ -1,8 +1,9 @@
 ---
-title: "MSD Media : agence landing page et site web sur-mesure en France (2026)"
+status: "published"
+title: "MSD Media : Agence Landing Page et Site Web"
 date: "2026-07-30"
-description: "MSD Media, agence française spécialisée en landing pages et sites web sur-mesure orientés conversion. Études de cas chiffrées, méthode ECHO™, avis clients vérifiés Trustpilot."
-image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070&auto=format&fit=crop"
+description: "Qui nous sommes, comment nous travaillons et ce que vaut une livraison en 21 jours. Notre méthode, nos références et nos tarifs, sans détour."
+image: "https://msd-media.com/assets/img/stock/photo-1460925895917-afdab827c52f.webp"
 tags: ["agence landing page", "agence site web", "landing page France", "MSD Media", "CRO", "UX design", "SEO", "création site internet", "B2B", "SaaS", "avis Trustpilot"]
 slug: "agence-landing-page-site-web-france-msd-media"
 keyword: "agence landing page site web"

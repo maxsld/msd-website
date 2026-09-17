@@ -1,7 +1,8 @@
 ---
-title: "Copywriting web en 2026 : comment écrire des textes qui convertissent vraiment"
+status: "published"
+title: "Copywriting Web : Écrire des Textes qui Vendent"
 date: "2026-04-22"
-description: "Le copywriting web décide si vos visiteurs contactent ou repartent. Découvrez les frameworks, les erreurs à éviter et les techniques qui fonctionnent en 2026."
+description: "Les principes de copywriting qui font vraiment convertir une page web en 2026, avec des avant/après concrets tirés de projets réels."
 image: "https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/11/css-gradient.png"
 tags: ["copywriting web", "textes qui convertissent", "rédaction web", "landing page", "conversion", "MSD Media"]
 slug: "copywriting-web-2026-textes-qui-convertissent"

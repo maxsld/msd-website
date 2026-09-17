@@ -1,8 +1,9 @@
 ---
-title: "Core Web Vitals : le guide complet pour un site rapide en 2026 (LCP, INP, CLS)"
+status: "published"
+title: "Core Web Vitals 2026 : Guide LCP, INP et CLS"
 date: "2026-07-11"
-description: "Core Web Vitals expliqués simplement : LCP, INP et CLS, seuils Google 2026, outils de mesure gratuits et méthode concrète pour passer au vert."
-image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+description: "Les trois métriques que Google mesure vraiment, ce qu'elles signifient, les seuils à atteindre et les corrections qui ont le plus d'effet."
+image: "https://msd-media.com/assets/img/stock/photo-1551288049-bebda4e38f71.webp"
 tags: ["core web vitals", "vitesse site web", "LCP", "INP", "CLS", "performance web", "SEO", "MSD Media"]
 slug: "core-web-vitals-guide-2026"
 keyword: "core web vitals"

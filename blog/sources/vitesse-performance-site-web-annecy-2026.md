@@ -1,7 +1,8 @@
 ---
-title: "Vitesse de site web à Annecy : pourquoi ça coûte des clients (et comment y remédier en 2026)"
+status: "published"
+title: "Vitesse d'un Site Web : ce que la Lenteur Coûte"
 date: "2026-04-20"
-description: "Un site lent vous fait perdre des clients à Annecy. Découvrez les chiffres réels, les Core Web Vitals qui comptent, et comment optimiser la performance de votre site en 2026."
+description: "Chaque seconde de chargement se paie en clients perdus. Les chiffres, les causes réelles de lenteur et les corrections qui changent tout."
 image: "https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/11/css-gradient.png"
 tags: ["vitesse site web", "Core Web Vitals", "performance web", "site web Annecy", "agence web Annecy", "SEO Annecy", "MSD Media"]
 slug: "vitesse-performance-site-web-annecy-2026"

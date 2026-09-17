@@ -1,7 +1,8 @@
 ---
-title: "Combien coûte un site web à Annecy en 2026 ? (Guide des tarifs)"
+status: "published"
+title: "Prix d'un Site Web à Annecy : Tarifs Réels 2026"
 date: "2026-02-08"
-description: "Les vrais prix d'un site web à Annecy en 2026. Sans bullshit, sans frais cachés. Juste ce que tu dois savoir avant de te lancer."
+description: "Ce que coûte réellement un site internet à Annecy selon le type de projet, qui pratique quels tarifs, et comment éviter les mauvaises surprises."
 image: "https://www.campingsannecy.com/wp-content/uploads/2025/05/vieille-ville-annecy-2-edited.jpg"
 tags: ["site web", "Annecy", "tarifs", "prix", "agence web"]
 slug: "combien-coute-site-web-annecy-2026"
@@ -10,6 +11,8 @@ keyword: "site web Annecy"
 ## Réponse courte
 
 À Annecy, un site web professionnel coûte souvent entre 2 500 € et 4 500 € pour un site vitrine sérieux, et entre 1 500 € et 3 500 € pour une landing page bien construite. Le prix varie selon le nombre de pages, le niveau de design, le SEO local, le copywriting et la maintenance. Le vrai sujet n'est pas de payer le moins cher, mais d'éviter un site qui ne rapporte rien.
+
+!!update **Mise à jour — septembre 2026.** Les repères nationaux permettent de situer un devis annécien. Un site vitrine professionnel coûte entre 800 et 3 000 € chez un freelance, sur la base d'un taux journalier de 300 à 600 €, et entre 3 000 et 8 000 € chez une agence qui intègre le SEO dès la conception ; l'hébergement et la maintenance ajoutent 35 à 500 € par mois ([iPaoo, 2026](https://www.ipaoo.fr/blog/prix-site-vitrine-2026/)). À Annecy, les tarifs se situent dans ces fourchettes, avec une prime fréquente sur les projets liés au tourisme et à l'hôtellerie.
 
 Tu veux créer un site web à Annecy ?  
 Tu te demandes combien ça coûte vraiment ?

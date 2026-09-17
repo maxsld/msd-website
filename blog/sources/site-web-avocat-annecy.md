@@ -1,7 +1,8 @@
 ---
-title: "Site web pour avocat et cabinet juridique à Annecy : le guide complet 2026"
+status: "published"
+title: "Site Web Avocat Annecy : Le Guide Complet 2026"
 date: "2026-03-17"
-description: "Vous êtes avocat ou cabinet juridique à Annecy ? Découvrez comment un site web bien conçu attire des clients qualifiés, renforce votre crédibilité et vous positionne en 1ère page sur Google."
+description: "Déontologie, contenu, référencement local : comment construire le site d'un cabinet d'avocats à Annecy qui inspire confiance et génère des appels."
 image: "https://www.jetrouvemonavocat.fr/sites/jetrouvemonavocat/storage/files/2021-07/Je-Trouve-Mon-Avocat-trouver-un-avocat-specialiste-du-droit-du-travail.jpg"
 tags: ["site web avocat Annecy", "site web cabinet juridique Annecy", "création site web Annecy", "agence web Annecy", "SEO avocat Annecy", "MSD Media"]
 slug: "site-web-avocat-annecy"

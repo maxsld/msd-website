@@ -4,6 +4,9 @@
 async function saveDraftToGitHub(article) {
   const [owner, repo] = process.env.GITHUB_REPO.split('/');
   const path = `blog/sources/drafts/${article.slug}.md`;
+  const content = /^status:/m.test(article.content)
+    ? article.content.replace(/^status:.*$/m, 'status: "draft"')
+    : article.content.replace(/^---\r?\n/, '---\nstatus: "draft"\n');
 
   // Récupérer le sha si un draft existe déjà (pour l'update)
   let existingSha = null;
@@ -32,7 +35,7 @@ async function saveDraftToGitHub(article) {
       },
       body: JSON.stringify({
         message: `draft: ${article.slug}`,
-        content: Buffer.from(article.content).toString('base64'),
+        content: Buffer.from(content).toString('base64'),
         ...(existingSha ? { sha: existingSha } : {}),
       }),
     }

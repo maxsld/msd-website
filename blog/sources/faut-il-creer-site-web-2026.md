@@ -1,7 +1,8 @@
 ---
-title: "Faut-il encore créer un site web en 2026 ? (IA, réseaux sociaux et nouvelles tendances)"
+status: "published"
+title: "Faut-il Encore Créer un Site Web en 2026 ?"
 date: "2026-03-16"
-description: "À l'heure de l'IA et des réseaux sociaux, est-il encore utile de créer un site web en 2026 ? On répond honnêtement à cette question que se posent de plus en plus d'entrepreneurs."
+description: "Entre réseaux sociaux, marketplaces et IA, le site web garde-t-il un intérêt ? La réponse honnête, selon votre activité et vos objectifs."
 image: "https://s3u.tmimgcdn.com/800x0/u28018890/d5bf668a5f943c4856e90337e1a3fced.jpg"
 tags: ["création site web", "site web 2026", "IA et site web", "réseaux sociaux", "agence web Annecy", "MSD Media"]
 slug: "faut-il-creer-site-web-2026"

@@ -1,7 +1,8 @@
 ---
-title: "Sites web pour restaurants et cafés d'Annecy : comment attirer plus de clients"
+status: "published"
+title: "Site Web Restaurant Annecy : Remplir Sa Salle"
 date: "2026-02-08"
-description: "Le guide complet pour créer un site web qui remplit votre restaurant ou café à Annecy. Ce qui marche vraiment en 2026."
+description: "Menu à jour, réservation en ligne, fiche Google : ce qui fait vraiment venir des clients dans un restaurant d'Annecy, et ce qui ne sert à rien."
 image: "https://shop.icioncuisine.com/cdn/shop/articles/photo-1559339352-11d035aa65de_967x.jpg?v=1621952724"
 tags: ["site web", "restaurant", "café", "Annecy", "réservation"]
 slug: "site-web-restaurant-cafe-annecy"
@@ -10,6 +11,8 @@ keyword: "site web restaurant Annecy"
 ## Réponse courte
 
 Un restaurant ou café à Annecy a besoin d'un site web simple, rapide et à jour pour donner envie, afficher le menu, les horaires, l'adresse, les photos et le moyen de réserver. Le site doit surtout répondre aux questions immédiates des clients sur mobile. S'il est lent, incomplet ou mal référencé localement, il laisse les plateformes et concurrents capter la demande.
+
+!!update **Mise à jour — septembre 2026.** La bataille s'est déplacée vers les avis et l'IA. Le volume moyen d'avis par fiche a bondi de 31 % en un an, passant de 320 à 420, et 70 % des établissements affichent désormais plus de 4 sur 5 — la note seule ne différencie donc plus grand-chose, c'est la fraîcheur des avis qui compte. Google remplace par ailleurs les questions/réponses par « Ask Maps », alimenté par Gemini, et les IA génératives puisent directement dans ces fiches pour recommander une adresse ([Geolid, 2026](https://geolid.com/blog/etude-2026-etat-des-lieux-des-enseignes-sur-google-business-profile/)). Pour un restaurant annécien, cela veut dire un flux d'avis régulier plutôt qu'une campagne ponctuelle.
 
 Vous avez un restaurant ou un café à Annecy.  
 Vous voulez plus de clients.  

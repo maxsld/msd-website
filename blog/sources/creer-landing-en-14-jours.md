@@ -1,7 +1,8 @@
 ---
-title: "Comment créer une landing page qui convertit en moins de 21 jours : méthode complète"
+status: "published"
+title: "Créer une Landing Page qui Convertit en 21 Jours"
 date: "2025-09-17"
-description: "Apprenez la méthode complète pour créer une landing page efficace en moins de 21 jours et maximiser vos conversions dès la première semaine."
+description: "La méthode étape par étape, du brief à la mise en ligne : ce qu'il faut préparer, dans quel ordre avancer et où la plupart des projets s'enlisent."
 image: "https://gradients.mijo-design.com/public/uploads/files/db16.png"
 tags: ["landing page", "conversion", "marketing digital", "SEO", "Annecy", "MSD Media"]
 slug: "creer-landing-page-14-jours"
@@ -10,6 +11,8 @@ keyword: "landing page"
 ## Réponse courte
 
 Créer une landing page qui convertit en moins de 21 jours est possible si vous séparez clairement stratégie, structure, écriture, design, développement et tests. La priorité n'est pas d'ajouter des sections, mais de formuler une promesse nette, de répondre aux objections, de montrer des preuves et de guider le visiteur vers une seule action.
+
+!!update **Mise à jour — septembre 2026.** Deux arbitrages de conception ont désormais des chiffres pour les trancher. Chaque champ supplémentaire dans un formulaire fait chuter la conversion d'environ 7 % : un formulaire à trois champs convertit 25 % mieux qu'un formulaire à six champs. Une vidéo placée au-dessus de la ligne de flottaison augmente la conversion de 86 %, mais seulement si elle dure moins de deux minutes ([Landy AI, 2026](https://www.landy-ai.com/fr/blog/landing-page-conversion-rate-benchmarks)). Sur un cycle de 21 jours, ce sont exactement les deux décisions à figer dès le brief plutôt qu'à la relecture finale.
 
 Lancer une landing page performante est l’une des stratégies les plus rapides pour générer des prospects, valider une idée et convertir des visiteurs en clients.  
 Chez **MSD Media**, nous avons accompagné des dizaines de startups à Annecy et en France dans la création de landing pages sur-mesure, et nous avons identifié une méthode en **6 étapes clés** qui garantit des résultats rapides, mesurables et durables.

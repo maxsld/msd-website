@@ -84,6 +84,9 @@ async function publishToGitHub(slug, draft) {
   const [owner, repo] = process.env.GITHUB_REPO.split('/');
   const publishPath = `blog/sources/${slug}.md`;
   const draftPath = `blog/sources/drafts/${slug}.md`;
+  const publishedContent = /^status:/m.test(draft.content)
+    ? draft.content.replace(/^status:.*$/m, 'status: "published"')
+    : draft.content.replace(/^---\r?\n/, '---\nstatus: "published"\n');
 
   // 1. Créer/mettre à jour blog/sources/{slug}.md
   const existingSha = await getFileSha(owner, repo, publishPath);
@@ -98,7 +101,7 @@ async function publishToGitHub(slug, draft) {
       },
       body: JSON.stringify({
         message: `feat(blog): publish ${slug}`,
-        content: Buffer.from(draft.content).toString('base64'),
+        content: Buffer.from(publishedContent).toString('base64'),
         ...(existingSha ? { sha: existingSha } : {}),
       }),
     }

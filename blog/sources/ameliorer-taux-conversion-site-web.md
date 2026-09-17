@@ -1,7 +1,8 @@
 ---
-title: "Comment améliorer le taux de conversion de son site web : guide complet 2026"
+status: "published"
+title: "Améliorer le Taux de Conversion de Son Site"
 date: "2026-03-16"
-description: "Taux de conversion trop faible ? Découvrez les 10 leviers concrets pour transformer plus de visiteurs en clients sur votre site web, avec des exemples réels et des actions applicables immédiatement."
+description: "Les leviers qui font vraiment bouger un taux de conversion : hiérarchie du message, preuve sociale, friction et vitesse. Avec des exemples chiffrés."
 image: "https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg"
 tags: ["taux de conversion", "conversion site web", "landing page", "copywriting", "UX", "agence web Annecy", "MSD Media"]
 slug: "ameliorer-taux-conversion-site-web"
@@ -147,4 +148,3 @@ Ces trois actions seules peuvent faire passer un site de 0,5 % à 2-3 % de conve
 ## Besoin d'un site web qui convertit vraiment ?
 
 MSD Media conçoit des sites vitrines et landing pages à Annecy optimisés pour la conversion dès le départ — copywriting, structure, CTA et suivi intégrés. Résultats mesurables, livrés en 21 jours.
-

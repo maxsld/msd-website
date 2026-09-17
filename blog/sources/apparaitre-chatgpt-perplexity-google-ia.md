@@ -1,7 +1,8 @@
 ---
-title: "Comment apparaître dans ChatGPT en 2026 ? (+ Perplexity et Google AI Overviews)"
+status: "published"
+title: "Apparaître dans ChatGPT : nos chiffres sur 12 mois"
 date: "2026-09-04"
-description: "Comment apparaître dans ChatGPT en 2026 : les 3 facteurs qui font qu'une IA cite une entreprise plutôt qu'une autre, la méthode concrète, et ce que MSD Media a réellement mis en place."
+description: "J'ai appliqué tous les conseils GEO sur mon propre site : llms.txt, crawlers IA autorisés, 344 blocs de données structurées. Voici le trafic réel que ça a rapporté en 12 mois."
 image: "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp"
 tags: ["GEO", "ChatGPT", "Perplexity", "Google AI Overviews", "référencement IA", "MSD Media"]
 slug: "apparaitre-chatgpt-perplexity-google-ia"
@@ -10,6 +11,8 @@ keyword: "comment apparaître dans chatgpt"
 ## Réponse courte
 
 Pour apparaître dans ChatGPT en 2026, une entreprise doit être identifiable de façon cohérente sur le web (même nom, même activité, partout), citée par des sources tierces que le modèle reconnaît comme fiables (presse, annuaires sectoriels, Wikidata), et publier du contenu structuré qui répond directement aux questions plutôt que de tourner autour. ChatGPT ne "cherche" pas votre entreprise au moment de la requête : la plupart du temps il rappelle ce qu'il a appris pendant son entraînement, ou ce que son module de navigation web trouve rapidement — dans les deux cas, la cohérence et la clarté comptent plus que l'optimisation technique pure.
+
+!!update **Mise à jour — septembre 2026.** Les AI Overviews sont déployés en France depuis le 22 juillet 2026, et leur généralisation est attendue d'ici le **23 septembre**. Deux chiffres à garder en tête pour la suite : là où l'IA s'affiche, le clic sur le premier résultat chute jusqu'à **−58 %** ; mais **87 % des sources citées par l'IA ne figurent pas dans le top 10 classique** ([Semjuice](https://www.semjuice.com/preparer-sa-rentree-seo-2026-les-15-chantiers-a-lancer-avant-septembre/), [NEWP](https://www.newp.fr/actualites/referencement/ia-optimization/google-ai-overviews-france/)). Autrement dit : être cité ne demande pas d'être premier — c'est une bonne nouvelle pour les sites jeunes, et ça change l'ordre des priorités.
 
 Cette réponse vaut aussi, avec des nuances, pour Perplexity et Google AI Overviews — on détaille plus bas ce qui change d'un moteur à l'autre.
 
@@ -33,9 +36,32 @@ Un prestataire mentionné de façon identique sur 40 sources différentes (blog,
 
 ---
 
-## Ce que MSD Media a réellement mis en place
+## Ce que ça donne vraiment : nos chiffres sur 12 mois
 
-Plutôt que de la théorie, voici ce qu'on a fait sur notre propre présence, vérifiable publiquement : une fiche Google Business Profile à jour avec les avis clients réels, un balisage `Organization` et `Person` (fondateur) en JSON-LD sur chaque page avec `sameAs` pointant vers LinkedIn et Trustpilot, et deux mentions presse indépendantes obtenues en 2026 — [Le Dauphiné Libéré](https://msd-media.com/blog/articles/msd-media-presse-le-dauphine/) et [Polytech Annecy-Chambéry](https://msd-media.com/blog/articles/maxens-soldan/). Ce sont exactement les signaux du tableau ci-dessus : cohérence d'entité et sources tierces crédibles, pas un tour de passe-passe technique.
+La plupart des guides sur le sujet vous expliquent quoi faire. Aucun ne publie ses résultats. Nous avons appliqué la totalité du manuel sur ce site, et voici ce que la mesure donne — Search Console et analytics à l'appui, sur les 365 derniers jours.
+
+**Ce qui a été mis en place, et qui est vérifiable publiquement :**
+
+- Un fichier `llms.txt` et un `llms-full.txt` complets, listant l'entité, les services, la zone géographique et les références
+- Tous les crawlers IA explicitement autorisés dans le `robots.txt` — GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Applebot-Extended. Testé avec chacun de ces user-agents : réponse 200
+- 344 blocs de données structurées JSON-LD, zéro invalide, avec `Organization`, `Person`, `FAQPage` et `sameAs` cohérents
+- Une entité unifiée : une seule adresse, un seul nom, les mêmes coordonnées partout
+- Deux mentions presse indépendantes : [Le Dauphiné Libéré](https://msd-media.com/blog/articles/msd-media-presse-le-dauphine/) et Polytech Annecy-Chambéry
+- Un rendu entièrement lisible sans JavaScript — 1 431 mots visibles côté serveur sur la page d'accueil
+
+**Le résultat mesuré :**
+
+| Indicateur | Valeur sur 365 jours |
+|---|---|
+| Sessions venues de ChatGPT | **2** |
+| Sessions venues de Perplexity, Claude, Gemini ou Copilot | **0** |
+| Impressions Google sur cet article | 214 |
+| Clics sur cet article | **0** |
+| Résultats enrichis déclenchés (rapport Search Console) | **aucun** |
+
+Deux visites en un an. Voilà ce que rapporte un socle technique GEO irréprochable quand il est seul.
+
+Ce n'est pas un aveu d'échec, c'est le point que personne ne dit clairement : **la partie technique du GEO est une condition nécessaire, pas suffisante**. Elle vous rend lisible par les modèles. Elle ne vous rend pas citable. Ce qui décide, c'est ce que le reste du web dit de vous — et ça, aucun fichier posé sur votre serveur ne le fabrique.
 
 ---
 
@@ -110,6 +136,19 @@ Un standard émergent : le fichier `/llms.txt` à la racine du site. Il indique 
 - Ce que vous faites
 - Vos pages les plus importantes
 - Vos coordonnées
+
+## Pourquoi les produits de mes concurrents apparaissent et pas les miens ?
+
+Dans neuf cas sur dix, la réponse tient en une phrase : ils sont mentionnés ailleurs, vous non. Le modèle ne compare pas la qualité de deux sites, il restitue les entités qu'il a rencontrées de façon répétée et cohérente dans ses données d'entraînement et dans les sources que son module de navigation consulte.
+
+Quatre causes, par ordre de fréquence réelle :
+
+1. **Vos concurrents sont cités par des tiers, vous seulement par vous-même.** Presse, annuaires sectoriels, comparatifs, Wikidata, forums. Si tout ce qui existe sur votre marque vient de votre propre domaine, le modèle n'a aucune corroboration.
+2. **Votre entité est incohérente.** Nom, adresse ou description qui varient d'une source à l'autre. Le modèle ne sait pas qu'il s'agit de la même entreprise et ne consolide rien.
+3. **Les robots IA sont bloqués.** Un `robots.txt` qui interdit GPTBot ou un pare-feu qui filtre les user-agents inconnus. À vérifier avec une requête en se faisant passer pour chaque crawler, pas en lisant le fichier.
+4. **Le contenu n'est pas extractible.** Réponses noyées dans des paragraphes de transition, ou rendues uniquement en JavaScript. Un modèle extrait des passages autonomes de 40 à 80 mots, pas des pages entières.
+
+Le test le plus rapide : demandez à ChatGPT de citer les meilleures entreprises de votre secteur dans votre ville. Si vos concurrents sortent et pas vous, comparez ce qui existe sur eux hors de leur site. C'est presque toujours là qu'est l'écart.
 
 ---
 

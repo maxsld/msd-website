@@ -1,8 +1,9 @@
 ---
-title: "Maillage interne : le levier SEO le plus sous-coté (guide + méthode 2026)"
+status: "published"
+title: "Maillage Interne : le Levier SEO le Plus Sous-Coté"
 date: "2026-07-11"
-description: "Maillage interne : définition, méthode en 5 étapes, structure en cocon, erreurs à éviter et cas pratique réel. Le guide complet pour booster votre SEO."
-image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2068&auto=format&fit=crop"
+description: "Comment vos liens internes distribuent l'autorité, pourquoi un méga-footer nuit à votre référencement et la méthode pour construire de vrais clusters."
+image: "https://msd-media.com/assets/img/stock/photo-1644088379091-d574269d422f.webp"
 tags: ["maillage interne", "liens internes", "cocon sémantique", "SEO", "architecture de site", "MSD Media"]
 slug: "maillage-interne-guide-seo"
 keyword: "maillage interne"

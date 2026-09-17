@@ -1,7 +1,8 @@
 ---
-title: "Site web pour agence immobilière à Annecy : le guide complet 2026"
+status: "published"
+title: "Site Web Agence Immobilière Annecy : Guide 2026"
 date: "2026-03-17"
-description: "Vous êtes agent immobilier ou agence immobilière à Annecy ? Découvrez comment un site web bien conçu attire des mandats exclusifs, génère des leads qualifiés et vous positionne en 1ère page sur Google."
+description: "Estimation en ligne, mise en valeur des biens, SEO local : comment une agence immobilière d'Annecy capte des mandats via son site internet."
 image: "https://www.dd-diag.fr/storage/5ecbaf7ff0d08_Vente%20image.jpg"
 tags: ["site web agence immobilière Annecy", "site web immobilier Annecy", "création site web Annecy", "agence web Annecy", "SEO immobilier Annecy", "MSD Media"]
 slug: "site-web-agence-immobiliere-annecy"

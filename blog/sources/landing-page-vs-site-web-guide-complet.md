@@ -1,7 +1,8 @@
 ---
-title: "Landing Page vs Site Web : Le Guide Ultime pour Choisir la Meilleure Solution Digitale"
+status: "published"
+title: "Landing Page ou Site Web : Lequel Choisir ?"
 date: "2025-09-15"
-description: "Landing page ou site web complet ? Découvrez le guide ultime pour choisir la meilleure solution digitale selon vos objectifs : conversion, SEO, budget et stratégie marketing."
+description: "Une page unique ou un site complet ? Les différences réelles, les coûts, les cas d'usage et la façon de trancher selon votre objectif commercial."
 image: "https://img.freepik.com/photos-gratuite/arriere-plan-degrade-abstrait-texture-grain-captivant-airbrush-bruit-papier-peint-minimaliste_8048-560.jpg?semt=ais_hybrid&w=740&q=80"
 tags: ["landing page", "site web", "landing page vs site web", "création site web", "conversion", "SEO", "MSD Media", "Annecy"]
 slug: "landing-page-vs-site-web-guide-complet"
@@ -10,6 +11,8 @@ keyword: "landing page"
 ## Réponse courte
 
 Choisissez une landing page si vous avez une offre précise à vendre ou une campagne à convertir rapidement. Choisissez un site web complet si vous devez présenter plusieurs services, construire votre marque et travailler le SEO sur la durée. La meilleure option dépend donc moins du format que de votre objectif principal : conversion immédiate ou présence durable.
+
+!!update **Mise à jour — septembre 2026.** L'arbitrage entre page unique et site complet a changé depuis l'arrivée des AI Overviews en France, le 22 juillet 2026. Sur 963 domaines français analysés, le taux de clic recule de 23,1 % en moyenne, et 82,2 % des sites fortement exposés aux réponses générées par l'IA perdent du trafic ([Ahrefs, août 2026](https://ahrefs.com/fr/blog/baisse-clics-ai-overviews-france/)). En parallèle, 68 % des recherches Google se terminent désormais sans le moindre clic, contre 60,5 % en 2024 ([LLM-GEO, 2026](https://llm-geo.fr/recherche-sans-clic-zero-click/)). Conséquence pratique : un site de vingt pages qui vise du trafic informationnel large est nettement plus vulnérable qu'une page unique adossée à une intention commerciale précise. Si votre objectif est la conversion, la page ciblée résiste mieux que le site étendu.
 
 ## Introduction : Quelle Solution Digitale pour Votre Projet Web ?
 

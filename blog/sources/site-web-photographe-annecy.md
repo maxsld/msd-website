@@ -1,7 +1,8 @@
 ---
-title: "Site web pour photographe à Annecy : le guide complet 2026"
+status: "published"
+title: "Site Web Photographe Annecy : le Guide 2026"
 date: "2026-03-17"
-description: "Vous êtes photographe à Annecy ? Découvrez comment un site web bien conçu attire des clients qualifiés, met en valeur votre portfolio et vous positionne en 1ère page sur Google."
+description: "Galerie, vitesse de chargement, référencement local : comment un photographe d'Annecy construit un site qui montre son travail et remplit son agenda."
 image: "https://images.pexels.com/photos/403495/pexels-photo-403495.jpeg"
 tags: ["site web photographe Annecy", "portfolio photographe Annecy", "création site web Annecy", "agence web Annecy", "SEO photographe Annecy", "MSD Media"]
 slug: "site-web-photographe-annecy"
@@ -203,4 +204,3 @@ Instagram complète votre présence — il ne la remplace pas. Dans une ville au
 ## Vous êtes photographe à Annecy et vous voulez un site web qui attire des clients qualifiés ?
 
 MSD Media conçoit des sites web sur mesure pour les photographes à Annecy — portfolio optimisé, SEO local complet, pages par spécialité et tarifs bien présentés. Livraison en 21 jours, ajustements illimités, satisfaction garantie.
-

@@ -1,8 +1,9 @@
 ---
-title: "Accessibilité web obligatoire en 2026 : ce que la loi impose à votre entreprise (RGAA, amendes)"
+status: "published"
+title: "Accessibilité Web 2026 : Ce que la Loi Impose"
 date: "2026-08-18"
-description: "European Accessibility Act, RGAA, sanctions jusqu'à 300 000 € : qui est concerné en 2026, ce qu'il faut mettre en place et comment vérifier votre site."
-image: "https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=2070&auto=format&fit=crop"
+description: "RGAA, entreprises concernées, sanctions réelles : ce que la réglementation 2026 impose à votre site web, et les corrections à faire en priorité."
+image: "https://msd-media.com/assets/img/stock/photo-1516387938699-a93567ec168e.webp"
 tags: ["accessibilité web", "RGAA", "European Accessibility Act", "conformité site web", "WCAG", "MSD Media"]
 slug: "accessibilite-web-obligatoire-entreprises-2026"
 keyword: "accessibilité web obligatoire entreprise"

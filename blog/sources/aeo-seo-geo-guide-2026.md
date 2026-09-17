@@ -1,8 +1,9 @@
 ---
+status: "published"
 title: "AEO vs SEO vs GEO : le guide complet pour 2026"
 date: "2026-04-09"
 description: "Quelle est la différence entre SEO, GEO et AEO en 2026 ? Guide complet pour comprendre les trois approches et savoir laquelle prioriser pour votre entreprise."
-image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2151&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+image: "https://msd-media.com/assets/img/stock/photo-1560472354-b33ff0c44a43.webp"
 tags: ["GEO", "AEO", "SEO", "référencement IA", "Google AI", "MSD Media"]
 slug: "aeo-seo-geo-guide-2026"
 keyword: "AEO SEO GEO différence guide 2026"

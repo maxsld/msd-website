@@ -1,7 +1,8 @@
 ---
-title: "MSD Media dans Le Dauphiné Libéré : portrait presse"
+status: "published"
+title: "MSD Media dans Le Dauphiné Libéré : le Portrait"
 date: "2026-06-18"
-description: "MSD Media, agence web annécienne fondée par l'étudiant-entrepreneur Maxens Soldan, fait l'objet d'un portrait dans Le Dauphiné Libéré. Lire l'article."
+description: "Retour sur le portrait consacré à MSD Media et à son fondateur par Le Dauphiné Libéré : le parcours, l'agence et les projets en cours."
 image: "/assets/img/blog/maxens-soldan.webp"
 tags: ["MSD Media", "Le Dauphiné Libéré", "presse", "Maxens Soldan", "agence web Annecy", "étudiant entrepreneur", "landing page", "création site web"]
 slug: "msd-media-presse-le-dauphine"

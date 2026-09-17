@@ -1,7 +1,8 @@
 ---
-title: "Landing page pour les coachs et consultants à Annecy : comment générer des clients qualifiés"
+status: "published"
+title: "Landing Page Coach Annecy : Trouver des Clients"
 date: "2026-02-08"
-description: "Pourquoi une landing page est l'arme secrète des coachs et consultants d'Annecy pour convertir leur trafic en clients payants. Guide complet 2026."
+description: "Comment un coach ou un consultant d'Annecy peut transformer une page unique en machine à rendez-vous qualifiés. Structure, message et preuves."
 image: "https://img.freepik.com/premium-vector/abstract-background-with-gradient-color-abstract-gradient-background-blue-violet-purple-green_271431-249.jpg?semt=ais_user_personalization&w=740&q=80"
 tags: ["landing page", "coach", "consultant", "Annecy", "conversion"]
 slug: "landing-page-coach-consultant-annecy"
@@ -10,6 +11,8 @@ keyword: "landing page coach Annecy"
 ## Réponse courte
 
 Pour un coach ou consultant à Annecy, une landing page est souvent plus efficace qu'un site complet si l'objectif est de générer des rendez-vous qualifiés. Elle doit expliquer clairement la cible, le problème traité, la méthode, les résultats possibles, les preuves et le prochain pas. Plus l'offre est spécifique, plus la landing page convertit.
+
+!!update **Mise à jour — septembre 2026.** Pour un coach ou un consultant, la page ne suffit plus sans ancrage local. Les recherches « près de moi » ont doublé en 2026, et une présence dans le pack local capte jusqu'à 60 % de clics supplémentaires. Surtout, 69 % des visites d'une fiche d'établissement viennent de la recherche Google, pas de Maps ([Geolid, 2026](https://geolid.com/blog/etude-2026-etat-des-lieux-des-enseignes-sur-google-business-profile/)). La landing page et la fiche Google travaillent donc ensemble : la fiche amène la visibilité, la page fait la conversion.
 
 Vous êtes coach ou consultant à Annecy.  
 Vous avez des compétences solides.  

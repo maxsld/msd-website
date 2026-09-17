@@ -258,7 +258,18 @@ function inlineMarkdownToHtml(text) {
   out = out.replace(/`([^`]+)`/g, '<code>$1</code>');
   out = out.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   out = out.replace(/\*([^*]+)\*/g, '<em>$1</em>');
-  out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+  // Lien externe : rel de securite systematique. Suffixe {sponsored} pour
+  // declarer une relation commerciale (partenariat, sponsoring), comme Google
+  // le demande — le marqueur vit dans la source, pas dans le HTML genere.
+  out = out.replace(/\[([^\]]+)\]\(([^)]+)\)(\{sponsored\})?/g, (m, text, href, sponsored) => {
+    const external = /^https?:\/\//.test(href) && !href.includes('msd-media.com');
+    const rels = [];
+    if (sponsored) rels.push('sponsored');
+    if (external) rels.push('noopener', 'noreferrer');
+    const relAttr = rels.length ? ` rel="${rels.join(' ')}"` : '';
+    const target = external ? ' target="_blank"' : '';
+    return `<a href="${href}"${target}${relAttr}>${text}</a>`;
+  });
   return out;
 }
 
@@ -391,7 +402,15 @@ function markdownToHtml(markdown) {
       i += 1;
     }
 
-    htmlParts.push(`<p>${inlineMarkdownToHtml(paragraph.join(' '))}</p>`);
+    // Un paragraphe prefixe par `!!update ` devient un encart de mise a jour
+    // datee. Le marqueur vit dans la source markdown pour que le rebuild ne
+    // puisse plus ecraser un encart ajoute a la main dans le HTML genere.
+    const joined = paragraph.join(' ');
+    if (joined.startsWith('!!update ')) {
+      htmlParts.push(`<p class="blog-update">${inlineMarkdownToHtml(joined.slice(9).trim())}</p>`);
+      continue;
+    }
+    htmlParts.push(`<p>${inlineMarkdownToHtml(joined)}</p>`);
   }
 
   return { html: htmlParts.join('\n'), toc };
@@ -1043,7 +1062,7 @@ function renderArticlePage(post, allPosts) {
       <div class="blog-article-hero__row">
         <div class="blog-article-hero__text">
           <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${escapeHtml(post.title)}</span></p>
-          <h2 class="section-tag section-tag--dark">IA</h2>
+          <h2 class="section-tag section-tag--dark">${escapeHtml(post.category || 'IA')}</h2>
           <h1 class="hero__title"><span>${escapeHtml(post.title)}</span></h1>
           <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> ${escapeHtml(formatFrenchDate(post.date))}</p>
         </div>
@@ -1456,6 +1475,7 @@ function parseLegacyArticleIndex(slug = '') {
     tags: [],
     keyword: '',
     image: resolvePostImage({ image, slug }),
+    status: 'published',
     reading: estimateReadTimeFromHtml((html.match(/<article\b[\s\S]*?<\/article>/i) || [''])[0] || '')
   };
 }
@@ -1559,8 +1579,13 @@ function main() {
     const description = data.description || plain.slice(0, 155);
     const tags = Array.isArray(data.tags) ? data.tags : [];
     const keyword = data.keyword || tags[0] || '';
+    const category = data.category || 'IA';
     const image = getLiveArticleImage(slug) || resolvePostImage({ image: data.image, slug });
     const noindex = data.noindex === true || data.noindex === 'true';
+    const status = data.status || 'published';
+    if (!['draft', 'review', 'published'].includes(status)) {
+      throw new Error(`Statut invalide dans ${filePath}: ${status}`);
+    }
 
     const { html, toc } = markdownToHtml(cleanedBody);
 
@@ -1571,11 +1596,13 @@ function main() {
       description,
       tags,
       keyword,
+      category,
       image,
       html,
       toc,
       reading,
       noindex,
+      status,
       sourceFile: path.basename(filePath)
     });
   });

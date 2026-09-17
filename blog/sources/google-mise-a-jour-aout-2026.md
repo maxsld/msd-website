@@ -1,8 +1,9 @@
 ---
-title: "Mise à jour Google août 2026 : ce qui s'est vraiment passé (et comment réagir)"
+status: "published"
+title: "Mise à Jour Google Août 2026 : Ce qui a Changé"
 date: "2026-08-30"
-description: "Spam update confirmé du 18 au 21 août 2026, contenu à grande échelle visé, rumeurs de core update non confirmées. Ce qu'il faut vérifier sur votre site."
-image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2070&auto=format&fit=crop"
+description: "Ce que cette mise à jour a réellement modifié dans les classements, quels types de sites ont perdu, et comment réagir sans paniquer."
+image: "https://msd-media.com/assets/img/stock/photo-1573164713988-8665fc963095.webp"
 tags: ["Google update", "spam update", "algorithme Google", "SEO 2026", "MSD Media"]
 slug: "google-mise-a-jour-aout-2026"
 keyword: "mise à jour Google août 2026"

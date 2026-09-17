@@ -1,8 +1,9 @@
 ---
-title: "Google AI Mode en 2026 : pourquoi votre site perd du trafic même bien classé"
+status: "published"
+title: "Google AI Mode : Pourquoi Votre Trafic Baisse"
 date: "2026-08-21"
-description: "92 à 94 % des sessions Google AI Mode se terminent sans clic. Ce que ça change pour votre trafic, et comment rester visible quand Google répond à votre place."
-image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2151&auto=format&fit=crop"
+description: "Vous êtes bien classé et vous perdez des visites : l'explication du zéro-clic, ce que ça change pour votre site et comment compenser."
+image: "https://msd-media.com/assets/img/stock/photo-1560472354-b33ff0c44a43.webp"
 tags: ["Google AI Mode", "zero-click search", "GEO", "AEO", "SEO", "MSD Media"]
 slug: "google-ai-mode-zero-click-2026"
 keyword: "Google AI Mode zero-click"

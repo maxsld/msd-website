@@ -1,7 +1,8 @@
 ---
-title: "Site web pour architecte à Annecy : le guide complet 2026"
+status: "published"
+title: "Site Web Architecte Annecy : le Guide 2026"
 date: "2026-03-27"
-description: "Vous êtes architecte à Annecy ? Découvrez comment un site web bien conçu met en valeur vos réalisations, attire des clients qualifiés et vous positionne en 1ère page sur Google en 2026."
+description: "Portfolio, mise en scène des projets et référencement local : comment un architecte d'Annecy transforme son site en source de nouveaux projets."
 image: "https://www.ccdol-baiemsm.bzh/medias/2018/10/Fotolia_94199551_S.jpg"
 tags: ["site web architecte Annecy", "création site web Annecy", "agence web Annecy", "SEO architecte Annecy", "portfolio architecte", "MSD Media"]
 slug: "site-web-architecte-annecy"

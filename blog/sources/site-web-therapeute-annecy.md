@@ -1,7 +1,8 @@
 ---
-title: "Site web pour thérapeute et praticien à Annecy : le guide complet 2026"
+status: "published"
+title: "Site Web Thérapeute Annecy : le Guide 2026"
 date: "2026-03-17"
-description: "Vous êtes thérapeute, coach, naturopathe ou praticien bien-être à Annecy ? Découvrez comment un site web bien conçu attire des clients qualifiés, inspire confiance et vous positionne en 1ère page sur Google."
+description: "Comment un thérapeute ou praticien de bien-être à Annecy construit un site qui rassure, respecte le cadre légal et remplit son agenda."
 image: "https://images.pexels.com/photos/4506214/pexels-photo-4506214.jpeg"
 tags: ["site web thérapeute Annecy", "site web praticien bien-être Annecy", "création site web Annecy", "agence web Annecy", "SEO thérapeute Annecy", "naturopathe Annecy", "MSD Media"]
 slug: "site-web-therapeute-annecy"

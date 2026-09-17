@@ -1,7 +1,8 @@
 ---
-title: "Site web pour médecin et professionnel de santé à Annecy : le guide complet 2026"
+status: "published"
+title: "Site Web Médecin Annecy : Le Guide Complet 2026"
 date: "2026-03-17"
-description: "Vous êtes médecin, spécialiste ou professionnel de santé à Annecy ? Découvrez comment un site web bien conçu vous permet d'attirer de nouveaux patients, de réduire les appels inutiles et de renforcer votre crédibilité en ligne."
+description: "Ce qu'un médecin peut et ne peut pas publier, quelles informations rassurent les patients et comment être trouvé sur Google depuis Annecy."
 image: "https://www.girodmedical.com/blog/wp-content/uploads/2016/07/medecin-min.jpg"
 tags: ["site web médecin Annecy", "site web professionnel de santé Annecy", "création site web Annecy", "agence web Annecy", "SEO médecin Annecy", "MSD Media"]
 slug: "site-web-medecin-annecy"

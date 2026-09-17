@@ -1,7 +1,8 @@
 ---
-title: "Combien coûte une landing page en 2026 ? Guide des tarifs en France"
+status: "published"
+title: "Prix d'une Landing Page en France : Guide 2026"
 date: "2026-04-09"
-description: "Prix réels d'une landing page en France en 2026. De 200€ (template) à 8 000€ (sur mesure haut de gamme) : comparatif complet des options, ce qui justifie les prix et comment choisir."
+description: "Fourchettes de prix par type de prestataire, ce qui justifie les écarts et les questions à poser avant de signer un devis de landing page."
 image: "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp"
 tags: ["landing page", "tarifs", "prix", "France", "agence web", "MSD Media"]
 slug: "combien-coute-landing-page-france-2026"

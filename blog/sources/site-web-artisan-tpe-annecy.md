@@ -1,7 +1,8 @@
 ---
-title: "Site web pour artisan et TPE à Annecy : ce qu'il faut vraiment (et ce qu'il ne faut pas)"
+status: "published"
+title: "Site Web Artisan Annecy : Ce qui Compte Vraiment"
 date: "2026-03-16"
-description: "Artisan, indépendant ou petite entreprise à Annecy ? Découvrez ce dont vous avez vraiment besoin pour un site web efficace : budget, structure, SEO local et erreurs à éviter."
+description: "Un artisan n'a pas besoin d'un beau site, il a besoin de devis. Ce qui fonctionne, ce qui est du gaspillage, et combien ça coûte réellement."
 image: "https://img.freepik.com/fotos-kostenlos/abstrakter-gradient-hintergrund-mit-koernentextur-fesselnde-rausch-airbrush-minimalistische-tapete_8048-560.jpg?semt=ais_hybrid&w=740&q=80"
 tags: ["site web artisan Annecy", "site web TPE Annecy", "création site web Annecy", "agence web Annecy", "SEO local Annecy", "MSD Media"]
 slug: "site-web-artisan-tpe-annecy"
@@ -139,4 +140,3 @@ C'est suffisant pour apparaître sur vos requêtes locales et convertir vos visi
 ## MSD Media accompagne les artisans et TPE à Annecy
 
 Chez MSD Media, on conçoit des sites web sur mesure pour les indépendants et petites entreprises à Annecy : clairs, rapides, optimisés pour le SEO local et livrés en 21 jours. Pas de superflu. Pas de jargon. Des résultats mesurables.
-

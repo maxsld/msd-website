@@ -1,8 +1,9 @@
 ---
-title: "Les 10 erreurs à éviter lors de la création de votre site web à Annecy"
+status: "published"
+title: "10 Erreurs à Éviter en Créant Son Site à Annecy"
 date: "2026-02-08"
-description: "Les erreurs classiques qui coûtent cher aux entreprises d'Annecy. Ce qu'il faut absolument éviter pour créer un site qui convertit."
-image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+description: "Les dix erreurs qui reviennent systématiquement dans les projets de site web, ce qu'elles coûtent vraiment et comment les éviter dès le départ."
+image: "https://msd-media.com/assets/img/stock/photo-1758874572670-63042c5448c6.webp"
 tags: ["site web", "Annecy", "erreurs", "conseils", "création site"]
 slug: "10-erreurs-creation-site-web-annecy"
 keyword: "10 erreurs création site web Annecy"
@@ -10,6 +11,8 @@ keyword: "10 erreurs création site web Annecy"
 ## Réponse courte
 
 Les erreurs les plus coûteuses lors de la création d'un site web à Annecy sont presque toujours les mêmes : choisir uniquement le prix le plus bas, oublier le SEO local, négliger le mobile, publier un site lent ou construire des pages jolies mais incapables de convertir. Pour éviter ça, partez d'un objectif business clair, d'une structure simple, d'un contenu localisé et d'un site rapide pensé pour les demandes de contact.
+
+!!update **Mise à jour — septembre 2026.** L'erreur de performance reste la plus coûteuse, et elle est plus répandue qu'on ne le croit : seuls 47 % des sites passent simultanément les trois seuils Core Web Vitals en 2026, à savoir un LCP sous 2,5 s, un INP sous 200 ms et un CLS sous 0,1 ([Semsew, 2026](https://semsew.fr/blog/core-web-vitals-2026)). Autrement dit, plus d'un site sur deux échoue sur un critère que Google mesure sur les vraies visites, pas en laboratoire — et le score retenu vient des données de terrain du Chrome UX Report, au 75ᵉ percentile sur 28 jours.
 
 Tu veux créer un site web à Annecy ?  
 Parfait.

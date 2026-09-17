@@ -1,8 +1,9 @@
 ---
-title: "Avis clients et UGC : le nouveau facteur d'autorité pour être cité par les IA en 2026"
+status: "published"
+title: "Avis Clients : le Nouveau Facteur d'Autorité IA"
 date: "2026-08-30"
-description: "Les modèles génératifs évaluent le sentiment de marque avant de vous citer. Pourquoi les avis clients pèsent désormais autant que les backlinks pour le GEO."
-image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop"
+description: "Pourquoi les avis et contenus utilisateurs pèsent désormais autant dans les citations des IA que les backlinks dans le SEO classique."
+image: "https://msd-media.com/assets/img/stock/photo-1553877522-43269d4ea984.webp"
 tags: ["avis clients", "UGC", "GEO", "autorité", "réputation en ligne", "MSD Media"]
 slug: "avis-clients-autorite-geo-2026"
 keyword: "avis clients autorité GEO IA"

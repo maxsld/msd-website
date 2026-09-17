@@ -1,7 +1,8 @@
 ---
-title: "Comment une landing page bien structurée ranke sur ChatGPT ET Google simultanément"
+status: "published"
+title: "Ranker sur ChatGPT et Google avec une Seule Page"
 date: "2026-04-09"
-description: "Il est possible d'optimiser une landing page pour à la fois ranker sur Google ET apparaître dans les réponses ChatGPT. Voici la structure exacte à adopter en 2026."
+description: "Comment structurer une landing page pour qu'elle satisfasse à la fois l'algorithme de Google et les moteurs de réponse génératifs."
 image: "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp"
 tags: ["landing page", "ChatGPT", "SEO", "GEO", "conversion", "MSD Media"]
 slug: "landing-page-chatgpt-google"

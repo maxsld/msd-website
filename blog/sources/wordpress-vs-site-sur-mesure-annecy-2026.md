@@ -1,8 +1,9 @@
 ---
-title: "WordPress vs développement sur mesure à Annecy : que choisir en 2026 ?"
+status: "published"
+title: "WordPress ou Sur Mesure : Que Choisir en 2026 ?"
 date: "2026-06-28"
-description: "WordPress ou code sur mesure pour votre site à Annecy ? Comparatif honnête : coûts, sécurité, performance, SEO. Ce qui convient vraiment à votre projet."
-image: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.1.0"
+description: "Coût réel, vitesse, sécurité, maintenance : la comparaison honnête entre WordPress et un site codé sur mesure, selon la taille de votre projet."
+image: "https://msd-media.com/assets/img/stock/photo-1547658719-da2b51169166.webp"
 tags: ["site web", "Annecy", "WordPress", "comparatif", "création site"]
 slug: "wordpress-vs-site-sur-mesure-annecy-2026"
 keyword: "WordPress vs développement sur mesure Annecy"

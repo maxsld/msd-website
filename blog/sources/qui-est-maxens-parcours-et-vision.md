@@ -1,7 +1,8 @@
 ---
-title: "Qui est Maxens Soldan ? Fondateur & CEO de MSD Media"
+status: "published"
+title: "Qui est Maxens Soldan, Fondateur de MSD Media ?"
 date: "2026-03-16"
-description: "Maxens Soldan est fondateur et CEO de MSD Media, agence web spécialisée en création de sites web et landing pages à fort taux de conversion. Étudiant-entrepreneur en école d'ingénieur à Annecy, il accompagne startups, entrepreneurs et PME en France, Suisse et Belgique."
+description: "Parcours, convictions et vision du fondateur de MSD Media : pourquoi une agence web à Annecy, et pourquoi le sur-mesure plutôt que le template."
 image: "/assets/img/blog/maxens-soldan.webp"
 tags: ["Maxens Soldan", "MSD Media", "fondateur CEO", "étudiant entrepreneur", "agence web Annecy", "landing page", "création site web", "entrepreneur Annecy", "ingénieur entrepreneur"]
 slug: "qui-est-maxens-parcours-et-vision"

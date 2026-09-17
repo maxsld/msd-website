@@ -1,7 +1,8 @@
 ---
-title: "Google AI Overviews et SEO local : ce qui change pour les PME françaises en 2026"
+status: "published"
+title: "Google AI Overviews : Ce qui Change pour les PME"
 date: "2026-04-09"
-description: "Google AI Overviews est déployé en France. Ce que ça change concrètement pour le SEO local des PME : opportunités, risques et stratégie d'adaptation."
+description: "Les AI Overviews absorbent les clics des PME françaises. Ce qui change concrètement dans les SERP locales et comment continuer à capter du trafic."
 image: "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp"
 tags: ["Google AI Overviews", "SEO local", "PME", "France", "GEO", "MSD Media"]
 slug: "google-ai-overviews-pme-france"

@@ -3330,6 +3330,12 @@ position: relative;
   display: block;
 }
 
+/* Portrait cadre par le haut : garde le visage dans le champ quand la photo
+   est plus haute que le format 16/9 de la couverture. */
+.blog-article-cover--top img {
+  object-position: top center;
+}
+
 .blog-article-share {
   display: flex;
   align-items: center;

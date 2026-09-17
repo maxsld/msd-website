@@ -13,8 +13,6 @@
     "lastmod:dry-run": "node scripts/update-lastmod.mjs --dry-run",
     "uptime:check": "node scripts/uptime-monitor.mjs",
     "cwv:report": "node scripts/cwv-report.mjs",
-    "seo:traffic-watch": "node scripts/traffic-drop-watcher.mjs",
-    "seo:content-decay": "node scripts/content-decay-refresh.mjs",
     "blog:trends-report": "node scripts/blog-trends-report.mjs",
     "seo:weekly-pdf-report": "node scripts/weekly-seo-report.mjs",
     "link-graph": "node scripts/link-graph.mjs",

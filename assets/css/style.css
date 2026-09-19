@@ -3676,6 +3676,10 @@ position: relative;
   filter: none;
 }
 
+.press-card__logo--maxime {
+  width: 64px;
+}
+
 .press-card__title {
   margin: 0;
   font-size: 1.28rem;

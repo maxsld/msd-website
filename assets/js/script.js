@@ -135,7 +135,28 @@
   };
 
   window.msdTrack = pushTrack;
-  ensureGtmLoaded();
+
+  // GTM tire 290 Ko avec gtag. Le charger au premier rendu sature le lien sur
+  // mobile alors qu'aucune mesure n'est perdue a l'attendre : pushTrack met les
+  // evenements en file et les rejoue des que le conteneur est la. On part donc
+  // a la premiere interaction, ou a la premiere accalmie du navigateur.
+  const scheduleGtm = () => {
+    const wakeEvents = ["pointerdown", "scroll", "keydown", "touchstart"];
+    let started = false;
+    const start = () => {
+      if (started) return;
+      started = true;
+      wakeEvents.forEach((evt) => window.removeEventListener(evt, start));
+      ensureGtmLoaded();
+    };
+    wakeEvents.forEach((evt) => window.addEventListener(evt, start, { passive: true }));
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(start, { timeout: 3500 });
+    } else {
+      setTimeout(start, 2500);
+    }
+  };
+  scheduleGtm();
 
   const query = new URLSearchParams(window.location.search || "");
   pushTrack("msd_page_view", {

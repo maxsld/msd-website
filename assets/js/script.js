@@ -1497,8 +1497,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.querySelectorAll(".video-hero-content").forEach((v) => {
-    v.setAttribute("autoplay", "");
     v.muted = true;
+
+    // Une video marquee data-lazy-video est hydratee plus tard. Lui poser
+    // autoplay ici annule son preload="none" : le navigateur telecharge la
+    // video pendant le chargement critique, et sa premiere frame devient un
+    // candidat LCP tardif. Le lazy-loader s'en charge a l'hydratation, et le
+    // poster affiche deja cette premiere frame entre-temps.
+    if (v.hasAttribute("data-lazy-video")) return;
+
+    v.setAttribute("autoplay", "");
 
     const ensureAutoplay = () => {
       if (!v.play) return;
@@ -2029,6 +2037,7 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
       s.src = s.getAttribute("data-src");
       s.removeAttribute("data-src");
     });
+    v.setAttribute("autoplay", "");
     v.load();
     v.play().catch(function () {});
   }

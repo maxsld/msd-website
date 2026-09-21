@@ -1,0 +1,71 @@
+/* FontAwesome Free 6.7.2, sous-ensemble local aux 21 icones du site.
+   Le kit distant tirait 295 Ko de polices pour ces 21 glyphes ; ce fichier
+   plus les trois woff2 pesent environ 4 Ko.
+   Polices sous SIL OFL 1.1, CSS sous MIT — https://fontawesome.com/license/free */
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../fonts/fa-solid-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/fa-regular-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/fa-brands-subset.woff2") format("woff2");
+}
+
+.fa, .fas, .fa-solid, .far, .fa-regular, .fab, .fa-brands {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fa, .fas, .fa-solid { font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.far, .fa-regular { font-family: "Font Awesome 6 Free"; font-weight: 400; }
+.fab, .fa-brands { font-family: "Font Awesome 6 Brands"; font-weight: 400; }
+
+.fa::before, .fas::before, .fa-solid::before,
+.far::before, .fa-regular::before,
+.fab::before, .fa-brands::before { content: var(--fa); }
+
+
+/* Glyphes */
+.fa-arrow-left { --fa: "\f060"; }
+.fa-arrow-right { --fa: "\f061"; }
+.fa-check { --fa: "\f00c"; }
+.fa-chevron-down { --fa: "\f078"; }
+.fa-chevron-left { --fa: "\f053"; }
+.fa-chevron-right { --fa: "\f054"; }
+.fa-compress { --fa: "\f066"; }
+.fa-envelope { --fa: "\f0e0"; }
+.fa-expand { --fa: "\f065"; }
+.fa-globe { --fa: "\f0ac"; }
+.fa-magnifying-glass { --fa: "\f002"; }
+.fa-pause { --fa: "\f04c"; }
+.fa-play { --fa: "\f04b"; }
+.fa-upload { --fa: "\f093"; }
+.fa-volume-high { --fa: "\f028"; }
+.fa-volume-xmark { --fa: "\f6a9"; }
+.fa-xmark { --fa: "\f00d"; }
+.fa-wand-magic-sparkles { --fa: "\e2ca"; }
+.fa-instagram { --fa: "\f16d"; }
+.fa-linkedin { --fa: "\f08c"; }
+.fa-whatsapp { --fa: "\f232"; }
+.fa-clock { --fa: "\f017"; }

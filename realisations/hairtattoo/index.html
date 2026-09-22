@@ -400,25 +400,29 @@ function _msdConsentSignal(state){
 
         <figure class="ba-compare" data-ba-compare>
           <div class="ba-compare__frame">
-            <img class="ba-compare__img"
-                 src="https://msd-media.com/assets/img/hairtattoo-mockup.webp"
-                 alt="Le site HairTattoo après la refonte par MSD Media"
-                 width="1536" height="1024" loading="lazy" decoding="async">
-            <div class="ba-compare__before">
-              <img class="ba-compare__img"
-                   src="https://msd-media.com/assets/img/img-cover.webp"
-                   alt="Le site HairTattoo avant la refonte"
-                   width="1600" height="686" loading="lazy" decoding="async">
+            <div class="ba-compare__scroller">
+              <div class="ba-compare__stack">
+                <img class="ba-compare__img"
+                     src="https://msd-media.com/assets/img/hairtattoo-apres.webp"
+                     alt="Le site HairTattoo après la refonte par MSD Media, page entière"
+                     width="1400" height="10725" loading="lazy" decoding="async">
+                <div class="ba-compare__before">
+                  <img class="ba-compare__img"
+                       src="https://msd-media.com/assets/img/hairtattoo-avant.webp"
+                       alt="Le site HairTattoo avant la refonte, page entière"
+                       width="1400" height="10117" loading="lazy" decoding="async">
+                </div>
+              </div>
             </div>
-            <input class="ba-compare__range" type="range" min="0" max="100" value="50" step="1"
-                   aria-label="Comparer le site HairTattoo avant et après la refonte">
             <span class="ba-compare__handle" aria-hidden="true"></span>
           </div>
-          <figcaption class="ba-compare__caption">
+          <div class="ba-compare__controls">
             <span class="ba-compare__tag">Avant</span>
-            <span>Faites glisser pour comparer</span>
+            <input class="ba-compare__range" type="range" min="0" max="100" value="50" step="1"
+                   aria-label="Comparer le site HairTattoo avant et après la refonte">
             <span class="ba-compare__tag">Après</span>
-          </figcaption>
+          </div>
+          <figcaption class="ba-compare__caption">Faites défiler dans le cadre pour parcourir les deux pages de haut en bas, et glissez le curseur pour comparer.</figcaption>
         </figure>
 
         <h2 id="le-vrai-besoin-du-projet">Le vrai besoin du projet</h2>

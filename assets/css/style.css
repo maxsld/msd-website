@@ -7073,7 +7073,9 @@ body.affiliate-modal-open {
 .footer-partners {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  /* Les logos n'ont pas tous la meme hauteur : l'alignement par le bas garde
+     les intitules sur une meme ligne. */
+  align-items: flex-end;
   gap: 2.5rem;
   margin-top: 2.25rem;
   max-width: 1200px;
@@ -7111,9 +7113,16 @@ body.affiliate-modal-open {
   filter: brightness(0) invert(1);
 }
 
+/* Le badge Sortlist est un bandeau large la ou les deux autres logos sont des
+   marques etroites : a 76 px il ecrasait la rangee. */
+.footer-partner__logo--sortlist {
+  height: 58px;
+}
+
 @media (max-width: 680px) {
   .footer-partners { gap: 1.8rem; }
   .footer-partner__logo { height: 64px; }
+  .footer-partner__logo--sortlist { height: 48px; }
 }
 
 .footer-bottom {

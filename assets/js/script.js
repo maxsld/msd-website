@@ -2149,3 +2149,24 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
     });
   }
 })();
+
+
+// Comparateur avant / apres : la position du curseur pilote le rognage du
+// calque superieur. Sans JavaScript, le calque reste rogne a sa valeur CSS par
+// defaut et les deux images restent visibles, l'etude de cas reste lisible.
+(function () {
+  var frames = document.querySelectorAll("[data-ba-compare]");
+  if (!frames.length) return;
+
+  frames.forEach(function (fig) {
+    var range = fig.querySelector(".ba-compare__range");
+    if (!range) return;
+
+    var apply = function () {
+      fig.style.setProperty("--ba-pos", range.value + "%");
+    };
+
+    apply();
+    range.addEventListener("input", apply);
+  });
+})();

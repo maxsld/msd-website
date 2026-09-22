@@ -530,6 +530,10 @@
     height: 20px;
   }
 
+  .logo-marquee__img--belotero {
+    height: 24px;
+  }
+
   .review-video {
     width: min(44vw, 210px);
   }

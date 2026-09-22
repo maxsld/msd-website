@@ -816,6 +816,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const clientLogos = [
     { src: "https://msd-media.com/assets/img/logo-ultherapy-prime.webp", alt: "Logo Ultherapy Prime" },
     { src: "https://msd-media.com/assets/img/logo-radiesse.webp", alt: "Logo Radiesse" },
+    { src: "https://msd-media.com/assets/img/logos/belotero.svg", alt: "Logo Belotero", className: "logo-marquee__img--belotero" },
     { src: "https://msd-media.com/assets/img/logo-track5.webp", alt: "Logo client 5" },
     { src: "https://msd-media.com/assets/img/logo-merz-aesthetics.webp", alt: "Logo Merz Aesthetics", className: "logo-marquee__img--merz" },
     { src: "https://msd-media.com/assets/img/logos/french-tech-full.webp", alt: "La French Tech", className: "logo-marquee__img--frenchtech" },

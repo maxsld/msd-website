@@ -993,6 +993,13 @@ position: relative;
   filter: brightness(0) invert(1);
 }
 
+/* Logo Belotero : officiel en orange, passe en monochrome pour le bandeau
+   comme le logo French Tech. */
+.logo-marquee__img--belotero {
+  height: 26px;
+  filter: brightness(0) invert(1);
+}
+
 .hero-scroll-indicator {
   position: relative;
   width: 100px;
@@ -1281,6 +1288,10 @@ position: relative;
   }
   .logo-marquee__img--frenchtech {
     height: 103px;
+  }
+
+  .logo-marquee__img--belotero {
+    height: 44px;
   }
 
   .hero-scroll-indicator {

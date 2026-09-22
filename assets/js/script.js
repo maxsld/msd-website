@@ -2151,22 +2151,28 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
 })();
 
 
-// Comparateur avant / apres : la position du curseur pilote le rognage du
-// calque superieur. Sans JavaScript, le calque reste rogne a sa valeur CSS par
-// defaut et les deux images restent visibles, l'etude de cas reste lisible.
+// Cote a cote : on synchronise le defilement des deux colonnes en proportion,
+// les deux pages n'ayant ni la meme hauteur ni la meme structure. Le verrou
+// evite que la colonne pilotee ne renvoie l'evenement a celle qui pilote.
 (function () {
-  var frames = document.querySelectorAll("[data-ba-compare]");
-  if (!frames.length) return;
+  var blocks = document.querySelectorAll("[data-ba-side]");
+  if (!blocks.length) return;
 
-  frames.forEach(function (fig) {
-    var range = fig.querySelector(".ba-compare__range");
-    if (!range) return;
+  blocks.forEach(function (block) {
+    var frames = block.querySelectorAll(".ba-side__frame");
+    if (frames.length !== 2) return;
+    var locked = false;
 
-    var apply = function () {
-      fig.style.setProperty("--ba-pos", range.value + "%");
-    };
-
-    apply();
-    range.addEventListener("input", apply);
+    frames.forEach(function (frame, index) {
+      frame.addEventListener("scroll", function () {
+        if (locked) return;
+        locked = true;
+        var other = frames[index === 0 ? 1 : 0];
+        var travel = frame.scrollHeight - frame.clientHeight;
+        var ratio = travel > 0 ? frame.scrollTop / travel : 0;
+        other.scrollTop = ratio * (other.scrollHeight - other.clientHeight);
+        requestAnimationFrame(function () { locked = false; });
+      }, { passive: true });
+    });
   });
 })();

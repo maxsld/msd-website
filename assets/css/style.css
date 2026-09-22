@@ -8954,138 +8954,53 @@ body.page-404 .site-footer {
 }
 
 
-/* ─── Comparateur avant / apres ───────────────────────────────────────────
-   Concu pour des captures de page entiere : ~7 fois plus hautes que larges.
-   Le cadre garde une hauteur d'ecran et defile, ce qui permet de parcourir
-   les deux sites de haut en bas ; le curseur de comparaison est place sous le
-   cadre plutot qu'en surimpression, sinon il intercepterait le defilement. */
+/* ─── Comparateur avant / apres, cote a cote ────────────────────────────────────────────────
+   Deux colonnes qui defilent ensemble. Les deux pages n'ayant pas la meme
+   hauteur, la synchronisation se fait en proportion et non en pixels. */
 
-.ba-compare {
+.ba-side {
   margin: 2rem 0 1.5rem;
 }
 
-.ba-compare__frame {
-  position: relative;
-  height: min(72vh, 620px);
-  border-radius: 0.2rem;
-  overflow: hidden;
-  background: #f0f0f0;
-  border: 1px solid rgba(17, 17, 17, 0.12);
-}
-
-.ba-compare__scroller {
-  position: absolute;
-  inset: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  overscroll-behavior: contain;
-}
-
-.ba-compare__stack {
-  position: relative;
-}
-
-.ba-compare__img {
-  width: 100%;
-  height: auto;
-  display: block;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-/* Le calque « avant » est rogne et non redimensionne : reduire sa largeur
-   comprimerait l'image au lieu de la devoiler. */
-.ba-compare__before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  clip-path: inset(0 calc(100% - var(--ba-pos, 50%)) 0 0);
-}
-
-.ba-compare__handle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: var(--ba-pos, 50%);
-  width: 2px;
-  margin-left: -1px;
-  background: #ffffff;
-  box-shadow: 0 0 0 1px rgba(17, 17, 17, 0.3);
-  pointer-events: none;
-}
-
-.ba-compare__controls {
-  display: flex;
-  align-items: center;
+.ba-side__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.9rem;
-  margin-top: 0.85rem;
 }
 
-.ba-compare__tag {
-  flex: 0 0 auto;
-  font-weight: 600;
+.ba-side__label {
+  margin: 0 0 0.45rem;
   font-size: 0.82rem;
+  font-weight: 600;
   color: rgba(17, 17, 17, 0.85);
 }
 
-/* Le champ fait 26 px de haut pour offrir une cible tactile correcte, la
-   barre visible n'en fait que 4 : elle est dessinee par le pseudo-element de
-   piste, pas par le fond du champ. */
-.ba-compare__range {
-  flex: 1 1 auto;
-  -webkit-appearance: none;
-  appearance: none;
-  height: 26px;
-  background: transparent;
-  cursor: ew-resize;
+.ba-side__frame {
+  position: relative;
+  height: min(72vh, 620px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  border-radius: 0.2rem;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  background: #f0f0f0;
 }
 
-.ba-compare__range::-webkit-slider-runnable-track {
-  height: 4px;
-  border-radius: 999px;
-  background: rgba(17, 17, 17, 0.18);
+.ba-side__img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.ba-compare__range::-moz-range-track {
-  height: 4px;
-  border-radius: 999px;
-  background: rgba(17, 17, 17, 0.18);
-}
-
-.ba-compare__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 22px;
-  height: 22px;
-  margin-top: -9px;
-  border-radius: 999px;
-  background: #2d66f2;
-  border: 2px solid #ffffff;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
-  cursor: ew-resize;
-}
-
-.ba-compare__range::-moz-range-thumb {
-  width: 22px;
-  height: 22px;
-  border-radius: 999px;
-  background: #2d66f2;
-  border: 2px solid #ffffff;
-  cursor: ew-resize;
-}
-
-.ba-compare__range:focus-visible {
-  outline: 3px solid #2d66f2;
-  outline-offset: 4px;
-}
-
-.ba-compare__caption {
+.ba-side__caption {
   margin-top: 0.55rem;
   font-size: 0.8rem;
   color: rgba(17, 17, 17, 0.62);
 }
 
 @media (max-width: 680px) {
-  .ba-compare__frame { height: min(62vh, 430px); }
-  .ba-compare__caption { font-size: 0.76rem; }
+  .ba-side__grid { gap: 0.55rem; }
+  .ba-side__frame { height: min(58vh, 400px); }
+  .ba-side__label { font-size: 0.76rem; }
+  .ba-side__caption { font-size: 0.76rem; }
 }

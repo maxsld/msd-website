@@ -25,7 +25,9 @@ const MIN_PRIOR_IMPRESSIONS = 10;
 const MAX_TREND_KEYWORDS = 15; // limite d'appels Google Trends (rate limit)
 const ANTHROPIC_MODEL = "claude-sonnet-5";
 
-const requiredEnvKeys = ["ANTHROPIC_API_KEY"];
+// ANTHROPIC_API_KEY est optionnelle : sans elle le rapport sort avec le
+// classement brut des donnees GSC au lieu de l'analyse redigee.
+const requiredEnvKeys = [];
 const googleEnvKeys = [
   "GOOGLE_SERVICE_ACCOUNT_EMAIL",
   "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY",
@@ -262,6 +264,49 @@ async function fetchAllTrends(keywords) {
 
 // ─── ANALYSE CLAUDE ─────────────────────────────────────────────────────────
 
+/**
+ * Repli sans IA : on classe les articles par perte d'impressions et les
+ * requetes par croissance. Moins fin qu'une analyse redigee, mais le rapport
+ * part quand meme — et c'est lui qui porte les chiffres.
+ */
+function analyzeWithoutClaude({ articles, risingQueries, periods }) {
+  const lines = [
+    `Analyse brute — ${periods.prior.startDate}→${periods.prior.endDate} puis ${periods.recent.startDate}→${periods.recent.endDate}.`,
+    "Cle ANTHROPIC_API_KEY absente : pas d'analyse redigee, seulement le classement des donnees.",
+    "",
+    "## Articles qui perdent le plus d'impressions",
+  ];
+  // Les impressions sont stockees en texte, au format "avant→apres" :
+  // on les relit pour pouvoir classer par variation.
+  const delta = (a) => {
+    const m = String(a.gsc?.impressions ?? "").match(/^(\d+)→(\d+)$/);
+    return m ? Number(m[2]) - Number(m[1]) : null;
+  };
+  const losing = articles
+    .map((a) => ({ ...a, d: delta(a) }))
+    .filter((a) => a.d !== null && a.d < 0)
+    .sort((a, b) => a.d - b.d)
+    .slice(0, 8);
+  if (losing.length) {
+    for (const a of losing) {
+      lines.push(`- ${a.title || a.slug} : ${a.d} impressions (${a.gsc.impressions})${a.gsc.position ? `, position ${a.gsc.position}` : ""}`);
+    }
+  } else {
+    lines.push("- Aucune baisse mesurable sur la periode.");
+  }
+
+  lines.push("", "## Requetes en croissance sans article dedie");
+  const rising = [...risingQueries].slice(0, 10);
+  if (rising.length) {
+    for (const q of rising) {
+      lines.push(`- "${q.query}" : ${q.impressions} impressions, position ${Number(q.position || 0).toFixed(1)}`);
+    }
+  } else {
+    lines.push("- Aucune requete en croissance significative.");
+  }
+  return lines.join("\n");
+}
+
 async function analyzeWithClaude({ articles, risingQueries, periods }) {
   const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -441,7 +486,17 @@ async function run() {
   });
 
   console.log("[blog-trends] Analyse Claude...");
-  const report = await analyzeWithClaude({ articles, risingQueries, periods });
+  let report;
+  if (process.env.ANTHROPIC_API_KEY) {
+    try {
+      report = await analyzeWithClaude({ articles, risingQueries, periods });
+    } catch (error) {
+      console.warn(`[blog-trends] Analyse Claude indisponible (${error.message}) — repli sur le classement brut.`);
+    }
+  } else {
+    console.warn("[blog-trends] ANTHROPIC_API_KEY absente — repli sur le classement brut.");
+  }
+  if (!report) report = analyzeWithoutClaude({ articles, risingQueries, periods });
 
   const reportPath = path.join(reportsDir, `blog-trends-${formatDate(new Date())}.md`);
   await fs.mkdir(reportsDir, { recursive: true });

@@ -1,0 +1,64 @@
+name: Performance Watch
+
+# Tous les 3 jours a 06h00 UTC. Mesure PageSpeed, applique les corrections
+# mecaniquement sures et ouvre une pull request : rien n'est publie sans
+# relecture. Le reste du diagnostic part sur Telegram.
+on:
+  schedule:
+    - cron: "0 6 */3 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Mesurer, diagnostiquer, corriger
+        run: node scripts/perf-watch.mjs
+        env:
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      # L'historique est une donnee, pas un changement a relire : il part
+      # directement sur main pour que la tendance reste continue.
+      - name: Enregistrer l'historique
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- seo-reports/perf-history.json; then
+            git add seo-reports/perf-history.json
+            git commit -m "chore(perf): historique des mesures [skip ci]"
+            git push
+          fi
+
+      - name: Y a-t-il des corrections ?
+        id: check
+        run: |
+          if git diff --quiet -- '*.html'; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Ouvrir une pull request
+        if: steps.check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: perf/auto-fix
+          delete-branch: true
+          title: "perf: corrections automatiques des dimensions d'images"
+          body-path: ${{ runner.temp }}/perf-fixes.txt
+          commit-message: "perf(images): corriger les dimensions declarees"

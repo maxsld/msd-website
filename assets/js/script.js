@@ -2176,3 +2176,91 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
     });
   });
 })();
+
+// AVA : assistante du site. La cle Groq reste cote serveur, le navigateur ne
+// parle qu'a /api/ava. L'historique vit en memoire de page, rien n'est stocke.
+(function () {
+  var panel = document.querySelector("[data-ava]");
+  if (!panel) return;
+
+  var ENDPOINT = "https://app.msd-media.com/api/ava";
+  var thread = panel.querySelector("[data-ava-thread]");
+  var form = panel.querySelector("[data-ava-form]");
+  var input = form.querySelector(".ava__input");
+  var send = form.querySelector(".ava__send");
+  var chips = panel.querySelector("[data-ava-chips]");
+  var history = [];
+  var busy = false;
+
+  function bubble(role, text) {
+    var el = document.createElement("div");
+    el.className = "ava__msg ava__msg--" + (role === "user" ? "user" : "ava");
+    // Les liens renvoyes par le modele sont rendus cliquables, le reste
+    // est insere en texte : rien de ce qui vient du modele n'est du HTML.
+    var parts = String(text).split(/(https?:\/\/[^\s)]+)/g);
+    parts.forEach(function (p, i) {
+      if (i % 2) {
+        var a = document.createElement("a");
+        a.href = p; a.target = "_blank"; a.rel = "noopener noreferrer";
+        a.textContent = "réserver un appel";
+        el.appendChild(a);
+      } else if (p) {
+        el.appendChild(document.createTextNode(p));
+      }
+    });
+    thread.appendChild(el);
+    panel.classList.add("is-active");
+    thread.scrollTop = thread.scrollHeight;
+    return el;
+  }
+
+  function setBusy(state) {
+    busy = state;
+    send.disabled = state;
+    input.disabled = state;
+  }
+
+  async function ask(question) {
+    if (busy || !question.trim()) return;
+    if (chips) chips.remove();
+    bubble("user", question);
+    history.push({ role: "user", content: question });
+    input.value = "";
+    setBusy(true);
+
+    var pending = bubble("ava", "…");
+    if (window.msdTrack) window.msdTrack("ava_question", { question_length: question.length });
+
+    try {
+      var res = await fetch(ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: history }),
+      });
+      var data = await res.json();
+      var reply = data.reply || "Je n'ai pas de réponse à cette question. Le plus simple est d'en parler directement.";
+      pending.remove();
+      bubble("ava", reply);
+      history.push({ role: "assistant", content: reply });
+      if (window.msdTrack && /cal\.com/.test(reply)) window.msdTrack("ava_cta_shown", {});
+    } catch (e) {
+      pending.remove();
+      bubble("ava", "La connexion a échoué. Vous pouvez réserver un appel directement : https://cal.com/maxens-soldan-msd-media/30min");
+    } finally {
+      setBusy(false);
+      input.focus();
+    }
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    ask(input.value);
+  });
+
+  if (chips) {
+    chips.addEventListener("click", function (e) {
+      var chip = e.target.closest(".ava__chip");
+      if (chip) ask(chip.textContent.trim());
+    });
+  }
+})();

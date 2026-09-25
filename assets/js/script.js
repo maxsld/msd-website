@@ -2183,7 +2183,8 @@ document.querySelectorAll(".copyright-year").forEach(function(el) {
   var panel = document.querySelector("[data-ava]");
   if (!panel) return;
 
-  var ENDPOINT = "https://app.msd-media.com/api/ava";
+  // Meme origine que le site : pas de CORS, et la cle reste cote serveur.
+  var ENDPOINT = "/api/ava";
   var thread = panel.querySelector("[data-ava-thread]");
   var form = panel.querySelector("[data-ava-form]");
   var input = form.querySelector(".ava__input");

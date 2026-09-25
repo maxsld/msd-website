@@ -7114,7 +7114,7 @@ body.affiliate-modal-open {
 
 .footer-partner__logo {
   display: block;
-  height: 60px;
+  height: 76px;
   width: auto;
 }
 
@@ -7127,13 +7127,13 @@ body.affiliate-modal-open {
 /* Le badge Sortlist est un bandeau large la ou les deux autres logos sont des
    marques etroites : a 76 px il ecrasait la rangee. */
 .footer-partner__logo--sortlist {
-  height: 48px;
+  height: 60px;
 }
 
 @media (max-width: 680px) {
   .footer-partners { gap: 1.8rem; }
-  .footer-partner__logo { height: 52px; }
-  .footer-partner__logo--sortlist { height: 40px; }
+  .footer-partner__logo { height: 64px; }
+  .footer-partner__logo--sortlist { height: 50px; }
 }
 
 .footer-bottom {

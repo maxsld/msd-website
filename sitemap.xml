@@ -272,7 +272,7 @@
   </url>
   <url>
     <loc>https://msd-media.com/realisations/hairtattoo/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
@@ -776,4 +776,10 @@
     <priority>0.65</priority>
   </url>
 <!-- blog-articles:end -->
+  <url>
+    <loc>https://msd-media.com/template-landing-page/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

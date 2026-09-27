@@ -1,0 +1,37 @@
+{
+  "https://msd-media.com/": {
+    "score": 69,
+    "lcp": 7734,
+    "cls": 0.002,
+    "fcp": 2706,
+    "ttfb": 3
+  },
+  "https://msd-media.com/agence-web-annecy/": {
+    "score": 65,
+    "lcp": 9166,
+    "cls": 0.002,
+    "fcp": 3155,
+    "ttfb": 4
+  },
+  "https://msd-media.com/agence-web-strasbourg/": {
+    "score": 65,
+    "lcp": 8125,
+    "cls": 0.002,
+    "fcp": 3156,
+    "ttfb": 9
+  },
+  "https://msd-media.com/agence-web-alsace/": {
+    "score": 65,
+    "lcp": 8720,
+    "cls": 0.002,
+    "fcp": 3473,
+    "ttfb": 4
+  },
+  "https://msd-media.com/blog/": {
+    "score": 83,
+    "lcp": 3076,
+    "cls": 0,
+    "fcp": 2706,
+    "ttfb": 3
+  }
+}

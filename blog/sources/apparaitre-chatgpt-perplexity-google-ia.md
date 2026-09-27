@@ -2,7 +2,7 @@
 status: "published"
 title: "Apparaître dans ChatGPT : nos chiffres sur 12 mois"
 date: "2026-09-04"
-description: "J'ai appliqué tous les conseils GEO sur mon propre site : llms.txt, crawlers IA autorisés, 344 blocs de données structurées. Voici le trafic réel que ça a rapporté en 12 mois."
+description: "J'ai appliqué tous les conseils GEO sur mon site : llms.txt, crawlers IA autorisés, 344 blocs de données structurées. Voici le trafic réel obtenu en 12 mois."
 image: "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp"
 tags: ["GEO", "ChatGPT", "Perplexity", "Google AI Overviews", "référencement IA", "MSD Media"]
 slug: "apparaitre-chatgpt-perplexity-google-ia"

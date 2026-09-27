@@ -74,7 +74,7 @@ L'article conclut sur les prochaines étapes annoncées par le fondateur : faire
 
 Une couverture par un média régional comme **Le Dauphiné Libéré** confirme l'ancrage local de MSD Media et la crédibilité de son fondateur sur son marché historique, Annecy et la Haute-Savoie. C'est aussi la preuve qu'un projet d'étudiant-entrepreneur, mené avec rigueur et discipline, peut se transformer en agence reconnue, avec des clients allant de la PME locale à la multinationale.
 
-Pour en savoir plus sur le parcours complet de Maxens Soldan et la vision derrière MSD Media, retrouvez l'article dédié : [Qui est Maxens Soldan ? Fondateur & CEO de MSD Media](https://msd-media.com/blog/articles/qui-est-maxens-parcours-et-vision/).
+Pour en savoir plus sur le parcours complet de Maxens Soldan et la vision derrière MSD Media, retrouvez l'article dédié : [Qui est Maxens Soldan ? Fondateur & CEO de MSD Media](https://msd-media.com/blog/articles/maxens-soldan/).
 
 ---
 

@@ -196,7 +196,7 @@ Nous utilisons :
 - Un hébergement sur Vercel ou Cloudflare avec CDN global inclus
 - Zéro script tiers non indispensable par défaut
 
-Si votre site actuel est lent et que vous souhaitez un audit gratuit de vos Core Web Vitals avec un plan d'action concret, [contactez-nous directement](/contact). On mesure, on explique, on propose — sans engagement.
+Si votre site actuel est lent et que vous souhaitez un audit gratuit de vos Core Web Vitals avec un plan d'action concret, [contactez-nous directement](/contact/). On mesure, on explique, on propose — sans engagement.
 
 ---
 

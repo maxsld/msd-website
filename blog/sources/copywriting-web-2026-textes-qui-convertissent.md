@@ -245,4 +245,4 @@ Notre process :
 
 Le résultat : un site dont les textes ont été pensés pour convertir avant d'être mis en forme.
 
-Si vous souhaitez un audit de vos textes actuels — titre, H1, CTA, page service principale — [contactez-nous](/contact). On vous dit ce qui bloque et ce qu'on ferait différemment. Gratuit, sans engagement.
+Si vous souhaitez un audit de vos textes actuels — titre, H1, CTA, page service principale — [contactez-nous](/contact/). On vous dit ce qui bloque et ce qu'on ferait différemment. Gratuit, sans engagement.

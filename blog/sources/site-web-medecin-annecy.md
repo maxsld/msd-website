@@ -111,12 +111,14 @@ Un site web médical en France est soumis à des règles déontologiques précis
 
 ### Ce qui est interdit ou encadré
 - Toute forme de publicité directe ou de démarchage
-- Les témoignages patients nominatifs sans leur accord explicite
+- Les témoignages de patients, même avec leur accord : l'article R4127-19-1 exclut tout recours à des témoignages de tiers
 - Les allégations thérapeutiques non prouvées
 - La comparaison avec des confrères
 - Les promotions sur les actes médicaux
 
 Un site web médical bien conçu à Annecy reste sobre, factuel et informatif — ce n'est pas une page de vente au sens commercial du terme. L'objectif est d'informer et de rassurer, pas de "vendre" une consultation.
+
+La médecine esthétique pose des questions plus fines encore, sur les photos avant/après, les avis et les tarifs : nous les détaillons dans notre guide [médecine esthétique : ce que votre site peut afficher](https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/).
 
 ---
 

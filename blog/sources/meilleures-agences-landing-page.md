@@ -35,8 +35,6 @@ Créer une landing page efficace nécessite de la stratégie, de la technique et
 
 ### 1. MSD Media – L’agence qui transforme vos visiteurs en clients grâce à l’humain et au sur-mesure
 
-![MSD Media](https://gradients.mijo-design.com/public/uploads/files/db16.png)
-
 [Visiter MSD Media](https://msd-media.com)  
 
 MSD Media est bien plus qu’une agence web : c’est un véritable partenaire stratégique. Spécialisée dans la création de **landing pages et sites web 100% sur-mesure**, MSD Media place l’humain au cœur de chaque projet. Chaque page est conçue pour **convertir**, tout en reflétant fidèlement l’identité et les valeurs de votre entreprise.
@@ -58,16 +56,12 @@ MSD Media est bien plus qu’une agence web : c’est un véritable partenaire s
 En choisissant MSD Media, vous bénéficiez d’un service **clés en main**, où chaque détail compte, et où le suivi post-lancement est tout aussi important que la conception.  
 L’agence devient une extension de votre équipe, travaillant main dans la main pour transformer votre vision en une **landing page performante et durable**.
 
-🔗 [Réserver un appel avec MSD Media](https://msd-media.com/contact)
+🔗 [Réserver un appel avec MSD Media](https://msd-media.com/contact/)
 
 
 ---
 
 ### 2. 160 Agency – L’agence qui transforme l’audience en clients
-
-![160 Agency](https://framerusercontent.com/images/nMmNvJraHhjGWtW4GswCjBRoU.png?width=2512&height=1340)
-
-[Visiter 160 Agency](https://160.agency)  
 
 160 Agency se positionne comme un spécialiste des landing pages pour SaaS, intégrant stratégie, design et développement technique. Leur force : créer des pages qui allient esthétisme et conversion.
 
@@ -86,8 +80,6 @@ L’agence devient une extension de votre équipe, travaillant main dans la main
 ---
 
 ### 3. LaGrowthMachine – L’agence growth et landing pages B2B
-
-![LaGrowthMachine](https://framerusercontent.com/images/CPJu1vKF0NxkFebO08fJoLTwPo.png?width=3016&height=1258)
 
 [Visiter LaGrowthMachine](https://lagrowthmachine.com)  
 
@@ -108,9 +100,7 @@ LaGrowthMachine allie landing pages et stratégie d’automatisation B2B. Leur a
 
 ### 4. Voyelle – L’agence orientée data et conversion
 
-![Voyelle](https://framerusercontent.com/images/QvWzPP93duliGsjXqzUKSZUn8U.png?width=2632&height=1112)
-
-[Visiter Voyelle](https://voyelle.fr)  
+[Visiter Voyelle](https://www.voyelle.fr/)  
 
 Voyelle se concentre sur l’UX et la performance, offrant des landing pages sur mesure, optimisées pour chaque campagne marketing.
 
@@ -130,9 +120,7 @@ Voyelle se concentre sur l’UX et la performance, offrant des landing pages sur
 
 ### 5. Palm Square – L’agence experte en conversion
 
-![Palm Square](https://framerusercontent.com/images/GGECxXWdVGy3ZHBw8MzDQzYIylw.png?width=2628&height=1380)
-
-[Visiter Palm Square](https://palmsquare.com)  
+[Visiter Palm Square](https://palmsquare.fr/)  
 
 Palm Square accompagne les startups et entreprises dans la création de landing pages orientées conversion.
 

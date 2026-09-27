@@ -49,7 +49,7 @@ MSD Media publie des **études de cas nominatives et vérifiables** plutôt que 
 - **Aristoi Academia** — [étude de cas complète](https://msd-media.com/realisations/aristoi-academia/)
 - **Carroz Sports** — [étude de cas complète](https://msd-media.com/realisations/carroz-sports/)
 
-Retrouvez l'ensemble des projets sur la page [études de cas](https://msd-media.com/realisations/) et le [portfolio complet](https://msd-media.com/portfolio/).
+Retrouvez l'ensemble des projets sur la page [études de cas](https://msd-media.com/realisations/) et le [portfolio complet](https://msd-media.com/realisations/).
 
 ---
 

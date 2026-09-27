@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Template landing page gratuit — la structure qui convertit | MSD Media</title>
-  <meta name="description" content="Le template de landing page que MSD Media utilise pour ses clients : les 9 sections dans l'ordre, ce que dit chacune et où placer les appels à l'action. PDF gratuit." />
+  <title>Template landing page gratuit : le modèle PDF qui convertit | MSD Media</title>
+  <meta name="description" content="Téléchargez gratuitement notre template de landing page en PDF : les 9 sections dans l'ordre, ce que dit chacune et où placer les appels à l'action." />
   <meta name="keywords" content="contact agence web annecy, contacter msd media, rendez-vous agence web annecy, devis site web annecy" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#050505" />
@@ -36,11 +36,15 @@
   <link rel="stylesheet" href="../assets/css/fontawesome-subset.css">
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
-  <meta property="og:title" content="Template landing page gratuit — la structure qui convertit | MSD Media" />
-  <meta property="og:description" content="Le template de landing page que MSD Media utilise pour ses clients : les 9 sections dans l'ordre, ce que dit chacune et où placer les appels à l'action. PDF gratuit." />
+  <meta property="og:title" content="Template landing page gratuit : le modèle PDF qui convertit | MSD Media" />
+  <meta property="og:description" content="Téléchargez gratuitement notre template de landing page en PDF : les 9 sections dans l'ordre, ce que dit chacune et où placer les appels à l'action." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://msd-media.com/template-landing-page/" />
   <meta property="og:image" content="https://msd-media.com/assets/img/img-cover.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Template landing page gratuit : le modèle PDF qui convertit | MSD Media" />
+  <meta name="twitter:description" content="Téléchargez gratuitement notre template de landing page en PDF : les 9 sections dans l'ordre, ce que dit chacune et où placer les appels à l'action." />
+  <meta name="twitter:image" content="https://msd-media.com/assets/img/img-cover.webp" />
 
   
 
@@ -212,8 +216,8 @@ function _msdConsentSignal(state){
       "@type": "WebPage",
       "@id": "https://msd-media.com/template-landing-page/#webpage",
       "url": "https://msd-media.com/template-landing-page/",
-      "name": "Template landing page gratuit — la structure qui convertit | MSD Media",
-      "description": "Le template de landing page que MSD Media utilise pour ses clients : les 9 sections dans l'ordre, ce que dit chacune et où placer les appels à l'action. PDF gratuit.",
+      "name": "Template landing page gratuit : le modèle PDF qui convertit | MSD Media",
+      "description": "Téléchargez gratuitement notre template de landing page au format PDF : les 9 sections dans l'ordre, ce que dit chacune et où placer les appels à l'action. Sans inscription payante.",
       "isPartOf": {
         "@id": "https://msd-media.com/#website"
       },
@@ -247,7 +251,7 @@ function _msdConsentSignal(state){
       "@type": "CreativeWork",
       "@id": "https://msd-media.com/template-landing-page/#resource",
       "name": "Template landing page — la structure qui convertit",
-      "description": "Le template de landing page que MSD Media utilise pour ses clients : les 9 sections dans l'ordre, ce que dit chacune et où placer les appels à l'action. PDF gratuit.",
+      "description": "Téléchargez gratuitement notre template de landing page au format PDF : les 9 sections dans l'ordre, ce que dit chacune et où placer les appels à l'action. Sans inscription payante.",
       "url": "https://msd-media.com/template-landing-page/",
       "encodingFormat": "application/pdf",
       "inLanguage": "fr-FR",
@@ -270,120 +274,108 @@ function _msdConsentSignal(state){
 }
 </script>
   <style>
-    /* Page template — tokens du design system uniquement (cf. skill msd-design-system) */
-    .tpl-hero { padding-bottom: 1rem; }
-    .tpl-year { color: #2f6bff; }
+    /* Page template — tokens du design system uniquement (cf. skill msd-design-system).
+       Le formulaire reprend le rendu de /contact/ : les champs viennent de .contact-field
+       (deja sombre et global) ; seuls le fond du form et le bouton sont surcharges par
+       .contact-new-page, qu'on rejoue ici sous .tpl-form. */
 
-    .tpl-form-section {
+    .tpl-split {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 2rem 3rem 0;
+      padding: 3rem 3rem 6rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+      gap: 5rem;
+      align-items: center;
     }
 
-    .tpl-card {
-      max-width: 620px;
-      margin: 0 auto;
-      background: #ffffff;
-      border-radius: 1.25rem;
-      padding: 2.75rem 2.5rem;
-    }
+    /* .section-tag est centre par "margin: 0 auto" (style.css:66) et le texte du
+       main est centre par defaut : on realigne a gauche pour une colonne. */
+    .tpl-col-form { max-width: 34rem; text-align: left; }
+    .tpl-col-form .section-tag { margin-left: 0; margin-right: 0; }
 
-    .tpl-card__head { text-align: center; margin-bottom: 2rem; }
-
-    .tpl-card__title {
-      font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+    .tpl-title {
+      font-size: clamp(2.35rem, 5vw, 3.25rem);
       font-weight: 600;
-      color: #111;
-      margin: 0 0 0.5rem;
+      line-height: 1.05;
+      color: var(--global-color-white);
+      margin: 1rem 0 0;
     }
+    .tpl-year { color: var(--global-color-white); }
 
-    .tpl-card__sub {
-      font-size: var(--font-sm);
-      color: rgba(17, 17, 17, 0.6);
-      margin: 0;
-    }
-
-    /* Le formulaire hérite de .contact-form ; on neutralise juste le fond sombre
-       hérité, la carte étant blanche. */
-    .tpl-form .contact-field input {
-      background: #ffffff;
-      border: 1px solid rgba(17, 17, 17, 0.12);
-      color: #111;
-    }
-    .tpl-form .contact-field input::placeholder { color: rgba(17, 17, 17, 0.45); }
-    .tpl-form .contact-field input:focus { border-color: #2f6bff; outline: none; }
-    .tpl-form .contact-form__consent,
-    .tpl-form .contact-form__consent span { color: rgba(17, 17, 17, 0.7); }
-    .tpl-form .contact-form__consent a { color: #2f6bff; }
-    .tpl-form .contact-form__status { color: rgba(17, 17, 17, 0.7); }
-
-    .tpl-submit {
-      width: 100%;
-      background: #2f6bff;
-      color: #fff;
-      border: none;
-      border-radius: 0.2rem;
-      padding: 1rem 1.5rem;
+    .tpl-lead {
       font-size: var(--font-md);
-      font-weight: 600;
-      cursor: pointer;
+      color: rgba(255, 255, 255, 0.65);
+      margin: 1rem 0 2.25rem;
+      max-width: 46ch;
     }
-    .tpl-submit:disabled { opacity: 0.6; cursor: default; }
 
-    .tpl-success { text-align: center; }
+    /* Rejoue les overrides .contact-new-page pour un rendu identique a /contact/. */
+    .tpl-form { max-width: none; margin: 0; padding: 0; background: transparent; }
+
+    .tpl-form .contact-form__submit {
+      margin-top: 0.35rem;
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid #2d66f2;
+      border-radius: 0.2rem;
+      background: #2d66f2;
+      color: #ffffff;
+      font: inherit;
+      font-family: "Inter", sans-serif;
+      font-size: 0.96rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      cursor: pointer;
+      transition: opacity 160ms ease, transform 160ms ease;
+    }
+    .tpl-form .contact-form__submit:hover { opacity: 0.9; transform: translateY(-1px); }
+    .tpl-form .contact-form__submit:disabled { cursor: wait; opacity: 0.72; transform: none; }
+    .tpl-form .contact-form__status { margin: 0.7rem 0 0; color: rgba(255, 255, 255, 0.72); text-align: left; }
+
     .tpl-success__title {
       font-size: clamp(1.3rem, 2.4vw, 1.75rem);
       font-weight: 600;
-      color: #111;
+      color: var(--global-color-white);
       margin: 0 0 0.5rem;
     }
     .tpl-success__text {
       font-size: var(--font-sm);
-      color: rgba(17, 17, 17, 0.6);
+      color: rgba(255, 255, 255, 0.65);
       margin: 0 0 1.5rem;
     }
-    .tpl-success__link { display: inline-block; }
 
-    .tpl-content { margin-top: 6rem; }
-
-    .tpl-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-      margin-top: 2.5rem;
+    /* Apercu du PDF : flou decoratif, l'image reste lisible une fois telechargee. */
+    .tpl-col-visuel {
+      position: relative;
+      border-radius: 0.2rem;
+      overflow: hidden;
+      max-height: 34rem;
     }
-
-    .tpl-item {
-      background: #ffffff;
-      border-radius: 1.25rem;
-      padding: 2rem 1.75rem;
+    .tpl-col-visuel img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: blur(3px);
+      transform: scale(1.04); /* evite les bords transparents que le flou revele */
     }
-    .tpl-item__num {
-      font-family: "Instrument Serif", serif;
-      font-size: var(--font-lg);
-      color: #2f6bff;
-      margin: 0 0 0.75rem;
-    }
-    .tpl-item h3 {
-      font-size: clamp(1.02rem, 1.9vw, 1.22rem);
-      font-weight: 600;
-      color: #111;
-      margin: 0 0 0.5rem;
-    }
-    .tpl-item p {
-      font-size: var(--font-sm);
-      color: rgba(17, 17, 17, 0.7);
-      margin: 0;
+    /* Fondu vers le fond de page en bas, pour que l'image ne soit pas coupee net. */
+    .tpl-col-visuel::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(17, 17, 17, 0) 55%, #111111 100%);
+      pointer-events: none;
     }
 
     @media (max-width: 980px) {
-      .tpl-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .tpl-split { grid-template-columns: 1fr; gap: 2.5rem; padding: 2rem 2rem 4rem; }
+      .tpl-col-form { max-width: none; }
+      .tpl-col-visuel { max-height: 22rem; order: -1; }
     }
     @media (max-width: 680px) {
-      .tpl-form-section { padding: 1.5rem 1.2rem 0; }
-      .tpl-card { padding: 2rem 1.35rem; border-radius: 1.25rem; }
-      .tpl-grid { grid-template-columns: 1fr; }
-      .tpl-content { margin-top: 4rem; }
+      .tpl-split { padding: 1.5rem 1.2rem 3rem; }
+      .tpl-col-visuel { max-height: 16rem; }
     }
   </style>
 
@@ -490,19 +482,12 @@ function _msdConsentSignal(state){
 
     <main>
 
-    <section class="hero tpl-hero">
-      <p class="section-tag section-tag--light" data-i18n="tpl_eyebrow">Ressource gratuite</p>
-      <h1 class="hero__title"><span data-i18n="tpl_title_a">Le template landing page</span> <span class="tpl-year" data-year></span></h1>
-      <p class="hero__subheading" data-i18n="tpl_lead">La structure exacte que nous utilisons pour les landing pages de nos clients. Section par section, dans l'ordre. Rien à installer, rien à payer.</p>
-    </section>
+    <section class="tpl-split" aria-label="Télécharger le template">
 
-    <section class="tpl-form-section" aria-label="Télécharger le template">
-      <div class="tpl-card">
-
-        <div class="tpl-card__head">
-          <h2 class="tpl-card__title" data-i18n="tpl_form_title">Recevoir le template</h2>
-          <p class="tpl-card__sub" data-i18n="tpl_form_sub">Indiquez votre email, le PDF se télécharge immédiatement.</p>
-        </div>
+      <div class="tpl-col-form">
+        <p class="section-tag section-tag--light" data-i18n="tpl_eyebrow">Ressource gratuite</p>
+        <h1 class="tpl-title"><span data-i18n="tpl_title_a">Le template landing page</span> <span class="tpl-year" data-year></span></h1>
+        <p class="tpl-lead" data-i18n="tpl_lead">La structure exacte que nous utilisons pour les landing pages de nos clients. Section par section, dans l'ordre. Rien à installer, rien à payer.</p>
 
         <form class="contact-form tpl-form" id="template-form" action="https://formspree.io/f/mkopvwap" method="POST">
           <input type="hidden" name="_subject" value="Téléchargement template landing page" />
@@ -528,38 +513,22 @@ function _msdConsentSignal(state){
             <div class="cf-turnstile" data-sitekey="0x4AAAAAACzTY9vZj2kS5nhl"></div>
           </div>
 
-          <button type="submit" class="contact-form__submit tpl-submit" data-i18n="tpl_submit">Télécharger le template</button>
+          <button type="submit" class="contact-form__submit" data-i18n="tpl_submit">Télécharger le template</button>
           <p class="contact-form__status" id="template-form-status" aria-live="polite"></p>
         </form>
 
         <div class="tpl-success" id="template-success" hidden>
           <p class="tpl-success__title" data-i18n="tpl_success_title">C'est parti.</p>
           <p class="tpl-success__text" data-i18n="tpl_success_text">Le téléchargement démarre tout seul. S'il ne se lance pas&nbsp;:</p>
-          <a class="hero__btn hero__btn--primary tpl-success__link" id="template-fallback" href="https://msd-media.com/assets/downloads/template-landing-page-conversion-fr.pdf" download data-i18n="tpl_success_link">Télécharger manuellement</a>
+          <a class="hero__btn hero__btn--primary" id="template-fallback" href="https://msd-media.com/assets/downloads/template-landing-page-conversion-fr.pdf" download data-i18n="tpl_success_link">Télécharger manuellement</a>
         </div>
-
       </div>
-    </section>
 
-    <section class="tpl-content section-grid" aria-label="Contenu du template">
-      <h2 class="section-title section-title--light" data-i18n="tpl_inside_title">Ce qu'il y a dedans</h2>
-      <div class="tpl-grid">
-        <article class="tpl-item">
-          <p class="tpl-item__num">01</p>
-          <h3 data-i18n="tpl_i1_h">L'ordre des sections</h3>
-          <p data-i18n="tpl_i1_p">Les 9 blocs d'une landing page qui convertit, dans l'ordre où le visiteur a besoin de les lire.</p>
-        </article>
-        <article class="tpl-item">
-          <p class="tpl-item__num">02</p>
-          <h3 data-i18n="tpl_i2_h">Ce que dit chaque bloc</h3>
-          <p data-i18n="tpl_i2_p">Pour chaque section, la question à laquelle elle répond et l'erreur à ne pas commettre.</p>
-        </article>
-        <article class="tpl-item">
-          <p class="tpl-item__num">03</p>
-          <h3 data-i18n="tpl_i3_h">Les points de conversion</h3>
-          <p data-i18n="tpl_i3_p">Où placer les appels à l'action, combien, et pourquoi un seul objectif par page.</p>
-        </article>
+      <div class="tpl-col-visuel" aria-hidden="true">
+        <img src="../assets/img/template-landing-page-apercu.webp"
+             alt="" width="800" height="1652" loading="eager" decoding="async" fetchpriority="high">
       </div>
+
     </section>
 
   </main>

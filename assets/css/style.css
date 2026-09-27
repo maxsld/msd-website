@@ -65,7 +65,7 @@ ul {
   width: fit-content;
   margin: 0 auto 1.5rem;
   padding: 0.38rem 0.8rem;
-  border-radius: 999px;
+  border-radius: 0.2rem;
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: -0.05em;
@@ -622,7 +622,7 @@ main {
   align-items: flex-start;
   justify-content: center;
   width: fit-content;
-  border-radius: 999px;
+  border-radius: 0.2rem;
   text-align: center;
   padding: 10px;
   gap: 6px;
@@ -1891,7 +1891,7 @@ position: relative;
   width: fit-content;
   margin: 0 0 1rem;
   padding: 0.24rem 0.62rem;
-  border-radius: 999px;
+  border-radius: 0.2rem;
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: -0.05em;
@@ -3058,6 +3058,15 @@ position: relative;
   margin: 1.1rem 0 1.3rem;
 }
 
+/* Un élément de grille vaut min-width:auto par défaut : la largeur minimale
+   d'un tableau (620px) élargissait toute la colonne de l'article et faisait
+   défiler la page horizontalement sur mobile. Le tableau défile désormais
+   seul, dans .blog-table-wrap. */
+.blog-article-shell > *,
+.blog-article-content {
+  min-width: 0;
+}
+
 .blog-table {
   width: 100%;
   min-width: 620px;
@@ -3899,7 +3908,7 @@ position: relative;
   display: inline-flex;
   width: fit-content;
   padding: 0.24rem 0.62rem;
-  border-radius: 999px;
+  border-radius: 0.2rem;
   background: rgba(0, 0, 0, 0.55);
   color: #ffffff;
   font-size: 0.78rem;
@@ -4031,7 +4040,7 @@ position: relative;
 
 .blog-card__tag {
   padding: 0.24rem 0.62rem;
-  border-radius: 999px;
+  border-radius: 0.2rem;
   background: rgba(0, 0, 0, 0.55);
   color: #ffffff;
   font-size: 0.78rem;

@@ -16,7 +16,8 @@
     "blog:trends-report": "node scripts/blog-trends-report.mjs",
     "seo:weekly-pdf-report": "node scripts/weekly-seo-report.mjs",
     "link-graph": "node scripts/link-graph.mjs",
-    "hooks:setup": "git config core.hooksPath .githooks && echo 'Hooks installés ✓'"
+    "hooks:setup": "git config core.hooksPath .githooks && echo 'Hooks installés ✓'",
+    "years:check": "node scripts/check-years.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",

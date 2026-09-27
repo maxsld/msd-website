@@ -19,9 +19,101 @@ const PUBLIC_IMAGE_FALLBACKS = [
   DEFAULT_LISTING_IMAGE,
   '/assets/img/logo-black.webp'
 ];
-const LEGACY_ALIASES = {
-  'template-2026-landing-page': 'creer-landing-page-qui-convertit'
-};
+// Anciennes URLs servies par copie de l'article cible. Vide : ces URLs sont
+// désormais redirigées en 301 dans vercel.json, une copie ferait doublon.
+const LEGACY_ALIASES = {};
+
+// Profils de Maxens Soldan. Doit rester identique au sameAs des pages statiques
+// et de maxens-soldan.com : c'est ce qui permet à Google de relier les deux
+// sites à une seule entité (@id https://msd-media.com/#maxens-soldan).
+const AUTHOR_SAME_AS = [
+  'https://maxens-soldan.com/',
+  'https://www.linkedin.com/in/maxens-soldan/',
+  'https://www.instagram.com/maxens.sld/',
+  'https://www.youtube.com/channel/UCibAcGjBdCl3K8nhlNDYC-w',
+  'https://linktr.ee/maxens_soldan',
+  'https://vimeo.com/1078594852',
+  'https://www.univ-smb.fr/polytech/2026/02/12/etudier-et-entreprendre-le-double-challenge-de-maxens/',
+  'https://www.ledauphine.com/economie/2026/06/04/msd-media-l-agence-web-qui-veut-transformer-les-visiteurs-en-clients'
+];
+
+// Articles dont l'URL est redirigée dans vercel.json : la page générée serait
+// masquée par la redirection, et la lister dans le sitemap ou l'index du blog
+// enverrait Google et les visiteurs vers un 3XX.
+const REDIRECTED_ARTICLE_SLUGS = (() => {
+  try {
+    const vercel = JSON.parse(fs.readFileSync(path.join(ROOT, 'vercel.json'), 'utf8'));
+    const slugs = new Set();
+    (vercel.redirects || []).forEach((r) => {
+      if (r.has) return;
+      const m = /^\/blog\/articles\/([^/:*]+)\/?$/.exec(r.source || '');
+      if (!m) return;
+      // Les redirections de normalisation (/slug -> /slug/) ne retirent pas l'article.
+      const destPath = String(r.destination || '').replace(/^https?:\/\/(www\.)?msd-media\.com/, '');
+      const dest = /^\/blog\/articles\/([^/:*?#]+)\/?/.exec(destPath);
+      if (dest && dest[1] === m[1]) return;
+      slugs.add(m[1]);
+    });
+    return slugs;
+  } catch (_) {
+    return new Set();
+  }
+})();
+
+// Dimensions réelles d'une image locale (WebP, JPEG, PNG), lues dans l'en-tête du
+// fichier. Sert à poser width/height sur chaque <img> : sans eux, le navigateur ne
+// réserve pas la place et la mise en page saute au chargement (CLS).
+// Articles dont la mise en page a été ajustée à la main (photo de hero, etc.).
+// Le build n'y touche qu'à l'en-tête.
+const HAND_TUNED_ARTICLE_SLUGS = new Set(['maxens-soldan']);
+
+const imageSizeCache = new Map();
+function getImageSize(file) {
+  if (imageSizeCache.has(file)) return imageSizeCache.get(file);
+  let size = null;
+  try {
+    const b = fs.readFileSync(file);
+    if (b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WEBP') {
+      const chunk = b.toString('ascii', 12, 16);
+      if (chunk === 'VP8X') size = { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) };
+      else if (chunk === 'VP8 ') size = { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff };
+      else if (chunk === 'VP8L') {
+        const bits = b.readUInt32LE(21);
+        size = { w: (bits & 0x3fff) + 1, h: ((bits >> 14) & 0x3fff) + 1 };
+      }
+    } else if (b.readUInt32BE(0) === 0x89504e47) {
+      size = { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+    } else if (b[0] === 0xff && b[1] === 0xd8) {
+      let i = 2;
+      while (i < b.length) {
+        if (b[i] !== 0xff) { i += 1; continue; }
+        const marker = b[i + 1];
+        const len = b.readUInt16BE(i + 2);
+        if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+          size = { h: b.readUInt16BE(i + 5), w: b.readUInt16BE(i + 7) };
+          break;
+        }
+        i += 2 + len;
+      }
+    }
+  } catch (_) {
+    size = null;
+  }
+  imageSizeCache.set(file, size);
+  return size;
+}
+
+function addImageDimensions(html, pageDir) {
+  return html.replace(/<img\b(?![^>]*\bwidth=)([^>]*?)\bsrc="([^"]+)"/gi, (full, before, src) => {
+    let rel = src.replace(/^https?:\/\/(www\.)?msd-media\.com/, '');
+    if (/^[a-z]+:/i.test(rel)) return full;
+    rel = rel.split(/[?#]/)[0];
+    const file = rel.startsWith('/') ? path.join(ROOT, rel) : path.resolve(pageDir, rel);
+    const size = getImageSize(file);
+    if (!size || !size.w || !size.h) return full;
+    return `<img width="${size.w}" height="${size.h}"${before}src="${src}"`;
+  });
+}
 
 const AUTHOR_AVATAR = '../../../assets/img/maxens-soldan.webp';
 const AUTHOR_ROLE = 'Fondateur &amp; CEO de MSD Media';
@@ -785,6 +877,7 @@ function renderSiteHeader() {
             <div class="nav-megamenu__links">
               <a href="${SITE_URL}/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
               <a href="${SITE_URL}/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
+              <a href="https://msd-media.com/site-web-medecine-esthetique/">Médecine esthétique</a>
               <a href="${SITE_URL}/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
               <a href="${SITE_URL}/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
               <a href="${SITE_URL}/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
@@ -820,7 +913,7 @@ function renderSiteHeader() {
 function renderBookingSection(assetPrefix) {
   return `<section class="ai-proof section-grid" id="ai-proof">
     <div class="ai-proof__inner">
-      <img
+      <img width="200" height="81"
         class="ai-proof__msd-logo"
         src="https://msd-media.com/assets/img/logo-black.webp"
         alt="MSD Media"
@@ -942,6 +1035,7 @@ function renderFullFooter(assetPrefix) {
         <ul>
           <li><a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats & juristes</a></li>
           <li><a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins & santé</a></li>
+        <li><a href="https://msd-media.com/site-web-medecine-esthetique/">Médecine esthétique</a></li>
           <li><a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a></li>
           <li><a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants & cafés</a></li>
           <li><a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans & TPE</a></li>
@@ -990,7 +1084,7 @@ function renderArticlePage(post, allPosts) {
       url: `${SITE_URL}/blog/articles/maxens-soldan/`,
       jobTitle: 'Fondateur & CEO',
       worksFor: { '@id': `${SITE_URL}/#organization` },
-      sameAs: ['https://www.linkedin.com/in/maxens-soldan/']
+      sameAs: AUTHOR_SAME_AS
     },
     publisher: {
       '@type': 'Organization',
@@ -1047,7 +1141,7 @@ function renderArticlePage(post, allPosts) {
   <link rel="stylesheet" href="../../../assets/css/style.css" />
   <link rel="preload" href="../../../assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="../../../assets/css/responsive.css" />
-  <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../../assets/css/fontawesome-subset.css">
 
   <script type="application/ld+json">${JSON.stringify(articleJsonLd)}</script>
   <script type="application/ld+json">${JSON.stringify(breadcrumbJsonLd)}</script>
@@ -1128,6 +1222,10 @@ function renderBlogIndex(posts) {
   <meta property="og:type" content="website" />
   <meta property="og:url" content="${SITE_URL}/blog/" />
   <meta property="og:image" content="${toAbsoluteUrl(DEFAULT_LISTING_IMAGE)}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog MSD Media | SEO, Sites Web, Landing Pages & Conversion" />
+  <meta name="twitter:description" content="Articles MSD Media sur le SEO, la création de site web, les landing pages et la conversion." />
+  <meta name="twitter:image" content="${toAbsoluteUrl(DEFAULT_LISTING_IMAGE)}" />
   <link rel="icon" type="image/png" href="${SITE_URL}/assets/img/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="${SITE_URL}/assets/img/favicon.svg" />
   <link rel="shortcut icon" href="${SITE_URL}/assets/img/favicon.ico" />
@@ -1135,7 +1233,7 @@ function renderBlogIndex(posts) {
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="preload" href="../assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="../assets/css/responsive.css" />
-  <script src="https://kit.fontawesome.com/ddff5b2124.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/css/fontawesome-subset.css">
 </head>
 <body class="blog-index-page" data-asset-base="../assets">
   ${renderSiteHeader()}
@@ -1275,6 +1373,13 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
     if (!fs.existsSync(filePath)) return;
     let html = fs.readFileSync(filePath, 'utf8');
     html = html.replace(/<header class="navbar">[\s\S]*?<\/header>/i, renderSiteHeader());
+
+    // Pages retouchées à la main : on ne met à jour que l'en-tête, sans
+    // reconstruire le hero ni le corps, pour ne pas écraser la mise en page.
+    if (HAND_TUNED_ARTICLE_SLUGS.has(slug)) {
+      fs.writeFileSync(filePath, addImageDimensions(injectTracking(html), path.dirname(filePath)), 'utf8');
+      return;
+    }
 
     const dateRaw =
       (html.match(/"datePublished"\s*:\s*"([^"]+)"/i) || [])[1] ||
@@ -1436,7 +1541,7 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
       }
     );
 
-    fs.writeFileSync(filePath, injectTracking(html), 'utf8');
+    fs.writeFileSync(filePath, addImageDimensions(injectTracking(html), path.dirname(filePath)), 'utf8');
   });
 }
 
@@ -1526,6 +1631,7 @@ function renderRss(posts) {
 
 function renderBlogSitemap(posts) {
   const urls = posts
+    .filter((p) => !p.noindex)
     .map((p) => `  <url>\n    <loc>${SITE_URL}/blog/articles/${p.slug}/</loc>\n    <lastmod>${p.date}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.65</priority>\n  </url>`)
     .join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`;
@@ -1609,13 +1715,23 @@ function main() {
 
   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  const legacyOnlyPosts = collectLegacyOnlyPosts(posts);
+  // Un article redirigé ne se publie plus : sa page serait masquée par le 301 et
+  // chaque mention (index, RSS, sitemap) pointerait vers une redirection.
+  const skipped = posts.filter((p) => REDIRECTED_ARTICLE_SLUGS.has(p.slug)).map((p) => p.slug);
+  if (skipped.length) {
+    console.log(`↪️  ${skipped.length} article(s) ignoré(s), URL redirigée dans vercel.json : ${skipped.join(', ')}`);
+    for (let i = posts.length - 1; i >= 0; i -= 1) {
+      if (REDIRECTED_ARTICLE_SLUGS.has(posts[i].slug)) posts.splice(i, 1);
+    }
+  }
+
+  const legacyOnlyPosts = collectLegacyOnlyPosts(posts).filter((p) => !REDIRECTED_ARTICLE_SLUGS.has(p.slug));
   const allPostsForIndex = [...posts, ...legacyOnlyPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
 
   posts.forEach((post) => {
     const dir = path.join(OUTPUT_DIR, post.slug);
     ensureDir(dir);
-    const html = injectTracking(renderArticlePage(post, posts));
+    const html = addImageDimensions(injectTracking(renderArticlePage(post, posts)), dir);
     fs.writeFileSync(path.join(dir, 'index.html'), html, 'utf8');
   });
 
@@ -1628,7 +1744,7 @@ function main() {
     fs.copyFileSync(targetFile, path.join(legacyDir, 'index.html'));
   });
 
-  fs.writeFileSync(path.join(ROOT, 'blog', 'index.html'), injectTracking(renderBlogIndex(allPostsForIndex)), 'utf8');
+  fs.writeFileSync(path.join(ROOT, 'blog', 'index.html'), addImageDimensions(injectTracking(renderBlogIndex(allPostsForIndex)), path.join(ROOT, 'blog')), 'utf8');
   fs.writeFileSync(path.join(ROOT, 'blog', 'feed.xml'), renderRss(posts), 'utf8');
   fs.writeFileSync(path.join(ROOT, 'blog', 'sitemap.xml'), renderBlogSitemap(allPostsForIndex), 'utf8');
   fs.writeFileSync(path.join(ROOT, 'blog', 'articles-manifest.json'), JSON.stringify(posts, null, 2), 'utf8');

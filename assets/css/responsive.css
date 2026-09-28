@@ -315,14 +315,30 @@
     padding-inline: 0.35rem;
   }
 
+  /* En colonne, align-items:flex-start (hérité du desktop) réduisait la jauge
+     à une largeur nulle : on étire les enfants sur toute la largeur. */
   .affiliate-estimator__row {
     flex-direction: column;
-    gap: 0.55rem;
+    align-items: stretch;
+    gap: 0.9rem;
   }
 
+  /* Montant au-dessus de la jauge : dessous, il chevauchait l'étiquette. */
   .affiliate-estimator__amount {
+    order: -1;
     text-align: left;
     min-width: 0;
+    margin-top: 0;
+  }
+
+  /* Place réservée à l'étiquette, positionnée sous la jauge. */
+  .affiliate-estimator__line-wrap {
+    padding-bottom: 2.9rem;
+  }
+
+  /* L'étiquette reste dans la largeur de la jauge, même curseur au bord. */
+  .affiliate-estimator__tag {
+    left: clamp(3.4rem, var(--affiliate-pct), calc(100% - 3.4rem));
   }
 
   .affiliate-estimator__amount strong {

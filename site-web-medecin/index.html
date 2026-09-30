@@ -510,12 +510,36 @@ function _msdConsentSignal(state){
             "@type": "Answer",
             "text": "Nous appliquons les bonnes pratiques d'accessibilité web (RGAA), un point essentiel pour un site de santé destiné à tous les patients."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Un médecin a-t-il le droit d'avoir un site internet ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Depuis le décret n° 2020-1662, l'article R4127-19-1 du Code de la santé publique permet au médecin d'informer le public de ses compétences, de son parcours et de ses conditions d'exercice, y compris sur internet, sans témoignages ni comparaison avec des confrères."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il afficher ses honoraires sur le site ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C'est conseillé : secteur de conventionnement, tarifs des consultations et éventuels dépassements. Pour les actes non remboursés, l'arrêté du 30 mai 2018 impose en plus une information écrite préalable dès que les honoraires atteignent 70 €."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le site peut-il indiquer si le cabinet accepte de nouveaux patients ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, et c'est l'une des informations les plus recherchées. Une mention claire, mise à jour dès que la situation change, évite de nombreux appels au secrétariat."
+          }
         }
       ]
     }
   ]
 }
-</script>
+  </script>
 
 
 
@@ -735,6 +759,38 @@ function _msdConsentSignal(state){
         <p>Le site présente votre activité, jamais de données de santé : les dossiers patients restent dans vos outils métier certifiés. Nous construisons la vitrine et le parcours de prise de contact, dans le respect du RGPD dès la conception.</p>
       </div>
     </article>
+  </section>
+
+  <section class="sector-cards section-grid" id="specialites" aria-label="Vous exercez une spécialité esthétique ?">
+    <h2 class="section-title section-title--dark">Vous exercez une spécialité esthétique ?</h2>
+    <p class="sector-cards__intro">Médecine esthétique, chirurgie, dermatologie, dentaire ou laser : les règles changent d'une spécialité à l'autre.</p>
+    <div class="sector-cards__grid sector-cards__grid--5">
+      <a class="sector-card" href="https://msd-media.com/site-web-medecine-esthetique/">
+        <h3>Médecine esthétique</h3>
+        <p>Injections et soins esthétiques : informer sans promettre de résultat.</p>
+        <span class="sector-card__link">Voir la page &rarr;</span>
+      </a>
+      <a class="sector-card" href="https://msd-media.com/site-web-chirurgie-esthetique/">
+        <h3>Chirurgie esthétique</h3>
+        <p>Cliniques et chirurgiens, dans le cadre du décret du 23 septembre 2026.</p>
+        <span class="sector-card__link">Voir la page &rarr;</span>
+      </a>
+      <a class="sector-card" href="https://msd-media.com/site-web-dermatologue/">
+        <h3>Dermatologie</h3>
+        <p>Séparer la consultation médicale et la dermatologie esthétique.</p>
+        <span class="sector-card__link">Voir la page &rarr;</span>
+      </a>
+      <a class="sector-card" href="https://msd-media.com/site-web-dentiste/">
+        <h3>Dentistes</h3>
+        <p>Implantologie et esthétique du sourire, selon le code de déontologie dentaire.</p>
+        <span class="sector-card__link">Voir la page &rarr;</span>
+      </a>
+      <a class="sector-card" href="https://msd-media.com/site-web-centre-laser/">
+        <h3>Centres laser</h3>
+        <p>Épilation laser et lumière pulsée, dans le cadre fixé en 2024.</p>
+        <span class="sector-card__link">Voir la page &rarr;</span>
+      </a>
+    </div>
   </section>
 
   <section class="realisations-section section-grid" id="realisations">
@@ -1099,6 +1155,34 @@ function _msdConsentSignal(state){
         </button>
         <div class="faq-answer">
           <p>Nous appliquons les bonnes pratiques d'accessibilité web (RGAA), un point essentiel pour un site de santé destiné à tous les patients.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq-category="general">
+        <button class="faq-question" aria-expanded="false">
+          <span>Un médecin a-t-il le droit d&#x27;avoir un site internet ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Oui. Depuis le décret n° 2020-1662, l&#x27;article R4127-19-1 du Code de la santé publique permet au médecin d&#x27;informer le public de ses compétences, de son parcours et de ses conditions d&#x27;exercice, y compris sur internet, sans témoignages ni comparaison avec des confrères.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-faq-category="tarifs">
+        <button class="faq-question" aria-expanded="false">
+          <span>Faut-il afficher ses honoraires sur le site ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>C&#x27;est conseillé : secteur de conventionnement, tarifs des consultations et éventuels dépassements. Pour les actes non remboursés, l&#x27;arrêté du 30 mai 2018 impose en plus une information écrite préalable dès que les honoraires atteignent 70 €.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-faq-category="technique">
+        <button class="faq-question" aria-expanded="false">
+          <span>Le site peut-il indiquer si le cabinet accepte de nouveaux patients ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Oui, et c&#x27;est l&#x27;une des informations les plus recherchées. Une mention claire, mise à jour dès que la situation change, évite de nombreux appels au secrétariat.</p>
         </div>
       </div>
     </div>

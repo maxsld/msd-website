@@ -510,12 +510,36 @@ function _msdConsentSignal(state){
             "@type": "Answer",
             "text": "Oui, le site est optimisé pour charger rapidement même en 4G moyenne, un point clé quand vos clients cherchent 'restaurant près de moi' en marchant."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il afficher les allergènes sur le site ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui dès que le site présente ou vend vos plats. Le décret n° 2015-447 impose d'informer les clients sur les 14 allergènes majeurs, y compris en vente à emporter et en livraison. Nous les intégrons à chaque plat de la carte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Une carte en PDF suffit-elle ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Un PDF se lit mal sur mobile et Google l'exploite mal. Une carte en page web est plus lisible, mieux référencée et plus simple à mettre à jour."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le site doit-il reprendre les informations de ma fiche Google ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, à l'identique : nom, adresse, téléphone, horaires. Des informations qui divergent entre le site et la fiche brouillent Google et font perdre des clients."
+          }
         }
       ]
     }
   ]
 }
-</script>
+  </script>
 
 
 
@@ -1099,6 +1123,34 @@ function _msdConsentSignal(state){
         </button>
         <div class="faq-answer">
           <p>Oui, le site est optimisé pour charger rapidement même en 4G moyenne, un point clé quand vos clients cherchent 'restaurant près de moi' en marchant.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq-category="general">
+        <button class="faq-question" aria-expanded="false">
+          <span>Faut-il afficher les allergènes sur le site ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Oui dès que le site présente ou vend vos plats. Le décret n° 2015-447 impose d&#x27;informer les clients sur les 14 allergènes majeurs, y compris en vente à emporter et en livraison. Nous les intégrons à chaque plat de la carte.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-faq-category="technique">
+        <button class="faq-question" aria-expanded="false">
+          <span>Une carte en PDF suffit-elle ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Non. Un PDF se lit mal sur mobile et Google l&#x27;exploite mal. Une carte en page web est plus lisible, mieux référencée et plus simple à mettre à jour.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-faq-category="technique">
+        <button class="faq-question" aria-expanded="false">
+          <span>Le site doit-il reprendre les informations de ma fiche Google ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Oui, à l&#x27;identique : nom, adresse, téléphone, horaires. Des informations qui divergent entre le site et la fiche brouillent Google et font perdre des clients.</p>
         </div>
       </div>
     </div>

@@ -366,6 +366,28 @@ function _msdConsentSignal(state){
             </select>
           </div>
 
+          <div class="contact-field">
+            <select id="secteur" name="secteur">
+              <option value="" selected disabled>Votre secteur</option>
+              <optgroup label="Santé et esthétique">
+                <option value="medecine-esthetique">Médecine esthétique</option>
+                <option value="chirurgie-esthetique">Chirurgie esthétique</option>
+                <option value="dermatologie">Dermatologie</option>
+                <option value="dentaire">Cabinet dentaire</option>
+                <option value="centre-laser">Centre laser ou institut</option>
+                <option value="autre-sante">Autre profession de santé</option>
+              </optgroup>
+              <optgroup label="Autres secteurs">
+                <option value="juridique">Avocat ou juridique</option>
+                <option value="immobilier">Immobilier</option>
+                <option value="restauration">Restaurant ou hôtellerie</option>
+                <option value="artisan">Artisan ou TPE</option>
+                <option value="startup">Startup ou SaaS</option>
+                <option value="autre">Autre</option>
+              </optgroup>
+            </select>
+          </div>
+
           <div class="contact-field-row">
             <div class="contact-field">
               <input id="nom" name="nom" type="text" required placeholder="Nom *" />

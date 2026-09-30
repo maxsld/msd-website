@@ -502,12 +502,36 @@ function _msdConsentSignal(state){
             "@type": "Answer",
             "text": "Oui. Ajouter un soin, un praticien ou une page ville se fait sans refonte. Le site est construit pour grandir avec votre activité, pas pour être figé le jour de la livraison."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on citer le nom des produits utilisés ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Avec prudence. Décrire l'acte, le type de produit et ses propriétés informe le patient ; mettre en avant une marque commerciale peut faire passer la page pour une publicité en faveur du laboratoire. Nous privilégions la description de l'acte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "L'autorisation de l'Ordre pour la médecine esthétique est-elle en vigueur ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non, au 30 septembre 2026. L'article de la loi de financement de la Sécurité sociale pour 2026 qui la prévoyait a été censuré par le Conseil constitutionnel le 30 décembre 2025. Nous suivons les nouveaux textes annoncés par le gouvernement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il afficher le prix des injections ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, sous forme de prix « à partir de » par acte, en précisant qu'une information écrite est remise avant le soin, comme l'impose l'arrêté du 30 mai 2018 dès 70 € pour un acte non remboursé."
+          }
         }
       ]
     }
   ]
 }
-</script>
+  </script>
 
 
 
@@ -726,6 +750,33 @@ function _msdConsentSignal(state){
         <p>Nous avons produit trois landing pages pour <a href="https://msd-media.com/realisations/merz-radiesse/">Merz Aesthetics</a>, laboratoire international de médecine esthétique — RADIESSE, Ultherapy Prime et BELOTERO. Chaque allégation y est adossée à sa source, y compris les limites d'extrapolation quand l'étude l'exige. C'est ce cadre que nous appliquons à votre centre.</p>
       </div>
     </article>
+  </section>
+
+  <section class="sector-cards section-grid" id="specialites" aria-label="Par spécialité">
+    <h2 class="section-title section-title--dark">Par spécialité</h2>
+    <p class="sector-cards__intro">Chaque spécialité a son propre cadre de communication. Nous avons une page pour chacune.</p>
+    <div class="sector-cards__grid sector-cards__grid--4">
+      <a class="sector-card" href="https://msd-media.com/site-web-chirurgie-esthetique/">
+        <h3>Chirurgie esthétique</h3>
+        <p>Cliniques et chirurgiens, dans le cadre du décret du 23 septembre 2026.</p>
+        <span class="sector-card__link">Voir la page &rarr;</span>
+      </a>
+      <a class="sector-card" href="https://msd-media.com/site-web-dermatologue/">
+        <h3>Dermatologie</h3>
+        <p>Séparer la consultation médicale et la dermatologie esthétique.</p>
+        <span class="sector-card__link">Voir la page &rarr;</span>
+      </a>
+      <a class="sector-card" href="https://msd-media.com/site-web-dentiste/">
+        <h3>Dentistes</h3>
+        <p>Implantologie et esthétique du sourire, selon le code de déontologie dentaire.</p>
+        <span class="sector-card__link">Voir la page &rarr;</span>
+      </a>
+      <a class="sector-card" href="https://msd-media.com/site-web-centre-laser/">
+        <h3>Centres laser</h3>
+        <p>Épilation laser et lumière pulsée, dans le cadre fixé en 2024.</p>
+        <span class="sector-card__link">Voir la page &rarr;</span>
+      </a>
+    </div>
   </section>
 
   <section class="realisations-section section-grid" id="realisations">
@@ -1070,6 +1121,34 @@ function _msdConsentSignal(state){
         </button>
         <div class="faq-answer">
           <p>Oui. Ajouter un soin, un praticien ou une page ville se fait sans refonte. Le site est construit pour grandir avec votre activité, pas pour être figé le jour de la livraison.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq-category="general">
+        <button class="faq-question" aria-expanded="false">
+          <span>Peut-on citer le nom des produits utilisés ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Avec prudence. Décrire l&#x27;acte, le type de produit et ses propriétés informe le patient ; mettre en avant une marque commerciale peut faire passer la page pour une publicité en faveur du laboratoire. Nous privilégions la description de l&#x27;acte.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-faq-category="general">
+        <button class="faq-question" aria-expanded="false">
+          <span>L&#x27;autorisation de l&#x27;Ordre pour la médecine esthétique est-elle en vigueur ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Non, au 30 septembre 2026. L&#x27;article de la loi de financement de la Sécurité sociale pour 2026 qui la prévoyait a été censuré par le Conseil constitutionnel le 30 décembre 2025. Nous suivons les nouveaux textes annoncés par le gouvernement.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-faq-category="tarifs">
+        <button class="faq-question" aria-expanded="false">
+          <span>Faut-il afficher le prix des injections ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Oui, sous forme de prix « à partir de » par acte, en précisant qu&#x27;une information écrite est remise avant le soin, comme l&#x27;impose l&#x27;arrêté du 30 mai 2018 dès 70 € pour un acte non remboursé.</p>
         </div>
       </div>
     </div>

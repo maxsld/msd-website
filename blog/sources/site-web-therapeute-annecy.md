@@ -173,6 +173,8 @@ Selon votre profession, des règles spécifiques encadrent votre communication :
 
 Dans tous les cas : pas d'allégations de guérison garantie, pas de dénigrement de la médecine conventionnelle, et une mention claire que votre accompagnement ne se substitue pas à un suivi médical si la situation l'exige.
 
+Les professions de santé réglementées suivent des règles plus strictes encore : nous les détaillons sur notre page [site web pour médecins et professionnels de santé](https://msd-media.com/site-web-medecin/).
+
 ---
 
 ## Combien coûte un site web pour thérapeute à Annecy en 2026 ?

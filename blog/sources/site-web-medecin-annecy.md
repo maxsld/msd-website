@@ -117,6 +117,7 @@ Un site web médical en France est soumis à des règles déontologiques précis
 - Les promotions sur les actes médicaux
 
 Un site web médical bien conçu à Annecy reste sobre, factuel et informatif — ce n'est pas une page de vente au sens commercial du terme. L'objectif est d'informer et de rassurer, pas de "vendre" une consultation.
+Si vous exercez une spécialité à visée esthétique, nous avons une page dédiée pour la [médecine esthétique](https://msd-media.com/site-web-medecine-esthetique/), la [dermatologie](https://msd-media.com/site-web-dermatologue/) et la [chirurgie esthétique](https://msd-media.com/site-web-chirurgie-esthetique/).
 
 La médecine esthétique pose des questions plus fines encore, sur les photos avant/après, les avis et les tarifs : nous les détaillons dans notre guide [médecine esthétique : ce que votre site peut afficher](https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/).
 

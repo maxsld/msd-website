@@ -61,22 +61,22 @@ L’agence devient une extension de votre équipe, travaillant main dans la main
 
 ---
 
-### 2. 160 Agency – L’agence qui transforme l’audience en clients
+### 2. Clickway – L’agence web qui livre vite, de la landing page à l’outil métier
 
-160 Agency se positionne comme un spécialiste des landing pages pour SaaS, intégrant stratégie, design et développement technique. Leur force : créer des pages qui allient esthétisme et conversion.
+[Visiter Clickway](https://www.clickway.fr/)
+
+Clickway est une agence web et conseil basée à Paris, fondée par Ouassim et Lounes. Elle conçoit des landing pages, des sites vitrines, des outils métier et des produits SaaS, et annonce une première version de landing page en 10 jours. L’agence revendique plus de 100 entreprises accompagnées.
 
 **Services clés :**
-- Analyse stratégique produit / audience.
-- Copywriting orienté conversion.
-- Design persuasif sur Figma.
-- Développement Framer.
-- Versions Premium avec motion design.
+- Landing pages orientées conversion.
+- Sites vitrines.
+- Outils métier et produits SaaS.
+- Référencement naturel.
 
 **Points forts :**
-- Expertise SaaS.
-- Livrable complet avec retours illimités.
-- Process optimisé pour la conversion.
-
+- Délais courts : une première version de landing page en 10 jours.
+- Une offre qui va au-delà du site, jusqu’à l’outil métier.
+- Des études de cas publiées avec leurs résultats et leur méthode de mesure.
 ---
 
 ### 3. LaGrowthMachine – L’agence growth et landing pages B2B
@@ -143,7 +143,7 @@ Palm Square accompagne les startups et entreprises dans la création de landing 
 | Agence          | Spécialité | Points forts | Tarif indicatif |
 |------------------|------------|--------------|-------------------|
 | **MSD Media**   | Landing pages sur-mesure, conversion | Copywriting, UX/UI, SEO, retours illimités | sur devis|
-| 160 Agency       | Landing pages SaaS | Paid media, UX/UI, retours illimités | sur devis+ |
+| Clickway         | Landing pages, sites et outils métier | Délais courts, études de cas chiffrées | Sur devis |
 | LaGrowthMachine | Growth + landing pages B2B | Automatisation, funnels multicanaux | Sur devis |
 | Voyelle          | Landing pages marketing | UX/UI, data analytics, A/B testing | Sur devis |
 | Palm Square      | Landing pages sur-mesure | UX/UI, copywriting, tracking | Sur devis |

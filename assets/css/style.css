@@ -3661,10 +3661,17 @@ position: relative;
 
 .press-grid {
   display: grid;
-  /* 3 cartes max par ligne : la largeur mini d'une carte ne descend jamais
-     sous le tiers de la grille, donc une 4e colonne ne peut pas se former. */
-  grid-template-columns: repeat(auto-fit, minmax(max(280px, calc((100% - 2 * 1.35rem) / 3)), 1fr));
+  /* 3 cartes max par ligne, quelle que soit la largeur d'écran. */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.35rem;
+}
+
+@media (max-width: 1024px) {
+  .press-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .press-grid { grid-template-columns: 1fr; }
 }
 
 .press-card {

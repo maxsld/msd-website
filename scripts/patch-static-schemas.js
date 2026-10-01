@@ -150,8 +150,14 @@ function localBusinessJsonLd(canonical, relPath) {
       'https://www.linkedin.com/company/msd-media',
       'https://fr.trustpilot.com/review/msd-media.com',
       'https://share.google/xqjORxmtKbIlxybrm',
-      'https://www.sortlist.com/agency/msd-media'
+      'https://www.sortlist.com/agency/msd-media',
+      'https://www.ftalps.com/company/msd-media/'
     ],
+    memberOf: {
+      '@type': 'Organization',
+      name: 'French Tech Alpes',
+      url: 'https://www.ftalps.com/'
+    },
     mainEntityOfPage: canonical
   };
 }

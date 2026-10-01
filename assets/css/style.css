@@ -3701,6 +3701,13 @@ position: relative;
   width: 64px;
 }
 
+/* Logo French Tech vertical (146x220) : on fixe la hauteur pour qu'il reste
+   aligné avec les autres logos, le filtre de base le passe en blanc. */
+.press-card__logo--frenchtech {
+  width: auto;
+  height: 72px;
+}
+
 .press-card__title {
   margin: 0;
   font-size: 1.28rem;

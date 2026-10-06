@@ -13,4 +13,12 @@ if ! git diff --quiet sitemap.xml blog/sitemap.xml; then
   echo "[pre-push] Sitemaps commités ✓"
 fi
 
+echo "[pre-push] Versionnage des CSS/JS..."
+node scripts/version-assets.mjs
+if ! git diff --quiet -- '*.html'; then
+  git add -- '*.html'
+  git commit -m "chore(assets): version CSS/JS"
+  echo "[pre-push] Pages re-versionnées et commitées ✓"
+fi
+
 exit 0

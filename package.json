@@ -6,7 +6,7 @@
     "analytics:weekly": "node scripts/weekly-analytics-report.mjs",
     "seo:weekly-report": "node scripts/send-seo-weekly-report.mjs",
     "blog:generate": "node scripts/generate-articles.js",
-    "blog:build": "cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs",
+    "blog:build": "cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs && node scripts/version-assets.mjs",
     "index:submit": "node scripts/google-index.mjs --days=7",
     "index:dry-run": "node scripts/google-index.mjs --days=7 --dry-run",
     "lastmod:update": "node scripts/update-lastmod.mjs",
@@ -17,7 +17,8 @@
     "seo:weekly-pdf-report": "node scripts/weekly-seo-report.mjs",
     "link-graph": "node scripts/link-graph.mjs",
     "hooks:setup": "git config core.hooksPath .githooks && echo 'Hooks installés ✓'",
-    "years:check": "node scripts/check-years.mjs"
+    "years:check": "node scripts/check-years.mjs",
+    "assets:version": "node scripts/version-assets.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",

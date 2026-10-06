@@ -1,0 +1,42 @@
+name: Version CSS/JS
+
+# Filet de sécurité : CSS et JS sont en cache 1 an (vercel.json). Si un
+# fichier change sans que les pages aient été re-versionnées, ce workflow
+# met à jour les ?v=<hash> et pousse le correctif, qui part en déploiement.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/css/**'
+      - 'assets/js/**'
+      - '**/*.html'
+  workflow_dispatch:
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Versionner CSS/JS
+        run: node scripts/version-assets.mjs
+
+      - name: Commit si nécessaire
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A -- '*.html'
+          git diff --cached --quiet || git commit -m "chore(assets): version CSS/JS [skip ci]"
+          git push

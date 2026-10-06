@@ -33,7 +33,7 @@ jobs:
       - name: Build blog (generate HTML from markdown sources)
         # generate-blog.js utilise la syntaxe CommonJS (require).
         # On crée un alias .cjs pour le rendre compatible avec "type":"module".
-        run: cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs
+        run: cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs && node scripts/version-assets.mjs
 
       - name: Commit generated files
         run: |

@@ -1,6 +1,6 @@
 name: Version CSS/JS
 
-# Filet de sécurité : CSS et JS sont en cache 1 an (vercel.json). Si un
+# Filet de sécurité : CSS et JS sont en cache 1 jour (vercel.json). Si un
 # fichier change sans que les pages aient été re-versionnées, ce workflow
 # met à jour les ?v=<hash> et pousse le correctif, qui part en déploiement.
 on:

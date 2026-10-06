@@ -2,9 +2,9 @@
 // Ajoute ?v=<empreinte du fichier> à chaque référence vers assets/css/*.css et
 // assets/js/*.js dans les pages HTML.
 //
-// Pourquoi : vercel.json met CSS et JS en cache 1 an (immutable). Sans
-// version dans l'URL, un visiteur déjà venu garderait l'ancien fichier
-// pendant un an. Avec ?v=<hash>, toute modification du fichier change l'URL
+// Pourquoi : vercel.json met CSS et JS en cache 1 jour. Sans
+// version dans l'URL, un visiteur déjà venu pourrait garder l'ancien fichier
+// jusqu'à un jour. Avec ?v=<hash>, toute modification du fichier change l'URL
 // et force le navigateur à télécharger la nouvelle version.
 //
 // Lancé par le hook pre-push, par le build du blog et par le workflow

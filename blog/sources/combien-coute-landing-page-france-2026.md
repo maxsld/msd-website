@@ -1,20 +1,27 @@
 ---
 status: "published"
-title: "Prix d'une Landing Page en France : Guide 2026"
+title: "Combien coûte une landing page ? De 0 à 15 000 € en 2026"
 date: "2026-04-09"
-description: "Fourchettes de prix par type de prestataire, ce qui justifie les écarts et les questions à poser avant de signer un devis de landing page."
+description: "Une landing page coûte de 0 € en no-code à 15 000 € en agence haut de gamme. Grille des prix 2026 par prestataire et ce qui fait varier un devis."
 image: "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp"
 tags: ["landing page", "tarifs", "prix", "France", "agence web", "MSD Media"]
 slug: "combien-coute-landing-page-france-2026"
-keyword: "prix landing page France 2026 tarifs coût"
+keyword: "combien coûte une landing page"
+updated: "2026-10-07"
 ---
 ## Réponse courte
 
-En France, une landing page coûte généralement entre quelques centaines d'euros et plusieurs milliers d'euros selon le niveau de stratégie, de design, de copywriting et de développement. Un template ou une page no-code peut suffire pour tester, mais une landing page sur mesure devient pertinente dès que l'objectif est de générer des leads qualifiés, soutenir une campagne payante ou vendre une offre premium.
+Une landing page coûte entre **0 et 500 €** en no-code (Carrd, Webflow, Leadpages), **300 à 1 200 €** chez un freelance junior, **800 à 2 500 €** dans une agence spécialisée, **2 500 à 6 000 €** en agence intermédiaire et **6 000 à 15 000 € et plus** en agence haut de gamme. L'écart s'explique par trois postes : le copywriting, le design sur mesure et la stratégie de conversion. Chez MSD Media, une landing page sur mesure démarre à **1 990 €**, livrée en 21 jours.
 
-C'est la question que posent tous les entrepreneurs avant de se lancer. "Combien ça coûte une landing page ?" La réponse honnête : entre 0€ et 15 000€. Et toutes ces options ont du sens selon votre situation.
+| Prestataire | Prix d'une landing page | Pour qui |
+|-------------|-------------------------|----------|
+| Template / no-code | 0 à 500 € (+ abonnement) | Tester une offre |
+| Freelance junior | 300 à 1 200 € | Petit budget, textes fournis |
+| Agence spécialisée | 800 à 2 500 € | PME, indépendants, campagnes |
+| Agence intermédiaire | 2 500 à 6 000 € | SaaS, e-commerce, budget marketing établi |
+| Agence haut de gamme | 6 000 à 15 000 €+ | Scale-up, lancement national |
 
-Voici le guide complet des tarifs en France en 2026, sans bullshit.
+Toutes ces options ont du sens selon votre situation. Le détail de chaque niveau est ci-dessous. Si vous cherchez plutôt à comparer des agences nommément, lisez notre [comparatif des agences de landing page en France](/blog/articles/agences-landing-page-prix-france-2026/).
 
 ---
 
@@ -63,7 +70,7 @@ Voici le guide complet des tarifs en France en 2026, sans bullshit.
 
 ### Option 3 : Agence web spécialisée — entrée de gamme (800 à 2 500€)
 
-C'est la zone où se positionne MSD Media pour les landing pages standard.
+C'est la zone où se positionne MSD Media.
 
 **Ce que vous obtenez :**
 - Design sur mesure (pas de template)
@@ -75,12 +82,11 @@ C'est la zone où se positionne MSD Media pour les landing pages standard.
 
 **Ce que vous n'obtenez pas :**
 - A/B testing intégré
-- Système de tracking poussé
 - Animations complexes
 
 **Pour qui :** PME, artisan, professionnel libéral, e-commerce en croissance
 
-**Tarif MSD Media :** à partir de 900€ TTC, livraison 21 jours
+**Tarif MSD Media :** à partir de 1 990 €, livraison en 21 jours
 
 ---
 
@@ -130,16 +136,16 @@ C'est la zone où se positionne MSD Media pour les landing pages standard.
 
 ## Le vrai calcul : ROI et non pas coût
 
-Une landing page à 1 500€ qui génère 5 leads/mois pour un service à 3 000€ se rembourse en moins d'un mois.
+Le bon indicateur n'est pas le prix de la page, mais ce qu'elle rapporte. Une landing page à 2 000 € qui apporte un seul client à 3 000 € est remboursée dès le premier mois.
 
 **Exemple de calcul :**
-- Produit : formation en ligne à 997€
-- Taux de conversion cible : 3%
-- Trafic mensuel estimé : 500 visiteurs
-- Leads/mois : 15 × 997€ = 14 955€ de CA potentiel
-- Coût de la landing page : 1 500€
+- Produit : formation en ligne à 997 €
+- Trafic mensuel : 500 visiteurs
+- Taux de conversion : 3 %, soit 15 ventes par mois
+- Chiffre d'affaires potentiel : 15 × 997 € = 14 955 €
+- Coût de la landing page : 2 000 €
 
-Retour sur investissement : **10x en un mois** si le trafic et la conversion sont au rendez-vous.
+Si le trafic et la conversion sont au rendez-vous, la page est rentabilisée plus de 7 fois dès le premier mois. Avec 1 % de conversion au lieu de 3 %, le chiffre d'affaires tombe à 4 985 € : c'est pourquoi le copywriting et la stratégie de conversion justifient l'essentiel de l'écart de prix.
 
 ---
 
@@ -157,26 +163,40 @@ Avant de signer, posez ces questions :
 
 ## Tarifs MSD Media en 2026
 
-| Formule | Prix TTC | Délai | Inclus |
-|---------|----------|-------|--------|
-| Landing page simple | 900€ | 10 jours | Design + dev + SEO de base |
-| Landing page complète | 1 500€ | 21 jours | Design + copywriting + SEO complet + schema |
-| Landing page premium | 2 500€ | 21 jours | Tout inclus + animations + A/B test setup |
+| Formule | Prix | Délai | Inclus |
+|---------|------|-------|--------|
+| Landing page | à partir de 1 990 € | 21 jours | Design sur mesure, copywriting orienté conversion, formulaire ou prise de RDV, mobile et vitesse, SEO on-page, tracking |
+| Site vitrine | à partir de 3 990 € | 21 jours | Jusqu'à 10 pages, SEO technique complet, blog, CMS, optimisation pour les IA |
+| Sur-mesure et refonte | sur devis | selon le périmètre | E-commerce, multilingue, intégrations API |
+
+Le détail des formules est sur notre [page tarifs](/tarifs/). Pour démarrer sans budget, notre [template de landing page gratuit](/template-landing-page/) reprend la structure que nous utilisons en agence.
 
 [Réserver un appel pour discuter de votre projet →](https://cal.com/maxens-soldan-msd-media/30min)
 
 ---
 
-## FAQ
+## Questions fréquentes
 
-**Une landing page coûte-t-elle plus cher qu'un site vitrine ?**
-Généralement non. Un site vitrine avec 5-8 pages coûte souvent plus cher qu'une landing page bien faite. La landing page est plus ciblée, donc plus rapide à créer — mais demande plus d'expertise en copywriting et conversion.
+### Combien coûte une landing page pas chère ?
 
-**Peut-on payer en plusieurs fois ?**
-La plupart des agences acceptent un acompte de 50% au démarrage et le solde à la livraison. MSD Media pratique ce mode de facturation.
+Entre 0 et 500 € avec un outil no-code comme Carrd ou Webflow, auxquels s'ajoute un abonnement de 0 à 79 € par mois, et de 300 à 1 200 € chez un freelance junior. Dans les deux cas, vous fournissez généralement les textes, ce qui reste le premier levier de conversion.
 
-**Le prix inclut-il l'hébergement ?**
-En général non. L'hébergement est facturé séparément (~10 à 30€/mois). Certaines formules incluent la première année.
+### Quel est le prix d'une landing page en agence ?
 
-**Quelle différence entre une landing page et une page de vente ?**
-Terminologie différente, même concept. Une "page de vente" désigne souvent une page plus longue (2 000 à 10 000 mots) pour des produits premium ou des formations. Une "landing page" peut être courte (500-1 500 mots) pour la capture de leads.
+Comptez 800 à 2 500 € dans une agence spécialisée, 2 500 à 6 000 € en agence intermédiaire et 6 000 à 15 000 € et plus en agence haut de gamme. Chez MSD Media, une landing page sur mesure démarre à 1 990 €, copywriting et tracking inclus.
+
+### Une landing page coûte-t-elle plus cher qu'un site vitrine ?
+
+Généralement non. Un site vitrine de 5 à 10 pages coûte plus cher qu'une landing page, qui est plus ciblée et plus rapide à créer, mais qui demande plus d'expertise en copywriting et en conversion. Chez MSD Media, la landing page démarre à 1 990 € et le site vitrine à 3 990 €.
+
+### Peut-on payer une landing page en plusieurs fois ?
+
+La plupart des agences demandent un acompte de 50 % au démarrage et le solde à la livraison. MSD Media pratique ce mode de facturation.
+
+### Le prix d'une landing page inclut-il l'hébergement ?
+
+Pas toujours. Comptez 10 à 30 € par an pour le nom de domaine, et un hébergement de quelques euros par mois. Une page codée sur mesure s'héberge pour presque rien, contrairement à un abonnement no-code mensuel.
+
+### Quelle différence entre une landing page et une page de vente ?
+
+C'est le même concept. Une page de vente désigne souvent une page longue (2 000 à 10 000 mots) pour un produit premium ou une formation, alors qu'une landing page de capture de leads peut tenir en 500 à 1 500 mots.

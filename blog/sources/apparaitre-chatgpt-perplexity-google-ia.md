@@ -1,18 +1,19 @@
 ---
 status: "published"
-title: "Apparaître dans ChatGPT : nos chiffres sur 12 mois"
+title: "Comment apparaître dans ChatGPT et Perplexity : la méthode"
 date: "2026-09-04"
-description: "J'ai appliqué tous les conseils GEO sur mon site : llms.txt, crawlers IA autorisés, 344 blocs de données structurées. Voici le trafic réel obtenu en 12 mois."
+description: "Comment apparaître dans ChatGPT, Perplexity et les AI Overviews : 7 actions concrètes, testées sur notre propre site, avec les chiffres obtenus."
 image: "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp"
 tags: ["GEO", "ChatGPT", "Perplexity", "Google AI Overviews", "référencement IA", "MSD Media"]
 slug: "apparaitre-chatgpt-perplexity-google-ia"
 keyword: "comment apparaître dans chatgpt"
+updated: "2026-10-07"
 ---
 ## Réponse courte
 
 Pour apparaître dans ChatGPT en 2026, une entreprise doit être identifiable de façon cohérente sur le web (même nom, même activité, partout), citée par des sources tierces que le modèle reconnaît comme fiables (presse, annuaires sectoriels, Wikidata), et publier du contenu structuré qui répond directement aux questions plutôt que de tourner autour. ChatGPT ne "cherche" pas votre entreprise au moment de la requête : la plupart du temps il rappelle ce qu'il a appris pendant son entraînement, ou ce que son module de navigation web trouve rapidement — dans les deux cas, la cohérence et la clarté comptent plus que l'optimisation technique pure.
 
-!!update **Mise à jour — septembre 2026.** Les AI Overviews sont déployés en France depuis le 22 juillet 2026, et leur généralisation est attendue d'ici le **23 septembre**. Deux chiffres à garder en tête pour la suite : là où l'IA s'affiche, le clic sur le premier résultat chute jusqu'à **−58 %** ; mais **87 % des sources citées par l'IA ne figurent pas dans le top 10 classique** ([Semjuice](https://www.semjuice.com/preparer-sa-rentree-seo-2026-les-15-chantiers-a-lancer-avant-septembre/), [NEWP](https://www.newp.fr/actualites/referencement/ia-optimization/google-ai-overviews-france/)). Autrement dit : être cité ne demande pas d'être premier — c'est une bonne nouvelle pour les sites jeunes, et ça change l'ordre des priorités.
+!!update **Mise à jour — octobre 2026.** Les AI Overviews et l'AI Mode de Google sont disponibles en France depuis le 22 juillet 2026, sur ordinateur, mobile et dans l'application Google. Deux chiffres à garder en tête pour la suite : là où l'IA s'affiche, le clic sur le premier résultat chute jusqu'à **−58 %** ; mais **87 % des sources citées par l'IA ne figurent pas dans le top 10 classique** ([Semjuice](https://www.semjuice.com/preparer-sa-rentree-seo-2026-les-15-chantiers-a-lancer-avant-septembre/), [NEWP](https://www.newp.fr/actualites/referencement/ia-optimization/google-ai-overviews-france/)). Autrement dit : être cité ne demande pas d'être premier — c'est une bonne nouvelle pour les sites jeunes, et ça change l'ordre des priorités.
 
 Cette réponse vaut aussi, avec des nuances, pour Perplexity et Google AI Overviews — on détaille plus bas ce qui change d'un moteur à l'autre.
 
@@ -36,36 +37,7 @@ Un prestataire mentionné de façon identique sur 40 sources différentes (blog,
 
 ---
 
-## Ce que ça donne vraiment : nos chiffres sur 12 mois
-
-La plupart des guides sur le sujet vous expliquent quoi faire. Aucun ne publie ses résultats. Nous avons appliqué la totalité du manuel sur ce site, et voici ce que la mesure donne — Search Console et analytics à l'appui, sur les 365 derniers jours.
-
-**Ce qui a été mis en place, et qui est vérifiable publiquement :**
-
-- Un fichier `llms.txt` et un `llms-full.txt` complets, listant l'entité, les services, la zone géographique et les références
-- Tous les crawlers IA explicitement autorisés dans le `robots.txt` — GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Applebot-Extended. Testé avec chacun de ces user-agents : réponse 200
-- 344 blocs de données structurées JSON-LD, zéro invalide, avec `Organization`, `Person`, `FAQPage` et `sameAs` cohérents
-- Une entité unifiée : une seule adresse, un seul nom, les mêmes coordonnées partout
-- Deux mentions presse indépendantes : [Le Dauphiné Libéré](https://msd-media.com/blog/articles/msd-media-presse-le-dauphine/) et Polytech Annecy-Chambéry
-- Un rendu entièrement lisible sans JavaScript — 1 431 mots visibles côté serveur sur la page d'accueil
-
-**Le résultat mesuré :**
-
-| Indicateur | Valeur sur 365 jours |
-|---|---|
-| Sessions venues de ChatGPT | **2** |
-| Sessions venues de Perplexity, Claude, Gemini ou Copilot | **0** |
-| Impressions Google sur cet article | 214 |
-| Clics sur cet article | **0** |
-| Résultats enrichis déclenchés (rapport Search Console) | **aucun** |
-
-Deux visites en un an. Voilà ce que rapporte un socle technique GEO irréprochable quand il est seul.
-
-Ce n'est pas un aveu d'échec, c'est le point que personne ne dit clairement : **la partie technique du GEO est une condition nécessaire, pas suffisante**. Elle vous rend lisible par les modèles. Elle ne vous rend pas citable. Ce qui décide, c'est ce que le reste du web dit de vous — et ça, aucun fichier posé sur votre serveur ne le fabrique.
-
----
-
-## Les 7 actions pour apparaître dans les réponses IA
+## Comment apparaître dans ChatGPT : les 7 actions
 
 ### 1. Créer une fiche Wikipedia ou Wikidata
 
@@ -137,6 +109,35 @@ Un standard émergent : le fichier `/llms.txt` à la racine du site. Il indique 
 - Vos pages les plus importantes
 - Vos coordonnées
 
+## Ce que la méthode donne sur notre propre site
+
+La plupart des guides sur le sujet vous expliquent quoi faire. Aucun ne publie ses résultats. Nous avons appliqué la totalité du manuel sur ce site, et voici ce que la mesure donne — Search Console et analytics à l'appui, sur les 365 derniers jours.
+
+**Ce qui a été mis en place, et qui est vérifiable publiquement :**
+
+- Un fichier `llms.txt` et un `llms-full.txt` complets, listant l'entité, les services, la zone géographique et les références
+- Tous les crawlers IA explicitement autorisés dans le `robots.txt` — GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Applebot-Extended. Testé avec chacun de ces user-agents : réponse 200
+- 344 blocs de données structurées JSON-LD, zéro invalide, avec `Organization`, `Person`, `FAQPage` et `sameAs` cohérents
+- Une entité unifiée : une seule adresse, un seul nom, les mêmes coordonnées partout
+- Deux mentions presse indépendantes : [Le Dauphiné Libéré](https://msd-media.com/blog/articles/msd-media-presse-le-dauphine/) et Polytech Annecy-Chambéry
+- Un rendu entièrement lisible sans JavaScript — 1 431 mots visibles côté serveur sur la page d'accueil
+
+**Le résultat mesuré :**
+
+| Indicateur | Valeur sur 365 jours |
+|---|---|
+| Sessions venues de ChatGPT | **2** |
+| Sessions venues de Perplexity, Claude, Gemini ou Copilot | **0** |
+| Impressions Google sur cet article | 214 |
+| Clics sur cet article | **0** |
+| Résultats enrichis déclenchés (rapport Search Console) | **aucun** |
+
+Deux visites en un an. Voilà ce que rapporte un socle technique GEO irréprochable quand il est seul.
+
+Ce n'est pas un aveu d'échec, c'est le point que personne ne dit clairement : **la partie technique du GEO est une condition nécessaire, pas suffisante**. Elle vous rend lisible par les modèles. Elle ne vous rend pas citable. Ce qui décide, c'est ce que le reste du web dit de vous — et ça, aucun fichier posé sur votre serveur ne le fabrique.
+
+---
+
 ## Pourquoi les produits de mes concurrents apparaissent et pas les miens ?
 
 Dans neuf cas sur dix, la réponse tient en une phrase : ils sont mentionnés ailleurs, vous non. Le modèle ne compare pas la qualité de deux sites, il restitue les entités qu'il a rencontrées de façon répétée et cohérente dans ses données d'entraînement et dans les sources que son module de navigation consulte.
@@ -160,6 +161,8 @@ Le test le plus rapide : demandez à ChatGPT de citer les meilleures entreprises
 
 **Google AI Overviews** s'appuie sur l'infrastructure de recherche classique de Google (indexation, autorité de domaine, données structurées, Google Business Profile) — c'est le moteur le plus proche du SEO traditionnel des trois.
 
+**Google AI Mode**, disponible en France depuis le 22 juillet 2026, transforme la recherche en conversation : l'utilisateur affine sa question par échanges successifs. Il s'appuie sur le même index que les AI Overviews, donc sur les mêmes leviers : un site bien indexé, des réponses directes et une entité clairement identifiée.
+
 ---
 
 ## Checklist actionnable
@@ -176,7 +179,7 @@ Le test le plus rapide : demandez à ChatGPT de citer les meilleures entreprises
 
 ## FAQ — Comment apparaître dans ChatGPT
 
-### Comment apparaître dans ChatGPT ?
+### Comment apparaître dans les recherches ChatGPT ?
 
 En étant identifiable de façon cohérente sur le web (même nom, même description partout), cité par des sources tierces fiables (presse, Wikidata, annuaires sectoriels), et en publiant du contenu structuré avec des réponses directes plutôt que du texte qui tourne autour du sujet.
 
@@ -191,6 +194,14 @@ Perplexity indexe le web en temps réel, donc plus vite que ChatGPT — à condi
 ### Google AI Overviews peut-il nuire à mon trafic ?
 
 En partie. Les AI Overviews captent des clics sur les requêtes informationnelles. Les requêtes à intention commerciale ("agence web à Strasbourg prix") continuent de générer des clics vers les sites — et être cité dans l'AI Overview sur ces requêtes-là est un avantage, pas un risque.
+
+### Comment savoir si mon site est cité par ChatGPT ou Perplexity ?
+
+Posez vous-même aux deux outils les questions que vos clients poseraient, et regardez les sources affichées. Dans Google Analytics, les visites venues de ChatGPT apparaissent avec la source chatgpt.com, et celles de Perplexity avec perplexity.ai : un trafic, même faible, prouve que vous êtes cité.
+
+### Pourquoi mon concurrent est recommandé par ChatGPT et pas moi ?
+
+Le plus souvent, parce qu'il est cité par davantage de sources tierces (presse, annuaires, comparatifs) et que son nom, son activité et sa ville sont décrits de la même façon partout. ChatGPT recommande l'entreprise dont il peut confirmer l'existence et la spécialité de plusieurs manières.
 
 ### MSD Media peut-il aider à apparaître dans les IA ?
 

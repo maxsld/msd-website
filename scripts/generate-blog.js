@@ -1095,7 +1095,7 @@ function renderArticlePage(post, allPosts) {
       }
     },
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated || post.date,
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': pageUrl
@@ -1171,7 +1171,7 @@ function renderArticlePage(post, allPosts) {
       <article class="blog-article-content" itemscope itemtype="https://schema.org/Article">
         <meta itemprop="headline" content="${escapeHtml(post.title)}" />
         <meta itemprop="datePublished" content="${escapeHtml(post.date)}" />
-        <meta itemprop="dateModified" content="${escapeHtml(post.date)}" />
+        <meta itemprop="dateModified" content="${escapeHtml(post.updated || post.date)}" />
         <meta itemprop="author" content="${AUTHOR}" />
 
         ${renderAiSummaryHtml(pageUrl)}
@@ -1632,7 +1632,7 @@ function renderRss(posts) {
 function renderBlogSitemap(posts) {
   const urls = posts
     .filter((p) => !p.noindex)
-    .map((p) => `  <url>\n    <loc>${SITE_URL}/blog/articles/${p.slug}/</loc>\n    <lastmod>${p.date}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.65</priority>\n  </url>`)
+    .map((p) => `  <url>\n    <loc>${SITE_URL}/blog/articles/${p.slug}/</loc>\n    <lastmod>${p.updated || p.date}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.65</priority>\n  </url>`)
     .join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`;
 }
@@ -1646,7 +1646,7 @@ function patchMainSitemap(posts) {
   const markerEnd = '<!-- blog-articles:end -->';
   const snippet = posts
     .map(
-      (p) => `  <url>\n    <loc>${SITE_URL}/blog/articles/${p.slug}/</loc>\n    <lastmod>${p.date}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.65</priority>\n  </url>`
+      (p) => `  <url>\n    <loc>${SITE_URL}/blog/articles/${p.slug}/</loc>\n    <lastmod>${p.updated || p.date}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.65</priority>\n  </url>`
     )
     .join('\n');
 
@@ -1688,6 +1688,8 @@ function main() {
     const category = data.category || 'IA';
     const image = getLiveArticleImage(slug) || resolvePostImage({ image: data.image, slug });
     const noindex = data.noindex === true || data.noindex === 'true';
+    // Date de mise à jour réelle (réécriture de fond) ; sinon la date de publication.
+    const updated = /^\d{4}-\d{2}-\d{2}$/.test(String(data.updated || '')) ? String(data.updated) : date;
     const status = data.status || 'published';
     if (!['draft', 'review', 'published'].includes(status)) {
       throw new Error(`Statut invalide dans ${filePath}: ${status}`);
@@ -1708,6 +1710,7 @@ function main() {
       toc,
       reading,
       noindex,
+      updated,
       status,
       sourceFile: path.basename(filePath)
     });

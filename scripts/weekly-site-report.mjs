@@ -118,7 +118,7 @@ async function ga(token, range, { dimensions = [], metrics, filter, orderBy, lim
     metrics: metrics.map((name) => ({ name })),
     limit
   };
-  if (filter) body.dimensionFilter = filter;
+  if (filter) body.dimensionFilter = { filter };
   if (orderBy) body.orderBys = [{ metric: { metricName: orderBy }, desc: true }];
   const url = `https://analyticsdata.googleapis.com/v1beta/properties/${process.env.GA4_PROPERTY_ID}:runReport`;
   const report = await postJson(url, token, body);
@@ -130,6 +130,7 @@ async function ga(token, range, { dimensions = [], metrics, filter, orderBy, lim
   });
 }
 
+// Filtre GA4 sur le nom d'événement ; ga() l'enveloppe dans { filter: ... }.
 const eventIs = (...names) =>
   names.length === 1
     ? { filter: { fieldName: "eventName", stringFilter: { value: names[0] } } }

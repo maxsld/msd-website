@@ -7,6 +7,11 @@ on:
     # Samedi 07:17 UTC (09:17 Paris en été, 08:17 en hiver).
     - cron: "17 7 * * 6"
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Afficher le rapport dans les logs sans l'envoyer sur Telegram"
+        type: boolean
+        default: false
 
 jobs:
   report:
@@ -25,7 +30,7 @@ jobs:
         run: npm install --ignore-scripts
 
       - name: Run weekly site report
-        run: node scripts/weekly-site-report.mjs
+        run: node scripts/weekly-site-report.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
         env:
           GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
           GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY }}

@@ -82,13 +82,27 @@
   // Evenements de conversion relayes vers GA4. Les autres (scroll, temps passe,
   // page_view) sont deja couverts par la mesure amelioree de GA4 : on ne les
   // duplique pas, ca consommerait du quota pour rien.
+  // Les parametres link_text / link_url / link_id / percent_scrolled sont des
+  // noms predefinis par GA4 : ils remplissent directement les dimensions
+  // linkText, linkUrl, linkId et percentScrolled, lisibles par l'API Data sans
+  // creer de dimension personnalisee (cf. scripts/weekly-site-report.mjs).
   const GA4_FORWARDED = new Set([
     "cta_click",
     "booking_intent",
     "booking_completed",
     "form_submit_attempt",
     "lead_submit_attempt",
-    "lead_confirmed"
+    "lead_submit_success",
+    "lead_submit_error",
+    "lead_confirmed",
+    "msd_click",
+    "section_view",
+    "scroll_depth",
+    "form_start",
+    "form_abandon",
+    "faq_open",
+    "video_play",
+    "ai_referral"
   ]);
 
   // GA4 (gtag.js) n'est charge qu'apres consentement cookie : on tamponne les
@@ -159,6 +173,81 @@
   scheduleGtm();
 
   const query = new URLSearchParams(window.location.search || "");
+
+  // ── Attribution : d'ou vient le visiteur ─────────────────────────────────
+  // Un "contact" = une arrivee avec UTM ou depuis un autre site. Le dernier
+  // contact vit en sessionStorage (le temps de la visite) ; le premier contact
+  // n'est garde en localStorage qu'apres consentement cookie. Les deux sont
+  // joints aux formulaires pour savoir d'ou vient chaque demande.
+  const safeStorage = (store) => {
+    try {
+      const probe = "__msd";
+      store.setItem(probe, "1");
+      store.removeItem(probe);
+      return store;
+    } catch (_) {
+      return null;
+    }
+  };
+  const session = safeStorage(window.sessionStorage);
+  const local = safeStorage(window.localStorage);
+  const readJson = (store, key) => {
+    if (!store) return null;
+    try {
+      return JSON.parse(store.getItem(key) || "null");
+    } catch (_) {
+      return null;
+    }
+  };
+
+  const referrerHost = (() => {
+    try {
+      const host = new URL(document.referrer).hostname.replace(/^www\./, "");
+      return host === window.location.hostname.replace(/^www\./, "") ? "" : host;
+    } catch (_) {
+      return "";
+    }
+  })();
+
+  const currentTouch = (() => {
+    const utmSource = query.get("utm_source") || "";
+    if (!utmSource && !referrerHost) return null;
+    return {
+      source: utmSource || referrerHost,
+      medium: query.get("utm_medium") || (/google\.|bing\.|duckduckgo|qwant|ecosia|yahoo\./.test(referrerHost) ? "organic" : "referral"),
+      campaign: query.get("utm_campaign") || "",
+      content: query.get("utm_content") || "",
+      term: query.get("utm_term") || "",
+      landing: window.location.pathname,
+      date: new Date().toISOString().slice(0, 10)
+    };
+  })();
+
+  if (currentTouch && session) session.setItem("msd_attr_last", JSON.stringify(currentTouch));
+  const lastTouch =
+    readJson(session, "msd_attr_last") ||
+    { source: "(direct)", medium: "(none)", campaign: "", content: "", term: "", landing: window.location.pathname, date: new Date().toISOString().slice(0, 10) };
+  if (session && !session.getItem("msd_attr_last")) session.setItem("msd_attr_last", JSON.stringify(lastTouch));
+
+  const hasConsent = () => {
+    try {
+      return window.localStorage.getItem("msd_cookie_consent") === "accepted";
+    } catch (_) {
+      return false;
+    }
+  };
+  if (local && hasConsent() && !local.getItem("msd_attr_first")) {
+    local.setItem("msd_attr_first", JSON.stringify(lastTouch));
+  }
+
+  const touchLabel = (touch) =>
+    touch ? [touch.source, touch.medium, touch.campaign].filter(Boolean).join(" / ") : "";
+
+  window.msdAttribution = () => ({
+    last: readJson(session, "msd_attr_last") || lastTouch,
+    first: hasConsent() ? readJson(local, "msd_attr_first") : null
+  });
+
   pushTrack("msd_page_view", {
     referrer: document.referrer || "(direct)",
     utm_source: query.get("utm_source") || "",
@@ -166,6 +255,149 @@
     utm_campaign: query.get("utm_campaign") || "",
     utm_term: query.get("utm_term") || "",
     utm_content: query.get("utm_content") || ""
+  });
+
+  // ai_referral est deja pousse dans le dataLayer en tete de fichier (et par le
+  // bloc inline des pages) : on ne le relaie qu'a GA4, sans doublon pour GTM.
+  if (window._msdAiSource) {
+    sendToGa4("ai_referral", { ai_source: window._msdAiSource, page_path: window.location.pathname });
+  }
+
+  // Champs caches ajoutes aux formulaires : chaque demande recue indique la
+  // source de la visite. Aucune donnee saisie par le visiteur n'est lue.
+  const attachAttribution = (form) => {
+    if (form.dataset.msdAttribution) return;
+    form.dataset.msdAttribution = "1";
+    const { last, first } = window.msdAttribution();
+    const fields = {
+      source_visite: touchLabel(last),
+      page_entree: last.landing || "",
+      contenu_utm: [last.content, last.term].filter(Boolean).join(" / "),
+      premier_contact: first ? `${touchLabel(first)} (${first.date}, ${first.landing})` : "",
+      page_formulaire: window.location.pathname
+    };
+    Object.keys(fields).forEach((name) => {
+      if (!fields[name] || form.querySelector(`input[name="${name}"]`)) return;
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = name;
+      input.value = fields[name].slice(0, 200);
+      form.appendChild(input);
+    });
+  };
+
+  // ── Entonnoir des formulaires : debut, abandon ───────────────────────────
+  // Seuls le nom du champ et l'identifiant du formulaire sont envoyes, jamais
+  // la valeur saisie.
+  const formState = new WeakMap();
+  const formLabel = (form) => toText(form.getAttribute("id") || form.getAttribute("name") || "(none)");
+
+  document.addEventListener(
+    "focusin",
+    (event) => {
+      const field = event.target;
+      if (!field || !field.form || field.type === "hidden") return;
+      const form = field.form;
+      const state = formState.get(form) || { started: false, submitted: false, lastField: "" };
+      state.lastField = toText(field.getAttribute("name") || field.getAttribute("id") || field.tagName.toLowerCase());
+      if (!state.started) {
+        state.started = true;
+        pushTrack("form_start", { form_id: formLabel(form), field_name: state.lastField, link_text: state.lastField, link_id: formLabel(form) });
+      }
+      formState.set(form, state);
+    },
+    true
+  );
+
+  document.addEventListener(
+    "submit",
+    (event) => {
+      const state = formState.get(event.target);
+      if (state) state.submitted = true;
+    },
+    true
+  );
+
+  window.addEventListener("pagehide", () => {
+    document.querySelectorAll("form").forEach((form) => {
+      const state = formState.get(form);
+      if (state && state.started && !state.submitted) {
+        pushTrack("form_abandon", { form_id: formLabel(form), field_name: state.lastField, link_text: state.lastField, link_id: formLabel(form) });
+      }
+    });
+  });
+
+  // ── Sections vues ────────────────────────────────────────────────────────
+  // Une section compte comme vue quand 40 % de sa surface reste a l'ecran au
+  // moins une seconde. Une seule fois par section et par page.
+  const observeSections = () => {
+    if (!("IntersectionObserver" in window)) return;
+    const seen = new Set();
+    const timers = new Map();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.getAttribute("id");
+          if (seen.has(id)) return;
+          if (entry.isIntersecting) {
+            timers.set(
+              id,
+              setTimeout(() => {
+                seen.add(id);
+                observer.unobserve(entry.target);
+                pushTrack("section_view", { section: id, link_id: id });
+              }, 1000)
+            );
+          } else if (timers.has(id)) {
+            clearTimeout(timers.get(id));
+            timers.delete(id);
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+    document.querySelectorAll("section[id], footer[id]").forEach((node) => observer.observe(node));
+  };
+
+  const onReady = (fn) => {
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", fn);
+    else fn();
+  };
+
+  onReady(() => {
+    document.querySelectorAll("form").forEach(attachAttribution);
+    observeSections();
+
+    document.addEventListener(
+      "toggle",
+      (event) => {
+        const details = event.target;
+        if (!(details instanceof HTMLDetailsElement) || !details.open) return;
+        const summary = details.querySelector("summary");
+        pushTrack("faq_open", {
+          link_text: toText(summary ? summary.textContent : ""),
+          link_id: getSectionLabel(details)
+        });
+      },
+      true
+    );
+
+    // Les videos en lecture automatique (muettes) demarrent seules : on ne
+    // compte que les vraies actions du visiteur, lecture manuelle ou son active.
+    document.querySelectorAll("video").forEach((video, idx) => {
+      const label = toText(video.getAttribute("aria-label") || video.getAttribute("title") || `video_${idx + 1}`);
+      const emit = (action) => {
+        if (video.dataset.msdVideoTracked) return;
+        video.dataset.msdVideoTracked = "1";
+        pushTrack("video_play", { link_id: getSectionLabel(video), link_text: label, video_action: action });
+      };
+      video.addEventListener("play", () => {
+        if (!video.autoplay) emit("lecture");
+      });
+      video.addEventListener("volumechange", () => {
+        if (!video.muted) emit("son_active");
+      });
+    });
   });
 
   const trackExit = (reason) => {
@@ -185,7 +417,7 @@
       SCROLL_STEPS.forEach((step) => {
         if (percent >= step && !reachedScrollSteps.has(step)) {
           reachedScrollSteps.add(step);
-          pushTrack("scroll_depth", { scroll_percent: step });
+          pushTrack("scroll_depth", { scroll_percent: step, percent_scrolled: step });
         }
       });
     },
@@ -215,6 +447,24 @@
       const isEmail = href.startsWith("mailto:");
       const isPhone = href.startsWith("tel:");
       const isSubmitButton = target.tagName === "BUTTON" && target.getAttribute("type") === "submit";
+
+      // Tous les clics, CTA ou non : liens du menu, cartes de realisations,
+      // liens internes et sortants. link_id porte la section de la page.
+      const isOutbound = (() => {
+        try {
+          const url = new URL(href, window.location.href);
+          return /^https?:$/.test(url.protocol) && url.hostname.replace(/^www\./, "") !== window.location.hostname.replace(/^www\./, "");
+        } catch (_) {
+          return false;
+        }
+      })();
+      pushTrack("msd_click", {
+        link_text: text || toText(target.getAttribute("aria-label")) || "(no_text)",
+        link_url: href.startsWith("#") ? `${window.location.pathname}${href}` : href,
+        link_id: ctaLocation,
+        outbound: isOutbound ? "true" : "false"
+      });
+
       const isStyledCta =
         target.matches(".contact-button, .hero__btn, .whatsapp-nav-button, .realisations-cta") ||
         /cta|hero__btn|contact-button|whatsapp/i.test(classes);

@@ -18,7 +18,9 @@
     "link-graph": "node scripts/link-graph.mjs",
     "hooks:setup": "git config core.hooksPath .githooks && echo 'Hooks installés ✓'",
     "years:check": "node scripts/check-years.mjs",
-    "assets:version": "node scripts/version-assets.mjs"
+    "assets:version": "node scripts/version-assets.mjs",
+    "report:site": "node scripts/weekly-site-report.mjs",
+    "report:site:dry-run": "node scripts/weekly-site-report.mjs --dry-run"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",

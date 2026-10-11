@@ -1700,6 +1700,14 @@ position: relative;
   max-height: 42px;
 }
 
+/* Logo en couleurs d'origine (blanc + bandeau jaune) : le filtre blanc le rendrait illisible. */
+.realisations-brand__logo--ultherapy {
+  max-width: 180px;
+  max-height: 56px;
+  filter: none;
+  opacity: 1;
+}
+
 .realisations-brand__logo--marie {
   max-width: 300px;
   max-height: 58px;

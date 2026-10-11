@@ -190,6 +190,11 @@
     max-height: 40px;
   }
 
+  .realisations-brand__logo--ultherapy {
+    max-width: 136px;
+    max-height: 42px;
+  }
+
   .realisations-brand__logo--marie {
     max-width: 210px;
     max-height: 42px;

@@ -115,6 +115,22 @@ function addImageDimensions(html, pageDir) {
   });
 }
 
+// Image de couverture d'article = élément LCP : priorité haute, vraies dimensions,
+// et variante mobile `-m.webp` (800 px) servie via srcset quand elle existe.
+function renderCoverImg(src) {
+  let rel = String(src).replace(/^https?:\/\/(www\.)?msd-media\.com/, '').split(/[?#]/)[0];
+  rel = rel.replace(/^(\.\.\/)+assets\//, '/assets/');
+  const attrs = 'alt="" loading="eager" fetchpriority="high" decoding="async"';
+  if (!rel.startsWith('/assets/')) return `<img src="${src}" ${attrs} width="1600" height="686">`;
+  const size = getImageSize(path.join(ROOT, rel)) || { w: 1600, h: 686 };
+  const mobileRel = rel.replace(/\.webp$/, '-m.webp');
+  if (mobileRel !== rel && fs.existsSync(path.join(ROOT, mobileRel))) {
+    const mobileSrc = src.replace(/\.webp(?=$|[?#])/, '-m.webp');
+    return `<img src="${src}" srcset="${mobileSrc} 800w, ${src} ${size.w}w" sizes="(max-width: 720px) 100vw, 50vw" ${attrs} width="${size.w}" height="${size.h}">`;
+  }
+  return `<img src="${src}" ${attrs} width="${size.w}" height="${size.h}">`;
+}
+
 const AUTHOR_AVATAR = '../../../assets/img/maxens-soldan.webp';
 const AUTHOR_ROLE = 'Fondateur &amp; CEO de MSD Media';
 const TOP_ANNOUNCEMENT_HTML = `<div class="top-announcement" role="banner">
@@ -1161,7 +1177,7 @@ function renderArticlePage(post, allPosts) {
           <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> ${escapeHtml(formatFrenchDate(post.date))}</p>
         </div>
         <div class="blog-article-cover">
-          <img src="${image}" alt="" loading="eager" width="1600" height="686">
+          ${renderCoverImg(image)}
         </div>
       </div>
     </section>
@@ -1422,7 +1438,7 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
           <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> ${escapeHtml(formatFrenchDate(dateRaw))}</p>
         </div>
         <div class="blog-article-cover">
-          <img src="${coverSrc}" alt="" loading="eager" width="1600" height="686">
+          ${renderCoverImg(coverSrc)}
         </div>
       </div>
     </section>

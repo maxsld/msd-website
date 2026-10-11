@@ -1,6 +1,6 @@
 ---
 status: "published"
-title: "Ce que le coaching avec Maxime Sciare m'a débloqué en tant que dirigeant d'agence"
+title: "Coaching dirigeant : ce que Maxime Sciare m'a débloqué"
 date: "2026-09-17"
 description: "Deux séances de coaching avec Maxime Sciare m'ont aidé à lancer MSD Media, puis à retrouver ma vision et mon énergie de dirigeant. Mon retour d'expérience."
 image: "https://msd-media.com/assets/img/blog/coaching-maxime-sciare.webp"

@@ -2,7 +2,8 @@
 
 > Agence web française spécialisée en landing pages et sites web sur-mesure à fort taux de conversion. Livraison en 21 jours, HTML/CSS/JS natif, SEO technique et GEO intégrés. Clients en France, Suisse et Belgique.
 
-Fondateur : Maxens Soldan — [LinkedIn](https://www.linkedin.com/in/maxens-soldan/)
+Fondée en juin 2025 à Annecy.
+Fondateur : Maxens Soldan — [LinkedIn](https://www.linkedin.com/in/maxens-soldan/) · [site personnel](https://maxens-soldan.com/)
 Siège : 6 Rue Paul Guiton, 74000 Annecy, France (Haute-Savoie)
 Téléphone : +33 7 83 14 12 87
 Contact : [msd-media.com/contact](https://msd-media.com/contact/)
@@ -14,18 +15,27 @@ Réservation : [cal.com/maxens-soldan-msd-media/30min](https://cal.com/maxens-so
 - [Agence web Annecy](https://msd-media.com/agence-web-annecy/) : Page dédiée à l'activité locale à Annecy
 - [À propos](https://msd-media.com/a-propos/) : Maxens Soldan, parcours, mission, valeurs
 - [Études de cas](https://msd-media.com/realisations/) : Projets réalisés avec résultats mesurables
+- [Tarifs](https://msd-media.com/tarifs/) : Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis
+- [Presse](https://msd-media.com/presse/) : Articles et mentions presse
+- [Template landing page gratuit](https://msd-media.com/template-landing-page/) : Modèle de landing page à télécharger
 - [Blog](https://msd-media.com/blog/) : Articles SEO, landing pages, conversion, création de sites web
 - [Contact](https://msd-media.com/contact/) : Prise de contact et réservation d'appel découverte
 
 ## Services
 
-- Landing pages sur-mesure (HTML/CSS/JS) — orientées conversion, livrées en 21 jours, tarif sur devis
-- Sites web vitrines sur-mesure — responsive, rapides, SEO et GEO intégrés, tarif sur devis
-- Sites professionnels multi-pages — livraison en 21 jours, tarif sur devis
+- Landing pages sur-mesure (HTML/CSS/JS) — orientées conversion, livrées en 21 jours, à partir de 1 990 €
+- Sites web vitrines sur-mesure (jusqu'à 10 pages) — responsive, rapides, SEO et GEO intégrés, à partir de 3 990 €
+- Projets sur-mesure (e-commerce, multilingue, dashboards) — sur devis
 - Refonte de sites existants
 - SEO technique (Core Web Vitals, schema markup, architecture)
 - GEO — optimisation pour être cité par les IA (ChatGPT, Perplexity, Claude, Gemini)
 - Ajustements illimités inclus dans toutes les offres
+
+## Secteurs
+
+- [Médecins et santé](https://msd-media.com/site-web-medecin/) — sites conformes au Code de déontologie médicale (article R4127-19-1)
+- [Médecine esthétique](https://msd-media.com/site-web-medecine-esthetique/), [chirurgie esthétique](https://msd-media.com/site-web-chirurgie-esthetique/), [dermatologues](https://msd-media.com/site-web-dermatologue/), [dentistes](https://msd-media.com/site-web-dentiste/), [centres laser](https://msd-media.com/site-web-centre-laser/)
+- [Avocats](https://msd-media.com/site-web-avocat/), [immobilier](https://msd-media.com/site-web-immobilier/), [restaurants](https://msd-media.com/site-web-restaurant/), [artisans](https://msd-media.com/site-web-artisan/), [architectes](https://msd-media.com/site-web-architecte/)
 
 ## Zone géographique
 
@@ -42,16 +52,15 @@ France métropolitaine — marché principal (Annecy, Lyon, Paris, Strasbourg, B
 - Marie Troccaz — site coach en entreprise (culture d'entreprise, cohésion, leadership)
 - Carroz Sports — site station de ski (Haute-Savoie)
 - HairTattoo by Hugues — site studio de micropigmentation capillaire (Bruxelles, Belgique)
-- Merz Aesthetics — landing page Ultherapy® Prime (voir détail ci-dessous)
+- Merz Aesthetics — landing pages Ultherapy® Prime, Radiesse® et Belotero® (voir détail ci-dessous)
 
 ### Merz Aesthetics — Ultherapy® Prime (client international, secteur pharma/médical)
 
-MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy® Prime, technologie d'ultrasons micro-focalisés (HIFU) de raffermissement cutané, pour le laboratoire international de médecine esthétique Merz Aesthetics. Le projet conjugue crédibilité clinique (preuves cliniques, avant/après, vocabulaire validé par la marque) et expérience patient claire, avec une structuration orientée vers la recherche de praticien habilité. Étude de cas : [msd-media.com/realisations/merz-ultherapy-prime](https://msd-media.com/realisations/merz-ultherapy-prime/). C'est la référence la plus significative de MSD Media en termes de taille de client (laboratoire international cité, vs. PME/indépendants pour le reste du portefeuille).
+MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy® Prime, technologie d'ultrasons micro-focalisés (HIFU) de raffermissement cutané, pour le laboratoire international de médecine esthétique Merz Aesthetics. Le projet conjugue crédibilité clinique (preuves cliniques, avant/après, vocabulaire validé par la marque) et expérience patient claire, avec une structuration orientée vers la recherche de praticien habilité. Étude de cas : [msd-media.com/realisations/merz-ultherapy-prime](https://msd-media.com/realisations/merz-ultherapy-prime/). MSD Media a également réalisé les landing pages françaises de [Radiesse®](https://msd-media.com/realisations/merz-radiesse/) et de [Belotero®](https://msd-media.com/realisations/merz-belotero/). C'est la référence la plus significative de MSD Media en termes de taille de client (laboratoire international cité, vs. PME/indépendants pour le reste du portefeuille).
 
 ## Résultats clients
 
 - Sites livrés en HTML/CSS/JS natif : score PageSpeed 95–98/100 sur mobile en production
-- Délai de livraison moyen constaté : 10–14 jours ouvrés pour un site vitrine ou landing page
 - Clients en France (Annecy, Lyon, Paris, Strasbourg), Suisse (Genève), Belgique (Bruxelles)
 - Nation Startup : landing page beta livrée en 12 jours, score PageSpeed 98/100
 - Maxime Sciare : +40 points PageSpeed après refonte, livraison 14 jours
@@ -64,7 +73,7 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 
 - Code HTML/CSS/JS natif : aucun CMS (WordPress, Webflow), zéro vulnérabilité, performances maximales
 - Livraison en 21 jours : délai contractuel pour les sites vitrines et landing pages
-- Tarifs sur devis, ajustés selon le périmètre du projet
+- Tarifs publics : landing page à partir de 1 990 €, site vitrine à partir de 3 990 € ([détail](https://msd-media.com/tarifs/))
 - Ajustements illimités inclus dans toutes les offres
 - Fondateur développeur-consultant unique : un seul interlocuteur du brief à la mise en ligne
 - SEO et GEO intégrés dès la conception : schema markup, Core Web Vitals, llms.txt, robots.txt IA
@@ -89,6 +98,9 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 - [Apparaître sur ChatGPT et Perplexity](https://msd-media.com/blog/articles/apparaitre-chatgpt-perplexity-google-ia/)
 - [AEO vs SEO vs GEO — le guide complet 2026](https://msd-media.com/blog/articles/aeo-seo-geo-guide-2026/)
 - [Combien coûte une landing page à Annecy ?](https://msd-media.com/blog/articles/combien-coute-landing-page-annecy-2026/)
+- [Combien coûte une landing page en France ? De 0 à 15 000 €](https://msd-media.com/blog/articles/combien-coute-landing-page-france-2026/)
+- [Médecine esthétique : ce que votre site peut afficher en 2026](https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/)
+- [Avis Google médecin : que répondre (modèles conformes)](https://msd-media.com/blog/articles/avis-google-medecin-que-repondre/)
 
 ## Sitemaps
 

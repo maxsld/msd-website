@@ -7,8 +7,8 @@ echo "[pre-push] Mise à jour des lastmod dans les sitemaps..."
 node scripts/update-lastmod.mjs
 
 # Si des sitemaps ont été modifiés, les committer avant le push
-if ! git diff --quiet sitemap.xml blog/sitemap.xml; then
-  git add sitemap.xml blog/sitemap.xml
+if ! git diff --quiet sitemap.xml blog/sitemap.xml lastmod-fingerprints.json 2>/dev/null || [ -n "$(git ls-files --others --exclude-standard lastmod-fingerprints.json)" ]; then
+  git add sitemap.xml blog/sitemap.xml lastmod-fingerprints.json
   git commit -m "chore(sitemap): update lastmod [skip ci]"
   echo "[pre-push] Sitemaps commités ✓"
 fi

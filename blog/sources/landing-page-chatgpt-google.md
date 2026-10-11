@@ -118,7 +118,7 @@ Une landing page avec de bonnes performances ranke mieux sur Google ET est charg
 
 ### Mobile-first
 
-Plus de 60% des recherches locales se font sur mobile. Votre landing page doit être parfaitement responsive — texte lisible sans zoom, CTA accessibles au pouce, formulaire simple.
+La majorité des recherches locales se font sur mobile. Votre landing page doit être parfaitement responsive — texte lisible sans zoom, CTA accessibles au pouce, formulaire simple.
 
 ### Vitesse de chargement
 

@@ -36,7 +36,7 @@ Il repose sur trois piliers :
 - Les requêtes conversationnelles longues (type "quelle est la meilleure agence web pour une PME qui veut tripler ses leads") progressent
 - Les Core Web Vitals restent un signal de classement
 
-**Le SEO est toujours essentiel.** Google représente encore 85-90% des recherches web en France. Ne l'abandonnez pas.
+**Le SEO est toujours essentiel.** Google concentre encore la très grande majorité des recherches web en France. Ne l'abandonnez pas.
 
 ---
 

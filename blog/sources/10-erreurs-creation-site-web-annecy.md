@@ -44,7 +44,7 @@ Un site à 200 €, c'est :
 
 ## Erreur n°2 : Négliger le référencement local Annecy
 
-Négliger le référencement local rend un site invisible même s'il est réussi visuellement. À Annecy, 70% des recherches locales aboutissent à une action sous 24h : si le site n'apparaît pas dans ces résultats, il n'existe pas pour ces clients. Les causes habituelles sont une fiche Google Business Profile mal configurée, aucune mention d'Annecy dans le contenu et une structure technique non optimisée. La solution : optimiser dès le départ pour "ton activité + Annecy".
+Négliger le référencement local rend un site invisible même s'il est réussi visuellement. Une recherche locale débouche souvent sur un appel ou une visite dans la journée : si le site n'apparaît pas dans ces résultats, il n'existe pas pour ces clients. Les causes habituelles sont une fiche Google Business Profile mal configurée, aucune mention d'Annecy dans le contenu et une structure technique non optimisée. La solution : optimiser dès le départ pour "ton activité + Annecy".
 
 **Ce qui manque souvent :**
 - Google Business Profile mal configuré
@@ -61,7 +61,7 @@ C'est là que sont tes clients.
 
 ## Erreur n°3 : Oublier le mobile
 
-Oublier l'optimisation mobile revient à perdre la majorité de ses visiteurs. À Annecy, entre touristes et locaux en déplacement, 75% du trafic web est mobile : un site non-responsive, magnifique sur un écran 27 pouces mais illisible sur smartphone, fait donc fuir 75% des visiteurs potentiels. La solution : penser mobile-first et tester le site sur iPhone, Android et tablette avant même de le publier.
+Oublier l'optimisation mobile revient à perdre la majorité de ses visiteurs. À Annecy, entre touristes et locaux en déplacement, 75% du trafic web est mobile : un site non-responsive, magnifique sur un écran 27 pouces mais illisible sur smartphone, fait donc fuir la majorité des visiteurs, qui arrivent sur mobile. La solution : penser mobile-first et tester le site sur iPhone, Android et tablette avant même de le publier.
 
 **Ce qu'on voit trop souvent :**
 - Texte trop petit
@@ -78,7 +78,7 @@ Avant même de le publier.
 
 ## Erreur n°4 : Un site lent
 
-Un site lent fait fuir ses visiteurs avant même qu'ils ne le découvrent : 53% des internautes quittent un site qui met plus de 3 secondes à charger, quel que soit son design. Les causes habituelles sont des images non compressées, trop de plugins WordPress et un hébergement bas de gamme. La solution : viser un temps de chargement inférieur à 2 secondes ; chez MSD Media, nos sites chargent en moins de 1,5 seconde.
+Un site lent fait fuir ses visiteurs avant même qu'ils ne le découvrent : au-delà de quelques secondes de chargement, une grande partie des visiteurs mobiles abandonne, quel que soit le design. Les causes habituelles sont des images non compressées, trop de plugins WordPress et un hébergement bas de gamme. La solution : viser un temps de chargement inférieur à 2 secondes ; chez MSD Media, nos sites chargent en moins de 1,5 seconde.
 
 **Pourquoi c'est lent :**
 - Images non compressées (3 Mo par photo)

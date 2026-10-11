@@ -9,6 +9,246 @@
   },
   "redirects": [
     {
+      "source": "/blog/articles/site-web-avocat-annecy",
+      "destination": "/site-web-avocat/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-avocat-annecy/",
+      "destination": "/site-web-avocat/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-notaire-annecy",
+      "destination": "/site-web-avocat/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-notaire-annecy/",
+      "destination": "/site-web-avocat/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-expert-comptable-annecy",
+      "destination": "/site-web-avocat/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-expert-comptable-annecy/",
+      "destination": "/site-web-avocat/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-medecin-annecy",
+      "destination": "/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-medecin-annecy/",
+      "destination": "/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-kinesitherapeute-annecy",
+      "destination": "/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-kinesitherapeute-annecy/",
+      "destination": "/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-osteopathe-annecy",
+      "destination": "/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-osteopathe-annecy/",
+      "destination": "/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-therapeute-annecy",
+      "destination": "/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-therapeute-annecy/",
+      "destination": "/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-dentiste-annecy",
+      "destination": "/site-web-dentiste/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-dentiste-annecy/",
+      "destination": "/site-web-dentiste/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-agence-immobiliere-annecy",
+      "destination": "/site-web-immobilier/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-agence-immobiliere-annecy/",
+      "destination": "/site-web-immobilier/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-agence-immobiliere-haute-savoie",
+      "destination": "/site-web-immobilier/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-agence-immobiliere-haute-savoie/",
+      "destination": "/site-web-immobilier/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-agence-immobiliere-alsace",
+      "destination": "/site-web-immobilier/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-agence-immobiliere-alsace/",
+      "destination": "/site-web-immobilier/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-restaurant-cafe-annecy",
+      "destination": "/site-web-restaurant/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-restaurant-cafe-annecy/",
+      "destination": "/site-web-restaurant/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-hotel-hebergement-annecy",
+      "destination": "/site-web-restaurant/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-hotel-hebergement-annecy/",
+      "destination": "/site-web-restaurant/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-artisan-tpe-annecy",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-artisan-tpe-annecy/",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-garage-carrosserie-annecy",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-garage-carrosserie-annecy/",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coiffeur-annecy",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coiffeur-annecy/",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coiffeur-strasbourg",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coiffeur-strasbourg/",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-photographe-annecy",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-photographe-annecy/",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-veterinaire-annecy",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-veterinaire-annecy/",
+      "destination": "/site-web-artisan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-architecte-annecy",
+      "destination": "/site-web-architecte/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-architecte-annecy/",
+      "destination": "/site-web-architecte/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coach-sportif-annecy",
+      "destination": "/site-web-coach/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coach-sportif-annecy/",
+      "destination": "/site-web-coach/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-station-ski-haute-savoie",
+      "destination": "/realisations/carroz-sports/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-station-ski-haute-savoie/",
+      "destination": "/realisations/carroz-sports/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-medecin-strasbourg",
+      "destination": "/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-medecin-strasbourg/",
+      "destination": "/site-web-medecin/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coach-sportif-strasbourg",
+      "destination": "/site-web-coach/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/site-web-coach-sportif-strasbourg/",
+      "destination": "/site-web-coach/",
+      "permanent": true
+    },
+    {
       "source": "/blog/articles/bloquer-crawlers-ia-robots-txt/",
       "destination": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
       "permanent": true
@@ -1335,26 +1575,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-garage-carrosserie-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-garage-carrosserie-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-veterinaire-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-veterinaire-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-dentiste-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-dentiste-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-notaire-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-notaire-annecy/",
-      "permanent": true
-    },
-    {
       "source": "/blog/articles/google-business-profile-annecy-2026",
       "destination": "https://msd-media.com/blog/articles/google-business-profile-annecy-2026/",
       "permanent": true
@@ -1370,18 +1590,8 @@
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-coiffeur-strasbourg",
-      "destination": "https://msd-media.com/blog/articles/site-web-coiffeur-strasbourg/",
-      "permanent": true
-    },
-    {
       "source": "/blog/articles/copywriting-web-2026-textes-qui-convertissent",
       "destination": "https://msd-media.com/blog/articles/copywriting-web-2026-textes-qui-convertissent/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-hotel-hebergement-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-hotel-hebergement-annecy/",
       "permanent": true
     },
     {
@@ -1402,11 +1612,6 @@
     {
       "source": "/blog/articles/pourquoi-site-web-ne-convertit-pas-2026",
       "destination": "https://msd-media.com/blog/articles/pourquoi-site-web-ne-convertit-pas-2026/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-agence-immobiliere-alsace",
-      "destination": "https://msd-media.com/blog/articles/site-web-agence-immobiliere-alsace/",
       "permanent": true
     },
     {
@@ -1455,73 +1660,8 @@
       "permanent": true
     },
     {
-      "source": "/blog/articles/site-web-agence-immobiliere-haute-savoie",
-      "destination": "https://msd-media.com/blog/articles/site-web-agence-immobiliere-haute-savoie/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-coach-sportif-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-coach-sportif-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-coiffeur-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-coiffeur-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-expert-comptable-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-expert-comptable-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-kinesitherapeute-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-kinesitherapeute-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-osteopathe-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-osteopathe-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-station-ski-haute-savoie",
-      "destination": "https://msd-media.com/blog/articles/site-web-station-ski-haute-savoie/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-architecte-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-architecte-annecy/",
-      "permanent": true
-    },
-    {
       "source": "/blog/articles/creer-landing-page-qui-convertit",
       "destination": "https://msd-media.com/blog/articles/creer-landing-page-qui-convertit/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-agence-immobiliere-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-agence-immobiliere-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-avocat-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-avocat-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-medecin-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-medecin-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-photographe-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-photographe-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-therapeute-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-therapeute-annecy/",
       "permanent": true
     },
     {
@@ -1532,11 +1672,6 @@
     {
       "source": "/blog/articles/faut-il-creer-site-web-2026",
       "destination": "https://msd-media.com/blog/articles/faut-il-creer-site-web-2026/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-artisan-tpe-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-artisan-tpe-annecy/",
       "permanent": true
     },
     {
@@ -1557,11 +1692,6 @@
     {
       "source": "/blog/articles/landing-page-coach-consultant-annecy",
       "destination": "https://msd-media.com/blog/articles/landing-page-coach-consultant-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-restaurant-cafe-annecy",
-      "destination": "https://msd-media.com/blog/articles/site-web-restaurant-cafe-annecy/",
       "permanent": true
     },
     {
@@ -1602,16 +1732,6 @@
     {
       "source": "/en",
       "destination": "https://msd-media.com/en/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-medecin-strasbourg/",
-      "destination": "/blog/articles/site-web-medecin-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-medecin-strasbourg",
-      "destination": "/blog/articles/site-web-medecin-annecy/",
       "permanent": true
     },
     {
@@ -1712,16 +1832,6 @@
     {
       "source": "/blog/articles/meilleure-agence-web-annecy-2026.html",
       "destination": "/agence-web-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-coach-sportif-strasbourg/",
-      "destination": "/blog/articles/site-web-coach-sportif-annecy/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/articles/site-web-coach-sportif-strasbourg",
-      "destination": "/blog/articles/site-web-coach-sportif-annecy/",
       "permanent": true
     },
     {

@@ -133,7 +133,7 @@ Fais le calcul.
 
 ### 3. Le référencement SEO local
 Sans SEO, ton site est invisible.  
-À Annecy, 70% des recherches locales aboutissent à une action sous 24h.
+Une recherche locale débouche souvent sur un appel ou une visite dans la journée.
 
 Un site pas référencé = de l'argent jeté.
 

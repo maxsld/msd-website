@@ -91,7 +91,7 @@ L'ordre qui maximise la conversion sur une page web est : titre principal (H1) p
 
 ### 1. Le titre principal (H1) — La décision se prend ici
 
-Votre H1 est lu par 80 % des visiteurs. Votre contenu sous le premier écran est lu par 20 %. Le titre doit donc contenir à lui seul le message central.
+Votre H1 est lu par presque tous vos visiteurs. Votre contenu sous le premier écran est lu par 20 %. Le titre doit donc contenir à lui seul le message central.
 
 Un bon H1 répond en une phrase à : qui, pour qui, et quel résultat.
 
@@ -227,7 +227,7 @@ Voici un cas réel (PME de services B2B, France, secteur conseil RH) :
 > "Recrutez les bons profils en moins de 3 semaines — sans cabinet coûteux."
 > *"Pour les PME de 10 à 100 collaborateurs qui en ont assez de payer 15 % du salaire annuel à un cabinet de recrutement pour un résultat incertain."*
 
-**Résultat :** +68 % de demandes de contact sur 8 semaines, à trafic équivalent.
+**Pourquoi c'est mieux :** la cible, le délai et l'alternative coûteuse sont nommés, le visiteur se reconnaît en une phrase.
 
 La réécriture n'a pas changé l'offre. Elle a changé le cadrage : du point de vue de l'entreprise au point de vue du prospect.
 

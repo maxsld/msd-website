@@ -115,7 +115,7 @@ Sur le site d'un cabinet, cela se traduit par trois choix. Nous rédigeons les t
 
 Chaque spécialité a ses propres points d'attention : nous les détaillons pour la [chirurgie esthétique](https://msd-media.com/site-web-chirurgie-esthetique/), la [dermatologie](https://msd-media.com/site-web-dermatologue/), les [cabinets dentaires](https://msd-media.com/site-web-dentiste/) et les [centres laser](https://msd-media.com/site-web-centre-laser/).
 
-Si vous voulez vérifier ce que votre site actuel affiche, nous faisons un [point sur votre site de médecine esthétique](https://msd-media.com/site-web-medecine-esthetique/) : ce qui est conforme, ce qui vous expose, et ce qui manque pour rassurer vos patients. Notre guide du [site web pour médecin](https://msd-media.com/blog/articles/site-web-medecin-annecy/) détaille les règles communes à toutes les spécialités.
+Si vous voulez vérifier ce que votre site actuel affiche, nous faisons un [point sur votre site de médecine esthétique](https://msd-media.com/site-web-medecine-esthetique/) : ce qui est conforme, ce qui vous expose, et ce qui manque pour rassurer vos patients. Notre page [site web pour médecin](https://msd-media.com/site-web-medecin/) répond aux questions communes à toutes les spécialités.
 
 ## Questions fréquentes
 

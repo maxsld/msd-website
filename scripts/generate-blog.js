@@ -480,6 +480,15 @@ function markdownToHtml(markdown) {
       continue;
     }
 
+    // Image seule sur sa ligne : ![alt](src "légende") -> <figure> + <figcaption>.
+    const img = line.trim().match(/^!\[([^\]]*)\]\(\s*([^\s)]+)(?:\s+"([^"]*)")?\s*\)$/);
+    if (img) {
+      const [, alt, src, caption] = img;
+      htmlParts.push(`<figure class="blog-figure"><img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">${caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : ''}</figure>`);
+      i += 1;
+      continue;
+    }
+
     if (/^```/.test(line.trim())) {
       const lang = line.trim().replace(/^```/, '').trim();
       i += 1;
@@ -1131,21 +1140,21 @@ function renderArticlePage(post, allPosts) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${escapeHtml(post.title)} | ${BRAND}</title>
+  <title>${escapeHtml(post.seoTitle || `${post.title} | ${BRAND}`)}</title>
   <meta name="description" content="${escapeHtml(post.description)}" />
   <meta name="keywords" content="${escapeHtml(keywords)}" />
   <meta name="robots" content="${post.noindex ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large'}" />
   <link rel="canonical" href="${pageUrl}" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="${escapeHtml(post.title)}" />
+  <meta property="og:title" content="${escapeHtml(post.seoTitle || post.title)}" />
   <meta property="og:description" content="${escapeHtml(post.description)}" />
   <meta property="og:url" content="${pageUrl}" />
   <meta property="og:image" content="${escapeHtml(imageAbsolute)}" />
   <meta property="og:site_name" content="${BRAND}" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="${escapeHtml(post.title)}" />
+  <meta name="twitter:title" content="${escapeHtml(post.seoTitle || post.title)}" />
   <meta name="twitter:description" content="${escapeHtml(post.description)}" />
   <meta name="twitter:image" content="${escapeHtml(imageAbsolute)}" />
 
@@ -1461,7 +1470,8 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
 
     html = html.replace(/(<section class="section-grid blog-article-shell">[\s\S]*?<\/section>)/i, (sectionHtml) => {
       let cleaned = sectionHtml.replace(/<article\b[^>]*>[\s\S]*?<\/article>/i, (articleHtml) =>
-        articleHtml.replace(/<img\b[^>]*>\s*/gi, '')
+        // Les images éditoriales (<figure class="blog-figure">) sont conservées.
+        articleHtml.replace(/(<figure class="blog-figure">)?<img\b[^>]*>\s*/gi, (m, figure) => (figure ? m : ''))
       );
       if (slug === 'maxens-soldan') {
         cleaned = cleaned.replace(
@@ -1696,6 +1706,8 @@ function main() {
     const reading = estimateReadTime(plain);
 
     const title = data.title || path.basename(filePath, '.md');
+    // Balise title distincte du H1 quand elle est fournie (sinon « titre | MSD Media »).
+    const seoTitle = data.seoTitle ? String(data.seoTitle) : '';
     const slug = data.slug || slugify(title);
     const date = data.date || new Date().toISOString().slice(0, 10);
     const description = data.description || plain.slice(0, 155);
@@ -1715,6 +1727,7 @@ function main() {
 
     posts.push({
       title,
+      seoTitle,
       slug,
       date,
       description,

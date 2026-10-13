@@ -2977,6 +2977,25 @@ position: relative;
   border-radius: 0.2rem;
 }
 
+.blog-article-content .blog-figure {
+  margin: 0 0 2rem;
+}
+
+.blog-article-content .blog-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  border-radius: 0.2rem;
+}
+
+.blog-article-content .blog-figure figcaption {
+  margin-top: 0.6rem;
+  color: rgba(17, 17, 17, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 .blog-article-content h2,
 .blog-article-content h3,
 .blog-article-content h4 {

@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /assets/img/profiles/
 Disallow: /admin/
+Disallow: /kit/
 
 # ── AI Crawlers — explicitly allowed ──────────────────────────────────────────
 

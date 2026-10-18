@@ -7,10 +7,13 @@ image: "https://msd-media.com/assets/img/stock/photo-1573164713988-8665fc963095.
 tags: ["Google update", "spam update", "algorithme Google", "SEO 2026", "MSD Media"]
 slug: "google-mise-a-jour-aout-2026"
 keyword: "mise à jour Google août 2026"
+updated: "2026-10-18"
 ---
 ## Réponse courte
 
 La mise à jour Google d'août 2026 vise surtout les signaux de spam, les contenus à grande échelle peu utiles et les sites qui cherchent à manipuler les résultats. Si votre trafic baisse, commencez par vérifier les pages touchées, leur utilité réelle, leur originalité, les redirections et la qualité des sources. Il ne faut pas réagir en réécrivant tout au hasard : il faut isoler les pertes et corriger les causes probables.
+
+!!update **Mise à jour — octobre 2026.** Une nouvelle mise à jour anti-spam a suivi : la **September 2026 Spam Update**, lancée le 24 septembre et déployée en 13 jours et 16 heures, soit jusqu'au 7 octobre environ ([Search Status Dashboard](https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history)). Aucun core update n'est annoncé pour septembre ni octobre. Le 1er octobre, Google a aussi mis à jour sa page sur les contenus générés par IA : produire de nombreuses pages sans valeur ajoutée relève de l'abus de contenu à grande échelle, et il recommande d'expliquer comment le contenu a été créé ([Search Central](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content)). Enfin, le 15 octobre, Google a annoncé davantage de liens, placés plus haut, dans AI Mode et les AI Overviews, sans autre condition pour y figurer que d'être indexé et éligible à un extrait ([blog Google](https://blog.google/products-and-platforms/products/search/updates-ai-mode-overviews-explore-web/)).
 
 **Google a déployé son August 2026 Spam Update du 18 au 21 août 2026 (2 jours et 16 heures), confirmé sur le Search Status Dashboard.** C'est la 3ᵉ mise à jour anti-spam de l'année, après celles de mars (19h30, la plus rapide jamais enregistrée) et de juin (2 jours et 1 heure). En parallèle, des éditeurs rapportent une volatilité de classement plus large — mais aucun core update n'est confirmé par Google pour cette période : ne confondez pas les deux.
 
@@ -27,6 +30,7 @@ Google a confirmé une seule chose pour août 2026 : le déploiement d'un **Spam
 | Mars 2026 | 19h30 (la plus rapide jamais enregistrée) |
 | Juin 2026 | 2 jours et 1 heure |
 | Août 2026 | 2 jours et 16 heures |
+| Septembre 2026 | 13 jours et 16 heures |
 
 ---
 

@@ -1,21 +1,40 @@
 ---
 status: "published"
-title: "Avis Google médecin : que répondre (modèles conformes)"
+title: "Avis Google médecin : comment le supprimer et que répondre"
 date: "2026-10-07"
-description: "Un médecin peut répondre à un avis Google, mais sans jamais confirmer qu'un patient est le sien. Modèles de réponse conformes, erreurs à éviter et recours."
+description: "Comment supprimer un avis Google quand on est médecin, et que répondre sans violer le secret médical : la procédure pas à pas, les recours et des modèles conformes."
 image: "https://msd-media.com/assets/img/stock/photo-1576091160399-112ba8d25d1d.webp"
 tags: ["avis Google médecin", "e-réputation médecin", "secret médical", "Google Business Profile", "déontologie médicale", "site web santé", "MSD Media"]
 slug: "avis-google-medecin-que-repondre"
-keyword: "répondre avis google médecin"
+keyword: "supprimer avis google médecin"
+updated: "2026-10-18"
 category: "Santé"
 ---
 ## Réponse courte
 
-Un médecin peut répondre à un avis Google, positif comme négatif, à trois conditions : ne rien révéler qui relève du secret médical (pas même le fait que l'auteur est son patient), ne pas faire la promotion de son activité, et rester courtois. Le guide de l'Ordre des médecins recommande une réponse empathique qui remercie, reconnaît le désagrément et propose un échange privé. Un avis seulement négatif ne peut pas être supprimé ; un avis diffamatoire, injurieux ou faux peut l'être, d'abord par signalement à Google, puis en justice dans les trois mois.
+Un médecin ne peut pas supprimer lui-même un avis Google : il peut le signaler à Google, qui le retire s'il enfreint ses règles (faux avis, propos injurieux, informations personnelles, contenu hors sujet), puis faire appel en cas de refus. Un avis diffamatoire ou injurieux peut aussi être retiré pour motif juridique, ou en justice dans un délai de trois mois. Un avis négatif mais sincère, en revanche, reste en ligne : il faut alors y répondre, sans jamais rien révéler qui relève du secret médical, pas même le fait que l'auteur est votre patient.
 
-*Cet article décrit l'état des textes au 7 octobre 2026. Il ne remplace ni l'avis de votre conseil départemental de l'Ordre, ni celui d'un avocat.*
+*Cet article décrit l'état des textes au 18 octobre 2026. Il ne remplace ni l'avis de votre conseil départemental de l'Ordre, ni celui d'un avocat.*
 
 ---
+
+## Comment supprimer un avis Google quand on est médecin ?
+
+Seul Google peut retirer un avis. Le médecin, lui, peut le signaler, faire appel et, si l'avis est illicite, engager une procédure. Voici la démarche dans l'ordre.
+
+**1. Vérifiez que l'avis enfreint une règle.** Un avis négatif mais sincère ne sera pas retiré : la liberté d'expression du patient l'emporte. Le [règlement de Google sur les contenus](https://support.google.com/contributionpolicy/answer/7400114?hl=fr) exclut en revanche les avis qui ne reposent pas sur une expérience réelle, le harcèlement, les propos injurieux ou discriminatoires, les informations personnelles et les contenus hors sujet. Un avis laissé par quelqu'un qui n'a jamais consulté, ou rédigé par un concurrent, entre dans ces cas.
+
+**2. Faites constater l'avis avant toute démarche.** Une capture datée suffit pour un signalement ; pour une action en justice, faites établir un constat par un commissaire de justice. Un avis peut être modifié ou supprimé par son auteur, et la preuve doit dater de sa publication.
+
+**3. Signalez l'avis depuis votre fiche.** Sur business.google.com, ouvrez « Voir les avis », cliquez sur l'icône de signalement à côté de l'avis, choisissez la raison puis « Signaler » ([aide Google](https://support.google.com/business/answer/4596773?hl=fr)). Google examine le signalement en général en quelques jours.
+
+**4. Suivez la décision et faites appel si besoin.** L'[outil de gestion des avis](https://support.google.com/business/workflow/9945796?hl=fr) affiche le statut de chaque signalement : décision en attente, aucune règle enfreinte, ou dossier escaladé. Si l'avis n'est pas retiré, vous pouvez y faire appel, jusqu'à 10 avis à la fois ; la réponse arrive par e-mail.
+
+**5. Pour un avis diffamatoire ou injurieux, passez par le motif juridique.** Google propose un formulaire distinct pour [signaler un contenu pour des raisons juridiques](https://support.google.com/legal/answer/3110420?hl=fr), qui s'appuie sur le droit français et non sur son seul règlement.
+
+**6. En dernier recours, la justice.** Le guide de l'Ordre décrit la suite : contact avec l'auteur s'il est identifié, sur un ton jamais menaçant, mise en demeure, notification formelle à l'hébergeur, puis action judiciaire. Le délai est court : **trois mois** à compter de la publication pour la diffamation et l'injure publiques.
+
+Deux précautions. L'Ordre rappelle qu'un signalement abusif est sanctionné : ne signalez pas un avis seulement parce qu'il vous déplaît. Et vérifiez si votre contrat de responsabilité civile professionnelle couvre l'atteinte à la e-réputation : beaucoup d'assureurs accompagnent ces démarches.
 
 ## Un médecin a-t-il le droit de répondre à un avis Google ?
 
@@ -70,17 +89,6 @@ Les trois premiers modèles reprennent la structure proposée par l'Ordre : reme
 
 Pour ce dernier cas, restez neutre : écrire « vous n'êtes pas notre patient » revient à divulguer une information sur la patientèle, même pour la nier. Signalez plutôt l'avis à Google si vous pensez qu'il ne repose sur aucune expérience réelle.
 
-## Comment faire supprimer un avis Google ?
-
-Un avis négatif mais sincère ne peut pas être supprimé : la liberté d'expression du patient l'emporte. Un avis peut l'être s'il est illicite (diffamatoire, injurieux, menaçant) ou s'il enfreint le [règlement de Google sur les contenus](https://support.google.com/contributionpolicy/answer/7400114?hl=fr), qui exclut notamment les contenus sans expérience réelle, le harcèlement, les informations personnelles et les contenus hors sujet. Le guide de l'Ordre décrit une procédure par paliers :
-
-1. **Signalement à Google** depuis votre fiche, avis par avis, en citant la règle enfreinte. Attention, l'Ordre rappelle qu'un signalement abusif est sanctionné.
-2. **Contact avec l'auteur**, s'il est identifié : par écrit ou par téléphone, sur un ton jamais menaçant. Dans cet échange privé, vous pouvez évoquer des éléments couverts par le secret, mais le patient reste libre de maintenir son avis.
-3. **Mise en demeure** de l'auteur, puis notification formelle à l'hébergeur.
-4. **Action en justice** si l'avis est diffamatoire ou injurieux. Le délai est court : **trois mois** à compter de la publication pour la diffamation et l'injure publiques.
-
-Avant toute démarche, faites constater l'avis par un commissaire de justice : un avis peut disparaître ou être modifié, et la preuve doit dater de sa publication. Vérifiez aussi si votre contrat de responsabilité civile professionnelle couvre l'atteinte à la e-réputation, comme le suggère l'Ordre.
-
 ## Peut-on faire supprimer sa fiche Google ?
 
 C'est plus difficile. En 2019, le tribunal de grande instance de Paris a [débouté un dentiste](https://www.caducee.net/actualite-medicale/14379/un-dentiste-qui-demandait-la-suppression-de-sa-fiche-professionnelle-sur-google-deboute-en-refere.html) qui demandait la suppression de sa fiche, au nom de l'information légitime des consommateurs. La même année, le tribunal de Metz a [rejeté une demande similaire d'un psychiatre](https://cardiologie.lequotidiendumedecin.fr/liberal/justice/avis-negatifs-sur-google-un-psychiatre-deboute-face-la-firme-americaine), condamné à verser 2 000 € à Google.
@@ -93,7 +101,7 @@ Pour la plupart des cabinets, la meilleure option est donc de revendiquer la fic
 
 Les avis déposés sur votre fiche Google existent en dehors de votre site : vous ne les avez ni écrits ni sollicités. Votre site, lui, est votre communication professionnelle, encadrée par l'[article R4127-19-1 du Code de la santé publique](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042750056), qui interdit de « faire appel à des témoignages de tiers ».
 
-En pratique, ne reprenez pas vos avis Google sur votre site : pas de citations de patients, pas de note en étoiles, pas de widget qui affiche automatiquement les derniers avis. C'est l'une des erreurs que nous rencontrons le plus souvent sur les sites de cabinets. Nous détaillons le reste de ce que votre site peut afficher dans notre article sur [ce que le site d'un médecin esthétique peut afficher en 2026](https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/).
+En pratique, ne reprenez pas vos avis Google sur votre site : pas de citations de patients, pas de note en étoiles, pas de widget qui affiche automatiquement les derniers avis. C'est l'une des erreurs que nous rencontrons le plus souvent sur les sites de cabinets. Nous détaillons le reste de ce que votre site peut afficher dans nos articles sur [ce que le site d'un médecin esthétique peut afficher](https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/) et sur [ce que l'Ordre autorise sur le site d'un dentiste](https://msd-media.com/blog/articles/site-internet-dentiste-ce-qui-est-autorise/). Les chirurgiens-dentistes ont d'ailleurs une règle explicite : leurs recommandations ordinales citent parmi les atteintes au secret le fait de « répondre à un avis nominatif et identifiable de patients ».
 
 Ce qui rassure un patient sur votre site, ce sont des informations vérifiables : vos diplômes, votre inscription à l'Ordre, une page par acte qui répond aux vraies questions (durée, suites, tarifs), et des photos du cabinet plutôt que de patients.
 
@@ -113,9 +121,13 @@ Oui, le guide de l'Ordre des médecins le prévoit, à condition de ne pas porte
 
 Mieux vaut l'éviter. Affirmer ou nier qu'une personne fait partie de votre patientèle revient à divulguer une information couverte par le secret. Répondez de façon neutre, en indiquant que vous ne retrouvez pas la situation décrite, et signalez l'avis à Google s'il ne repose sur aucune expérience réelle.
 
-### Comment faire supprimer un avis Google diffamatoire sur un médecin ?
+### Comment supprimer un avis Google négatif quand on est médecin ?
 
-Signalez d'abord l'avis à Google depuis votre fiche en citant la règle enfreinte, puis contactez l'auteur s'il est identifié, mettez-le en demeure et notifiez l'hébergeur. En dernier recours, saisissez la justice : l'action en diffamation ou en injure publique doit être engagée dans les trois mois suivant la publication.
+Un médecin ne peut pas le supprimer lui-même. Il le signale depuis sa fiche d'établissement en choisissant la règle enfreinte, suit la décision dans l'outil de gestion des avis de Google et fait appel en cas de refus. Un avis négatif mais sincère reste en ligne ; seul un avis qui enfreint le règlement de Google ou qui est illicite peut être retiré.
+
+### Que faire si Google refuse de supprimer un avis diffamatoire ?
+
+Faites d'abord appel depuis l'outil de gestion des avis, puis utilisez le formulaire de Google pour signaler un contenu pour des raisons juridiques. Si l'avis reste en ligne, la voie judiciaire est possible : mise en demeure de l'auteur, notification à l'hébergeur, puis action en diffamation ou en injure publique, à engager dans les trois mois suivant la publication.
 
 ### Un médecin peut-il demander à ses patients de laisser un avis Google ?
 
@@ -141,6 +153,9 @@ Oui. L'Ordre rappelle qu'un pseudonyme n'exclut pas l'identification de l'auteur
 - [Article R4127-19-1 du Code de la santé publique](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042750056) — Légifrance
 - [Article 226-13 du Code pénal](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006417945) — Légifrance
 - [Règlement concernant les contenus ajoutés par les utilisateurs](https://support.google.com/contributionpolicy/answer/7400114?hl=fr) — Google
+- [Signaler des avis inappropriés sur votre fiche d'établissement](https://support.google.com/business/answer/4596773?hl=fr) — Aide Fiche d'établissement Google
+- [Gérer les avis Google sur votre établissement](https://support.google.com/business/workflow/9945796?hl=fr) — Aide Fiche d'établissement Google
+- [Signaler du contenu pour des raisons juridiques](https://support.google.com/legal/answer/3110420?hl=fr) — Aide Demandes légales Google
 - [Avis malveillants, réseaux sociaux : un guide de l'Ordre pour aider les médecins à gérer leur réputation](https://diabetologie-endocrinologie.lequotidiendumedecin.fr/actus-medicales/avis-malveillants-reseaux-sociaux-un-guide-de-lordre-pour-aider-les-medecins-gerer-leur-reputation) — Le Quotidien du Médecin
 - [Un dentiste qui demandait la suppression de sa fiche professionnelle sur Google débouté en référé](https://www.caducee.net/actualite-medicale/14379/un-dentiste-qui-demandait-la-suppression-de-sa-fiche-professionnelle-sur-google-deboute-en-refere.html) — Caducée
 - [Avis négatifs sur Google : un psychiatre débouté face à la firme américaine](https://cardiologie.lequotidiendumedecin.fr/liberal/justice/avis-negatifs-sur-google-un-psychiatre-deboute-face-la-firme-americaine) — Le Quotidien du Médecin

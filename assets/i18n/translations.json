@@ -7,7 +7,7 @@
     "announcement_badge": "Nouveau",
     "announcement_text": "Recommandez MSD Media et percevez 15% sur chaque projet signé.",
     "announcement_link": "Découvrir le programme",
-    "hero_badge": "Agence web citée par<br><strong>Le Dauphiné Libéré</strong>",
+    "hero_badge": "Top 7 des meilleures<br>agences web de <strong>France 🇫🇷</strong>",
     "hero_subtitle": "On transforme votre offre, votre expertise, votre savoir-faire… en sites web et landing pages qui convertissent. Sur-mesure, rapides et visibles sur Google et ChatGPT. <strong class=\"hero__subtitle-highlight\">Livrés en 21 jours chrono.</strong>",
     "hero_companies_proof": "<span class=\"hero-companies-proof__highlight\">+30 entreprises</span> nous font confiance",
     "realisations_title": "Explorez nos derniers projets",
@@ -332,7 +332,18 @@
     "about_faq_a15": "MSD Media accompagne des indépendants, PME, startups, coachs, organismes de formation, commerces locaux et entreprises de services qui ont besoin d'un site plus clair, plus crédible et plus performant.",
     "about_faq_q16": "Pourquoi choisir MSD Media plutôt qu'un template ou un CMS standard ?",
     "about_faq_a16": "Un template peut suffire pour une présence basique. MSD Media intervient quand le site doit porter une offre, rassurer vite, convertir, se charger rapidement et être structuré pour le référencement naturel et les moteurs IA.",
-    "nav_coaches": "Coachs & consultants"
+    "nav_coaches": "Coachs & consultants",
+    "faq_own_q": "Le site m’appartient-il une fois livré ?",
+    "faq_own_a": "Oui. À la livraison, vous récupérez le code source complet, le nom de domaine et tous les accès (hébergement, statistiques, outils connectés). Vous pouvez faire évoluer le site avec nous ou le confier à un autre prestataire.",
+    "faq_backup_q": "Que se passe-t-il si Maxens n’est pas disponible ?",
+    "faq_backup_a": "Votre site ne dépend pas de nous : il est codé en HTML, CSS et JavaScript standards, sans outil propriétaire, et vous disposez de tous les accès. N’importe quel développeur web peut donc le reprendre ou le modifier.",
+    "tarifs_faq_own_q": "Le site m’appartient-il une fois livré ?",
+    "tarifs_faq_own_a": "Oui. À la livraison, vous récupérez le code source complet, le nom de domaine et tous les accès (hébergement, statistiques, outils connectés). Vous pouvez faire évoluer le site avec nous ou le confier à un autre prestataire.",
+    "tarifs_faq_backup_q": "Que se passe-t-il si Maxens n’est pas disponible ?",
+    "tarifs_faq_backup_a": "Votre site ne dépend pas de nous : il est codé en HTML, CSS et JavaScript standards, sans outil propriétaire, et vous disposez de tous les accès. N’importe quel développeur web peut donc le reprendre ou le modifier.",
+    "eco_tag": "🌿 Sobriété &amp; accessibilité",
+    "eco_title": "Plus léger pour la planète.<br>Plus simple pour tous.",
+    "eco_text": "Des sites sur mesure, sans constructeur : des pages qui pèsent moins, se chargent vite et s'ouvrent à chacun."
   },
   "en": {
     "cookie_text": "We use cookies to measure site traffic and improve your experience.",
@@ -342,7 +353,7 @@
     "announcement_badge": "New",
     "announcement_text": "Refer MSD Media and earn 15% on every signed project.",
     "announcement_link": "Discover the program",
-    "hero_badge": "Web agency featured in<br><strong>Le Dauphiné Libéré</strong>",
+    "hero_badge": "Top 7 best<br>web agencies in <strong>France 🇫🇷</strong>",
     "hero_subtitle": "We turn your offer, expertise and know-how into websites and landing pages that convert. Custom-built, fast, and visible on Google and ChatGPT. <strong class=\"hero__subtitle-highlight\">Delivered in 21 days flat.</strong>",
     "hero_companies_proof": "<span class=\"hero-companies-proof__highlight\">+30 companies</span> trust us",
     "realisations_title": "Explore our latest projects",
@@ -667,6 +678,17 @@
     "about_faq_a15": "MSD Media supports freelancers, SMEs, startups, coaches, training organizations, local businesses and service companies that need a clearer, more credible and higher-performing website.",
     "about_faq_q16": "Why choose MSD Media over a template or standard CMS?",
     "about_faq_a16": "A template may be enough for a basic presence. MSD Media steps in when a site needs to carry an offer, build trust quickly, convert, load fast, and be structured for organic search and AI engines.",
-    "nav_coaches": "Coaches & consultants"
+    "nav_coaches": "Coaches & consultants",
+    "faq_own_q": "Do I own the website once it is delivered?",
+    "faq_own_a": "Yes. On delivery you receive the full source code, the domain name and every access (hosting, analytics, connected tools). You can keep improving the site with us or hand it over to another provider.",
+    "faq_backup_q": "What happens if Maxens is unavailable?",
+    "faq_backup_a": "Your website does not depend on us: it is built with standard HTML, CSS and JavaScript, with no proprietary tool, and you hold every access. Any web developer can take it over or edit it.",
+    "tarifs_faq_own_q": "Do I own the website once it is delivered?",
+    "tarifs_faq_own_a": "Yes. On delivery you receive the full source code, the domain name and every access (hosting, analytics, connected tools). You can keep improving the site with us or hand it over to another provider.",
+    "tarifs_faq_backup_q": "What happens if Maxens is unavailable?",
+    "tarifs_faq_backup_a": "Your website does not depend on us: it is built with standard HTML, CSS and JavaScript, with no proprietary tool, and you hold every access. Any web developer can take it over or edit it.",
+    "eco_tag": "🌿 Sobriety &amp; accessibility",
+    "eco_title": "Lighter for the planet.<br>Simpler for everyone.",
+    "eco_text": "Custom websites, no builder: pages that weigh less, load fast and open up to everyone."
   }
 }

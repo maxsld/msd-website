@@ -20,7 +20,7 @@
   <link rel="icon" type="image/svg+xml" href="https://msd-media.com/assets/img/favicon.svg" />
   <link rel="shortcut icon" href="https://msd-media.com/assets/img/favicon.ico" />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="../assets/css/style.css?v=c4d2a6ed" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=7577b1a5" />
   <link rel="preload" href="../assets/css/animations.css?v=9f55c995" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="../assets/css/responsive.css?v=bf31f542" />
   <link rel="stylesheet" href="../assets/css/fontawesome-subset.css?v=fb277f07">
@@ -287,6 +287,22 @@ function _msdConsentSignal(state){
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Un acompte au lancement du projet, le solde à la livraison. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le site m’appartient-il une fois livré ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. À la livraison, vous récupérez le code source complet, le nom de domaine et tous les accès (hébergement, statistiques, outils connectés). Vous pouvez faire évoluer le site avec nous ou le confier à un autre prestataire."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que se passe-t-il si Maxens n’est pas disponible ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Votre site ne dépend pas de nous : il est codé en HTML, CSS et JavaScript standards, sans outil propriétaire, et vous disposez de tous les accès. N’importe quel développeur web peut donc le reprendre ou le modifier."
           }
         }
       ]
@@ -796,6 +812,26 @@ function _msdConsentSignal(state){
           <p data-i18n="tarifs_faq_q5_a">Un acompte au lancement du projet, le solde à la livraison. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet.</p>
         </div>
       </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="tarifs_faq_own_q">Le site m’appartient-il une fois livré ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p data-i18n="tarifs_faq_own_a">Oui. À la livraison, vous récupérez le code source complet, le nom de domaine et tous les accès (hébergement, statistiques, outils connectés). Vous pouvez faire évoluer le site avec nous ou le confier à un autre prestataire.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="tarifs_faq_backup_q">Que se passe-t-il si Maxens n’est pas disponible ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p data-i18n="tarifs_faq_backup_a">Votre site ne dépend pas de nous : il est codé en HTML, CSS et JavaScript standards, sans outil propriétaire, et vous disposez de tous les accès. N’importe quel développeur web peut donc le reprendre ou le modifier.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -883,6 +919,9 @@ function _msdConsentSignal(state){
     </div>
 
     <!-- Villes prioritaires -->
+    <div class="footer-award">
+      <a class="footer-award-tag" href="https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france" target="_blank" rel="nofollow noopener noreferrer">🇫🇷 Top 7 des agences web en France</a>
+    </div>
     <div class="footer-cities">
       <ul>
         <li><a href="https://msd-media.com/agence-web-annecy/">Agence web Annecy</a></li>

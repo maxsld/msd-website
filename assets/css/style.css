@@ -7194,6 +7194,42 @@ body.affiliate-modal-open {
   height: 60px;
 }
 
+/* Distinction sous forme de tag (pas de logo) : même rayon que tous les tags du site. */
+.footer-award-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.footer-award-tag {
+  text-decoration: none;
+}
+
+.footer-award-tag:hover,
+.footer-award-tag:focus-visible {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Tag placé juste avant la liste des villes, aligné à gauche, avec le même
+   espace serré au-dessus et en dessous. */
+.footer-award {
+  max-width: 1200px;
+  margin: 1.4rem auto 0;
+}
+
+.footer-award + .footer-cities {
+  margin-top: 1.4rem;
+}
+
 @media (max-width: 680px) {
   .footer-partners { gap: 1.8rem; }
   .footer-partner__logo { height: 64px; }
@@ -9196,4 +9232,88 @@ a.sector-card:hover {
   .sector-cards__grid--5 {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* Section « Sobriété & accessibilité » : une carte verte sobre, façon page environnement d'Apple. */
+.eco-section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+@media (max-width: 1290px) {
+  .eco-section { padding: 0 3rem; }
+}
+
+.eco-card {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-radius: 0.2rem;
+  background: #0d3b22;
+  isolation: isolate;
+}
+
+.eco-card__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: -2;
+}
+
+/* Voile vert foncé : garde un contraste suffisant pour le texte blanc. */
+.eco-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(13, 59, 34, 0.35) 0%, rgba(9, 46, 26, 0.82) 62%, rgba(7, 38, 21, 0.95) 100%);
+}
+
+.eco-card__content {
+  padding: clamp(2rem, 5vw, 3.5rem);
+  max-width: 820px;
+  text-align: left;
+}
+
+.eco-card__tag {
+  display: inline-block;
+  margin: 0 0 1.2rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.2rem;
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.eco-card__title {
+  margin: 0 0 1rem;
+  color: #ffffff;
+  /* Même taille que les autres titres de section de l'accueil (3rem, 2rem sur mobile). */
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.eco-card__text {
+  margin: 0;
+  max-width: 46ch;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: var(--font-md);
+  line-height: 1.55;
+}
+
+@media (max-width: 680px) {
+  .eco-section { padding: 0 2rem; }
+  .eco-card { min-height: 420px; }
+  .eco-card__title { font-size: 2rem; }
 }

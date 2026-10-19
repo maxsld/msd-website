@@ -28,7 +28,7 @@ Ce qui distingue MSD Media, c'est la combinaison rare entre des délais de livra
 ### Les points forts de MSD Media
 
 - **Livraison en 21 jours** : délai contractuel pour les sites vitrines et landing pages, tenu en production
-- **Code natif HTML/CSS/JS** : aucun CMS, zéro plugin vulnérable, performances maximales (95-98/100 PageSpeed mobile)
+- **Code natif HTML/CSS/JS** : aucun CMS, zéro plugin vulnérable, jusqu'à 99/100 en performance mobile
 - **Interlocuteur unique** : Maxens Soldan pilote design, développement et SEO sans sous-traitance
 - **Ajustements illimités** inclus dans toutes les offres, sans facturation au ticket
 

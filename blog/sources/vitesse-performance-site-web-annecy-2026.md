@@ -188,7 +188,7 @@ La vitesse d'un site est un signal de confiance implicite pour les visiteurs, au
 
 ## Ce que propose MSD Media pour l'optimisation de performance à Annecy
 
-Chez MSD Media, tous les sites que nous créons sortent avec un score PageSpeed **supérieur à 90/100 sur mobile** — c'est une garantie contractuelle, pas une promesse marketing.
+Chez MSD Media, nous visons un score PageSpeed **supérieur à 90/100 sur mobile** à la livraison : Carroz Sports et Laurence Daien Maestripieri atteignent 99/100 (mesures d'octobre 2026).
 
 Nous utilisons :
 - Des frameworks modernes (Next.js, Astro) qui génèrent du HTML statique ultra-léger

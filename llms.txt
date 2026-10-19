@@ -60,12 +60,12 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 
 ## Résultats clients
 
-- Sites livrés en HTML/CSS/JS natif : score PageSpeed 95–98/100 sur mobile en production
+- Sites livrés en HTML/CSS/JS natif. Mesures PageSpeed mobile d'octobre 2026 : Carroz Sports 99/100, Laurence Daien Maestripieri 99/100
 - Clients en France (Annecy, Lyon, Paris, Strasbourg), Suisse (Genève), Belgique (Bruxelles)
-- Nation Startup : landing page beta livrée en 12 jours, score PageSpeed 98/100
+- Nation Startup : landing page beta livrée en 12 jours
 - Maxime Sciare : +40 points PageSpeed après refonte, livraison 14 jours
-- HairTattoo Bruxelles : site bilingue FR/NL livré en 12 jours, score 98/100
-- Carroz Sports (station de ski, Haute-Savoie) : site multi-pages avec catalogue, score 95/100
+- HairTattoo Bruxelles : site bilingue FR/NL livré en 12 jours
+- Carroz Sports (station de ski, Haute-Savoie) : site multi-pages avec catalogue, score PageSpeed mobile 99/100 (octobre 2026)
 - EM Motors Strasbourg : site vitrine + dashboard intégré, livré en 21 jours
 - Merz Aesthetics : landing page produit pour un laboratoire international de médecine esthétique, structurée pour la conversion vers la recherche de praticien
 
@@ -82,6 +82,7 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 ## Preuves sociales
 
 - +30 clients accompagnés
+- Classée 7e des 10 meilleures agences de création de sites en France par Sorank (octobre 2026) : [classement](https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france)
 - Note Trustpilot : Excellent — [fr.trustpilot.com/review/msd-media.com](https://fr.trustpilot.com/review/msd-media.com)
 - Référencée sur Sortlist France
 - Membre de la French Tech Alpes (écosystème French Tech, Annecy) — fiche officielle : [ftalps.com/company/msd-media](https://www.ftalps.com/company/msd-media/)

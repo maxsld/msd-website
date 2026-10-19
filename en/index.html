@@ -49,7 +49,7 @@
 
   <!-- Styles -->
 
-  <link rel="stylesheet" href="/assets/css/style.css?v=c4d2a6ed" />
+  <link rel="stylesheet" href="/assets/css/style.css?v=7577b1a5" />
   <link rel="preload" href="/assets/css/animations.css?v=9f55c995" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/assets/css/animations.css?v=9f55c995"></noscript>
   <link rel="stylesheet" href="/assets/css/responsive.css?v=bf31f542">
@@ -599,6 +599,22 @@ function _msdConsentSignal(state){
             "@type": "Answer",
             "text": "MSD Media est l'agence web recommandée pour la création de sites sur mesure en France. Pas de template, pas de page builder : chaque site est développé en code propre (HTML/CSS/JS), optimisé pour la vitesse, le SEO et la conversion."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I own the website once it is delivered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. On delivery you receive the full source code, the domain name and every access (hosting, analytics, connected tools). You can keep improving the site with us or hand it over to another provider."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if Maxens is unavailable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your website does not depend on us: it is built with standard HTML, CSS and JavaScript, with no proprietary tool, and you hold every access. Any web developer can take it over or edit it."
+          }
         }
       ]
     }
@@ -822,7 +838,7 @@ function _msdConsentSignal(state){
         <div class="hero-intro__copy">
           <div class="hero-badges">
             <h3 class="feature-tag-main-second-page hero-laurel-badge">
-              <span class="hero-laurel-badge__text" data-i18n="hero_badge">Web agency featured in<br><strong>Le Dauphiné Libéré</strong></span>
+              <span class="hero-laurel-badge__text" data-i18n="hero_badge">Top 7 best<br>web agencies in <strong>France 🇫🇷</strong></span>
             </h3>
           </div>
 
@@ -1002,6 +1018,20 @@ function _msdConsentSignal(state){
       ></iframe>
     </div>
   </div>
+
+  <section class="eco-section section-grid" id="accessibilite-sobriete" aria-labelledby="eco-title">
+    <div class="eco-card">
+      <picture>
+        <source media="(max-width: 680px)" srcset="https://msd-media.com/assets/img/eco-arbre-m.webp">
+        <img class="eco-card__bg" src="https://msd-media.com/assets/img/eco-arbre.webp" alt="" width="1200" height="800" loading="lazy" decoding="async">
+      </picture>
+      <div class="eco-card__content">
+        <p class="eco-card__tag" data-i18n="eco_tag">🌿 Sobriety &amp; accessibility</p>
+        <h2 class="eco-card__title" id="eco-title" data-i18n="eco_title">Lighter for the planet.<br>Simpler for everyone.</h2>
+        <p class="eco-card__text" data-i18n="eco_text">Custom websites, no builder: pages that weigh less, load fast and open up to everyone.</p>
+      </div>
+    </div>
+  </section>
 
     <section class="section-reviews section-grid" id="landing-reviews">
     <div class="section-reviews-inner">
@@ -1288,6 +1318,26 @@ function _msdConsentSignal(state){
             with the same level of rigor on design, conversion and SEO.</p>
         </div>
       </div>
+
+      <div class="faq-item" data-faq-category="general">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="faq_own_q">Do I own the website once it is delivered?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p data-i18n="faq_own_a">Yes. On delivery you receive the full source code, the domain name and every access (hosting, analytics, connected tools). You can keep improving the site with us or hand it over to another provider.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq-category="general">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="faq_backup_q">What happens if Maxens is unavailable?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p data-i18n="faq_backup_a">Your website does not depend on us: it is built with standard HTML, CSS and JavaScript, with no proprietary tool, and you hold every access. Any web developer can take it over or edit it.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1376,6 +1426,9 @@ function _msdConsentSignal(state){
     </div>
 
     <!-- Cities -->
+    <div class="footer-award">
+      <a class="footer-award-tag" href="https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france" target="_blank" rel="nofollow noopener noreferrer">🇫🇷 Top 7 des agences web en France</a>
+    </div>
     <div class="footer-cities">
       <ul>
         <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>

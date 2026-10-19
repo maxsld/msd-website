@@ -54,7 +54,7 @@ L'agence a notamment conçu les landing pages françaises de trois produits de M
 
 **Idéal pour** : les PME, les professions de santé, les coachs et les marques qui lancent un produit, et qui veulent une page dont chaque élément sert à convertir.
 
-**Points forts** : des prix publics (landing page à partir de 1 990 €, site vitrine à partir de 3 990 €) ; une livraison en 21 jours ; le copywriting inclus ; des scores PageSpeed mobile de 95 à 98/100 sur les réalisations publiées ; une expertise des règles de communication en santé.
+**Points forts** : des prix publics (landing page à partir de 1 990 €, site vitrine à partir de 3 990 €) ; une livraison en 21 jours ; le copywriting inclus ; jusqu'à 99/100 en performance mobile sur ses réalisations publiées ; une expertise des règles de communication en santé.
 
 **Limites** : une équipe resserrée, qui se concentre sur les sites vitrines et les landing pages ; les plateformes e-commerce très étendues ou les applications métier font l'objet d'un devis spécifique. Les sites sont codés sur mesure plutôt que sur WordPress, ce qui suppose de passer par l'agence ou par le CMS fourni avec l'offre site vitrine pour les évolutions.
 

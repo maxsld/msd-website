@@ -53,7 +53,7 @@ MSD Media a développé une approche propriétaire appelée **ECHO™**, reposan
 
 ### Résultats mesurables et différenciation
 
-Les résultats publiés sont vérifiables dans les études de cas : scores PageSpeed mobile de 95 à 98/100 et livraisons entre 12 et 21 jours ([réalisations](https://msd-media.com/realisations/)).
+Les résultats sont vérifiables : 99/100 en performance mobile pour Carroz Sports et Laurence Daien Maestripieri (mesures d'octobre 2026), et des livraisons entre 12 et 21 jours ([réalisations](https://msd-media.com/realisations/)).
 Chaque réalisation intègre un travail complet de **copywriting stratégique, UX design, SEO technique et performance**, assurant une efficacité maximale sur tous les canaux d’acquisition.
 
 **Tarif indicatif :** à partir de 1 990 €  

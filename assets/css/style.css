@@ -9244,7 +9244,16 @@ a.sector-card:hover {
 }
 
 @media (max-width: 1290px) {
-  .eco-section { padding: 0 3rem; }
+  #accessibilite-sobriete { padding: 0 3rem 5.3rem; }
+}
+
+/* Même respiration que les autres sections (160 px visibles) : la section du
+   processus apporte déjà 80 px de marge basse, et la section avis aucun espace haut. */
+#accessibilite-sobriete,
+.section-grid + #accessibilite-sobriete {
+  margin-top: 5rem;
+  margin-bottom: 0;
+  padding-bottom: 5.3rem;
 }
 
 .eco-card {
@@ -9313,7 +9322,7 @@ a.sector-card:hover {
 }
 
 @media (max-width: 680px) {
-  .eco-section { padding: 0 2rem; }
+  #accessibilite-sobriete { padding: 0 2rem 5rem; }
   .eco-card { min-height: 420px; }
   .eco-card__title { font-size: 2rem; }
 }

@@ -342,7 +342,7 @@
     "tarifs_faq_backup_q": "Que se passe-t-il si Maxens n’est pas disponible ?",
     "tarifs_faq_backup_a": "Votre site ne dépend pas de nous : il est codé en HTML, CSS et JavaScript standards, sans outil propriétaire, et vous disposez de tous les accès. N’importe quel développeur web peut donc le reprendre ou le modifier.",
     "eco_tag": "🌿 Sobriété &amp; accessibilité",
-    "eco_title": "Plus léger pour la planète.<br>Plus simple pour tous.",
+    "eco_title": "Une éco-conception<br>dès le départ.",
     "eco_text": "Des sites sur mesure, sans constructeur : des pages qui pèsent moins, se chargent vite et s'ouvrent à chacun."
   },
   "en": {
@@ -688,7 +688,7 @@
     "tarifs_faq_backup_q": "What happens if Maxens is unavailable?",
     "tarifs_faq_backup_a": "Your website does not depend on us: it is built with standard HTML, CSS and JavaScript, with no proprietary tool, and you hold every access. Any web developer can take it over or edit it.",
     "eco_tag": "🌿 Sobriety &amp; accessibility",
-    "eco_title": "Lighter for the planet.<br>Simpler for everyone.",
+    "eco_title": "Eco-design<br>from the start.",
     "eco_text": "Custom websites, no builder: pages that weigh less, load fast and open up to everyone."
   }
 }

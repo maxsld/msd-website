@@ -10,6 +10,7 @@ import { SYSTEM_PROMPT, BOOKING_HINT } from './_chat-knowledge.js';
 const PREFERRED = [process.env.GROQ_MODEL, 'openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'qwen/qwen3.8-27b'].filter(Boolean);
 const NOT_CHAT = /whisper|guard|tts|playai|orpheus|distil|prompt|embed|compound|allam/i;
 let available = null;
+const BOOKING_INTENT = /devis|projet|d[ée]marrer|commencer|lancer|rendez|rdv|appel|appeler|contact|joindre|parler|[ée]changer|disponib|travailler ensemble|quote|project|start|call|book|meeting|contact|reach/i;
 const FALLBACK =
   "Je ne peux pas répondre pour le moment. Le plus simple : [réservez un appel de 30 minutes](https://cal.com/maxens-soldan-msd-media/30min) avec Maxens, ou écrivez à maxens.soldan@msd-media.com.";
 
@@ -85,9 +86,13 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Proposer l'appel seulement quand c'est utile : pas s'il a déjà été proposé dans les 3 dernières réponses.
+    // L'appel n'est proposé que si le visiteur montre une vraie intention (projet, devis, contact),
+    // et jamais s'il l'a déjà été dans les 3 dernières réponses.
+    const lastUser = history[history.length - 1].content;
+    const intent = BOOKING_INTENT.test(lastUser);
     const recentBooking = history.filter((m) => m.role === 'assistant').slice(-3).some((m) => m.content.includes('cal.com'));
-    const hint = recentBooking ? BOOKING_HINT.recent : BOOKING_HINT.allowed;
+    const allowBooking = intent && !recentBooking;
+    const hint = allowBooking ? BOOKING_HINT.allowed : BOOKING_HINT.never;
 
     // On essaie les modèles un par un : quota atteint (429) ou modèle introuvable (404) → modèle suivant.
     let models = available || PREFERRED;
@@ -110,7 +115,13 @@ export default async function handler(req, res) {
       .replace(/\s+[\u2013\u2014]\s+/g, ', ') // tirets cadratins entre deux mots
       .replace(/\u202f/g, ' ')
       .trim();
-    return res.status(200).json({ reply: reply || FALLBACK });
+    // Filet de sécurité : si l'appel ne devait pas être proposé, on retire les phrases qui contiennent le lien.
+    const cleaned = allowBooking || !reply ? reply : reply
+      .split(/(?<=[.!?])\s+|\n+/)
+      .filter((part) => !/cal\.com|réserv\w* un appel|book a call/i.test(part))
+      .join(' ')
+      .trim();
+    return res.status(200).json({ reply: cleaned || reply || FALLBACK });
   } catch (err) {
     console.error('[chat] appel Groq impossible :', err?.name, err?.message);
     return res.status(200).json({ reply: FALLBACK });

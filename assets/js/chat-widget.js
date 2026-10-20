@@ -21,10 +21,8 @@
     error: `Je ne peux pas répondre pour le moment. [Réservez un appel](${BOOKING}) avec Maxens, il vous répondra directement.`,
   };
   const SEND_ICON = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>';
-  const STORE = 'msd-chat-history';
-  let history = [];
-  try { history = JSON.parse(sessionStorage.getItem(STORE) || '[]'); } catch { history = []; }
-  const save = () => { try { sessionStorage.setItem(STORE, JSON.stringify(history.slice(-20))); } catch {} };
+  // La conversation vit le temps de la page : un rechargement ou une autre page repart de zéro.
+  const history = [];
   const track = (event, extra = {}) => { try { (window.dataLayer = window.dataLayer || []).push({ event, ...extra }); } catch {} };
 
   const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -99,7 +97,6 @@
     return el;
   };
   const refreshWelcome = () => { welcome.hidden = history.length > 0; };
-  history.forEach((m) => addBubble(m.role, m.content));
   refreshWelcome();
 
   const open = (question) => {
@@ -120,7 +117,7 @@
     if (!question || busy) return;
     busy = true;
     history.push({ role: 'user', content: question });
-    save(); refreshWelcome();
+    refreshWelcome();
     addBubble('user', question);
     input.value = '';
     const pending = addBubble('assistant', '', true);
@@ -134,7 +131,6 @@
     pending.classList.remove('is-pending');
     pending.innerHTML = render(reply);
     history.push({ role: 'assistant', content: reply });
-    save();
     body.scrollTop = body.scrollHeight;
     busy = false;
     input.focus();

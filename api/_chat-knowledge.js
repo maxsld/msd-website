@@ -100,8 +100,8 @@ ${KNOWLEDGE}`;
 
 // Consigne ajoutée à chaque échange selon l'état de la conversation (voir api/chat.js).
 export const BOOKING_HINT = {
-  allowed: "Tu peux proposer de réserver un appel avec Maxens (lien de réservation) si le visiteur parle d'un projet concret, demande un devis, veut démarrer ou demande comment vous joindre. Sinon, ne le propose pas : réponds simplement à la question.",
-  recent: "Tu as déjà proposé l'appel récemment dans cette conversation : ne le repropose pas, sauf si le visiteur le demande explicitement ou veut démarrer.",
+  allowed: "Le visiteur semble avoir un projet concret ou veut vous joindre : tu peux terminer par une seule phrase courte qui propose de réserver un appel de 30 minutes avec Maxens (lien de réservation).",
+  never: "Ne propose pas d'appel, de rendez-vous ni de lien de réservation dans cette réponse, et ne termine pas par une invitation à vous contacter : réponds simplement à la question, éventuellement avec une petite question de relance.",
 };
 
 export const SUGGESTIONS = [

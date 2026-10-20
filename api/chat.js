@@ -5,8 +5,11 @@
 
 import { SYSTEM_PROMPT } from './_chat-knowledge.js';
 
-const MODEL = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile';
-const FALLBACK_MODEL = 'llama-3.1-8b-instant';
+// Modèles essayés dans l'ordre. Si Groq n'en reconnaît aucun (modèle retiré, accès restreint),
+// on lit la liste des modèles disponibles pour cette clé et on prend le premier modèle de chat.
+const PREFERRED = [process.env.GROQ_MODEL, 'llama-3.3-70b-versatile', 'openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'llama-3.1-8b-instant'].filter(Boolean);
+const NOT_CHAT = /whisper|guard|tts|playai|orpheus|distil|prompt|embed|compound/i;
+let available = null;
 const FALLBACK =
   "Je ne peux pas répondre pour le moment. Le plus simple : [réservez un appel de 30 minutes](https://cal.com/maxens-soldan-msd-media/30min) avec Maxens, ou écrivez à maxens.soldan@msd-media.com.";
 
@@ -40,6 +43,20 @@ async function ask(model, history) {
   }
 }
 
+async function availableModels() {
+  if (available) return available;
+  const r = await fetch('https://api.groq.com/openai/v1/models', { headers: { Authorization: `Bearer ${process.env.GROQ_API_KEY}` } });
+  if (!r.ok) {
+    console.error(`[chat] liste des modèles : HTTP ${r.status} ${(await r.text()).slice(0, 300)}`);
+    return [];
+  }
+  const ids = ((await r.json())?.data || []).filter((m) => m.active !== false).map((m) => m.id);
+  console.error('[chat] modèles disponibles :', ids.join(', '));
+  const chat = ids.filter((id) => !NOT_CHAT.test(id));
+  available = [...PREFERRED.filter((id) => chat.includes(id)), ...chat.filter((id) => !PREFERRED.includes(id))];
+  return available;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Méthode non autorisée' });
 
@@ -66,18 +83,22 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Modèle principal en erreur (quota atteint, modèle retiré…) : on retente avec le modèle léger.
-    let r = await ask(MODEL, history);
-    if (!r.ok && r.status !== 401 && MODEL !== FALLBACK_MODEL) {
-      console.error(`[chat] ${MODEL} : HTTP ${r.status} ${(await r.text()).slice(0, 300)}`);
-      r = await ask(FALLBACK_MODEL, history);
+    // On essaie les modèles un par un : quota atteint (429) ou modèle introuvable (404) → modèle suivant.
+    let models = available || PREFERRED;
+    let r;
+    for (let i = 0; i < models.length && i < 4; i++) {
+      r = await ask(models[i], history);
+      if (r.ok || r.status === 401) break;
+      console.error(`[chat] ${models[i]} : HTTP ${r.status} ${(await r.text()).slice(0, 200)}`);
+      if (r.status === 404 && !available) { models = await availableModels(); i = -1; if (!models.length) break; }
     }
     if (!r.ok) {
-      console.error(`[chat] Groq : HTTP ${r.status} ${(await r.text()).slice(0, 300)}`);
+      if (!r.bodyUsed) console.error(`[chat] Groq : HTTP ${r.status} ${(await r.text()).slice(0, 300)}`);
       return res.status(200).json({ reply: FALLBACK });
     }
     const data = await r.json();
-    const reply = data?.choices?.[0]?.message?.content?.trim();
+    // Certains modèles (Qwen, DeepSeek) écrivent leur raisonnement entre balises <think> : on le retire.
+    const reply = data?.choices?.[0]?.message?.content?.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
     return res.status(200).json({ reply: reply || FALLBACK });
   } catch (err) {
     console.error('[chat] appel Groq impossible :', err?.name, err?.message);

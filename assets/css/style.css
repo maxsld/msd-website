@@ -9326,3 +9326,77 @@ a.sector-card:hover {
   .eco-card { min-height: 420px; }
   .eco-card__title { font-size: 2rem; }
 }
+
+/* ---------- Assistant MSD Media (assets/js/chat-widget.js) ---------- */
+.msd-visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+.msd-ask { position: fixed; left: 50%; bottom: 1.5rem; z-index: 900; width: calc(100% - 2rem); max-width: 560px; transform: translate(-50%, calc(100% + 2rem)); opacity: 0; pointer-events: none; transition: transform 0.35s ease, opacity 0.35s ease; }
+.msd-ask.is-visible { transform: translate(-50%, 0); opacity: 1; pointer-events: auto; }
+/* Contour bleu qui tourne lentement + halo : la barre se repère sans crier. */
+@property --msd-angle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.msd-ask__form { display: flex; align-items: center; gap: 0.6rem; padding: 0.45rem 0.45rem 0.45rem 1rem; border: 1px solid transparent; border-radius: 0.2rem; background: linear-gradient(#1c1c1c, #1c1c1c) padding-box, conic-gradient(from var(--msd-angle), #2f6bff, #9db8ff 18%, rgba(47, 107, 255, 0.25) 40%, rgba(47, 107, 255, 0.25) 60%, #9db8ff 82%, #2f6bff) border-box; box-shadow: 0 0 0 4px rgba(47, 107, 255, 0.12), 0 14px 44px rgba(47, 107, 255, 0.28), 0 12px 36px rgba(0, 0, 0, 0.5); animation: msd-ask-spin 4s linear infinite; }
+.msd-ask__form:focus-within { box-shadow: 0 0 0 4px rgba(47, 107, 255, 0.25), 0 14px 44px rgba(47, 107, 255, 0.4), 0 12px 36px rgba(0, 0, 0, 0.5); }
+@keyframes msd-ask-spin { to { --msd-angle: 360deg; } }
+.msd-ask__spark { color: #6f97ff; font-size: 1.05rem; }
+.msd-ask__chips { display: flex; flex-wrap: nowrap; gap: 0.45rem; margin-bottom: 0.55rem; overflow-x: auto; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); padding-right: 2rem; }
+.msd-ask__chips::-webkit-scrollbar { display: none; }
+.msd-chip.msd-chip--bar { flex: none; background: #1c1c1c; border-color: rgba(255, 255, 255, 0.22); color: #fff; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35); font-size: 0.8rem; padding: 0.4rem 0.7rem; }
+.msd-ask__form input, .msd-chat__form input { flex: 1; min-width: 0; background: transparent; border: 0; outline: 0; color: #fff; font: inherit; font-size: 1rem; padding: 0.55rem 0; }
+.msd-ask__form input::placeholder { color: rgba(255, 255, 255, 0.75); }
+.msd-chat__form input::placeholder { color: rgba(255, 255, 255, 0.5); }
+/* Fenêtre ouverte, bannière cookies ou prise de rendez-vous affichée : la barre s'efface. */
+.msd-chat-open .msd-ask, .cookie-consent:not([hidden]) ~ .msd-ask, body:has(.cookie-consent:not([hidden])) .msd-ask, body:has(.cal-modal-overlay--open) .msd-ask { transform: translate(-50%, calc(100% + 2rem)); opacity: 0; pointer-events: none; }
+
+.msd-chip { background: transparent; color: rgba(255, 255, 255, 0.85); border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 0.2rem; padding: 0.45rem 0.8rem; font: inherit; font-size: 0.85rem; cursor: pointer; transition: border-color 0.2s, background 0.2s; }
+.msd-chip:hover { border-color: #2f6bff; background: rgba(47, 107, 255, 0.1); color: #fff; }
+.msd-chip.msd-chip--bar:hover { background: #1a2338; }
+
+.msd-chat__send { flex: none; width: 40px; height: 40px; display: grid; place-items: center; background: #2f6bff; color: #fff; border: 0; border-radius: 0.2rem; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; }
+.msd-chat__send:hover { background: #1f57e6; }
+
+.msd-chat-open, .msd-chat-open body { overflow: hidden; }
+
+.msd-chat { position: fixed; inset: 0; z-index: 10000; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.msd-chat[hidden] { display: none; }
+.msd-chat__backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.65); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.msd-chat__window { position: relative; display: flex; flex-direction: column; width: 100%; max-width: 680px; height: min(720px, calc(100vh - 2rem)); background: #111; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 0.2rem; overflow: hidden; color: #fff; font-family: Inter, system-ui, sans-serif; animation: msd-chat-in 0.25s ease; }
+@keyframes msd-chat-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.msd-chat__head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+.msd-chat__brand { display: flex; align-items: center; gap: 0.5rem; margin: 0; }
+.msd-chat__brand img { width: 70px; height: auto; display: block; filter: invert(1) brightness(1.05); }
+.msd-chat__head-actions { display: flex; align-items: center; gap: 0.6rem; }
+/* Même bouton que « Réserver un appel » dans la barre de navigation. */
+.msd-chat__book.contact-button { height: 42px; min-height: 42px; padding: 0 0.95rem; font-size: var(--font-xs); font-weight: 500; line-height: 1; justify-content: center; color: var(--global-color-black); background: var(--global-color-white); border-radius: 0.2rem; }
+.msd-chat__close { width: 42px; height: 42px; display: grid; place-items: center; background: transparent; color: rgba(255, 255, 255, 0.7); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 0.2rem; font-size: 1.4rem; line-height: 1; cursor: pointer; }
+.msd-chat__close:hover { color: #fff; border-color: rgba(255, 255, 255, 0.3); }
+.msd-chat__body { flex: 1; overflow-y: auto; padding: 1.5rem 1.25rem; overscroll-behavior: contain; }
+.msd-chat__welcome { text-align: center; padding: 1.5rem 0 1rem; }
+.msd-chat__welcome[hidden] { display: none; }
+.msd-chat__hello { margin: 0 0 0.6rem; font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; }
+.msd-chat__intro { margin: 0 auto 1.5rem; max-width: 460px; color: rgba(255, 255, 255, 0.65); line-height: 1.55; }
+.msd-chat__chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.msd-chat__messages { display: flex; flex-direction: column; gap: 0.8rem; }
+.msd-msg { max-width: 85%; text-align: left; padding: 0.75rem 1rem; border-radius: 0.2rem; line-height: 1.55; font-size: 0.95rem; }
+.msd-msg p { margin: 0 0 0.5rem; }
+.msd-msg p:last-child { margin-bottom: 0; }
+.msd-msg ul { margin: 0.3rem 0 0.5rem; padding-left: 1.1rem; list-style: disc; }
+.msd-msg li { margin-bottom: 0.25rem; }
+.msd-msg a { color: #7fa6ff; text-decoration: underline; text-underline-offset: 2px; }
+.msd-msg--user { align-self: flex-end; background: #2f6bff; color: #fff; }
+.msd-msg--assistant { align-self: flex-start; background: #181818; border: 1px solid rgba(255, 255, 255, 0.08); color: rgba(255, 255, 255, 0.9); }
+.msd-typing { display: inline-flex; gap: 4px; padding: 0.3rem 0; }
+.msd-typing i { width: 6px; height: 6px; border-radius: 50%; background: rgba(255, 255, 255, 0.5); animation: msd-typing 1s infinite ease-in-out; }
+.msd-typing i:nth-child(2) { animation-delay: 0.15s; }
+.msd-typing i:nth-child(3) { animation-delay: 0.3s; }
+@keyframes msd-typing { 0%, 80%, 100% { opacity: 0.3; transform: none; } 40% { opacity: 1; transform: translateY(-3px); } }
+.msd-chat__form { display: flex; align-items: center; gap: 0.6rem; margin: 0 1.25rem; padding: 0.4rem 0.4rem 0.4rem 1rem; background: #181818; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 0.2rem; }
+.msd-chat__form:focus-within { border-color: #2f6bff; }
+.msd-chat__legal { margin: 0; padding: 0.6rem 1.25rem 0.9rem; font-size: 0.72rem; color: rgba(255, 255, 255, 0.4); text-align: center; }
+
+@media (max-width: 680px) {
+  .msd-ask { bottom: 1rem; }
+  .msd-chat { padding: 0; }
+  .msd-chat__window { max-width: none; height: 100%; height: 100dvh; border: 0; border-radius: 0; }
+  .msd-chat__hello { font-size: 1.6rem; }
+}
+@media (prefers-reduced-motion: reduce) { .msd-chat__window, .msd-typing i { animation: none; } .msd-ask { transition: opacity 0.2s; } .msd-ask__form { animation: none; } }

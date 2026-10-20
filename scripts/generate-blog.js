@@ -1237,6 +1237,7 @@ function renderArticlePage(post, allPosts) {
   ${renderFullFooter('../../../assets')}
 
   <script src="../../../assets/js/script.js"></script>
+  <script src="../../../assets/js/chat-widget.js" defer></script>
 </body>
 </html>`;
 }
@@ -1324,6 +1325,7 @@ function renderBlogIndex(posts) {
   ${renderFullFooter('../assets')}
 
   <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/chat-widget.js" defer></script>
   <script>
     (() => {
       const root = document.querySelector('[data-blog-carousel]');

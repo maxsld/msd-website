@@ -60,17 +60,27 @@ export default async function handler(req, res) {
   if (!history.length || history[history.length - 1].role !== 'user') {
     return res.status(400).json({ error: 'Message manquant' });
   }
-  if (!process.env.GROQ_API_KEY) return res.status(200).json({ reply: FALLBACK });
+  if (!process.env.GROQ_API_KEY) {
+    console.error('[chat] GROQ_API_KEY absente de l\'environnement');
+    return res.status(200).json({ reply: FALLBACK });
+  }
 
   try {
-    // Quota du modèle principal atteint (429) : on retente avec le modèle léger, aux quotas plus larges.
+    // Modèle principal en erreur (quota atteint, modèle retiré…) : on retente avec le modèle léger.
     let r = await ask(MODEL, history);
-    if (r.status === 429 && MODEL !== FALLBACK_MODEL) r = await ask(FALLBACK_MODEL, history);
-    if (!r.ok) return res.status(200).json({ reply: FALLBACK });
+    if (!r.ok && r.status !== 401 && MODEL !== FALLBACK_MODEL) {
+      console.error(`[chat] ${MODEL} : HTTP ${r.status} ${(await r.text()).slice(0, 300)}`);
+      r = await ask(FALLBACK_MODEL, history);
+    }
+    if (!r.ok) {
+      console.error(`[chat] Groq : HTTP ${r.status} ${(await r.text()).slice(0, 300)}`);
+      return res.status(200).json({ reply: FALLBACK });
+    }
     const data = await r.json();
     const reply = data?.choices?.[0]?.message?.content?.trim();
     return res.status(200).json({ reply: reply || FALLBACK });
-  } catch {
+  } catch (err) {
+    console.error('[chat] appel Groq impossible :', err?.name, err?.message);
     return res.status(200).json({ reply: FALLBACK });
   }
 }

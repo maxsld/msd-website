@@ -3,12 +3,12 @@
 // en s'appuyant uniquement sur la base de connaissances de api/_chat-knowledge.js.
 // Variables Vercel : GROQ_API_KEY (obligatoire), GROQ_MODEL (facultatif).
 
-import { SYSTEM_PROMPT } from './_chat-knowledge.js';
+import { SYSTEM_PROMPT, BOOKING_HINT } from './_chat-knowledge.js';
 
 // Modèles essayés dans l'ordre. Si Groq n'en reconnaît aucun (modèle retiré, accès restreint),
 // on lit la liste des modèles disponibles pour cette clé et on prend le premier modèle de chat.
-const PREFERRED = [process.env.GROQ_MODEL, 'llama-3.3-70b-versatile', 'openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'llama-3.1-8b-instant'].filter(Boolean);
-const NOT_CHAT = /whisper|guard|tts|playai|orpheus|distil|prompt|embed|compound/i;
+const PREFERRED = [process.env.GROQ_MODEL, 'openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'qwen/qwen3.8-27b'].filter(Boolean);
+const NOT_CHAT = /whisper|guard|tts|playai|orpheus|distil|prompt|embed|compound|allam/i;
 let available = null;
 const FALLBACK =
   "Je ne peux pas répondre pour le moment. Le plus simple : [réservez un appel de 30 minutes](https://cal.com/maxens-soldan-msd-media/30min) avec Maxens, ou écrivez à maxens.soldan@msd-media.com.";
@@ -23,7 +23,7 @@ function limited(ip) {
   return recent.length > 20;
 }
 
-async function ask(model, history) {
+async function ask(model, history, hint) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 9000);
   try {
@@ -33,9 +33,11 @@ async function ask(model, history) {
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${process.env.GROQ_API_KEY}` },
       body: JSON.stringify({
         model,
-        temperature: 0.3,
-        max_tokens: 350,
-        messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...history],
+        temperature: 0.5,
+        // gpt-oss raisonne avant de répondre : on garde ce raisonnement court, il compte dans les tokens.
+        ...(model.startsWith('openai/gpt-oss') ? { reasoning_effort: 'low' } : {}),
+        max_completion_tokens: 900,
+        messages: [{ role: 'system', content: `${SYSTEM_PROMPT}\n\n${hint}` }, ...history],
       }),
     });
   } finally {
@@ -83,11 +85,15 @@ export default async function handler(req, res) {
   }
 
   try {
+    // Proposer l'appel seulement quand c'est utile : pas s'il a déjà été proposé dans les 3 dernières réponses.
+    const recentBooking = history.filter((m) => m.role === 'assistant').slice(-3).some((m) => m.content.includes('cal.com'));
+    const hint = recentBooking ? BOOKING_HINT.recent : BOOKING_HINT.allowed;
+
     // On essaie les modèles un par un : quota atteint (429) ou modèle introuvable (404) → modèle suivant.
     let models = available || PREFERRED;
     let r;
     for (let i = 0; i < models.length && i < 4; i++) {
-      r = await ask(models[i], history);
+      r = await ask(models[i], history, hint);
       if (r.ok || r.status === 401) break;
       console.error(`[chat] ${models[i]} : HTTP ${r.status} ${(await r.text()).slice(0, 200)}`);
       if (r.status === 404 && !available) { models = await availableModels(); i = -1; if (!models.length) break; }
@@ -98,7 +104,12 @@ export default async function handler(req, res) {
     }
     const data = await r.json();
     // Certains modèles (Qwen, DeepSeek) écrivent leur raisonnement entre balises <think> : on le retire.
-    const reply = data?.choices?.[0]?.message?.content?.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
+    const reply = data?.choices?.[0]?.message?.content
+      ?.replace(/<think>[\s\S]*?<\/think>/g, '')
+      .replace(/[\u2010\u2011\u2012]/g, '-') // tirets insécables de gpt-oss
+      .replace(/\s+[\u2013\u2014]\s+/g, ', ') // tirets cadratins entre deux mots
+      .replace(/\u202f/g, ' ')
+      .trim();
     return res.status(200).json({ reply: reply || FALLBACK });
   } catch (err) {
     console.error('[chat] appel Groq impossible :', err?.name, err?.message);

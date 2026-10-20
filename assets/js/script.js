@@ -2284,10 +2284,6 @@ function initManifestoAnimation() {
 
   btn.classList.add("cal-float-btn--visible");
 
-  setTimeout(function() {
-    if (hasDismissedCalPopup()) return;
-    openModal();
-  }, 5000);
 })();
 
 // Lazy-load des vidéos data-lazy-video : la source ne se charge qu'à l'approche

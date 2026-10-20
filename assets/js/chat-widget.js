@@ -31,6 +31,7 @@
   // Mise en forme minimale et sûre : gras, liens https, listes, retours à la ligne.
   const render = (text) => {
     let h = escapeHtml(text);
+    h = h.replace(/&lt;(https:\/\/[^\s&]+)&gt;/g, ' $1');
     h = h.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
     h = h.replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g, (m, label, url) => {
       const external = !url.startsWith('https://msd-media.com');

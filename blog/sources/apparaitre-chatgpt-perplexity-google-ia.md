@@ -37,6 +37,8 @@ Un prestataire mentionné de façon identique sur 40 sources différentes (blog,
 
 ---
 
+!!outil **Testez votre site gratuitement.** Notre outil [ChatGPT peut-il lire mon site ?](https://msd-media.com/outils/chatgpt-peut-il-lire-mon-site/) vérifie en 10 secondes si les robots de ChatGPT, Claude, Perplexity et Gemini ont accès à vos pages, et ce qui les gêne.
+
 ## Comment apparaître dans ChatGPT : les 7 actions
 
 ### 1. Créer une fiche Wikipedia ou Wikidata

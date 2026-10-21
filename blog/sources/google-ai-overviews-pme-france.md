@@ -106,6 +106,8 @@ Les données structurées sont lues directement par Google AI Overviews : un sch
 
 ---
 
+!!outil **Testez votre site gratuitement.** Notre outil [ChatGPT peut-il lire mon site ?](https://msd-media.com/outils/chatgpt-peut-il-lire-mon-site/) vérifie en 10 secondes si les robots de ChatGPT, Claude, Perplexity et Gemini ont accès à vos pages, et ce qui les gêne.
+
 ## FAQ
 
 **Google AI Overviews est-il activé pour toutes les recherches ?**

@@ -105,10 +105,11 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 
 ## Outils gratuits
 
-- [Outils SEO et IA gratuits](https://msd-media.com/outils/): trois outils sans inscription
+- [Outils SEO et IA gratuits](https://msd-media.com/outils/): quatre outils sans inscription
 - [Audit express de site](https://msd-media.com/outils/audit-site/): vitesse mobile (Google PageSpeed), SEO de la page et lisibilité par les IA, avec les corrections prioritaires
 - [ChatGPT peut-il lire mon site ?](https://msd-media.com/outils/chatgpt-peut-il-lire-mon-site/): accès des robots d'IA (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot…), llms.txt, contenu lisible sans JavaScript
 - [Générateur de llms.txt](https://msd-media.com/outils/generateur-llms-txt/): crée le fichier llms.txt d'un site, pré-rempli à partir de ses pages
+- [Aperçu Google](https://msd-media.com/outils/apercu-google/): simule l'affichage d'une page dans les résultats Google (ordinateur et mobile), avec compteur de caractères et de pixels
 
 ## Sitemaps
 

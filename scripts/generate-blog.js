@@ -527,6 +527,11 @@ function markdownToHtml(markdown) {
       htmlParts.push(`<p class="blog-update">${inlineMarkdownToHtml(joined.slice(9).trim())}</p>`);
       continue;
     }
+    // `!!outil ` : encart qui renvoie vers un outil gratuit (/outils/), au milieu de l'article.
+    if (joined.startsWith('!!outil ')) {
+      htmlParts.push(`<aside class="blog-tool-cta"><p>${inlineMarkdownToHtml(joined.slice(8).trim())}</p></aside>`);
+      continue;
+    }
     htmlParts.push(`<p>${inlineMarkdownToHtml(joined)}</p>`);
   }
 

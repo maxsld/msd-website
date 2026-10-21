@@ -82,6 +82,8 @@ Il existe une différence essentielle entre les **données labo** (test instanta
 
 ---
 
+!!outil **Testez votre site gratuitement.** Notre [audit express](https://msd-media.com/outils/audit-site/) mesure la vitesse mobile avec Google PageSpeed, vérifie le SEO de la page et sa lisibilité par les IA, puis classe les corrections par priorité.
+
 ## La méthode pour passer au vert, métrique par métrique
 
 ### Améliorer le LCP

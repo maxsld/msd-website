@@ -94,6 +94,8 @@ Dans la section "Expérience > Core Web Vitals", vous accédez aux données rée
 
 ---
 
+!!outil **Testez votre site gratuitement.** Notre [audit express](https://msd-media.com/outils/audit-site/) mesure la vitesse mobile avec Google PageSpeed, vérifie le SEO de la page et sa lisibilité par les IA, puis classe les corrections par priorité.
+
 ## Les causes les plus fréquentes de lenteur sur les sites PME à Annecy
 
 Les causes les plus fréquentes de lenteur sur les sites de TPE/PME à Annecy sont, par ordre de fréquence : des images non optimisées (environ 60 % des cas), un hébergement mutualisé bas de gamme, des scripts tiers non contrôlés, des thèmes WordPress surchargés, et l'absence de cache ou de CDN. Corriger ces cinq causes résout la grande majorité des problèmes de performance observés.

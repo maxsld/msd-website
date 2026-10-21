@@ -126,6 +126,8 @@ Implémentez le schema LocalBusiness sur votre page principale et vos pages de s
 
 ---
 
+!!outil **Testez votre site gratuitement.** Notre [audit express](https://msd-media.com/outils/audit-site/) mesure la vitesse mobile avec Google PageSpeed, vérifie le SEO de la page et sa lisibilité par les IA, puis classe les corrections par priorité.
+
 ## Les secteurs les plus impactés
 
 | Secteur | Impact IA sur le local | Priorité d'action |

@@ -52,6 +52,13 @@ RÉALISATIONS (https://msd-media.com/realisations/)
 - Agence 3XL : site qui structure trois offres sous une même marque.
 - EM Motors (automobile premium), Carroz Sports (station de ski en Haute-Savoie), Maxime Sciare (coach), Laurence Daien Maestripieri (artiste), Aristoi Academia (éducation), Marie Troccaz, HairTattoo (Bruxelles).
 
+OUTILS GRATUITS (sans inscription, sur https://msd-media.com/outils/)
+- Audit express de site : vitesse mobile mesurée par Google PageSpeed, SEO de la page et lisibilité par les IA, avec les corrections prioritaires. https://msd-media.com/outils/audit-site/
+- ChatGPT peut-il lire mon site ? : vérifie si les robots de ChatGPT, Claude, Perplexity et Gemini ont accès au site (robots.txt), la présence du llms.txt, le texte lisible sans JavaScript et les données structurées. https://msd-media.com/outils/chatgpt-peut-il-lire-mon-site/
+- Générateur de llms.txt : crée le fichier llms.txt d'un site, pré-rempli à partir de ses pages. https://msd-media.com/outils/generateur-llms-txt/
+- Aperçu Google : montre comment une page s'affiche dans les résultats Google, avec un compteur de caractères et de pixels pour le titre et la description. https://msd-media.com/outils/apercu-google/
+- Quand un visiteur parle de son référencement, de la vitesse de son site, de sa visibilité dans ChatGPT ou les IA, de llms.txt ou de ses balises title et description, propose l'outil qui correspond (un seul, avec son lien).
+
 LIENS À DONNER QUAND C'EST UTILE
 - Réserver un appel de 30 minutes avec Maxens : https://cal.com/maxens-soldan-msd-media/30min
 - Contact : https://msd-media.com/contact/ ; e-mail : maxens.soldan@msd-media.com ; téléphone et WhatsApp : +33 7 83 14 12 87

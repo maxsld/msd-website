@@ -260,8 +260,85 @@
     refresh();
   }
 
+  // ---------- 4. Aperçu Google ----------
+  // Google coupe le titre et la description selon leur largeur en pixels, pas en caractères.
+  // Largeurs utilisées (valeurs couramment observées, Google ne publie pas de limite officielle) :
+  // titre ≈ 600 px en Arial 20 px ; description ≈ 920 px sur ordinateur, 680 px sur mobile, en Arial 14 px.
+  function initSerp(root) {
+    const f = root.querySelector('[data-serp-form]');
+    const fill = root.querySelector('[data-serp-fill]');
+    const status = root.querySelector('[data-serp-status]');
+    const out = root.querySelector('[data-serp-preview]');
+    const canvas = document.createElement('canvas').getContext('2d');
+    let device = 'desktop';
+    const width = (text, font) => { canvas.font = font; return canvas.measureText(text).width; };
+    const cut = (text, font, max) => {
+      if (width(text, font) <= max) return { text, cut: false };
+      let lo = 0, hi = text.length;
+      while (lo < hi) { const mid = Math.ceil((lo + hi) / 2); if (width(text.slice(0, mid) + ' …', font) <= max) lo = mid; else hi = mid - 1; }
+      return { text: text.slice(0, lo).replace(/\s+\S*$/, '') + ' …', cut: true };
+    };
+    const meter = (el, chars, px, max, okRange) => {
+      const ratio = Math.min(px / max, 1.2);
+      const tone = px > max ? 'bad' : chars < okRange[0] ? 'warn' : 'ok';
+      el.querySelector('[data-count]').textContent = `${chars} caractères · ${Math.round(px)} / ${max} px`;
+      const bar = el.querySelector('[data-bar]');
+      bar.style.width = `${Math.min(ratio, 1) * 100}%`;
+      el.dataset.tone = tone;
+      el.querySelector('[data-advice]').textContent = tone === 'bad' ? 'Trop long : Google va couper la fin.' : tone === 'warn' ? 'Un peu court : vous pouvez en dire plus.' : 'Bonne longueur.';
+    };
+    const render = () => {
+      const title = f.title.value.trim() || 'Titre de votre page';
+      const desc = f.description.value.trim() || 'La description qui apparaît sous le titre dans Google. Elle donne envie de cliquer en résumant ce que la page apporte.';
+      let url;
+      try { url = new URL(/^https?:\/\//.test(f.url.value.trim()) ? f.url.value.trim() : `https://${f.url.value.trim() || 'votresite.fr'}`); } catch { url = new URL('https://votresite.fr'); }
+      const site = url.hostname.replace(/^www\./, '');
+      const crumbs = [url.hostname, ...url.pathname.split('/').filter(Boolean)].join(' › ');
+      const descMax = device === 'mobile' ? 680 : 920;
+      const t = cut(title, '20px Arial', 600);
+      const d = cut(desc, '14px Arial', descMax);
+      out.dataset.device = device;
+      out.innerHTML = `
+        <div class="serp-result">
+          <div class="serp-result__site"><span class="serp-result__favicon">${esc(site.charAt(0).toUpperCase())}</span><span><span class="serp-result__name">${esc(site)}</span><span class="serp-result__url">${esc(crumbs)}</span></span></div>
+          <p class="serp-result__title">${esc(t.text)}</p>
+          <p class="serp-result__desc">${esc(d.text)}</p>
+        </div>`;
+      meter(root.querySelector('[data-meter="title"]'), f.title.value.trim().length, width(f.title.value.trim(), '20px Arial'), 600, [30, 65]);
+      meter(root.querySelector('[data-meter="description"]'), f.description.value.trim().length, width(f.description.value.trim(), '14px Arial'), descMax, [110, 160]);
+    };
+    f.addEventListener('input', render);
+    root.querySelectorAll('[data-device]').forEach((b) => b.addEventListener('click', () => {
+      device = b.dataset.device;
+      root.querySelectorAll('[data-device]').forEach((x) => x.classList.toggle('is-active', x === b));
+      render();
+    }));
+    fill.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const url = normalize(fill.url.value);
+      if (!url) return;
+      const btn = fill.querySelector('button');
+      btn.disabled = true;
+      status.textContent = 'Lecture de votre page…';
+      track('tool_run', { tool: 'serp' });
+      try {
+        const d = await api('site', url);
+        f.url.value = d.finalUrl;
+        f.title.value = d.title || '';
+        f.description.value = d.description || '';
+        status.textContent = d.description ? 'Voici votre page telle qu’elle peut apparaître dans Google. Modifiez les textes pour tester d’autres versions.' : 'Votre page n’a pas de méta description : Google en choisit une lui-même dans le texte. Écrivez-en une ci-dessous.';
+        render();
+      } catch (err) {
+        status.textContent = err.message;
+      } finally {
+        btn.disabled = false;
+      }
+    });
+    render();
+  }
+
   document.querySelectorAll('[data-tool]').forEach((root) => {
-    ({ audit: initAudit, ia: initIa, llms: initLlms })[root.dataset.tool]?.(root);
+    ({ audit: initAudit, ia: initIa, llms: initLlms, serp: initSerp })[root.dataset.tool]?.(root);
     root.addEventListener('click', (e) => { if (e.target.closest('[data-tool-cta]')) track('tool_cta', { tool: root.dataset.tool }); });
   });
 })();

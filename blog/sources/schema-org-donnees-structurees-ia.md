@@ -165,6 +165,8 @@ Associer un expert humain à votre contenu augmente sa crédibilité aux yeux de
 
 ---
 
+!!outil **Testez votre site gratuitement.** Notre outil [ChatGPT peut-il lire mon site ?](https://msd-media.com/outils/chatgpt-peut-il-lire-mon-site/) vérifie en 10 secondes si les robots de ChatGPT, Claude, Perplexity et Gemini ont accès à vos pages, et ce qui les gêne.
+
 ## FAQ
 
 **Les données structurées suffisent-elles pour le GEO ?**

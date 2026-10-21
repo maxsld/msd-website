@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audit SEO gratuit de votre site : vitesse, SEO et IA</title>
+  <meta name="description" content="Audit SEO gratuit et immédiat : vitesse mobile mesurée par Google PageSpeed, balises, titres, images, données structurées et lisibilité par les IA. Sans inscription." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://msd-media.com/outils/audit-site/" />
+  <meta property="og:title" content="Audit SEO gratuit de votre site : vitesse, SEO et IA" />
+  <meta property="og:description" content="Audit SEO gratuit et immédiat : vitesse mobile mesurée par Google PageSpeed, balises, titres, images, données structurées et lisibilité par les IA. Sans inscription." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://msd-media.com/outils/audit-site/" />
+  <meta property="og:image" content="https://msd-media.com/assets/img/img-cover.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Audit SEO gratuit de votre site : vitesse, SEO et IA" />
+  <meta name="twitter:description" content="Audit SEO gratuit et immédiat : vitesse mobile mesurée par Google PageSpeed, balises, titres, images, données structurées et lisibilité par les IA. Sans inscription." />
+  <meta name="twitter:image" content="https://msd-media.com/assets/img/img-cover.webp" />
+  <link rel="icon" type="image/png" href="https://msd-media.com/assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="https://msd-media.com/assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="https://msd-media.com/assets/img/favicon.ico" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="../../assets/css/style.css?v=6fd3e5af" />
+  <link rel="preload" href="../../assets/css/animations.css?v=9f55c995" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="../../assets/css/responsive.css?v=bf31f542" />
+  <link rel="stylesheet" href="../../assets/css/fontawesome-subset.css?v=fb277f07">
+<!-- AI referrer detection — runs immediately, no consent required (aucun cookie) -->
+<script>
+(function(){
+  var AI_SOURCES = {
+    'perplexity.ai': 'perplexity',
+    'chatgpt.com': 'chatgpt',
+    'chat.openai.com': 'chatgpt',
+    'claude.ai': 'claude',
+    'gemini.google.com': 'gemini',
+    'bard.google.com': 'gemini',
+    'copilot.microsoft.com': 'copilot',
+    'bing.com/chat': 'copilot',
+    'you.com': 'you',
+    'phind.com': 'phind',
+    'deepseek.com': 'deepseek'
+  };
+  var ref = document.referrer;
+  var aiSource = null;
+  for (var domain in AI_SOURCES) {
+    if (ref.indexOf(domain) !== -1) { aiSource = AI_SOURCES[domain]; break; }
+  }
+  window.dataLayer = window.dataLayer || [];
+  if (aiSource) {
+    window.dataLayer.push({ event: 'ai_referral', ai_source: aiSource, referrer: ref });
+    sessionStorage.setItem('_msd_ai_source', aiSource);
+  }
+  // Also expose for GTM variable use
+  window._msdAiSource = aiSource;
+})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.js-email-link').forEach(function (el) {
+    var addr = el.getAttribute('data-u') + '@' + el.getAttribute('data-d');
+    el.setAttribute('href', 'mailto:' + addr);
+    if (el.textContent.trim() && !el.querySelector('i')) el.textContent = addr;
+  });
+});
+</script>
+
+<!-- Tracking — chargé uniquement après consentement cookie -->
+<script>
+function _msdLoadTracking(){
+  // MSD Analytics
+  (function(){
+    var sid=sessionStorage.getItem('_msd')||Math.random().toString(36).slice(2);
+    sessionStorage.setItem('_msd',sid);
+    var t=Date.now();
+    var iv;
+    function send(d){
+      var p={url:location.href,referrer:document.referrer,session_id:sid,duration_seconds:Math.round(d/1000)};
+      var ok=false;
+      try { ok=navigator.sendBeacon('https://app.msd-media.com/api/track',JSON.stringify(p)); } catch(e) {}
+      if(!ok){
+        fetch('https://app.msd-media.com/api/track',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(p),
+          keepalive:true
+        }).catch(function(){});
+      }
+    }
+    function start(){
+      if(iv) return;
+      iv=setInterval(function(){send(Date.now()-t);},15000);
+    }
+    function stop(){
+      if(!iv) return;
+      clearInterval(iv);
+      iv=undefined;
+    }
+    document.addEventListener('visibilitychange',function(){
+      if(document.visibilityState==='hidden'){send(Date.now()-t);stop();}
+      else{t=Date.now();send(0);start();}
+    });
+    send(0);
+    start();
+    // Scroll heatmap tracking
+    (function(){
+      var path=location.pathname;
+      var scrollEvts=[];
+      var lastPct=0;
+      var pauseTimer=null;
+      function getPct(){return Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight||1))*100);}
+      function bucket(p){return Math.floor(p/5)*5;}
+      function flush(){
+        if(!scrollEvts.length)return;
+        var evts=scrollEvts.splice(0);
+        navigator.sendBeacon('https://app.msd-media.com/api/track-scroll',JSON.stringify({session_id:sid,path:path,events:evts}));
+      }
+      window.addEventListener('scroll',function(){
+        var pct=getPct();
+        if(Math.abs(pct-lastPct)>10&&pct<lastPct){scrollEvts.push({type:'backtrack',pct:bucket(pct)});}
+        lastPct=pct;
+        if(pauseTimer)clearTimeout(pauseTimer);
+        pauseTimer=setTimeout(function(){scrollEvts.push({type:'pause',pct:bucket(pct)});flush();},1500);
+      },{passive:true});
+      window.addEventListener('beforeunload',function(){scrollEvts.push({type:'exit',pct:bucket(getPct())});flush();});
+      setInterval(flush,30000);
+    })();
+  })();
+  // Google Analytics (GA4)
+  (function(){
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-VKSH9YQXZS';
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-VKSH9YQXZS');
+  })();
+}
+// Signal de consentement pour Google Tag Manager. Les balises qui deposent des
+// cookies (Clarity, GA4) doivent se declencher sur msd_consent_accepted et non
+// sur le chargement de la page.
+function _msdConsentSignal(state){
+  window.dataLayer=window.dataLayer||[];
+  window.dataLayer.push({
+    event: state==='accepted' ? 'msd_consent_accepted' : 'msd_consent_refused',
+    msd_consent: state
+  });
+}
+(function(){
+  var consent=localStorage.getItem('msd_cookie_consent');
+  if(consent==='accepted'){_msdConsentSignal('accepted');_msdLoadTracking();return;}
+  if(consent==='refused'){_msdConsentSignal('refused');return;}
+  if(window.innerWidth<=680){_msdLoadTracking();return;}
+  function init(){
+  var banner=document.getElementById('cookie-consent');
+  if(!banner)return;
+  function show(){banner.hidden=false;}
+  function hide(){banner.hidden=true;}
+  show();
+  document.getElementById('cookie-accept').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','accepted');
+    _msdConsentSignal('accepted');
+    hide();
+    _msdLoadTracking();
+  });
+  document.getElementById('cookie-refuse').addEventListener('click',function(){
+    localStorage.setItem('msd_cookie_consent','refused');
+    _msdConsentSignal('refused');
+    hide();
+  });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://msd-media.com/outils/audit-site/#webpage",
+      "url": "https://msd-media.com/outils/audit-site/",
+      "name": "Audit SEO gratuit de votre site : vitesse, SEO et IA",
+      "description": "Audit SEO gratuit et immédiat : vitesse mobile mesurée par Google PageSpeed, balises, titres, images, données structurées et lisibilité par les IA. Sans inscription.",
+      "inLanguage": "fr-FR",
+      "isPartOf": {
+        "@id": "https://msd-media.com/#website"
+      },
+      "publisher": {
+        "@id": "https://msd-media.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://msd-media.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Outils gratuits",
+          "item": "https://msd-media.com/outils/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Audit express de site",
+          "item": "https://msd-media.com/outils/audit-site/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "L’audit est-il vraiment gratuit ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, sans inscription ni e-mail. Collez l’adresse de votre site et le résultat s’affiche directement sur la page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi ma note de vitesse change-t-elle d’un test à l’autre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google PageSpeed simule un mobile sur un réseau moyen : la note varie de quelques points selon la charge de votre serveur et du réseau au moment du test. Regardez la tendance plutôt qu’un chiffre isolé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "L’audit analyse-t-il tout mon site ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non, uniquement la page dont vous donnez l’adresse (souvent la page d’accueil). Pour analyser tout le site, lancez l’outil sur vos pages clés ou demandez un audit complet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Conservez-vous les sites analysés ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Nous lisons la page publique au moment de l’analyse, comme le ferait un moteur de recherche, et nous ne conservons ni le résultat ni la liste des sites analysés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Une bonne note garantit-elle d’être premier sur Google ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. L’audit vérifie les bases techniques et le contenu de la page. Le classement dépend aussi de la concurrence, de la qualité de vos contenus et des liens qui pointent vers votre site."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Audit express de site",
+      "url": "https://msd-media.com/outils/audit-site/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Tous (navigateur web)",
+      "inLanguage": "fr-FR",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "provider": {
+        "@id": "https://msd-media.com/#organization"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body class="home-page tools-page" data-asset-base="../../assets">
+  <div class="top-announcement" role="banner">
+    <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
+    <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
+  </div>
+<header class="navbar">
+    <div class="nav-left">
+      <a href="https://msd-media.com/" aria-label="Accueil MSD Media">
+        <img height="151" width="372" src="../../assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager">
+        <span style="position:absolute;left:-9999px;">Accueil MSD Media</span>
+      </a>
+      <div class="nav-menu" data-nav-menu>
+        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
+          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
+          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
+          <a href="https://msd-media.com/" data-i18n="nav_home">Accueil</a>
+          <a href="https://msd-media.com/presse/" data-i18n="nav_press">Presse</a>
+          <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+          <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+          <a href="https://msd-media.com/contact/" data-i18n="nav_contact">Contact</a>
+          <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+          <a href="https://msd-media.com/affiliation/" data-i18n="nav_affiliation">Affiliation</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-center" aria-label="Navigation principale">
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/blog/"><span class="nav-link-label" data-i18n="nav_resources">Ressources</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+              <a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a>
+              <a href="https://msd-media.com/outils/" data-i18n="nav_tools">Outils gratuits</a>
+              <a href="https://msd-media.com/presse/" data-i18n="nav_press">Presse</a>
+              <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+              <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+              <a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img width="1280" height="720" src="https://msd-media.com/assets/img/navbar-img.webp" alt="Aperçu des ressources MSD Media : blog, glossaire, réalisations" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown-item">
+        <a href="https://msd-media.com/#secteurs"><span class="nav-link-label" data-i18n="nav_sector">Secteur</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+        <div class="nav-megamenu">
+          <div class="nav-megamenu__inner">
+            <div class="nav-megamenu__links">
+              <a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
+              <a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
+              <a href="https://msd-media.com/site-web-medecine-esthetique/">Médecine esthétique</a>
+              <a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
+              <a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
+              <a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
+              <a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
+            <a href="https://msd-media.com/site-web-coach/" data-i18n="nav_coaches">Coachs &amp; consultants</a>
+            </div>
+            <div class="nav-megamenu__media">
+              <img width="1920" height="1080" src="https://msd-media.com/assets/img/navbar-img2.webp" alt="Aperçu des secteurs accompagnés par MSD Media" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+      <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+    </nav>
+
+    <div class="nav-right">
+      <label class="lang-switch" for="lang-select">
+        <span class="lang-switch__label">Langue</span>
+        <select class="lang-switch__select" id="lang-select" data-lang-select aria-label="Choisir la langue">
+          <option value="fr">🇫🇷 FR</option>
+          <option value="en">🇬🇧 EN</option>
+        </select>
+      </label>
+      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank" rel="noopener noreferrer">Réserver un appel</a>
+      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="section-tag section-tag--dark">Outil gratuit</h2>
+      <h1 class="hero__title"><span>Audit SEO gratuit de votre site.</span></h1>
+      <p class="hero__subheading">Vitesse mobile, SEO et lisibilité par les IA : une note sur 100 pour chaque point et les corrections à faire en premier.</p>
+    </section>
+
+    <section class="tool-section section-grid" id="outil" aria-label="Outil">
+      <div class="tool-card" data-tool="audit">
+        <form class="tool-form" novalidate>
+          <label class="msd-visually-hidden" for="tool-url">Adresse de votre site</label>
+          <input id="tool-url" name="url" type="text" inputmode="url" autocomplete="url" placeholder="votresite.fr" required>
+          <button type="submit">Lancer l’audit</button>
+        </form>
+        <p class="tool-hint">Gratuit, sans inscription. La mesure de vitesse peut prendre jusqu’à 30 secondes.</p>
+        <div data-tool-result aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="tool-explain section-grid" id="outil-explications">
+      <h2 class="section-title section-title--dark">Ce que l’audit vérifie.</h2>
+      <div class="tool-explain__grid">
+        <article class="tool-explain__card">
+          <p class="tool-explain__num">01</p>
+          <h3>Vitesse mobile</h3>
+          <p>Mesurée par Google PageSpeed Insights sur mobile, avec le temps d’affichage du contenu principal. C’est l’outil de référence de Google.</p>
+        </article>
+        <article class="tool-explain__card">
+          <p class="tool-explain__num">02</p>
+          <h3>SEO de la page</h3>
+          <p>Balise title, méta description, titre H1, canonical, textes alternatifs des images, aperçu de partage, quantité de contenu, HTTPS, sitemap et robots.txt.</p>
+        </article>
+        <article class="tool-explain__card">
+          <p class="tool-explain__num">03</p>
+          <h3>Lisibilité par les IA</h3>
+          <p>Présence et validité des données structurées (JSON-LD) et du fichier llms.txt, qui aident ChatGPT et les autres IA à comprendre votre activité.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="tool-explain section-grid" id="outils-liste">
+      <h2 class="section-title section-title--dark">Les autres outils gratuits</h2>
+      <div class="tool-hub" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+        <a class="tool-hub__card" href="https://msd-media.com/outils/chatgpt-peut-il-lire-mon-site/">
+          <span class="tool-hub__icon" aria-hidden="true">✦</span>
+          <span class="tool-free">Gratuit</span>
+          <h2>ChatGPT peut-il lire mon site ?</h2>
+          <p>Vérifiez si ChatGPT, Claude, Perplexity et Gemini ont accès à votre site, et ce qui les empêche de le comprendre.</p>
+          <span class="tool-hub__link">Faire le test →</span>
+        </a>
+        <a class="tool-hub__card" href="https://msd-media.com/outils/generateur-llms-txt/">
+          <span class="tool-hub__icon" aria-hidden="true">{ }</span>
+          <span class="tool-free">Gratuit</span>
+          <h2>Générateur de llms.txt</h2>
+          <p>Créez en 2 minutes le fichier qui présente votre site aux IA, pré-rempli à partir de vos pages.</p>
+          <span class="tool-hub__link">Créer mon fichier →</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="faq section-grid" id="faq">
+    <div class="faq-container">
+      <h3 class="section-title section-title--dark faq-title">Questions fréquentes</h3>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>L’audit est-il vraiment gratuit ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Oui, sans inscription ni e-mail. Collez l’adresse de votre site et le résultat s’affiche directement sur la page.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Pourquoi ma note de vitesse change-t-elle d’un test à l’autre ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Google PageSpeed simule un mobile sur un réseau moyen : la note varie de quelques points selon la charge de votre serveur et du réseau au moment du test. Regardez la tendance plutôt qu’un chiffre isolé.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>L’audit analyse-t-il tout mon site ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Non, uniquement la page dont vous donnez l’adresse (souvent la page d’accueil). Pour analyser tout le site, lancez l’outil sur vos pages clés ou demandez un audit complet.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Conservez-vous les sites analysés ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Non. Nous lisons la page publique au moment de l’analyse, comme le ferait un moteur de recherche, et nous ne conservons ni le résultat ni la liste des sites analysés.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Une bonne note garantit-elle d’être premier sur Google ?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Non. L’audit vérifie les bases techniques et le contenu de la page. Le classement dépend aussi de la concurrence, de la qualité de vos contenus et des liens qui pointent vers votre site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section" id="rdv">
+    <div class="booking-section__inner">
+      <div class="booking-section__embed">
+        <iframe
+          src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&theme=dark"
+          title="Prendre rendez-vous avec MSD Media"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <!-- Bloc gauche : logo + slogan -->
+      <div class="footer-left">
+        <img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="Logo MSD Media" class="footer-logo" loading="lazy" decoding="async">
+        <p class="footer-contact-text"><span class="footer-contact-title" data-i18n="footer_contact_title">Nous contacter</span><br><a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" rel="nofollow">Envoyer un email</a></p>
+      </div>
+
+      <div class="footer-offices">
+        <article class="footer-office-card">
+          <p class="footer-office-city">Annecy</p>          <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
+        </article>
+        <article class="footer-office-card">
+          <p class="footer-office-city">Munich</p>          <p class="footer-office-address">Munich, Bavière, Allemagne</p>
+        </article>
+      </div>
+
+      <!-- Bloc droit : contact + réseaux -->
+      <div class="footer-contact">
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn" rel="noopener noreferrer"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram" rel="noopener noreferrer"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp" rel="noopener noreferrer"><i
+              class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Villes prioritaires -->
+    <div class="footer-award">
+      <a class="footer-award-tag" href="https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france" target="_blank" rel="nofollow noopener noreferrer">🇫🇷 Top 7 des agences web en France</a>
+    </div>
+    <div class="footer-cities">
+      <ul>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Agence web Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-lyon/">Agence web Lyon</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Agence web Genève</a></li>
+        <li><a href="https://msd-media.com/agence-web-paris/">Agence web Paris</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Agence web Strasbourg</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_company">Entreprise</p>
+        <ul>
+          <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
+          <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
+          <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
+          <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
+          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call" rel="noopener noreferrer">Réserver un appel</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-column__title" data-i18n="footer_col_resources">Ressources</p>
+        <ul>
+          <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="https://msd-media.com/glossaire/" data-i18n="footer_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/outils/" data-i18n="footer_tools">Outils gratuits</a></li>
+          <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Mentions légales -->
+    <div class="footer-legal">
+      <a href="https://msd-media.com/terms/mentions.html" target="_blank" data-i18n="footer_legal_mentions" rel="noopener noreferrer">Mentions légales</a>
+      <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="footer_privacy_policy" rel="noopener noreferrer">Politique de confidentialité</a>
+      <a href="https://msd-media.com/terms/cgv.html" target="_blank" data-i18n="footer_terms_sale" rel="noopener noreferrer">Conditions générales de vente</a>
+      <a href="https://msd-media.com/en/" hreflang="en" lang="en">English version</a>
+    </div>
+    <!-- Partenaires & appartenances -->
+    <div class="footer-partners">
+      <a class="footer-partner" href="https://www.ftalps.com/company/msd-media/"
+         target="_blank" rel="noopener noreferrer">
+        <img class="footer-partner__logo footer-partner__logo--invert"
+             src="https://msd-media.com/assets/img/logos/french-tech-full.webp"
+             alt="La French Tech" width="146" height="220" loading="lazy" decoding="async">
+        <span>Membre French Tech Alpes</span>
+      </a>
+      <a class="footer-partner" href="https://www.designrush.com/agency/website-design-development"
+         target="_blank" rel="nofollow sponsored noopener noreferrer">
+        <img class="footer-partner__logo"
+             src="https://msd-media.com/assets/img/logos/designrush-mark.webp"
+             alt="DesignRush" width="123" height="220" loading="lazy" decoding="async">
+        <span>Verified by Designrush</span>
+      </a>
+      <a class="footer-partner" href="https://www.sortlist.com/fr/agency/msd-media"
+         target="_blank" rel="nofollow noopener noreferrer">
+        <img class="footer-partner__logo footer-partner__logo--invert footer-partner__logo--sortlist"
+             src="https://msd-media.com/assets/img/logos/sortlist-verified.webp"
+             alt="Sortlist" width="512" height="144" loading="lazy" decoding="async">
+        <span>Agence vérifiée Sortlist</span>
+      </a>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
+    </div>
+</footer>
+
+
+  <script src="../../assets/js/script.js?v=ddfe9208"></script>
+  <script src="../../assets/js/chat-widget.js?v=96023056" defer></script>
+  <script src="../../assets/js/outils.js?v=54889c7c" defer></script>
+  <div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Consentement cookies" hidden>
+    <div class="cookie-consent__inner">
+      <p class="cookie-consent__text" data-i18n="cookie_text">Nous utilisons des cookies pour mesurer l'audience du site et améliorer votre expérience. <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" data-i18n="cookie_learn_more" rel="noopener noreferrer">En savoir plus</a></p>
+      <div class="cookie-consent__actions">
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--refuse" id="cookie-refuse" data-i18n="cookie_refuse">Refuser</button>
+        <button type="button" class="cookie-consent__btn cookie-consent__btn--accept" id="cookie-accept" data-i18n="cookie_accept">Accepter</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

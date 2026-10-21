@@ -885,6 +885,7 @@ function renderSiteHeader() {
             <div class="nav-megamenu__links">
               <a href="${SITE_URL}/blog/" data-i18n="nav_blog">Blog</a>
               <a href="${SITE_URL}/glossaire/" data-i18n="nav_glossary">Glossaire</a>
+              <a href="${SITE_URL}/outils/" data-i18n="nav_tools">Outils gratuits</a>
               <a href="${SITE_URL}/realisations/" data-i18n="nav_realisations">Réalisations</a>
               <a href="${SITE_URL}/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
               <a href="${SITE_URL}/#faq" data-i18n="nav_faq">FAQ</a>
@@ -1051,6 +1052,7 @@ function renderFullFooter(assetPrefix) {
         <ul>
           <li><a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a></li>
           <li><a href="https://msd-media.com/glossaire/" data-i18n="footer_glossary">Glossaire</a></li>
+          <li><a href="https://msd-media.com/outils/" data-i18n="footer_tools">Outils gratuits</a></li>
           <li><a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a></li>
           <li><a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a></li>
           <li><a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a></li>

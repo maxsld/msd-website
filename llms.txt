@@ -103,6 +103,13 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 - [Médecine esthétique : ce que votre site peut afficher en 2026](https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/)
 - [Avis Google médecin : que répondre (modèles conformes)](https://msd-media.com/blog/articles/avis-google-medecin-que-repondre/)
 
+## Outils gratuits
+
+- [Outils SEO et IA gratuits](https://msd-media.com/outils/): trois outils sans inscription
+- [Audit express de site](https://msd-media.com/outils/audit-site/): vitesse mobile (Google PageSpeed), SEO de la page et lisibilité par les IA, avec les corrections prioritaires
+- [ChatGPT peut-il lire mon site ?](https://msd-media.com/outils/chatgpt-peut-il-lire-mon-site/): accès des robots d'IA (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot…), llms.txt, contenu lisible sans JavaScript
+- [Générateur de llms.txt](https://msd-media.com/outils/generateur-llms-txt/): crée le fichier llms.txt d'un site, pré-rempli à partir de ses pages
+
 ## Sitemaps
 
 - [sitemap.xml](https://msd-media.com/sitemap.xml)

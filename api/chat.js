@@ -116,8 +116,10 @@ export default async function handler(req, res) {
       ?.replace(/<think>[\s\S]*?<\/think>/g, '')
       .replace(/[\u2010\u2011\u2012]/g, '-') // tirets insécables de gpt-oss
       .replace(/\s+[\u2013\u2014]\s+/g, ', ') // tirets cadratins entre deux mots
-      .replace(/\u202f/g, ' ')
-      .replace(/cod[ée]e?s? à la main/gi, 'sur mesure')
+      .replace(/[\u202f\u00a0]/g, ' ')
+      .replace(/[ \t]*:[ \t]+-[ \t]+/g, ' :\n- ') // liste écrite sur une seule ligne → une ligne par élément
+      .replace(/[ \t]{2,}-[ \t]+/g, '\n- ')
+      .replace(/cod[ée]e?s?\s+(à|a)\s+la\s+main|fait(e?s?)\s+main/gi, 'sur mesure')
       .trim()
       .replace(/^(Bien sûr|Absolument|Tout à fait|Excellente question)\s*[.!,]\s*/i, '')
       .replace(/^./, (c) => c.toUpperCase());
@@ -127,10 +129,12 @@ export default async function handler(req, res) {
       !allowBooking && /cal\.com|réserv\w* un appel|book a call/i,
       !priceAsked && /\d[\d\s.,]*\s?(€|euros?)|€\s?\d/i,
     ].filter(Boolean);
+    // Ligne par ligne pour garder les listes et les retours à la ligne, phrase par phrase dans chaque ligne.
     const cleaned = !banned.length || !reply ? reply : reply
-      .split(/(?<=[.!?])\s+|\n+/)
-      .filter((part) => !banned.some((re) => re.test(part)))
-      .join(' ')
+      .split('\n')
+      .map((line) => line.split(/(?<=[.!?])\s+/).filter((part) => !banned.some((re) => re.test(part))).join(' '))
+      .filter((line, i, all) => line.trim() || (i > 0 && all[i - 1].trim()))
+      .join('\n')
       .trim();
     return res.status(200).json({ reply: cleaned || reply || FALLBACK });
   } catch (err) {

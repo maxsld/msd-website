@@ -3,13 +3,15 @@
 // en s'appuyant uniquement sur la base de connaissances de api/_chat-knowledge.js.
 // Variables Vercel : GROQ_API_KEY (obligatoire), GROQ_MODEL (facultatif).
 
-import { SYSTEM_PROMPT, BOOKING_HINT } from './_chat-knowledge.js';
+import { SYSTEM_PROMPT, BOOKING_HINT, PRICE_HINT } from './_chat-knowledge.js';
 
 // Modèles essayés dans l'ordre. Si Groq n'en reconnaît aucun (modèle retiré, accès restreint),
 // on lit la liste des modèles disponibles pour cette clé et on prend le premier modèle de chat.
 const PREFERRED = [process.env.GROQ_MODEL, 'openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'qwen/qwen3.8-27b'].filter(Boolean);
 const NOT_CHAT = /whisper|guard|tts|playai|orpheus|distil|prompt|embed|compound|allam/i;
 let available = null;
+// Question de prix explicite (« en combien de temps » n'en est pas une).
+const PRICE_INTENT = /prix|tarif|co[uû]te?|co[uû]ts|budget|\bcher\b|devis|€|euros?|combien(?!\s+de\s+(temps|jours|semaines|mois|pages))|price|pricing|cost|how much|quote|\brates?\b/i;
 const BOOKING_INTENT = /devis|projet|d[ée]marrer|commencer|lancer|rendez|rdv|appel|appeler|contact|joindre|parler|[ée]changer|disponib|travailler ensemble|quote|project|start|call|book|meeting|contact|reach/i;
 const FALLBACK =
   "Je ne peux pas répondre pour le moment. Le plus simple : [réservez un appel de 30 minutes](https://cal.com/maxens-soldan-msd-media/30min) avec Maxens, ou écrivez à maxens.soldan@msd-media.com.";
@@ -92,7 +94,8 @@ export default async function handler(req, res) {
     const intent = BOOKING_INTENT.test(lastUser);
     const recentBooking = history.filter((m) => m.role === 'assistant').slice(-3).some((m) => m.content.includes('cal.com'));
     const allowBooking = intent && !recentBooking;
-    const hint = allowBooking ? BOOKING_HINT.allowed : BOOKING_HINT.never;
+    const priceAsked = PRICE_INTENT.test(lastUser);
+    const hint = [allowBooking ? BOOKING_HINT.allowed : BOOKING_HINT.never, priceAsked ? '' : PRICE_HINT].filter(Boolean).join('\n');
 
     // On essaie les modèles un par un : quota atteint (429) ou modèle introuvable (404) → modèle suivant.
     let models = available || PREFERRED;
@@ -114,11 +117,19 @@ export default async function handler(req, res) {
       .replace(/[\u2010\u2011\u2012]/g, '-') // tirets insécables de gpt-oss
       .replace(/\s+[\u2013\u2014]\s+/g, ', ') // tirets cadratins entre deux mots
       .replace(/\u202f/g, ' ')
-      .trim();
+      .replace(/cod[ée]e?s? à la main/gi, 'sur mesure')
+      .trim()
+      .replace(/^(Bien sûr|Absolument|Tout à fait|Excellente question)\s*[.!,]\s*/i, '')
+      .replace(/^./, (c) => c.toUpperCase());
     // Filet de sécurité : si l'appel ne devait pas être proposé, on retire les phrases qui contiennent le lien.
-    const cleaned = allowBooking || !reply ? reply : reply
+    // Même chose pour les montants quand aucun prix n'a été demandé.
+    const banned = [
+      !allowBooking && /cal\.com|réserv\w* un appel|book a call/i,
+      !priceAsked && /\d[\d\s.,]*\s?(€|euros?)|€\s?\d/i,
+    ].filter(Boolean);
+    const cleaned = !banned.length || !reply ? reply : reply
       .split(/(?<=[.!?])\s+|\n+/)
-      .filter((part) => !/cal\.com|réserv\w* un appel|book a call/i.test(part))
+      .filter((part) => !banned.some((re) => re.test(part)))
       .join(' ')
       .trim();
     return res.status(200).json({ reply: cleaned || reply || FALLBACK });

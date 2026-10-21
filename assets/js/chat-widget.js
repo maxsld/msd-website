@@ -39,7 +39,7 @@
     const lines = h.split('\n');
     let out = '', inList = false;
     for (const line of lines) {
-      const li = line.match(/^\s*[-•]\s+(.*)/);
+      const li = line.match(/^\s*(?:[-•]|\d+[.)])\s+(.*)/);
       if (li) { if (!inList) { out += '<ul>'; inList = true; } out += `<li>${li[1]}</li>`; continue; }
       if (inList) { out += '</ul>'; inList = false; }
       if (line.trim()) out += `<p>${line}</p>`;

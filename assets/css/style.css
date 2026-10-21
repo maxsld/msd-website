@@ -9400,3 +9400,14 @@ a.sector-card:hover {
   .msd-chat__hello { font-size: 1.6rem; }
 }
 @media (prefers-reduced-motion: reduce) { .msd-chat__window, .msd-typing i { animation: none; } .msd-ask { transition: opacity 0.2s; } .msd-ask__form { animation: none; } }
+
+/* Même espace entre toutes les sections : 5rem au-dessus et 5rem en dessous (160 px entre deux sections),
+   sur ordinateur comme sur mobile, sur l'accueil et les pages villes / métiers / services.
+   Le :has(#accessibilite-sobriete) cible ces pages et l'emporte sur les réglages propres à chaque section. */
+body:has(#accessibilite-sobriete) .section-grid:not(.hero),
+body:has(#accessibilite-sobriete) .booking-section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}

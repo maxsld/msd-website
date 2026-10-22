@@ -1009,11 +1009,11 @@ function renderFullFooter(assetPrefix) {
       </div>
       <div class="footer-offices">
         <article class="footer-office-card">
-          <p class="footer-office-city">Annecy</p>
+          <p class="footer-office-city">Annecy</p><p class="footer-office-time" data-office-tz="Europe/Paris" aria-label="Heure locale à Annecy"></p>
           <p class="footer-office-address">6 Rue Paul Guiton <br> 74000 Annecy, France</p>
         </article>
         <article class="footer-office-card">
-          <p class="footer-office-city">Munich</p>
+          <p class="footer-office-city">Munich</p><p class="footer-office-time" data-office-tz="Europe/Berlin" aria-label="Heure locale à Munich"></p>
           <p class="footer-office-address">Munich, Bavière, Allemagne</p>
         </article>
       </div>

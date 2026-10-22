@@ -9652,3 +9652,7 @@ body:has(#accessibilite-sobriete) .booking-section {
 .blog-preferred-source--hero { margin: 1.4rem 0 0; text-align: center; }
 .blog-preferred-source--hero a { background: rgba(255, 255, 255, 0.04); border-color: rgba(255, 255, 255, 0.14); color: rgba(255, 255, 255, 0.85) !important; box-shadow: none; }
 .blog-preferred-source--hero a:hover { border-color: rgba(255, 255, 255, 0.3); }
+
+/* Footer : heure locale sous chaque bureau */
+.footer-office-time { margin: 0.15rem 0 0.35rem; color: #fff; font-size: 1.35rem; font-weight: 500; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.footer-office-time:empty { display: none; }

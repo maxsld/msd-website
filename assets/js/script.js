@@ -2434,3 +2434,20 @@ function initManifestoAnimation() {
     });
   });
 })();
+
+// ---------- Footer : heure locale des bureaux ----------
+(function () {
+  // Footer : heure locale de chaque bureau, mise à jour toutes les 30 secondes.
+  var clocks = Array.prototype.slice.call(document.querySelectorAll("[data-office-tz]"));
+  if (clocks.length) {
+    var tick = function () {
+      clocks.forEach(function (el) {
+        try {
+          el.textContent = new Intl.DateTimeFormat("fr-FR", { hour: "2-digit", minute: "2-digit", timeZone: el.getAttribute("data-office-tz") }).format(new Date());
+        } catch (e) {}
+      });
+    };
+    tick();
+    setInterval(tick, 30000);
+  }
+})();

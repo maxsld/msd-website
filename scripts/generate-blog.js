@@ -138,6 +138,15 @@ const TOP_ANNOUNCEMENT_HTML = `<div class="top-announcement" role="banner">
     <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
     <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
   </div>`;
+// Badge « Sources préférées » de Google : le lecteur ajoute msd-media.com à ses sources,
+// mises en avant pour lui dans « À la une ». Lien officiel : google.com/preferences/source?q=domaine.
+const PREFERRED_SOURCE_URL = 'https://www.google.com/preferences/source?q=msd-media.com';
+function renderPreferredSourceHtml(variant = '') {
+  return `<aside class="blog-preferred-source${variant ? ` blog-preferred-source--${variant}` : ''}">
+          <a href="${PREFERRED_SOURCE_URL}" target="_blank" rel="noopener noreferrer"><svg class="blog-preferred-source__g" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#4285F4" d="M22.6 12.3c0-.8-.1-1.5-.2-2.3H12v4.3h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-1.9 3.3-4.8 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.7c-1 .7-2.2 1.1-3.7 1.1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.8 14.2a6.6 6.6 0 0 1 0-4.3V7.1H2.1a11 11 0 0 0 0 9.9z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.3 1.7l3.2-3.2A11 11 0 0 0 2.1 7.1l3.7 2.8C6.7 7.3 9.1 5.4 12 5.4z"/></svg><span>Ajoutez MSD Media à vos sources préférées sur Google</span></a>
+        </aside>`;
+}
+
 function renderAiSummaryHtml(pageUrl) {
   const prompt = `Résume-moi cet article MSD Media : ${pageUrl}`;
   const encodedPrompt = encodeURIComponent(prompt);
@@ -1235,6 +1244,7 @@ function renderArticlePage(post, allPosts) {
         ${renderAiSummaryHtml(pageUrl)}
         ${post.slug === 'maxens-soldan' ? `<img src="${escapeHtml(image)}" alt="${escapeHtml(post.title)}" loading="lazy" style="width:100%;border-radius:18px;margin-bottom:1.25rem;" />` : ''}
         ${post.html}
+        ${renderPreferredSourceHtml()}
       </article>
     </section>
     ${relatedHtml}
@@ -1306,6 +1316,7 @@ function renderBlogIndex(posts) {
         <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" rel="noopener noreferrer">Réserver un appel</a>
         <a class="hero__btn hero__btn--secondary" href="/agence-web-annecy/">Découvrir l'agence</a>
       </div>
+      ${renderPreferredSourceHtml('hero')}
     </section>
 
     ${renderBlogFeaturedCarousel(posts)}
@@ -1569,6 +1580,8 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
 
     html = html.replace(/<section class="blog-related">[\s\S]*?<\/section>/gi, '');
     html = html.replace(/<section class="blog-internal-links">[\s\S]*?<\/section>/gi, '');
+    html = html.replace(/\s*<aside class="blog-preferred-source[\s\S]*?<\/aside>/gi, '');
+    html = html.replace(/(\s*)(<\/article>\s*<\/section>)/i, `\n        ${renderPreferredSourceHtml()}$1$2`);
     html = html.replace(/(<\/article>\s*)<\/section>/i, `$1</section>${relatedHtml || ''}`);
     html = html.replace(/\s*<section class="ai-proof[\s\S]*?<\/section>\s*/gi, '\n');
     html = html.replace(/\s*<section class="booking-section"[\s\S]*?<\/section>\s*/gi, '\n');

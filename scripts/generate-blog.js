@@ -1020,7 +1020,7 @@ function renderFullFooter(assetPrefix) {
       <div class="footer-contact">
         <div class="footer-social">
           <a href="https://www.linkedin.com/in/maxens-soldan/" target="_blank" aria-label="Profil LinkedIn" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://instagram.com/" target="_blank" aria-label="Profil Instagram" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/msdmedia.agency/" target="_blank" aria-label="Profil Instagram" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://wa.me/33783141287" target="_blank" aria-label="Contacter sur WhatsApp" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
           <a href="#" class="js-email-link" data-u="maxens.soldan" data-d="msd-media.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
         </div>

@@ -4,6 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- A/B test H1 : variante tiree une fois par visiteur (50/50), forcable via ?hero=a|b.
+       Posee avant le premier rendu pour eviter tout flash du titre. -->
+  <script>
+    (function(){
+      var KEY='msd_hero_ab',v='';
+      try{
+        var q=new URLSearchParams(location.search).get('hero');
+        if(q==='a'||q==='b'){v=q;localStorage.setItem(KEY,v);}
+        else{v=localStorage.getItem(KEY)||'';}
+        if(v!=='a'&&v!=='b'){v=Math.random()<0.5?'a':'b';localStorage.setItem(KEY,v);}
+      }catch(_){v=v||'a';}
+      document.documentElement.setAttribute('data-hero-variant',v);
+    })();
+  </script>
+  <style>
+    .hero__title-v--b{display:none}
+    html[data-hero-variant="b"] .hero__title-v--a{display:none}
+    html[data-hero-variant="b"] .hero__title-v--b{display:inline}
+    /* Variante B : phrase plus longue, taille calee pour tenir sur 2 lignes max. */
+    html[data-hero-variant="b"] .home-page .hero__title{max-width:none;font-size:clamp(.875rem,4.4vw,3.25rem)}
+  </style>
   <title>MSD Media | Sites Web &amp; Landing Pages Livrés en 21 Jours</title>
   <meta name="description"
     content="Agence web à Annecy. Sites internet et landing pages sur mesure, conçus pour convertir et livrés en 21 jours. Plus de 30 clients dont Merz Aesthetics." />
@@ -829,7 +850,7 @@ function _msdConsentSignal(state){
             </h3>
           </div>
 
-          <h1 class="hero__title"><span data-hero-lead>On fait des sites web et des landing pages</span><span class="hero__title-mobile">Sites web &amp; landing pages</span> <span class="hero__title-word-wrap"><span class="hero__title-word" data-hero-word>inoubliables.</span></span></h1>
+          <h1 class="hero__title"><span class="hero__title-v hero__title-v--a"><span data-hero-lead>On fait des sites web et des landing pages</span><span class="hero__title-mobile">Sites web &amp; landing pages</span> <span class="hero__title-word-wrap"><span class="hero__title-word" data-hero-word>inoubliables.</span></span></span><span class="hero__title-v hero__title-v--b">Le même impact qu’une grosse agence web, pour 15&nbsp;000&nbsp;€ de moins.</span></h1>
           <p class="hero__subtitle" data-i18n="hero_subtitle">On transforme votre offre, votre expertise, votre savoir-faire… en sites web et landing pages qui convertissent. Sur-mesure, rapides et visibles sur Google et ChatGPT. <strong class="hero__subtitle-highlight">Livrés en 21 jours chrono.</strong></p>
           <div class="hero__actions" aria-label="Actions principales">
             <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="hero_primary" rel="noopener noreferrer">Réserver un appel</a>
@@ -1501,7 +1522,7 @@ function _msdConsentSignal(state){
 
 </body>
 
-<script src="assets/js/script.js?v=f2ccf76d" defer></script>
+<script src="assets/js/script.js?v=4f3fe075" defer></script>
   <script src="assets/js/chat-widget.js?v=96023056" defer></script>
 <script>
   (function () {

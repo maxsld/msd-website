@@ -8502,6 +8502,12 @@ body.page-404 .site-footer {
   text-align: center;
 }
 
+/* H1 d'accroche de la home : phrase longue, taille calee pour tenir sur 2 lignes max. */
+.home-page .hero__title--offer {
+  max-width: none;
+  font-size: clamp(.875rem, 4.4vw, 3.25rem);
+}
+
 .home-page .hero__title-word {
   color: var(--global-color-white);
 }

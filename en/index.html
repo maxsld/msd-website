@@ -4,27 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- A/B test H1 : variante tiree une fois par visiteur (50/50), forcable via ?hero=a|b.
-       Posee avant le premier rendu pour eviter tout flash du titre. -->
-  <script>
-    (function(){
-      var KEY='msd_hero_ab',v='';
-      try{
-        var q=new URLSearchParams(location.search).get('hero');
-        if(q==='a'||q==='b'){v=q;localStorage.setItem(KEY,v);}
-        else{v=localStorage.getItem(KEY)||'';}
-        if(v!=='a'&&v!=='b'){v=Math.random()<0.5?'a':'b';localStorage.setItem(KEY,v);}
-      }catch(_){v=v||'a';}
-      document.documentElement.setAttribute('data-hero-variant',v);
-    })();
-  </script>
-  <style>
-    .hero__title-v--b{display:none}
-    html[data-hero-variant="b"] .hero__title-v--a{display:none}
-    html[data-hero-variant="b"] .hero__title-v--b{display:inline}
-    /* Variante B : phrase plus longue, taille calee pour tenir sur 2 lignes max. */
-    html[data-hero-variant="b"] .home-page .hero__title{max-width:none;font-size:clamp(.875rem,4.4vw,3.25rem)}
-  </style>
   <title>Web Agency | Custom Websites &amp; Landing Pages in 21 Days</title>
   <meta name="description"
     content="MSD Media builds custom websites and high-converting landing pages for 30+ clients including Merz Aesthetics and Nation. Delivered in 21 days." />
@@ -70,7 +49,7 @@
 
   <!-- Styles -->
 
-  <link rel="stylesheet" href="/assets/css/style.css?v=6eec6872" />
+  <link rel="stylesheet" href="/assets/css/style.css?v=f40f871a" />
   <link rel="preload" href="/assets/css/animations.css?v=9f55c995" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/assets/css/animations.css?v=9f55c995"></noscript>
   <link rel="stylesheet" href="/assets/css/responsive.css?v=bf31f542">
@@ -863,7 +842,7 @@ function _msdConsentSignal(state){
             </h3>
           </div>
 
-          <h1 class="hero__title"><span class="hero__title-v hero__title-v--a"><span data-hero-lead>We build websites and landing pages</span><span class="hero__title-mobile">Websites &amp; landing pages</span> <span class="hero__title-word-wrap"><span class="hero__title-word" data-hero-word>unforgettable.</span></span></span><span class="hero__title-v hero__title-v--b">The same impact as a big web agency, for €15,000 less.</span></h1>
+          <h1 class="hero__title hero__title--offer">The same impact as a big web agency, for €15,000 less.</h1>
           <p class="hero__subtitle" data-i18n="hero_subtitle">We turn your offer, expertise and know-how into websites and landing pages that convert. Custom-built, fast, and visible on Google and ChatGPT. <strong class="hero__subtitle-highlight">Delivered in 21 days flat.</strong></p>
           <div class="hero__actions" aria-label="Actions principales">
             <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="hero_primary" rel="noopener noreferrer">Book a call</a>
@@ -1530,7 +1509,7 @@ function _msdConsentSignal(state){
 
 </body>
 
-<script src="/assets/js/script.js?v=4f3fe075" defer></script>
+<script src="/assets/js/script.js?v=f2ccf76d" defer></script>
   <script src="/assets/js/chat-widget.js?v=96023056" defer></script>
 <script>
   (function () {

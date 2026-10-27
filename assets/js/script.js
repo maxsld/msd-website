@@ -102,8 +102,7 @@
     "form_abandon",
     "faq_open",
     "video_play",
-    "ai_referral",
-    "hero_ab_view"
+    "ai_referral"
   ]);
 
   // GA4 (gtag.js) n'est charge qu'apres consentement cookie : on tamponne les
@@ -137,16 +136,12 @@
     }, 1000);
   };
 
-  // Variante du H1 de la home (A/B test pose dans le <head> de / et /en/).
-  const HERO_VARIANT = document.documentElement.getAttribute("data-hero-variant") || "";
-
   const pushTrack = (eventName, payload = {}) => {
     const data = {
       event_source: "msd_site",
       page_path: window.location.pathname,
       page_title: document.title,
       page_type: getPageType(),
-      ...(HERO_VARIANT ? { hero_variant: HERO_VARIANT } : {}),
       ...payload
     };
     window.dataLayer.push({ event: eventName, ...data });
@@ -154,8 +149,6 @@
   };
 
   window.msdTrack = pushTrack;
-
-  if (HERO_VARIANT) pushTrack("hero_ab_view", { hero_variant: HERO_VARIANT });
 
   // GTM tire 290 Ko avec gtag. Le charger au premier rendu sature le lien sur
   // mobile alors qu'aucune mesure n'est perdue a l'attendre : pushTrack met les
@@ -807,8 +800,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const startHeroWordRotation = (lang) => {
     const wordSet = heroWordSets[lang] || heroWordSets.fr;
     if (!heroLead || !heroWord || !wordSet.words.length) return;
-    // Variante B de l'A/B test : le titre A est masque, inutile de le faire tourner.
-    if (document.documentElement.getAttribute("data-hero-variant") === "b") return;
 
     stopHeroWordRotation();
     heroWordLang = lang;

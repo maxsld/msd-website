@@ -982,6 +982,10 @@ position: relative;
   max-width: 220px;
 }
 
+.logo-marquee__img--radiesse {
+  height: 24px;
+}
+
 .logo-marquee__img--merz {
   height: 21px;
 }
@@ -1285,6 +1289,9 @@ position: relative;
 
   .logo-marquee__img--merz {
     height: 34px;
+  }
+  .logo-marquee__img--radiesse {
+    height: 40px;
   }
   .logo-marquee__img--frenchtech {
     height: 103px;

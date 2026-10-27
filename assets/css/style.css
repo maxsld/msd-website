@@ -8508,6 +8508,13 @@ body.page-404 .site-footer {
   font-size: clamp(.875rem, 4.4vw, 3.25rem);
 }
 
+/* Mobile : 3 lignes acceptees pour garder un titre lisible. */
+@media (max-width: 768px) {
+  .home-page .hero__title--offer {
+    font-size: clamp(1.5rem, 7.6vw, 2.25rem);
+  }
+}
+
 .home-page .hero__title-word {
   color: var(--global-color-white);
 }

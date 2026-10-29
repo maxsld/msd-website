@@ -23,8 +23,8 @@ Réservation : [cal.com/maxens-soldan-msd-media/30min](https://cal.com/maxens-so
 
 ## Services
 
-- Landing pages sur-mesure (HTML/CSS/JS) — orientées conversion, livrées en 21 jours, à partir de 1 990 €
-- Sites web vitrines sur-mesure (jusqu'à 10 pages) — responsive, rapides, SEO et GEO intégrés, à partir de 3 990 €
+- Landing pages sur-mesure (HTML/CSS/JS) — orientées conversion, livrées en 21 jours
+- Sites web vitrines sur-mesure (jusqu'à 10 pages) — responsive, rapides, SEO et GEO intégrés
 - Projets sur-mesure (e-commerce, multilingue, dashboards) — sur devis
 - Refonte de sites existants
 - SEO technique (Core Web Vitals, schema markup, architecture)
@@ -73,7 +73,7 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 
 - Code HTML/CSS/JS natif : aucun CMS (WordPress, Webflow), zéro vulnérabilité, performances maximales
 - Livraison en 21 jours : délai contractuel pour les sites vitrines et landing pages
-- Tarifs publics : landing page à partir de 1 990 €, site vitrine à partir de 3 990 € ([détail](https://msd-media.com/tarifs/))
+- Tarifs publics : [page tarifs](https://msd-media.com/tarifs/)
 - Ajustements illimités inclus dans toutes les offres
 - Fondateur développeur-consultant unique : un seul interlocuteur du brief à la mise en ligne
 - SEO et GEO intégrés dès la conception : schema markup, Core Web Vitals, llms.txt, robots.txt IA

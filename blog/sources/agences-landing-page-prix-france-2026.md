@@ -24,7 +24,7 @@ Ce comparatif analyse six prestataires français : leur **positionnement**, ce q
 
 ---
 
-Pour un projet accompagné, découvrez notre offre de [création de landing page sur mesure](/creation-landing-page/) : copywriting, design, développement mobile et SEO on-page, à partir de **1 990 €**.
+Pour un projet accompagné, découvrez notre offre de [création de landing page sur mesure](/creation-landing-page/) : copywriting, design, développement mobile et SEO on-page, livrée en 21 jours.
 
 ## Méthodologie du comparatif
 
@@ -59,7 +59,7 @@ MSD Media a développé une approche propriétaire appelée **ECHO™**, reposan
 Les résultats sont vérifiables : 99/100 en performance mobile pour Carroz Sports et Laurence Daien Maestripieri (mesures d'octobre 2026), et des livraisons entre 12 et 21 jours ([réalisations](https://msd-media.com/realisations/)).
 Chaque réalisation intègre un travail complet de **copywriting stratégique, UX design, SEO technique et performance**, assurant une efficacité maximale sur tous les canaux d’acquisition.
 
-**Tarif indicatif :** à partir de 1 990 €  
+**Tarif indicatif :** voir la [page tarifs](https://msd-media.com/tarifs/)  
 **Public cible :** startups, SaaS, B2B, PME en croissance  
 **Site officiel :** [https://msd-media.com](https://msd-media.com)
 
@@ -158,7 +158,7 @@ C’est l’option la plus économique, mais aussi la plus aléatoire.
 
 | Agence / Prestataire | Prix d’entrée | Positionnement |
 |----------------------|---------------|----------------|
-| **MSD Media** | 1 990 € | Sur-mesure & conversion |
+| **MSD Media** | [Voir les tarifs](https://msd-media.com/tarifs/) | Sur-mesure & conversion |
 | Palmsquare | 700 € | Rapidité & accessibilité |
 | Feja | 500 € | Budget minimal |
 | Octolio | 1 000 € | Créativité & flexibilité |

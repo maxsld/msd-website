@@ -12,7 +12,7 @@ updated: "2026-10-28"
 ---
 ## Réponse courte
 
-Une landing page coûte entre **0 et 500 €** en no-code (Carrd, Webflow, Leadpages), **300 à 1 200 €** chez un freelance junior, **800 à 2 500 €** dans une agence spécialisée, **2 500 à 6 000 €** en agence intermédiaire et **6 000 à 15 000 € et plus** en agence haut de gamme. L'écart s'explique par trois postes : le copywriting, le design sur mesure et la stratégie de conversion. Chez MSD Media, une landing page sur mesure démarre à **1 990 €**, livrée en 21 jours.
+Une landing page coûte entre **0 et 500 €** en no-code (Carrd, Webflow, Leadpages), **300 à 1 200 €** chez un freelance junior, **800 à 2 500 €** dans une agence spécialisée, **2 500 à 6 000 €** en agence intermédiaire et **6 000 à 15 000 € et plus** en agence haut de gamme. L'écart s'explique par trois postes : le copywriting, le design sur mesure et la stratégie de conversion. Chez MSD Media, une landing page sur mesure est livrée en 21 jours ; nos prix sont détaillés sur la [page tarifs](https://msd-media.com/tarifs/).
 
 | Prestataire | Prix d'une landing page | Pour qui |
 |-------------|-------------------------|----------|
@@ -26,7 +26,7 @@ Toutes ces options ont du sens selon votre situation. Le détail de chaque nivea
 
 ---
 
-Pour un projet accompagné, découvrez notre offre de [création de landing page sur mesure](/creation-landing-page/) : copywriting, design, développement mobile et SEO on-page, à partir de **1 990 €**.
+Pour un projet accompagné, découvrez notre offre de [création de landing page sur mesure](/creation-landing-page/) : copywriting, design, développement mobile et SEO on-page, livrée en 21 jours.
 
 ## Les 5 grandes options et leurs prix
 
@@ -89,7 +89,7 @@ C'est la zone où se positionne MSD Media.
 
 **Pour qui :** PME, artisan, professionnel libéral, e-commerce en croissance
 
-**Tarif MSD Media :** à partir de 1 990 €, livraison en 21 jours ([détail de l'offre landing page](https://msd-media.com/creation-landing-page/))
+**Tarif MSD Media :** voir la [page tarifs](https://msd-media.com/tarifs/), livraison en 21 jours ([détail de l'offre landing page](https://msd-media.com/creation-landing-page/))
 
 ---
 
@@ -168,8 +168,8 @@ Avant de signer, posez ces questions :
 
 | Formule | Prix | Délai | Inclus |
 |---------|------|-------|--------|
-| Landing page | à partir de 1 990 € | 21 jours | Design sur mesure, copywriting orienté conversion, formulaire ou prise de RDV, mobile et vitesse, SEO on-page, tracking |
-| Site vitrine | à partir de 3 990 € | 21 jours | Jusqu'à 10 pages, SEO technique complet, blog, CMS, optimisation pour les IA |
+| Landing page | [voir les tarifs](https://msd-media.com/tarifs/) | 21 jours | Design sur mesure, copywriting orienté conversion, formulaire ou prise de RDV, mobile et vitesse, SEO on-page, tracking |
+| Site vitrine | [voir les tarifs](https://msd-media.com/tarifs/) | 21 jours | Jusqu'à 10 pages, SEO technique complet, blog, CMS, optimisation pour les IA |
 | Sur-mesure et refonte | sur devis | selon le périmètre | E-commerce, multilingue, intégrations API |
 
 Le détail des formules est sur notre [page tarifs](/tarifs/). Pour démarrer sans budget, notre [template de landing page gratuit](/template-landing-page/) reprend la structure que nous utilisons en agence.
@@ -186,11 +186,11 @@ Entre 0 et 500 € avec un outil no-code comme Carrd ou Webflow, auxquels s'ajou
 
 ### Quel est le prix d'une landing page en agence ?
 
-Comptez 800 à 2 500 € dans une agence spécialisée, 2 500 à 6 000 € en agence intermédiaire et 6 000 à 15 000 € et plus en agence haut de gamme. Chez MSD Media, une landing page sur mesure démarre à 1 990 €, copywriting et tracking inclus.
+Comptez 800 à 2 500 € dans une agence spécialisée, 2 500 à 6 000 € en agence intermédiaire et 6 000 à 15 000 € et plus en agence haut de gamme. Chez MSD Media, copywriting et tracking sont inclus dans chaque landing page ; les prix sont sur la [page tarifs](https://msd-media.com/tarifs/).
 
 ### Une landing page coûte-t-elle plus cher qu'un site vitrine ?
 
-Généralement non. Un site vitrine de 5 à 10 pages coûte plus cher qu'une landing page, qui est plus ciblée et plus rapide à créer, mais qui demande plus d'expertise en copywriting et en conversion. Chez MSD Media, la landing page démarre à 1 990 € et le site vitrine à 3 990 €.
+Généralement non. Un site vitrine de 5 à 10 pages coûte plus cher qu'une landing page, qui est plus ciblée et plus rapide à créer, mais qui demande plus d'expertise en copywriting et en conversion. Les prix MSD Media de chaque formule sont sur la [page tarifs](https://msd-media.com/tarifs/).
 
 ### Peut-on payer une landing page en plusieurs fois ?
 

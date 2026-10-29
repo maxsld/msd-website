@@ -51,8 +51,6 @@ Optez pour une landing page professionnelle dans ces situations :
 - Organisation d'un **événement, webinaire ou formation**
 - Téléchargement d'un **ebook, guide ou ressource gratuite**
 
-**Cas client MSD Media** : Une entreprise bordelaise de coaching en ligne a généré **60 leads qualifiés en 10 jours** grâce à une landing page sur mesure couplée à une campagne Google Ads optimisée.
-
 ---
 
 ## Qu'est-ce qu'un Site Web Complet ? Structure et Bénéfices
@@ -83,8 +81,6 @@ Le site internet complet s'impose dans ces cas :
 - **E-commerce** ou catalogue produits étendu
 - Création d'un **espace client** ou plateforme personnalisée
 
-**Cas client MSD Media** : Une startup tech lyonnaise a doublé son trafic organique en 3 mois grâce à un site structuré combinant architecture SEO optimale et stratégie de contenu ciblée.
-
 ---
 
 ## Landing Page vs Site Web : Tableau Comparatif
@@ -94,7 +90,7 @@ Le site internet complet s'impose dans ces cas :
 | **Objectif principal** | Conversion immédiate | Présence globale + SEO |
 | **Nombre de pages** | 1 page unique | Plusieurs pages (5 à 50+) |
 | **Temps de création** | 7 à 21 jours | 3 à 12 semaines |
-| **Budget indicatif** | 300 € à 3 500 € | 1 990 € à 10 000 €+ |
+| **Budget indicatif** | 300 € à 3 500 € | 2 500 € à 10 000 €+ |
 | **Utilisation idéale** | Campagnes publicitaires | Stratégie digitale long terme |
 | **Navigation** | Minimaliste ou absente | Menu complet et hiérarchisé |
 | **SEO** | Limité (1 mot-clé) | Étendu (multiples requêtes) |
@@ -165,8 +161,8 @@ Que vous choisissiez une landing page ou un site complet, **MSD Media** applique
 ### Fourchettes de Prix Indicatives
 
 **Landing page professionnelle** :
-- Entrée de gamme : 300 € - Standard MSD Media : 1 990 € - Premium (animations, vidéo) : 3 500 €**Site web complet** :
-- Site vitrine (5-10 pages) : 3 990 € - Site corporate (15-30 pages + blog) : 6 000 € - Site e-commerce ou sur mesure : 10 000 €+
+- Entrée de gamme : 300 € - Agence spécialisée : 800 à 2 500 € - Premium (animations, vidéo) : 3 500 €**Site web complet** :
+- Site vitrine (5-10 pages) : 2 500 à 6 000 € - Site corporate (15-30 pages + blog) : 6 000 € - Site e-commerce ou sur mesure : 10 000 €+
 
 *Les tarifs varient selon complexité, fonctionnalités et niveau de personnalisation.*
 

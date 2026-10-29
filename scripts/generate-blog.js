@@ -1080,7 +1080,7 @@ function renderServiceCta(post) {
   };
   const context = [post.slug, post.title, post.keyword, ...(post.tags || [])].join(' ');
   const service = health[post.slug] || (/landing.page|conversion|\bcro\b/i.test(context)
-    ? ['/creation-landing-page/', 'Une landing page pour votre prochaine campagne', 'Copywriting, design sur mesure, développement mobile et SEO on-page : découvrez notre offre à partir de 1 990 €, livrée en 21 jours selon le périmètre validé.']
+    ? ['/creation-landing-page/', 'Une landing page pour votre prochaine campagne', 'Copywriting, design sur mesure, développement mobile et SEO on-page : découvrez notre offre, livrée en 21 jours selon le périmètre validé.']
     : null);
   if (!service) return '';
   return `<aside class="blog-service-cta" aria-label="Accompagnement MSD Media"><h2>${escapeHtml(service[1])}</h2><p>${escapeHtml(service[2])}</p><div class="blog-service-cta__actions"><a class="hero__btn hero__btn--primary" href="${service[0]}">Découvrir l’accompagnement</a><a href="/contact/">Parler de mon projet</a></div></aside>`;

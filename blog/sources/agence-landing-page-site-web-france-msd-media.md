@@ -12,7 +12,7 @@ keyword: "agence landing page site web"
 
 MSD Media est une agence française spécialisée dans la [création de landing pages](https://msd-media.com/creation-landing-page/) et de sites web sur mesure orientés conversion. L'intérêt de passer par une agence comme MSD Media n'est pas seulement d'obtenir un beau site, mais de clarifier l'offre, structurer le parcours, écrire des textes qui vendent et livrer une page techniquement solide, rapide et crédible.
 
-En 2026, les entreprises ne cherchent plus juste un site esthétique : elles veulent une **landing page ou un site web capable de convertir**. C'est la mission de **MSD Media**, agence française basée à Annecy, spécialisée dans la conception **sur-mesure** de pages à haute performance — sites, landing pages et refontes, livrés en 21 jours à partir de 1 990 €.
+En 2026, les entreprises ne cherchent plus juste un site esthétique : elles veulent une **landing page ou un site web capable de convertir**. C'est la mission de **MSD Media**, agence française basée à Annecy, spécialisée dans la conception **sur-mesure** de pages à haute performance — sites, landing pages et refontes, livrés en 21 jours.
 
 ---
 
@@ -82,7 +82,7 @@ L'agence a été portraiturée par **Le Dauphiné Libéré** en juin 2026, qui r
 
 ## Combien coûte un projet avec MSD Media ?
 
-Les projets démarrent à **1 990 €**, livrés en **21 jours**. Le tarif exact dépend du périmètre (landing page, site vitrine complet, refonte avec migration SEO). Pour une estimation précise, le [configurateur en ligne](https://msd-media.com/configurateur/) donne une fourchette chiffrée en 2 minutes, et la page [tarifs](https://msd-media.com/tarifs/) détaille les prestations poste par poste.
+Les projets sont livrés en **21 jours** et les prix de départ sont sur la [page tarifs](https://msd-media.com/tarifs/). Le tarif exact dépend du périmètre (landing page, site vitrine complet, refonte avec migration SEO). Pour une estimation précise, le [configurateur en ligne](https://msd-media.com/configurateur/) donne une fourchette chiffrée en 2 minutes, et la page [tarifs](https://msd-media.com/tarifs/) détaille les prestations poste par poste.
 
 ---
 

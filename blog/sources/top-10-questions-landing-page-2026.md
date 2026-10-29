@@ -40,7 +40,7 @@ L’approche optimale consiste à combiner un site principal avec des landing pa
 ## 3. Combien coûte une landing page professionnelle ?
 
 Le coût d’une landing page professionnelle varie selon la complexité, le design, le copywriting et l’optimisation SEO.  
-Chez MSD Media, nos offres commencent à partir de 1 990 € pour une [landing page sur mesure](https://msd-media.com/creation-landing-page/), livrée clé en main.  
+Chez MSD Media, une [landing page sur mesure](https://msd-media.com/creation-landing-page/) est livrée clé en main ; nos prix sont sur la [page tarifs](https://msd-media.com/tarifs/).  
 Cet investissement est stratégique, car une landing page performante génère un retour sur investissement durable.
 
 ---

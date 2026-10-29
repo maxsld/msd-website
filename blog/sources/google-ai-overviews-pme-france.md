@@ -75,7 +75,7 @@ L'IA de Google extrait plus facilement le contenu structuré : listes à puces, 
 - Les listes à puces et numérotées
 - Les tableaux avec données comparatives
 - Les réponses directes en début de paragraphe (Question → Réponse)
-- Les citations chiffrées ("livraison en 21 jours", "à partir de 1 990 €")
+- Les citations chiffrées ("livraison en 21 jours", "30 clients accompagnés")
 
 ### Critère 4 : Données structurées LocalBusiness + FAQPage
 

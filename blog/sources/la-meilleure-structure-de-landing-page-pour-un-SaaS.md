@@ -7,6 +7,7 @@ image: "https://indieground.net/wp-content/uploads/2023/03/Freebie-GradientTextu
 tags: ["landing page SaaS", "structure landing page", "SaaS marketing", "conversion", "UX design", "MSD Media", "création landing page", "optimisation taux de conversion", "psychologie utilisateur"]
 slug: "structure-landing-page-saas"
 keyword: "landing page"
+updated: "2026-09-17"
 ---
 ## Réponse courte
 

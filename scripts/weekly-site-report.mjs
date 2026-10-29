@@ -136,9 +136,12 @@ const eventIs = (...names) =>
     ? { filter: { fieldName: "eventName", stringFilter: { value: names[0] } } }
     : { filter: { fieldName: "eventName", inListFilter: { values: names } } };
 
-async function gsc(token, range, dimensions, rowLimit = 25) {
+async function gsc(token, range, dimensions, rowLimit = 25, queryOperator = null) {
   const url = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(process.env.GSC_SITE_URL)}/searchAnalytics/query`;
-  const report = await postJson(url, token, { ...range, dimensions, rowLimit });
+  const segmentation = queryOperator ? {
+    dimensionFilterGroups: [{ filters: [{ dimension: 'query', operator: queryOperator, expression: 'msd|maxens.?soldan' }] }]
+  } : {};
+  const report = await postJson(url, token, { ...range, dimensions, rowLimit, dataState: 'final', ...segmentation });
   return (report.rows || []).map((row) => {
     const out = { clicks: row.clicks, impressions: row.impressions, ctr: row.ctr, position: row.position };
     dimensions.forEach((name, i) => (out[name] = row.keys[i]));
@@ -176,6 +179,10 @@ async function collect() {
     periode_search_console: gscWeeks,
     vue_ensemble: await safe("GA4 vue d'ensemble", () => both({ metrics: overviewMetrics })),
     canaux: await safe("GA4 canaux", () => both({ dimensions: ["sessionDefaultChannelGroup"], metrics: ["sessions", "engagementRate", "keyEvents"], orderBy: "sessions" })),
+    conversions_par_canal: await safe("GA4 conversions par canal", () => both({
+      dimensions: ["sessionDefaultChannelGroup", "eventName"], metrics: ["eventCount", "totalUsers"],
+      ...eventIs("lead_submit_success", "booking_completed"), orderBy: "eventCount", limit: 30
+    })),
     sources_utm: await safe("GA4 sources", () =>
       ga(token, gaWeeks.current, { dimensions: ["sessionSource", "sessionMedium", "sessionCampaignName"], metrics: ["sessions", "engagedSessions", "keyEvents"], orderBy: "sessions", limit: 20 })),
     pages_entree: await safe("GA4 pages d'entrée", () =>
@@ -204,15 +211,22 @@ async function collect() {
     faq: await safe("GA4 FAQ", () =>
       ga(token, gaWeeks.current, { dimensions: ["pagePath", "linkText"], metrics: ["eventCount"], ...eventIs("faq_open"), orderBy: "eventCount", limit: 15 })),
     search_console: await safe("Search Console", async () => {
-      const [totalNow, totalPrev, queries, pages] = await Promise.all([
+      const [totalNow, totalPrev, queries, pages, brandedNow, brandedPrev, nonBrandedNow, nonBrandedPrev] = await Promise.all([
         gsc(token, gscWeeks.current, [], 1),
         gsc(token, gscWeeks.previous, [], 1),
-        gsc(token, gscWeeks.current, ["query"], 200),
-        gsc(token, gscWeeks.current, ["page"], 20)
+        gsc(token, gscWeeks.current, ["query"], 1000),
+        gsc(token, gscWeeks.current, ["page"], 20),
+        gsc(token, gscWeeks.current, [], 1, 'includingRegex'),
+        gsc(token, gscWeeks.previous, [], 1, 'includingRegex'),
+        gsc(token, gscWeeks.current, [], 1, 'excludingRegex'),
+        gsc(token, gscWeeks.previous, [], 1, 'excludingRegex')
       ]);
       const round = (row) => ({ ...row, ctr: Math.round(row.ctr * 1000) / 10, position: Math.round(row.position * 10) / 10 });
       return {
         total: { current: totalNow[0] || null, previous: totalPrev[0] || null },
+        marque: { current: brandedNow[0] || null, previous: brandedPrev[0] || null },
+        hors_marque: { current: nonBrandedNow[0] || null, previous: nonBrandedPrev[0] || null },
+        limite_segmentation: 'Les segments marque/hors marque excluent les requêtes anonymisées. Ils ne doivent pas être additionnés pour reconstituer le total.',
         top_requetes: queries.slice(0, 20).map(round),
         // Requêtes déjà proches du top 3 qui rapportent peu : les moins chères à gagner.
         opportunites: queries
@@ -260,7 +274,7 @@ function mockData() {
 const SITE_CONTEXT = `Site : msd-media.com, agence web MSD Media (Annecy, Haute-Savoie), fondée par Maxens Soldan.
 Offre : landing pages et sites vitrine sur mesure livrés en 21 jours, SEO local, GEO. Cibles : PME, indépendants,
 professions libérales (médecins, avocats, artisans...), startups. Conversions : demande via /contact/ (formulaire),
-appel réservé sur Cal.com, WhatsApp, téléphone. Pages clés : accueil, /tarifs/, /realisations/, pages ville
+appel réservé sur Cal.com, WhatsApp, téléphone. Pages clés : accueil, /creation-landing-page/, /tarifs/, /realisations/, pages ville
 (/agence-web-annecy/...), pages métier (/site-web-medecin/...), blog.
 Événements maison : msd_click (tout clic ; linkId = section de la page), section_view (linkId = id de la section),
 scroll_depth (percentScrolled), form_start / form_abandon (linkText = dernier champ touché), lead_submit_success,

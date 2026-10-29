@@ -7,6 +7,7 @@ image: "https://msd-media.com/assets/img/stock/photo-1758874572670-63042c5448c6.
 tags: ["site web", "Annecy", "erreurs", "conseils", "création site"]
 slug: "10-erreurs-creation-site-web-annecy"
 keyword: "10 erreurs création site web Annecy"
+updated: "2026-10-11"
 ---
 ## Réponse courte
 

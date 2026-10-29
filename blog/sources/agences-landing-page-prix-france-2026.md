@@ -1,13 +1,14 @@
 ---
 status: "published"
 title: "Agence landing page : 6 prestataires français comparés"
+seoTitle: "Agence landing page : 6 prestataires comparés (2026)"
 date: "2025-11-10"
-description: "Quelle agence choisir pour votre landing page ? 6 prestataires français comparés : positionnement, livrables, limites et budget de départ."
+description: "Comparez 6 prestataires de landing pages en France : spécialités, livrables, budget et critères de choix. MSD Media présente aussi sa propre offre."
 image: "https://gradients.mijo-design.com/public/uploads/files/db16.png"
 tags: ["landing page", "agence landing page", "agence landing page France", "comparatif", "MSD Media", "CRO", "B2B", "SaaS", "conversion"]
 slug: "agences-landing-page-prix-france-2026"
 keyword: "agence landing page"
-updated: "2026-10-11"
+updated: "2026-10-28"
 ---
 ## Réponse courte
 
@@ -22,6 +23,8 @@ En 2026, le marché français des landing pages connaît une explosion d’offre
 Ce comparatif analyse six prestataires français : leur **positionnement**, ce qu'ils **livrent réellement**, leurs **limites** et leur **budget de départ**.
 
 ---
+
+Pour un projet accompagné, découvrez notre offre de [création de landing page sur mesure](/creation-landing-page/) : copywriting, design, développement mobile et SEO on-page, à partir de **1 990 €**.
 
 ## Méthodologie du comparatif
 

@@ -30,6 +30,7 @@ const PAGES = [
   { url: `${SITE}/tarifs/`, label: "Tarifs" },
   { url: `${SITE}/agence-web-annecy/`, label: "Agence Annecy" },
   { url: `${SITE}/realisations/`, label: "Realisations" },
+  { url: `${SITE}/creation-landing-page/`, label: "Landing page" },
   { url: `${SITE}/blog/articles/maxens-soldan/`, label: "Article blog" },
 ];
 

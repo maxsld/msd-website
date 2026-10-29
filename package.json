@@ -3,6 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "assets:build": "node scripts/version-assets.mjs",
+    "seo:check": "python3 scripts/check-seo.py && node scripts/version-assets.mjs --check",
+    "seo:browser-check": "node scripts/check-browser.mjs && node scripts/check-conversions.mjs",
+    "seo:prepare": "npm run blog:build && node scripts/update-lastmod.mjs && npm run seo:check",
+    "seo:sync-faq": "python3 scripts/check-seo.py --sync-faq",
     "analytics:weekly": "node scripts/weekly-analytics-report.mjs",
     "seo:weekly-report": "node scripts/send-seo-weekly-report.mjs",
     "blog:generate": "node scripts/generate-articles.js",
@@ -27,5 +32,9 @@
     "google-auth-library": "^9.15.1",
     "nodemailer": "^6.10.1",
     "playwright": "^1.55.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "postcss": "^8.5.32"
   }
 }

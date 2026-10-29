@@ -7,6 +7,7 @@ image: "https://gradients.mijo-design.com/public/uploads/files/db16.png"
 tags: ["landing page", "conversion", "marketing digital", "SEO", "Annecy", "MSD Media"]
 slug: "creer-landing-page-14-jours"
 keyword: "landing page"
+updated: "2026-09-17"
 ---
 ## Réponse courte
 

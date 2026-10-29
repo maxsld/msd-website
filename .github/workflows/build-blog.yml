@@ -39,6 +39,6 @@ jobs:
         run: |
           git config user.name "msd-seo-bot"
           git config user.email "seo@msd-media.com"
-          git add blog/articles/ blog/index.html blog/feed.xml blog/sitemap.xml sitemap.xml blog/articles-manifest.json
+          git add blog/articles/ blog/index.html blog/feed.xml blog/sitemap.xml sitemap.xml blog/articles-manifest.json assets/css/ assets/js/
           git diff --cached --quiet || git commit -m "chore(blog): rebuild articles [skip ci]"
           git push

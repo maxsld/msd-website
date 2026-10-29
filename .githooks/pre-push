@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 # Hook pre-push : met à jour les lastmod dans les sitemaps avant chaque push.
 # Installé via : npm run hooks:setup
 
@@ -15,8 +16,8 @@ fi
 
 echo "[pre-push] Versionnage des CSS/JS..."
 node scripts/version-assets.mjs
-if ! git diff --quiet -- '*.html'; then
-  git add -- '*.html'
+if ! git diff --quiet -- '*.html' 'assets/css/*.min.css' 'assets/js/*.min.js' || [ -n "$(git ls-files --others --exclude-standard 'assets/css/*.min.css' 'assets/js/*.min.js')" ]; then
+  git add -- '*.html' 'assets/css/*.min.css' 'assets/js/*.min.js'
   git commit -m "chore(assets): version CSS/JS"
   echo "[pre-push] Pages re-versionnées et commitées ✓"
 fi

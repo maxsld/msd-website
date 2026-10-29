@@ -104,7 +104,7 @@ function getImageSize(file) {
 }
 
 function addImageDimensions(html, pageDir) {
-  return html.replace(/<img\b(?![^>]*\bwidth=)([^>]*?)\bsrc="([^"]+)"/gi, (full, before, src) => {
+  return html.replace(/^[ \t]+$/gm, '').replace(/<img\b(?![^>]*\bwidth=)([^>]*?)\bsrc="([^"]+)"/gi, (full, before, src) => {
     let rel = src.replace(/^https?:\/\/(www\.)?msd-media\.com/, '');
     if (/^[a-z]+:/i.test(rel)) return full;
     rel = rel.split(/[?#]/)[0];
@@ -690,49 +690,8 @@ function buildArticleFaqJsonLd(post = {}, pageUrl = '') {
       mainEntityOfPage: webPageRef
     };
   }
-  const headings = extractHeadingsFromHtml(post.html || '', 3);
-  const baseQuestions = headings.length
-    ? headings.map((h) => ({
-        '@type': 'Question',
-        name: /\?$/.test(h) ? h : `${h} ?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: `Retrouvez les détails dans cet article dédié de MSD Media sur ${post.title}.`
-        }
-      }))
-    : [
-        {
-          '@type': 'Question',
-          name: `Quels points clés retenir sur ${post.title} ?`,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: `Cet article présente les méthodes, erreurs à éviter et actions concrètes liées à ${post.title}.`
-          }
-        },
-        {
-          '@type': 'Question',
-          name: 'Quel est le délai pour mettre en place ces recommandations ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'La mise en place varie selon votre contexte, mais les premières optimisations peuvent être lancées immédiatement.'
-          }
-        },
-        {
-          '@type': 'Question',
-          name: 'Comment passer à l’action avec MSD Media ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Vous pouvez réserver un appel pour définir un plan d’action adapté à votre activité.'
-          }
-        }
-      ];
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: baseQuestions,
-    mainEntityOfPage: webPageRef
-  };
+  // Aucun balisage FAQ sans questions et réponses réellement visibles.
+  return null;
 }
 
 function getRelated(posts, current, max = 3) {
@@ -855,9 +814,9 @@ function getInternalServiceLinks(post = {}, extraContext = '') {
   if (/annecy|haute-savoie/.test(context)) return annecyLinks.slice(0, 4);
   if (/landing page|cro|conversion/.test(context)) {
     return [
-      { href: '/landing-page-strasbourg/', label: 'Landing page à Strasbourg' },
-      { href: '/landing-page-annecy/', label: 'Landing page à Annecy' },
-      { href: '/contact/', label: 'Tarifs site web à Strasbourg' }
+      { href: '/creation-landing-page/', label: 'Création de landing page sur mesure' },
+      { href: '/tarifs/', label: 'Tarifs des sites et landing pages' },
+      { href: '/realisations/', label: 'Nos réalisations' }
     ];
   }
 
@@ -1055,6 +1014,7 @@ function renderFullFooter(assetPrefix) {
           <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
           <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
           <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
+          <li><a href="https://msd-media.com/creation-landing-page/" data-i18n="footer_landing_page">Création de landing page</a></li>
           <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call" rel="noopener noreferrer">Réserver un appel</a></li>
           <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
           <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
@@ -1119,6 +1079,20 @@ function renderFullFooter(assetPrefix) {
       <p>&copy; <span class="copyright-year">2026</span> <span data-i18n="footer_copyright">MSD Media. Tous droits réservés.</span></p>
     </div>
   </footer>`;
+}
+
+function renderServiceCta(post) {
+  const health = {
+    'site-internet-dentiste-ce-qui-est-autorise': ['/site-web-dentiste/', 'Un site pour votre cabinet dentaire', 'Présentez votre cabinet, vos soins et vos honoraires avec une structure claire. Nous cadrons les contenus avec vous avant la conception.'],
+    'site-internet-medecine-esthetique-ce-qui-est-autorise': ['/site-web-medecine-esthetique/', 'Votre site de médecine esthétique', 'Découvrez notre approche pour les médecins esthétiques et les réalisations Merz Aesthetics : parcours, contenus et prise de rendez-vous.'],
+    'avis-google-medecin-que-repondre': ['/site-web-medecin/', 'Un site qui présente votre cabinet avec justesse', 'Informations pratiques, présentation des soins et accès à la prise de rendez-vous : découvrez notre approche pour les professionnels de santé.']
+  };
+  const context = [post.slug, post.title, post.keyword, ...(post.tags || [])].join(' ');
+  const service = health[post.slug] || (/landing.page|conversion|\bcro\b/i.test(context)
+    ? ['/creation-landing-page/', 'Une landing page pour votre prochaine campagne', 'Copywriting, design sur mesure, développement mobile et SEO on-page : découvrez notre offre à partir de 1 990 €, livrée en 21 jours selon le périmètre validé.']
+    : null);
+  if (!service) return '';
+  return `<aside class="blog-service-cta" aria-label="Accompagnement MSD Media"><h2>${escapeHtml(service[1])}</h2><p>${escapeHtml(service[2])}</p><div class="blog-service-cta__actions"><a class="hero__btn hero__btn--primary" href="${service[0]}">Découvrir l’accompagnement</a><a href="/contact/">Parler de mon projet</a></div></aside>`;
 }
 
 function renderArticlePage(post, allPosts) {
@@ -1206,13 +1180,12 @@ function renderArticlePage(post, allPosts) {
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="../../../assets/css/style.css" />
-  <link rel="preload" href="../../../assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="../../../assets/css/responsive.css" />
   <link rel="stylesheet" href="../../../assets/css/fontawesome-subset.css">
 
   <script type="application/ld+json">${JSON.stringify(articleJsonLd)}</script>
   <script type="application/ld+json">${JSON.stringify(breadcrumbJsonLd)}</script>
-  <script type="application/ld+json">${JSON.stringify(faqJsonLd)}</script>
+  ${faqJsonLd ? `<script type="application/ld+json">${JSON.stringify(faqJsonLd)}</script>` : ''}
 </head>
 <body class="blog-article-page" data-asset-base="../../../assets">
   ${TOP_ANNOUNCEMENT_HTML}
@@ -1225,7 +1198,7 @@ function renderArticlePage(post, allPosts) {
           <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${escapeHtml(post.title)}</span></p>
           <h2 class="section-tag section-tag--dark">${escapeHtml(post.category || 'IA')}</h2>
           <h1 class="hero__title"><span>${escapeHtml(post.title)}</span></h1>
-          <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> ${escapeHtml(formatFrenchDate(post.date))}</p>
+          <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> Publié le <time datetime="${escapeHtml(post.date)}">${escapeHtml(formatFrenchDate(post.date))}</time>${post.updated > post.date ? ` · Mis à jour le <time datetime="${escapeHtml(post.updated)}">${escapeHtml(formatFrenchDate(post.updated))}</time>` : ''}</p>
         </div>
         <div class="blog-article-cover">
           ${renderCoverImg(image)}
@@ -1244,6 +1217,7 @@ function renderArticlePage(post, allPosts) {
         ${renderAiSummaryHtml(pageUrl)}
         ${post.slug === 'maxens-soldan' ? `<img src="${escapeHtml(image)}" alt="${escapeHtml(post.title)}" loading="lazy" style="width:100%;border-radius:18px;margin-bottom:1.25rem;" />` : ''}
         ${post.html}
+        ${renderServiceCta(post)}
         ${renderPreferredSourceHtml()}
       </article>
     </section>
@@ -1253,7 +1227,7 @@ function renderArticlePage(post, allPosts) {
   ${renderBookingSection('../../../assets')}
   ${renderFullFooter('../../../assets')}
 
-  <script src="../../../assets/js/script.js"></script>
+  <script src="../../../assets/js/script.js" defer></script>
   <script src="../../../assets/js/chat-widget.js" defer></script>
 </body>
 </html>`;
@@ -1300,7 +1274,6 @@ function renderBlogIndex(posts) {
   <link rel="shortcut icon" href="${SITE_URL}/assets/img/favicon.ico" />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="preload" href="../assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <link rel="stylesheet" href="../assets/css/fontawesome-subset.css">
 </head>
@@ -1448,6 +1421,12 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
     // Pages retouchées à la main : on ne met à jour que l'en-tête, sans
     // reconstruire le hero ni le corps, pour ne pas écraser la mise en page.
     if (HAND_TUNED_ARTICLE_SLUGS.has(slug)) {
+      const published = html.match(/"datePublished"\s*:\s*"([^"]+)"/)?.[1];
+      const modified = html.match(/"dateModified"\s*:\s*"([^"]+)"/)?.[1];
+      if (published && modified && modified > published && !html.includes(`datetime="${modified}"`)) {
+        html = html.replace(/(<p class="blog-article-meta">[\s\S]*?)(<\/p>)/i,
+          `$1 · Mis à jour le <time datetime="${escapeHtml(modified)}">${escapeHtml(formatFrenchDate(modified))}</time>$2`);
+      }
       fs.writeFileSync(filePath, addImageDimensions(injectTracking(html), path.dirname(filePath)), 'utf8');
       return;
     }
@@ -1481,6 +1460,7 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
       const tagLabel = existingTag && existingTag.trim() ? existingTag.trim() : 'IA';
       // Chaque article garde sa propre image (frontmatter), plus de cover unique forcée.
       const postForImage = postsBySlug.get(slug);
+      const updatedDate = postForImage?.updated || dateRaw;
       const coverSrc = postForImage
         ? imagePathForPage(resolvePostImage(postForImage), '../../../assets')
         : '../../../assets/img/img-cover.webp';
@@ -1490,7 +1470,7 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
           <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${titleSpan}</span></p>
           <h2 class="section-tag section-tag--dark">${escapeHtml(tagLabel)}</h2>
           <h1 class="hero__title"><span>${titleSpan}</span></h1>
-          <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> ${escapeHtml(formatFrenchDate(dateRaw))}</p>
+          <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> Publié le <time datetime="${escapeHtml(dateRaw)}">${escapeHtml(formatFrenchDate(dateRaw))}</time>${updatedDate > dateRaw ? ` · Mis à jour le <time datetime="${escapeHtml(updatedDate)}">${escapeHtml(formatFrenchDate(updatedDate))}</time>` : ''}</p>
         </div>
         <div class="blog-article-cover">
           ${renderCoverImg(coverSrc)}
@@ -1532,8 +1512,8 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
     // the text-only image policy above, so it's injected after that pass runs.
     if (/<meta itemprop="author"[^>]*>\s*/i.test(html)) {
       html = html.replace(
-        /(<meta itemprop="author"[^>]*>\s*)/i,
-        (m) => `${m}\n        ${renderAiSummaryHtml(pageUrl)}`
+        /(<meta itemprop="author"[^>]*>)\s*/i,
+        (m, meta) => `${meta}\n\n        ${renderAiSummaryHtml(pageUrl)}`
       );
     }
 
@@ -1588,8 +1568,12 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
     html = html.replace(/\s*<footer class="site-footer">[\s\S]*?<\/footer>\s*/gi, '\n');
     html = html.replace(/<\/main>/i, `</main>\n\n  ${renderBookingSection('../../../assets')}\n\n  ${renderFullFooter('../../../assets')}`);
 
-    if (!/"@type"\s*:\s*"FAQPage"/i.test(html)) {
-      const faqJsonLd = buildArticleFaqJsonLd({ title: pageTitle, html: articleBlock }, pageUrl);
+    // Réparer aussi les anciennes FAQ, au lieu de conserver leur faux contenu.
+    html = html.replace(/\s*<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi, (full, json) => {
+      try { return JSON.parse(json)['@type'] === 'FAQPage' ? '' : full; } catch (_) { return full; }
+    });
+    const faqJsonLd = buildArticleFaqJsonLd({ title: pageTitle, html: articleBlock }, pageUrl);
+    if (faqJsonLd) {
       html = html.replace(
         '</head>',
         `  <script type="application/ld+json">${JSON.stringify(faqJsonLd)}</script>\n</head>`
@@ -1711,26 +1695,17 @@ function renderBlogSitemap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`;
 }
 
-function patchMainSitemap(posts) {
+function patchMainSitemap() {
   const sitemapPath = path.join(ROOT, 'sitemap.xml');
   if (!fs.existsSync(sitemapPath)) return;
 
   let xml = fs.readFileSync(sitemapPath, 'utf8');
   const markerStart = '<!-- blog-articles:start -->';
   const markerEnd = '<!-- blog-articles:end -->';
-  const snippet = posts
-    .map(
-      (p) => `  <url>\n    <loc>${SITE_URL}/blog/articles/${p.slug}/</loc>\n    <lastmod>${p.updated || p.date}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.65</priority>\n  </url>`
-    )
-    .join('\n');
-
-  const block = `${markerStart}\n${snippet}\n${markerEnd}`;
-
-  if (xml.includes(markerStart) && xml.includes(markerEnd)) {
-    xml = xml.replace(new RegExp(`${markerStart}[\\s\\S]*?${markerEnd}`), block);
-  } else {
-    xml = xml.replace('</urlset>', `${block}\n</urlset>`);
-  }
+  // Les articles sont déclarés uniquement dans blog/sitemap.xml (robots.txt
+  // référence les deux fichiers). Nettoyer aussi les anciens blocs sans marqueur.
+  xml = xml.replace(new RegExp(`${markerStart}[\\s\\S]*?${markerEnd}\\s*`), '');
+  xml = xml.replace(/\s*<url>\s*<loc>https:\/\/msd-media\.com\/blog\/articles\/[\s\S]*?<\/url>/g, '');
 
   fs.writeFileSync(sitemapPath, xml, 'utf8');
 }

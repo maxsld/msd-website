@@ -7,6 +7,7 @@ image: "https://www.campingsannecy.com/wp-content/uploads/2025/05/vieille-ville-
 tags: ["site web", "Annecy", "tarifs", "prix", "agence web"]
 slug: "combien-coute-site-web-annecy-2026"
 keyword: "site web Annecy"
+updated: "2026-10-11"
 ---
 ## Réponse courte
 

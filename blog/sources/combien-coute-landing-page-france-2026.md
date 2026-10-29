@@ -1,13 +1,14 @@
 ---
 status: "published"
 title: "Combien coûte une landing page ? De 0 à 15 000 € en 2026"
+seoTitle: "Prix landing page 2026 : budgets et exemples | MSD Media"
 date: "2026-04-09"
-description: "Une landing page coûte de 0 € en no-code à 15 000 € en agence haut de gamme. Grille des prix 2026 par prestataire et ce qui fait varier un devis."
+description: "Quel prix pour une landing page ? Comparez les budgets par prestataire, les prestations incluses et des exemples. Offre MSD Media dès 1 990 €."
 image: "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp"
 tags: ["landing page", "tarifs", "prix", "France", "agence web", "MSD Media"]
 slug: "combien-coute-landing-page-france-2026"
 keyword: "combien coûte une landing page"
-updated: "2026-10-07"
+updated: "2026-10-28"
 ---
 ## Réponse courte
 
@@ -24,6 +25,8 @@ Une landing page coûte entre **0 et 500 €** en no-code (Carrd, Webflow, Leadp
 Toutes ces options ont du sens selon votre situation. Le détail de chaque niveau est ci-dessous. Si vous cherchez plutôt à comparer des agences nommément, lisez notre [comparatif des agences de landing page en France](/blog/articles/agences-landing-page-prix-france-2026/).
 
 ---
+
+Pour un projet accompagné, découvrez notre offre de [création de landing page sur mesure](/creation-landing-page/) : copywriting, design, développement mobile et SEO on-page, à partir de **1 990 €**.
 
 ## Les 5 grandes options et leurs prix
 

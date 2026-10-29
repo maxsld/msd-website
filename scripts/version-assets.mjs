@@ -16,10 +16,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { buildAssets, styleProfile } from './build-assets.mjs';
 
 const ROOT = process.cwd();
 const CHECK = process.argv.includes("--check");
-const SKIP_DIRS = new Set([".git", "node_modules", ".vscode", "graphify-out"]);
+await buildAssets({ check: CHECK });
+const SKIP_DIRS = new Set([".git", "node_modules", ".vscode", "graphify-out", "kit", "kits"]);
 
 const hashes = {};
 for (const dir of ["css", "js"]) {
@@ -45,7 +47,14 @@ const REF = /(assets\/(?:css|js)\/[\w.-]+\.(?:css|js))(\?v=[\w.-]*)?(?=["'\s)>])
 let changed = 0;
 for (const file of htmlFiles(ROOT)) {
   const html = fs.readFileSync(file, "utf8");
-  const next = html.replace(REF, (match, asset) => (hashes[asset] ? `${asset}?v=${hashes[asset]}` : match));
+  const profile = styleProfile(html);
+  const next = html.replace(REF, (match, asset) => {
+    const minified = /assets\/css\/style(?:\.[\w-]+)*\.css$/.test(asset)
+      ? `assets/css/style${profile ? `.${profile}` : ''}.min.css`
+      : asset.replace(/(?<!\.min)\.(css|js)$/, '.min.$1');
+    const served = hashes[minified] ? minified : asset;
+    return hashes[served] ? `${served}?v=${hashes[served]}` : match;
+  });
   if (next !== html) {
     changed++;
     if (CHECK) console.log(`pas à jour : ${path.relative(ROOT, file)}`);

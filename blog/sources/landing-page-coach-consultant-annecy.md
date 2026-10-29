@@ -7,6 +7,7 @@ image: "https://img.freepik.com/premium-vector/abstract-background-with-gradient
 tags: ["landing page", "coach", "consultant", "Annecy", "conversion"]
 slug: "landing-page-coach-consultant-annecy"
 keyword: "landing page coach Annecy"
+updated: "2026-09-17"
 ---
 ## Réponse courte
 

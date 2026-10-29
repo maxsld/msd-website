@@ -9676,3 +9676,45 @@ body:has(#accessibilite-sobriete) .booking-section {
 /* Footer : heure locale sous chaque bureau */
 .footer-office-time { margin: 0.15rem 0 0.35rem; color: #fff; font-size: 1.35rem; font-weight: 500; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
 .footer-office-time:empty { display: none; }
+
+/* Offre nationale de landing pages et liens vers les prestations du blog. */
+.landing-service-page .hero__title { max-width: 1100px; margin-inline: auto; }
+.landing-service-page .hero__subtitle { max-width: 800px; margin-inline: auto; color: #cecece; line-height: 1.65; }
+.landing-service-section { padding: 4rem max(1.5rem, calc((100vw - 1200px) / 2)); text-align: left; color: #f7f5f6; }
+.landing-service-section > h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.12; margin-bottom: 2rem; }
+.landing-service-section > p { max-width: 850px; line-height: 1.7; margin-block: 1.2rem; color: #cecece; }
+.landing-service-section > .section-tag { margin-left: 0; color: #cecece; border-color: #555; }
+.landing-service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.landing-service-grid article { padding: 1.6rem; background: #191919; border: 1px solid #383838; border-radius: 0.6rem; }
+.landing-service-grid h3 { font-size: 1.25rem; line-height: 1.3; margin-bottom: 1rem; }
+.landing-service-grid p, .landing-service-steps p { font-size: 1rem; line-height: 1.7; letter-spacing: -0.02em; color: #cecece; }
+.landing-service-grid img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; margin-bottom: 1.2rem; border-radius: 0.3rem; }
+.landing-service-section a:not(.hero__btn) { text-decoration: underline; text-underline-offset: 0.2em; }
+.landing-service-grid article > a:last-child { display: inline-block; margin-top: 1rem; }
+.landing-service-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; list-style-position: inside; padding-left: 0; }
+.landing-service-steps li { border-top: 1px solid #555; padding-top: 1rem; }
+.landing-service-steps strong { line-height: 1.6; }
+.landing-service-steps p { margin-top: 0.7rem; }
+.landing-service-section .hero__actions { justify-content: flex-start; margin-top: 2rem; }
+.blog-service-cta { padding: 1.75rem; margin: 2.5rem 0; border: 1px solid #d9dce4; border-left: 4px solid #1b44fe; border-radius: 0.5rem; background: #f5f7ff; }
+.blog-service-cta h2 { margin-top: 0; }
+.blog-service-cta__actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.2rem; }
+.blog-article-content .blog-service-cta .hero__btn { color: #fff; text-decoration: none; padding: 0.9rem 1.1rem; }
+@media (max-width: 800px) {
+  .landing-service-grid { grid-template-columns: 1fr; }
+  .landing-service-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .landing-service-section { padding-block: 2.5rem; }
+}
+@media (max-width: 480px) {
+  .landing-service-steps { grid-template-columns: 1fr; }
+  .blog-service-cta { padding: 1.2rem; }
+  .blog-service-cta__actions .hero__btn { width: 100%; text-align: center; }
+}
+
+.local-service-focus { max-width: 1100px; padding: 3rem 1.5rem; margin-inline: auto; text-align: left; color: #f7f5f6; }
+.local-service-focus h2 { font-size: clamp(1.6rem, 3vw, 2.5rem); line-height: 1.2; margin-bottom: 1.2rem; }
+.local-service-focus p { color: #cecece; line-height: 1.7; margin-block: 1rem; }
+.local-service-focus p a { text-decoration: underline; text-underline-offset: 0.2em; }
+.local-service-focus nav { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+.local-service-focus nav a { border: 1px solid #555; border-radius: 0.2rem; padding: 0.65rem 0.9rem; font-size: 0.95rem; }
+.local-service-focus nav a:hover { background: #fff; color: #111; }

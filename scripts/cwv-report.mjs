@@ -30,7 +30,8 @@ const PAGES = [
   { url: "https://msd-media.com/",                       label: "Homepage" },
   { url: "https://msd-media.com/agence-web-annecy/",      label: "Annecy" },
   { url: "https://msd-media.com/agence-web-strasbourg/",  label: "Strasbourg" },
-  { url: "https://msd-media.com/agence-web-alsace/",      label: "Alsace" },
+  { url: "https://msd-media.com/creation-landing-page/",   label: "Landing page" },
+  { url: "https://msd-media.com/realisations/",           label: "Réalisations" },
   { url: "https://msd-media.com/blog/",                   label: "Blog" },
 ];
 

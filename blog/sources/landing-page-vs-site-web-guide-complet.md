@@ -7,6 +7,7 @@ image: "https://img.freepik.com/photos-gratuite/arriere-plan-degrade-abstrait-te
 tags: ["landing page", "site web", "landing page vs site web", "création site web", "conversion", "SEO", "MSD Media", "Annecy"]
 slug: "landing-page-vs-site-web-guide-complet"
 keyword: "landing page"
+updated: "2026-09-17"
 ---
 ## Réponse courte
 

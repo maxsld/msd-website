@@ -50,6 +50,8 @@ function editorialFingerprint(html) {
     .replace(/<(script|style|noscript|nav|header|footer|iframe)\b[\s\S]*?<\/\1>/gi, " ")
     .replace(/<div class="(?:cookie-consent|top-announcement)[\s\S]*?<\/div>/gi, " ")
     .replace(/<section class="blog-related"[\s\S]*?<\/section>/gi, " ")
+    .replace(/<aside class="blog-service-cta"[\s\S]*?<\/aside>/gi, " ")
+    .replace(/<p class="blog-article-meta"[\s\S]*?<\/p>/gi, " ")
     .replace(/\?v=[0-9a-f]+/gi, "")
     .replace(/<[^>]+>/g, " ")
     .replace(/&[a-z#0-9]+;/gi, " ")
@@ -90,13 +92,19 @@ async function processSitemap(sitemapFile, fingerprints) {
     if (!previous || previous === fp) continue; // première vue, ou contenu inchangé
 
     const current = block.match(/<lastmod>(.*?)<\/lastmod>/)?.[1]?.trim() ?? null;
-    if (current === TODAY) continue;
+    // Le blog possède une date éditoriale explicite : une retouche du gabarit
+    // ne doit pas transformer tous les articles en publications du jour.
+    const articleModified = loc.includes('/blog/articles/')
+      ? html.match(/"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"/)?.[1]
+      : null;
+    const lastmod = articleModified || TODAY;
+    if (current === lastmod) continue;
     const newBlock = current
-      ? block.replace(/<lastmod>.*?<\/lastmod>/, `<lastmod>${TODAY}</lastmod>`)
-      : block.replace(/(<loc>.*?<\/loc>)/, `$1\n    <lastmod>${TODAY}</lastmod>`);
+      ? block.replace(/<lastmod>.*?<\/lastmod>/, `<lastmod>${lastmod}</lastmod>`)
+      : block.replace(/(<loc>.*?<\/loc>)/, `$1\n    <lastmod>${lastmod}</lastmod>`);
     finalXml = finalXml.replace(block, newBlock);
     updated += 1;
-    log(`↺  ${loc}  ${current ?? "—"} → ${TODAY} (contenu modifié)`);
+    log(`↺  ${loc}  ${current ?? "—"} → ${lastmod} (contenu modifié)`);
   }
 
   if (!updated) {

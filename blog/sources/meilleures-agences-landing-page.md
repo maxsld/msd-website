@@ -38,7 +38,7 @@ Créer une landing page efficace nécessite de la stratégie, de la technique et
 
 ### 1. MSD Media – L’agence qui transforme vos visiteurs en clients grâce à l’humain et au sur-mesure
 
-[Visiter MSD Media](https://msd-media.com)  
+[Voir l'offre de création de landing page MSD Media](https://msd-media.com/creation-landing-page/)  
 
 MSD Media est bien plus qu’une agence web : c’est un véritable partenaire stratégique. Spécialisée dans la création de **landing pages et sites web 100% sur-mesure**, MSD Media place l’humain au cœur de chaque projet. Chaque page est conçue pour **convertir**, tout en reflétant fidèlement l’identité et les valeurs de votre entreprise.
 

@@ -132,6 +132,6 @@ Même une page courte peut attirer du trafic organique si elle est optimisée :
 
 Créer une landing page performante en moins de 21 jours est un objectif atteignable avec une méthode structurée, orientée conversion et performance.  
 
-Chez [MSD Media](https://msd-media.com), nous combinons **expertise technique, copywriting avancé et design stratégique** pour livrer des landing pages **sur-mesure, rapides et optimisées SEO**, prêtes à générer des prospects dès la première semaine.  
+Chez MSD Media, [agence de création de landing page](https://msd-media.com/creation-landing-page/), nous combinons **expertise technique, copywriting avancé et design stratégique** pour livrer des landing pages **sur-mesure, rapides et optimisées SEO**, prêtes à générer des prospects dès la première semaine.  
 
 Si vous souhaitez propulser votre projet rapidement et efficacement, **contactez-nous dès aujourd’hui** pour discuter de votre landing page sur-mesure.

@@ -494,7 +494,7 @@
     },
     {
       "source": "/pages/lyon/",
-      "destination": "/agence-web-lyon/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
@@ -909,62 +909,62 @@
     },
     {
       "source": "/creation-site-web-montpellier/",
-      "destination": "/agence-web-montpellier/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-montpellier",
-      "destination": "/agence-web-montpellier/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-montpellier/",
-      "destination": "/agence-web-montpellier/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-montpellier",
-      "destination": "/agence-web-montpellier/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-rennes/",
-      "destination": "/agence-web-rennes/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-rennes",
-      "destination": "/agence-web-rennes/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-rennes/",
-      "destination": "/agence-web-rennes/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-rennes",
-      "destination": "/agence-web-rennes/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-clermont-ferrand/",
-      "destination": "/agence-web-clermont-ferrand/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-clermont-ferrand",
-      "destination": "/agence-web-clermont-ferrand/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-clermont-ferrand/",
-      "destination": "/agence-web-clermont-ferrand/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-clermont-ferrand",
-      "destination": "/agence-web-clermont-ferrand/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
@@ -1019,22 +1019,22 @@
     },
     {
       "source": "/creation-site-web-bordeaux/",
-      "destination": "/agence-web-bordeaux/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-bordeaux",
-      "destination": "/agence-web-bordeaux/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-bordeaux/",
-      "destination": "/agence-web-bordeaux/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-bordeaux",
-      "destination": "/agence-web-bordeaux/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
@@ -1059,142 +1059,142 @@
     },
     {
       "source": "/creation-site-web-lille/",
-      "destination": "/agence-web-lille/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-lille",
-      "destination": "/agence-web-lille/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-lille/",
-      "destination": "/agence-web-lille/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-lille",
-      "destination": "/agence-web-lille/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-lyon/",
-      "destination": "/agence-web-lyon/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-lyon",
-      "destination": "/agence-web-lyon/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-lyon/",
-      "destination": "/agence-web-lyon/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-lyon",
-      "destination": "/agence-web-lyon/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-marseille/",
-      "destination": "/agence-web-marseille/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-marseille",
-      "destination": "/agence-web-marseille/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-marseille/",
-      "destination": "/agence-web-marseille/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-marseille",
-      "destination": "/agence-web-marseille/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-nantes/",
-      "destination": "/agence-web-nantes/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-nantes",
-      "destination": "/agence-web-nantes/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-nantes/",
-      "destination": "/agence-web-nantes/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-nantes",
-      "destination": "/agence-web-nantes/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-nice/",
-      "destination": "/agence-web-nice/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-nice",
-      "destination": "/agence-web-nice/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-nice/",
-      "destination": "/agence-web-nice/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-nice",
-      "destination": "/agence-web-nice/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-paris/",
-      "destination": "/agence-web-paris/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-paris",
-      "destination": "/agence-web-paris/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-paris/",
-      "destination": "/agence-web-paris/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-paris",
-      "destination": "/agence-web-paris/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-toulouse/",
-      "destination": "/agence-web-toulouse/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/creation-site-web-toulouse",
-      "destination": "/agence-web-toulouse/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-toulouse/",
-      "destination": "/agence-web-toulouse/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/landing-page-toulouse",
-      "destination": "/agence-web-toulouse/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
@@ -1269,7 +1269,7 @@
     },
     {
       "source": "/agence-web-bordeaux",
-      "destination": "https://msd-media.com/agence-web-bordeaux/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
@@ -1279,7 +1279,7 @@
     },
     {
       "source": "/agence-web-clermont-ferrand",
-      "destination": "https://msd-media.com/agence-web-clermont-ferrand/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
@@ -1289,42 +1289,42 @@
     },
     {
       "source": "/agence-web-lille",
-      "destination": "https://msd-media.com/agence-web-lille/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/agence-web-lyon",
-      "destination": "https://msd-media.com/agence-web-lyon/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/agence-web-marseille",
-      "destination": "https://msd-media.com/agence-web-marseille/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/agence-web-montpellier",
-      "destination": "https://msd-media.com/agence-web-montpellier/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/agence-web-nantes",
-      "destination": "https://msd-media.com/agence-web-nantes/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/agence-web-nice",
-      "destination": "https://msd-media.com/agence-web-nice/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/agence-web-paris",
-      "destination": "https://msd-media.com/agence-web-paris/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/agence-web-rennes",
-      "destination": "https://msd-media.com/agence-web-rennes/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
@@ -1334,7 +1334,7 @@
     },
     {
       "source": "/agence-web-toulouse",
-      "destination": "https://msd-media.com/agence-web-toulouse/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
@@ -1364,7 +1364,7 @@
     },
     {
       "source": "/landing-page-bruxelles",
-      "destination": "https://msd-media.com/landing-page-bruxelles/",
+      "destination": "/creation-landing-page/",
       "permanent": true
     },
     {
@@ -1975,6 +1975,66 @@
     {
       "source": "/blog/articles/pourquoi-concurrents-cites-ia-pas-vous/",
       "destination": "/blog/articles/apparaitre-chatgpt-perplexity-google-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-bordeaux/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-clermont-ferrand/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-lille/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-lyon/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-marseille/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-montpellier/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-nantes/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-nice/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-paris/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-rennes/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-web-toulouse/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/landing-page-bruxelles/",
+      "destination": "/creation-landing-page/",
       "permanent": true
     }
   ],

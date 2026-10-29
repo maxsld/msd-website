@@ -31,6 +31,10 @@
     let h = escapeHtml(text);
     h = h.replace(/&lt;(https:\/\/[^\s&]+)&gt;/g, ' $1');
     h = h.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    // Le lien de réservation devient un bouton bleu sous la réponse : le texte reste dans la phrase.
+    let booking = false;
+    h = h.replace(/\[([^\]]+)\]\(https:\/\/cal\.com\/[^)\s]+\)/g, (m, label) => { booking = true; return label; });
+    h = h.replace(/\s*\(?https:\/\/cal\.com\/[^\s<)]+\)?/g, () => { booking = true; return ''; });
     h = h.replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g, (m, label, url) => {
       const external = !url.startsWith('https://msd-media.com');
       return `<a href="${url}"${external ? ' target="_blank" rel="noopener"' : ''}>${label}</a>`;
@@ -44,7 +48,9 @@
       if (inList) { out += '</ul>'; inList = false; }
       if (line.trim()) out += `<p>${line}</p>`;
     }
-    return out + (inList ? '</ul>' : '');
+    out += inList ? '</ul>' : '';
+    if (booking) out += `<a class="msd-msg__book" href="${BOOKING}" target="_blank" rel="noopener noreferrer">${T.book}</a>`;
+    return out;
   };
 
   const chips = (cls) => T.suggestions.map((q) => `<button type="button" class="${cls}" data-msd-suggest="${escapeHtml(q)}">${escapeHtml(q)}</button>`).join('');

@@ -2872,6 +2872,7 @@ position: relative;
   color: rgba(255, 255, 255, 0.6);
 }
 
+.blog-article-meta__author { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .blog-article-meta__dot {
   opacity: 0.5;
 }
@@ -9404,6 +9405,8 @@ a.sector-card:hover {
 .msd-msg ul { margin: 0.3rem 0 0.5rem; padding-left: 1.1rem; list-style: disc; }
 .msd-msg li { margin-bottom: 0.25rem; }
 .msd-msg a { color: #7fa6ff; text-decoration: underline; text-underline-offset: 2px; }
+.msd-msg a.msd-msg__book { display: inline-flex; align-items: center; min-height: 42px; margin-top: 0.6rem; padding: 0 1.1rem; background: #2f6bff; color: #fff; border-radius: 0.2rem; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: background 0.2s; }
+.msd-msg a.msd-msg__book:hover { background: #1f57e6; }
 .msd-msg--user { align-self: flex-end; background: #2f6bff; color: #fff; }
 .msd-msg--assistant { align-self: flex-start; background: #181818; border: 1px solid rgba(255, 255, 255, 0.08); color: rgba(255, 255, 255, 0.9); }
 .msd-typing { display: inline-flex; gap: 4px; padding: 0.3rem 0; }

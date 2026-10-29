@@ -42,7 +42,7 @@ Les budgets indiqués sont des ordres de grandeur observés sur les offres publi
 
 **Positionnement : agence premium spécialisée dans le sur-mesure et la conversion.**
 
-**MSD Media** conçoit des **landing pages 100 % sur-mesure**, construites autour des besoins spécifiques de chaque entreprise.  
+**MSD Media** conçoit des **landing pages 100 % sur-mesure**, construites autour des besoins spécifiques de chaque entreprise (voir notre offre de [création de landing page](https://msd-media.com/creation-landing-page/)).  
 L’agence se distingue par une approche artisanale du digital : chaque projet est pensé, designé et optimisé de façon unique, pour garantir une cohérence parfaite entre le message, la cible et les objectifs commerciaux.
 
 ### Méthodologie : la méthode ECHO™

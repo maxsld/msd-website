@@ -133,6 +133,8 @@ function renderCoverImg(src) {
 
 const AUTHOR_AVATAR = '../../../assets/img/maxens-soldan.webp';
 const AUTHOR_ROLE = 'Fondateur &amp; CEO de MSD Media';
+// Signature visible en tête d'article, reliée à la page auteur (E-E-A-T).
+const AUTHOR_BYLINE = `Par <a class="blog-article-meta__author" href="/blog/articles/maxens-soldan/" rel="author">${AUTHOR}</a> <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> `;
 const TOP_ANNOUNCEMENT_HTML = `<div class="top-announcement" role="banner">
     <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
     <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
@@ -993,18 +995,7 @@ function renderFullFooter(assetPrefix) {
         <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
         <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
         <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
-        <li><a href="https://msd-media.com/agence-web-lyon/">Lyon</a></li>
         <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
-        <li><a href="https://msd-media.com/agence-web-paris/">Paris</a></li>
-        <li><a href="https://msd-media.com/agence-web-marseille/">Marseille</a></li>
-        <li><a href="https://msd-media.com/agence-web-toulouse/">Toulouse</a></li>
-        <li><a href="https://msd-media.com/agence-web-bordeaux/">Bordeaux</a></li>
-        <li><a href="https://msd-media.com/agence-web-lille/">Lille</a></li>
-        <li><a href="https://msd-media.com/agence-web-nantes/">Nantes</a></li>
-        <li><a href="https://msd-media.com/agence-web-montpellier/">Montpellier</a></li>
-        <li><a href="https://msd-media.com/agence-web-nice/">Nice</a></li>
-        <li><a href="https://msd-media.com/agence-web-rennes/">Rennes</a></li>
-        <li><a href="https://msd-media.com/agence-web-clermont-ferrand/">Clermont-Ferrand</a></li>
       </ul>
     </div>
     <div class="footer-columns">
@@ -1198,7 +1189,7 @@ function renderArticlePage(post, allPosts) {
           <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${escapeHtml(post.title)}</span></p>
           <h2 class="section-tag section-tag--dark">${escapeHtml(post.category || 'IA')}</h2>
           <h1 class="hero__title"><span>${escapeHtml(post.title)}</span></h1>
-          <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> Publié le <time datetime="${escapeHtml(post.date)}">${escapeHtml(formatFrenchDate(post.date))}</time>${post.updated > post.date ? ` · Mis à jour le <time datetime="${escapeHtml(post.updated)}">${escapeHtml(formatFrenchDate(post.updated))}</time>` : ''}</p>
+          <p class="blog-article-meta">${AUTHOR_BYLINE}<i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> Publié le <time datetime="${escapeHtml(post.date)}">${escapeHtml(formatFrenchDate(post.date))}</time>${post.updated > post.date ? ` · Mis à jour le <time datetime="${escapeHtml(post.updated)}">${escapeHtml(formatFrenchDate(post.updated))}</time>` : ''}</p>
         </div>
         <div class="blog-article-cover">
           ${renderCoverImg(image)}
@@ -1427,6 +1418,9 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
         html = html.replace(/(<p class="blog-article-meta">[\s\S]*?)(<\/p>)/i,
           `$1 · Mis à jour le <time datetime="${escapeHtml(modified)}">${escapeHtml(formatFrenchDate(modified))}</time>$2`);
       }
+      if (!html.includes('blog-article-meta__author')) {
+        html = html.replace('<p class="blog-article-meta">', `<p class="blog-article-meta">${AUTHOR_BYLINE}`);
+      }
       fs.writeFileSync(filePath, addImageDimensions(injectTracking(html), path.dirname(filePath)), 'utf8');
       return;
     }
@@ -1470,7 +1464,7 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
           <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${titleSpan}</span></p>
           <h2 class="section-tag section-tag--dark">${escapeHtml(tagLabel)}</h2>
           <h1 class="hero__title"><span>${titleSpan}</span></h1>
-          <p class="blog-article-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> Publié le <time datetime="${escapeHtml(dateRaw)}">${escapeHtml(formatFrenchDate(dateRaw))}</time>${updatedDate > dateRaw ? ` · Mis à jour le <time datetime="${escapeHtml(updatedDate)}">${escapeHtml(formatFrenchDate(updatedDate))}</time>` : ''}</p>
+          <p class="blog-article-meta">${AUTHOR_BYLINE}<i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> Publié le <time datetime="${escapeHtml(dateRaw)}">${escapeHtml(formatFrenchDate(dateRaw))}</time>${updatedDate > dateRaw ? ` · Mis à jour le <time datetime="${escapeHtml(updatedDate)}">${escapeHtml(formatFrenchDate(updatedDate))}</time>` : ''}</p>
         </div>
         <div class="blog-article-cover">
           ${renderCoverImg(coverSrc)}

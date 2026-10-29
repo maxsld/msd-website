@@ -63,7 +63,7 @@ Un **site web complet** représente votre vitrine digitale globale. Composé de 
 
 ### Les Avantages d'un Site Internet Professionnel
 
-**MSD Media** développe des sites web sur mesure, évolutifs et performants pour clients en France (Annecy, Paris, Lyon, Marseille, Bordeaux, Toulouse, Genève) :
+**MSD Media** développe des sites web et des [landing pages sur mesure](https://msd-media.com/creation-landing-page/), évolutifs et performants, pour des clients en France et en Suisse :
 
 - **Crédibilité renforcée** : votre entreprise apparaît légitime et professionnelle
 - **SEO durable** : positionnement Google sur de multiples mots-clés métier

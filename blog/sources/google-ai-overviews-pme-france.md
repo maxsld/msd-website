@@ -62,7 +62,7 @@ Google AI Overviews cite en priorité les sources que Google perçoit comme fais
 
 ### Critère 2 : Correspondre exactement à l'intent de la requête
 
-L'IA de Google extrait des sources qui correspondent précisément à la requête. Si quelqu'un cherche "agence web pas chère Montpellier", une page qui parle explicitement des [tarifs web à Montpellier](https://msd-media.com/agence-web-montpellier/) a plus de chances d'être citée qu'une page générique.
+L'IA de Google extrait des sources qui correspondent précisément à la requête. Si quelqu'un cherche "agence web pas chère Montpellier", une page qui parle explicitement des tarifs web à Montpellier a plus de chances d'être citée qu'une page générique.
 
 **Action concrète :** créez des pages locales dédiées avec :
 - Le prix (fourchette) clairement indiqué

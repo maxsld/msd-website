@@ -28,3 +28,7 @@ npm-debug.log*
 *.log
 .vercel
 .env*
+
+# Skills installés localement (npx skills add)
+/.agents/
+/skills-lock.json

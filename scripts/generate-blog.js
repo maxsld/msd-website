@@ -1006,6 +1006,7 @@ function renderFullFooter(assetPrefix) {
           <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
           <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
           <li><a href="https://msd-media.com/creation-landing-page/" data-i18n="footer_landing_page">Création de landing page</a></li>
+          <li><a href="https://msd-media.com/creation-site-web-annecy/" data-i18n="footer_site_annecy">Création de site web Annecy</a></li>
           <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call" rel="noopener noreferrer">Réserver un appel</a></li>
           <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
           <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>

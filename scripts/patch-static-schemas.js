@@ -6,8 +6,11 @@ const path = require('path');
 const ROOT = process.cwd();
 const SITE_URL = 'https://msd-media.com';
 
-const EXCLUDED_PREFIXES = ['blog/', 'etudes-de-cas/'];
+const EXCLUDED_PREFIXES = ['blog/', 'etudes-de-cas/', 'node_modules/', 'graphify-out/', 'kit/', 'kits/', 'scripts/', 'docs/', '.git/', '.claude/'];
 const EXCLUDED_FILES = new Set([
+  // L'accueil a déjà ses propres schémas (Organization, WebSite) : pas de doublon.
+  'index.html',
+  'en/index.html',
   '404.html',
   '404/index.html',
   'terms/mentions.html',
@@ -57,6 +60,8 @@ function getPageTitle(html, relPath) {
 
 function inferLocality(relPath) {
   const lower = relPath.toLowerCase();
+  if (lower.includes('geneve')) return { city: 'Genève', country: 'Suisse' };
+  if (lower.includes('chambery')) return { city: 'Chambéry', country: 'France' };
   if (lower.includes('strasbourg')) {
     return {
       city: 'Strasbourg',
@@ -168,12 +173,11 @@ function serviceJsonLd(canonical, title, relPath) {
     '@type': 'Service',
     name: title,
     serviceType: getServiceType(relPath),
-    provider: {
-      '@type': 'Organization',
-      name: 'MSD Media',
-      url: `${SITE_URL}/`
-    },
-    areaServed: 'France',
+    provider: { '@id': `${SITE_URL}/#organization` },
+    areaServed: [
+      { '@type': 'City', name: inferLocality(relPath).city },
+      { '@type': 'Country', name: inferLocality(relPath).country || 'France' }
+    ],
     url: canonical
   };
 }
@@ -204,18 +208,14 @@ function injectAutoSchemas(html, relPath) {
 
   if (!scripts.length) return html;
 
-  const block =
-    '\n<!-- auto-schema:start -->\n' +
-    scripts
-      .map(
-        (s) =>
-          `<script id="${s.id}" type="application/ld+json">${JSON.stringify(s.data)}</script>`
-      )
-      .join('\n') +
-    '\n<!-- auto-schema:end -->\n';
+  const tags = scripts
+    .map((s) => `<script id="${s.id}" type="application/ld+json">${JSON.stringify(s.data)}</script>`)
+    .join('\n');
+  const block = `\n<!-- auto-schema:start -->\n${tags}\n<!-- auto-schema:end -->\n`;
 
-  if (html.includes('<!-- auto-schema:start -->') && html.includes('<!-- auto-schema:end -->')) {
-    return html.replace(/<!-- auto-schema:start -->[\s\S]*?<!-- auto-schema:end -->/i, block.trim());
+  // On complète le bloc existant sans le remplacer : il peut porter la fiche de l'entité.
+  if (html.includes('<!-- auto-schema:end -->')) {
+    return html.replace('<!-- auto-schema:end -->', () => `${tags}\n<!-- auto-schema:end -->`);
   }
 
   return html.replace('</head>', () => `${block}</head>`);

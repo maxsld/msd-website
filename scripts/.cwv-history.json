@@ -1,24 +1,24 @@
 {
   "https://msd-media.com/": {
-    "score": 68,
-    "lcp": 8223,
+    "score": 79,
+    "lcp": 5132,
     "cls": 0,
-    "fcp": 2706,
-    "ttfb": 4
+    "fcp": 1058,
+    "ttfb": 3
   },
   "https://msd-media.com/agence-web-annecy/": {
-    "score": 92,
-    "lcp": 2707,
-    "cls": 0.018,
-    "fcp": 2707,
+    "score": 98,
+    "lcp": 1057,
+    "cls": 0,
+    "fcp": 1057,
     "ttfb": 3
   },
   "https://msd-media.com/agence-web-strasbourg/": {
-    "score": 68,
-    "lcp": 8743,
-    "cls": 0.031,
-    "fcp": 3155,
-    "ttfb": 4
+    "score": 73,
+    "lcp": 7957,
+    "cls": 0,
+    "fcp": 1058,
+    "ttfb": 3
   },
   "https://msd-media.com/agence-web-alsace/": {
     "score": 88,
@@ -28,10 +28,24 @@
     "ttfb": 3
   },
   "https://msd-media.com/blog/": {
-    "score": 77,
-    "lcp": 5018,
+    "score": 93,
+    "lcp": 3195,
+    "cls": 0.014,
+    "fcp": 1051,
+    "ttfb": 2
+  },
+  "https://msd-media.com/creation-landing-page/": {
+    "score": 98,
+    "lcp": 1057,
     "cls": 0,
-    "fcp": 2706,
+    "fcp": 1057,
+    "ttfb": 2
+  },
+  "https://msd-media.com/realisations/": {
+    "score": 96,
+    "lcp": 2708,
+    "cls": 0.008,
+    "fcp": 1507,
     "ttfb": 2
   }
 }

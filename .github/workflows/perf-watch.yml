@@ -3,11 +3,10 @@ name: Performance Watch
 # Tous les 3 jours a 06h00 UTC. Mesure PageSpeed, applique les corrections
 # mecaniquement sures et ouvre une pull request : rien n'est publie sans
 # relecture. Le reste du diagnostic part sur Telegram.
+# Cron désactivé le 2026-11-01 (alerte vitesse Telegram tous les 3 jours) : l'agence SEO (seo-pilot.yml) envoie
+# désormais un seul compte rendu court chaque lundi. Lancement manuel toujours possible.
 on:
-  schedule:
-    - cron: "0 6 */3 * *"
   workflow_dispatch:
-
 permissions:
   contents: write
   pull-requests: write

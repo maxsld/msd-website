@@ -1,5 +1,10 @@
 .DS_Store
-/.claude
+# .claude : seuls les agents de l'agence SEO et le skill de design sont versionnés
+/.claude/*
+!/.claude/agents/
+!/.claude/skills/
+/.claude/skills/*
+!/.claude/skills/msd-design-system/
 /node_modules
 /.env.analytics
 

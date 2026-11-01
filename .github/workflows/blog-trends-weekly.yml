@@ -1,12 +1,9 @@
 name: Blog Trends Weekly Report
 
+# Cron désactivé le 2026-11-01 (rapport tendances Telegram du samedi) : l'agence SEO (seo-pilot.yml) envoie
+# désormais un seul compte rendu court chaque lundi. Lancement manuel toujours possible.
 on:
-  schedule:
-    # Tous les samedis à 07:00 UTC (09:00 Paris en été, 08:00 en hiver).
-    # Remplace l'ancien content-decay-refresh du lundi.
-    - cron: "0 7 * * 6"
   workflow_dispatch:
-
 jobs:
   report:
     runs-on: ubuntu-latest

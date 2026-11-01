@@ -3,13 +3,10 @@ name: Weekly SEO Report (PDF)
 # Remplace rank-tracking-daily.yml + cwv-weekly.yml + traffic-drop-watch.yml
 # (crons désactivés le 2026-08-18) par un seul rapport PDF consolidé, chaque
 # dimanche, envoyé par email.
+# Cron désactivé le 2026-11-01 (email PDF du dimanche) : l'agence SEO (seo-pilot.yml) envoie
+# désormais un seul compte rendu court chaque lundi. Lancement manuel toujours possible.
 on:
-  schedule:
-    # Tous les dimanches à 08:00 UTC (10:00 Paris en été, 09:00 en hiver).
-    - cron: "0 8 * * 0"
   workflow_dispatch:
-
-
 permissions:
   contents: write
 

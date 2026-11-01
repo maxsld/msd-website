@@ -21,6 +21,7 @@ Document de référence du pilote. Il ne change que sur décision de Maxens. Cha
 
 ## Priorités du pilote, dans cet ordre
 
+0. **Conversion** : une page qui reçoit des visites Google (au moins 10 sur 28 jours dans GA4) mais ne produit aucune intention passe en tête. On rend la réponse plus nette, on montre les preuves existantes, on place mieux l'appel à réserver un appel, avec les blocs de la home.
 1. **Page 1 sans clics** (position 4 à 10, CTR sous 2 %) : titre et description qui reprennent la requête exacte, avec une promesse concrète (délai, gratuit, guide pas à pas, année).
 2. **Bas de page 1 et page 2** (position 11 à 20, au moins 30 impressions) : réponse directe de 2 phrases sous le H1, section ou FAQ qui couvre l'intention, et 3 à 5 liens internes contextuels depuis les pages du même groupe.
 3. **Pages de service cibles**, à faire monter par le maillage interne, l'une après l'autre :
@@ -32,21 +33,30 @@ Document de référence du pilote. Il ne change que sur décision de Maxens. Cha
 
 Une seule modification par page à la fois. Pas de nouvelle modification sur une page avant son bilan à 21 jours.
 
-## Jalons et indicateurs
+**Articles** : 1 article par semaine, pris dans `seo-pilot/EDITORIAL.md` et écrit selon `seo-pilot/ARTICLE-GUIDE.md`. Chaque article sert un des 3 groupes et renvoie vers sa page de service cible. Améliorer les pages existantes reste prioritaire : si la semaine demande 3 corrections lourdes, l'article peut attendre.
 
-Indicateur principal : **clics hors marque sur 28 jours**, lu dans le relevé. Les fourchettes vont du scénario prudent (site seul) au scénario ambitieux (site + avis + annuaires + liens faits par Maxens).
+## Feuille de route : 1er novembre 2026 → 1er novembre 2027
 
-| Date | Clics hors marque (28 j) | Ce qui doit être vrai |
-|---|---|---|
-| Départ (oct. 2026) | 3 | |
-| Fin novembre 2026 | 5 à 10 | Bilan des titres d'octobre ; premières pages en position 4 à 10 qui cliquent |
-| Fin janvier 2027 | 15 à 30 | Groupe landing page en position 5 à 8 ; hub santé reconnu (positions en hausse) |
-| Fin avril 2027 | 40 à 80 | Une requête « argent » au moins en top 3 ; « création site internet Annecy » en page 1 si les avis ont suivi |
-| Fin octobre 2027 | 100 à 250 | Groupe landing page en top 3 ; Annecy en top 5 sur ses requêtes principales |
+Chaque phase prépare la suivante. L'agence travaille chaque lundi ; les actions de Maxens sont celles que l'agence ne peut pas faire à sa place.
 
-**Seuils d'alerte**, à signaler dans le rapport :
-- Clics hors marque en baisse deux mois de suite : chercher une cause technique (pages désindexées, erreurs) avant toute autre action.
-- En dessous de la fourchette basse à fin janvier ou fin avril : le dire clairement, et recentrer sur le levier qui bloque (en général les avis et les liens, c'est-à-dire hors site).
+| Période | Phase | L'agence | Maxens |
+|---|---|---|---|
+| **Nov. 2026** | Fondations | Bilans des titres d'octobre ; maillage vers les 3 pages cibles ; 4 articles (dont 2 santé) | Demander des avis Google à tous les anciens clients (objectif 15) ; compléter la fiche Google |
+| **Déc. 2026** | Fondations | Pages santé : réponses directes et FAQ ; 3 articles (pause entre Noël et le Nouvel An) | Annuaires : La Fabrique du Net, Sortlist, Clutch, 118712, PagesJaunes |
+| **Janv. 2027** | Contenu | Mise à jour de l'article prix landing page pour 2027 ; guide pilier « communication des médecins » ; 4 articles | Fournir les données de l'étude des 84 cabinets si elle est faite |
+| **Févr. 2027** | Contenu | Article de l'étude des 84 cabinets si les données sont là ; 4 articles | Retour en France : tourner la vidéo Merz, recueillir 2 ou 3 cas clients chiffrés |
+| **Mars 2027** | Contenu | Études de cas chiffrées en ligne (avec les données de Maxens) ; mise à jour des 10 articles les plus vus ; **bilan trimestriel** | Pitch presse locale avec l'étude des cabinets |
+| **Avr. 2027** | Autorité | Pages qui stagnent entre 4 et 15 : renforcement ; 4 articles | Liens : clients (« site réalisé par MSD Media »), French Tech, Polytech |
+| **Mai 2027** | Autorité | Articles « données » et comparatifs honnêtes, les plus citables par les IA ; 4 articles | Réponses utiles et signées sur Reddit et les forums pros |
+| **Juin 2027** | Autorité | **Bilan semestriel** ; recentrage sur ce qui a marché | Podcast ou interview (santé, entrepreneuriat) |
+| **Juil. 2027** | Accélération | 3 articles (été) ; mise à jour des pages saisonnières | Si le déménagement à Strasbourg est confirmé : fiche Google Strasbourg, adresse réelle |
+| **Août 2027** | Accélération | Préparer les contenus prix et tendances 2028 ; 3 articles | |
+| **Sept. 2027** | Accélération | Rentrée : 4 articles, mise à jour des contenus santé avec les textes de l'année | Nouvelle vague de demandes d'avis (objectif 35 au total) |
+| **Oct. 2027** | Bilan | **Bilan annuel** ; proposition du plan de l'année 2 (2e niche : dentaire ou coachs) | Décider de l'année 2 |
+
+## Objectifs et indicateurs
+
+Les objectifs chiffrés (clients, leads, clics, par semaine, mois et trimestre) et la façon de les manager sont dans `seo-pilot/KPIS.md`. Ils priment sur toute autre estimation.
 
 ## Ce que seul Maxens peut faire (rappel mensuel, pas hebdomadaire)
 

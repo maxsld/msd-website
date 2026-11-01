@@ -1,0 +1,35 @@
+# Règles communes de l'agence SEO de msd-media.com
+
+Tous les agents les lisent et les appliquent. MSD Media est une agence web d'Annecy, fondée en juin 2025 par Maxens Soldan. Maxens a demandé que le travail parte en ligne sans validation de sa part : la qualité et la prudence reposent entièrement sur l'agence. Le site est en HTML statique, déployé sur Vercel à chaque push sur `main`. Aucun agent ne fait de commit ni de push : le workflow s'en charge à la fin, si les contrôles passent.
+
+## Interdits absolus
+
+- **Inventer** quoi que ce soit : chiffres, résultats clients, cas clients, témoignages, avis, récompenses, partenariats, citations. On n'utilise que les faits déjà présents sur le site, ou des faits publics vérifiés avec leur source.
+- **Affirmer une règle de droit, un chiffre de marché ou une date réglementaire sans source.** Toute affirmation de ce type cite une source officielle ou reconnue (Légifrance, Ordre, ANSM, CNIL, Google…), avec un lien dans la section « Sources » de l'article. Dans le doute, on ne l'écrit pas.
+- Afficher un **prix MSD Media** ailleurs que sur `/tarifs/`. Les fourchettes de prix du marché restent permises dans les articles.
+- Modifier l'**accueil** (`index.html`, `en/index.html`) : Maxens le gère lui-même.
+- Ajouter un lien vers `/realisations/merz-belotero/` (pas encore à mettre en avant).
+- Supprimer une page, toucher aux redirections (`vercel.json`), aux workflows, aux scripts, au CSS, au JS, aux sitemaps, à `llms.txt`, au footer ou au header.
+- Créer une page ailleurs que sur le blog (un article = un fichier dans `blog/sources/`).
+- Toucher à une page modifiée il y a moins de 21 jours d'après `seo-pilot/journal.md`, sauf pour annuler un changement nuisible.
+- Écrire une année de fondation autre que 2025 (juin 2025).
+
+## Design
+
+Le design actuel du site ne change pas, et aucune autre référence de design ne s'applique (ni skill, ni tendance extérieure). La référence est l'accueil (`index.html`) ; pour un article, ce sont les articles existants. On ne crée ni style, ni classe CSS, ni attribut `style=`. Pour ajouter un bloc (FAQ, paragraphe, liste de liens, cartes), on reprend la structure HTML et les classes d'un bloc du même type sur l'accueil ou sur la page modifiée. Le skill `msd-design-system` décrit ces blocs. Le rendu doit être identique à l'existant.
+
+## Conversion
+
+Améliorer la conversion d'une page est permis et encouragé : réponse plus nette en tête, preuves déjà présentes sur le site (projets Merz Radiesse et Ultherapy Prime, avis réels, presse), appel à réserver un appel (lien `https://cal.com/maxens-soldan-msd-media/30min`) mieux placé. Toujours avec des blocs existants de la home, jamais de fausse urgence ni de promesse non tenue.
+
+## Règles techniques
+
+- **Blog** : les articles qui ont une source dans `blog/sources/*.md` (champ `slug:`) se modifient uniquement dans cette source, puis `npm run blog:build`. On ne touche jamais au HTML généré de ces articles. Les articles sans source se modifient directement dans leur HTML. Un nouvel article suit `seo-pilot/ARTICLE-GUIDE.md`.
+- **Traductions** : un élément avec `data-i18n="clé"` voit son texte remplacé par `assets/i18n/translations.json`. Si on modifie un tel texte, on met à jour la clé en français (et en anglais si elle existe), sinon la modification ne s'affiche pas.
+- **FAQ** : le texte des réponses dans le JSON-LD `FAQPage` doit être identique au texte visible. `npm run seo:check` le vérifie.
+- **Titles et descriptions** : title ≤ 60 caractères, description ≤ 160, modifiés aussi dans leurs copies `og:` et `twitter:`.
+- **Liens internes** : URL absolues `https://msd-media.com/...` comme dans le reste du site, ancres descriptives (jamais « cliquez ici »).
+
+## Style
+
+Français clair, phrases courtes, vouvoiement du visiteur, pas de superlatifs creux ni de jargon inutile. Pas de tiret cadratin pour relier deux idées : deux phrases, ou deux-points.

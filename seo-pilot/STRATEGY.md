@@ -16,7 +16,7 @@ Document de référence du pilote. Il ne change que sur décision de Maxens. Cha
 - **Délais** : un changement sur une page déjà indexée est relu en quelques jours à quelques semaines. Les premiers effets nets se voient en 3 à 6 mois, et les requêtes concurrentielles en 6 à 12 mois. Seules environ 6 % des pages atteignent le top 10 dans l'année qui suit leur publication (Ahrefs) : **améliorer les pages déjà visibles rapporte plus vite que publier**.
 - **Titres** : réécrire titre et description d'une page déjà en page 1 donne les gains les plus rapides, mais l'effet varie et certains tests sont négatifs. On teste donc une page à la fois, on mesure 3 semaines, et on garde ou on annule.
 - **Liens internes** : les tests contrôlés (SearchPilot, Zyppy) montrent un effet réel, qui plafonne au-delà d'un certain nombre. Viser 3 à 5 liens contextuels vers chaque page prioritaire, depuis des pages proches et visitées.
-- **Local** (Whitespark 2026, enquête d'experts) : la fiche Google pèse environ 32 %, les avis environ 20 %, le site environ 15 à 19 %. **La fraîcheur des avis** a fortement monté. Avoir une page dédiée par service aide. Le pack local peut bouger en 4 à 8 semaines.
+- **Local** (Whitespark 2026, enquête d'experts) : la fiche Google pèse environ 32 %, les avis environ 20 %, le site environ 15 à 19 %. **La fraîcheur des avis** a fortement monté. Avoir une page dédiée par service aide. Le pack local peut bouger en 4 à 8 semaines. **Contrainte MSD Media** : Google a supprimé une partie des avis et Maxens ne peut pas en obtenir beaucoup d'autres. Le classement sur la carte d'Annecy sera donc lent ; l'effort principal porte sur le national et la niche santé, où les avis Google pèsent peu.
 - **IA (ChatGPT, Perplexity, AI Overviews)** : les AI Overviews puisent dans l'index Google, donc bien se classer reste la base. Ce qui augmente les citations : une réponse directe dans les 60 à 100 premiers mots, des données originales, des mentions sur d'autres sites, et Reddit pour les questions de recommandation. Les contenus cités par les IA sont en moyenne plus récents (Ahrefs).
 
 ## Priorités du pilote, dans cet ordre
@@ -41,7 +41,7 @@ Chaque phase prépare la suivante. L'agence travaille chaque lundi ; les actions
 
 | Période | Phase | L'agence | Maxens |
 |---|---|---|---|
-| **Nov. 2026** | Fondations | Bilans des titres d'octobre ; maillage vers les 3 pages cibles ; 4 articles (dont 2 santé) | Demander des avis Google à tous les anciens clients (objectif 15) ; compléter la fiche Google |
+| **Nov. 2026** | Fondations | Bilans des titres d'octobre ; maillage vers les 3 pages cibles ; 4 articles (dont 2 santé) | Compléter la fiche Google (catégorie, services, photos, une publication par semaine) |
 | **Déc. 2026** | Fondations | Pages santé : réponses directes et FAQ ; 3 articles (pause entre Noël et le Nouvel An) | Annuaires : La Fabrique du Net, Sortlist, Clutch, 118712, PagesJaunes |
 | **Janv. 2027** | Contenu | Mise à jour de l'article prix landing page pour 2027 ; guide pilier « communication des médecins » ; 4 articles | Fournir les données de l'étude des 84 cabinets si elle est faite |
 | **Févr. 2027** | Contenu | Article de l'étude des 84 cabinets si les données sont là ; 4 articles | Retour en France : tourner la vidéo Merz, recueillir 2 ou 3 cas clients chiffrés |
@@ -51,7 +51,7 @@ Chaque phase prépare la suivante. L'agence travaille chaque lundi ; les actions
 | **Juin 2027** | Autorité | **Bilan semestriel** ; recentrage sur ce qui a marché | Podcast ou interview (santé, entrepreneuriat) |
 | **Juil. 2027** | Accélération | 3 articles (été) ; mise à jour des pages saisonnières | Si le déménagement à Strasbourg est confirmé : fiche Google Strasbourg, adresse réelle |
 | **Août 2027** | Accélération | Préparer les contenus prix et tendances 2028 ; 3 articles | |
-| **Sept. 2027** | Accélération | Rentrée : 4 articles, mise à jour des contenus santé avec les textes de l'année | Nouvelle vague de demandes d'avis (objectif 35 au total) |
+| **Sept. 2027** | Accélération | Rentrée : 4 articles, mise à jour des contenus santé avec les textes de l'année | Demander un avis à chaque client livré dans l'année, et un témoignage nommé pour le site |
 | **Oct. 2027** | Bilan | **Bilan annuel** ; proposition du plan de l'année 2 (2e niche : dentaire ou coachs) | Décider de l'année 2 |
 
 ## Objectifs et indicateurs
@@ -62,7 +62,7 @@ Les objectifs chiffrés (clients, leads, clics, par semaine, mois et trimestre) 
 
 Le site seul plafonne : à partir de février, ce sont surtout ces actions qui feront la différence.
 
-1. **Avis Google** : passer de 5 à 15, puis en obtenir 2 à 4 par mois (la fraîcheur compte).
+1. **Preuves** : un avis Google par nouveau client (posté par lui, depuis son téléphone, sans contrepartie), un témoignage nommé pour le site, et des avis sur les plateformes hors Google (Trustpilot, Sortlist, Clutch, Malt). Jamais d'avis achetés : c'est illégal et Google supprime la fiche.
 2. **Fiche Google** : catégorie principale « Concepteur de sites Web », services listés, horaires, une publication par semaine avec photo.
 3. **Annuaires** : La Fabrique du Net, Sortlist, Clutch, 118712, PagesJaunes, avec la même description, la même adresse et le même téléphone partout.
 4. **Liens** : « site réalisé par MSD Media » chez les clients, French Tech Alpes, Polytech, presse locale.

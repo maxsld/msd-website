@@ -6,7 +6,8 @@ name: Pilote SEO hebdomadaire
 # avant la mise en ligne ; le compte rendu part sur Telegram.
 on:
   schedule:
-    - cron: "0 7 * * 1"
+    # 2 h UTC = 3 h à Paris en hiver, 4 h en été : tout est fait au réveil de Maxens.
+    - cron: "0 2 * * 1"
   workflow_dispatch:
 
 concurrency:
@@ -49,7 +50,7 @@ jobs:
 
       # Le 1er lundi du mois seulement : nourrit la revue éditoriale. Trends peut refuser, ce n'est pas bloquant.
       - name: Relevé Google Trends (1er lundi du mois)
-        if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 7 * * 1' }}
+        if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 2 * * 1' }}
         continue-on-error: true
         run: |
           if [ "$(date -u +%-d)" -le 7 ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then

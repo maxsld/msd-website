@@ -132,3 +132,13 @@ _Minimums : GA4 ne compte que les visiteurs qui acceptent les cookies._
 | /blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise | 1 | 0 | 0 |
 | /en | 1 | 0 | 0 |
 | /recrutement | 1 | 0 | 0 |
+
+## Tests en cours : changements du journal mesurés avant / après, face au témoin
+
+Avant = 28 jours précédant le changement ; après = à partir de J+3, jusqu'à 28 jours. Valeurs par jour. Le témoin = toutes les pages jamais modifiées dans le journal.
+
+| Page | Changement | Impressions / jour | Témoin | Effet net | Taux de clic | Position | Statut |
+|---|---|---|---|---|---|---|---|
+| Aucun changement de moins de 90 jours | | | | | | | |
+
+_Effet net = évolution de la page divisée par celle du témoin. Le taux de clic ne se compare qu'à position proche (moins d'une place d'écart) : sinon, c'est la position qui l'explique._

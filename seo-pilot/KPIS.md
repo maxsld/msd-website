@@ -36,6 +36,7 @@ Deux leviers multiplient le résultat : **plus de clics** (positions et taux de 
 
 - **Clics et positions** : Search Console, complète (`seo-pilot/data/latest.md`).
 - **Leads et intentions** : GA4. Ce ne sont que des minimums : GA4 ne voit que les visiteurs qui acceptent les cookies, environ la moitié d'après la comparaison avec la Search Console. On estime les leads réels à environ 2 fois les leads GA4.
+- **Comportement sur les pages** : Microsoft Clarity (`seo-pilot/data/clarity.md`) : défilement, temps actif, clics morts et de rage, retours rapides. Il explique le maillon « visites → intentions ». Même limite que GA4 : seuls les visiteurs qui acceptent les cookies.
 - **Clients signés** : seul Maxens les connaît. Ils sont notés dans `seo-pilot/clients.md` (Maxens le dit en session et ils y sont ajoutés). Sans information, le chef estime : leads réels ÷ 4.
 
 ## KPI de chaque semaine (le travail de l'équipe)
@@ -114,7 +115,7 @@ Chaque lundi, il identifie **le maillon le plus faible de la chaîne** et y affe
 |---|---|---|
 | Impressions en hausse, clics qui ne suivent pas | Le taux de clic coince | Titres et descriptions des pages en position 4 à 10 |
 | Impressions qui stagnent | Pas assez de pages bien classées | Contenu des pages en position 11 à 20, liens internes, articles du groupe concerné |
-| Visites Google sur une page, mais 0 intention | La page ne convertit pas | **Conversion** : réponse plus nette, preuves (Merz, avis existants), appel à réserver un appel mieux placé, avec les blocs existants de la home |
+| Visites Google sur une page, mais 0 intention | La page ne convertit pas (Clarity dit pourquoi : lecture, blocage ou départ immédiat) | **Conversion** : réponse plus nette, preuves (Merz, avis existants), appel à réserver un appel mieux placé, avec les blocs existants de la home |
 | Intentions mais pas de leads confirmés | Le passage à l'acte coince | Vérifier les parcours formulaire et rendez-vous avec le `technicien`, et le signaler à Maxens |
 | Leads présents mais peu de clients | L'offre ou la vente coince (hors SEO) | Le signaler à Maxens dans le rapport, sans rien changer au site |
 | Sous le minimum du mois deux mois de suite | Le site seul ne suffit plus | « À toi » vise le levier hors site qui bloque (avis Google, fiche Google, annuaires, liens, preuves clients), avec un chiffre précis |

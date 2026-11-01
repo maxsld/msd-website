@@ -97,6 +97,35 @@ if (process.env.GA4_PROPERTY_ID) {
   }
 }
 
+// Tests avant / après : clics et impressions par page et par jour sur 120 jours, pour mesurer
+// chaque changement du journal face au reste du site (le témoin), qui absorbe saisonnalité et mises à jour Google.
+async function dailyPages() {
+  const url = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(process.env.GSC_SITE_URL)}/searchAnalytics/query`;
+  const rows = [];
+  for (let startRow = 0; ; startRow += 25000) {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ startDate: iso(new Date(end - 119 * DAY)), endDate: iso(end), dimensions: ['page', 'date'], rowLimit: 25000, startRow }),
+    });
+    if (!res.ok) throw new Error(`Search Console ${res.status}: ${(await res.text()).slice(0, 300)}`);
+    const batch = (await res.json()).rows || [];
+    rows.push(...batch);
+    if (batch.length < 25000) break;
+  }
+  // Les ancres (#section) s'additionnent sur la page.
+  const daily = new Map();
+  for (const r of rows) {
+    const id = `${r.keys[0].replace(SITE, '').replace(/#.*$/, '') || '/'}|${r.keys[1]}`;
+    const d = daily.get(id) || { page: id.split('|')[0], date: r.keys[1], clicks: 0, impressions: 0, posSum: 0 };
+    d.clicks += r.clicks; d.impressions += r.impressions; d.posSum += r.position * r.impressions;
+    daily.set(id, d);
+  }
+  return [...daily.values()];
+}
+// Pas gardé dans l'historique JSON : trop volumineux, et recalculable.
+const daily = await dailyPages();
+
 const dir = path.join('seo-pilot', 'data');
 fs.mkdirSync(dir, { recursive: true });
 fs.writeFileSync(path.join(dir, `${iso(new Date())}.json`), JSON.stringify(data));
@@ -178,5 +207,41 @@ if (g('current')) {
     lines.push(`| ${r.keys[0]} | ${r.value} | ${n(INTENT_EVENTS)} | ${n(LEAD_EVENTS)} |`);
   }
 }
+
+// Chaque changement du journal, mesuré : 28 jours avant le changement contre la période qui commence
+// 3 jours après (le temps que Google relise la page), en moyenne par jour, face au témoin.
+const journal = fs.existsSync('seo-pilot/journal.md') ? fs.readFileSync('seo-pilot/journal.md', 'utf8') : '';
+const changes = new Map();
+for (const m of journal.matchAll(/^### (\d{4}-\d{2}-\d{2}) : (\/\S*)/gm)) if (!changes.has(m[2])) changes.set(m[2], m[1]);
+const addDays = (d, n) => iso(new Date(new Date(d) - -n * DAY));
+function windowStats(filter, from, to) {
+  const rows = daily.filter((r) => r.date >= from && r.date <= to && filter(r.page));
+  const days = Math.round((new Date(to) - new Date(from)) / DAY) + 1;
+  const impressions = sum(rows, 'impressions'), clicks = sum(rows, 'clicks');
+  return { days, impressions, clicks, perDay: impressions / days, ctr: impressions ? clicks / impressions : 0, position: impressions ? sum(rows, 'posSum') / impressions : 0 };
+}
+const pct = (a, b) => (b ? `${a >= b ? '+' : ''}${fmt(((a - b) / b) * 100, 0)} %` : '-');
+const tested = [...changes.keys()];
+const testRows = [];
+for (const [page, date] of changes) {
+  const afterStart = addDays(date, 3), afterEnd = [addDays(date, 30), iso(end)].sort()[0];
+  if (afterStart > iso(end) || addDays(date, 90) < iso(end)) continue;
+  const beforeFrom = addDays(date, -28), beforeTo = addDays(date, -1);
+  const isPage = (p) => p === page;
+  // Témoin : les pages qui n'ont pas été modifiées dans le journal.
+  const isControl = (p) => !tested.includes(p);
+  const b = windowStats(isPage, beforeFrom, beforeTo), a = windowStats(isPage, afterStart, afterEnd);
+  const cb = windowStats(isControl, beforeFrom, beforeTo), ca = windowStats(isControl, afterStart, afterEnd);
+  // Effet net : l'évolution de la page, corrigée de celle du témoin sur les mêmes dates.
+  const net = b.perDay && cb.perDay && ca.perDay ? ((a.perDay / b.perDay) / (ca.perDay / cb.perDay) - 1) * 100 : null;
+  const elapsed = Math.round((end - new Date(date)) / DAY);
+  const status = elapsed < 21 ? `en cours (J+${elapsed})` : a.impressions < 300 ? `trop peu de données (${a.impressions} impr.)` : 'mesurable';
+  testRows.push(`| ${page} | ${date} | ${fmt(b.perDay)} → ${fmt(a.perDay)} (${pct(a.perDay, b.perDay)}) | ${pct(ca.perDay, cb.perDay)} | ${net === null ? '-' : `${net >= 0 ? '+' : ''}${fmt(net, 0)} %`} | ${fmt(b.ctr * 100)} → ${fmt(a.ctr * 100)} % (témoin ${fmt(cb.ctr * 100)} → ${fmt(ca.ctr * 100)} %) | ${b.impressions ? fmt(b.position) : '-'} → ${a.impressions ? fmt(a.position) : '-'} | ${status} |`);
+}
+lines.push('', '## Tests en cours : changements du journal mesurés avant / après, face au témoin', '',
+  'Avant = 28 jours précédant le changement ; après = à partir de J+3, jusqu\'à 28 jours. Valeurs par jour. Le témoin = toutes les pages jamais modifiées dans le journal.', '',
+  '| Page | Changement | Impressions / jour | Témoin | Effet net | Taux de clic | Position | Statut |', '|---|---|---|---|---|---|---|---|',
+  ...(testRows.length ? testRows : ['| Aucun changement de moins de 90 jours | | | | | | | |']),
+  '', '_Effet net = évolution de la page divisée par celle du témoin. Le taux de clic ne se compare qu\'à position proche (moins d\'une place d\'écart) : sinon, c\'est la position qui l\'explique._');
 fs.writeFileSync(path.join(dir, 'latest.md'), lines.join('\n') + '\n');
 console.log(`Relevé écrit : ${data.current.pages.length} pages, ${data.current.queries.length} couples page/requête.`);

@@ -48,6 +48,13 @@ jobs:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: node scripts/seo-pilot-data.mjs
 
+      # Ce que font les visiteurs sur les pages. Clarity peut être indisponible, ce n'est pas bloquant.
+      - name: Relevé Clarity
+        continue-on-error: true
+        env:
+          CLARITY_API_TOKEN: ${{ secrets.CLARITY_API_TOKEN }}
+        run: node scripts/seo-pilot-clarity.mjs
+
       # Le 1er lundi du mois seulement : nourrit la revue éditoriale. Trends peut refuser, ce n'est pas bloquant.
       - name: Relevé Google Trends (1er lundi du mois)
         if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 2 * * 1' }}

@@ -22,8 +22,9 @@ Lance en parallèle tout ce qui est indépendant. Donne à chaque agent un brief
 2. `seo-pilot/STRATEGY.md` : la stratégie, ses priorités et ses jalons. Tes choix en découlent ; tu ne t'en écartes pas et tu ne la modifies pas.
 3. `seo-pilot/KPIS.md` : **tes objectifs**. Tu es jugé sur un seul résultat : des clients signés grâce à Google chaque mois (minimum 1, normal 2, parfait 3). Tout ce que tu décides sert cet objectif.
 4. `seo-pilot/scorecard.md` et `seo-pilot/clients.md` : où tu en es.
-5. `seo-pilot/data/latest.md` : le relevé Search Console de la semaine.
-6. `seo-pilot/journal.md` : tout ce qui a été changé, les bilans et les refus passés.
+5. `seo-pilot/data/latest.md` : le relevé Search Console et GA4 de la semaine, avec la mesure avant / après de chaque changement récent face au témoin (section « Tests en cours »).
+6. `seo-pilot/data/clarity.md` : le relevé Microsoft Clarity, ce que font les visiteurs sur les pages (défilement, temps actif, clics morts, clics de rage, retours rapides). C'est la source qui explique pourquoi une page visitée ne convertit pas.
+7. `seo-pilot/journal.md` : tout ce qui a été changé, les bilans et les refus passés.
 
 ## Déroulé
 
@@ -52,9 +53,13 @@ Une entrée par page modifiée ou article publié, en tête de la section « Ent
 ```
 ### AAAA-MM-JJ : /chemin/de-la-page/
 - Changement : ce qui a été fait, en une ou deux phrases.
+- Avant : l'ancien title, l'ancienne description ou l'ancien H1, mot pour mot, s'ils ont changé (pour pouvoir annuler).
+- Hypothèse : ce qu'on attend et pourquoi, par exemple « le taux de clic passe de 0,5 à 2 % car le title reprend la requête exacte ».
 - Requête visée : …
 - Départ : X impressions, Y clics, position Z (28 jours au AAAA-MM-JJ). Pour un nouvel article : « nouvel article ».
 ```
+
+Le journal est le registre des tests : le relevé mesure automatiquement chaque entrée de moins de 90 jours. Une seule modification par page à la fois, sinon on ne sait pas laquelle a joué.
 
 Ajoute aussi les bilans rédigés par `analyste-data` sous les entrées concernées (`Bilan (date) : …`), et une ligne pour chaque modification refusée par le relecteur, pour ne pas la retenter telle quelle.
 

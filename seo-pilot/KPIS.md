@@ -14,7 +14,7 @@ Le chef de projet est responsable de ces objectifs. Chaque lundi, il compare les
 
 Échéance : rythme atteint au plus tard à fin octobre 2027, avec un premier client venu de Google avant fin avril 2027.
 
-Les clients viennent d'abord des recherches **nationales et de niche** (landing page, santé esthétique), où les avis Google pèsent peu. Le classement local d'Annecy (la carte) reste un bonus : avec peu d'avis Google, il progressera lentement.
+Les clients viennent de deux sources qui se complètent : les recherches **nationales et de niche** (landing page, santé esthétique), portées par le contenu, et le **local** (Annecy, la carte Google), porté par la fiche Google et les avis.
 
 ## Du client au clic : ce qu'il faut produire
 
@@ -93,7 +93,7 @@ Comment chaque chiffre monte :
 Autres KPI mensuels :
 - **Taux de conversion Google** (leads réels estimés ÷ clics) : ≥ 1,5 % dès février, ≥ 2 % en juin, ≥ 3 % en octobre.
 - **Requêtes commerciales en top 10** (liste dans `STRATEGY.md`) : +1 par mois au minimum.
-- **Avis Google** : pas d'objectif de volume. Google a supprimé une partie des avis de MSD Media et Maxens ne peut pas en obtenir beaucoup d'autres : on vise seulement un avis par nouveau client livré, posté par le client lui-même. Jamais d'avis achetés, échangés ou rédigés pour quelqu'un (illégal et sanctionné par Google). Le chef ne relance pas Maxens sur ce point.
+- **Avis Google** (action de Maxens, levier majeur du local et de la confiance) : **10 fin janvier, 15 fin avril, 20 fin octobre**, puis un avis par nouveau client livré. Uniquement de vrais clients, qui postent eux-mêmes : jamais d'avis achetés, échangés ou rédigés pour quelqu'un (illégal, et Google supprime les avis voire la fiche). Le chef le rappelle une fois par mois si on est en retard, avec la méthode de `seo-pilot/AVIS.md`.
 
 ## KPI de chaque trimestre (le bilan)
 
@@ -117,7 +117,7 @@ Chaque lundi, il identifie **le maillon le plus faible de la chaîne** et y affe
 | Visites Google sur une page, mais 0 intention | La page ne convertit pas | **Conversion** : réponse plus nette, preuves (Merz, avis existants), appel à réserver un appel mieux placé, avec les blocs existants de la home |
 | Intentions mais pas de leads confirmés | Le passage à l'acte coince | Vérifier les parcours formulaire et rendez-vous avec le `technicien`, et le signaler à Maxens |
 | Leads présents mais peu de clients | L'offre ou la vente coince (hors SEO) | Le signaler à Maxens dans le rapport, sans rien changer au site |
-| Sous le minimum du mois deux mois de suite | Le site seul ne suffit plus | « À toi » vise le levier hors site qui bloque (fiche Google, annuaires et plateformes d'avis hors Google, liens, preuves clients), avec un chiffre précis |
+| Sous le minimum du mois deux mois de suite | Le site seul ne suffit plus | « À toi » vise le levier hors site qui bloque (avis Google, fiche Google, annuaires, liens, preuves clients), avec un chiffre précis |
 
 Il ne change pas la stratégie, il change **la répartition de l'effort** : par exemple 2 pages sur la conversion et 1 sur le taux de clic cette semaine, plutôt que 3 articles de plus.
 

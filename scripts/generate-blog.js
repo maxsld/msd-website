@@ -736,7 +736,7 @@ function renderBlogFeaturedCarousel(posts = []) {
     const image = imagePathForPage(getListingImage(post), '../assets');
     return `<a class="blog-hero-carousel__slide" href="/blog/articles/${post.slug}/">
             <span class="blog-hero-carousel__media">
-              <img src="${escapeHtml(image)}" alt="" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async">
+              <img src="${escapeHtml(image)}" alt="" loading="${index === 0 ? 'eager' : 'lazy'}"${index === 0 ? ' fetchpriority="high"' : ''} decoding="async">
             </span>
             <span class="blog-hero-carousel__content">
               <span class="blog-hero-carousel__meta">
@@ -891,7 +891,7 @@ function renderSiteHeader() {
                 <a href="https://msd-media.com/site-web-coach/" data-i18n="nav_coaches">Coachs &amp; consultants</a>
               </div>
               <div class="nav-megamenu__media">
-                <img width="1920" height="1080" src="https://msd-media.com/assets/img/navbar-img2.webp" alt="Aperçu des secteurs accompagnés par MSD Media" loading="lazy" decoding="async">
+                <img width="1320" height="742" src="https://msd-media.com/assets/img/navbar-img2.webp" alt="Aperçu des secteurs accompagnés par MSD Media" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -1193,8 +1193,7 @@ function renderArticlePage(post, allPosts) {
   <link rel="icon" type="image/svg+xml" href="${SITE_URL}/assets/img/favicon.svg" />
   <link rel="shortcut icon" href="${SITE_URL}/assets/img/favicon.ico" />
 
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="../../../assets/css/style.css" />
+<link rel="stylesheet" href="../../../assets/css/style.css" />
   <link rel="stylesheet" href="../../../assets/css/responsive.css" />
   <link rel="stylesheet" href="../../../assets/css/fontawesome-subset.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1321,8 +1320,7 @@ function renderBlogIndex(posts) {
   <link rel="icon" type="image/png" href="${SITE_URL}/assets/img/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="${SITE_URL}/assets/img/favicon.svg" />
   <link rel="shortcut icon" href="${SITE_URL}/assets/img/favicon.ico" />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <link rel="stylesheet" href="../assets/css/fontawesome-subset.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

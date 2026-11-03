@@ -27,7 +27,7 @@
 .tools-directory__heading h2 { margin-bottom: 16px; font-size: clamp(1.8rem, 3.4vw, 3rem); line-height: 1.1; letter-spacing: -.025em; }
 .tools-directory__heading > p:last-child { color: var(--text); font-size: 1rem; line-height: 1.65; letter-spacing: 0; }
 .tools-directory .tool-tiles__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.tools-directory .tool-tile:not(#_) { grid-column: auto; align-items: stretch; gap: 32px; min-width: 0; padding: 32px; background: var(--tile); border: 1px solid var(--border); border-radius: var(--radius); text-align: left; }
+.tools-directory .tool-tile:not(#_) { grid-column: auto; align-items: stretch; gap: 32px; min-width: 0; padding: 32px; background: var(--tile); border: 0; border-radius: var(--radius); text-align: left; }
 .tools-directory .tool-tile::before, .tools-directory .tool-tile::after { content: none; }
 .tools-directory .tool-tile__text { display: flex; flex-direction: column; align-items: flex-start; }
 .tools-directory__category { margin-bottom: 16px; color: var(--text-dark); font-size: .8rem; font-weight: 600; letter-spacing: .02em; }

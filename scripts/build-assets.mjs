@@ -41,6 +41,61 @@ function cssForProfile(source, groups) {
   return root.toString();
 }
 
+// ---------- Purge de l'ancien CSS (refonte 2026) ----------
+// style.css (≈ 160 Ko) date de l'ancien site ; la plupart de ses règles ne servent plus. Chaque fichier
+// servi (style.<profil>.min.css, responsive.min.css, light-v1.min.css) ne garde que les règles dont
+// toutes les classes et tous les identifiants apparaissent dans les pages qui le chargent, ou dans un
+// script du site (classes ajoutées en JavaScript). Les mots sont relevés largement (tout le HTML, tous
+// les scripts) : une règle n'est retirée que si l'un de ses noms n'apparaît nulle part.
+const PURGED = new Set(['style.css', 'responsive.css', 'light-v1.css']);
+const SKIP_DIRS = new Set(['.git', 'node_modules', '.vscode', 'graphify-out', 'kit', 'kits', 'docs', 'scripts']);
+const words = (text) => new Set(text.match(/[A-Za-z_][\w-]*/g) || []);
+
+function* htmlPages(dir) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (SKIP_DIRS.has(entry.name)) continue;
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) yield* htmlPages(full);
+    else if (entry.name.endsWith('.html')) yield fs.readFileSync(full, 'utf8');
+  }
+}
+
+let usage = null;
+function cssUsage() {
+  if (usage) return usage;
+  const jsDir = path.join(process.cwd(), 'assets', 'js');
+  const jsWords = words(fs.readdirSync(jsDir).filter(n => n.endsWith('.js') && !n.endsWith('.min.js'))
+    .map(n => fs.readFileSync(path.join(jsDir, n), 'utf8')).join('\n'));
+  // Mots utilisés par les pages qui chargent chaque fichier CSS (clé : nom du fichier servi).
+  const byFile = new Map();
+  for (const html of htmlPages(process.cwd())) {
+    const pageWords = words(html);
+    for (const [, served] of html.matchAll(/assets\/css\/([\w.-]+?)(?:\.min)?\.css/g)) {
+      const key = served.replace(/\.min$/, '');
+      if (!byFile.has(key)) byFile.set(key, new Set(jsWords));
+      const set = byFile.get(key);
+      for (const w of pageWords) set.add(w);
+    }
+  }
+  usage = byFile;
+  return usage;
+}
+
+function purgeCss(css, used) {
+  if (!used) return css;
+  const root = postcss.parse(css);
+  root.walkRules(rule => {
+    if (rule.parent.type === 'atrule' && /keyframes/i.test(rule.parent.name)) return;
+    const keep = rule.selectors.some(sel => {
+      const visible = sel.replace(/:not\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '');
+      return [...visible.matchAll(/[.#](-?[_a-zA-Z][\w-]*)/g)].every(m => used.has(m[1]));
+    });
+    if (!keep) rule.remove();
+  });
+  root.walkAtRules(rule => { if (rule.nodes && !rule.nodes.length) rule.remove(); });
+  return root.toString();
+}
+
 // Garder les sources lisibles ; servir les versions minifiées et versionnées.
 // Appelé par version-assets.mjs, y compris dans les workflows et le hook Git.
 export async function buildAssets({ check = false } = {}) {
@@ -58,9 +113,13 @@ export async function buildAssets({ check = false } = {}) {
           return `marketing.min.js?v=${crypto.createHash('md5').update(content).digest('hex').slice(0, 8)}`;
         });
       }
-      const variants = name === 'style.css'
+      let variants = name === 'style.css'
         ? [['', cssForProfile(source, [])], ...Object.entries(STYLE_PROFILES).map(([profile, groups]) => [`.${profile}`, cssForProfile(source, groups)])]
         : [['', source]];
+      if (PURGED.has(name)) {
+        const base = name.replace(/\.css$/, '');
+        variants = variants.map(([suffix, input]) => [suffix, purgeCss(input, cssUsage().get(base + suffix))]);
+      }
       for (const [suffix, input] of variants) {
         const { code, warnings } = await transform(input, {
           loader: type, minify: true, legalComments: 'none', charset: 'utf8',

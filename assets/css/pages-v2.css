@@ -94,7 +94,7 @@ main.container:not(#_) > * { max-width: 860px; }
 .ai-proof__msd-logo:not(#_) { filter: none; }
 
 /* ---------- Cartes : rayon et fond de la home ---------- */
-:is(.process-step, .realisations-panel, .blog-card, .tool-tile, .sector-card, .about-value-card):not(#_) { border-radius: var(--radius); }
+:is(.process-step, .realisations-panel, .tool-tile, .sector-card, .about-value-card):not(#_) { border-radius: var(--radius); }
 
 @media (max-width: 680px) {
   .hero:not(#_) { width: calc(100% - 2.5rem); }
@@ -195,3 +195,37 @@ body:not(.sector-page) main > section.hero-photo:first-child:not(#_) { padding-t
 body:not(.sector-page) main > :first-child .blog-article-hero__row:not(#_), body:not(.sector-page) main > .tpl-split:first-child:not(#_) { align-items: start; }
 body:not(.sector-page) main > nav.breadcrumb:first-child + .hero:not(#_) { padding-top: 0; }
 body:not(.sector-page) main > :first-child .blog-article-cover:not(#_) { margin-top: 0; }
+
+/* Carrousel de la page Réalisations : mêmes arrondis que les cartes de la home, logos lisibles sur la photo */
+.realisations-carousel-section :is(.blog-hero-carousel__viewport, .blog-hero-carousel__slide):not(#_) { border-radius: var(--radius); }
+.realisations-carousel-logo img:not(#_) { filter: none; opacity: 1; }
+.realisations-carousel-logo img[src*="marie-troccaz"]:not(#_) { filter: brightness(0) invert(1); }
+.realisations-carousel-section .blog-hero-carousel__arrow:not(#_) { width: 44px; height: 44px; border-radius: 50%; background: rgba(255, 255, 255, .92); border: 0; color: var(--heading); box-shadow: 0 4px 14px rgba(0, 0, 0, .18); }
+.realisations-carousel-section .blog-hero-carousel__arrow:not(#_):hover { background: #fff; }
+.realisations-carousel-section .blog-card__tag:not(#_) { border-radius: var(--btn-radius); }
+@media (max-width: 680px) {
+  /* Sur mobile, les flèches passent en haut de la carte : elles ne recouvrent plus le texte */
+  .realisations-carousel-section .blog-hero-carousel__arrow:not(#_) { top: 14px; transform: none; width: 36px; height: 36px; }
+}
+
+/* ---------- Cartes : un seul style sur tout le site (celui de la home) ----------
+   Petites cartes à image (articles liés) : image arrondie, titre et infos dessous, comme la liste du blog
+   et les réalisations de la home. */
+.blog-related .blog-card:not(#_) { position: static; display: flex; flex-direction: column; min-width: 0; aspect-ratio: auto; overflow: visible; border: 0; border-radius: 0; background: none; color: var(--heading); }
+.blog-related .blog-card::after { content: none; }
+.blog-related .blog-card img { position: static; display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius); background: var(--tile); transition: filter .4s ease; }
+.blog-related .blog-card:hover img { transform: none; filter: brightness(.94); }
+.blog-related .blog-card__content { flex: 1; height: auto; justify-content: flex-start; padding: 0; margin-top: 1.1rem; color: inherit; }
+.blog-related .blog-card__title { margin: 0; font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; line-height: 1.25; letter-spacing: -0.035em; color: var(--text-dark); }
+.blog-related .blog-card__details { justify-content: flex-start; gap: 1.1rem; margin-top: auto; padding-top: .8rem; font-size: .9rem; opacity: 1; color: var(--text); }
+.blog-related .blog-card__duration { padding: 0; border-radius: 0; background: none; color: var(--text); }
+.blog-related .blog-card__tag { padding: 0; border-radius: 0; background: none; color: var(--accent); font-size: .9rem; font-weight: 500; letter-spacing: 0; }
+.blog-related .blog-related-grid:not(#_) { gap: 32px 24px; }
+/* Cartes de contenu (tarifs, presse, valeurs, outils) : fond gris uni, sans bordure, coins 12 px, texte
+   aligné à gauche, comme les cartes « offre » et secteur de la home. */
+:is(.pricing-card, .press-card, .about-value-card, .tool-tile):not(#_):not(.pricing-card--featured) { background: var(--tile); border: 0; border-radius: var(--radius); box-shadow: none; }
+.about-value-card:not(#_) { text-align: left; padding: 1.75rem 1.5rem; }
+.about-value-card:not(#_) * { text-align: left; }
+.pricing-card--featured:not(#_) { border: 0; border-radius: var(--radius); }
+/* Logo du Dauphiné (fond noir intégré au fichier) : affiché tel quel */
+.press-card__logo--dauphine:not(#_), .press-card__logo--polytech:not(#_) { filter: none; }

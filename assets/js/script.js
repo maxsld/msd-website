@@ -1106,23 +1106,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const logoTracks = document.querySelectorAll(".logo-marquee__track");
   const clientLogos = [
-    { src: "https://msd-media.com/assets/img/logo-ultherapy-prime.webp", alt: "Logo Ultherapy Prime" },
-    { src: "https://msd-media.com/assets/img/logo-radiesse-v2.webp", alt: "Logo Radiesse", className: "logo-marquee__img--radiesse" },
-    { src: "https://msd-media.com/assets/img/logos/belotero.svg", alt: "Logo Belotero", className: "logo-marquee__img--belotero" },
-    { src: "https://msd-media.com/assets/img/logo-track5.webp", alt: "Logo client 5" },
-    { src: "https://msd-media.com/assets/img/logo-merz-aesthetics.webp", alt: "Logo Merz Aesthetics", className: "logo-marquee__img--merz" },
-    { src: "https://msd-media.com/assets/img/logos/french-tech-full.webp", alt: "La French Tech", className: "logo-marquee__img--frenchtech" },
-    { src: "https://msd-media.com/assets/img/logo-track6.webp", alt: "Logo client 6" },
-    { src: "https://msd-media.com/assets/img/logo-track7.webp", alt: "Logo client 7", className: "logo-marquee__img--carroz" },
-    { src: "https://msd-media.com/assets/img/logo-track8.webp", alt: "Logo client 8" },
-    { src: "https://msd-media.com/assets/img/logo-track9.webp", alt: "Logo client 9" }
+    { src: "https://msd-media.com/assets/img/logo-ultherapy-prime.webp", alt: "Logo Ultherapy Prime", width: 400, height: 126 },
+    { src: "https://msd-media.com/assets/img/logo-radiesse-v2.webp", alt: "Logo Radiesse", width: 768, height: 115, className: "logo-marquee__img--radiesse" },
+    { src: "https://msd-media.com/assets/img/logos/belotero.svg", alt: "Logo Belotero", width: 313, height: 50, className: "logo-marquee__img--belotero" },
+    { src: "https://msd-media.com/assets/img/logo-track5.webp", alt: "Logo Nation", width: 188, height: 53 },
+    { src: "https://msd-media.com/assets/img/logo-merz-aesthetics.webp", alt: "Logo Merz Aesthetics", width: 550, height: 48, className: "logo-marquee__img--merz" },
+    { src: "https://msd-media.com/assets/img/logos/french-tech-full.webp", alt: "La French Tech", width: 146, height: 220, className: "logo-marquee__img--frenchtech" },
+    { src: "https://msd-media.com/assets/img/logo-track6.webp", alt: "Logo Agence 3XL", width: 500, height: 117 },
+    { src: "https://msd-media.com/assets/img/logo-track7.webp", alt: "Logo Carroz Sports", width: 580, height: 63, className: "logo-marquee__img--carroz" },
+    { src: "https://msd-media.com/assets/img/logo-track8.webp", alt: "Logo EM Motors", width: 324, height: 160 },
+    { src: "https://msd-media.com/assets/img/logo-track9.webp", alt: "Logo Aaru", width: 397, height: 142 }
   ];
 
   if (logoTracks.length) {
-    const buildLogo = ({ src, alt, className = "" }, isDuplicate = false) => {
+    const buildLogo = ({ src, alt, width, height, className = "" }, isDuplicate = false) => {
       const logo = document.createElement("img");
       logo.className = `logo-marquee__img ${className}`.trim();
       logo.src = src;
+      // Dimensions réelles : la place est réservée avant le chargement (pas de décalage).
+      logo.width = width;
+      logo.height = height;
       logo.alt = isDuplicate ? "" : alt;
       logo.loading = "lazy";
       logo.decoding = "async";
@@ -1133,6 +1136,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     logoTracks.forEach((logoTrack) => {
+      // Les bandeaux déjà remplis dans le HTML (pages construites sur la home) gardent leurs logos.
+      if (logoTrack.children.length) return;
       const logos = [
         ...clientLogos.map((logo) => buildLogo(logo)),
         ...clientLogos.map((logo) => buildLogo(logo, true))

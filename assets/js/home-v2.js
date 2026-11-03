@@ -212,8 +212,11 @@
     indicator.style.transform = 'translateX(' + tab.offsetLeft + 'px)';
   };
   var activeTab = document.querySelector('.tab.is-active');
-  moveIndicator(activeTab);
-  window.addEventListener('resize', function () { moveIndicator(activeTab); });
+  // Les autres pages qui chargent ce script (outils) n'ont pas les onglets du portfolio
+  if (activeTab && indicator) {
+    moveIndicator(activeTab);
+    window.addEventListener('resize', function () { moveIndicator(activeTab); });
+  }
 
   var filterTimer;
   tabs.forEach(function (tab) {

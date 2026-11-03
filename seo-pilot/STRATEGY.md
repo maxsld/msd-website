@@ -37,7 +37,7 @@ Une seule modification par page à la fois. Pas de nouvelle modification sur une
 
 ## Axe Munich (ajouté le 2026-11-03, décision de Maxens)
 
-Maxens est membre de la communauté French Tech Munich. Il ne parle pas allemand et n'a pas de bureau à Munich : on ne vise donc **ni les recherches en allemand, ni la fiche Google Business Profile à Munich** (Google l'interdit sans adresse réelle où recevoir des clients). On vise trois cibles, en français et en anglais :
+Maxens est membre de la communauté French Tech Munich. Il vit et travaille à Munich (la carte « Munich » du footer est donc juste et voulue : ne pas la signaler), mais il ne parle pas allemand et n'a pas de bureau ni d'adresse où recevoir des clients à Munich : on ne vise donc **ni les recherches en allemand, ni la fiche Google Business Profile à Munich** (Google l'interdit sans adresse réelle où recevoir des clients). On vise trois cibles, en français et en anglais :
 1. les entrepreneurs francophones installés à Munich (indépendants, filiales françaises, startups) ;
 2. les entreprises allemandes qui veulent vendre en France (site écrit pour le marché français, SEO Google France) ;
 3. les startups internationales de Munich qui travaillent en anglais.

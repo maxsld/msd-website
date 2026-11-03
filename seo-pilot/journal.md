@@ -11,6 +11,10 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-03 : /realisations/merz-belotero/ (décision de Maxens)
+- Changement : MSD Media n'a pas la réalisation Belotero. Page supprimée et redirigée (301) vers /realisations/ ; liens retirés de /realisations/merz-radiesse/, /realisations/merz-ultherapy-prime/ et de l'article médecine esthétique ; retirée du sitemap et de llms.txt. FAQ Munich FR/EN : plus de mention de clients en Allemagne (Maxens n'en a pas encore).
+- Requête visée : aucune (correction d'exactitude).
+
 ### 2026-11-03 : /blog/articles/publicite-chirurgie-esthetique-decret-2026/
 - Changement : nouvel article santé sur le décret n° 2026-891 du 23 septembre 2026 (communications commerciales des installations de chirurgie esthétique), renvoie vers /site-web-chirurgie-esthetique/.
 - Hypothèse : premières impressions sur « publicité chirurgie esthétique » et « décret chirurgie esthétique 2026 » en 2 à 6 semaines (sujet récent, résultats surtout juridiques) ; renforce le hub santé.

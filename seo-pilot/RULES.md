@@ -8,7 +8,7 @@ Tous les agents les lisent et les appliquent. MSD Media est une agence web d'Ann
 - **Affirmer une règle de droit, un chiffre de marché ou une date réglementaire sans source.** Toute affirmation de ce type cite une source officielle ou reconnue (Légifrance, Ordre, ANSM, CNIL, Google…), avec un lien dans la section « Sources » de l'article. Dans le doute, on ne l'écrit pas.
 - Afficher un **prix MSD Media** ailleurs que sur `/tarifs/`. Les fourchettes de prix du marché restent permises dans les articles.
 - Modifier l'**accueil** (`index.html`, `en/index.html`) : Maxens le gère lui-même.
-- Ajouter un lien vers `/realisations/merz-belotero/` (pas encore à mettre en avant).
+- Citer Belotero comme réalisation ou ajouter un lien vers `/realisations/merz-belotero/` : MSD Media n'a pas cette réalisation (page redirigée vers `/realisations/` le 2026-11-03).
 - Supprimer une page, toucher aux redirections (`vercel.json`), aux workflows, aux scripts, au CSS, au JS, aux sitemaps, à `llms.txt`, au footer ou au header.
 - Créer une page ailleurs que sur le blog (un article = un fichier dans `blog/sources/`).
 - Toucher à une page modifiée il y a moins de 21 jours d'après `seo-pilot/journal.md`, sauf pour annuler un changement nuisible.

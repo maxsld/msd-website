@@ -1428,6 +1428,16 @@
       "permanent": true
     },
     {
+      "source": "/realisations/merz-belotero",
+      "destination": "/realisations/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/merz-belotero/",
+      "destination": "/realisations/",
+      "permanent": true
+    },
+    {
       "source": "/realisations/agence-3xl",
       "destination": "https://msd-media.com/realisations/agence-3xl/",
       "permanent": true

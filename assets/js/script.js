@@ -1114,7 +1114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { src: "https://msd-media.com/assets/img/logo-merz-aesthetics.webp", alt: "Logo Merz Aesthetics", width: 550, height: 48, className: "logo-marquee__img--merz" },
     { src: "https://msd-media.com/assets/img/logos/french-tech-full.webp", alt: "La French Tech", width: 146, height: 220, className: "logo-marquee__img--frenchtech" },
     { src: "https://msd-media.com/assets/img/logo-track6.webp", alt: "Logo Agence 3XL", width: 500, height: 117 },
-    { src: "https://msd-media.com/assets/img/logo-track7.webp", alt: "Logo Carroz Sports", width: 580, height: 63, className: "logo-marquee__img--carroz" },
+    { src: "https://msd-media.com/assets/img/logo-track7.webp", alt: "Logo Carroz Sports", width: 1484, height: 160, className: "logo-marquee__img--carroz" },
     { src: "https://msd-media.com/assets/img/logo-track8.webp", alt: "Logo EM Motors", width: 324, height: 160 },
     { src: "https://msd-media.com/assets/img/logo-track9.webp", alt: "Logo Aaru", width: 397, height: 142 }
   ];

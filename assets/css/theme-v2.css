@@ -132,6 +132,8 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--heading); font-w
 .logo-marquee__img.is-mono { filter: brightness(0); opacity: 1; }
 .logo-marquee__img.is-mono:hover { filter: brightness(0); opacity: 1; }
 .logo-marquee__img--ultherapy { height: 42px; }
+/* Ultherapy : « PRIME » est en blanc sur un cartouche, le noir pur l'effacerait. */
+.logo-marquee__img[src*="ultherapy"]:not(#_) { filter: grayscale(1) brightness(.65) contrast(6); opacity: 1; }
 .logo-marquee__img--jam { height: 40px; }
 .logo-marquee__img--wyn { height: 30px; }
 .logo-marquee__img--aristoi { height: 60px; }

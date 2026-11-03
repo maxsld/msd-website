@@ -913,16 +913,6 @@
       "permanent": true
     },
     {
-      "source": "/agence-web-munich/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/agence-web-munich",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/creation-site-web-montpellier/",
       "destination": "/agence-web-annecy/",
       "permanent": true

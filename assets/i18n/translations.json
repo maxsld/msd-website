@@ -346,7 +346,8 @@
     "eco_title": "Une éco-conception<br>dès le départ.",
     "eco_text": "Des sites sur mesure, sans constructeur : des pages qui pèsent moins, se chargent vite et s'ouvrent à chacun.",
     "nav_tools": "Outils gratuits",
-    "footer_tools": "Outils gratuits"
+    "footer_tools": "Outils gratuits",
+    "nav_aesthetic": "Médecine esthétique"
   },
   "en": {
     "cookie_text": "We use cookies to measure site traffic and improve your experience.",
@@ -695,6 +696,7 @@
     "eco_title": "Eco-design<br>from the start.",
     "eco_text": "Custom websites, no builder: pages that weigh less, load fast and open up to everyone.",
     "nav_tools": "Free tools",
-    "footer_tools": "Free tools"
+    "footer_tools": "Free tools",
+    "nav_aesthetic": "Aesthetic medicine"
   }
 }

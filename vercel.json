@@ -12,6 +12,11 @@
   },
   "redirects": [
     {
+      "source": "/websitev2/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/blog/articles/site-web-avocat-annecy",
       "destination": "/site-web-avocat/",
       "permanent": true

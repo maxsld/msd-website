@@ -103,7 +103,9 @@
     "form_abandon",
     "faq_open",
     "video_play",
-    "ai_referral"
+    "ai_referral",
+    "chat_open",
+    "chat_message"
   ]);
 
   // GA4 (gtag.js) n'est charge qu'apres consentement cookie : on tamponne les
@@ -845,12 +847,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2300);
   };
 
+  // Sélecteur du header (refonte 2026) : le bouton reprend le drapeau et le code de la langue affichée.
+  const syncLangSwitch = (lang) => {
+    document.querySelectorAll("[data-lang-switch]").forEach((sw) => {
+      const current = sw.querySelector(`a[data-lang="${lang}"]`);
+      const btn = sw.querySelector("button");
+      if (current && btn) btn.innerHTML = current.innerHTML;
+      sw.querySelectorAll("a[data-lang]").forEach((a) => {
+        if (a === current) a.setAttribute("aria-current", "true");
+        else a.removeAttribute("aria-current");
+      });
+    });
+  };
+
   const setLanguage = (lang) => {
     const dict = translations[lang];
     document.documentElement.lang = lang;
     langSelects.forEach((select) => {
       if (select.value !== lang) select.value = lang;
     });
+    syncLangSwitch(lang);
 
     if (dict) {
       i18nTargets.forEach((node) => {
@@ -917,6 +933,23 @@ document.addEventListener("DOMContentLoaded", () => {
       loadTranslations().then(() => setLanguage(nextLang));
     });
   });
+
+  // Même logique pour les liens du sélecteur du header : la home a une vraie page /en/,
+  // les autres pages se traduisent sur place.
+  document.querySelectorAll("[data-lang-switch] a[data-lang]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const nextLang = normalizeLang(link.dataset.lang) || "fr";
+      saveLanguagePreference(nextLang);
+      if (isHome) return;
+      event.preventDefault();
+      if (nextLang === "fr") {
+        window.location.reload();
+        return;
+      }
+      loadTranslations().then(() => setLanguage(nextLang));
+    });
+  });
+  syncLangSwitch(preferredLang);
 
   const isProjectPreviewOpen = () => Boolean(document.querySelector(".project-preview-modal.is-open"));
   const isNavMenuOpen = () => Array.from(navMenus).some((menu) => menu.classList.contains("is-open"));

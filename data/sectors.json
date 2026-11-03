@@ -1,0 +1,1930 @@
+{
+  "site-web-architecte": {
+    "h1": "On fait des sites web pour les architectes.",
+    "subtitle": "MSD Media crée des sites web sur-mesure pour architectes, pensés pour valoriser vos projets en portfolio, ranker sur vos spécialités et générer des demandes qualifiées. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "Votre site est votre première preuve de goût",
+        "paragraphs": [
+          "Le client type d'un architecte juge votre site avant même de prendre rendez-vous — le design du site est déjà une démonstration de votre travail. Grands visuels, mise en page soignée, storytelling par projet : vos réalisations méritent mieux qu'une grille de vignettes générique.",
+          "Dans une profession où l'esthétique est le métier, un site construit sur un template générique est un contresens. Le vôtre doit être aussi soigné qu'un de vos projets."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1503387762-592deb58ef4e.webp",
+        "alt": "Bâtiment moderne à l'architecture soignée",
+        "width": "1400",
+        "height": "788"
+      },
+      {
+        "title": "Rénovation, construction neuve, extension : chaque spécialité mérite sa page",
+        "paragraphs": [
+          "Chaque spécialité capte des recherches différentes et mérite sa propre visibilité plutôt qu'une page unique qui dilue votre positionnement. Nous structurons votre offre pour que chaque prospect trouve rapidement la réponse à son projet précis.",
+          "Expliquer votre process — de l'esquisse au chantier livré — rassure un client qui n'a souvent jamais fait construire ou rénover. Un formulaire de premier contact peut cadrer le type de projet, le budget et le calendrier avant l'échange."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1600585154340-be6161a56a0c.webp",
+        "alt": "Plans d'architecte et maquette de projet",
+        "width": "1400",
+        "height": "933"
+      }
+    ],
+    "cards": [],
+    "faq": [
+      {
+        "q": "Le site peut-il présenter mes projets sous forme de portfolio visuel ?",
+        "a": "<p>C'est même le cœur du sujet : nous construisons une mise en page pensée pour vos visuels, avec storytelling par projet plutôt qu'une simple galerie.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des architectes en dehors d'Annecy ?",
+        "a": "<p>Oui, nous accompagnons des architectes partout en France, en Suisse et en Belgique.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'un architecte ?",
+        "a": "<p>Une première version est livrée en 21 jours, avec un travail particulier sur la sélection et la mise en page de vos projets phares.</p>"
+      },
+      {
+        "q": "Peut-on ajouter de nouveaux projets après la mise en ligne ?",
+        "a": "<p>Oui, le site est conçu pour que vous puissiez enrichir votre portfolio en autonomie au fil de vos réalisations.</p>"
+      },
+      {
+        "q": "Quel est le tarif pour le site d'un architecte ?",
+        "a": "<p>Le tarif dépend du nombre de projets à présenter et du travail de mise en page visuelle nécessaire. Chaque devis est personnalisé après un premier échange.</p>"
+      },
+      {
+        "q": "La rédaction du contenu est-elle incluse ?",
+        "a": "<p>La structuration et la mise en forme sont incluses ; la rédaction fine peut être prise en charge selon le périmètre convenu ensemble.</p>"
+      },
+      {
+        "q": "Peut-on filtrer les demandes par type et budget de projet ?",
+        "a": "<p>Oui, un formulaire de premier contact peut qualifier le type de projet, le budget indicatif et le calendrier avant le premier échange.</p>"
+      },
+      {
+        "q": "Le référencement fonctionne-t-il pour une activité aussi visuelle ?",
+        "a": "<p>Oui, à condition de structurer le texte autour de vos spécialités et de vos zones d'intervention — le visuel seul ne suffit pas à ranker sur Google.</p>"
+      },
+      {
+        "q": "Faut-il parler des contraintes d'urbanisme locales sur le site ?",
+        "a": "<p>Oui, c'est un argument fort. Autour du lac d'Annecy et en montagne, les projets sont encadrés par la loi Littoral, la loi Montagne et les règles d'urbanisme de chaque commune. Montrer, projet à l'appui, que vous savez composer avec ces contraintes rassure davantage qu'une galerie d'images sans contexte.</p>"
+      },
+      {
+        "q": "Le site peut-il présenter une équipe de plusieurs architectes ?",
+        "a": "<p>Oui, chaque membre de l'agence peut avoir sa propre présentation tout en restant intégré à l'identité globale du cabinet.</p>"
+      },
+      {
+        "q": "Le devis inclut-il la rédaction des textes ?",
+        "a": "<p>La rédaction peut être incluse ou prise en charge par vos soins selon le périmètre convenu — nous en discutons dès le premier échange.</p>"
+      },
+      {
+        "q": "Peut-on lancer le projet en pleine charge de travail ?",
+        "a": "<p>Oui, le projet se mène en parallèle de votre activité, par échanges courts qui n'immobilisent pas votre équipe.</p>"
+      },
+      {
+        "q": "Le site peut-il gérer des visuels très haute définition sans ralentir ?",
+        "a": "<p>Oui, nous optimisons chaque image pour un rendu net et un chargement rapide, même avec des visuels de projet en haute résolution.</p>"
+      },
+      {
+        "q": "Faut-il indiquer son inscription à l'Ordre des architectes ?",
+        "a": "<p>C&#x27;est vivement conseillé. Le titre d&#x27;architecte est protégé par la loi du 3 janvier 1977, et votre inscription au tableau de l&#x27;Ordre rassure le client qui vous compare à d&#x27;autres intervenants. Nous l&#x27;affichons sur votre page de présentation.</p>"
+      },
+      {
+        "q": "Peut-on parler d'honoraires sur le site ?",
+        "a": "<p>Oui. Expliquer votre mode de facturation, en pourcentage du montant des travaux ou au forfait, aide le client à se situer. Un exemple de mission type suffit souvent, sans publier de grille.</p>"
+      },
+      {
+        "q": "Combien de projets faut-il présenter ?",
+        "a": "<p>Mieux vaut huit projets bien racontés que trente images sans contexte. Nous choisissons ceux qui correspondent aux clients que vous voulez attirer.</p>"
+      }
+    ],
+    "package": {
+      "label": "les architectes",
+      "who": "d'un architecte",
+      "url": "atelier-architecture.fr",
+      "brand": "Atelier d'architecture",
+      "hero": "Logements, extensions, rénovations",
+      "cta": "Voir les projets",
+      "before": "Bienvenue à l'atelier",
+      "after": "Vos projets racontés un par un, du croquis à la livraison.",
+      "health": false,
+      "query": "architecte annecy",
+      "serp": "Architecte à Annecy · Projets et rénovations",
+      "rdv_head": "Premier échange projet",
+      "rdv_btn": "Confirmer le rendez-vous",
+      "toast": "Rendez-vous confirmé",
+      "rdv_title": "Demandes de projet",
+      "rdv_desc": "Un formulaire qui qualifie le projet : type, surface, budget, délai.",
+      "funnel": [
+        "Visites",
+        "Projets consultés",
+        "Demandes de projet",
+        "Rendez-vous pris"
+      ],
+      "pour": "les architectes"
+    }
+  },
+  "site-web-artisan": {
+    "h1": "On fait des sites web pour les artisans.",
+    "subtitle": "MSD Media crée des sites web sur-mesure pour artisans et TPE, pensés pour générer des demandes de devis qualifiées, mettre en avant vos réalisations et améliorer votre référencement local. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "Des photos avant/après valent plus que n'importe quel argumentaire",
+        "paragraphs": [
+          "Sans site web, vous dépendez entièrement du bouche-à-oreille. Un formulaire de devis simple et rapide, associé à vos réalisations mises en avant, capte les demandes qualifiées sans perdre les prospects intéressés en cours de route.",
+          "Le visiteur sait immédiatement si vous intervenez chez lui — votre zone d'intervention affichée clairement évite les demandes hors zone et les déceptions des deux côtés."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1504328345606-18bbc8c9d7d1.webp",
+        "alt": "Artisan au travail sur un chantier",
+        "width": "1400",
+        "height": "933"
+      },
+      {
+        "title": "Chaque métier a ses recherches locales à fort potentiel",
+        "paragraphs": [
+          "Plombier, électricien, menuisier, maçon : les recherches type 'métier + ville' comptent parmi les plus qualifiées du web local, l'intention d'achat y est immédiate. Pourtant, la concurrence les ignore encore trop souvent, faute d'un site pensé pour ça.",
+          "Vos avis Google et témoignages clients affichés directement sur le site renforcent la confiance avant le premier contact — et le site reste simple à maintenir : vous gérez vos réalisations et vos coordonnées vous-même."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1581578731548-c64695cc6952.webp",
+        "alt": "Outils et matériel professionnel d'artisan",
+        "width": "1400",
+        "height": "933"
+      }
+    ],
+    "cards": [],
+    "faq": [
+      {
+        "q": "Peut-on intégrer un formulaire de devis en ligne ?",
+        "a": "<p>Oui, un formulaire de demande de devis qualifié (type de chantier, zone, délai) peut être intégré pour filtrer les demandes sérieuses.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des artisans en dehors d'Annecy ?",
+        "a": "<p>Oui, nous accompagnons des artisans et TPE partout en France, en Suisse et en Belgique.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'un artisan ou d'une TPE ?",
+        "a": "<p>Une première version est livrée en 21 jours, avec la mise en avant de vos réalisations et de votre zone d'intervention.</p>"
+      },
+      {
+        "q": "Puis-je ajouter mes réalisations moi-même après la livraison ?",
+        "a": "<p>Oui, le site est conçu pour que vous puissiez ajouter vos chantiers et photos en autonomie.</p>"
+      },
+      {
+        "q": "Combien coûte un site pour un artisan ?",
+        "a": "<p>Le budget dépend du périmètre — consultez notre grille tarifaire complète ou utilisez le configurateur pour une estimation en 2 minutes.</p>"
+      },
+      {
+        "q": "Le formulaire de devis est-il inclus dans le prix ?",
+        "a": "<p>Un formulaire de devis simple est inclus dans nos offres standards ; une qualification plus poussée peut être ajoutée selon vos besoins.</p>"
+      },
+      {
+        "q": "Peut-on afficher ma zone d'intervention sur une carte ?",
+        "a": "<p>Oui, une carte ou une liste claire de vos zones desservies peut être intégrée pour éviter les demandes hors périmètre.</p>"
+      },
+      {
+        "q": "Le SEO local fonctionne-t-il pour les métiers du bâtiment ?",
+        "a": "<p>Très bien : les recherches type 'plombier + ville' ou 'électricien + ville' sont parmi les plus qualifiées du web local — l'intention d'achat y est immédiate.</p>"
+      },
+      {
+        "q": "Faites-vous des sites pour les garages, salons de coiffure, photographes ou vétérinaires ?",
+        "a": "<p>Oui, chaque métier a sa priorité. Pour un garage, une page par prestation avec un formulaire de devis. Pour un salon, la réservation en ligne et les prix des prestations. Pour un photographe, un portfolio par spécialité. Pour une clinique vétérinaire, les horaires, la conduite à tenir en cas d'urgence et l'accès, visibles dès la page d'accueil.</p>"
+      },
+      {
+        "q": "Faut-il un blog quand on est artisan ?",
+        "a": "<p>Pas pour démarrer. Une page par service, votre zone d'intervention et des photos de vos réalisations apportent plus de demandes qu'un blog alimenté une fois par an. Un blog devient utile quand vous avez des questions récurrentes de clients à traiter en détail, et le temps de le tenir.</p>"
+      },
+      {
+        "q": "Le site peut-il présenter plusieurs corps de métier si je suis polyvalent ?",
+        "a": "<p>Oui, chaque activité (plomberie, électricité, rénovation...) peut être structurée comme une section à part entière pour rester clair pour le visiteur.</p>"
+      },
+      {
+        "q": "Le devis inclut-il la rédaction des textes ?",
+        "a": "<p>La rédaction peut être incluse ou prise en charge par vos soins selon le périmètre convenu — nous en discutons dès le premier échange.</p>"
+      },
+      {
+        "q": "Peut-on lancer le projet en pleine saison de chantiers ?",
+        "a": "<p>Oui, le projet se mène en parallèle de votre activité, par échanges courts qui n'empiètent pas sur vos horaires de chantier.</p>"
+      },
+      {
+        "q": "Le site fonctionne-t-il bien sur mobile pour mes clients qui cherchent en urgence ?",
+        "a": "<p>Oui, il est optimisé mobile en priorité : la majorité des recherches d'artisans en urgence se font sur smartphone.</p>"
+      },
+      {
+        "q": "Peut-on afficher les avis de mes clients ?",
+        "a": "<p>Oui, et c&#x27;est l&#x27;un de vos meilleurs arguments. Ils doivent être authentiques : de faux avis relèvent des pratiques commerciales trompeuses. Nous mettons en avant ceux de votre fiche Google.</p>"
+      },
+      {
+        "q": "Faut-il une page par commune ?",
+        "a": "<p>Non. Une page par métier et une liste claire des communes couvertes suffisent. Des dizaines de pages presque identiques, une par commune, sont mal vues par Google.</p>"
+      },
+      {
+        "q": "Mes photos de chantier prises au téléphone suffisent-elles ?",
+        "a": "<p>Souvent, oui. Bien cadrées et prises à la lumière du jour, elles prouvent davantage qu&#x27;une image de banque. Nous les recadrons et les optimisons pour le web.</p>"
+      }
+    ],
+    "package": {
+      "label": "les artisans",
+      "who": "d'un artisan",
+      "url": "votre-artisan.fr",
+      "brand": "Artisan · Rénovation",
+      "hero": "Devis gratuit sous 48 h",
+      "cta": "Demander un devis",
+      "before": "Bienvenue sur notre site",
+      "after": "Vos réalisations, votre zone d'intervention et un devis en deux clics.",
+      "health": false,
+      "query": "plombier annecy",
+      "serp": "Artisan à Annecy · Devis gratuit",
+      "rdv_head": "Demande de devis",
+      "rdv_btn": "Envoyer ma demande",
+      "toast": "Demande envoyée",
+      "rdv_title": "Demandes de devis",
+      "rdv_desc": "Un formulaire court, avec photos du chantier, pour des devis plus précis.",
+      "funnel": [
+        "Visites",
+        "Clics sur « Demander un devis »",
+        "Appels",
+        "Devis demandés"
+      ],
+      "pour": "les artisans"
+    }
+  },
+  "site-web-avocat": {
+    "h1": "On fait des sites web pour les avocats.",
+    "subtitle": "MSD Media crée des sites web sur-mesure pour cabinets d'avocats et juristes, pensés pour inspirer confiance, ranker sur vos domaines de pratique et générer des prises de contact qualifiées. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "Un site qui plaide votre expertise avant vous",
+        "paragraphs": [
+          "Un prospect qui cherche un avocat compare plusieurs cabinets avant de prendre rendez-vous. Le site est souvent le seul élément qui les différencie vraiment : présentation des domaines de pratique, parcours, résultats obtenus — tout ce qui construit la confiance avant même l'échange téléphonique.",
+          "Nous structurons chaque domaine de pratique (droit du travail, droit des affaires, RGPD, contentieux...) comme une page à part entière, pensée pour répondre précisément à la recherche qui y mène — et pour rassurer un visiteur exigeant en quelques secondes."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1589391886645-d51941baf7fb.webp",
+        "alt": "Avocat consultant un dossier dans son cabinet",
+        "width": "1400",
+        "height": "933"
+      },
+      {
+        "title": "Ranker sur vos domaines d'expertise, pas juste sur votre nom",
+        "paragraphs": [
+          "'Avocat droit du travail Annecy' ou 'avocat RGPD Strasbourg' sont des recherches beaucoup plus qualifiées qu'un simple 'avocat + ville'. Un site structuré par spécialité capte ces recherches précises, là où la concurrence se contente souvent d'une page générique.",
+          "Conformité dès la conception (mentions légales, RGPD, bandeau cookies), prise de rendez-vous en ligne intégrée à votre outil existant, et visibilité pensée aussi pour les IA : de plus en plus de prospects demandent à ChatGPT de leur recommander un avocat."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1521791136064-7986c2920216.webp",
+        "alt": "Bibliothèque juridique et documents de cabinet d'avocats",
+        "width": "1400",
+        "height": "935"
+      }
+    ],
+    "cards": [],
+    "faq": [
+      {
+        "q": "Un site d'avocat doit-il respecter des règles particulières ?",
+        "a": "<p>Oui : mentions légales complètes (barreau, numéro de toque), conformité RGPD, et pour certains cabinets des règles déontologiques sur la communication. Nous intégrons ces éléments dès la conception.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des cabinets en dehors d'Annecy ?",
+        "a": "<p>Oui, nous accompagnons des cabinets partout en France, en Suisse et en Belgique, entièrement à distance.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'un cabinet ?",
+        "a": "<p>Une première version est livrée en 21 jours : cadrage de vos domaines de pratique, structure, rédaction, intégration et mise en ligne.</p>"
+      },
+      {
+        "q": "Comment se déroule le projet concrètement ?",
+        "a": "<p>Brief et lancement (jours 1 à 4), structure et maquette (jours 5 à 10), développement (jours 11 à 17), livraison et ajustements (jours 18 à 21).</p>"
+      },
+      {
+        "q": "Quel est le tarif pour le site d'un cabinet d'avocats ?",
+        "a": "<p>Le tarif dépend du nombre de domaines de pratique à structurer et du travail de rédaction nécessaire. Chaque devis est établi après un premier échange sur votre périmètre exact.</p>"
+      },
+      {
+        "q": "Le référencement local est-il inclus dans le prix ?",
+        "a": "<p>Le SEO technique de base (vitesse, structure, bonnes pratiques Google) est inclus dans chaque site. Le SEO local avancé par spécialité peut être ajouté selon vos besoins.</p>"
+      },
+      {
+        "q": "Peut-on intégrer une prise de rendez-vous en ligne ?",
+        "a": "<p>Oui, nous connectons votre outil de prise de RDV existant (Calendly, Cal.com ou autre) directement dans le parcours du site.</p>"
+      },
+      {
+        "q": "Le SEO local fonctionne-t-il pour un cabinet d'avocats ?",
+        "a": "<p>Très bien, surtout combiné au SEO par spécialité : 'avocat droit du travail Annecy' cible une intention de recherche beaucoup plus qualifiée qu'un simple 'avocat Annecy'.</p>"
+      },
+      {
+        "q": "Créez-vous aussi des sites pour les notaires et les experts-comptables ?",
+        "a": "<p>Oui, avec la même méthode : une page par domaine d'intervention et les informations pratiques en premier. Pour une étude notariale, ce sont l'immobilier, les successions ou le droit de la famille ; les émoluments étant réglementés, le site renvoie vers le tarif officiel plutôt que d'afficher des offres. Pour un cabinet comptable, ce sont la création d'entreprise, la paie ou la facturation électronique, avec un formulaire qui qualifie la demande dès le premier contact.</p>"
+      },
+      {
+        "q": "Un cabinet d'Annecy a-t-il intérêt à viser la clientèle de Genève ?",
+        "a": "<p>Oui, si vous traitez réellement des dossiers transfrontaliers : travailleurs frontaliers, acquisitions immobilières ou successions entre la France et la Suisse. Une page dédiée qui explique ce que vous faites sur ces dossiers répond à une demande précise, bien mieux qu'une simple mention de Genève dans le pied de page.</p>"
+      },
+      {
+        "q": "Le site peut-il présenter plusieurs avocats du cabinet ?",
+        "a": "<p>Oui, chaque avocat peut avoir sa propre page (parcours, spécialités, coordonnées) au sein d'une structure commune au cabinet.</p>"
+      },
+      {
+        "q": "Le devis inclut-il la rédaction des textes ?",
+        "a": "<p>La rédaction peut être incluse ou prise en charge par vos soins selon le périmètre convenu — nous en discutons dès le premier échange.</p>"
+      },
+      {
+        "q": "Peut-on lancer le projet en pleine activité, sans interrompre le cabinet ?",
+        "a": "<p>Oui, le projet se mène en parallèle de votre activité : nos échanges se font par visio ou écrit, sans immobiliser votre temps.</p>"
+      },
+      {
+        "q": "Le site respecte-t-il les règles d'accessibilité ?",
+        "a": "<p>Nous appliquons les bonnes pratiques d'accessibilité web (contrastes, navigation clavier, structure sémantique), un point d'autant plus important pour une clientèle exigeante.</p>"
+      },
+      {
+        "q": "Un avocat peut-il faire de la publicité sur son site ?",
+        "a": "<p>Oui. Depuis le décret n° 2014-1251 du 28 octobre 2014, la publicité personnelle est autorisée, à condition de donner une information sincère sur la nature des prestations et de respecter les principes essentiels de la profession. Les mentions comparatives ou dénigrantes restent interdites par l&#x27;article 10 du RIN.</p>"
+      },
+      {
+        "q": "Faut-il déclarer son site au barreau ?",
+        "a": "<p>Oui. L&#x27;avocat qui ouvre ou modifie un site internet en informe sans délai le conseil de l&#x27;ordre et lui communique les noms de domaine qui y donnent accès. Nous préparons ces éléments au moment de la mise en ligne.</p>"
+      },
+      {
+        "q": "Quel nom de domaine choisir pour un cabinet ?",
+        "a": "<p>Un nom qui comporte votre nom ou la dénomination du cabinet, comme le prévoit l&#x27;article 10.5 du RIN, dont le Conseil d&#x27;État a validé les dispositions. Un nom de domaine purement générique, construit sur une matière du droit, n&#x27;est pas la bonne piste.</p>"
+      }
+    ],
+    "package": {
+      "label": "les avocats",
+      "who": "d'un cabinet d'avocats",
+      "url": "cabinet-avocat.fr",
+      "brand": "Cabinet d'avocats",
+      "hero": "Droit des affaires et droit social",
+      "cta": "Prendre RDV",
+      "before": "Bienvenue sur le site du cabinet",
+      "after": "Vos domaines d'intervention et vos honoraires, clairs dès la première page.",
+      "health": false,
+      "query": "avocat droit des affaires annecy",
+      "serp": "Avocat à Annecy · Droit des affaires",
+      "rdv_head": "Premier rendez-vous · 30 min",
+      "rdv_btn": "Confirmer le rendez-vous",
+      "toast": "Rendez-vous confirmé",
+      "rdv_title": "Prise de rendez-vous",
+      "rdv_desc": "Formulaire de premier contact ou agenda en ligne pour chaque demande.",
+      "funnel": [
+        "Visites",
+        "Pages expertises lues",
+        "Demandes de contact",
+        "Rendez-vous pris"
+      ],
+      "pour": "les avocats"
+    }
+  },
+  "site-web-centre-laser": {
+    "h1": "On fait des sites web pour les centres laser.",
+    "subtitle": "Centres d&#x27;épilation laser et de lumière pulsée, instituts et cabinets : des sites qui rassurent sur la sécurité et remplissent l&#x27;agenda, dans le cadre fixé en 2024. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "Votre client compare d&#x27;abord la sécurité, ensuite le prix",
+        "paragraphs": [
+          "Depuis que l&#x27;épilation laser n&#x27;est plus réservée aux médecins, l&#x27;offre s&#x27;est élargie. Le client le sait. Avant de réserver, il veut savoir qui réalise la séance, avec quelle formation et quel appareil, combien de séances prévoir et à quel prix.",
+          "Nous construisons le site autour de ces réponses : une page par zone ou par forfait, la formation de l&#x27;équipe affichée, des tarifs lisibles et une réservation en ligne sans détour."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1731514693674-a32211b63996.webp",
+        "alt": "Espace d&#x27;accueil d&#x27;un centre d&#x27;épilation laser",
+        "width": "1400",
+        "height": "875"
+      }
+    ],
+    "cards": [
+      {
+        "id": "cadre",
+        "title": "Ce que votre site doit respecter",
+        "intro": [
+          "L'épilation laser et à la lumière pulsée à visée non thérapeutique a un cadre précis depuis 2024."
+        ],
+        "cards": [
+          {
+            "href": null,
+            "num": "01",
+            "title": "Qui peut pratiquer",
+            "text": "Le décret n° 2024-470 du 24 mai 2024 ouvre ces actes aux médecins, aux infirmiers diplômés d&#x27;État et aux esthéticiennes qualifiées, ainsi qu&#x27;aux personnes placées sous leur contrôle effectif et permanent, après une formation obligatoire.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": "02",
+            "title": "La formation se prouve",
+            "text": "L&#x27;arrêté du 19 février 2025 fixe les caractéristiques de cette formation. L&#x27;afficher sur le site, avec le nom des personnes qui réalisent les séances, est l&#x27;argument de confiance le plus solide.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": "03",
+            "title": "Institut ou cabinet : deux cadres",
+            "text": "Un institut non médical relève du Code de la consommation : ses avis clients doivent être authentiques et vérifiables. Un cabinet médical relève de la déontologie médicale, qui exclut les témoignages de patients.",
+            "link": null,
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "pages",
+        "title": "Les pages que nous construisons pour vous",
+        "intro": [],
+        "cards": [
+          {
+            "href": null,
+            "num": null,
+            "title": "Une page par zone",
+            "text": "Jambes, aisselles, maillot, visage : le nombre de séances à prévoir et le tarif, zone par zone.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "Des forfaits lisibles",
+            "text": "Des forfaits comparables d&#x27;un coup d&#x27;œil, sans prix barré ni promotion à durée limitée qui pousse à décider trop vite.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "L&#x27;équipe et sa formation",
+            "text": "Qui réalise les séances, avec quelle formation et quel appareil : l&#x27;argument que le client cherche en premier.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "Avant la première séance",
+            "text": "La consultation préalable, les contre-indications et les précautions à prendre, expliquées avant la réservation.",
+            "link": null,
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "specialites",
+        "title": "Les autres spécialités",
+        "intro": [],
+        "cards": [
+          {
+            "href": "https://msd-media.com/site-web-medecine-esthetique/",
+            "num": null,
+            "title": "Médecine esthétique",
+            "text": "Injections et soins esthétiques : informer sans promettre de résultat.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-chirurgie-esthetique/",
+            "num": null,
+            "title": "Chirurgie esthétique",
+            "text": "Cliniques et chirurgiens, dans le cadre du décret du 23 septembre 2026.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dermatologue/",
+            "num": null,
+            "title": "Dermatologie",
+            "text": "Séparer la consultation médicale et la dermatologie esthétique.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dentiste/",
+            "num": null,
+            "title": "Dentistes",
+            "text": "Implantologie et esthétique du sourire, selon le code de déontologie dentaire.",
+            "link": "Voir la page",
+            "external": false
+          }
+        ],
+        "outro": [
+          "À lire aussi : <a href=\"https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/\">ce que le site d'un centre esthétique peut afficher</a> et <a href=\"https://msd-media.com/blog/articles/avis-google-medecin-que-repondre/\">répondre à un avis Google négatif</a>. Toutes nos ressources santé sont sur la page <a href=\"https://msd-media.com/site-web-medecine-esthetique/\">médecine esthétique</a>."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Un institut peut-il proposer l'épilation laser ?",
+        "a": "<p>Oui, depuis le décret n° 2024-470 du 24 mai 2024, à condition que la séance soit réalisée par une esthéticienne qualifiée ayant suivi la formation obligatoire, ou par une personne placée sous son contrôle effectif et permanent. Le site doit le dire clairement.</p>"
+      },
+      {
+        "q": "Peut-on publier des avis clients ?",
+        "a": "<p>Pour un institut non médical, oui, s&#x27;ils sont authentiques : de faux avis relèvent des pratiques commerciales trompeuses. Pour un cabinet médical, non : la déontologie médicale exclut les témoignages de patients.</p>"
+      },
+      {
+        "q": "Les photos avant/après sont-elles possibles ?",
+        "a": "<p>Pour un institut, oui si elles montrent des résultats réels, sans retouche et avec le consentement écrit du client, sans être présentées comme une promesse. Pour un cabinet médical, nous les déconseillons.</p>"
+      },
+      {
+        "q": "Faut-il une page par zone du corps ?",
+        "a": "<p>Oui pour les zones les plus demandées. Les recherches se font souvent par zone et par ville, et une page dédiée présente le nombre de séances à prévoir et le tarif sans obliger le client à chercher.</p>"
+      },
+      {
+        "q": "Quel est le tarif pour le site d'un centre laser ?",
+        "a": "<p>Le devis dépend du nombre de zones et de forfaits présentés et de l&#x27;intégration de votre outil de réservation, Planity ou Treatwell par exemple.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'un centre laser ?",
+        "a": "<p>21 jours ouvrés pour un site complet. Nous rédigeons les textes, vous les validez, et la réservation en ligne est intégrée avant la mise en ligne.</p>"
+      },
+      {
+        "q": "Peut-on écrire « épilation définitive » ?",
+        "a": "<p>Nous le déconseillons. Aucune technique ne garantit l&#x27;absence totale de repousse chez tous les clients ; parler de réduction durable de la pilosité est plus exact et évite les déceptions comme les réclamations.</p>"
+      },
+      {
+        "q": "Le site doit-il mentionner les contre-indications ?",
+        "a": "<p>Oui, au moins les principales, avec un renvoi vers la consultation ou le questionnaire préalable. C&#x27;est une marque de sérieux, et cela évite des réservations pour des séances qui ne pourront pas avoir lieu.</p>"
+      },
+      {
+        "q": "Peut-on vendre des forfaits en ligne ?",
+        "a": "<p>Oui, avec un paiement intégré à la réservation. Les conditions d&#x27;annulation et de remboursement doivent alors être claires avant l&#x27;achat.</p>"
+      },
+      {
+        "q": "Un infirmier peut-il réaliser les séances ?",
+        "a": "<p>Oui. Le décret n° 2024-470 du 24 mai 2024 autorise les médecins, les infirmiers diplômés d&#x27;État et les esthéticiennes qualifiées à réaliser ces actes, après une formation obligatoire.</p>"
+      }
+    ],
+    "package": {
+      "label": "les centres laser",
+      "who": "d'un centre laser",
+      "url": "centre-laser.fr",
+      "brand": "Centre laser",
+      "hero": "Épilation laser et lumière pulsée",
+      "cta": "Prendre RDV",
+      "before": "Zéro poil, zéro douleur, à vie",
+      "after": "Le nombre de séances, les précautions et le cadre médical, sans promesse.",
+      "health": true,
+      "query": "épilation laser annecy",
+      "serp": "Centre laser à Annecy · Épilation",
+      "rdv_head": "Consultation préalable",
+      "rdv_btn": "Confirmer le rendez-vous",
+      "toast": "Rendez-vous confirmé",
+      "rdv_title": "Prise de rendez-vous",
+      "rdv_desc": "La consultation préalable se réserve en ligne, avant toute séance.",
+      "funnel": [
+        "Visites",
+        "Pages zones lues",
+        "Clics sur « Prendre RDV »",
+        "Consultations réservées"
+      ],
+      "pour": "les centres laser"
+    }
+  },
+  "site-web-chirurgie-esthetique": {
+    "h1": "On fait des sites web pour la chirurgie esthétique.",
+    "subtitle": "Chirurgiens plasticiens, cliniques et centres de chirurgie esthétique : des sites qui préparent la consultation, dans le cadre du décret du 23 septembre 2026. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "Le patient décide en consultation, mais il choisit son chirurgien en ligne",
+        "paragraphs": [
+          "Avant une rhinoplastie ou une augmentation mammaire, un patient lit longtemps. Il vérifie la qualification du chirurgien, le lieu de l&#x27;intervention, son déroulé, les suites et le prix. Il revient plusieurs fois sur le site avant de demander un rendez-vous.",
+          "Nous construisons une page par intervention, qui répond à ces questions dans l&#x27;ordre où il se les pose. Elle mène à la consultation préalable, jamais à une promesse de résultat."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1758691461935-202e2ef6b69f.webp",
+        "alt": "Consultation préalable entre un chirurgien et une patiente",
+        "width": "1400",
+        "height": "788"
+      }
+    ],
+    "cards": [
+      {
+        "id": "cadre",
+        "title": "Ce que votre site doit respecter",
+        "intro": [
+          "Trois textes encadrent votre communication. Le détail est dans <a href=\"https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/\">notre guide des règles de communication en médecine esthétique</a>."
+        ],
+        "cards": [
+          {
+            "href": null,
+            "num": "01",
+            "title": "La publicité de l&#x27;établissement est encadrée",
+            "text": "Depuis le 26 septembre 2026, le décret n° 2026-891 interdit les communications en faveur d&#x27;une installation de chirurgie esthétique qui sont déloyales, préjudiciables à la santé publique ou de nature à inciter des mineurs. La sanction peut aller jusqu&#x27;au retrait de l&#x27;autorisation.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": "02",
+            "title": "Le chirurgien reste tenu par sa déontologie",
+            "text": "Comme tout médecin, il peut informer sur ses compétences, son parcours et ses conditions d&#x27;exercice. Sa communication ne fait appel à aucun témoignage de patient et ne se compare à aucun confrère (article R4127-19-1).",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": "03",
+            "title": "Le délai de réflexion s&#x27;explique",
+            "text": "Devis détaillé, puis quinze jours minimum avant l&#x27;intervention, sans dérogation possible (article L6322-2). Un site qui l&#x27;annonce clairement rassure davantage qu&#x27;un site qui promet un rendez-vous rapide.",
+            "link": null,
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "pages",
+        "title": "Les pages que nous construisons pour vous",
+        "intro": [],
+        "cards": [
+          {
+            "href": null,
+            "num": null,
+            "title": "Une page par intervention",
+            "text": "Rhinoplastie, blépharoplastie, lifting, chirurgie mammaire : indications, déroulé, suites et prix « à partir de » pour chacune.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "La page du chirurgien",
+            "text": "Sa qualification en chirurgie plastique, reconstructrice et esthétique, son parcours et son numéro RPPS, vérifiable par le patient.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "Le parcours du patient",
+            "text": "De la première consultation au suivi post-opératoire, avec le devis détaillé et le délai de réflexion de quinze jours expliqués.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "L&#x27;établissement",
+            "text": "Le lieu de l&#x27;intervention, son autorisation et l&#x27;équipe qui accompagne le patient avant, pendant et après.",
+            "link": null,
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "specialites",
+        "title": "Les autres spécialités",
+        "intro": [],
+        "cards": [
+          {
+            "href": "https://msd-media.com/site-web-medecine-esthetique/",
+            "num": null,
+            "title": "Médecine esthétique",
+            "text": "Injections et soins esthétiques : informer sans promettre de résultat.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dermatologue/",
+            "num": null,
+            "title": "Dermatologie",
+            "text": "Séparer la consultation médicale et la dermatologie esthétique.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dentiste/",
+            "num": null,
+            "title": "Dentistes",
+            "text": "Implantologie et esthétique du sourire, selon le code de déontologie dentaire.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-centre-laser/",
+            "num": null,
+            "title": "Centres laser",
+            "text": "Épilation laser et lumière pulsée, dans le cadre fixé en 2024.",
+            "link": "Voir la page",
+            "external": false
+          }
+        ],
+        "outro": [
+          "À lire aussi : <a href=\"https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/\">ce que votre site peut afficher</a> et <a href=\"https://msd-media.com/blog/articles/avis-google-medecin-que-repondre/\">répondre à un avis Google sans violer le secret médical</a>."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on présenter les interventions et leurs tarifs sur le site ?",
+        "a": "<p>Oui. Chaque intervention peut être décrite avec ses indications, son déroulé, ses suites et un prix « à partir de ». Le site précise que le tarif définitif figure au devis détaillé remis après la consultation, suivi du délai de réflexion de quinze jours prévu par l&#x27;article L6322-2 du Code de la santé publique.</p>"
+      },
+      {
+        "q": "Les photos avant/après sont-elles autorisées ?",
+        "a": "<p>Pour le chirurgien, nous les déconseillons : la chambre disciplinaire de l&#x27;Ordre les qualifie régulièrement de procédé publicitaire. Pour l&#x27;établissement, le décret du 23 septembre 2026 interdit toute communication déloyale. Nous construisons la preuve autrement : qualification, déroulé de l&#x27;intervention, lieu et équipe.</p>"
+      },
+      {
+        "q": "Comment mettre en avant la qualification du chirurgien ?",
+        "a": "<p>En affichant sa qualification ordinale en chirurgie plastique, reconstructrice et esthétique, son diplôme et son numéro RPPS, que le patient peut vérifier sur l&#x27;Annuaire santé. C&#x27;est la preuve la plus simple à donner et la plus difficile à imiter.</p>"
+      },
+      {
+        "q": "Faut-il une page par intervention ?",
+        "a": "<p>Oui. Les recherches se font intervention par intervention, souvent avec une ville : « rhinoplastie Lyon », « lifting Genève ». Une page dédiée répond précisément à chacune, là où une page générique ne se positionne sur aucune.</p>"
+      },
+      {
+        "q": "Quel est le tarif pour le site d'un chirurgien esthétique ?",
+        "a": "<p>Le devis dépend du nombre d&#x27;interventions présentées et de l&#x27;intégration de votre outil de prise de rendez-vous. Le chiffrage est ferme après l&#x27;appel.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'une clinique ?",
+        "a": "<p>21 jours ouvrés pour un site complet. Ce qui allonge un projet dans ce secteur, c&#x27;est la validation des contenus réglementés : nous l&#x27;organisons dès le premier jour.</p>"
+      },
+      {
+        "q": "Le décret du 23 septembre 2026 s'applique-t-il au site du chirurgien ?",
+        "a": "<p>Il vise les communications commerciales en faveur des installations de chirurgie esthétique. Le site personnel du chirurgien reste soumis à la déontologie médicale (article R4127-19-1). Quand un site présente à la fois le chirurgien et la clinique, les deux cadres s&#x27;appliquent.</p>"
+      },
+      {
+        "q": "Peut-on parler des risques sur le site ?",
+        "a": "<p>Oui, et nous le recommandons. Une information claire sur les risques et les suites fait partie de l&#x27;information due au patient, et rassure davantage qu&#x27;une page qui n&#x27;en parle pas.</p>"
+      },
+      {
+        "q": "Le site peut-il être traduit pour une patientèle étrangère ?",
+        "a": "<p>Oui. Les mêmes règles s&#x27;appliquent à chaque version, et le délai de réflexion de quinze jours vaut pour tous les patients, quelle que soit leur provenance.</p>"
+      },
+      {
+        "q": "Faut-il une page par établissement quand on opère dans plusieurs cliniques ?",
+        "a": "<p>Oui : une page par lieu, avec son adresse et les interventions qui y sont réalisées, aide le patient à se repérer et capte les recherches locales.</p>"
+      }
+    ],
+    "package": {
+      "label": "la chirurgie esthétique",
+      "who": "d'un chirurgien esthétique",
+      "url": "chirurgie-esthetique.fr",
+      "brand": "Chirurgie esthétique",
+      "hero": "Préparer sa première consultation",
+      "cta": "Prendre RDV",
+      "before": "Le corps de vos rêves, sans risque",
+      "after": "Chaque intervention expliquée : étapes, suites et délai de réflexion.",
+      "health": true,
+      "query": "chirurgien esthétique annecy",
+      "serp": "Chirurgie esthétique à Annecy · Consultation",
+      "rdv_head": "Première consultation",
+      "rdv_btn": "Confirmer le rendez-vous",
+      "toast": "Rendez-vous confirmé",
+      "rdv_title": "Prise de rendez-vous",
+      "rdv_desc": "La première consultation se réserve en ligne, avec les informations utiles avant de venir.",
+      "funnel": [
+        "Visites",
+        "Pages interventions lues",
+        "Clics sur « Prendre RDV »",
+        "Consultations réservées"
+      ],
+      "pour": "les chirurgiens esthétiques"
+    }
+  },
+  "site-web-coach": {
+    "h1": "On fait des sites web pour les coachs et consultants.",
+    "subtitle": "Coach, consultant, formateur ou conférencier : votre expertise est réelle, mais votre site la sous-vend. Nous la remettons en ordre. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "Votre problème n'est pas le design, c'est la hiérarchie",
+        "paragraphs": [
+          "Le schéma revient dans presque tous les projets que nous menons avec des coachs : l'accompagnement individuel, les conférences, les interventions en entreprise et les formations sont présentés au même niveau. Quatre offres, quatre publics, une seule page qui essaie de tout dire.",
+          "Un visiteur ne fait jamais le tri à votre place : il part. La première décision d'un projet n'est donc pas esthétique, elle est commerciale — quelle offre passe devant, et qu'est-ce qui accepte de reculer au second plan."
+        ],
+        "img": "https://msd-media.com/assets/img/maxime-sciare-mockup.webp",
+        "alt": "Maquette du site de Maxime Sciare, coach professionnel et conférencier",
+        "width": "1536",
+        "height": "1024"
+      },
+      {
+        "title": "Vendre un accompagnement, c'est vendre une preuve",
+        "paragraphs": [
+          "Vous ne vendez pas un produit qu'on peut essayer avant d'acheter. Vous vendez une transformation, à des gens qui ne vous connaissent pas et qui doivent vous faire confiance en quelques secondes.",
+          "Cela change toute la construction de la page : une méthode nommée et expliquée, des situations de départ que le lecteur reconnaît, des témoignages précis plutôt que des adjectifs, et un premier pas engageant mais sans risque. Le plus souvent, un appel de découverte plutôt qu'un formulaire de devis."
+        ],
+        "img": "https://msd-media.com/assets/img/laurence-mockup.webp",
+        "alt": "Maquette du site de Laurence Daien Maestripieri, coach en prise de parole à Annecy",
+        "width": "1536",
+        "height": "1024"
+      }
+    ],
+    "cards": [],
+    "faq": [
+      {
+        "q": "Travaillez-vous vraiment avec des coachs ?",
+        "a": "<p>Oui, c'est une part importante de notre activité. Maxime Sciare (coach et conférencier), Laurence Daien Maestripieri (coach en prise de parole) et Marie Troccaz (consultante en culture d'entreprise) figurent parmi nos <a href=\"https://msd-media.com/realisations/\">réalisations</a>, avec les études de cas détaillées.</p>"
+      },
+      {
+        "q": "Mon offre n'est pas encore claire. C'est un problème ?",
+        "a": "<p>Non, c'est même le point de départ le plus fréquent. Vous savez ce que vous faites, mais vous ne l'avez jamais hiérarchisé pour quelqu'un qui vous découvre. L'appel de cadrage sert exactement à ça, et c'est souvent la partie la plus utile du projet.</p>"
+      },
+      {
+        "q": "Combien de temps pour être en ligne ?",
+        "a": "<p>21 jours à partir du brief validé. Le compteur démarre quand le périmètre est fixé, pas à la signature. Le principal facteur de retard, c'est la disponibilité de vos contenus et de vos validations, jamais notre charge.</p>"
+      },
+      {
+        "q": "Combien coûte un site pour un coach indépendant ?",
+        "a": "<p>Cela dépend du nombre de pages et du volume de rédaction, pas de votre statut. Une landing page unique coûte nettement moins qu'un site multi-pages et suffit dans beaucoup de cas. Le détail est sur notre page <a href=\"https://msd-media.com/tarifs/\">tarifs</a>, et le devis est ferme après le cadrage.</p>"
+      },
+      {
+        "q": "Faites-vous des sites pour les coachs sportifs ?",
+        "a": "<p>Oui. Une offre claire par objectif (remise en forme, préparation physique, perte de poids), des tarifs affichés et la réservation d'une séance d'essai suffisent souvent. Une landing page bien construite convient à beaucoup de coachs sportifs avant d'envisager un site complet.</p>"
+      },
+      {
+        "q": "Je n'ai pas de textes. Vous les écrivez ?",
+        "a": "<p>Oui, le copywriting est inclus. Nous partons d'un entretien pour écrire avec vos mots et ceux de vos clients, pas avec du vocabulaire de coach générique. C'est souvent là que le positionnement se décante.</p>"
+      },
+      {
+        "q": "Faut-il un blog quand on est coach ?",
+        "a": "<p>Rarement au lancement. Un blog demande une régularité que peu tiennent, et un site clair convertit mieux qu'un site étoffé mais confus. Nous prévoyons la structure pour l'accueillir plus tard, si vous vous y tenez.</p>"
+      },
+      {
+        "q": "Peut-on intégrer un agenda de réservation ?",
+        "a": "<p>Oui. Cal.com, Calendly ou l'outil que vous utilisez déjà s'intègrent directement dans la page. Pour un coach, réduire le parcours à un seul clic vers un créneau change nettement le taux de prise de rendez-vous.</p>"
+      },
+      {
+        "q": "Et la collecte d'emails pour ma newsletter ?",
+        "a": "<p>Elle est prévue dès la conception : formulaire connecté à votre outil d'emailing, page de confirmation, et un aimant à inscriptions si vous en avez un. Chaque champ retiré du formulaire fait gagner environ 7 % d'inscriptions.</p>"
+      },
+      {
+        "q": "Puis-je modifier mon site moi-même ensuite ?",
+        "a": "<p>Oui. Vous recevez un accès complet et des consignes claires. Le site vous appartient, sans abonnement obligatoire, et n'importe quel développeur peut le reprendre après nous.</p>"
+      },
+      {
+        "q": "Mon site sera-t-il visible sur Google ?",
+        "a": "<p>Le socle SEO technique est intégré à chaque projet : structure, vitesse, balises, données structurées. Pour un coach qui travaille en local, la <a href=\"https://msd-media.com/seo-local-annecy/\">fiche Google Business Profile</a> compte autant que le site — nous traitons les deux ensemble.</p>"
+      },
+      {
+        "q": "Et pour être cité par ChatGPT ou Perplexity ?",
+        "a": "<p>Structure sémantique, données structurées et accès autorisé aux crawlers IA font partie du socle livré, sans surcoût. Mais soyons clairs : ce qui décide vraiment, ce sont les mentions de vous ailleurs sur le web, pas seulement votre site.</p>"
+      },
+      {
+        "q": "Travaillez-vous à distance ?",
+        "a": "<p>Oui, la majorité de nos projets se pilotent en visio. Notre bureau est à Annecy et nous accompagnons des indépendants partout en France, en Suisse et en Belgique.</p>"
+      },
+      {
+        "q": "Peut-on publier des témoignages de clients ?",
+        "a": "<p>Oui : le coaching n&#x27;est pas une profession réglementée, et des témoignages authentiques sont votre meilleur argument. Ils doivent être réels et vérifiables ; des avis inventés relèvent des pratiques commerciales trompeuses.</p>"
+      },
+      {
+        "q": "Faut-il afficher ses prix quand on est coach ?",
+        "a": "<p>Nous le recommandons, au moins sous forme d&#x27;ordre de grandeur. Le visiteur qui ne trouve aucun prix suppose le pire et repart sans prendre contact.</p>"
+      },
+      {
+        "q": "Faut-il une landing page par accompagnement ?",
+        "a": "<p>Pour une offre que vous promouvez activement, oui : une page dédiée, qui mène à une seule action, convertit mieux qu&#x27;un site qui présente tout. Pour le reste, le site principal suffit.</p>"
+      }
+    ],
+    "package": {
+      "label": "les coachs",
+      "who": "d'un coach",
+      "url": "votre-coaching.fr",
+      "brand": "Coaching",
+      "hero": "Une séance découverte offerte",
+      "cta": "Réserver",
+      "before": "Bienvenue sur mon site",
+      "after": "Votre méthode, vos accompagnements et une séance découverte à réserver.",
+      "health": false,
+      "query": "coach professionnel annecy",
+      "serp": "Coach à Annecy · Séance découverte",
+      "rdv_head": "Séance découverte · 30 min",
+      "rdv_btn": "Confirmer la séance",
+      "toast": "Séance réservée",
+      "rdv_title": "Réservation de séances",
+      "rdv_desc": "Votre agenda intégré : le visiteur réserve sa séance découverte en ligne.",
+      "funnel": [
+        "Visites",
+        "Pages accompagnements lues",
+        "Clics sur « Réserver »",
+        "Séances réservées"
+      ],
+      "pour": "les coachs"
+    }
+  },
+  "site-web-dentiste": {
+    "h1": "On fait des sites web pour les chirurgiens-dentistes.",
+    "subtitle": "Cabinets dentaires, implantologie, orthodontie et esthétique du sourire : des sites qui expliquent les traitements et préparent le devis, dans le cadre du code de déontologie dentaire. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "Un implant se décide sur un devis, pas sur un clic",
+        "paragraphs": [
+          "Pour un traitement implantaire ou des facettes, le patient compare longtemps. Il veut savoir ce qui sera fait, en combien de séances, ce que l&#x27;Assurance maladie prend en charge et ce qui restera à sa charge. Il a besoin de comprendre avant de s&#x27;engager.",
+          "Nous construisons une page par traitement, qui en explique les étapes et les points à anticiper, puis mène au rendez-vous de consultation où le devis est établi. Le patient arrive préparé, et la discussion porte sur son cas, pas sur des généralités."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1629909613654-28e377c37b09.webp",
+        "alt": "Salle de soins d&#x27;un cabinet dentaire",
+        "width": "1400",
+        "height": "936"
+      }
+    ],
+    "cards": [
+      {
+        "id": "cadre",
+        "title": "Ce que votre site doit respecter",
+        "intro": [
+          "Les chirurgiens-dentistes ont leur propre code de déontologie, réformé en même temps que celui des médecins."
+        ],
+        "cards": [
+          {
+            "href": null,
+            "num": "01",
+            "title": "Communiquer est autorisé",
+            "text": "Depuis le décret n° 2020-1658, l&#x27;article R4127-215-1 permet au chirurgien-dentiste de présenter ses compétences, son parcours et ses conditions d&#x27;exercice par tout moyen, y compris sur un site internet.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": "02",
+            "title": "Les mêmes interdits que les médecins",
+            "text": "La communication doit être loyale et honnête. Elle ne fait pas appel à des témoignages de tiers, ne se compare pas à d&#x27;autres chirurgiens-dentistes et n&#x27;incite pas à des soins inutiles.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": "03",
+            "title": "Les recommandations de l&#x27;Ordre comptent",
+            "text": "Le texte impose de tenir compte des recommandations du Conseil national de l&#x27;Ordre des chirurgiens-dentistes. Nous les appliquons dès la rédaction, pas au moment de la relecture.",
+            "link": null,
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "pages",
+        "title": "Les pages que nous construisons pour vous",
+        "intro": [],
+        "cards": [
+          {
+            "href": null,
+            "num": null,
+            "title": "Une page par traitement",
+            "text": "Implants, facettes, orthodontie invisible, blanchiment : les étapes, le nombre de séances et les points à anticiper.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "Le reste à charge expliqué",
+            "text": "Ce que l&#x27;Assurance maladie prend en charge et ce qui dépend du devis, sans chiffre qui ne vaudrait que pour un cas.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "L&#x27;équipe et le plateau technique",
+            "text": "Les praticiens, leurs compétences et l&#x27;équipement du cabinet, présentés sans comparaison avec les confrères.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "Le premier rendez-vous et les urgences",
+            "text": "Comment obtenir un rendez-vous, comment se déroule la première consultation, et quoi faire en cas d&#x27;urgence.",
+            "link": null,
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "specialites",
+        "title": "Les autres spécialités",
+        "intro": [],
+        "cards": [
+          {
+            "href": "https://msd-media.com/site-web-medecine-esthetique/",
+            "num": null,
+            "title": "Médecine esthétique",
+            "text": "Injections et soins esthétiques : informer sans promettre de résultat.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-chirurgie-esthetique/",
+            "num": null,
+            "title": "Chirurgie esthétique",
+            "text": "Cliniques et chirurgiens, dans le cadre du décret du 23 septembre 2026.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dermatologue/",
+            "num": null,
+            "title": "Dermatologie",
+            "text": "Séparer la consultation médicale et la dermatologie esthétique.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-centre-laser/",
+            "num": null,
+            "title": "Centres laser",
+            "text": "Épilation laser et lumière pulsée, dans le cadre fixé en 2024.",
+            "link": "Voir la page",
+            "external": false
+          }
+        ],
+        "outro": [
+          "À lire aussi : <a href=\"https://msd-media.com/blog/articles/site-internet-dentiste-ce-qui-est-autorise/\">ce que l'Ordre autorise sur le site d'un dentiste</a> et <a href=\"https://msd-media.com/blog/articles/avis-google-medecin-que-repondre/\">répondre à un avis Google sans violer le secret médical</a>."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Un dentiste peut-il avoir un site qui présente ses traitements ?",
+        "a": "<p>Oui. Depuis le décret n° 2020-1658 du 22 décembre 2020, le chirurgien-dentiste peut informer le public de ses compétences, de ses pratiques et de ses conditions d&#x27;exercice, y compris sur internet, tant que sa communication reste loyale, sans témoignages ni comparaison.</p>"
+      },
+      {
+        "q": "Peut-on publier des photos de sourires avant/après ?",
+        "a": "<p>Nous le déconseillons. Une photo avant/après sélectionne le meilleur résultat, alors que le code de déontologie exige une communication loyale qui n&#x27;incite pas à des soins inutiles. Avant d&#x27;en publier, interrogez votre conseil départemental de l&#x27;Ordre.</p>"
+      },
+      {
+        "q": "Peut-on publier les avis de ses patients ?",
+        "a": "<p>Pas sur le site du cabinet : l&#x27;article R4127-215-1 exclut le recours à des témoignages de tiers. Les avis déposés sur votre fiche Google existent en dehors de votre site, mais vous ne devez ni les reprendre ni les solliciter.</p>"
+      },
+      {
+        "q": "Peut-on afficher le prix d'un implant ?",
+        "a": "<p>Oui, et c'est même une obligation : l'article R4127-240-II impose d'afficher sur le site les honoraires pratiqués et les modes de paiement acceptés. L'Ordre recommande les tarifs d'au moins 5 à 10 actes parmi les plus pratiqués, sans comparaison ni promotion, le devis établi en consultation faisant foi. Le détail est dans notre article sur <a href=\"https://msd-media.com/blog/articles/site-internet-dentiste-ce-qui-est-autorise/\">ce que l'Ordre autorise sur le site d'un dentiste</a>.</p>"
+      },
+      {
+        "q": "Faut-il une page par traitement ?",
+        "a": "<p>Oui pour les traitements qui se décident : implants, facettes, orthodontie invisible, blanchiment. Chacun fait l&#x27;objet de recherches distinctes, et une page dédiée répond aux questions propres à chacun.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'un cabinet dentaire ?",
+        "a": "<p>21 jours pour un site complet, textes compris. Nous les rédigeons à partir d&#x27;un entretien avec vous, puis vous les validez avant la mise en ligne.</p>"
+      },
+      {
+        "q": "Peut-on présenter l'équipement du cabinet ?",
+        "a": "<p>Oui, comme une information sur vos pratiques : radiographie numérique, empreinte optique, salle de chirurgie. Sans comparaison avec d&#x27;autres cabinets, que l&#x27;article R4127-215-1 interdit.</p>"
+      },
+      {
+        "q": "Le site doit-il indiquer quoi faire en cas d'urgence ?",
+        "a": "<p>Oui : vos créneaux d&#x27;urgence si vous en proposez, et le service de garde de votre département pour les dimanches et jours fériés. C&#x27;est souvent la page la plus consultée sur mobile.</p>"
+      },
+      {
+        "q": "Faut-il une page par praticien ?",
+        "a": "<p>Pour un cabinet de groupe, oui : chaque praticien, ses compétences et ses jours de présence. Le patient sait ainsi qui il verra, notamment pour un traitement long.</p>"
+      },
+      {
+        "q": "Faut-il parler du reste à charge ?",
+        "a": "<p>Oui, en termes généraux : ce que l&#x27;Assurance maladie et la complémentaire peuvent prendre en charge, et ce qui dépend du devis. Le montant exact ne se donne qu&#x27;après la consultation.</p>"
+      }
+    ],
+    "package": {
+      "label": "les dentistes",
+      "who": "d'un cabinet dentaire",
+      "url": "cabinet-dentaire.fr",
+      "brand": "Cabinet dentaire",
+      "hero": "Soins, implants et urgences",
+      "cta": "Prendre RDV",
+      "before": "Le meilleur dentiste de la ville",
+      "after": "Les soins, le reste à charge et les urgences expliqués simplement.",
+      "health": true,
+      "query": "dentiste annecy",
+      "serp": "Cabinet dentaire à Annecy · Rendez-vous",
+      "rdv_head": "Premier rendez-vous",
+      "rdv_btn": "Réserver via Doctolib",
+      "toast": "Rendez-vous confirmé",
+      "rdv_title": "Prise de rendez-vous",
+      "rdv_desc": "Doctolib ou votre agenda intégré, avec la marche à suivre en cas d'urgence.",
+      "funnel": [
+        "Visites",
+        "Clics sur « Prendre RDV »",
+        "Appels au cabinet",
+        "Rendez-vous pris"
+      ],
+      "pour": "les dentistes"
+    }
+  },
+  "site-web-dermatologue": {
+    "h1": "On fait des sites web pour les dermatologues.",
+    "subtitle": "Cabinets de dermatologie médicale et esthétique : des sites qui orientent chaque patient vers le bon rendez-vous, dans le respect de la déontologie médicale. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "Votre agenda est plein : votre site doit trier",
+        "paragraphs": [
+          "Un dermatologue a rarement besoin de plus de demandes. Il a besoin des bonnes. Un patient qui veut faire contrôler un grain de beauté et un patient qui envisage un acte esthétique ne doivent pas suivre le même parcours, ni occuper le même créneau.",
+          "Nous séparons clairement la dermatologie médicale et la dermatologie esthétique, avec pour chacune les motifs de consultation, les modalités et, pour les actes non remboursés, les tarifs. Le patient arrive au bon rendez-vous, et votre secrétariat reçoit moins d&#x27;appels inutiles."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1731514693674-a32211b63996.webp",
+        "alt": "Salle d&#x27;attente d&#x27;un cabinet de dermatologie",
+        "width": "1400",
+        "height": "875"
+      }
+    ],
+    "cards": [
+      {
+        "id": "cadre",
+        "title": "Ce que votre site doit respecter",
+        "intro": [
+          "Un cabinet de dermatologie communique selon la déontologie médicale. Le détail est dans <a href=\"https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/\">notre guide des règles de communication en médecine esthétique</a>."
+        ],
+        "cards": [
+          {
+            "href": null,
+            "num": "01",
+            "title": "Informer, sans promouvoir",
+            "text": "L&#x27;article R4127-19-1 autorise le médecin à présenter ses compétences, son parcours et ses conditions d&#x27;exercice. Il interdit les témoignages de tiers, les comparaisons avec des confrères et toute incitation à un acte inutile.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": "02",
+            "title": "Dire ce qui n&#x27;est pas remboursé",
+            "text": "Pour un acte non remboursable, l&#x27;arrêté du 30 mai 2018 impose une information écrite préalable dès que les honoraires atteignent 70 €. Le site annonce les prix « à partir de » et le rappelle.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": "03",
+            "title": "Garder les avis hors du site",
+            "text": "Les avis déposés sur votre fiche Google existent sans vous. Le risque déontologique commence quand vous les reprenez sur votre site ou les sollicitez : nous ne les intégrons pas.",
+            "link": null,
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "pages",
+        "title": "Les pages que nous construisons pour vous",
+        "intro": [],
+        "cards": [
+          {
+            "href": null,
+            "num": null,
+            "title": "La dermatologie médicale",
+            "text": "Les motifs de consultation, votre secteur de conventionnement et la prise de rendez-vous, sans détour.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "La dermatologie esthétique",
+            "text": "Chaque acte présenté à part, avec ses indications, son déroulé et son prix « à partir de ».",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "L&#x27;équipe du cabinet",
+            "text": "Les dermatologues, leurs compétences, et qui réalise quel acte, pour que le patient sache qui il verra.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "Préparer le rendez-vous",
+            "text": "Ce qu&#x27;il faut apporter, les documents utiles et ce que la consultation permet, avant même d&#x27;appeler.",
+            "link": null,
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "specialites",
+        "title": "Les autres spécialités",
+        "intro": [],
+        "cards": [
+          {
+            "href": "https://msd-media.com/site-web-medecine-esthetique/",
+            "num": null,
+            "title": "Médecine esthétique",
+            "text": "Injections et soins esthétiques : informer sans promettre de résultat.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-chirurgie-esthetique/",
+            "num": null,
+            "title": "Chirurgie esthétique",
+            "text": "Cliniques et chirurgiens, dans le cadre du décret du 23 septembre 2026.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dentiste/",
+            "num": null,
+            "title": "Dentistes",
+            "text": "Implantologie et esthétique du sourire, selon le code de déontologie dentaire.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-centre-laser/",
+            "num": null,
+            "title": "Centres laser",
+            "text": "Épilation laser et lumière pulsée, dans le cadre fixé en 2024.",
+            "link": "Voir la page",
+            "external": false
+          }
+        ],
+        "outro": [
+          "À lire aussi : <a href=\"https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/\">ce que votre site peut afficher en dermatologie esthétique</a> et <a href=\"https://msd-media.com/blog/articles/avis-google-medecin-que-repondre/\">répondre à un avis Google sans violer le secret médical</a>."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on présenter la dermatologie esthétique sur le site d'un cabinet médical ?",
+        "a": "<p>Oui, comme une information sur les actes que vous pratiquez, séparée des consultations médicales et sans promesse de résultat. C&#x27;est aussi ce qui évite qu&#x27;un patient réserve une consultation médicale pour un motif esthétique, ou l&#x27;inverse.</p>"
+      },
+      {
+        "q": "Les photos avant/après sont-elles autorisées ?",
+        "a": "<p>Nous les déconseillons. La chambre disciplinaire de l&#x27;Ordre des médecins les qualifie régulièrement de procédé publicitaire, et des praticiens ont été sanctionnés pour en avoir publié. Nous construisons la confiance par la qualification, le déroulé des soins et des informations sourcées.</p>"
+      },
+      {
+        "q": "Le site peut-il remplacer Doctolib ?",
+        "a": "<p>Non, et il n&#x27;a pas à le faire. Il intègre votre outil de prise de rendez-vous et oriente le patient vers le bon motif avant qu&#x27;il réserve. C&#x27;est ce tri, en amont, qui libère des créneaux.</p>"
+      },
+      {
+        "q": "Faut-il afficher ses tarifs ?",
+        "a": "<p>Pour les consultations, votre secteur de conventionnement et vos honoraires. Pour les actes esthétiques non remboursés, un prix « à partir de » par acte, avec le rappel de l&#x27;information écrite remise avant le soin.</p>"
+      },
+      {
+        "q": "Le référencement local est-il utile pour un dermatologue ?",
+        "a": "<p>C&#x27;est le canal principal. Les patients cherchent « dermatologue » suivi de leur ville. Une page d&#x27;accueil claire, une fiche Google Business Profile à jour et une page par grand motif de consultation font l&#x27;essentiel du travail.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'un cabinet de dermatologie ?",
+        "a": "<p>21 jours ouvrés pour un site complet. Nous rédigeons les textes à partir d&#x27;un entretien avec vous, puis vous les validez avant la mise en ligne.</p>"
+      },
+      {
+        "q": "Peut-on indiquer ses délais de rendez-vous ?",
+        "a": "<p>Oui, et c&#x27;est utile : une indication honnête, mise à jour régulièrement, évite des appels. Elle sert d&#x27;information pratique, pas d&#x27;argument commercial.</p>"
+      },
+      {
+        "q": "Faut-il deux sites, un médical et un esthétique ?",
+        "a": "<p>Non. Un seul site, avec deux parcours clairement séparés, suffit et renforce votre référencement. Deux sites divisent votre visibilité.</p>"
+      },
+      {
+        "q": "Peut-on présenter les lasers et les appareils du cabinet ?",
+        "a": "<p>Oui, comme une information sur les actes que vous pratiquez : ce que l&#x27;appareil permet, pour quelles indications et avec quelles précautions, sans promesse de résultat.</p>"
+      },
+      {
+        "q": "Le site peut-il mener à une téléconsultation ?",
+        "a": "<p>Oui, si votre outil de rendez-vous la propose : le site y oriente le patient. Il ne stocke lui-même aucune donnée de santé.</p>"
+      }
+    ],
+    "package": {
+      "label": "les dermatologues",
+      "who": "d'un dermatologue",
+      "url": "cabinet-dermatologie.fr",
+      "brand": "Cabinet de dermatologie",
+      "hero": "Dermatologie médicale et esthétique",
+      "cta": "Prendre RDV",
+      "before": "Une peau parfaite garantie",
+      "after": "Dermatologie médicale et esthétique, présentées séparément et clairement.",
+      "health": true,
+      "query": "dermatologue annecy",
+      "serp": "Dermatologue à Annecy · Prendre rendez-vous",
+      "rdv_head": "Consultation · dermatologie",
+      "rdv_btn": "Réserver via Doctolib",
+      "toast": "Rendez-vous confirmé",
+      "rdv_title": "Prise de rendez-vous",
+      "rdv_desc": "Doctolib ou votre agenda intégré au parcours, sans double saisie.",
+      "funnel": [
+        "Visites",
+        "Clics sur « Prendre RDV »",
+        "Appels au cabinet",
+        "Rendez-vous pris"
+      ],
+      "pour": "les dermatologues"
+    }
+  },
+  "site-web-immobilier": {
+    "h1": "On fait des sites web pour l'immobilier.",
+    "subtitle": "MSD Media crée des sites web sur-mesure pour agences immobilières, pensés pour valoriser vos biens, générer des contacts qualifiés et améliorer votre référencement local. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "Un bien mal présenté en ligne, c'est une visite qui n'aura jamais lieu",
+        "paragraphs": [
+          "Galeries photo soignées, mise en page claire des caractéristiques, intégration de visite virtuelle si vous en disposez : le site transforme la recherche en ligne en désir de visiter. Un formulaire de contact directement sur chaque annonce évite toute friction entre l'intérêt et la prise de contact.",
+          "Nous connectons vos flux d'annonces existants (XML ou API) pour que votre site reste à jour automatiquement, sans double saisie à chaque nouveau mandat."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1560518883-ce09059eeffa.webp",
+        "alt": "Agent immobilier présentant un bien à des clients",
+        "width": "1400",
+        "height": "1051"
+      },
+      {
+        "title": "Capter vendeurs et acheteurs avant vos concurrents locaux",
+        "paragraphs": [
+          "Le référencement local est décisif dans un secteur où l'acheteur cherche d'abord une agence de confiance près de chez lui. Nous structurons le contenu autour de votre connaissance du marché local pour capter la recherche en amont de la décision.",
+          "Un formulaire d'estimation en ligne capte les propriétaires vendeurs avant même qu'ils ne contactent une agence concurrente — un canal souvent sous-exploité par les agences qui se contentent d'un simple formulaire de contact générique."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1560184611-ff3e53f00e8f.webp",
+        "alt": "Intérieur d'un bien immobilier moderne et lumineux",
+        "width": "1400",
+        "height": "789"
+      }
+    ],
+    "cards": [],
+    "faq": [
+      {
+        "q": "Peut-on connecter le site à mon logiciel de diffusion d'annonces ?",
+        "a": "<p>Oui, nous intégrons vos flux d'annonces existants (XML ou API) pour que votre site reste à jour automatiquement, sans double saisie.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des agences en dehors d'Annecy ?",
+        "a": "<p>Oui, nous accompagnons des agences immobilières partout en France, en Suisse et en Belgique.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'une agence immobilière ?",
+        "a": "<p>Une première version est livrée en 21 jours : structure, intégration des annonces, SEO local et mise en ligne.</p>"
+      },
+      {
+        "q": "Peut-on ajouter de nouveaux biens facilement après la mise en ligne ?",
+        "a": "<p>Oui, soit via votre flux d'annonces connecté, soit en autonomie directement sur le site selon votre configuration.</p>"
+      },
+      {
+        "q": "Quel est le tarif pour le site d'une agence immobilière ?",
+        "a": "<p>Le tarif dépend du nombre d'agents, des intégrations nécessaires (flux, CRM) et du volume de biens à présenter. Chaque devis est personnalisé après un premier échange.</p>"
+      },
+      {
+        "q": "L'estimation en ligne est-elle incluse ?",
+        "a": "<p>Un formulaire d'estimation simple peut être intégré selon le périmètre du projet — à cadrer ensemble lors du premier échange.</p>"
+      },
+      {
+        "q": "Le site peut-il gérer l'estimation en ligne ?",
+        "a": "<p>Oui, un formulaire d'estimation qualifié peut être intégré, avec redirection vers votre process de qualification interne.</p>"
+      },
+      {
+        "q": "Le SEO local suffit-il pour capter des vendeurs et des acheteurs ?",
+        "a": "<p>C'est le socle indispensable, mais pas suffisant seul : nous travaillons aussi le contenu (quartiers, marché local) pour capter les recherches en amont de la décision.</p>"
+      },
+      {
+        "q": "Une agence en Haute-Savoie doit-elle s'adresser aux acheteurs étrangers ?",
+        "a": "<p>Si une partie de vos acquéreurs vient de Suisse ou de l'étranger, oui : une version anglaise des pages clés et des pages qui décrivent les secteurs recherchés (bord du lac, stations, communes proches de Genève) répondent à des recherches précises. Inutile de traduire tout le site si cette clientèle reste marginale.</p>"
+      },
+      {
+        "q": "Le site peut-il présenter plusieurs agents ou antennes ?",
+        "a": "<p>Oui, chaque agent ou antenne locale peut avoir sa propre page tout en restant rattaché à l'identité globale de l'agence.</p>"
+      },
+      {
+        "q": "Le devis inclut-il la rédaction des textes ?",
+        "a": "<p>La rédaction peut être incluse ou prise en charge par vos soins selon le périmètre convenu — nous en discutons dès le premier échange.</p>"
+      },
+      {
+        "q": "Peut-on lancer le projet en pleine saison de transactions ?",
+        "a": "<p>Oui, le projet se mène en parallèle de votre activité, avec des points d'échange courts qui n'immobilisent pas vos équipes.</p>"
+      },
+      {
+        "q": "Le site est-il optimisé pour un grand nombre de biens ?",
+        "a": "<p>Oui, l'architecture est pensée pour rester rapide et claire même avec un catalogue de biens important, filtrable par le visiteur.</p>"
+      },
+      {
+        "q": "Quelles mentions sont obligatoires sur le site d'une agence ?",
+        "a": "<p>Le barème de vos honoraires doit être publié sur le site, en application de l&#x27;arrêté du 10 janvier 2017. Chaque annonce de vente indique le prix honoraires inclus et exclus, qui paie les honoraires, et la performance énergétique du bien.</p>"
+      },
+      {
+        "q": "Le site peut-il remplacer les portails immobiliers ?",
+        "a": "<p>Non, et il n&#x27;a pas à le faire : les portails apportent des acheteurs. Votre site sert surtout à convaincre les vendeurs de vous confier leur bien, en montrant votre connaissance des quartiers.</p>"
+      },
+      {
+        "q": "Faut-il une page par quartier ?",
+        "a": "<p>Oui pour les secteurs où vous réalisez réellement des transactions. Une page qui décrit un quartier avec précision capte les recherches des vendeurs locaux ; une page générique par ville ne capte presque rien.</p>"
+      }
+    ],
+    "package": {
+      "label": "l'immobilier",
+      "who": "d'une agence immobilière",
+      "url": "agence-immobiliere.fr",
+      "brand": "Agence immobilière",
+      "hero": "Estimation gratuite de votre bien",
+      "cta": "Estimer mon bien",
+      "before": "Bienvenue à l'agence",
+      "after": "Vos biens, votre secteur et une estimation demandée en une minute.",
+      "health": false,
+      "query": "agence immobilière annecy",
+      "serp": "Agence immobilière à Annecy · Estimation",
+      "rdv_head": "Visite d'un bien",
+      "rdv_btn": "Confirmer la visite",
+      "toast": "Visite confirmée",
+      "rdv_title": "Visites et estimations",
+      "rdv_desc": "Demandes de visite et d'estimation captées directement depuis le site.",
+      "funnel": [
+        "Visites",
+        "Biens consultés",
+        "Demandes d'estimation",
+        "Mandats signés"
+      ],
+      "pour": "les agences immobilières"
+    }
+  },
+  "site-web-medecin": {
+    "h1": "On fait des sites web pour les médecins.",
+    "subtitle": "MSD Media crée des sites web sur-mesure pour médecins et professionnels de santé, pensés pour rassurer vos patients, simplifier la prise de rendez-vous et améliorer votre référencement local. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "L'information qu'un patient cherche avant de vous faire confiance",
+        "paragraphs": [
+          "Avant de prendre rendez-vous, un patient veut savoir qui vous êtes, quelles sont vos spécialités, où vous exercez et comment vous joindre en urgence. Un site clair et rassurant réduit l'anxiété du premier contact et filtre les demandes hors de votre périmètre.",
+          "Nous intégrons votre outil de prise de rendez-vous existant (Doctolib ou équivalent) directement dans le parcours du site, sans double saisie ni redirection qui casse l'expérience."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1576091160399-112ba8d25d1d.webp",
+        "alt": "Médecin consultant avec un patient en cabinet",
+        "width": "1400",
+        "height": "933"
+      },
+      {
+        "title": "Visible sur vos recherches locales, conforme sur les données sensibles",
+        "paragraphs": [
+          "Les recherches 'médecin + spécialité + ville' ou 'dentiste + ville' comptent parmi les plus qualifiées du web local : l'intention d'y prendre rendez-vous est immédiate. Un mauvais référencement local, c'est des patients qui vont ailleurs sans même découvrir votre cabinet.",
+          "Le site présente votre activité, jamais de données de santé : les dossiers patients restent dans vos outils métier certifiés. Nous construisons la vitrine et le parcours de prise de contact, dans le respect du RGPD dès la conception."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1631217868264-e5b90bb7e133.webp",
+        "alt": "Salle d'attente moderne d'un cabinet médical",
+        "width": "1400",
+        "height": "912"
+      }
+    ],
+    "cards": [
+      {
+        "id": "specialites",
+        "title": "Vous exercez une spécialité esthétique ?",
+        "intro": [
+          "Médecine esthétique, chirurgie, dermatologie, dentaire ou laser : les règles changent d'une spécialité à l'autre."
+        ],
+        "cards": [
+          {
+            "href": "https://msd-media.com/site-web-medecine-esthetique/",
+            "num": null,
+            "title": "Médecine esthétique",
+            "text": "Injections et soins esthétiques : informer sans promettre de résultat.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-chirurgie-esthetique/",
+            "num": null,
+            "title": "Chirurgie esthétique",
+            "text": "Cliniques et chirurgiens, dans le cadre du décret du 23 septembre 2026.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dermatologue/",
+            "num": null,
+            "title": "Dermatologie",
+            "text": "Séparer la consultation médicale et la dermatologie esthétique.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dentiste/",
+            "num": null,
+            "title": "Dentistes",
+            "text": "Implantologie et esthétique du sourire, selon le code de déontologie dentaire.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-centre-laser/",
+            "num": null,
+            "title": "Centres laser",
+            "text": "Épilation laser et lumière pulsée, dans le cadre fixé en 2024.",
+            "link": "Voir la page",
+            "external": false
+          }
+        ],
+        "outro": [
+          "À lire aussi : <a href=\"https://msd-media.com/blog/articles/avis-google-medecin-que-repondre/\">supprimer un avis Google ou y répondre sans violer le secret médical</a>, et <a href=\"https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/\">ce que le site d'un médecin esthétique peut afficher</a>."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le site peut-il stocker des données médicales de patients ?",
+        "a": "<p>Non — un site web ne doit jamais stocker de données de santé (dossiers, résultats). Nous construisons la vitrine et le parcours de prise de contact ; les données de santé restent dans vos outils métier certifiés (HDS).</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des professionnels de santé hors d'Annecy ?",
+        "a": "<p>Oui, nous accompagnons des cabinets et cliniques partout en France, en Suisse et en Belgique.</p>"
+      },
+      {
+        "q": "Combien de temps pour un site de cabinet médical ?",
+        "a": "<p>Une première version est livrée en 21 jours, avec un cadrage spécifique sur vos spécialités et votre patientèle cible.</p>"
+      },
+      {
+        "q": "Peut-on faire évoluer le site après la mise en ligne ?",
+        "a": "<p>Oui, vous restez autonome pour les informations pratiques (horaires, urgences) et nous restons disponibles pour toute évolution.</p>"
+      },
+      {
+        "q": "Quel est le tarif pour le site d'un cabinet médical ?",
+        "a": "<p>Le tarif dépend du nombre de praticiens, de spécialités à présenter et des intégrations nécessaires (prise de RDV). Chaque devis est personnalisé après un premier échange.</p>"
+      },
+      {
+        "q": "Le référencement local est-il en option ?",
+        "a": "<p>Le SEO technique de base est inclus dans chaque site. Le SEO local avancé (Google Business Profile, avis, cohérence NAP) peut être ajouté selon vos besoins.</p>"
+      },
+      {
+        "q": "Peut-on intégrer Doctolib ou un autre outil de RDV ?",
+        "a": "<p>Oui, nous intégrons votre outil de prise de rendez-vous existant directement dans le parcours du site, sans double saisie.</p>"
+      },
+      {
+        "q": "Le référencement local est-il vraiment utile en santé ?",
+        "a": "<p>Essentiel : la quasi-totalité des recherches de professionnels de santé se font en local ('dentiste + ville', 'kiné + ville'). Un mauvais référencement local, c'est des patients qui vont ailleurs sans même vous voir.</p>"
+      },
+      {
+        "q": "Créez-vous des sites pour les kinés, ostéopathes et thérapeutes ?",
+        "a": "<p>Oui. Les règles diffèrent selon la profession : les masseurs-kinésithérapeutes ont leur propre Ordre et leur code de déontologie, le titre d'ostéopathe est réglementé, et un praticien de médecine douce ne doit jamais présenter sa pratique comme un traitement ni promettre une guérison. Nous adaptons les textes à votre cadre, avec une page par type de prise en charge.</p>"
+      },
+      {
+        "q": "Doctolib ne suffit-il pas ?",
+        "a": "<p>Doctolib gère très bien la prise de rendez-vous, mais votre fiche y ressemble à toutes les autres. Votre site permet d'expliquer vos actes, l'accès au cabinet et votre façon de travailler, et d'apparaître sur les recherches d'information des patients. Les deux se complètent : le site peut renvoyer directement vers votre agenda Doctolib.</p>"
+      },
+      {
+        "q": "Le site peut-il présenter plusieurs praticiens d'une même structure ?",
+        "a": "<p>Oui, chaque praticien peut avoir sa propre présentation (spécialité, parcours, créneaux) au sein d'un site commun au cabinet ou à la clinique.</p>"
+      },
+      {
+        "q": "Le devis inclut-il la rédaction des textes ?",
+        "a": "<p>La rédaction peut être incluse ou prise en charge par vos soins selon le périmètre convenu — nous en discutons dès le premier échange.</p>"
+      },
+      {
+        "q": "Peut-on lancer le projet sans perturber les consultations ?",
+        "a": "<p>Oui, le projet se mène en parallèle de votre activité, par échanges courts et asynchrones autant que possible.</p>"
+      },
+      {
+        "q": "Le site est-il accessible aux personnes en situation de handicap ?",
+        "a": "<p>Nous appliquons les bonnes pratiques d'accessibilité web (RGAA), un point essentiel pour un site de santé destiné à tous les patients.</p>"
+      },
+      {
+        "q": "Un médecin a-t-il le droit d'avoir un site internet ?",
+        "a": "<p>Oui. Depuis le décret n° 2020-1662, l&#x27;article R4127-19-1 du Code de la santé publique permet au médecin d&#x27;informer le public de ses compétences, de son parcours et de ses conditions d&#x27;exercice, y compris sur internet, sans témoignages ni comparaison avec des confrères.</p>"
+      },
+      {
+        "q": "Faut-il afficher ses honoraires sur le site ?",
+        "a": "<p>C&#x27;est conseillé : secteur de conventionnement, tarifs des consultations et éventuels dépassements. Pour les actes non remboursés, l&#x27;arrêté du 30 mai 2018 impose en plus une information écrite préalable dès que les honoraires atteignent 70 €.</p>"
+      },
+      {
+        "q": "Le site peut-il indiquer si le cabinet accepte de nouveaux patients ?",
+        "a": "<p>Oui, et c&#x27;est l&#x27;une des informations les plus recherchées. Une mention claire, mise à jour dès que la situation change, évite de nombreux appels au secrétariat.</p>"
+      }
+    ],
+    "package": {
+      "label": "les médecins",
+      "who": "d'un médecin",
+      "url": "cabinet-medical.fr",
+      "brand": "Cabinet médical",
+      "hero": "Consultations sur rendez-vous",
+      "cta": "Prendre RDV",
+      "before": "Bienvenue au cabinet",
+      "after": "Consultations, horaires et urgences : tout est clair avant d'appeler.",
+      "health": true,
+      "query": "médecin généraliste annecy",
+      "serp": "Cabinet médical à Annecy · Consultations",
+      "rdv_head": "Consultation · 20 min",
+      "rdv_btn": "Réserver via Doctolib",
+      "toast": "Rendez-vous confirmé",
+      "rdv_title": "Prise de rendez-vous",
+      "rdv_desc": "Doctolib ou votre agenda intégré au parcours, sans double saisie.",
+      "funnel": [
+        "Visites",
+        "Clics sur « Prendre RDV »",
+        "Appels au cabinet",
+        "Rendez-vous pris"
+      ],
+      "pour": "les médecins"
+    }
+  },
+  "site-web-medecine-esthetique": {
+    "h1": "On fait des sites web pour la médecine esthétique.",
+    "subtitle": "Centres d'esthétique, médecine esthétique, dermatologie : nous concevons des sites qui remplissent votre agenda, dans un cadre publicitaire que nous connaissons pour l'avoir pratiqué chez <strong>Merz Aesthetics</strong>. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "Vos patients ne comparent pas des soins, ils comparent des sites",
+        "paragraphs": [
+          "Quand quelqu'un cherche une épilation laser ou un traitement injectable près de chez lui, il ouvre quatre onglets et ferme trois. Ce qui le décide n'est presque jamais le soin lui-même — c'est la clarté des tarifs, la précision des indications, la présence d'un praticien identifiable et la facilité à réserver.",
+          "Nous construisons la page autour de cette comparaison : une offre par section, des résultats présentés sobrement, et un parcours qui mène à la prise de rendez-vous sans jamais forcer le pas."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1731514693674-a32211b63996.webp",
+        "alt": "Espace d'accueil d'un centre de médecine esthétique",
+        "width": "1400",
+        "height": "875"
+      },
+      {
+        "title": "Un cadre publicitaire strict, que nous avons déjà pratiqué",
+        "paragraphs": [
+          "La communication sur les actes esthétiques est encadrée : allégations à sourcer, promesses de résultat à manier avec prudence, avant/après soumis à des règles précises. Une page qui l'ignore vous expose ; une page trop timide ne convainc personne.",
+          "Nous avons produit trois landing pages pour <a href=\"https://msd-media.com/realisations/merz-radiesse/\">Merz Aesthetics</a>, laboratoire international de médecine esthétique — RADIESSE, Ultherapy Prime et BELOTERO. Chaque allégation y est adossée à sa source, y compris les limites d'extrapolation quand l'étude l'exige. C'est ce cadre que nous appliquons à votre centre."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1785861485926-93a13556d656.webp",
+        "alt": "Injection esthétique réalisée par un praticien",
+        "width": "1400",
+        "height": "875"
+      }
+    ],
+    "cards": [
+      {
+        "id": "specialites",
+        "title": "Par spécialité",
+        "intro": [
+          "Chaque spécialité a son propre cadre de communication. Nous avons une page pour chacune."
+        ],
+        "cards": [
+          {
+            "href": "https://msd-media.com/site-web-chirurgie-esthetique/",
+            "num": null,
+            "title": "Chirurgie esthétique",
+            "text": "Cliniques et chirurgiens, dans le cadre du décret du 23 septembre 2026.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dermatologue/",
+            "num": null,
+            "title": "Dermatologie",
+            "text": "Séparer la consultation médicale et la dermatologie esthétique.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dentiste/",
+            "num": null,
+            "title": "Dentistes",
+            "text": "Implantologie et esthétique du sourire, selon le code de déontologie dentaire.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-centre-laser/",
+            "num": null,
+            "title": "Centres laser",
+            "text": "Épilation laser et lumière pulsée, dans le cadre fixé en 2024.",
+            "link": "Voir la page",
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "preuves-merz",
+        "title": "Deux lancements pour Merz Aesthetics",
+        "intro": [
+          "Des pages de dispositifs médicaux esthétiques, conçues dans le cadre publicitaire de l'ANSM. Le même niveau d'exigence s'applique à votre cabinet."
+        ],
+        "cards": [
+          {
+            "href": "https://msd-media.com/realisations/merz-radiesse/",
+            "num": null,
+            "title": "RADIESSE®",
+            "text": "Expliquer un biostimulateur injectable et guider le patient vers un praticien.",
+            "link": "Voir le projet",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/realisations/merz-ultherapy-prime/",
+            "num": null,
+            "title": "Ultherapy® Prime",
+            "text": "Le lancement français : rigueur clinique et parcours patient clair.",
+            "link": "Voir le projet",
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "guides-sante",
+        "title": "Ce que votre site a le droit de faire",
+        "intro": [
+          "Les questions que nous posent le plus souvent les médecins, traitées en détail."
+        ],
+        "cards": [
+          {
+            "href": "https://msd-media.com/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/",
+            "num": null,
+            "title": "Médecine esthétique : ce que votre site peut afficher",
+            "text": "Photos avant/après, avis patients, tarifs, et ce que change le décret du 23 septembre 2026.",
+            "link": "Lire le guide",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/blog/articles/avis-google-medecin-que-repondre/",
+            "num": null,
+            "title": "Avis Google : supprimer ou répondre",
+            "text": "La procédure pas à pas et des modèles de réponse qui respectent le secret médical.",
+            "link": "Lire le guide",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/blog/articles/site-internet-dentiste-ce-qui-est-autorise/",
+            "num": null,
+            "title": "Dentistes : ce que l'Ordre autorise",
+            "text": "Tarifs obligatoires, avis patients, photos et publicité selon les recommandations de l'Ordre.",
+            "link": "Lire le guide",
+            "external": false
+          }
+        ],
+        "outro": []
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on publier des photos avant/après sur le site ?",
+        "a": "<p>Pour un médecin, nous le déconseillons. La chambre disciplinaire de l'Ordre qualifie régulièrement les photos avant/après de procédé publicitaire, et le Conseil national de l'Ordre recommande de ne pas en publier sur le site du praticien. Pour un centre d'esthétique non médical, elles restent possibles : résultats réels, prise de vue comparable, aucune retouche, consentement écrit du client, et jamais présentées comme une promesse. Dans les deux cas, nous construisons la preuve autrement : qualifications, déroulé du soin, sources cliniques.</p>"
+      },
+      {
+        "q": "Comment gérez-vous les règles de communication sur les actes esthétiques ?",
+        "a": "<p>Chaque allégation est adossée à sa source, et les données cliniques sont citées avec leurs limites quand l'étude l'exige. C'est la méthode que nous avons appliquée sur les trois landing pages produites pour Merz Aesthetics : une affirmation sourcée convainc davantage qu'une affirmation seule, y compris le lecteur qui ne cliquera jamais sur la référence.</p>"
+      },
+      {
+        "q": "Le site peut-il stocker des dossiers patients ?",
+        "a": "<p>Non, et il ne doit pas. Un site web ne stocke jamais de données de santé : les dossiers, les photos de suivi et les comptes rendus restent dans vos outils métier certifiés HDS. Nous construisons la vitrine et le parcours de prise de rendez-vous, dans le respect du RGPD dès la conception.</p>"
+      },
+      {
+        "q": "Peut-on intégrer notre outil de prise de rendez-vous ?",
+        "a": "<p>Oui. Doctolib, Planity, Treatwell ou votre propre agenda : l'outil existant est intégré directement dans le parcours du site, sans double saisie ni redirection qui casse l'élan au moment le plus décisif.</p>"
+      },
+      {
+        "q": "Peut-on présenter plusieurs praticiens et plusieurs soins ?",
+        "a": "<p>Oui, et c'est souvent la structure la plus efficace : une page par soin pour capter les recherches précises — épilation laser, injections, peeling — reliées à une présentation d'équipe qui donne un visage à votre centre. C'est ce maillage qui transforme une vitrine en canal d'acquisition.</p>"
+      },
+      {
+        "q": "Le référencement local est-il utile dans l'esthétique ?",
+        "a": "<p>C'est le canal principal. Les recherches du type « épilation laser + ville » ou « médecine esthétique + ville » sont parmi les plus qualifiées du web local : l'intention de prendre rendez-vous y est immédiate. Mal positionné, vous perdez des clients qui n'auront jamais entendu parler de votre centre.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'un centre d'esthétique ?",
+        "a": "<p>21 jours ouvrés pour un site complet. Ce qui allonge un projet dans ce secteur n'est jamais la production, c'est la validation des contenus réglementés — elle s'anticipe dès le premier jour.</p>"
+      },
+      {
+        "q": "Quel est le tarif pour un site de médecine esthétique ?",
+        "a": "<p>Le devis dépend du nombre de soins à présenter, de la présence de photos avant/après et de l'intégration de votre agenda. Le chiffrage est ferme après l'appel : pas de rallonge en cours de route.</p>"
+      },
+      {
+        "q": "Le devis inclut-il la rédaction des textes ?",
+        "a": "<p>Oui. Nous rédigeons l'ensemble des contenus à partir d'un entretien avec vous, puis vous les validez avant intégration. Sur des actes encadrés, c'est le seul moyen d'obtenir un texte à la fois convaincant et défendable.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des centres hors d'Annecy ?",
+        "a": "<p>Oui. Nos clients sont en France, en Suisse et en Belgique, et l'ensemble du projet se mène à distance. Merz Aesthetics, par exemple, est un laboratoire international pour lequel nous avons produit le marché français.</p>"
+      },
+      {
+        "q": "Peut-on faire évoluer le site après la mise en ligne ?",
+        "a": "<p>Oui. Ajouter un soin, un praticien ou une page ville se fait sans refonte. Le site est construit pour grandir avec votre activité, pas pour être figé le jour de la livraison.</p>"
+      },
+      {
+        "q": "Peut-on citer le nom des produits utilisés ?",
+        "a": "<p>Avec prudence. Décrire l&#x27;acte, le type de produit et ses propriétés informe le patient ; mettre en avant une marque commerciale peut faire passer la page pour une publicité en faveur du laboratoire. Nous privilégions la description de l&#x27;acte.</p>"
+      },
+      {
+        "q": "L'autorisation de l'Ordre pour la médecine esthétique est-elle en vigueur ?",
+        "a": "<p>Non, au 30 septembre 2026. L&#x27;article de la loi de financement de la Sécurité sociale pour 2026 qui la prévoyait a été censuré par le Conseil constitutionnel le 30 décembre 2025. Nous suivons les nouveaux textes annoncés par le gouvernement.</p>"
+      },
+      {
+        "q": "Faut-il afficher le prix des injections ?",
+        "a": "<p>Oui, sous forme de prix « à partir de » par acte, en précisant qu&#x27;une information écrite est remise avant le soin, comme l&#x27;impose l&#x27;arrêté du 30 mai 2018 dès 70 € pour un acte non remboursé.</p>"
+      }
+    ],
+    "package": {
+      "label": "la médecine esthétique",
+      "who": "d'un cabinet de médecine esthétique",
+      "url": "medecine-esthetique.fr",
+      "brand": "Médecine esthétique",
+      "hero": "Un premier rendez-vous pour en parler",
+      "cta": "Prendre RDV",
+      "before": "Effacez vos rides en une séance",
+      "after": "Comprendre l'acte, ses étapes et ses limites avant de décider.",
+      "health": true,
+      "query": "médecin esthétique annecy",
+      "serp": "Médecine esthétique à Annecy · Consultation",
+      "rdv_head": "Consultation d'information",
+      "rdv_btn": "Confirmer le rendez-vous",
+      "toast": "Rendez-vous confirmé",
+      "rdv_title": "Prise de rendez-vous",
+      "rdv_desc": "La consultation d'information se réserve en ligne, sans pression.",
+      "funnel": [
+        "Visites",
+        "Pages traitements lues",
+        "Clics sur « Prendre RDV »",
+        "Consultations réservées"
+      ],
+      "pour": "les médecins esthétiques"
+    }
+  },
+  "site-web-restaurant": {
+    "h1": "On fait des sites web pour les restaurants.",
+    "subtitle": "MSD Media crée des sites web sur-mesure pour restaurants et cafés, pensés pour donner envie de réserver, simplifier la réservation en ligne et améliorer votre référencement local. <strong>Livré en 21 jours chrono.</strong>",
+    "story": [
+      {
+        "title": "La décision se joue en quelques secondes sur mobile",
+        "paragraphs": [
+          "Photos soignées de l'ambiance et des plats, ton qui reflète votre identité, réservation accessible en un clic : la première impression compte plus qu'ailleurs. La grande majorité des recherches 'restaurant près de moi' se font sur mobile, en marchant — le site est conçu pour ce contexte précis.",
+          "Nous intégrons votre outil de réservation existant (TheFork ou autre) directement dans le parcours du site, sans redirection qui casse l'expérience et fait perdre des réservations."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1517248135467-4c7edcad34c4.webp",
+        "alt": "Intérieur chaleureux d'un restaurant avec tables dressées",
+        "width": "1400",
+        "height": "933"
+      },
+      {
+        "title": "Ranker sur 'restaurant + cuisine + ville', rester à jour sans effort",
+        "paragraphs": [
+          "Les recherches locales et spécifiques ('restaurant italien Annecy') sont les plus qualifiées — c'est là que se joue le référencement, bien avant le nom de l'établissement seul. Nous structurons le contenu autour de votre cuisine, votre quartier et votre ambiance.",
+          "Vous mettez à jour votre carte, vos horaires et vos photos vous-même, sans dépendre d'un prestataire à chaque changement. La fiche Google Business Profile (avis, photos, horaires synchronisés) reste tout aussi importante que le site pour la décision finale."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1414235077428-338989a2e8c0.webp",
+        "alt": "Plat gastronomique soigneusement dressé",
+        "width": "1400",
+        "height": "933"
+      }
+    ],
+    "cards": [],
+    "faq": [
+      {
+        "q": "Peut-on intégrer la réservation en ligne ?",
+        "a": "<p>Oui, nous connectons votre outil existant (TheFork, Zenchef ou autre) directement dans le site, sans redirection qui casse l'expérience.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des établissements en dehors d'Annecy ?",
+        "a": "<p>Oui, nous accompagnons des restaurants et cafés partout en France, en Suisse et en Belgique.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'un restaurant ?",
+        "a": "<p>Une première version est livrée en 21 jours, avec un travail photo et copywriting adapté à votre identité.</p>"
+      },
+      {
+        "q": "Puis-je modifier mon menu moi-même ?",
+        "a": "<p>Oui, le site est conçu pour que vous puissiez mettre à jour votre carte, vos horaires et vos photos en autonomie.</p>"
+      },
+      {
+        "q": "Quel est le tarif pour le site d'un restaurant ?",
+        "a": "<p>Le tarif dépend du travail photo, du nombre de pages (carte, événements privés...) et des intégrations nécessaires. Chaque devis est personnalisé après un premier échange.</p>"
+      },
+      {
+        "q": "Le référencement local est-il inclus ?",
+        "a": "<p>Le SEO technique de base est inclus. L'optimisation avancée de votre fiche Google Business Profile peut être ajoutée selon vos besoins.</p>"
+      },
+      {
+        "q": "Peut-on mettre en avant les avis clients ?",
+        "a": "<p>Oui, vos avis Google et une éventuelle note Trustpilot peuvent être affichés directement sur le site pour renforcer la confiance.</p>"
+      },
+      {
+        "q": "Le référencement local suffit-il pour un restaurant ?",
+        "a": "<p>C'est le socle, combiné à l'optimisation de votre fiche Google Business Profile — les deux ensemble font la différence sur les recherches 'près de moi'.</p>"
+      },
+      {
+        "q": "Créez-vous aussi des sites pour les hôtels et hébergements ?",
+        "a": "<p>Oui. L'enjeu principal est la réservation directe : un moteur de réservation intégré et des offres réservées au site réduisent la commission versée aux plateformes. Chaque chambre ou logement a sa propre page, et la page d'accès répond aux questions concrètes (stationnement, distance du lac, transports).</p>"
+      },
+      {
+        "q": "Le site peut-il présenter plusieurs établissements ?",
+        "a": "<p>Oui, si vous gérez plusieurs adresses, chacune peut avoir sa propre page (menu, horaires, réservation) au sein d'un site commun.</p>"
+      },
+      {
+        "q": "Le devis inclut-il le shooting photo ?",
+        "a": "<p>Le shooting n'est pas inclus par défaut mais peut être organisé en complément selon vos besoins — à cadrer lors du premier échange.</p>"
+      },
+      {
+        "q": "Peut-on lancer le projet sans perturber le service ?",
+        "a": "<p>Oui, le projet se mène en parallèle de votre activité, par échanges courts qui n'empiètent pas sur vos heures de service.</p>"
+      },
+      {
+        "q": "Le site fonctionne-t-il bien avec une connexion mobile lente ?",
+        "a": "<p>Oui, le site est optimisé pour charger rapidement même en 4G moyenne, un point clé quand vos clients cherchent 'restaurant près de moi' en marchant.</p>"
+      },
+      {
+        "q": "Faut-il afficher les allergènes sur le site ?",
+        "a": "<p>Oui dès que le site présente ou vend vos plats. Le décret n° 2015-447 impose d&#x27;informer les clients sur les 14 allergènes majeurs, y compris en vente à emporter et en livraison. Nous les intégrons à chaque plat de la carte.</p>"
+      },
+      {
+        "q": "Une carte en PDF suffit-elle ?",
+        "a": "<p>Non. Un PDF se lit mal sur mobile et Google l&#x27;exploite mal. Une carte en page web est plus lisible, mieux référencée et plus simple à mettre à jour.</p>"
+      },
+      {
+        "q": "Le site doit-il reprendre les informations de ma fiche Google ?",
+        "a": "<p>Oui, à l&#x27;identique : nom, adresse, téléphone, horaires. Des informations qui divergent entre le site et la fiche brouillent Google et font perdre des clients.</p>"
+      }
+    ],
+    "package": {
+      "label": "les restaurants",
+      "who": "d'un restaurant",
+      "url": "votre-restaurant.fr",
+      "brand": "Restaurant",
+      "hero": "Cuisine de saison, en terrasse",
+      "cta": "Réserver une table",
+      "before": "Bienvenue sur notre site",
+      "after": "La carte, les horaires et la réservation, accessibles en un coup d'œil.",
+      "health": false,
+      "query": "restaurant annecy",
+      "serp": "Restaurant à Annecy · Réserver une table",
+      "rdv_head": "Réserver une table · 2 pers.",
+      "rdv_btn": "Confirmer la réservation",
+      "toast": "Table réservée",
+      "rdv_title": "Réservation en ligne",
+      "rdv_desc": "Votre outil de réservation intégré au site, sans détour par une plateforme.",
+      "funnel": [
+        "Visites",
+        "Carte consultée",
+        "Clics sur « Réserver »",
+        "Tables réservées"
+      ],
+      "pour": "les restaurateurs"
+    }
+  }
+}

@@ -16,7 +16,7 @@ Tous les agents les lisent et les appliquent. MSD Media est une agence web d'Ann
 
 ## Design
 
-Le design actuel du site ne change pas, et aucune autre référence de design ne s'applique (ni skill, ni tendance extérieure). La référence est l'accueil (`index.html`) ; pour un article, ce sont les articles existants. On ne crée ni style, ni classe CSS, ni attribut `style=`. Pour ajouter un bloc (FAQ, paragraphe, liste de liens, cartes), on reprend la structure HTML et les classes d'un bloc du même type sur l'accueil ou sur la page modifiée. Le skill `msd-design-system` décrit ces blocs. Le rendu doit être identique à l'existant.
+Le design actuel du site ne change pas, et aucune autre référence de design ne s'applique (ni skill, ni tendance extérieure). La référence est l'accueil (`index.html`) ; pour un article, ce sont les articles existants. On ne crée ni style, ni classe CSS, ni attribut `style=`. Pour ajouter un bloc (FAQ, paragraphe, liste de liens, cartes), on reprend la structure HTML et les classes d'un bloc du même type sur l'accueil ou sur la page modifiée. Depuis la refonte du 2026-11-02, le design commun vient de `assets/css/theme-v2.css` (header, footer, boutons) et `assets/css/pages-v2.css` (typographie des pages) ; les anciens composants sont passés en thème clair par `assets/css/light-v1.css`, généré automatiquement. Le skill `msd-design-system` décrit encore l'ancien thème sombre : s'y fier pour la structure des blocs, pas pour les couleurs. Le rendu doit être identique à l'existant.
 
 ## Conversion
 
@@ -24,6 +24,7 @@ Améliorer la conversion d'une page est permis et encouragé : réponse plus net
 
 ## Règles techniques
 
+- **Pages secteur** (`site-web-*/`) : générées par `python3 scripts/build-sector-pages.py` à partir de `data/sectors.json`. On modifie leur contenu dans ce fichier JSON, puis on relance le script ; jamais leur HTML directement.
 - **Blog** : les articles qui ont une source dans `blog/sources/*.md` (champ `slug:`) se modifient uniquement dans cette source, puis `npm run blog:build`. On ne touche jamais au HTML généré de ces articles. Les articles sans source se modifient directement dans leur HTML. Un nouvel article suit `seo-pilot/ARTICLE-GUIDE.md`.
 - **Traductions** : un élément avec `data-i18n="clé"` voit son texte remplacé par `assets/i18n/translations.json`. Si on modifie un tel texte, on met à jour la clé en français (et en anglais si elle existe), sinon la modification ne s'affiche pas.
 - **FAQ** : le texte des réponses dans le JSON-LD `FAQPage` doit être identique au texte visible. `npm run seo:check` le vérifie.

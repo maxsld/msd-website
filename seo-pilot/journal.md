@@ -4,7 +4,17 @@ Chaque modification faite sur le site pour le référencement, avec ses chiffres
 
 Hors entrées : le 2026-10-30, les 11 pages « agence web + ville » hors zone et /landing-page-bruxelles/ ont été redirigées (301). C'est définitif, ne pas revenir dessus.
 
+Hors entrées : le 2026-11-02, refonte du design de tout le site (thème clair, nouveau header et footer, polices Inter Tight et Manrope, mêmes textes sauf l'accueil). Les bilans de novembre doivent en tenir compte : une variation commune à toutes les pages vient probablement de la refonte, pas des changements ci-dessous.
+Le même jour, les 12 pages secteur (site-web-…) ont été reconstruites sur le modèle de l'accueil par `scripts/build-sector-pages.py` (contenu dans `data/sectors.json`). Textes, FAQ et données structurées conservés ; leur structure change. Pour les modifier : éditer `data/sectors.json` puis relancer le script, jamais le HTML directement.
+
 ## Entrées
+
+### 2026-11-02 : /
+- Changement : nouvelle page d'accueil (refonte complète : hero, sections, FAQ de 14 questions réécrite pour le SEO, témoignage Merz). Title et description inchangés. Version anglaise /en/ refaite à l'identique.
+- Avant : ancienne accueil sombre (hero vidéo, 19 questions de FAQ).
+- Hypothèse : page 4 fois plus rapide sur mobile (PageSpeed 73 → 99, LCP 7,8 s → 1,7 s) et mieux structurée (11 H2 au lieu de 2) : plus de requêtes non marque et meilleure conversion des visites.
+- Requête visée : agence web annecy, msd media
+- Départ : voir le relevé du 2026-11-01 (accueil : surtout des requêtes de marque).
 
 ### 2026-11-01 : /creation-site-web-annecy/
 - Changement : Lien dans le footer de toutes les pages et depuis /agence-web-annecy/ ; title passé à « Création de Site Internet à Annecy : Sur Mesure en 21 Jours ».

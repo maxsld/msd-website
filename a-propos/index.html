@@ -42,6 +42,11 @@
   <!-- font-display:swap override for FontAwesome -->
   <script>!function(){var o=new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.tagName==="STYLE"&&n.textContent.indexOf("Font Awesome")>-1){n.textContent=n.textContent.replace(/font-display\s*:[^;]+;/g,"font-display:swap;");if(n.textContent.indexOf("font-display")<0)n.textContent=n.textContent.replace(/(@font-face\s*\{)/g,"$1font-display:swap;")}})});});o.observe(document.head,{childList:true})}();</script>
   <link rel="stylesheet" href="../assets/css/fontawesome-subset.min.css?v=eccfcc01">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Inter+Tight:wght@400..700&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/light-v1.min.css?v=7590e7a1">
+  <link rel="stylesheet" href="../assets/css/theme-v2.min.css?v=35c7b99e">
+  <link rel="stylesheet" href="../assets/css/pages-v2.min.css?v=54de54a4">
 
   <meta property="og:title" content="À Propos de MSD Media : L'Agence et Son Fondateur" />
   <meta property="og:description" content="MSD Media, agence web fondée à Annecy en 2025 par Maxens Soldan. Notre approche, nos convictions et la méthode qui livre un site sur mesure en 21 jours." />
@@ -108,20 +113,20 @@
     /* Le fond de page est sombre (--global-color-background) : le hero doit donc
        utiliser du texte clair, comme sur les pages home-page / sector-page. */
     .about-page .hero .section-tag--dark {
-      border-color: rgba(255, 255, 255, 0.22);
-      background: rgba(255, 255, 255, 0.06);
-      color: rgba(255, 255, 255, 0.82);
-      border-radius: 0.2rem;
+      border-color: rgba(4, 8, 21, 0.198);
+      background: rgba(4, 8, 21, 0.036);
+      color: rgba(4, 8, 21, 0.82);
+      border-radius: var(--btn-radius);
     }
 
     .about-page .hero__title {
-      color: #ffffff;
+      color: rgb(4, 8, 21);
     }
 
     .about-page .hero__btn--secondary {
-      color: #ffffff;
+      color: rgb(4, 8, 21);
       background: transparent;
-      border-color: rgba(247, 245, 246, 0.34);
+      border-color: rgba(4, 8, 21, 0.306);
     }
 
     .about-bio {
@@ -162,7 +167,7 @@
     }
 
     .about-metric-card {
-      border: 1px solid rgba(17, 17, 17, 0.12);
+      border: 1px solid rgba(249, 249, 251, 0.12);
       border-radius: 1.25rem;
       padding: 1.2rem 1.1rem;
       text-align: left;
@@ -172,12 +177,12 @@
 
     .about-metric-card:hover {
       transform: translateY(-2px);
-      border-color: rgba(17, 17, 17, 0.25);
+      border-color: rgba(249, 249, 251, 0.25);
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
     }
 
     .about-metric-card__value {
-      font-family: "Instrument Serif", serif;
+      font-family: var(--font-heading);
       font-size: clamp(1.4rem, 2.8vw, 2rem);
       line-height: 1.05;
       color: #111;
@@ -223,7 +228,7 @@
     }
 
     .about-signal-card {
-      border: 1px solid rgba(17, 17, 17, 0.12);
+      border: 1px solid rgba(249, 249, 251, 0.12);
       border-radius: 1.25rem;
       padding: 1.25rem 1.15rem;
       text-align: left;
@@ -233,7 +238,7 @@
 
     .about-signal-card:hover {
       transform: translateY(-2px);
-      border-color: rgba(17, 17, 17, 0.35);
+      border-color: rgba(249, 249, 251, 0.35);
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
     }
 
@@ -272,17 +277,17 @@
 
     .about-client-link {
       display: block;
-      border: 1px solid rgba(17, 17, 17, 0.12);
+      border: 1px solid rgba(249, 249, 251, 0.12);
       border-radius: 1.25rem;
       padding: 1rem 1.05rem;
       text-align: left;
-      color: #141414;
+      color: rgb(255, 255, 255);
       transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
-      background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+      background: linear-gradient(180deg, rgb(15, 15, 15) 0%, rgb(15, 15, 15) 100%);
     }
 
     .about-client-link:hover {
-      border-color: rgba(17, 17, 17, 0.35);
+      border-color: rgba(249, 249, 251, 0.35);
       transform: translateY(-2px);
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
     }
@@ -307,7 +312,7 @@
     }
 
     .about-sources-card {
-      border: 1px solid rgba(17, 17, 17, 0.12);
+      border: 1px solid rgba(249, 249, 251, 0.12);
       border-radius: 1.35rem;
       padding: 2rem 1.7rem;
       background: #fff;
@@ -395,7 +400,7 @@
     }
 
     .about-alt-text h2 {
-      font-family: "Inter", sans-serif;
+      font-family: var(--font-heading);
       font-size: clamp(1.3rem, 2.4vw, 1.75rem);
       line-height: 1.2;
       letter-spacing: -0.03em;
@@ -418,7 +423,7 @@
       width: calc(100% - 3.4rem);
       max-width: 1200px;
       margin: 0 auto;
-      border-radius: 0.2rem;
+      border-radius: var(--radius);
       overflow: hidden;
       height: min(78vh, 700px);
     }
@@ -439,7 +444,7 @@
     .hero-photo__overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(17, 17, 17, 0) 35%, rgba(17, 17, 17, 0.92) 100%);
+      background: linear-gradient(180deg, rgba(251, 251, 249, 0) 35%, rgba(251, 251, 249, 0.92) 100%);
     }
 
     .hero-photo__content {
@@ -457,16 +462,16 @@
     .hero-photo__content .section-tag {
       margin: 0 0 1rem;
       margin-left: 0;
-      border-radius: 0.2rem;
+      border-radius: var(--btn-radius);
     }
 
     .hero-photo__title {
       margin: 0 0 1rem;
-      font-family: "Inter", sans-serif;
+      font-family: var(--font-heading);
       font-weight: 600;
       letter-spacing: -0.03em;
       line-height: 1.15;
-      color: #ffffff;
+      color: rgb(4, 8, 21);
       font-size: clamp(1.9rem, 4vw, 2.75rem);
       max-width: 24ch;
     }
@@ -476,7 +481,7 @@
       max-width: 55ch;
       font-size: 0.98rem;
       line-height: 1.55;
-      color: rgba(255, 255, 255, 0.75);
+      color: rgba(4, 8, 21, 0.75);
     }
 
     @media (max-width: 680px) {
@@ -502,7 +507,7 @@
       font-size: 0.82rem;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(4, 8, 21, 0.5);
       margin: 0 0 1.2rem;
     }
 
@@ -521,14 +526,14 @@
     }
 
     .about-timeline-card {
-      border-left: 2px solid rgba(255, 255, 255, 0.18);
+      border-left: 2px solid rgba(4, 8, 21, 0.162);
       padding: 0 0 0 1.3rem;
     }
 
     .about-timeline-card__date {
-      font-family: "Instrument Serif", serif;
+      font-family: var(--font-heading);
       font-size: clamp(1.5rem, 3vw, 2.1rem);
-      color: #ffffff;
+      color: rgb(4, 8, 21);
       display: block;
       margin: 0 0 0.5rem;
     }
@@ -537,7 +542,7 @@
       margin: 0 0 0.5rem;
       font-size: 1rem;
       font-weight: 600;
-      color: #ffffff;
+      color: rgb(4, 8, 21);
       letter-spacing: -0.01em;
     }
 
@@ -545,11 +550,11 @@
       margin: 0;
       font-size: 0.92rem;
       line-height: 1.55;
-      color: rgba(255, 255, 255, 0.65);
+      color: rgba(4, 8, 21, 0.65);
     }
 
     .about-timeline-card p a {
-      color: #ffffff;
+      color: rgb(4, 8, 21);
       text-decoration: underline;
       text-underline-offset: 2px;
     }
@@ -569,7 +574,7 @@
     }
 
     .about-value-card {
-      border: 1px solid rgba(17, 17, 17, 0.12);
+      border: 1px solid rgba(249, 249, 251, 0.12);
       border-radius: 1.25rem;
       padding: 1.4rem 1.2rem;
       background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
@@ -578,12 +583,12 @@
 
     .about-value-card:hover {
       transform: translateY(-2px);
-      border-color: rgba(17, 17, 17, 0.25);
+      border-color: rgba(249, 249, 251, 0.25);
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
     }
 
     .about-value-card__num {
-      font-family: "Instrument Serif", serif;
+      font-family: var(--font-heading);
       font-size: 1.3rem;
       color: rgba(17, 17, 17, 0.35);
       margin: 0 0 0.6rem;
@@ -626,7 +631,7 @@
     }
 
     .about-testimonial-card {
-      border: 1px solid rgba(17, 17, 17, 0.12);
+      border: 1px solid rgba(249, 249, 251, 0.12);
       border-radius: 1.25rem;
       padding: 1.4rem 1.3rem;
       background: #fff;
@@ -764,7 +769,7 @@
       max-width: 70ch;
       font-size: 0.95rem;
       line-height: 1.55;
-      color: var(--global-color-white);
+      color: rgb(4, 8, 21);
       opacity: 0.7;
     }
 
@@ -778,11 +783,11 @@
       color: var(--global-color-white);
       background: #2d66f2;
       border-color: #2d66f2;
-      border-radius: 0.2rem;
+      border-radius: var(--btn-radius);
     }
 
     .about-page .hero__btn--secondary {
-      border-radius: 0.2rem;
+      border-radius: var(--btn-radius);
     }
 
     .about-visual-grid {
@@ -809,15 +814,15 @@
       height: 34%;
       z-index: 2;
       pointer-events: none;
-      background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, #111111 92%);
+      background: linear-gradient(180deg, rgba(251, 251, 249, 0) 0%, rgb(251, 251, 249) 92%);
     }
 
     .about-visual-grid__item {
       position: relative;
       overflow: hidden;
-      border-radius: 0.2rem;
-      background: #181818;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius);
+      background: rgb(249, 249, 247);
+      border: 1px solid rgba(4, 8, 21, 0.072);
       min-height: 0;
     }
 
@@ -879,7 +884,7 @@
     .about-page .about-sources-card,
     .about-page .about-value-card,
     .about-page .about-testimonial-card {
-      border-radius: 0.2rem;
+      border-radius: var(--btn-radius);
       box-shadow: none;
       background: #ffffff;
     }
@@ -895,7 +900,7 @@
     .about-page .about-metric-card__value,
     .about-page .about-timeline-card__date,
     .about-page .about-value-card__num {
-      font-family: "Inter", sans-serif;
+      font-family: var(--font-body);
       font-weight: 600;
       letter-spacing: -0.03em;
     }
@@ -916,7 +921,7 @@
     }
 
     .about-page .about-alt-img img {
-      border-radius: 0.2rem;
+      border-radius: var(--radius);
     }
 
     .about-page .about-alt-text h2,
@@ -924,7 +929,7 @@
     .about-page .about-signal-card h4,
     .about-page .about-value-card h4,
     .about-page .about-testimonial-card__author {
-      font-family: "Inter", sans-serif;
+      font-family: var(--font-heading);
       font-weight: 600;
       letter-spacing: -0.03em;
     }
@@ -935,7 +940,7 @@
     }
 
     .about-page .about-timeline-card {
-      border-left-color: rgba(255, 255, 255, 0.18);
+      border-left-color: rgba(4, 8, 21, 0.162);
     }
 
     .about-page .about-timeline-card__date {
@@ -944,7 +949,7 @@
 
     /* ── Valeurs : tag carré, titre réduit, cards noires, grille 2x2 ── */
     #valeurs .section-tag {
-      border-radius: 0.2rem;
+      border-radius: var(--btn-radius);
     }
 
     #valeurs .section-title {
@@ -956,27 +961,27 @@
     }
 
     #valeurs .about-value-card {
-      background: #181818;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 0.2rem;
+      background: rgb(249, 249, 247);
+      border: 1px solid rgba(4, 8, 21, 0.072);
+      border-radius: var(--radius);
       padding: 2rem 1.5rem 1.5rem;
     }
 
     #valeurs .about-value-card p.about-value-card__num {
       font-size: 2.2rem;
-      color: #ffffff;
+      color: rgb(4, 8, 21);
     }
 
     #valeurs .about-value-card h4 {
-      color: #ffffff;
+      color: rgb(4, 8, 21);
     }
 
     #valeurs .about-value-card__quote {
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(4, 8, 21, 0.9);
     }
 
     #valeurs .about-value-card p {
-      color: rgba(255, 255, 255, 0.75);
+      color: rgba(4, 8, 21, 0.75);
     }
 
     @media (max-width: 680px) {
@@ -1590,11 +1595,6 @@ function _msdConsentSignal(state){
 </head>
 
 <body class="home-page about-page">
-    <div class="top-announcement" role="banner">
-    <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
-    <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
-    <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
-  </div>
 <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28B6QRF"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -1608,83 +1608,91 @@ function _msdConsentSignal(state){
       </div>
     </div>
   </div>
-<header class="navbar">
-    <div class="nav-left">
-      <a href="https://msd-media.com/"><img height="151" width="372" src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media logo" class="logo" loading="eager"></a>
-      <div class="nav-menu" data-nav-menu>
-        <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
-          <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
-        </button>
-        <div class="nav-menu-dropdown" data-nav-menu-dropdown>
-          <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
-          <a href="https://msd-media.com/" data-i18n="nav_home">Accueil</a>
-          <a href="https://msd-media.com/presse/" data-i18n="nav_press">Presse</a>
-          <a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a>
-          <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
-          <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
-          <a href="https://msd-media.com/contact/" data-i18n="nav_contact">Contact</a>
-          <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
-                  <a href="https://msd-media.com/affiliation/" data-i18n="nav_affiliation">Affiliation</a>
-</div>
-      </div>
-    </div>
+  <div class="top-announcement" role="banner">
+    <span class="top-announcement__badge" data-i18n="announcement_badge">Nouveau</span>
+    <span class="top-announcement__text" data-i18n="announcement_text">Recommandez MSD Media et percevez 15% sur chaque projet signé.</span>
+    <a class="top-announcement__link" href="https://msd-media.com/affiliation/" data-i18n="announcement_link">Découvrir le programme</a>
+  </div>
 
-    <nav class="nav-center" aria-label="Navigation principale">
-      <div class="nav-dropdown-item">
-        <a href="https://msd-media.com/blog/"><span class="nav-link-label" data-i18n="nav_resources">Ressources</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
-        <div class="nav-megamenu">
-          <div class="nav-megamenu__inner">
-            <div class="nav-megamenu__links">
-              <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
-              <a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a>
-              <a href="https://msd-media.com/outils/" data-i18n="nav_tools">Outils gratuits</a>
-              <a href="https://msd-media.com/presse/" data-i18n="nav_press">Presse</a>
-              <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
-              <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
-              <a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a>
-            </div>
-            <div class="nav-megamenu__media">
-              <img width="1280" height="720" src="https://msd-media.com/assets/img/navbar-img.webp" alt="Aperçu des ressources MSD Media : blog, glossaire, réalisations" loading="lazy" decoding="async">
-            </div>
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <div class="nav__left">
+        <a class="nav__logo" href="https://msd-media.com/" aria-label="Accueil MSD Media">
+          <img src="https://msd-media.com/assets/img/logo-black.webp" alt="MSD Media" width="372" height="151">
+        </a>
+        <div class="nav-menu" data-nav-menu>
+          <button class="nav-menu-toggle" type="button" aria-label="Ouvrir le menu des pages" aria-expanded="false" data-nav-menu-toggle>
+            <span class="nav-menu-toggle__arrow" aria-hidden="true"></span>
+          </button>
+          <div class="nav-menu-dropdown" data-nav-menu-dropdown>
+            <button class="nav-menu-close" type="button" aria-label="Fermer le menu" data-nav-menu-close>×</button>
+            <a href="https://msd-media.com/" data-i18n="nav_home">Accueil</a>
+            <a href="https://msd-media.com/presse/" data-i18n="nav_press">Presse</a>
+            <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+            <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+            <a href="https://msd-media.com/contact/" data-i18n="nav_contact">Contact</a>
+            <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+            <a href="https://msd-media.com/affiliation/" data-i18n="nav_affiliation">Affiliation</a>
           </div>
         </div>
       </div>
-      <div class="nav-dropdown-item">
-        <a href="https://msd-media.com/#secteurs"><span class="nav-link-label" data-i18n="nav_sector">Secteur</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
-        <div class="nav-megamenu">
-          <div class="nav-megamenu__inner">
-            <div class="nav-megamenu__links">
-              <a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
-              <a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
-              <a href="https://msd-media.com/site-web-medecine-esthetique/">Médecine esthétique</a>
-              <a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
-              <a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
-              <a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
-              <a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
-            <a href="https://msd-media.com/site-web-coach/" data-i18n="nav_coaches">Coachs &amp; consultants</a>
-            </div>
-            <div class="nav-megamenu__media">
-              <img width="1920" height="1080" src="https://msd-media.com/assets/img/navbar-img2.webp" alt="Aperçu des secteurs accompagnés par MSD Media" loading="lazy" decoding="async">
+
+      <nav class="nav-center" aria-label="Navigation principale">
+        <div class="nav-dropdown-item">
+          <a href="https://msd-media.com/blog/"><span class="nav-link-label" data-i18n="nav_resources">Ressources</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+          <div class="nav-megamenu">
+            <div class="nav-megamenu__inner">
+              <div class="nav-megamenu__links">
+                <a href="https://msd-media.com/blog/" data-i18n="nav_blog">Blog</a>
+                <a href="https://msd-media.com/glossaire/" data-i18n="nav_glossary">Glossaire</a>
+                <a href="https://msd-media.com/outils/" data-i18n="nav_tools">Outils gratuits</a>
+                <a href="https://msd-media.com/presse/" data-i18n="nav_press">Presse</a>
+                <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+                <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+                <a href="https://msd-media.com/#faq" data-i18n="nav_faq">FAQ</a>
+              </div>
+              <div class="nav-megamenu__media">
+                <img width="1280" height="720" src="https://msd-media.com/assets/img/navbar-img.webp" alt="Aperçu des ressources MSD Media : blog, glossaire, réalisations" loading="lazy" decoding="async">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
-      <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
-    </nav>
+        <div class="nav-dropdown-item">
+          <a href="https://msd-media.com/#secteurs"><span class="nav-link-label" data-i18n="nav_sector">Secteur</span> <i class="fa-solid fa-chevron-down nav-dropdown-arrow" aria-hidden="true"></i></a>
+          <div class="nav-megamenu">
+            <div class="nav-megamenu__inner">
+              <div class="nav-megamenu__links">
+                <a href="https://msd-media.com/site-web-avocat/" data-i18n="nav_lawyers">Avocats &amp; juristes</a>
+                <a href="https://msd-media.com/site-web-medecin/" data-i18n="nav_doctors">Médecins &amp; santé</a>
+                <a href="https://msd-media.com/site-web-medecine-esthetique/" data-i18n="nav_aesthetic">Médecine esthétique</a>
+                <a href="https://msd-media.com/site-web-immobilier/" data-i18n="nav_real_estate">Immobilier</a>
+                <a href="https://msd-media.com/site-web-restaurant/" data-i18n="nav_restaurants">Restaurants &amp; cafés</a>
+                <a href="https://msd-media.com/site-web-artisan/" data-i18n="nav_artisans">Artisans &amp; TPE</a>
+                <a href="https://msd-media.com/site-web-architecte/" data-i18n="nav_architects">Architectes</a>
+                <a href="https://msd-media.com/site-web-coach/" data-i18n="nav_coaches">Coachs &amp; consultants</a>
+              </div>
+              <div class="nav-megamenu__media">
+                <img width="1920" height="1080" src="https://msd-media.com/assets/img/navbar-img2.webp" alt="Aperçu des secteurs accompagnés par MSD Media" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://msd-media.com/realisations/" data-i18n="nav_realisations">Réalisations</a>
+        <a href="https://msd-media.com/recrutement/" data-i18n="nav_recruitment">Recrutement</a>
+      </nav>
 
-    <div class="nav-right">
-      <label class="lang-switch" for="lang-select">
-        <span class="lang-switch__label">Langue</span>
-        <select class="lang-switch__select" id="lang-select" data-lang-select aria-label="Choisir la langue">
-          <option value="fr">🇫🇷 FR</option>
-          <option value="en">🇬🇧 EN</option>
-        </select>
-      </label>
-      <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank" data-i18n="nav_call" rel="noopener noreferrer">Réserver un appel</a>
-      <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp" rel="noopener noreferrer">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
+      <div class="nav__right">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-switch__btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choisir la langue"><svg class="flag-fr" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg>FR</button>
+          <ul class="lang-switch__menu" hidden>
+            <li><a href="https://msd-media.com/" data-lang="fr" aria-current="true"><svg class="flag-fr" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg>FR</a></li>
+            <li><a href="https://msd-media.com/en/" data-lang="en" hreflang="en" lang="en"><svg class="flag-fr" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><clipPath id="flag-uk-clip"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#flag-uk-clip)" stroke="#c8102e" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6"/></svg>EN</a></li>
+          </ul>
+        </div>
+        <a class="contact-button" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" rel="noopener" data-i18n="nav_call">Réserver un appel</a>
+        <a class="whatsapp-nav-button" href="https://wa.me/33783141287" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
     </div>
   </header>
 
@@ -2059,7 +2067,7 @@ function _msdConsentSignal(state){
       <div class="booking-section__inner">
         <div class="booking-section__embed">
           <iframe
-            src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&theme=dark"
+            src="https://cal.com/maxens-soldan-msd-media/30min?embed=true&theme=light"
             title="Prendre rendez-vous avec MSD Media"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -2070,7 +2078,7 @@ function _msdConsentSignal(state){
 
   </main>
 
-  <footer class="site-footer">
+<footer class="site-footer">
     <div class="footer-container">
 
       <!-- Bloc gauche : logo + slogan -->
@@ -2102,15 +2110,16 @@ function _msdConsentSignal(state){
       </div>
     </div>
 
-    <!-- Villes prioritaires -->
     <div class="footer-award">
-      <a class="footer-award-tag" href="https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france" target="_blank" rel="nofollow noopener noreferrer">🇫🇷 Top 7 des agences web en France</a>
+      <a class="footer-award-tag" href="https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france" target="_blank" rel="nofollow noopener noreferrer"><svg class="flag-fr" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg>Top 7 des agences web en France</a>
     </div>
+    <!-- Villes SEO -->
     <div class="footer-cities">
       <ul>
-        <li><a href="https://msd-media.com/agence-web-annecy/">Agence web Annecy</a></li>
-        <li><a href="https://msd-media.com/agence-web-geneve/">Agence web Genève</a></li>
-        <li><a href="https://msd-media.com/agence-web-strasbourg/">Agence web Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-annecy/">Annecy</a></li>
+        <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
+        <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
+        <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
       </ul>
     </div>
 
@@ -2176,8 +2185,9 @@ function _msdConsentSignal(state){
     </div>
 </footer>
 
-  <script src="../assets/js/script.min.js?v=cc37dc7e" defer></script>
-  <script src="../assets/js/chat-widget.min.js?v=2a04dafc" defer></script>
+  <script src="../assets/js/theme-v2.min.js?v=21fcba7d" defer></script>
+  <script src="../assets/js/script.min.js?v=5ac7f9e0" defer></script>
+  <script src="../assets/js/chat-widget.min.js?v=4a20890f" defer></script>
 </body>
 
 </html>

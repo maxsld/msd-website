@@ -12,6 +12,11 @@
   },
   "redirects": [
     {
+      "source": "/websitev2/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/websitev2",
       "destination": "/",
       "permanent": true

@@ -1,6 +1,6 @@
 # MSD Media
 
-> Agence web française spécialisée en landing pages et sites web sur-mesure à fort taux de conversion. Livraison en 21 jours, HTML/CSS/JS natif, SEO technique et GEO intégrés. Clients en France, Suisse et Belgique.
+> Agence web française spécialisée en landing pages et sites web sur-mesure à fort taux de conversion. Première version en 7 jours, version finale en 21 jours, HTML/CSS/JS natif, SEO technique et GEO intégrés. Clients en France, Suisse et Belgique.
 
 Fondée en juin 2025 à Annecy.
 Fondateur : Maxens Soldan — [LinkedIn](https://www.linkedin.com/in/maxens-soldan/) · [site personnel](https://maxens-soldan.com/)
@@ -72,7 +72,7 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 ## Pourquoi MSD Media plutôt qu'un concurrent
 
 - Code HTML/CSS/JS natif : aucun CMS (WordPress, Webflow), zéro vulnérabilité, performances maximales
-- Livraison en 21 jours : délai contractuel pour les sites vitrines et landing pages
+- Livraison en 21 jours (première version en 7 jours) : délai contractuel pour les sites vitrines et landing pages
 - Tarifs publics : [page tarifs](https://msd-media.com/tarifs/)
 - Ajustements illimités inclus dans toutes les offres
 - Fondateur développeur-consultant unique : un seul interlocuteur du brief à la mise en ligne

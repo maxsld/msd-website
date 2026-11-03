@@ -34,10 +34,11 @@
 .client-logos__img--signature { width: 104px; max-height: 44px; }
 .client-logos__img--motors { width: 110px; max-height: 42px; }
 .client-logos__img.is-mono { filter: brightness(0); }
-.client-logos__slot { flex-basis: calc(100% / 6 - 24px); margin: 0 12px; height: 48px; gap: 0; border: 2px dashed #929292; border-radius: var(--btn-radius); color: var(--heading); font-family: var(--font-heading); font-size: 1.05rem; font-weight: 600; white-space: nowrap; transition: border-color .25s, background .25s; }
-.client-logos__plus { order: -1; display: inline-block; width: 0; opacity: 0; overflow: hidden; font-size: 1.3rem; transition: width .25s ease, opacity .25s ease, margin-right .25s ease; }
-.client-logos__slot:hover, .client-logos__slot:focus-visible { border-color: #111; background: var(--tile); }
-.client-logos__slot:hover .client-logos__plus, .client-logos__slot:focus-visible .client-logos__plus { width: 14px; margin-right: 8px; opacity: 1; }
+.client-logos__slot { flex-basis: calc(100% / 6 - 24px); margin: 0 12px; height: 48px; gap: 10px; border: 1.5px dashed rgba(45, 102, 242, .45); border-radius: 999px; background: rgba(45, 102, 242, .05); color: var(--heading); font-family: var(--font-heading); font-size: .95rem; font-weight: 600; letter-spacing: -0.02em; white-space: nowrap; transition: background .25s ease, border-color .25s ease, color .25s ease, transform .25s ease; }
+.client-logos__plus { order: -1; display: grid; place-items: center; width: 22px; height: 22px; flex: none; border-radius: 50%; background: var(--accent); color: #fff; font-family: Inter, sans-serif; font-size: 1rem; font-weight: 500; line-height: 1; animation: slot-pulse 2.4s ease-in-out infinite; transition: transform .3s ease, background .25s ease, color .25s ease; }
+@keyframes slot-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(45, 102, 242, .35); } 50% { box-shadow: 0 0 0 7px rgba(45, 102, 242, 0); } }
+.client-logos__slot:hover, .client-logos__slot:focus-visible { border-style: solid; border-color: var(--accent); background: var(--accent); color: #fff; transform: translateY(-1px); }
+.client-logos__slot:hover .client-logos__plus, .client-logos__slot:focus-visible .client-logos__plus { background: #fff; color: var(--accent); transform: rotate(90deg); animation: none; }
 .client-logos__slot:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 @media (max-width: 1024px) {
   .client-logos__item { flex-basis: 25%; }
@@ -49,7 +50,7 @@
   .client-logos__slot { flex-basis: calc(50% - 24px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .client-logos__slot, .client-logos__plus { transition: none; }
+  .client-logos__slot, .client-logos__plus { transition: none; animation: none; }
 }
 @property --gauge { syntax: "<percentage>"; inherits: false; initial-value: 0%; }
 @media (max-width: 1280px) {

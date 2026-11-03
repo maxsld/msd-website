@@ -1215,7 +1215,7 @@ function renderArticlePage(post, allPosts) {
       <div class="blog-article-hero__row">
         <div class="blog-article-hero__text">
           <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${escapeHtml(post.title)}</span></p>
-          <h2 class="section-tag section-tag--dark">${escapeHtml(post.category || 'IA')}</h2>
+          <p class="section-tag section-tag--dark">${escapeHtml(post.category || 'IA')}</p>
           <h1 class="hero__title"><span>${escapeHtml(post.title)}</span></h1>
           <p class="blog-article-meta">${AUTHOR_BYLINE}<i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> Publié le <time datetime="${escapeHtml(post.date)}">${escapeHtml(formatFrenchDate(post.date))}</time>${post.updated > post.date ? ` · Mis à jour le <time datetime="${escapeHtml(post.updated)}">${escapeHtml(formatFrenchDate(post.updated))}</time>` : ''}</p>
         </div>
@@ -1270,6 +1270,35 @@ function renderBlogIndex(posts) {
     })
     .join('\n');
 
+  // Données structurées de la liste : le blog, ses articles récents et le fil d'Ariane.
+  const blogJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Blog',
+        '@id': `${SITE_URL}/blog/#blog`,
+        url: `${SITE_URL}/blog/`,
+        name: 'Blog MSD Media',
+        description: 'Articles MSD Media sur le SEO, la création de site web, les landing pages et la conversion.',
+        inLanguage: 'fr-FR',
+        publisher: { '@id': `${SITE_URL}/#organization` },
+        blogPost: posts.slice(0, 20).map((post) => ({
+          '@type': 'BlogPosting',
+          headline: post.title,
+          url: `${SITE_URL}/blog/articles/${post.slug}/`,
+          ...(post.date ? { datePublished: post.date } : {})
+        }))
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${SITE_URL}/` },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog/` }
+        ]
+      }
+    ]
+  };
+
   return `<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -1288,6 +1317,7 @@ function renderBlogIndex(posts) {
   <meta name="twitter:title" content="Blog MSD Media | SEO, Sites Web, Landing Pages & Conversion" />
   <meta name="twitter:description" content="Articles MSD Media sur le SEO, la création de site web, les landing pages et la conversion." />
   <meta name="twitter:image" content="${toAbsoluteUrl(DEFAULT_LISTING_IMAGE)}" />
+  <script type="application/ld+json">${JSON.stringify(blogJsonLd)}</script>
   <link rel="icon" type="image/png" href="${SITE_URL}/assets/img/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="${SITE_URL}/assets/img/favicon.svg" />
   <link rel="shortcut icon" href="${SITE_URL}/assets/img/favicon.ico" />
@@ -1307,7 +1337,7 @@ function renderBlogIndex(posts) {
 
   <main>
     <section class="hero">
-      <h2 class="section-tag section-tag--dark">Blog MSD Media</h2>
+      <p class="section-tag section-tag--dark">Blog MSD Media</p>
       <h1 class="hero__title"><span>Conseils, analyses et stratégies</span></h1>
       <p class="hero__subheading">Des guides concrets pour mieux comprendre le web, améliorer votre visibilité et transformer votre site en levier de croissance.</p>
       <div class="hero__actions" aria-label="Actions principales">
@@ -1486,7 +1516,7 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
       const titleSpan =
         (oldBlock.match(/<h1 class="hero__title"><span>([\s\S]*?)<\/span><\/h1>/i) || [])[1] || escapeHtml(pageTitle);
       const existingTag =
-        (oldBlock.match(/<h2 class="section-tag section-tag--dark">([\s\S]*?)<\/h2>/i) || [])[1];
+        (oldBlock.match(/<(?:h2|p) class="section-tag section-tag--dark">([\s\S]*?)<\/(?:h2|p)>/i) || [])[1];
       const tagLabel = existingTag && existingTag.trim() ? existingTag.trim() : 'IA';
       // Chaque article garde sa propre image (frontmatter), plus de cover unique forcée.
       const postForImage = postsBySlug.get(slug);
@@ -1498,7 +1528,7 @@ function enforceTextOnlyPolicyOnAllArticlePages(allPosts = []) {
       <div class="blog-article-hero__row">
         <div class="blog-article-hero__text">
           <p class="blog-breadcrumb blog-breadcrumb--hero"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span class="blog-breadcrumb__current">${titleSpan}</span></p>
-          <h2 class="section-tag section-tag--dark">${escapeHtml(tagLabel)}</h2>
+          <p class="section-tag section-tag--dark">${escapeHtml(tagLabel)}</p>
           <h1 class="hero__title"><span>${titleSpan}</span></h1>
           <p class="blog-article-meta">${AUTHOR_BYLINE}<i class="fa-regular fa-clock" aria-hidden="true"></i> ${minutesLabel} <span class="blog-article-meta__dot" aria-hidden="true">&middot;</span> Publié le <time datetime="${escapeHtml(dateRaw)}">${escapeHtml(formatFrenchDate(dateRaw))}</time>${updatedDate > dateRaw ? ` · Mis à jour le <time datetime="${escapeHtml(updatedDate)}">${escapeHtml(formatFrenchDate(updatedDate))}</time>` : ''}</p>
         </div>

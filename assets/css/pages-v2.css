@@ -188,7 +188,7 @@ body:not(.sector-page) main > section.hero-photo:first-child:not(#_) { padding-t
 }
 
 /* Étiquettes (Tarifs, Blog, Outils…) : texte centré verticalement, mêmes marges en haut et en bas */
-.section-tag:not(#_) { display: flex; width: fit-content; align-items: center; padding: calc(.38rem + .7px) .8rem calc(.38rem - .7px); line-height: 1; }
+.section-tag:not(#_) { font-family: var(--font-heading); display: flex; width: fit-content; align-items: center; padding: calc(.38rem + .7px) .8rem calc(.38rem - .7px); line-height: 1; }
 .hero:not(#_) > .section-tag:first-child { margin-top: 0; }
 /* Le haut du contenu du hero tombe exactement au même endroit que sur l'accueil (64 px sous le menu) :
    colonnes alignées en haut plutôt que centrées verticalement */

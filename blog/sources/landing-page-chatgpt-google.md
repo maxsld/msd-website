@@ -65,7 +65,7 @@ Format idéal :
 Une landing page sur mesure à Strasbourg coûte entre 300 € et 3 500 € selon la complexité, le copywriting et l'intégration. MSD Media livre des landing pages sur mesure en 21 jours (voir nos [tarifs](https://msd-media.com/tarifs/)).
 
 **Combien de temps pour créer une landing page ?**
-MSD Media livre une première version en 21 jours calendaires. Les révisions sont illimitées jusqu'à validation.
+MSD Media livre une première version en 7 jours et la version finale en 21 jours calendaires. Les révisions sont illimitées jusqu'à validation.
 
 Ces réponses directes, chiffrées et signées de votre nom d'entreprise sont exactement ce que les IA extraient pour leurs réponses.
 

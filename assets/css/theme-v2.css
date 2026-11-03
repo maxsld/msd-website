@@ -2,6 +2,11 @@
    bandeau affiliation, header, footer, avis, « Demander à l'IA », cookies, bouton de réservation.
    Chargé sur toutes les pages, après leur feuille de style ; la home ajoute home-v2.css. */
 
+/* Polices de remplacement aux proportions des polices Google : tant que Manrope et Inter Tight
+   chargent, le texte occupe déjà la même largeur, et la page ne se décale pas à leur arrivée (CLS). */
+@font-face { font-family: "Manrope Fallback"; src: local("Arial"); size-adjust: 103.5%; }
+@font-face { font-family: "Inter Tight Fallback"; src: local("Arial"); size-adjust: 97%; }
+
 :root {
   --bg: #fcfcfa;
   --heading: #040815;
@@ -20,8 +25,8 @@
   --btn-radius: .4rem;
   /* Neue Montreal (Softriver) est sous licence Pangram Pangram : si la licence est achetée, ajouter
      ses @font-face et la remettre en tête de cette pile. D'ici là, Inter Tight (Google Fonts). */
-  --font-heading: "Inter Tight", Arial, sans-serif;
-  --font-body: Manrope, Arial, sans-serif;
+  --font-heading: "Inter Tight", "Inter Tight Fallback", Arial, sans-serif;
+  --font-body: Manrope, "Manrope Fallback", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }

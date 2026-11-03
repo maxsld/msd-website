@@ -118,3 +118,40 @@ a.scard:hover .scard__link svg { transform: translateX(3px); }
   .hero h1.h1-split--wrap { font-size: clamp(1.75rem, 5.6vw, 4.5rem); }
   .hero h1.h1-split--wrap .h1-line { display: inline; white-space: normal; }
 }
+
+/* ---------- Visuels animés des blocs de texte (pages Munich) ---------- */
+.story__img--viz { aspect-ratio: auto; background: none; overflow: visible; }
+.story__img--viz .feat > h3, .story__img--viz .feat > p { display: none; }
+.story__img--viz .viz { aspect-ratio: 4 / 3; }
+
+/* 1. Site en français pour un client de Munich : bascule FR / EN, épingle « München » */
+.viz--munich-fr .viz-window { width: 84%; }
+.viz-lang { position: absolute; right: 6%; top: 8%; display: flex; padding: 3px; border-radius: 999px; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, .04), 0 10px 26px rgba(0, 0, 0, .08); font-size: .66rem; font-weight: 600; animation: viz-pop .45s .6s cubic-bezier(.3, 1.5, .5, 1) both; }
+.viz-lang span { padding: 4px 10px; border-radius: 999px; color: #86868b; }
+.viz-lang__fr { animation: viz-lang-a 3.2s 1s both; }
+.viz-lang__en { animation: viz-lang-b 3.2s 1s both; }
+@keyframes viz-lang-a { 0%, 40%, 75%, 100% { background: #1d1d1f; color: #fff; } 45%, 70% { background: transparent; color: #86868b; } }
+@keyframes viz-lang-b { 0%, 40%, 75%, 100% { background: transparent; color: #86868b; } 45%, 70% { background: #1d1d1f; color: #fff; } }
+.viz-pin { position: absolute; left: 6%; bottom: 8%; display: inline-flex; align-items: center; gap: 6px; padding: 7px 13px; border-radius: 999px; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, .04), 0 10px 26px rgba(0, 0, 0, .08); font-size: .72rem; font-weight: 600; color: #1d1d1f; animation: viz-pop .45s 1.4s cubic-bezier(.3, 1.5, .5, 1) both; }
+.viz-pin svg { width: 13px; height: 13px; color: var(--accent); }
+
+/* 2. Texte allemand remplacé par un texte écrit pour la France, puis résultat Google France */
+.viz--de-fr .viz-doc { width: 84%; }
+.viz-flagtag { display: inline-block; margin-right: 8px; padding: 1px 6px; border-radius: 4px; background: #f0f0f2; font-size: .58rem; font-weight: 700; color: #6e6e73; vertical-align: middle; }
+.viz-flagtag--fr { background: var(--accent-soft); color: var(--accent); }
+.viz-chip { position: absolute; right: 6%; bottom: 8%; display: inline-flex; align-items: center; gap: 8px; padding: 7px 13px; border-radius: 999px; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, .04), 0 10px 26px rgba(0, 0, 0, .08); font-size: .72rem; font-weight: 600; color: #1d1d1f; animation: viz-pop .45s 2.5s cubic-bezier(.3, 1.5, .5, 1) both; }
+.viz-chip b { display: grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; background: var(--accent); color: #fff; font-size: .62rem; }
+
+/* 3. Page de lancement en anglais : l'adresse se tape, l'inscription arrive */
+.viz--waitlist .viz-window { width: 84%; }
+.viz-launch { padding: 24px 24px 26px; }
+.viz-field { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 16px; padding: 5px 5px 5px 12px; border: 1px solid #e8e8ed; border-radius: 999px; font-size: .66rem; color: #1d1d1f; }
+.viz-field__btn { flex: none; padding: 6px 12px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 600; font-size: .62rem; animation: viz-press .3s 2.2s ease-out both; }
+.viz--waitlist .viz-toast { animation-delay: 2.6s; }
+@media (max-width: 600px) {
+  .story__img--viz .viz { aspect-ratio: auto; min-height: 320px; padding: 18% 6% 16%; }
+  .viz--munich-fr .viz-hero { grid-template-columns: 1fr; }
+  .viz--munich-fr .viz-hero__img { display: none; }
+  .story__img--viz .viz-window, .viz--de-fr .viz-doc { width: 100%; }
+  .viz--de-fr .viz-doc__before { white-space: nowrap; font-size: .7rem; }
+}

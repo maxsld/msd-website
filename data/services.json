@@ -1267,5 +1267,237 @@
         "a": "<p>Parce que nous livrons des sites qui convertissent avec un accompagnement direct, un process rapide et une vraie exigence SEO locale.</p>"
       }
     ]
+  },
+  "agence-web-munich": {
+    "lang": "fr",
+    "alternates": {
+      "fr": "https://msd-media.com/agence-web-munich/",
+      "en": "https://msd-media.com/en/munich/"
+    },
+    "h1_lines": [
+      "Agence web française à Munich",
+      "pour les entreprises francophones."
+    ],
+    "h1": "Agence web française à Munich pour les entreprises francophones.",
+    "subtitle": "Sites internet et landing pages sur mesure pour les entrepreneurs francophones de Munich et les entreprises qui visent le marché français. Un seul interlocuteur, en français ou en anglais. <strong>Livré en 21 jours chrono.</strong>",
+    "focus": {
+      "title": "Une agence française pour les entreprises de Munich",
+      "paragraphs": [
+        "MSD Media est une agence web fondée en juin 2025 à Annecy par Maxens Soldan, membre de la communauté French Tech Munich. Nous accompagnons les entreprises de Munich et de Bavière qui ont besoin d'un site en français ou en anglais : création de site, landing page, refonte et référencement en France.",
+        "Les échanges se font en visio, en français ou en anglais : brief, validation de la maquette, livraison. Une première version est livrée en 7 jours et la version finale en 21 jours."
+      ],
+      "links": [
+        {
+          "href": "/creation-landing-page/",
+          "label": "Créer une landing page"
+        },
+        {
+          "href": "/tarifs/",
+          "label": "Voir les tarifs"
+        },
+        {
+          "href": "/realisations/",
+          "label": "Nos réalisations"
+        },
+        {
+          "href": "/outils/audit-site/",
+          "label": "Tester votre site gratuitement"
+        }
+      ],
+      "nav_label": "Nos prestations pour les entreprises de Munich"
+    },
+    "story": [
+      {
+        "eyebrow": "Entrepreneurs francophones",
+        "title": "Pour les entrepreneurs francophones installés à Munich",
+        "paragraphs": [
+          "Indépendants, professions libérales, fondateurs de startups ou filiales d'entreprises françaises : votre clientèle parle souvent français, ou vous voulez la trouver en France. Nous concevons votre site directement en français, avec des textes écrits pour vos clients, pas traduits.",
+          "Vous gardez un seul interlocuteur du brief à la mise en ligne, et le code source, le domaine et les accès vous appartiennent à la livraison."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1600880292203-757bb62b4baf.webp",
+        "alt": "Deux associés qui célèbrent la réussite d'un projet",
+        "width": "1400",
+        "height": "933",
+        "viz": "<div class=\"viz viz--munich-fr\" aria-hidden=\"true\">\n<div class=\"viz-window\"><div class=\"viz-window__bar\"><i></i><i></i><i></i><span class=\"viz-url\">votre-site.fr</span></div>\n<div class=\"viz-hero\"><div><span class=\"viz-brand\">Conseil · Munich</span><span class=\"viz-hero__title\">Vos clients en France, enfin trouvés.</span><span class=\"viz-line viz-line--md\"></span><span class=\"viz-btn\">Prendre RDV</span></div><div class=\"viz-hero__img\"></div></div></div>\n<div class=\"viz-lang\"><span class=\"viz-lang__fr\">FR</span><span class=\"viz-lang__en\">EN</span></div>\n<span class=\"viz-pin\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M8 1.5a4.5 4.5 0 0 0-4.5 4.5c0 3.4 4.5 8.5 4.5 8.5s4.5-5.1 4.5-8.5A4.5 4.5 0 0 0 8 1.5zm0 6.2a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4z\" fill=\"currentColor\"/></svg>München</span>\n</div>"
+      },
+      {
+        "eyebrow": "Marché français",
+        "title": "Pour les entreprises allemandes qui veulent vendre en France",
+        "paragraphs": [
+          "Un site traduit mot à mot de l'allemand convainc rarement un client français. Nous écrivons des pages pensées pour le marché français : vocabulaire, arguments, preuves et parcours de contact adaptés.",
+          "Le site est livré avec le SEO technique en place pour Google en France (vitesse, balisage, données structurées) et reste lisible par les IA comme ChatGPT et Perplexity."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1554224154-26032ffc0d07.webp",
+        "alt": "Documents de travail et calculatrice sur un bureau",
+        "width": "1400",
+        "height": "984",
+        "viz": "<div class=\"viz viz--copy viz--comply viz--de-fr\" aria-hidden=\"true\">\n<div class=\"viz-doc\">\n<p class=\"viz-doc__label\">Titre de la page d'accueil</p>\n<p class=\"viz-doc__before\"><span class=\"viz-flagtag\">DE</span>Willkommen auf unserer Website</p>\n<p class=\"viz-doc__after\"><span class=\"viz-flagtag viz-flagtag--fr\">FR</span>Des produits pensés pour vos clients français.</p>\n<span class=\"viz-flag viz-flag--ok\">✓ Écrit pour le marché français</span>\n</div>\n<span class=\"viz-chip\"><b>1</b>google.fr</span>\n</div>"
+      },
+      {
+        "eyebrow": "Startups internationales",
+        "title": "Pour les startups de Munich qui travaillent en anglais",
+        "paragraphs": [
+          "Landing page de lancement, page de pré-inscription ou site vitrine : nous livrons des pages en anglais ou en français, rapides et pensées pour convertir, sans WordPress ni constructeur.",
+          "Nous échangeons en français ou en anglais. Pour une version allemande, nous intégrons les textes fournis par votre traducteur."
+        ],
+        "img": "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp",
+        "alt": "Maxens Soldan, fondateur de MSD Media",
+        "width": "1080",
+        "height": "607",
+        "viz": "<div class=\"viz viz--waitlist\" aria-hidden=\"true\">\n<div class=\"viz-window\"><div class=\"viz-window__bar\"><i></i><i></i><i></i><span class=\"viz-url\">yourstartup.com</span></div>\n<div class=\"viz-launch\"><span class=\"viz-brand\">Beta · Munich</span><span class=\"viz-hero__title\">Launch faster.</span><span class=\"viz-line viz-line--md\"></span>\n<div class=\"viz-field\"><span class=\"viz-search__q\" style=\"--n:15\">anna@startup.de</span><span class=\"viz-field__btn\">Join the waitlist</span></div></div></div>\n<span class=\"viz-toast\"><b>✓</b>Nouvelle inscription</span>\n</div>"
+      }
+    ],
+    "cards": [],
+    "faq_title": "Questions fréquentes : agence web à Munich",
+    "faq": [
+      {
+        "q": "Travaillez-vous avec des entreprises à Munich ?",
+        "a": "<p>Oui. MSD Media accompagne des entreprises en France, en Suisse, en Belgique et en Allemagne. Les échanges se font en visio, en français ou en anglais, du brief à la livraison.</p>"
+      },
+      {
+        "q": "Faut-il parler français pour travailler avec MSD Media ?",
+        "a": "<p>Non. Nous travaillons en français et en anglais. Les sites peuvent être livrés en français, en anglais ou dans les deux langues.</p>"
+      },
+      {
+        "q": "Créez-vous des sites en allemand ?",
+        "a": "<p>Nous ne rédigeons pas en allemand. Pour une version allemande, nous intégrons les textes fournis par votre traducteur, avec la même mise en page et le même SEO technique.</p>"
+      },
+      {
+        "q": "Combien de temps faut-il pour créer un site ?",
+        "a": "<p>Une première version est livrée en 7 jours et la version finale en 21 jours, en 4 étapes : brief et lancement, maquette et textes, développement, livraison et ajustements.</p>"
+      },
+      {
+        "q": "Combien coûte un site ou une landing page ?",
+        "a": "<p>Le prix dépend du nombre de pages, des textes à rédiger, des langues et des fonctionnalités. Chaque offre est détaillée sur notre page <a href=\"https://msd-media.com/tarifs/\">Tarifs</a>, et un appel de 30 minutes suffit pour obtenir un devis précis.</p>"
+      },
+      {
+        "q": "Pouvez-vous m'aider à être visible sur Google en France ?",
+        "a": "<p>Oui. Chaque site est livré avec le SEO technique en place : pages rapides, balises, données structurées et plan du site. Le référencement prend ensuite de quelques semaines à quelques mois selon la concurrence, sans promesse de position.</p>"
+      },
+      {
+        "q": "Qui est derrière MSD Media ?",
+        "a": "<p>MSD Media a été fondée en juin 2025 à Annecy par Maxens Soldan, membre de la communauté French Tech Munich. Il est votre seul interlocuteur, du premier appel à la mise en ligne.</p>"
+      },
+      {
+        "q": "Le site m'appartient-il une fois livré ?",
+        "a": "<p>Oui. Le code source, le nom de domaine et tous les accès vous sont remis à la livraison. N'importe quel développeur peut reprendre le site.</p>"
+      }
+    ]
+  },
+  "en/munich": {
+    "lang": "en",
+    "alternates": {
+      "fr": "https://msd-media.com/agence-web-munich/",
+      "en": "https://msd-media.com/en/munich/"
+    },
+    "h1_lines": [
+      "French web agency in Munich",
+      "for French-speaking and international companies."
+    ],
+    "h1": "French web agency in Munich for French-speaking and international companies.",
+    "subtitle": "Custom websites and landing pages for French-speaking entrepreneurs in Munich and companies targeting the French market. One point of contact, in French or English. <strong>Delivered in 21 days.</strong>",
+    "focus": {
+      "title": "A French agency for Munich-based companies",
+      "paragraphs": [
+        "MSD Media is a web agency founded in June 2025 in Annecy, France, by Maxens Soldan, a member of the French Tech Munich community. We work with companies in Munich and Bavaria that need a website in French or English: website creation, landing pages, redesigns and SEO for France.",
+        "We work by video call, in French or English: brief, design approval, delivery. A first version is delivered in 7 days and the final version in 21 days."
+      ],
+      "links": [
+        {
+          "href": "/en/",
+          "label": "About MSD Media"
+        },
+        {
+          "href": "/tarifs/",
+          "label": "Pricing"
+        },
+        {
+          "href": "/realisations/",
+          "label": "Our work"
+        },
+        {
+          "href": "/outils/audit-site/",
+          "label": "Free website audit"
+        }
+      ],
+      "nav_label": "Our services for Munich-based companies"
+    },
+    "story": [
+      {
+        "eyebrow": "French-speaking entrepreneurs",
+        "title": "For French-speaking entrepreneurs based in Munich",
+        "paragraphs": [
+          "Freelancers, professionals, startup founders or subsidiaries of French companies: your clients often speak French, or you want to reach them in France. We build your site directly in French, with copy written for your clients, not translated.",
+          "You keep one point of contact from brief to launch, and the source code, domain and access are yours at delivery."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1600880292203-757bb62b4baf.webp",
+        "alt": "Two partners celebrating a successful project",
+        "width": "1400",
+        "height": "933",
+        "viz": "<div class=\"viz viz--munich-fr\" aria-hidden=\"true\">\n<div class=\"viz-window\"><div class=\"viz-window__bar\"><i></i><i></i><i></i><span class=\"viz-url\">votre-site.fr</span></div>\n<div class=\"viz-hero\"><div><span class=\"viz-brand\">Consulting · Munich</span><span class=\"viz-hero__title\">Your clients in France, finally found.</span><span class=\"viz-line viz-line--md\"></span><span class=\"viz-btn\">Book a call</span></div><div class=\"viz-hero__img\"></div></div></div>\n<div class=\"viz-lang\"><span class=\"viz-lang__fr\">FR</span><span class=\"viz-lang__en\">EN</span></div>\n<span class=\"viz-pin\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M8 1.5a4.5 4.5 0 0 0-4.5 4.5c0 3.4 4.5 8.5 4.5 8.5s4.5-5.1 4.5-8.5A4.5 4.5 0 0 0 8 1.5zm0 6.2a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4z\" fill=\"currentColor\"/></svg>München</span>\n</div>"
+      },
+      {
+        "eyebrow": "French market",
+        "title": "For German companies that want to sell in France",
+        "paragraphs": [
+          "A site translated word for word from German rarely convinces French customers. We write pages built for the French market: wording, arguments, proof and contact journeys adapted to French buyers.",
+          "The site ships with technical SEO in place for Google France (speed, markup, structured data) and stays readable by AI assistants such as ChatGPT and Perplexity."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1554224154-26032ffc0d07.webp",
+        "alt": "Work documents and a calculator on a desk",
+        "width": "1400",
+        "height": "984",
+        "viz": "<div class=\"viz viz--copy viz--comply viz--de-fr\" aria-hidden=\"true\">\n<div class=\"viz-doc\">\n<p class=\"viz-doc__label\">Homepage headline</p>\n<p class=\"viz-doc__before\"><span class=\"viz-flagtag\">DE</span>Willkommen auf unserer Website</p>\n<p class=\"viz-doc__after\"><span class=\"viz-flagtag viz-flagtag--fr\">FR</span>Des produits pensés pour vos clients français.</p>\n<span class=\"viz-flag viz-flag--ok\">✓ Written for French buyers</span>\n</div>\n<span class=\"viz-chip\"><b>1</b>google.fr</span>\n</div>"
+      },
+      {
+        "eyebrow": "International startups",
+        "title": "For Munich startups that work in English",
+        "paragraphs": [
+          "Launch landing page, pre-signup page or showcase site: we deliver pages in English or French, fast and built to convert, without WordPress or a site builder.",
+          "We work in French or English. For a German version, we integrate the copy provided by your translator."
+        ],
+        "img": "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-annecy.webp",
+        "alt": "Maxens Soldan, founder of MSD Media",
+        "width": "1080",
+        "height": "607",
+        "viz": "<div class=\"viz viz--waitlist\" aria-hidden=\"true\">\n<div class=\"viz-window\"><div class=\"viz-window__bar\"><i></i><i></i><i></i><span class=\"viz-url\">yourstartup.com</span></div>\n<div class=\"viz-launch\"><span class=\"viz-brand\">Beta · Munich</span><span class=\"viz-hero__title\">Launch faster.</span><span class=\"viz-line viz-line--md\"></span>\n<div class=\"viz-field\"><span class=\"viz-search__q\" style=\"--n:15\">anna@startup.de</span><span class=\"viz-field__btn\">Join the waitlist</span></div></div></div>\n<span class=\"viz-toast\"><b>✓</b>New sign-up</span>\n</div>"
+      }
+    ],
+    "cards": [],
+    "faq_title": "Frequently asked questions: web agency in Munich",
+    "faq": [
+      {
+        "q": "Do you work with companies in Munich?",
+        "a": "<p>Yes. MSD Media works with companies in France, Switzerland, Belgium and Germany. We work by video call, in French or English, from brief to delivery.</p>"
+      },
+      {
+        "q": "Do I need to speak French to work with MSD Media?",
+        "a": "<p>No. We work in French and English. Sites can be delivered in French, in English or in both languages.</p>"
+      },
+      {
+        "q": "Do you build websites in German?",
+        "a": "<p>We do not write German copy. For a German version, we integrate the copy provided by your translator, with the same layout and the same technical SEO.</p>"
+      },
+      {
+        "q": "How long does it take to build a website?",
+        "a": "<p>A first version is delivered in 7 days and the final version in 21 days, in 4 steps: brief and kick-off, design and copy, development, delivery and adjustments.</p>"
+      },
+      {
+        "q": "How much does a website or landing page cost?",
+        "a": "<p>The price depends on the number of pages, the copy to write, the languages and the features. Every offer is detailed on our <a href=\"https://msd-media.com/tarifs/\">pricing page</a>, and a 30-minute call is enough to get a precise quote.</p>"
+      },
+      {
+        "q": "Can you help me rank on Google in France?",
+        "a": "<p>Yes. Every site ships with technical SEO in place: fast pages, tags, structured data and a sitemap. Rankings then take from a few weeks to a few months depending on competition, with no promise of position.</p>"
+      },
+      {
+        "q": "Who is behind MSD Media?",
+        "a": "<p>MSD Media was founded in June 2025 in Annecy by Maxens Soldan, a member of the French Tech Munich community. He is your single point of contact, from the first call to launch.</p>"
+      },
+      {
+        "q": "Do I own the website once it is delivered?",
+        "a": "<p>Yes. The source code, the domain name and all access are handed over at delivery. Any developer can take over the site.</p>"
+      }
+    ]
   }
 }

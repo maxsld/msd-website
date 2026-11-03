@@ -940,7 +940,8 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", (event) => {
       const nextLang = normalizeLang(link.dataset.lang) || "fr";
       saveLanguagePreference(nextLang);
-      if (isHome) return;
+      // Page qui a sa propre version dans l'autre langue (accueil, Munich) : on y va.
+      if (isHome || new URL(link.href).pathname !== window.location.pathname) return;
       event.preventDefault();
       if (nextLang === "fr") {
         window.location.reload();

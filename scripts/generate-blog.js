@@ -1030,6 +1030,7 @@ function renderFullFooter(assetPrefix) {
         <li><a href="https://msd-media.com/agence-web-chambery/">Chambéry</a></li>
         <li><a href="https://msd-media.com/agence-web-geneve/">Genève</a></li>
         <li><a href="https://msd-media.com/agence-web-strasbourg/">Strasbourg</a></li>
+        <li><a href="https://msd-media.com/agence-web-munich/">Munich</a></li>
       </ul>
     </div>
 

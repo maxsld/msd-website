@@ -14,7 +14,7 @@ Il ajoute, écarte ou remonte des sujets, et note en une ligne la raison de chaq
 
 **Règles de la revue** (vérifiées par le chef) :
 - Sur 4 articles par mois : au moins 1 landing page, 1 Annecy et 1 santé. La santé reste la niche prioritaire.
-- Uniquement des sujets des 3 groupes de la stratégie : pas d'actualité SEO générale ni de comparatif de logiciels.
+- Uniquement des sujets des groupes de la stratégie (landing page, santé, Annecy, et au plus 1 sujet Munich par mois) : pas d'actualité SEO générale ni de comparatif de logiciels.
 - Les sujets bloqués sont rappelés à Maxens dans le rapport du 1er lundi du mois, au plus un à la fois.
 - Une actualité forte (un nouveau décret santé, par exemple) peut passer en tête en cours de mois, avec la raison notée.
 
@@ -38,6 +38,9 @@ Il ajoute, écarte ou remonte des sujets, et note en une ligne la raison de chaq
 | 16 | Landing page pour injections d'acide hyaluronique : la structure qui convertit | landing page médecine esthétique | Santé | À écrire |
 | 17 | Webdesigner ou agence à Annecy : que choisir pour un cabinet ou une PME ? | webdesigner Annecy | Annecy | À écrire |
 | 18 | RGPD et site de cabinet médical : la checklist | site médecin RGPD | Santé | À écrire |
+| 19 | Créer un site pour le marché français quand on est une entreprise allemande | site web marché français entreprise allemande | Munich | À écrire (aucun prix MSD, pas de règles juridiques sans source ; relier /agence-web-munich/) |
+| 20 | Entrepreneur français à Munich : créer un site pour vos clients en France et en Allemagne | site internet entrepreneur français Munich | Munich | À écrire (FR/EN seulement, pas de contenu en allemand) |
+| 21 | Landing page en anglais ou en français : que choisir pour une startup de Munich ? | landing page startup Munich | Munich | À écrire (relier /en/munich/) |
 | 19 | Site internet de coach : les éléments qui transforment les visiteurs en clients | site web coach | Landing page | À écrire (la page /site-web-coach/ vise une requête proche : la relier) |
 | 20 | Agence web en Haute-Savoie : Annecy, Annemasse, Thonon, délais et méthode | agence web Haute-Savoie | Annecy | À écrire |
 | 21 | Les meilleurs sites de médecine esthétique en France, analysés | meilleur site médecine esthétique | Santé | À écrire (analyse de sites publics réels, sans dénigrement) |

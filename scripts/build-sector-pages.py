@@ -20,7 +20,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = {**json.loads((ROOT / 'data' / 'sectors.json').read_text()), **json.loads((ROOT / 'data' / 'services.json').read_text())}
-TEMPLATE = (ROOT / 'index.html').read_text()
+TEMPLATES = {'fr': (ROOT / 'index.html').read_text(), 'en': (ROOT / 'en' / 'index.html').read_text()}
+TEMPLATE = TEMPLATES['fr']
 CAL = 'https://cal.com/maxens-soldan-msd-media/30min'
 
 esc = html.escape
@@ -54,8 +55,8 @@ def seo_head(page_head):
     return parts
 
 
-def build_head(page_html, faq):
-    tpl_head = TEMPLATE[TEMPLATE.index('<head>') + 6:TEMPLATE.index('</head>')]
+def build_head(page_html, faq, template=TEMPLATE):
+    tpl_head = template[template.index('<head>') + 6:template.index('</head>')]
     for pat in SEO_PATTERNS:
         tpl_head = re.sub(pat, '', tpl_head, flags=re.S)
     page_head = page_html[page_html.index('<head>') + 6:page_html.index('</head>')]
@@ -73,7 +74,7 @@ def build_head(page_html, faq):
         seo[i] = m.group(1) + json.dumps(data, ensure_ascii=False) + m.group(3)
     head = '\n  ' + '\n  '.join(seo) + tpl_head
     head = head.replace('assets/css/home-v2', 'assets/css/home-v2', 1)
-    head = re.sub(r'([ \t]*<link rel="stylesheet" href="assets/css/home-v2[^"]*">)', r'\1\n  <link rel="stylesheet" href="assets/css/sector-v2.css">', head, count=1)
+    head = re.sub(r'([ \t]*<link rel="stylesheet" href="((?:\.\./)*)assets/css/home-v2[^"]*">)', r'\1\n  <link rel="stylesheet" href="\2assets/css/sector-v2.css">', head, count=1)
     return head
 
 
@@ -110,12 +111,17 @@ def story(d):
     for i, b in enumerate(d['story']):
         paras = '\n'.join(f'            <p>{p}</p>' for p in b['paragraphs'])
         eyebrow = f'<span class="story__eyebrow">{esc(b["eyebrow"])}</span>\n            ' if b.get('eyebrow') else ''
+        # Visuel animé (même famille que l'offre tout compris de l'accueil) ou photo
+        if b.get('viz'):
+            media = f'<div class="story__img story__img--viz"><div class="feat">{b["viz"]}</div></div>'
+        else:
+            media = f'<div class="story__img"><img src="{b["img"]}" alt="{esc(b["alt"] or "")}" width="{b["width"]}" height="{b["height"]}" loading="lazy" decoding="async"></div>'
         rows.append(f'''        <div class="story__row{' story__row--reverse' if i % 2 else ''}">
           <div class="story__text">
             {eyebrow}<h2 class="story__title">{b['title']}</h2>
 {paras}
           </div>
-          <div class="story__img"><img src="{b['img']}" alt="{esc(b['alt'] or '')}" width="{b['width']}" height="{b['height']}" loading="lazy" decoding="async"></div>
+          {media}
         </div>''')
     return f'''    <section class="story" id="secteur">
       <div class="container">
@@ -243,7 +249,9 @@ def faq(body, d):
     m = section(body, 'faq')
     sec = m.group(0)
     sec = re.sub(r'<div class="faq__grid">.*</div>\s*</div>\s*(?=</div>\s*</section>)', grid + '\n      ', sec, count=1, flags=re.S)
-    if 'package' in d:
+    if d.get('faq_title'):
+        title = d['faq_title']
+    elif 'package' in d:
         title = f'Questions fréquentes : site internet pour {d["package"]["label"]}'
     else:
         topic = d['h1_lines'][0].split(',')[0].rstrip('.')
@@ -254,19 +262,25 @@ def faq(body, d):
 
 def build(slug):
     d = DATA[slug]
+    lang = d.get('lang', 'fr')
+    template = TEMPLATES[lang]
     page_path = ROOT / slug / 'index.html'
     page = page_path.read_text()
-    body = TEMPLATE[TEMPLATE.index('<body'):TEMPLATE.index('</html>')]
-    body = body.replace('<body>', '<body class="sector-page">', 1)
+    body = template[template.index('<body'):template.index('</html>')]
+    body = re.sub(r'<body[^>]*>', '<body class="sector-page">', body, count=1)
     body = hero(body, d)
     m = section(body, 'belief')
     body = body[:m.start()] + story(d) + card_sections(d) + body[m.end():]
     body = package(body, d)
     body = faq(body, d)
-    head = build_head(page, d['faq'])
-    out = '<!DOCTYPE html>\n<html lang="fr">\n<head>' + head + '</head>\n' + body + '</html>\n'
-    # La page est un niveau plus bas que l'accueil
-    out = re.sub(r'(["\'(])assets/', r'\1../assets/', out)
+    # Sélecteur de langue : renvoie vers la version de cette page dans l'autre langue
+    for code, url in (d.get('alternates') or {}).items():
+        body = re.sub(r'(<li><a href=")[^"]*(" data-lang="' + code + r'")', lambda m: m.group(1) + url + m.group(2), body, count=1)
+    head = build_head(page, d['faq'], template)
+    out = f'<!DOCTYPE html>\n<html lang="{lang}">\n<head>' + head + '</head>\n' + body + '</html>\n'
+    # Chemins relatifs recalés sur la profondeur de la page (le modèle anglais est déjà un niveau plus bas)
+    depth = len(Path(slug).parts)
+    out = re.sub(r'(["\'(])(?:\.\./)*assets/', lambda m: m.group(1) + '../' * depth + 'assets/', out)
     page_path.write_text(out)
     return len(d['faq'])
 

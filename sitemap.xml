@@ -358,4 +358,16 @@
     <loc>https://msd-media.com/creation-landing-page/</loc>
     <lastmod>2026-11-03</lastmod>
   </url>
+  <url>
+    <loc>https://msd-media.com/agence-web-munich/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/en/munich/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
 </urlset>

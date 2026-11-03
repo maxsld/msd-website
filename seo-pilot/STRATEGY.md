@@ -35,6 +35,17 @@ Une seule modification par page à la fois. Pas de nouvelle modification sur une
 
 **Articles** : 1 article par semaine, pris dans `seo-pilot/EDITORIAL.md` et écrit selon `seo-pilot/ARTICLE-GUIDE.md`. Chaque article sert un des 3 groupes et renvoie vers sa page de service cible. Améliorer les pages existantes reste prioritaire : si la semaine demande 3 corrections lourdes, l'article peut attendre.
 
+## Axe Munich (ajouté le 2026-11-03, décision de Maxens)
+
+Maxens est membre de la communauté French Tech Munich. Il ne parle pas allemand et n'a pas de bureau à Munich : on ne vise donc **ni les recherches en allemand, ni la fiche Google Business Profile à Munich** (Google l'interdit sans adresse réelle où recevoir des clients). On vise trois cibles, en français et en anglais :
+1. les entrepreneurs francophones installés à Munich (indépendants, filiales françaises, startups) ;
+2. les entreprises allemandes qui veulent vendre en France (site écrit pour le marché français, SEO Google France) ;
+3. les startups internationales de Munich qui travaillent en anglais.
+
+Pages : `/agence-web-munich/` (FR) et `/en/munich/` (EN), reliées par hreflang, générées depuis `data/services.json`. Ne jamais écrire que MSD Media a un bureau ou reçoit sur place à Munich, ni promettre des contenus en allemand (on intègre les textes fournis par le traducteur du client). Pas de cas client munichois inventé : la page n'en aura qu'une fois un vrai projet livré.
+
+Ce que fait l'agence : suivre dans la Search Console les requêtes contenant « munich », « münchen », « bavière » ou « germany » ; enrichir les deux pages (FAQ, réponses directes) quand une requête apparaît ; un article par mois au plus sur l'axe Munich (voir `EDITORIAL.md`). Ce que fait Maxens : la présence dans l'écosystème (voir la liste plus bas), qui apporte l'essentiel des clients les 6 premiers mois.
+
 ## Feuille de route : 1er novembre 2026 → 1er novembre 2027
 
 Chaque phase prépare la suivante. L'agence travaille chaque lundi ; les actions de Maxens sont celles que l'agence ne peut pas faire à sa place.
@@ -67,6 +78,7 @@ Le site seul plafonne : à partir de février, ce sont surtout ces actions qui f
 3. **Annuaires** : La Fabrique du Net, Sortlist, Clutch, 118712, PagesJaunes, avec la même description, la même adresse et le même téléphone partout.
 4. **Liens** : « site réalisé par MSD Media » chez les clients, French Tech Alpes, Polytech, presse locale.
 5. **Mentions** : réponses utiles et signées sur Reddit et les forums pros, et LinkedIn. Ce sont des sources que les IA citent.
+7. **Munich** : fiche dans l'annuaire de la communauté French Tech Munich (avec lien vers /agence-web-munich/), événements French Tech Munich, réseaux franco-allemands (chambre de commerce franco-allemande, Business France Allemagne, Institut français de Munich), posts LinkedIn sur le passage au marché français. Premier client munichois → étude de cas.
 6. **Données originales** : l'étude des sites de cabinets santé d'Annecy. C'est le contenu le plus citable par la presse et les IA.
 
 Le rapport du premier lundi du mois rappelle les 2 actions de cette liste qui auraient le plus d'effet à ce moment-là.

@@ -13,6 +13,7 @@ Réservation : [cal.com/maxens-soldan-msd-media/30min](https://cal.com/maxens-so
 
 - [Accueil](https://msd-media.com/) : Présentation de l'agence, réalisations, process 21 jours, FAQ, avis clients
 - [Agence web Annecy](https://msd-media.com/agence-web-annecy/) : Page dédiée à l'activité locale à Annecy
+- [Agence web à Munich](https://msd-media.com/agence-web-munich/) : Sites en français et en anglais pour les entreprises francophones de Munich et les entreprises qui visent le marché français ([version anglaise](https://msd-media.com/en/munich/)). Fondateur membre de la French Tech Munich, échanges en visio.
 - [À propos](https://msd-media.com/a-propos/) : Maxens Soldan, parcours, mission, valeurs
 - [Études de cas](https://msd-media.com/realisations/) : Projets réalisés avec résultats mesurables
 - [Tarifs](https://msd-media.com/tarifs/) : Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis

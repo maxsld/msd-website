@@ -11,6 +11,12 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-03 : /agence-web-munich/
+- Changement : nouvelles pages Munich en français et en anglais (/en/munich/), reliées par hreflang, ajoutées au footer, au sitemap et à llms.txt.
+- Hypothèse : premières impressions sur les requêtes « agence web Munich » en français et en anglais en 1 à 3 mois (concurrence faible) ; clients surtout via le réseau French Tech Munich.
+- Requête visée : agence web munich, french web agency munich
+- Départ : nouvelle page.
+
 ### 2026-11-02 : /
 - Changement : nouvelle page d'accueil (refonte complète : hero, sections, FAQ de 14 questions réécrite pour le SEO, témoignage Merz). Title et description inchangés. Version anglaise /en/ refaite à l'identique.
 - Avant : ancienne accueil sombre (hero vidéo, 19 questions de FAQ).

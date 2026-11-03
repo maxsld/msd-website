@@ -152,7 +152,8 @@ function localBusinessJsonLd(canonical, relPath) {
       (v, i, arr) => arr.indexOf(v) === i
     ),
     sameAs: [
-      'https://www.linkedin.com/company/msd-media',
+      'https://www.linkedin.com/company/msd-media-agency/',
+      'https://www.instagram.com/msdmedia.agency/',
       'https://fr.trustpilot.com/review/msd-media.com',
       'https://share.google/xqjORxmtKbIlxybrm',
       'https://www.sortlist.com/agency/msd-media',

@@ -20,30 +20,32 @@ Il ajoute, écarte ou remonte des sujets, et note en une ligne la raison de chaq
 
 | # | Sujet | Requête visée | Groupe | Statut |
 |---|---|---|---|---|
-| 1 | Site internet de chirurgien esthétique : ce qu'il doit contenir, et ce qui est interdit | site internet chirurgien esthétique | Santé | À écrire (attention : la page /site-web-chirurgie-esthetique/ vise la même requête, prendre l'angle « contenu et règles » et la relier) |
-| 2 | Photos avant/après en médecine esthétique : ce que dit vraiment la loi | photos avant après médecine esthétique légal | Santé | À écrire |
-| 3 | Combien coûte un site internet pour un médecin esthétique ? | prix site internet médecin | Santé | À écrire (fourchettes du marché seulement, renvoi vers /tarifs/) |
-| 4 | Doctolib ne suffit pas : pourquoi votre cabinet a besoin de son propre site | site internet médecin Doctolib | Santé | À écrire |
-| 5 | Nous avons analysé 84 sites de cabinets santé à Annecy : le bilan | sites cabinets médicaux Annecy | Santé | Bloqué (données de l'étude à fournir par Maxens) |
-| 6 | Landing page de dispositif médical sous contrainte ANSM : notre méthode avec Merz | landing page dispositif médical | Santé | À écrire (faits des études de cas Radiesse et Ultherapy Prime uniquement, pas Belotero) |
-| 7 | Communication des médecins : ce qui est autorisé (guide complet) | publicité médecin ce qui est autorisé | Santé | À écrire |
-| 8 | Site internet de dermatologue : ce qu'il doit contenir | site internet dermatologue | Santé | À écrire |
-| 9 | Référencement local d'un cabinet médical à Annecy : le guide pas à pas | référencement cabinet médical Annecy | Santé | À écrire |
-| 10 | Site internet d'orthodontiste : convaincre les parents en 10 secondes | site internet orthodontiste | Santé | À écrire |
-| 11 | Agence web ou grosse agence : comparatif honnête des délais et de la méthode | agence web ou freelance | Landing page | À écrire (pas de prix MSD, renvoi vers /tarifs/) |
+| 1 | Publicité en chirurgie esthétique : ce que change le décret du 23 septembre 2026 | publicité chirurgie esthétique | Santé | Publié 2026-11-03 (/blog/articles/publicite-chirurgie-esthetique-decret-2026/ ; revue de novembre : remplace « Site internet de chirurgien esthétique », dont la requête est déjà visée par /site-web-chirurgie-esthetique/ ; actualité du décret n° 2026-891) |
+| 2 | Référencement d'un dentiste : ce que l'Ordre interdit, ce qui reste permis | référencement dentiste | Santé | À écrire, semaine 46 (revue de novembre : nouveau sujet, « referencement dentiste » a 35 impressions en position 16 sans page dédiée d'après latest.md ; ne pas reprendre les règles de site de l'article dentiste existant, le relier) |
+| 3 | Webdesigner ou agence à Annecy : que choisir pour un cabinet ou une PME ? | webdesigner Annecy | Annecy | À écrire, semaine 47 (revue de novembre : remonté de #17 pour l'article Annecy du mois) |
+| 4 | Devis de landing page : les lignes à vérifier avant de signer | devis landing page | Landing page | À écrire, semaine 48 (revue de novembre : nouveau sujet, « landing page devis » a 18 impressions en position 15 sur l'article prix d'après latest.md ; angle checklist du devis, pas de fourchettes de prix déjà traitées dans `combien-coute-landing-page-france-2026`, le relier ; aucun prix MSD) |
+| 5 | Combien coûte un site internet pour un médecin esthétique ? | prix site internet médecin | Santé | À écrire (fourchettes du marché seulement, renvoi vers /tarifs/) |
+| 6 | Doctolib ne suffit pas : pourquoi votre cabinet a besoin de son propre site | site internet médecin Doctolib | Santé | À écrire |
+| 7 | Landing page de dispositif médical sous contrainte ANSM : notre méthode avec Merz | landing page dispositif médical | Santé | À écrire (faits des études de cas Radiesse et Ultherapy Prime uniquement, pas Belotero) |
+| 8 | Communication des médecins : ce qui est autorisé (guide complet) | publicité médecin ce qui est autorisé | Santé | À écrire |
+| 9 | Site internet de dermatologue : ce qu'il doit contenir | site internet dermatologue | Santé | À écrire |
+| 10 | Référencement local d'un cabinet médical à Annecy : le guide pas à pas | référencement cabinet médical Annecy | Santé | À écrire |
+| 11 | Site internet d'orthodontiste : convaincre les parents en 10 secondes | site internet orthodontiste | Santé | À écrire |
 | 12 | Centre laser : créer un site qui remplit l'agenda | site internet centre laser | Santé | À écrire |
-| 13 | Avis Google pour un cabinet esthétique : en obtenir plus sans enfreindre la déontologie | avis Google médecin esthétique | Santé | À écrire (relier à l'article existant sur les avis Google médecin) |
-| 14 | Comment ChatGPT recommande un médecin esthétique, et comment y apparaître | ChatGPT médecin esthétique | Santé | À écrire |
-| 15 | Refonte de site internet à Annecy : cas réels avant/après | refonte site internet Annecy | Annecy | Bloqué (cas chiffrés à fournir par Maxens) |
-| 16 | Landing page pour injections d'acide hyaluronique : la structure qui convertit | landing page médecine esthétique | Santé | À écrire |
-| 17 | Webdesigner ou agence à Annecy : que choisir pour un cabinet ou une PME ? | webdesigner Annecy | Annecy | À écrire |
-| 18 | RGPD et site de cabinet médical : la checklist | site médecin RGPD | Santé | À écrire |
-| 19 | Créer un site pour le marché français quand on est une entreprise allemande | site web marché français entreprise allemande | Munich | À écrire (aucun prix MSD, pas de règles juridiques sans source ; relier /agence-web-munich/) |
+| 13 | Comment ChatGPT recommande un médecin esthétique, et comment y apparaître | ChatGPT médecin esthétique | Santé | À écrire |
+| 14 | Landing page pour injections d'acide hyaluronique : la structure qui convertit | landing page médecine esthétique | Santé | À écrire |
+| 15 | RGPD et site de cabinet médical : la checklist | site médecin RGPD | Santé | À écrire |
+| 16 | Site internet de coach : les éléments qui transforment les visiteurs en clients | site web coach | Landing page | À écrire (la page /site-web-coach/ vise une requête proche : la relier) |
+| 17 | Agence web en Haute-Savoie : Annecy, Annemasse, Thonon, délais et méthode | agence web Haute-Savoie | Annecy | À écrire |
+| 18 | Les meilleurs sites de médecine esthétique en France, analysés | meilleur site médecine esthétique | Santé | À écrire (analyse de sites publics réels, sans dénigrement) |
+| 19 | Créer un site pour le marché français quand on est une entreprise allemande | site web marché français entreprise allemande | Munich | À écrire, décembre 2026 (revue de novembre : reporté, novembre réservé à santé, Annecy et landing page ; aucun prix MSD, pas de règles juridiques sans source ; relier /agence-web-munich/) |
 | 20 | Entrepreneur français à Munich : créer un site pour vos clients en France et en Allemagne | site internet entrepreneur français Munich | Munich | À écrire (FR/EN seulement, pas de contenu en allemand) |
 | 21 | Landing page en anglais ou en français : que choisir pour une startup de Munich ? | landing page startup Munich | Munich | À écrire (relier /en/munich/) |
-| 19 | Site internet de coach : les éléments qui transforment les visiteurs en clients | site web coach | Landing page | À écrire (la page /site-web-coach/ vise une requête proche : la relier) |
-| 20 | Agence web en Haute-Savoie : Annecy, Annemasse, Thonon, délais et méthode | agence web Haute-Savoie | Annecy | À écrire |
-| 21 | Les meilleurs sites de médecine esthétique en France, analysés | meilleur site médecine esthétique | Santé | À écrire (analyse de sites publics réels, sans dénigrement) |
 | 22 | Accessibilité d'un site de santé : ce que la loi impose aux cabinets | accessibilité site médecin | Santé | À écrire |
-| 23 | Étude de cas : un cabinet santé client, avant/après chiffré | site médecin résultats | Santé | Bloqué (client et chiffres à fournir par Maxens) |
-| 24 | Prix d'une landing page en 2027 | prix landing page | Landing page | En janvier 2027 : mettre à jour l'article existant `combien-coute-landing-page-france-2026`, pas de nouvel article |
+| 23 | Prix d'une landing page en 2027 | prix landing page | Landing page | En janvier 2027 : mettre à jour l'article existant `combien-coute-landing-page-france-2026`, pas de nouvel article |
+| 24 | Nous avons analysé 84 sites de cabinets santé à Annecy : le bilan | sites cabinets médicaux Annecy | Santé | Bloqué (données de l'étude à fournir par Maxens) |
+| 25 | Refonte de site internet à Annecy : cas réels avant/après | refonte site internet Annecy | Annecy | Bloqué (cas chiffrés à fournir par Maxens) |
+| 26 | Étude de cas : un cabinet santé client, avant/après chiffré | site médecin résultats | Santé | Bloqué (client et chiffres à fournir par Maxens) |
+| 27 | Photos avant/après en médecine esthétique : ce que dit vraiment la loi | photos avant après médecine esthétique légal | Santé | Écarté (revue de novembre : déjà traité par l'article de référence `site-internet-medecine-esthetique-ce-qui-est-autorise` et l'article dentiste ; un nouvel article cannibaliserait la meilleure page du site) |
+| 28 | Agence web ou grosse agence : comparatif honnête des délais et de la méthode | agence web ou freelance | Landing page | Écarté (revue de novembre : l'article existant `agence-web-freelance-nocode-2026` vise déjà cette requête) |
+| 29 | Avis Google pour un cabinet esthétique : en obtenir plus sans enfreindre la déontologie | avis Google médecin esthétique | Santé | Écarté (revue de novembre : l'article `avis-google-medecin-que-repondre` capte déjà « avis google médecin », 60 impressions d'après latest.md ; l'enrichir plutôt que le concurrencer) |

@@ -6,6 +6,7 @@ Hors entrées : le 2026-10-30, les 11 pages « agence web + ville » hors zone e
 
 Hors entrées : le 2026-11-02, refonte du design de tout le site (thème clair, nouveau header et footer, polices Inter Tight et Manrope, mêmes textes sauf l'accueil). Les bilans de novembre doivent en tenir compte : une variation commune à toutes les pages vient probablement de la refonte, pas des changements ci-dessous.
 Le même jour, les 12 pages secteur (site-web-…) ont été reconstruites sur le modèle de l'accueil par `scripts/build-sector-pages.py` (contenu dans `data/sectors.json`). Textes, FAQ et données structurées conservés ; leur structure change. Pour les modifier : éditer `data/sectors.json` puis relancer le script, jamais le HTML directement.
+Le 2026-11-03, les 15 pages de service ont été reconstruites de la même façon (contenu dans `data/services.json`), et les anciennes sections communes des autres pages (réalisations, process, avis, FAQ, « Demander à l'IA ») remplacées par celles de l'accueil. Textes, FAQ et données structurées conservés.
 
 ## Entrées
 

@@ -36,7 +36,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Inter+Tight:wght@400..700&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/light-v1.min.css?v=7590e7a1">
   <link rel="stylesheet" href="../assets/css/theme-v2.min.css?v=35c7b99e">
-  <link rel="stylesheet" href="../assets/css/pages-v2.min.css?v=54de54a4">
+  <link rel="stylesheet" href="../assets/css/sections-v2.min.css?v=a8a8c42a">
+  <link rel="stylesheet" href="../assets/css/sector-v2.min.css?v=ba2f9ce2">
+  <link rel="stylesheet" href="../assets/css/pages-v2.min.css?v=26f08ede">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -378,179 +380,107 @@ function _msdConsentSignal(state){
       </div>
     </section>
 
-    <section class="section-reviews section-grid" id="landing-reviews">
-      <h2 class="section-tag section-tag--dark">Avis</h2>
-    <h3 class="section-title section-title--dark">Des clients toujours <br> plus satisfaits.</h3>
-
-    <div class="review-videos">
-      <div class="review-video" data-review-video>
-        <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 1">
-          <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-1.webp" alt="Cover video 1" loading="lazy" aria-hidden="true" decoding="async">
-          <span class="review-video__veil" aria-hidden="true"></span>
-          <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
-          <span class="review-video__label">Lire l'avis vidéo</span>
-        </button>
-        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/86a9d3f0-7d81-462a-afbd-3a3f5c4e8a2f/"
-          frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 1"></iframe>
+    <section class="section-reviews" id="avis">
+      <div class="container">
+        <h2 class="h2 center">Des clients toujours <br>plus satisfaits.</h2>
+        <div class="review-videos">
+          <div class="review-video" data-review-video>
+            <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 1">
+              <img src="../assets/img/cover-video-1.webp" alt="" width="1080" height="1920" loading="lazy" decoding="async">
+              <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+              <span class="review-video__label">Lire l'avis vidéo</span>
+            </button>
+            <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/86a9d3f0-7d81-462a-afbd-3a3f5c4e8a2f/" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Avis vidéo client 1"></iframe>
+          </div>
+          <div class="review-video" data-review-video>
+            <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 2">
+              <img src="../assets/img/cover-video-2.webp" alt="" width="1080" height="1920" loading="lazy" decoding="async">
+              <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+              <span class="review-video__label">Lire l'avis vidéo</span>
+            </button>
+            <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/b7624277-5a5c-4593-bd02-867d509c7927/" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Avis vidéo client 2"></iframe>
+          </div>
+          <div class="review-video" data-review-video>
+            <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 3">
+              <img src="../assets/img/cover-video-3.webp" alt="" width="1080" height="1920" loading="lazy" decoding="async">
+              <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+              <span class="review-video__label">Lire l'avis vidéo</span>
+            </button>
+            <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/a5877649-ae66-446b-9abd-de12da540604/" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Avis vidéo client 3"></iframe>
+          </div>
+          <div class="review-video" data-review-video>
+            <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 4">
+              <img src="../assets/img/cover-video-4.webp" alt="" width="1080" height="1920" loading="lazy" decoding="async">
+              <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+              <span class="review-video__label">Lire l'avis vidéo</span>
+            </button>
+            <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/bb45034f-a7f3-4f4d-ad6e-e07de17fe338/" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Avis vidéo client 4"></iframe>
+          </div>
+        </div>
+      <div class="avis-carousel-container">
+        <div class="avis-track">
+          <div class="avis-card"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>MSD MEDIA m’a vraiment impressionné par son professionnalisme et sa créativité. Maxens a su comprendre mes besoins rapidement et transformer mes idées en une landing page claire, moderne et efficace. Communication fluide et résultat à la hauteur de mes attentes.</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/julian.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Julian</div><div class="avis-description">Client MSD Media</div></div></div></div>
+          <div class="avis-card"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>Une superbe expérience avec les conseils avisés de Maxens qui met à disposition tout son énergie créative et positive. Le résultat de la landing page est bluffant. Nous recommandons fortement !</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/gerald.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Gerald Debaud</div><div class="avis-description">Fondateur de l'Agence 3XL</div></div></div></div>
+          <div class="avis-card"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>J’ai travaillé avec Maxens sur la création de notre landing page, et il a su immédiatement capter notre besoin : une page qui convertit. Ultra réactif, toujours à l’écoute, et un résultat parfaitement aligné avec nos attentes.</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/pierre.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Pierre Aliaga</div><div class="avis-description">Co-Fondateur de Nation</div></div></div></div>
+          <div class="avis-card"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>J’ai fait appel à Maxens pour refaire mon site web à un moment où j’avais besoin de clarté. En moins d’une semaine, il a compris parfaitement mon besoin et m’a proposé un design clair et efficace. Le résultat est exceptionnel et j’ai eu des retours positifs dès le lancement.</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/maxime.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Maxime Sciare</div><div class="avis-description">Coach &amp; Conférencier</div></div></div></div>
+          <div class="avis-card"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>Après avoir galéré à créer moi-même mon site, j’ai fait appel à Maxens qui a fait un super travail. Un site simple, efficace, et parfaitement adapté à mes besoins. Process clair et rapide. Je recommande fortement.</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/zoltan.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Zoltàn Mayer</div><div class="avis-description">Client MSD Media</div></div></div></div>
+          <div class="avis-card"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>Il a pu me faire un site sur mesure dans un délai très court. Le résultat est top, loin des structures copiées-collées. Je recommande fortement ses services.</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/cedric.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Cédric Wyplata</div><div class="avis-description">Coach Sommeil</div></div></div></div>
+          <div class="avis-card"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>Maxens a conçu mon site avec une écoute rare, une présence constante et un sens du détail impressionnant. Chaque élément est pensé pour guider, raconter et convertir. Ce n’est pas un site, c’est un outil vivant. Merci Maxens 🙏</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/laurence.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Laurence Daien Maestripieri</div><div class="avis-description">Coach en prise de parole</div></div></div></div>
+          <div class="avis-card" aria-hidden="true"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>MSD MEDIA m’a vraiment impressionné par son professionnalisme et sa créativité. Maxens a su comprendre mes besoins rapidement et transformer mes idées en une landing page claire, moderne et efficace. Communication fluide et résultat à la hauteur de mes attentes.</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/julian.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Julian</div><div class="avis-description">Client MSD Media</div></div></div></div>
+          <div class="avis-card" aria-hidden="true"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>Une superbe expérience avec les conseils avisés de Maxens qui met à disposition tout son énergie créative et positive. Le résultat de la landing page est bluffant. Nous recommandons fortement !</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/gerald.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Gerald Debaud</div><div class="avis-description">Fondateur de l'Agence 3XL</div></div></div></div>
+          <div class="avis-card" aria-hidden="true"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>J’ai travaillé avec Maxens sur la création de notre landing page, et il a su immédiatement capter notre besoin : une page qui convertit. Ultra réactif, toujours à l’écoute, et un résultat parfaitement aligné avec nos attentes.</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/pierre.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Pierre Aliaga</div><div class="avis-description">Co-Fondateur de Nation</div></div></div></div>
+          <div class="avis-card" aria-hidden="true"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>J’ai fait appel à Maxens pour refaire mon site web à un moment où j’avais besoin de clarté. En moins d’une semaine, il a compris parfaitement mon besoin et m’a proposé un design clair et efficace. Le résultat est exceptionnel et j’ai eu des retours positifs dès le lancement.</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/maxime.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Maxime Sciare</div><div class="avis-description">Coach &amp; Conférencier</div></div></div></div>
+          <div class="avis-card" aria-hidden="true"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>Après avoir galéré à créer moi-même mon site, j’ai fait appel à Maxens qui a fait un super travail. Un site simple, efficace, et parfaitement adapté à mes besoins. Process clair et rapide. Je recommande fortement.</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/zoltan.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Zoltàn Mayer</div><div class="avis-description">Client MSD Media</div></div></div></div>
+          <div class="avis-card" aria-hidden="true"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>Il a pu me faire un site sur mesure dans un délai très court. Le résultat est top, loin des structures copiées-collées. Je recommande fortement ses services.</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/cedric.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Cédric Wyplata</div><div class="avis-description">Coach Sommeil</div></div></div></div>
+          <div class="avis-card" aria-hidden="true"><div class="avis-header"><img src="../assets/img/icon-citation.webp" alt="" width="32" height="32" loading="lazy"><img width="96" height="16" class="avis-stars" src="../assets/img/stars.svg" alt="5 étoiles" loading="lazy"></div><p>Maxens a conçu mon site avec une écoute rare, une présence constante et un sens du détail impressionnant. Chaque élément est pensé pour guider, raconter et convertir. Ce n’est pas un site, c’est un outil vivant. Merci Maxens 🙏</p><div class="avis-author"><img class="avis-photo" src="../assets/img/profiles/laurence.webp" alt="" width="50" height="50" loading="lazy"><div><div class="avis-name">Laurence Daien Maestripieri</div><div class="avis-description">Coach en prise de parole</div></div></div></div>
+        </div>
       </div>
-
-      <div class="review-video" data-review-video>
-        <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 2">
-          <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-2.webp" alt="Cover video 2" loading="lazy" aria-hidden="true" decoding="async">
-          <span class="review-video__veil" aria-hidden="true"></span>
-          <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
-          <span class="review-video__label">Lire l'avis vidéo</span>
-        </button>
-        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/b7624277-5a5c-4593-bd02-867d509c7927/"
-          frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 2"></iframe>
+        <div class="logo-marquee logo-marquee--reviews" aria-hidden="true"><div class="logo-marquee__track"><img width="851" height="269" class="logo-marquee__img" src="../assets/img/logos/ultherapy-prime-color.png" alt="" loading="lazy"><img width="768" height="115" class="logo-marquee__img is-mono" src="../assets/img/logo-radiesse-v2.webp" alt="" loading="lazy"><img width="313" height="50" class="logo-marquee__img" src="../assets/img/logos/belotero.svg" alt="" loading="lazy"><img width="392" height="129" class="logo-marquee__img" src="../assets/img/logo-track2.webp" alt="" loading="lazy"><img width="188" height="53" class="logo-marquee__img is-mono" src="../assets/img/logo-track5.webp" alt="" loading="lazy"><img width="550" height="48" class="logo-marquee__img is-mono" src="../assets/img/logo-merz-aesthetics.webp" alt="" loading="lazy"><img width="146" height="220" class="logo-marquee__img" src="../assets/img/logos/french-tech-full.webp" alt="" loading="lazy"><img width="967" height="157" class="logo-marquee__img" src="../assets/img/logo-track1.webp" alt="" loading="lazy"><img width="500" height="117" class="logo-marquee__img is-mono" src="../assets/img/logo-track6.webp" alt="" loading="lazy"><img width="163" height="160" class="logo-marquee__img" src="../assets/img/logo-track3.webp" alt="" loading="lazy"><img width="1484" height="160" class="logo-marquee__img is-mono" src="../assets/img/logo-track7.webp" alt="" loading="lazy"><img width="597" height="357" class="logo-marquee__img" src="../assets/img/logo-track4.webp" alt="" loading="lazy"><img width="276" height="126" class="logo-marquee__img" src="../assets/img/logos/marie-troccaz.webp" alt="" loading="lazy"><img width="324" height="160" class="logo-marquee__img is-mono" src="../assets/img/logo-track8.webp" alt="" loading="lazy"><img width="397" height="142" class="logo-marquee__img is-mono" src="../assets/img/logo-track9.webp" alt="" loading="lazy"><img width="851" height="269" class="logo-marquee__img" src="../assets/img/logos/ultherapy-prime-color.png" alt="" loading="lazy"><img width="768" height="115" class="logo-marquee__img is-mono" src="../assets/img/logo-radiesse-v2.webp" alt="" loading="lazy"><img width="313" height="50" class="logo-marquee__img" src="../assets/img/logos/belotero.svg" alt="" loading="lazy"><img width="392" height="129" class="logo-marquee__img" src="../assets/img/logo-track2.webp" alt="" loading="lazy"><img width="188" height="53" class="logo-marquee__img is-mono" src="../assets/img/logo-track5.webp" alt="" loading="lazy"><img width="550" height="48" class="logo-marquee__img is-mono" src="../assets/img/logo-merz-aesthetics.webp" alt="" loading="lazy"><img width="146" height="220" class="logo-marquee__img" src="../assets/img/logos/french-tech-full.webp" alt="" loading="lazy"><img width="967" height="157" class="logo-marquee__img" src="../assets/img/logo-track1.webp" alt="" loading="lazy"><img width="500" height="117" class="logo-marquee__img is-mono" src="../assets/img/logo-track6.webp" alt="" loading="lazy"><img width="163" height="160" class="logo-marquee__img" src="../assets/img/logo-track3.webp" alt="" loading="lazy"><img width="1484" height="160" class="logo-marquee__img is-mono" src="../assets/img/logo-track7.webp" alt="" loading="lazy"><img width="597" height="357" class="logo-marquee__img" src="../assets/img/logo-track4.webp" alt="" loading="lazy"><img width="276" height="126" class="logo-marquee__img" src="../assets/img/logos/marie-troccaz.webp" alt="" loading="lazy"><img width="324" height="160" class="logo-marquee__img is-mono" src="../assets/img/logo-track8.webp" alt="" loading="lazy"><img width="397" height="142" class="logo-marquee__img is-mono" src="../assets/img/logo-track9.webp" alt="" loading="lazy"></div></div>
+        <div class="cta-center"><a class="btn btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" rel="noopener">Réserver un appel</a></div>
       </div>
-
-      <div class="review-video" data-review-video>
-        <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 3">
-          <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-3.webp" alt="Cover video 3" loading="lazy" aria-hidden="true" decoding="async">
-          <span class="review-video__veil" aria-hidden="true"></span>
-          <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
-          <span class="review-video__label">Lire l'avis vidéo</span>
-        </button>
-        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/a5877649-ae66-446b-9abd-de12da540604/"
-          frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 3"></iframe>
-      </div>
-
-      <div class="review-video" data-review-video>
-        <button class="review-video__cover" type="button" data-review-video-cover aria-label="Lire l'avis vidéo 4">
-          <img height="1920" width="1080" src="https://msd-media.com/assets/img/cover-video-4.webp" alt="Cover video 4" loading="lazy" aria-hidden="true" decoding="async">
-          <span class="review-video__veil" aria-hidden="true"></span>
-          <span class="review-video__play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
-          <span class="review-video__label">Lire l'avis vidéo</span>
-        </button>
-        <iframe data-review-video-iframe data-src="https://app.videas.fr/embed/media/bb45034f-a7f3-4f4d-ad6e-e07de17fe338/"
-          frameborder="0" allowfullscreen playsinline loading="lazy" title="Avis vidéo client 4"></iframe>
-      </div>
-    </div>
-
-
-
-    <!-- Carrousels avis -->
-    <div class="avis-carousel-container animate-fade-in">
-      <div class="avis-track track-left" id="track-left"></div>
-    </div>
-
-    <div class="logo-marquee logo-marquee--reviews" aria-label="Clients et partenaires">
-      <div class="logo-marquee__track"></div>
-    </div>
-
-    <br><br>
-    <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button hero-primary-cta">
-      <span class="cta-text">Réserver un appel</span>
-    </a>
-
-  </section>
-
-    <section class="section-grid founder-section animate-fade-in">    <div class="founder-video-card">
-      <a href="https://www.youtube.com/watch?v=mLVqVknv2VA" target="_blank" rel="noreferrer noopener"
-        class="founder-video-link">
-        <img width="1448" height="1086" src="https://msd-media.com/assets/img/mockup-img-dauphine.webp" alt="Article du Dauphiné Libéré sur MSD Media" class="founder-video-thumb" loading="lazy" decoding="async">
-      </a>
-    </div>
-    <div class="founder-quote">
-      <div class="section-tag section-tag--dark" style="text-align: left; margin-left: 0">À propos de l'agence</div>
-      <p class="founder-text">« Une agence web reconnue par Le Dauphiné Libéré pour sa vitesse d'exécution, sa clarté stratégique et sa capacité à transformer les visiteurs en clients. »</p>
-      <a href="https://msd-media.com/blog/articles/msd-media-presse-le-dauphine/" class="contact-button founder-cta">
-        <span class="cta-text" data-i18n="founder_cta">Lire l'article</span> <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
     </section>
 
-    <section class="faq section-grid" id="faq">
-      <div class="faq-container">
-        <h2 class="animate-fade-opacity section-tag section-tag--dark">FAQ</h2>
-        <h3 class="animate-fade-opacity section-title section-title--dark">Questions SEO fréquentes <br> avant votre appel</h3>
 
-        <div class="faq-item animate-fade-opacity">
-          <button class="faq-question" aria-expanded="false">
-            <span>Combien de temps pour voir des résultats SEO sur un site neuf ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer"><p>En général, les premiers signaux apparaissent en quelques semaines. Les résultats solides se construisent surtout sur 3 à 6 mois avec une base technique propre et un contenu cohérent.</p></div>
-        </div>
 
-        <div class="faq-item animate-fade-opacity">
-          <button class="faq-question" aria-expanded="false">
-            <span>Est-ce que vous optimisez le SEO dès la création du site ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer"><p>Oui. Structure des pages, vitesse, maillage interne, balises, responsive et fondations sémantiques sont intégrés dès le départ.</p></div>
-        </div>
 
-        <div class="faq-item animate-fade-opacity">
-          <button class="faq-question" aria-expanded="false">
-            <span>Faut-il viser le SEO local si mon activité est géographique ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer"><p>Oui, c'est prioritaire. Une stratégie locale bien structurée améliore la visibilité sur les requêtes avec intention forte autour de votre ville et de vos services.</p></div>
-        </div>
-
-        <div class="faq-item animate-fade-opacity">
-          <button class="faq-question" aria-expanded="false">
-            <span>Landing page ou site complet : lequel est le meilleur pour le SEO ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer"><p>Les deux peuvent performer. Une landing page convertit vite sur une offre précise, un site complet permet de couvrir plus de requêtes et de travailler l'autorité sur la durée.</p></div>
-        </div>
-
-        <div class="faq-item animate-fade-opacity">
-          <button class="faq-question" aria-expanded="false">
-            <span>Le copywriting a-t-il un impact direct sur le référencement ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer"><p>Oui. Un texte clair, structuré et aligné avec les intentions de recherche améliore à la fois la compréhension de Google et le taux de conversion des visiteurs.</p></div>
-        </div>
-
-        <div class="faq-item animate-fade-opacity">
-          <button class="faq-question" aria-expanded="false">
-            <span>Peut-on refondre un site sans perdre le SEO existant ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer"><p>Oui, si la migration est cadrée: redirections, conservation des pages stratégiques, contrôle des balises et vérification technique avant mise en ligne.</p></div>
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="h2">FAQ</h2>
+        <div class="faq__grid">
+          <div class="faq__col">
+            <details class="faq__item"><summary>Combien de temps pour voir des résultats SEO sur un site neuf ?</summary><p>En général, les premiers signaux apparaissent en quelques semaines. Les résultats solides se construisent surtout sur 3 à 6 mois avec une base technique propre et un contenu cohérent.</p></details>
+            <details class="faq__item"><summary>Est-ce que vous optimisez le SEO dès la création du site ?</summary><p>Oui. Structure des pages, vitesse, maillage interne, balises, responsive et fondations sémantiques sont intégrés dès le départ.</p></details>
+            <details class="faq__item"><summary>Faut-il viser le SEO local si mon activité est géographique ?</summary><p>Oui, c'est prioritaire. Une stratégie locale bien structurée améliore la visibilité sur les requêtes avec intention forte autour de votre ville et de vos services.</p></details>
+          </div>
+          <div class="faq__col">
+            <details class="faq__item"><summary>Landing page ou site complet : lequel est le meilleur pour le SEO ?</summary><p>Les deux peuvent performer. Une landing page convertit vite sur une offre précise, un site complet permet de couvrir plus de requêtes et de travailler l'autorité sur la durée.</p></details>
+            <details class="faq__item"><summary>Le copywriting a-t-il un impact direct sur le référencement ?</summary><p>Oui. Un texte clair, structuré et aligné avec les intentions de recherche améliore à la fois la compréhension de Google et le taux de conversion des visiteurs.</p></details>
+            <details class="faq__item"><summary>Peut-on refondre un site sans perdre le SEO existant ?</summary><p>Oui, si la migration est cadrée: redirections, conservation des pages stratégiques, contrôle des balises et vérification technique avant mise en ligne.</p></details>
+          </div>
         </div>
       </div>
     </section>
 
-  <section class="ai-proof section-grid" id="ai-proof">
-    <div class="ai-proof__inner">
-      <img width="200" height="81"
-        class="ai-proof__msd-logo"
-        src="https://msd-media.com/assets/img/logo-black.webp"
-        alt="MSD Media"
-        loading="lazy"
-        decoding="async"
-      >
-      <h3 class="section-title section-title--dark" data-i18n="ai_proof_title">Toujours pas sûr que MSD Media soit fait pour vous ?</h3>
-      <p class="ai-proof__lead" data-i18n="ai_proof_lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
-      <div class="ai-proof__actions">
-        <a
-          class="hero__btn hero__btn--primary"
-          href="https://chatgpt.com/?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Demander à ChatGPT pourquoi MSD Media"
-        >
-          <img width="128" height="128" class="ai-proof__logo" src="https://msd-media.com/assets/img/logos/chatgpt.webp" alt="ChatGPT">
-          <span data-i18n="ai_proof_chatgpt">Demander à ChatGPT</span>
-        </a>
-        <a
-          class="hero__btn hero__btn--primary"
-          href="https://claude.ai/new?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Demander à Claude pourquoi MSD Media"
-        >
-          <img class="ai-proof__logo" src="https://msd-media.com/assets/img/logos/claude.svg" alt="Claude AI">
-          <span data-i18n="ai_proof_claude">Demander à Claude</span>
-        </a>
+
+    <section class="ai-proof" aria-labelledby="ai-proof-title">
+      <div class="container">
+        <div class="center">
+          <h2 class="h2" id="ai-proof-title">Toujours pas sûr que MSD Media soit <span class="accent">fait pour vous ?</span></h2>
+          <p class="ai-proof__lead">Laissez ChatGPT ou Claude réfléchir pour vous. Cliquez sur un bouton et découvrez ce que votre IA préférée dit à propos de MSD Media.</p>
+          <div class="ai-proof__actions">
+            <a class="btn ai-proof__btn--chatgpt" href="https://chatgpt.com/?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web" target="_blank" rel="noopener noreferrer" aria-label="Demander à ChatGPT pourquoi MSD Media (nouvel onglet)">
+              <svg class="ai-proof__icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg>
+              <span>Demander à ChatGPT</span>
+            </a>
+            <a class="btn ai-proof__btn--claude" href="https://claude.ai/new?q=dis%20moi%20pourquoi%20msd%20media%20est%20un%20bon%20choix%20pour%20cr%C3%A9er%20mon%20site%20web" target="_blank" rel="noopener noreferrer" aria-label="Demander à Claude pourquoi MSD Media (nouvel onglet)">
+              <svg class="ai-proof__icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg>
+              <span>Demander à Claude</span>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
   </main>
 
 <footer class="site-footer">
@@ -670,6 +600,7 @@ function _msdConsentSignal(state){
     })();
   </script>
   <script src="../assets/js/theme-v2.min.js?v=21fcba7d" defer></script>
+  <script src="../assets/js/home-v2.min.js?v=c37f6818" defer></script>
   <script src="../assets/js/script.min.js?v=5ac7f9e0" defer></script>
 </body>
 

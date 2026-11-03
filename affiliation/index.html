@@ -31,7 +31,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Inter+Tight:wght@400..700&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/light-v1.min.css?v=7590e7a1">
   <link rel="stylesheet" href="../assets/css/theme-v2.min.css?v=35c7b99e">
-  <link rel="stylesheet" href="../assets/css/pages-v2.min.css?v=54de54a4">
+  <link rel="stylesheet" href="../assets/css/sections-v2.min.css?v=a8a8c42a">
+  <link rel="stylesheet" href="../assets/css/sector-v2.min.css?v=ba2f9ce2">
+  <link rel="stylesheet" href="../assets/css/pages-v2.min.css?v=26f08ede">
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
   <!-- FAQ Schema -->
@@ -498,168 +500,33 @@ function _msdConsentSignal(state){
       </div>
     </section>
 
-    <section class="faq section-grid" id="faq">
-      <div class="faq-container">
-        <h3 class="section-title section-title--dark faq-title">FAQ affiliation</h3>
-
-        <div class="faq-tabs" role="tablist">
-          <button type="button" class="faq-tab is-active" data-faq-category="general" role="tab" aria-selected="true">Général</button>
-          <button type="button" class="faq-tab" data-faq-category="commission" role="tab" aria-selected="false">Commission</button>
-          <button type="button" class="faq-tab" data-faq-category="process" role="tab" aria-selected="false">Process</button>
-          <button type="button" class="faq-tab" data-faq-category="conditions" role="tab" aria-selected="false">Conditions</button>
-        </div>
-
-        <div class="faq-item" data-faq-category="general">
-          <button class="faq-question" aria-expanded="false">
-            <span>Comment fonctionne l'affiliation MSD Media ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Vous nous présentez une entreprise qui a un besoin web ou digital. Si le projet se signe, vous touchez une commission de 15% sur le montant signé.</p>
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="h2">FAQ affiliation</h2>
+        <div class="faq__grid">
+          <div class="faq__col">
+            <details class="faq__item"><summary>Comment fonctionne l'affiliation MSD Media ?</summary><p>Vous nous présentez une entreprise qui a un besoin web ou digital. Si le projet se signe, vous touchez une commission de 15% sur le montant signé.</p></details>
+            <details class="faq__item"><summary>Qui peut recommander un contact ?</summary><p>Freelances, agences, consultants, dirigeants d'entreprise, clients ou proches peuvent recommander une opportunité. Aucun statut juridique particulier n'est requis pour rejoindre le programme : les modalités s'adaptent à votre situation, tant que le contact est qualifié et réellement intéressé.</p></details>
+            <details class="faq__item"><summary>Quels types de projets sont concernés ?</summary><p>Les recommandations peuvent concerner une création de site, une refonte, une landing page, du branding, du SEO, du copywriting ou un projet web plus spécifique.</p></details>
+            <details class="faq__item"><summary>Quel type de contact vous intéresse vraiment ?</summary><p>Toute entreprise avec un besoin réel de site web ou de landing page, quel que soit son secteur. MSD Media performe particulièrement auprès des cabinets d'avocats, professionnels de santé, agences immobilières, restaurants, artisans, architectes, coachs, consultants et startups. En cas de doute, présentez-nous quand même le contact : nous évaluons ensemble.</p></details>
+            <details class="faq__item"><summary>Quel est le montant de la commission ?</summary><p>La commission est de 15% du montant signé avec le client recommandé. Elle est calculée sur le projet validé, hors taxes.</p></details>
+            <details class="faq__item"><summary>Quand la commission est-elle versée ?</summary><p>La commission est versée par virement dès que le projet démarre et que le premier paiement client est confirmé.</p></details>
+            <details class="faq__item"><summary>La commission est-elle due si le contact ne signe pas ?</summary><p>Non. La commission est déclenchée uniquement si le contact présenté devient client et signe un projet avec MSD Media.</p></details>
+            <details class="faq__item"><summary>Comment envoyer une recommandation ?</summary><p>Remplissez le formulaire en bas de page avec vos coordonnées, l'entreprise recommandée, le budget estimé et le contexte du besoin.</p></details>
           </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="general">
-          <button class="faq-question" aria-expanded="false">
-            <span>Qui peut recommander un contact ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Freelances, agences, consultants, dirigeants d'entreprise, clients ou proches peuvent recommander une opportunité. Aucun statut juridique particulier n'est requis pour rejoindre le programme : les modalités s'adaptent à votre situation, tant que le contact est qualifié et réellement intéressé.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="general">
-          <button class="faq-question" aria-expanded="false">
-            <span>Quels types de projets sont concernés ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Les recommandations peuvent concerner une création de site, une refonte, une landing page, du branding, du SEO, du copywriting ou un projet web plus spécifique.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="general">
-          <button class="faq-question" aria-expanded="false">
-            <span>Quel type de contact vous intéresse vraiment ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Toute entreprise avec un besoin réel de site web ou de landing page, quel que soit son secteur. MSD Media performe particulièrement auprès des cabinets d'avocats, professionnels de santé, agences immobilières, restaurants, artisans, architectes, coachs, consultants et startups. En cas de doute, présentez-nous quand même le contact : nous évaluons ensemble.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="commission">
-          <button class="faq-question" aria-expanded="false">
-            <span>Quel est le montant de la commission ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>La commission est de 15% du montant signé avec le client recommandé. Elle est calculée sur le projet validé, hors taxes.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="commission">
-          <button class="faq-question" aria-expanded="false">
-            <span>Quand la commission est-elle versée ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>La commission est versée par virement dès que le projet démarre et que le premier paiement client est confirmé.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="commission">
-          <button class="faq-question" aria-expanded="false">
-            <span>La commission est-elle due si le contact ne signe pas ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Non. La commission est déclenchée uniquement si le contact présenté devient client et signe un projet avec MSD Media.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="process">
-          <button class="faq-question" aria-expanded="false">
-            <span>Comment envoyer une recommandation ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Remplissez le formulaire en bas de page avec vos coordonnées, l'entreprise recommandée, le budget estimé et le contexte du besoin.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="process">
-          <button class="faq-question" aria-expanded="false">
-            <span>Que se passe-t-il après l'envoi du formulaire ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Nous analysons le contexte, contactons l'entreprise si l'opportunité est pertinente, puis vous tenons informé de l'avancée si le projet se concrétise.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="process">
-          <button class="faq-question" aria-expanded="false">
-            <span>Dois-je gérer la vente ou le suivi client ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Non. Votre rôle est de faire l'introduction ou de transmettre le contact. MSD Media prend ensuite le relais sur la qualification, le devis et la vente.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="process">
-          <button class="faq-question" aria-expanded="false">
-            <span>Mes contacts vont-ils savoir que je touche une commission ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Pas de la part de MSD Media : cette information n'est jamais communiquée sans votre accord explicite. Libre à vous d'être transparent avec eux ou non — la plupart des apporteurs préfèrent rester discrets, ce qui est tout à fait possible.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="conditions">
-          <button class="faq-question" aria-expanded="false">
-            <span>Faut-il signer un contrat ou s'engager sur un volume ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Aucun engagement de volume, aucune exclusivité, aucun contrat contraignant. Vous présentez des contacts quand vous le souhaitez, à votre rythme. Une simple convention d'apporteur d'affaires formalise la relation au moment du versement de la première commission.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="conditions">
-          <button class="faq-question" aria-expanded="false">
-            <span>Le programme est-il gratuit ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Oui. Il n'y a aucun abonnement, aucun frais d'entrée et aucun volume minimum de recommandations à respecter.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="conditions">
-          <button class="faq-question" aria-expanded="false">
-            <span>Puis-je recommander plusieurs entreprises ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Oui. Vous pouvez envoyer plusieurs recommandations, à condition qu'elles soient sérieuses, qualifiées et cohérentes avec les services de MSD Media.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-faq-category="conditions">
-          <button class="faq-question" aria-expanded="false">
-            <span>Que se passe-t-il si plusieurs personnes recommandent le même contact ?</span>
-            <span class="icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>L'attribution est étudiée au cas par cas, en priorité selon la première recommandation qualifiée reçue et le niveau de relation avec le contact.</p>
+          <div class="faq__col">
+            <details class="faq__item"><summary>Que se passe-t-il après l'envoi du formulaire ?</summary><p>Nous analysons le contexte, contactons l'entreprise si l'opportunité est pertinente, puis vous tenons informé de l'avancée si le projet se concrétise.</p></details>
+            <details class="faq__item"><summary>Dois-je gérer la vente ou le suivi client ?</summary><p>Non. Votre rôle est de faire l'introduction ou de transmettre le contact. MSD Media prend ensuite le relais sur la qualification, le devis et la vente.</p></details>
+            <details class="faq__item"><summary>Mes contacts vont-ils savoir que je touche une commission ?</summary><p>Pas de la part de MSD Media : cette information n'est jamais communiquée sans votre accord explicite. Libre à vous d'être transparent avec eux ou non — la plupart des apporteurs préfèrent rester discrets, ce qui est tout à fait possible.</p></details>
+            <details class="faq__item"><summary>Faut-il signer un contrat ou s'engager sur un volume ?</summary><p>Aucun engagement de volume, aucune exclusivité, aucun contrat contraignant. Vous présentez des contacts quand vous le souhaitez, à votre rythme. Une simple convention d'apporteur d'affaires formalise la relation au moment du versement de la première commission.</p></details>
+            <details class="faq__item"><summary>Le programme est-il gratuit ?</summary><p>Oui. Il n'y a aucun abonnement, aucun frais d'entrée et aucun volume minimum de recommandations à respecter.</p></details>
+            <details class="faq__item"><summary>Puis-je recommander plusieurs entreprises ?</summary><p>Oui. Vous pouvez envoyer plusieurs recommandations, à condition qu'elles soient sérieuses, qualifiées et cohérentes avec les services de MSD Media.</p></details>
+            <details class="faq__item"><summary>Que se passe-t-il si plusieurs personnes recommandent le même contact ?</summary><p>L'attribution est étudiée au cas par cas, en priorité selon la première recommandation qualifiée reçue et le niveau de relation avec le contact.</p></details>
           </div>
         </div>
       </div>
     </section>
+
 
     <section class="affiliate-recommendation section-grid" id="affiliate-recommendation" aria-labelledby="affiliate-form-title">
       <div class="affiliate-recommendation__inner">
@@ -954,6 +821,7 @@ function _msdConsentSignal(state){
     })();
   </script>
   <script src="../assets/js/theme-v2.min.js?v=21fcba7d" defer></script>
+  <script src="../assets/js/home-v2.min.js?v=c37f6818" defer></script>
   <script src="../assets/js/script.min.js?v=5ac7f9e0" defer></script>
 </body>
 </html>

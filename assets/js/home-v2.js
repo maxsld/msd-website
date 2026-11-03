@@ -140,20 +140,20 @@
       startVideo();
     }
     var soundBtn = document.querySelector('[data-video-sound]');
-    soundBtn.addEventListener('click', function () {
+    if (soundBtn) soundBtn.addEventListener('click', function () {
       lazyVideo.muted = !lazyVideo.muted;
       soundBtn.setAttribute('aria-label', lazyVideo.muted ? 'Activer le son' : 'Couper le son');
       soundBtn.querySelector('i').className = lazyVideo.muted ? 'fa-solid fa-volume-xmark' : 'fa-solid fa-volume-high';
     });
   }
 
-  // Blocs « tout inclus » : chaque bloc apparaît à l'arrivée à l'écran, puis l'animation
-  // de son visuel se joue une seule fois (le visuel attend la fin de l'apparition du bloc)
+  // Blocs « tout inclus » : les cartes sont affichées d'emblée ; l'animation de leur visuel
+  // se joue une seule fois, dès que la carte arrive à l'écran
   var feats = document.querySelectorAll('.feat');
   var showFeat = function (feat) {
     feat.classList.add('is-visible');
     var viz = feat.querySelector('.viz');
-    if (viz) setTimeout(function () { viz.classList.add('is-visible'); }, 450);
+    if (viz) viz.classList.add('is-visible');
   };
   if ('IntersectionObserver' in window) {
     var featObserver = new IntersectionObserver(function (entries) {

@@ -115,3 +115,83 @@ main.container:not(#_) > * { max-width: 860px; }
   .tool-llms:not(#_) > *, .tool-llms :is(input, select, textarea):not(#_) { min-width: 0; max-width: 100%; }
   .tool-llms-row:not(#_) { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* ---------- Corrections d'affichage (revue du 2026-11-03) ---------- */
+/* Pages légales : leur règle « p » ne doit pas foncer le texte du footer */
+.legal-page .site-footer:not(#_) :is(p, li, address, span, strong) { color: #fff; }
+.legal-page .site-footer:not(#_) .footer-bottom, .legal-page .site-footer:not(#_) .footer-bottom * { color: #888; }
+/* Tableaux (comparatif des tarifs, glossaire) : en-tête clair, comme les cartes de la home */
+:is(.glossary-table, .glossary-table--dark):not(#_) th { background: var(--tile); color: var(--heading); border-bottom: 1px solid var(--border); }
+:is(.glossary-table-wrap, .glossary-table-wrap--dark):not(#_) { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+/* Bouton secondaire des outils */
+.tool-btn--ghost:not(#_) { background: transparent; color: var(--heading); border: 1px solid var(--border); }
+.tool-btn--ghost:not(#_):hover { border-color: var(--heading); background: transparent; }
+/* Ligne auteur / durée / dates des articles : chaque élément reste sur une ligne */
+.blog-article-meta:not(#_) { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .9rem; white-space: normal; }
+.blog-article-meta:not(#_) > * { flex: none; white-space: nowrap; }
+/* Titres posés sur une photo (cartes réalisations, carrousels) : blancs */
+:is(.realisations-library-card, .blog-hero-carousel__slide, .realisations-page-carousel) :is(h2, h3, .blog-card__title):not(#_) { color: #fff; }
+/* Bouton « Planifiez un appel » : au-dessus du bandeau cookies quand il est affiché */
+body:has(.cookie-consent:not([hidden])) .cal-float-btn:not(#_) { bottom: 5.5rem; }
+/* Articles liés : une carte par ligne sur mobile, titres lisibles */
+@media (max-width: 680px) {
+  .blog-related-grid:not(#_) { grid-template-columns: 1fr; }
+}
+/* Agenda de réservation : ne dépasse jamais de la page sur mobile */
+.booking-section:not(#_) { box-sizing: border-box; width: auto; max-width: 100%; }
+/* Mots ou adresses très longs dans les articles : retour à la ligne plutôt que débordement */
+.blog-article-content:not(#_) :is(p, li, td, a, code) { overflow-wrap: anywhere; }
+
+/* Écart entre le menu et le hero : le même sur toutes les pages (la home et les secteurs : home-v2.css) */
+body:not(.sector-page) main > :is(.hero, .hero-photo, .glossaire-simple, .cfg-hero-section, .tmpl-hero, .tpl-split, header, nav.breadcrumb):first-child:not(#_) { margin-top: 0; padding-top: 64px; }
+body:not(.sector-page) main > :is(.hero, .hero-photo):first-child > :first-child:not(#_):not(.section-tag),
+body:not(.sector-page) main > .hero:first-child .hero-intro__copy > :first-child:not(#_),
+body:not(.sector-page) main > .hero:first-child .blog-article-hero__row:not(#_),
+body:not(.sector-page) main > .hero:first-child .blog-article-hero__text > :first-child:not(#_) { margin-top: 0; padding-top: 0; }
+@media (max-width: 820px) {
+  body:not(.sector-page) main > :is(.hero, .hero-photo, .glossaire-simple, .cfg-hero-section, .tmpl-hero, .tpl-split, header, nav.breadcrumb):first-child:not(#_) { padding-top: 40px; }
+}
+/* L'ancien style.css décalait aussi <main> sous le header (marge de 2 à 3 rem) : retirée */
+body:not(.sector-page) > main:not(#_) { margin-top: 0; }
+/* Hero photo (À propos) : l'écart se fait en marge, la photo occupe tout le bloc */
+body:not(.sector-page) main > section.hero-photo:first-child:not(#_) { padding-top: 0; margin-top: 64px; }
+@media (max-width: 820px) { body:not(.sector-page) main > section.hero-photo:first-child:not(#_) { margin-top: 40px; } }
+/* Tarifs : la carte du milieu (« Le plus choisi ») sur fond bleu, texte blanc, bouton blanc */
+.pricing-card--featured:not(#_) { background: #2d66f2; border-color: #2d66f2; color: #fff; }
+.pricing-card--featured:not(#_) :is(.pricing-card__title, .pricing-card__title a, .pricing-card__price, .pricing-card__features li, .pricing-card__features i, .pricing-card__features svg) { color: #fff; }
+.pricing-card--featured:not(#_) :is(.pricing-card__desc, .pricing-card__price-from, .pricing-card__delay, .pricing-card__delay i) { color: rgba(255, 255, 255, .78); }
+.pricing-card--featured:not(#_) .pricing-card__features li::before { color: #fff; border-color: rgba(255, 255, 255, .6); }
+.pricing-card--featured:not(#_) .pricing-card__badge { background: #fff; color: #2d66f2; }
+.pricing-card--featured:not(#_) .pricing-card__cta { background: #fff; border-color: #fff; color: #2d66f2; }
+.pricing-card--featured:not(#_) .pricing-card__cta:hover { background: rgba(255, 255, 255, .9); color: #1a54e8; }
+
+/* ---------- Sections de l'accueil réutilisées sur les autres pages ----------
+   Ces pages chargent encore l'ancien style.css pour leurs parties propres (grille de prix, outils…).
+   Ses règles sur les mêmes noms de classes (section-reviews, faq, ai-proof, avis…) sont neutralisées ici
+   pour que les sections s'affichent exactement comme sur l'accueil. */
+:is(.work, .process, .eco, .section-reviews, .faq, .ai-proof, .story, .scards):not(#_) { text-align: left; max-width: none; width: auto; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; background: transparent; border: 0; border-radius: 0; box-shadow: none; }
+.section-reviews:not(#_), :is(main, body) > .faq:not(#_) { margin-top: 0; }
+.faq:not(#_) { padding-top: 110px; }
+.ai-proof:not(#_) { margin-top: 0; padding-top: 170px; padding-bottom: 0; }
+.ai-proof:not(#_) .h2 { max-width: 780px; margin: 0 auto; }
+.ai-proof:not(#_) .ai-proof__lead { max-width: 590px; margin: 24px auto 0; color: var(--text); }
+.section-reviews:not(#_) .review-videos { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.section-reviews:not(#_) .review-video__play { grid-template-columns: none; justify-content: normal; align-content: normal; }
+.section-reviews:not(#_) .logo-marquee--reviews { margin-left: 0; margin-right: 0; }
+.section-reviews:not(#_) .avis-carousel-container { display: block; gap: normal; }
+.section-reviews:not(#_) .avis-stars { display: block; opacity: 1; width: auto; max-width: none; height: 18px; }
+.section-reviews:not(#_) .avis-description { opacity: 1; }
+@media (max-width: 820px) {
+  .section-reviews:not(#_) .review-videos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .faq:not(#_) { padding-top: 100px; }
+  .ai-proof:not(#_) { padding-top: 100px; }
+}
+
+/* Étiquettes (Tarifs, Blog, Outils…) : texte centré verticalement, mêmes marges en haut et en bas */
+.section-tag:not(#_) { display: flex; width: fit-content; align-items: center; padding: calc(.38rem + .7px) .8rem calc(.38rem - .7px); line-height: 1; }
+.hero:not(#_) > .section-tag:first-child { margin-top: 0; }
+/* Le haut du contenu du hero tombe exactement au même endroit que sur l'accueil (64 px sous le menu) :
+   colonnes alignées en haut plutôt que centrées verticalement */
+body:not(.sector-page) main > :first-child .blog-article-hero__row:not(#_), body:not(.sector-page) main > .tpl-split:first-child:not(#_) { align-items: start; }
+body:not(.sector-page) main > nav.breadcrumb:first-child + .hero:not(#_) { padding-top: 0; }
+body:not(.sector-page) main > :first-child .blog-article-cover:not(#_) { margin-top: 0; }

@@ -2,9 +2,10 @@
 """
 build-sector-pages.py
 
-Pages secteur (site-web-*/) construites sur le modèle exact de l'accueil (index.html).
-Le contenu propre à chaque secteur vient de data/sectors.json : titre, sous-titre, blocs de texte,
-cartes, FAQ et textes des visuels animés de la section « offre tout compris ».
+Pages secteur (site-web-*/) et pages de service (création de site, landing page, agence web, audit,
+SEO local, refonte) construites sur le modèle exact de l'accueil (index.html).
+Le contenu propre à chaque page vient de data/sectors.json et data/services.json : titre, sous-titre,
+blocs de texte, cartes, FAQ et, pour les secteurs, textes des visuels animés de l'« offre tout compris ».
 Le <head> SEO (title, description, canonical, Open Graph, JSON-LD) est repris de la page existante ;
 seule la FAQ du JSON-LD est régénérée, à partir du texte visible.
 
@@ -18,7 +19,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA = json.loads((ROOT / 'data' / 'sectors.json').read_text())
+DATA = {**json.loads((ROOT / 'data' / 'sectors.json').read_text()), **json.loads((ROOT / 'data' / 'services.json').read_text())}
 TEMPLATE = (ROOT / 'index.html').read_text()
 CAL = 'https://cal.com/maxens-soldan-msd-media/30min'
 
@@ -78,18 +79,40 @@ def build_head(page_html, faq):
 
 # ---------- Corps ----------
 def hero(body, d):
-    body = re.sub(r'(<section class="hero">.*?<h1>).*?(</h1>)', lambda m: m.group(1) + esc(d['h1']) + m.group(2), body, count=1, flags=re.S)
+    # Titre toujours sur deux lignes : « On fait des sites web » / « pour les médecins. »
+    # (pages de service : les deux lignes viennent de data/services.json)
+    first, sep, rest = d['h1'].partition(' pour ')
+    lines = d.get('h1_lines') or ([first, sep.strip() + ' ' + rest] if sep else [d['h1']])
+    chars = max(len(l) for l in lines)
+    h1 = ' '.join(f'<span class="h1-line">{esc(l)}</span>' for l in lines)
+    # Secteurs : deux lignes partout (taille ajustée sur mobile). Services : deux lignes sur ordinateur,
+    # retour à la ligne normal sur mobile (leurs lignes sont trop longues pour tenir en entier).
+    cls = 'h1-split' if 'h1_lines' not in d else 'h1-split h1-split--wrap'
+    if len(lines) == 1:
+        h1, cls = esc(lines[0]), ''
+    attrs = f' class="{cls}" style="--chars:{chars}"' if cls else ''
+    body = re.sub(r'(<section class="hero">.*?)<h1>.*?</h1>', lambda m: m.group(1) + f'<h1{attrs}>{h1}</h1>', body, count=1, flags=re.S)
     body = re.sub(r'(<p class="hero__sub">).*?(</p>)', lambda m: m.group(1) + d['subtitle'] + m.group(2), body, count=1, flags=re.S)
     return body
 
 
 def story(d):
     rows = []
+    f = d.get('focus')
+    if f:
+        paras = '\n'.join(f'          <p>{p}</p>' for p in f['paragraphs'])
+        links = ''.join(f'<a href="{l["href"]}">{esc(l["label"])}</a>' for l in f.get('links', []))
+        nav = f'\n          <nav class="story__links" aria-label="{esc(f.get("nav_label") or "Nos prestations")}">{links}</nav>' if links else ''
+        rows.append(f'''        <div class="story__focus">
+          <h2 class="story__title">{f['title']}</h2>
+{paras}{nav}
+        </div>''')
     for i, b in enumerate(d['story']):
         paras = '\n'.join(f'            <p>{p}</p>' for p in b['paragraphs'])
+        eyebrow = f'<span class="story__eyebrow">{esc(b["eyebrow"])}</span>\n            ' if b.get('eyebrow') else ''
         rows.append(f'''        <div class="story__row{' story__row--reverse' if i % 2 else ''}">
           <div class="story__text">
-            <h2 class="story__title">{b['title']}</h2>
+            {eyebrow}<h2 class="story__title">{b['title']}</h2>
 {paras}
           </div>
           <div class="story__img"><img src="{b['img']}" alt="{esc(b['alt'] or '')}" width="{b['width']}" height="{b['height']}" loading="lazy" decoding="async"></div>
@@ -131,6 +154,9 @@ def card_sections(d):
 
 
 def package(body, d):
+    # Pages de service : l'offre de l'accueil telle quelle
+    if 'package' not in d:
+        return body
     p = d['package']
     m = section(body, 'package')
     pkg = m.group(0)
@@ -217,7 +243,12 @@ def faq(body, d):
     m = section(body, 'faq')
     sec = m.group(0)
     sec = re.sub(r'<div class="faq__grid">.*</div>\s*</div>\s*(?=</div>\s*</section>)', grid + '\n      ', sec, count=1, flags=re.S)
-    sec = re.sub(r'<h2 class="h2">.*?</h2>', f'<h2 class="h2">Questions fréquentes : site internet pour {esc(d["package"]["label"])}</h2>', sec, count=1)
+    if 'package' in d:
+        title = f'Questions fréquentes : site internet pour {d["package"]["label"]}'
+    else:
+        topic = d['h1_lines'][0].split(',')[0].rstrip('.')
+        title = f'Questions fréquentes : {topic[0].lower() + topic[1:]}'
+    sec = re.sub(r'<h2 class="h2">.*?</h2>', f'<h2 class="h2">{esc(title)}</h2>', sec, count=1)
     return body[:m.start()] + sec + body[m.end():]
 
 

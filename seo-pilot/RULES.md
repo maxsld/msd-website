@@ -24,7 +24,7 @@ Améliorer la conversion d'une page est permis et encouragé : réponse plus net
 
 ## Règles techniques
 
-- **Pages secteur** (`site-web-*/`) : générées par `python3 scripts/build-sector-pages.py` à partir de `data/sectors.json`. On modifie leur contenu dans ce fichier JSON, puis on relance le script ; jamais leur HTML directement.
+- **Pages secteur** (`site-web-*/`) **et pages de service** (création de site, landing page, agence web, audit SEO, SEO local, refonte, par ville) : générées par `python3 scripts/build-sector-pages.py` à partir de `data/sectors.json` et `data/services.json`. On modifie leur contenu dans ce fichier JSON, puis on relance le script ; jamais leur HTML directement.
 - **Blog** : les articles qui ont une source dans `blog/sources/*.md` (champ `slug:`) se modifient uniquement dans cette source, puis `npm run blog:build`. On ne touche jamais au HTML généré de ces articles. Les articles sans source se modifient directement dans leur HTML. Un nouvel article suit `seo-pilot/ARTICLE-GUIDE.md`.
 - **Traductions** : un élément avec `data-i18n="clé"` voit son texte remplacé par `assets/i18n/translations.json`. Si on modifie un tel texte, on met à jour la clé en français (et en anglais si elle existe), sinon la modification ne s'affiche pas.
 - **FAQ** : le texte des réponses dans le JSON-LD `FAQPage` doit être identique au texte visible. `npm run seo:check` le vérifie.

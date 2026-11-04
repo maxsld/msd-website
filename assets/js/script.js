@@ -2131,7 +2131,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "/configurateur",
     "/confirmation",
     "/confirmation-reservation-appel",
-    "/reserver-un-appel"
+    "/reserver-un-appel",
+    "/en/book-a-call"
   ];
   var shouldRenderCalPopup = !blockedPrefixes.some(function(prefix) {
     return path === prefix || path.indexOf(prefix + "/") === 0;
@@ -2142,15 +2143,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   var CAL_URL = "https://cal.com/maxens-soldan-msd-media/30min?embed=true&embedType=inline&layout=month_view&theme=dark";
+  // Libellés en anglais sur les pages /en/
+  var isEn = document.documentElement.lang === "en";
+  var CAL_TXT = isEn
+    ? { dialog: "Book a call", close: "Close", button: "Book a call" }
+    : { dialog: "Prendre rendez-vous", close: "Fermer", button: "Planifiez un appel" };
 
   // Overlay + modal
   var overlay = document.createElement("div");
   overlay.className = "cal-modal-overlay";
   overlay.hidden = true;
   overlay.innerHTML =
-    '<div class="cal-modal" role="dialog" aria-modal="true" aria-label="Prendre rendez-vous">' +
-      '<button class="cal-modal__close" aria-label="Fermer">&#x2715;</button>' +
-      '<iframe id="cal-iframe" src="' + CAL_URL + '" title="Prendre rendez-vous" loading="lazy"></iframe>' +
+    '<div class="cal-modal" role="dialog" aria-modal="true" aria-label="' + CAL_TXT.dialog + '">' +
+      '<button class="cal-modal__close" aria-label="' + CAL_TXT.close + '">&#x2715;</button>' +
+      '<iframe id="cal-iframe" src="' + CAL_URL + '" title="' + CAL_TXT.dialog + '" loading="lazy"></iframe>' +
     '</div>';
   document.body.appendChild(overlay);
 
@@ -2158,9 +2164,9 @@ document.addEventListener("DOMContentLoaded", () => {
   var btn = document.createElement("button");
   btn.className = "cal-float-btn";
   btn.type = "button";
-  btn.setAttribute("aria-label", "Planifiez un appel");
+  btn.setAttribute("aria-label", CAL_TXT.button);
   btn.innerHTML =
-    '<span class="cal-float-btn__label">Planifiez un appel</span>' +
+    '<span class="cal-float-btn__label">' + CAL_TXT.button + '</span>' +
     '<span class="cal-float-btn__notif" aria-hidden="true">1</span>';
   document.body.appendChild(btn);
 
@@ -2354,4 +2360,42 @@ document.addEventListener("DOMContentLoaded", () => {
     tick();
     setInterval(tick, 30000);
   }
+})();
+
+// Titre de l'onglet quand le visiteur part sur un autre onglet : il clignote entre
+// « 👋 Vous êtes toujours là ? » et le vrai titre, qui revient dès le retour.
+// Pas sur la réservation : on y ouvre souvent son agenda à côté.
+(function () {
+  if (/^\/(?:reserver-un-appel|en\/book-a-call)(?:\/|$)/.test(window.location.pathname)) return;
+
+  var awayTitle = document.documentElement.lang === "en" ? "👋 Are you still there?" : "👋 Vous êtes toujours là ?";
+  var originalTitle = document.title;
+  var startTimer = null;
+  var rotateTimer = null;
+  var showAway = false;
+
+  var stop = function () {
+    clearTimeout(startTimer);
+    clearInterval(rotateTimer);
+    startTimer = rotateTimer = null;
+  };
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+      originalTitle = document.title;
+      // Petit délai : pas de clignotement quand on passe vite d'un onglet à l'autre
+      startTimer = setTimeout(function () {
+        // Chrome limite les minuteurs des onglets en arrière-plan à 1 par seconde : 1 s est le rythme le plus rapide fiable
+        showAway = true;
+        document.title = awayTitle;
+        rotateTimer = setInterval(function () {
+          showAway = !showAway;
+          document.title = showAway ? awayTitle : originalTitle;
+        }, 1000);
+      }, 1500);
+    } else {
+      stop();
+      document.title = originalTitle;
+    }
+  });
 })();

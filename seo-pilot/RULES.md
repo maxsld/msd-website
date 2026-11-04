@@ -20,7 +20,7 @@ Le design actuel du site ne change pas, et aucune autre référence de design ne
 
 ## Conversion
 
-Améliorer la conversion d'une page est permis et encouragé : réponse plus nette en tête, preuves déjà présentes sur le site (projets Merz Radiesse et Ultherapy Prime, avis réels, presse), appel à réserver un appel (lien `https://cal.com/maxens-soldan-msd-media/30min`) mieux placé. Toujours avec des blocs existants de la home, jamais de fausse urgence ni de promesse non tenue.
+Améliorer la conversion d'une page est permis et encouragé : réponse plus nette en tête, preuves déjà présentes sur le site (projets Merz Radiesse et Ultherapy Prime, avis réels, presse), appel à réserver un appel (lien `https://msd-media.com/reserver-un-appel/`) mieux placé. Toujours avec des blocs existants de la home, jamais de fausse urgence ni de promesse non tenue.
 
 ## Règles techniques
 

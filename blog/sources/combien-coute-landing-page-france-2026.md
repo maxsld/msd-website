@@ -174,7 +174,7 @@ Avant de signer, posez ces questions :
 
 Le détail des formules est sur notre [page tarifs](/tarifs/). Pour démarrer sans budget, notre [template de landing page gratuit](/template-landing-page/) reprend la structure que nous utilisons en agence.
 
-[Réserver un appel pour discuter de votre projet →](https://cal.com/maxens-soldan-msd-media/30min)
+[Réserver un appel pour discuter de votre projet →](https://msd-media.com/reserver-un-appel/)
 
 ---
 

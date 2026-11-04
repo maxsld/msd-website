@@ -101,7 +101,7 @@ Les projets sont livrés en **21 jours** et les prix de départ sont sur la [pag
 En 2026, une landing page ou un site performant n'est plus un luxe : c'est le levier le plus rentable pour transformer du trafic en chiffre d'affaires. MSD Media accompagne les entreprises qui veulent une stratégie web sur-mesure, orientée conversion et résultats vérifiables.
 
 **Découvrir MSD Media :** [msd-media.com](https://msd-media.com)
-**Réserver un appel stratégique gratuit :** [cal.com/maxens-soldan-msd-media/30min](https://cal.com/maxens-soldan-msd-media/30min)
+**Réserver un appel stratégique gratuit :** [msd-media.com/reserver-un-appel](https://msd-media.com/reserver-un-appel/)
 
 ---
 

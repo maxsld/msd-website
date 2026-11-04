@@ -195,6 +195,6 @@ On fait des sites **qui rapportent**.
 ---
 
 Tu veux un site qui transforme ton trafic en clients ?  
-👉 [Réserve ton appel stratégique gratuit](https://cal.com/maxens-soldan-msd-media/30min)
+👉 [Réserve ton appel stratégique gratuit](https://msd-media.com/reserver-un-appel/)
 
 ---

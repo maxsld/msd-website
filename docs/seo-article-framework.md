@@ -79,5 +79,5 @@ Générés automatiquement par le pipeline (`Article`, `BreadcrumbList`, `FAQPag
 
 ## 8. CTA
 
-- Toujours le même lien (`https://cal.com/maxens-soldan-msd-media/30min`), jamais varié pour rester cohérent avec le tracking existant
+- Toujours le même lien (`https://msd-media.com/reserver-un-appel/`), jamais varié pour rester cohérent avec le tracking existant
 - Reformuler le texte du CTA selon le sujet de l'article (pas un copier-coller générique) — il doit répondre directement à la question que l'article vient de traiter

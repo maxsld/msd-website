@@ -450,7 +450,8 @@
       const text = toText(target.textContent || target.getAttribute("aria-label") || target.getAttribute("title"));
       const classes = toText(target.className);
       const ctaLocation = getSectionLabel(target);
-      const isBooking = /cal\.com/i.test(href);
+      // Réservation : la page /reserver-un-appel/ (et son ancre #creneau), ou Cal.com en direct
+      const isBooking = /cal\.com|\/reserver-un-appel|^#creneau$/i.test(href);
       const isWhatsApp = /wa\.me/i.test(href);
       const isEmail = href.startsWith("mailto:");
       const isPhone = href.startsWith("tel:");
@@ -2129,7 +2130,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "/affiliation",
     "/configurateur",
     "/confirmation",
-    "/confirmation-reservation-appel"
+    "/confirmation-reservation-appel",
+    "/reserver-un-appel"
   ];
   var shouldRenderCalPopup = !blockedPrefixes.some(function(prefix) {
     return path === prefix || path.indexOf(prefix + "/") === 0;

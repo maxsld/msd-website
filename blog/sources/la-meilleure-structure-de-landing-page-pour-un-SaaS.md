@@ -174,4 +174,4 @@ Cette structure fonctionne car elle suit la **logique naturelle de conversion** 
 **MSD Media** conçoit des [landing pages sur mesure](https://msd-media.com/creation-landing-page/), codées à la main ou développées sur Framer, pensées pour le **SEO, la conversion et la rapidité**.  
 Chaque page est optimisée pour le parcours utilisateur et les performances techniques.
 
-[Réserver un appel stratégique gratuit](https://cal.com/maxens-soldan-msd-media/30min) pour créer une landing page SaaS performante, adaptée à votre produit et à votre audience.
+[Réserver un appel stratégique gratuit](https://msd-media.com/reserver-un-appel/) pour créer une landing page SaaS performante, adaptée à votre produit et à votre audience.

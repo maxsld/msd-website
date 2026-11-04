@@ -1,7 +1,7 @@
 // Assistant MSD Media : barre de question (élément [data-msd-ask]), bouton flottant et fenêtre de discussion.
 // Les réponses viennent de /api/chat (Groq), à partir de la base de connaissances du site.
 (() => {
-  const BOOKING = 'https://cal.com/maxens-soldan-msd-media/30min';
+  const BOOKING = 'https://msd-media.com/reserver-un-appel/';
   const EN = (document.documentElement.lang || '').toLowerCase().startsWith('en');
   const T = EN ? {
     suggestions: ['What do you do exactly?', 'How much does a website cost?', 'Do you work with doctors?', 'How long does it take?', 'How do I show up on ChatGPT?'],

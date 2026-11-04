@@ -109,7 +109,7 @@ Ce qui rassure un patient sur votre site, ce sont des informations vérifiables 
 
 Nous concevons des sites pour les [médecins](https://msd-media.com/site-web-medecin/), les [cabinets de médecine esthétique](https://msd-media.com/site-web-medecine-esthetique/), les [dermatologues](https://msd-media.com/site-web-dermatologue/) et les [cabinets dentaires](https://msd-media.com/site-web-dentiste/). Si votre site affiche des avis de patients, un widget Google ou des formulations promotionnelles, nous faisons un audit de conformité : ce qui vous expose, ce qu'il faut retirer, et ce qu'il faut ajouter pour rassurer vos patients autrement.
 
-[Réserver un audit de votre site →](https://cal.com/maxens-soldan-msd-media/30min)
+[Réserver un audit de votre site →](https://msd-media.com/reserver-un-appel/)
 
 ## Questions fréquentes
 

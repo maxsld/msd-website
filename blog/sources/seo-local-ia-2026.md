@@ -150,4 +150,4 @@ Non. Le SEO local est plus important que jamais — les IA s'appuient sur les si
 Dans les petites villes, la concurrence pour apparaître dans les AI Overviews est moindre. C'est une opportunité : avec peu d'efforts, vous pouvez dominer les réponses IA pour votre secteur dans votre ville.
 
 **MSD Media aide-t-il les PME locales avec le SEO local IA ?**
-Oui. Nous créons des sites optimisés pour le SEO local ET le GEO, avec schemas LocalBusiness, contenu local structuré et accompagnement GBP. [Discutons de votre situation.](https://cal.com/maxens-soldan-msd-media/30min)
+Oui. Nous créons des sites optimisés pour le SEO local ET le GEO, avec schemas LocalBusiness, contenu local structuré et accompagnement GBP. [Discutons de votre situation.](https://msd-media.com/reserver-un-appel/)

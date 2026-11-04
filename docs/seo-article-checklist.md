@@ -29,7 +29,7 @@ keyword: "[mot-clé cible exact]"
 ---
 ```
 
-Structure : intro accrocheur (80-100 mots) → 3-5 sections H2 (200-250 mots chacune) → conclusion/récap → CTA vers `https://cal.com/maxens-soldan-msd-media/30min`.
+Structure : intro accrocheur (80-100 mots) → 3-5 sections H2 (200-250 mots chacune) → conclusion/récap → CTA vers `https://msd-media.com/reserver-un-appel/`.
 
 ## 3. Lancer le build (génère automatiquement le reste de la checklist)
 

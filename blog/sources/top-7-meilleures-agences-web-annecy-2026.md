@@ -132,4 +132,4 @@ Quelle que soit l'agence, demandez systématiquement des références vérifiabl
 
 ---
 
-**Vous cherchez une agence web à Annecy capable de livrer en 21 jours ?** [Réservez un appel découverte gratuit avec MSD Media](https://cal.com/maxens-soldan-msd-media/30min) — on analyse votre projet et on vous dit exactement ce que ça implique, sans engagement.
+**Vous cherchez une agence web à Annecy capable de livrer en 21 jours ?** [Réservez un appel découverte gratuit avec MSD Media](https://msd-media.com/reserver-un-appel/) — on analyse votre projet et on vous dit exactement ce que ça implique, sans engagement.

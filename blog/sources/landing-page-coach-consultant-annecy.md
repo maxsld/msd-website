@@ -465,7 +465,7 @@ Vous, vous faites ce que vous faites de mieux : accompagner vos clients.
 ---
 
 Vous voulez une landing page qui génère des clients qualifiés à Annecy ?  
-👉 [Réservez votre appel stratégique gratuit](https://cal.com/maxens-soldan-msd-media/30min)
+👉 [Réservez votre appel stratégique gratuit](https://msd-media.com/reserver-un-appel/)
 
 On analyse votre positionnement.  
 On définit votre message clé.  

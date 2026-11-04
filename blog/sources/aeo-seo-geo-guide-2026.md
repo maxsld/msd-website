@@ -139,4 +139,4 @@ Pas nécessairement. Beaucoup de techniques GEO (schemas, contenu structuré, co
 C'est le principal défi. Vous pouvez tester manuellement en posant des questions à ChatGPT, Perplexity et Gemini sur votre domaine. Des outils comme Profound ou Otterly.AI commencent à automatiser ce suivi.
 
 **MSD Media travaille-t-il le GEO pour ses clients ?**
-Oui. Nos sites intègrent par défaut les schemas Organization, LocalBusiness et FAQPage, et nous créons du contenu structuré optimisé pour les moteurs génératifs. [Parlons de votre projet.](https://cal.com/maxens-soldan-msd-media/30min)
+Oui. Nos sites intègrent par défaut les schemas Organization, LocalBusiness et FAQPage, et nous créons du contenu structuré optimisé pour les moteurs génératifs. [Parlons de votre projet.](https://msd-media.com/reserver-un-appel/)

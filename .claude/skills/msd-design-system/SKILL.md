@@ -138,7 +138,7 @@ sont forcés à `0.2rem` via les overrides `.home-page .hero__btn--primary/secon
   <h1 class="hero__title"><span>Titre principal</span></h1>
   <p class="hero__subheading">Sous-titre d'une phrase, contexte de la page.</p>
   <div class="hero__actions" aria-label="Actions principales">
-    <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank">Réserver un appel</a>
+    <a class="hero__btn hero__btn--primary" href="https://msd-media.com/reserver-un-appel/">Réserver un appel</a>
     <a class="hero__btn hero__btn--secondary" href="...">Action secondaire</a>
   </div>
 </section>
@@ -363,7 +363,7 @@ cette classe est LA cause n°1 de texte invisible (texte sombre sur fond sombre)
         <option value="en">🇬🇧 EN</option>
       </select>
     </label>
-    <a href="https://cal.com/maxens-soldan-msd-media/30min" class="contact-button" target="_blank" data-i18n="nav_call">Réserver un appel</a>
+    <a href="https://msd-media.com/reserver-un-appel/" class="contact-button" data-i18n="nav_call">Réserver un appel</a>
     <a href="https://wa.me/33783141287" class="whatsapp-nav-button" target="_blank" aria-label="Chat on WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
@@ -429,7 +429,7 @@ uniquement les chemins relatifs `../assets/...` selon la profondeur du dossier d
         <li><a href="https://msd-media.com/a-propos/" data-i18n="footer_about">À propos</a></li>
         <li><a href="https://msd-media.com/realisations/" data-i18n="footer_references">Références</a></li>
         <li><a href="https://msd-media.com/tarifs/" data-i18n="nav_pricing">Tarifs</a></li>
-        <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call">Réserver un appel</a></li>
+        <li><a href="https://msd-media.com/reserver-un-appel/" data-i18n="footer_book_call">Réserver un appel</a></li>
         <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
         <li><a href="https://msd-media.com/affiliation/" data-i18n="footer_affiliate">Apporteur d'affaires</a></li>
       </ul>

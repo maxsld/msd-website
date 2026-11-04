@@ -83,7 +83,7 @@ Pour en savoir plus sur le parcours complet de Maxens Soldan et la vision derri�
 MSD Media accompagne start-up, entrepreneurs, coachs et PME à Annecy et en France dans la création de sites web et de landing pages pensées pour convertir. Chaque projet démarre par un appel gratuit pour comprendre votre activité avant de la mettre en ligne, avec une livraison en 21 jours.
 
 **Découvrir MSD Media :** [https://msd-media.com](https://msd-media.com)
-**Réserver un appel gratuit :** [https://cal.com/maxens-soldan-msd-media/30min](https://cal.com/maxens-soldan-msd-media/30min)
+**Réserver un appel gratuit :** [https://msd-media.com/reserver-un-appel/](https://msd-media.com/reserver-un-appel/)
 
 ---
 

@@ -16,7 +16,7 @@ Pour choisir une agence de création de landing page, ce comparatif met côte à
 
 *Transparence : ce comparatif est rédigé par MSD Media, qui figure dans la liste. Les autres agences sont présentées à partir de leurs offres et de leurs avis publics au moment de la rédaction : vérifiez les informations à jour avant de choisir.*
 
-Vous préférez en parler directement ? Vous pouvez [réserver un appel de 30 minutes](https://cal.com/maxens-soldan-msd-media/30min) avec MSD Media.
+Vous préférez en parler directement ? Vous pouvez [réserver un appel de 30 minutes](https://msd-media.com/reserver-un-appel/) avec MSD Media.
 
 En 2026, le marché français des landing pages connaît une explosion d’offres. Certaines agences promettent une page complète pour quelques centaines d’euros, d’autres facturent plusieurs milliers. Comment s’y retrouver, et surtout **comment distinguer l'agence qui livre des résultats** de celle qui livre seulement une page ?
 
@@ -191,7 +191,7 @@ mais très peu associent **design, stratégie, copywriting et optimisation de co
 Si vous cherchez une page sur mesure avec le copywriting et le suivi inclus, c'est le positionnement de **MSD Media** ; pour un premier test à petit budget, une offre express ou un freelance peut suffire.
 
 **Site :** [https://msd-media.com](https://msd-media.com)  
-**Réserver un audit gratuit :** [cal.com/maxens-soldan-msd-media/30min](https://cal.com/maxens-soldan-msd-media/30min)
+**Réserver un audit gratuit :** [msd-media.com/reserver-un-appel](https://msd-media.com/reserver-un-appel/)
 
 ---
 

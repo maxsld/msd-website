@@ -207,4 +207,4 @@ Le plus souvent, parce qu'il est cité par davantage de sources tierces (presse,
 
 ### MSD Media peut-il aider à apparaître dans les IA ?
 
-Oui. Nous implémentons les schemas, structurons le contenu et travaillons la présence en ligne pour maximiser les chances d'être cité par ChatGPT, Perplexity et Google AI. [Réservez un appel.](https://cal.com/maxens-soldan-msd-media/30min)
+Oui. Nous implémentons les schemas, structurons le contenu et travaillons la présence en ligne pour maximiser les chances d'être cité par ChatGPT, Perplexity et Google AI. [Réservez un appel.](https://msd-media.com/reserver-un-appel/)

@@ -177,4 +177,4 @@ Une refonte de site internet réussie repose sur trois piliers : un **audit chif
 
 Chez MSD Media, chaque refonte inclut l'audit, le plan de redirections complet et 3 mois de suivi post-lancement — parce qu'un site plus beau qui perd son trafic est un échec, quel que soit son design.
 
-**Vous envisagez une refonte ?** [Réservez un audit stratégique gratuit de 30 minutes](https://cal.com/maxens-soldan-msd-media/30min) : nous analysons votre site existant et vous disons honnêtement si une refonte se justifie — ou pas.
+**Vous envisagez une refonte ?** [Réservez un audit stratégique gratuit de 30 minutes](https://msd-media.com/reserver-un-appel/) : nous analysons votre site existant et vous disons honnêtement si une refonte se justifie — ou pas.

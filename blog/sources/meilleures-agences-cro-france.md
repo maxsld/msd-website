@@ -68,7 +68,7 @@ Chaque page est codée à la main ou sur Framer, optimisée SEO et conversion.
 ### Aucune template. Zéro générique.
 Chaque projet est **100% sur-mesure**, adapté au secteur, à la cible et aux objectifs business du client.
 
-👉 [Réserver un appel stratégique gratuit avec MSD Media](https://cal.com/maxens-soldan-msd-media/30min)
+👉 [Réserver un appel stratégique gratuit avec MSD Media](https://msd-media.com/reserver-un-appel/)
 
 ---
 
@@ -133,7 +133,7 @@ Trois critères décisifs :
 **MSD Media** conçoit des landing pages qui transforment le trafic en clients qualifiés.  
 Chaque projet est mesuré, testé et optimisé selon la méthode ECHO™.
 
-👉 [Réserver un audit gratuit](https://cal.com/maxens-soldan-msd-media/30min) pour découvrir comment augmenter votre taux de conversion de manière mesurable et durable.
+👉 [Réserver un audit gratuit](https://msd-media.com/reserver-un-appel/) pour découvrir comment augmenter votre taux de conversion de manière mesurable et durable.
 
 ---
 

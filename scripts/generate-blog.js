@@ -908,7 +908,7 @@ function renderSiteHeader() {
             <li><a href="https://msd-media.com/en/" data-lang="en" hreflang="en" lang="en"><svg class="flag-fr" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><clipPath id="flag-uk-clip"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#flag-uk-clip)" stroke="#c8102e" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6"/></svg>EN</a></li>
           </ul>
         </div>
-        <a class="contact-button" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" rel="noopener" data-i18n="nav_call">Réserver un appel</a>
+        <a class="contact-button" href="https://msd-media.com/reserver-un-appel/" data-i18n="nav_call">Réserver un appel</a>
         <a class="whatsapp-nav-button" href="https://wa.me/33783141287" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
@@ -1044,7 +1044,7 @@ function renderFullFooter(assetPrefix) {
           <li><a href="https://msd-media.com/creation-landing-page/" data-i18n="footer_landing_page">Création de landing page</a></li>
           <li><a href="https://msd-media.com/creation-site-web-annecy/" data-i18n="footer_site_annecy">Création de site web Annecy</a></li>
           <li><a href="https://msd-media.com/contact/" data-i18n="footer_contact_commercial">Contact commercial</a></li>
-          <li><a href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" data-i18n="footer_book_call" rel="noopener noreferrer">Réserver un appel</a></li>
+          <li><a href="https://msd-media.com/reserver-un-appel/" data-i18n="footer_book_call">Réserver un appel</a></li>
         </ul>
       </div>
       <div class="footer-column">
@@ -1340,7 +1340,7 @@ function renderBlogIndex(posts) {
       <h1 class="hero__title"><span>Conseils, analyses et stratégies</span></h1>
       <p class="hero__subheading">Des guides concrets pour mieux comprendre le web, améliorer votre visibilité et transformer votre site en levier de croissance.</p>
       <div class="hero__actions" aria-label="Actions principales">
-        <a class="hero__btn hero__btn--primary" href="https://cal.com/maxens-soldan-msd-media/30min" target="_blank" rel="noopener noreferrer">Réserver un appel</a>
+        <a class="hero__btn hero__btn--primary" href="https://msd-media.com/reserver-un-appel/">Réserver un appel</a>
         <a class="hero__btn hero__btn--secondary" href="/agence-web-annecy/">Découvrir l'agence</a>
       </div>
       ${renderPreferredSourceHtml('hero')}

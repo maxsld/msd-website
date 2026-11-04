@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = {**json.loads((ROOT / 'data' / 'sectors.json').read_text()), **json.loads((ROOT / 'data' / 'services.json').read_text())}
 TEMPLATES = {'fr': (ROOT / 'index.html').read_text(), 'en': (ROOT / 'en' / 'index.html').read_text()}
 TEMPLATE = TEMPLATES['fr']
-CAL = 'https://cal.com/maxens-soldan-msd-media/30min'
+CAL = 'https://msd-media.com/reserver-un-appel/'
 
 esc = html.escape
 strip = lambda h: html.unescape(re.sub(r'<[^>]+>', '', h)).strip()

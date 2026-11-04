@@ -67,7 +67,7 @@ CONTEXTE MSD MEDIA :
 - Livraison en 21 jours
 - Clients : France, Suisse, Belgique
 - Ton : direct, expert, sans bullshit marketing. Jamais condescendant.
-- CTA : toujours vers https://cal.com/maxens-soldan-msd-media/30min
+- CTA : toujours vers https://msd-media.com/reserver-un-appel/
 
 FORMAT OBLIGATOIRE (retourne UNIQUEMENT le markdown, rien d'autre) :
 
@@ -108,7 +108,7 @@ keyword: "${keyword}"
 
 **Vous cherchez ${keyword.split(' ').slice(0, 3).join(' ')} ?** [Phrase de transition naturelle vers le CTA]
 
-[Réserver un appel →](https://cal.com/maxens-soldan-msd-media/30min)
+[Réserver un appel →](https://msd-media.com/reserver-un-appel/)
 
 RÈGLES :
 - Minimum 800 mots de contenu total

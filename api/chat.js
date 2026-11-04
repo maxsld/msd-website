@@ -14,7 +14,7 @@ let available = null;
 const PRICE_INTENT = /prix|tarif|co[uû]te?|co[uû]ts|budget|\bcher\b|devis|€|euros?|combien(?!\s+de\s+(temps|jours|semaines|mois|pages))|price|pricing|cost|how much|quote|\brates?\b/i;
 const BOOKING_INTENT = /devis|projet|d[ée]marrer|commencer|lancer|rendez|rdv|appel|appeler|contact|joindre|parler|[ée]changer|disponib|travailler ensemble|quote|project|start|call|book|meeting|contact|reach/i;
 const FALLBACK =
-  "Je ne peux pas répondre pour le moment. Le plus simple : [réservez un appel de 30 minutes](https://cal.com/maxens-soldan-msd-media/30min) avec Maxens, ou écrivez à maxens.soldan@msd-media.com.";
+  "Je ne peux pas répondre pour le moment. Le plus simple : [réservez un appel de 30 minutes](https://msd-media.com/reserver-un-appel/) avec Maxens, ou écrivez à maxens.soldan@msd-media.com.";
 
 // Limite simple par adresse IP (par instance serverless) : 20 messages par tranche de 10 minutes.
 const hits = new Map();
@@ -67,7 +67,7 @@ export default async function handler(req, res) {
 
   const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'inconnue';
   if (limited(ip)) {
-    return res.status(429).json({ reply: "Vous avez posé beaucoup de questions d'un coup. Pour aller plus loin, [réservez un appel](https://cal.com/maxens-soldan-msd-media/30min) avec Maxens." });
+    return res.status(429).json({ reply: "Vous avez posé beaucoup de questions d'un coup. Pour aller plus loin, [réservez un appel](https://msd-media.com/reserver-un-appel/) avec Maxens." });
   }
 
   let body = req.body;
@@ -92,7 +92,7 @@ export default async function handler(req, res) {
     // et jamais s'il l'a déjà été dans les 3 dernières réponses.
     const lastUser = history[history.length - 1].content;
     const intent = BOOKING_INTENT.test(lastUser);
-    const recentBooking = history.filter((m) => m.role === 'assistant').slice(-3).some((m) => m.content.includes('cal.com'));
+    const recentBooking = history.filter((m) => m.role === 'assistant').slice(-3).some((m) => /cal\.com|reserver-un-appel/.test(m.content));
     const allowBooking = intent && !recentBooking;
     const priceAsked = PRICE_INTENT.test(lastUser);
     const hint = [allowBooking ? BOOKING_HINT.allowed : BOOKING_HINT.never, priceAsked ? '' : PRICE_HINT].filter(Boolean).join('\n');

@@ -64,4 +64,4 @@ Chez MSD Media, on ne propose que du sur-mesure parce que c'est ce qui correspon
 
 ---
 
-**Tu hésites encore entre les deux options pour ton projet à Annecy ?** [Réserve un appel découverte gratuit](https://cal.com/maxens-soldan-msd-media/30min) — on regarde ton besoin concret et on te dit honnêtement ce qui convient, même si la réponse n'est pas "sur mesure".
+**Tu hésites encore entre les deux options pour ton projet à Annecy ?** [Réserve un appel découverte gratuit](https://msd-media.com/reserver-un-appel/) — on regarde ton besoin concret et on te dit honnêtement ce qui convient, même si la réponse n'est pas "sur mesure".

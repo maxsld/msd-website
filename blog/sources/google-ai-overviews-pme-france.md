@@ -120,4 +120,4 @@ Non, il n'existe pas de mécanisme de retrait. Vous pouvez empêcher Google d'in
 Non. Les AI Overviews apparaissent avec les résultats naturels. Google Ads continue d'afficher ses annonces séparément.
 
 **MSD Media crée-t-il des sites optimisés pour les AI Overviews ?**
-Oui. Chaque site que nous créons est structuré pour maximiser les chances d'apparition dans les AI Overviews : schemas, FAQ, contenu ciblé par ville, données NAP cohérentes. [Prenez rendez-vous.](https://cal.com/maxens-soldan-msd-media/30min)
+Oui. Chaque site que nous créons est structuré pour maximiser les chances d'apparition dans les AI Overviews : schemas, FAQ, contenu ciblé par ville, données NAP cohérentes. [Prenez rendez-vous.](https://msd-media.com/reserver-un-appel/)

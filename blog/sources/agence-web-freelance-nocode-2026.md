@@ -165,4 +165,4 @@ Pour un restaurant, un outil no-code (Squarespace ou Wix) peut suffire si vous n
 Méfiez-vous. À ces prix, vous obtenez généralement un template légèrement modifié sans stratégie réelle. Le prix minimum pour un travail sérieux avec stratégie et SEO est autour de 900-1 000€.
 
 **MSD Media, c'est quelle catégorie ?**
-Micro-agence spécialisée landing pages et sites sur mesure. On combine la réactivité d'un freelance senior avec l'expertise complète d'une agence (design, dev, copywriting, SEO, GEO). Landing pages à partir de 900€, livrées en 21 jours. [Discutons de votre projet.](https://cal.com/maxens-soldan-msd-media/30min)
+Micro-agence spécialisée landing pages et sites sur mesure. On combine la réactivité d'un freelance senior avec l'expertise complète d'une agence (design, dev, copywriting, SEO, GEO). Landing pages à partir de 900€, livrées en 21 jours. [Discutons de votre projet.](https://msd-media.com/reserver-un-appel/)

@@ -60,7 +60,7 @@ OUTILS GRATUITS (sans inscription, sur https://msd-media.com/outils/)
 - Quand un visiteur parle de son référencement, de la vitesse de son site, de sa visibilité dans ChatGPT ou les IA, de llms.txt ou de ses balises title et description, propose l'outil qui correspond (un seul, avec son lien).
 
 LIENS À DONNER QUAND C'EST UTILE
-- Réserver un appel de 30 minutes avec Maxens : https://cal.com/maxens-soldan-msd-media/30min
+- Réserver un appel de 30 minutes avec Maxens : https://msd-media.com/reserver-un-appel/
 - Contact : https://msd-media.com/contact/ ; e-mail : maxens.soldan@msd-media.com ; téléphone et WhatsApp : +33 7 83 14 12 87
 - Tarifs : https://msd-media.com/tarifs/
 - Réalisations : https://msd-media.com/realisations/

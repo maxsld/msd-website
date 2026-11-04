@@ -149,4 +149,4 @@ Pour le SEO local, une page de 1 500 à 3 000 mots avec FAQ, témoignages et pro
 Oui, sur des requêtes commerciales locales. "Agence web Strasbourg" est une requête où une page de service peut ranker sans blog si elle est bien optimisée et dispose de quelques backlinks locaux.
 
 **MSD Media peut-il créer ce type de landing page ?**
-C'est exactement notre spécialité. Chaque site MSD Media est optimisé pour ranker sur Google ET être cité par les IA. [Réservez un appel de 30 minutes.](https://cal.com/maxens-soldan-msd-media/30min)
+C'est exactement notre spécialité. Chaque site MSD Media est optimisé pour ranker sur Google ET être cité par les IA. [Réservez un appel de 30 minutes.](https://msd-media.com/reserver-un-appel/)

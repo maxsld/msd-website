@@ -1,0 +1,55 @@
+/* Page /reserver-un-appel/ : texte et réassurance à gauche, calendrier Cal.com à droite,
+   puis logos clients, avis et FAQ. Chargée après theme-v2, home-v2 et sections-v2. */
+.booking-page { --gutter: 80px; --section-gap: 170px; }
+@media (max-width: 1280px) { .booking-page { --gutter: 40px; } }
+@media (max-width: 992px) { .booking-page { --section-gap: 100px; } }
+@media (max-width: 820px) { .booking-page { --gutter: 20px; } }
+.booking-page .container { width: min(1280px, calc(100% - 2 * var(--gutter))); max-width: none; padding: 0; }
+
+/* ---------- Hero ---------- */
+.booking-hero { padding: 64px 0 0; }
+.booking-hero__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; align-items: start; }
+.booking-hero__copy { position: sticky; top: 32px; padding-top: 8px; }
+.booking-hero h1 { margin-top: 1.75rem; font-size: 3.8rem; line-height: 62px; letter-spacing: -2px; }
+.booking-hero__sub { margin-top: 1.5rem; font-size: 1.25rem; line-height: 1.6; max-width: 32ch; }
+.booking-hero__list { list-style: none; display: grid; gap: .9rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+.booking-hero__list li { display: flex; gap: .75rem; align-items: flex-start; font-size: 1rem; line-height: 1.45; color: var(--text-dark); }
+.booking-hero__list svg { flex: none; width: 20px; height: 20px; margin-top: 1px; padding: 3px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); }
+.booking-hero__person { display: flex; align-items: center; gap: .9rem; margin-top: 2.25rem; }
+/* Photo paysage (casquette msd.) recadrée sur le visage dans une pastille ronde */
+.booking-hero__avatar { position: relative; flex: none; width: 56px; height: 56px; border-radius: 50%; overflow: hidden; background: #e6e6e4; }
+.booking-hero__avatar img { position: absolute; left: -67px; top: -20px; width: 200px; max-width: none; height: auto; }
+.booking-hero__person p { font-size: .9rem; line-height: 1.35; }
+.booking-hero__person strong { display: block; font-family: var(--font-heading); font-weight: 500; font-size: 1rem; color: var(--heading); }
+.booking-hero__contact { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.25rem; margin-top: 1.5rem; font-size: .95rem; }
+.booking-hero__contact a { display: inline-flex; align-items: center; gap: .45rem; color: var(--heading); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--border); transition: text-decoration-color .2s ease; }
+.booking-hero__contact a:hover { text-decoration-color: currentColor; }
+.booking-hero__contact .fa-whatsapp { font-size: 1.15rem; color: #25d366; }
+
+/* ---------- Carte du calendrier ---------- */
+.booking-card { padding: 28px; border: 1px solid var(--border); border-radius: var(--radius); background: #fff; box-shadow: 0 1px 2px rgba(4, 8, 21, .04), 0 24px 60px -32px rgba(4, 8, 21, .18); scroll-margin-top: 24px; }
+.booking-card__title { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; letter-spacing: -0.03em; color: var(--heading); }
+.booking-card__frame { margin-top: 1rem; border-radius: calc(var(--radius) - .25rem); overflow: hidden; background: var(--tile); }
+.booking-card__frame iframe { display: block; width: 100%; height: 740px; border: 0; background: #fff; }
+.booking-card__fallback { margin-top: 1rem; font-size: .85rem; text-align: center; }
+.booking-card__fallback a { color: var(--heading); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Sections suivantes : mêmes écarts que la home ---------- */
+.booking-logos { padding-top: var(--section-gap); }
+.booking-page .section-reviews:not(#_) { max-width: none; margin: 0; padding: var(--section-gap) 0 0; }
+.booking-reviews .avis-carousel-container { margin: 24px 0 0; }
+.booking-page .ai-proof { padding-top: var(--section-gap); }
+.booking-page .faq:not(#_) { padding: var(--section-gap) 0 174px; }
+
+@media (max-width: 1100px) {
+  .booking-hero__grid { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .booking-hero__copy { position: static; }
+  .booking-hero__sub { max-width: 46ch; }
+}
+@media (max-width: 820px) {
+  .booking-hero { padding-top: 40px; }
+  .booking-hero h1 { font-size: 2.6rem; line-height: 1.08; letter-spacing: -1.2px; }
+  .booking-hero__sub { font-size: 1.1rem; }
+  .booking-card { padding: 16px; }
+  .booking-card__frame iframe { height: 760px; }
+}

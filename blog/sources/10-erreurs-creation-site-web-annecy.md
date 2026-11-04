@@ -213,7 +213,7 @@ C'est :
 ---
 
 Tu veux éviter ces erreurs et créer un site qui **rapporte vraiment** ?  
-👉 [Réserve ton appel stratégique gratuit](https://cal.com/maxens-soldan-msd-media/30min)
+👉 [Réserve ton appel stratégique gratuit](https://msd-media.com/reserver-un-appel/)
 
 On analyse ton projet.  
 On te dit ce qui marchera (et ce qui ne marchera pas).  

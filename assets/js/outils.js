@@ -1,7 +1,7 @@
 // Outils gratuits (/outils/) : audit express, « ChatGPT peut-il lire mon site ? », générateur de llms.txt.
 // Les pages déclarent leur outil avec data-tool="audit" | "ia" | "llms" ; l'analyse passe par /api/outils.
 (() => {
-  const BOOKING = 'https://cal.com/maxens-soldan-msd-media/30min';
+  const BOOKING = 'https://msd-media.com/reserver-un-appel/';
   const track = (event, extra = {}) => { try { (window.dataLayer = window.dataLayer || []).push({ event, ...extra }); } catch {} };
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const normalize = (v) => { const t = v.trim(); return t && !/^https?:\/\//i.test(t) ? `https://${t}` : t; };
@@ -34,7 +34,7 @@
   };
   const cta = (text) => `<div class="tool-cta">
     <p>${esc(text)}</p>
-    <a class="hero__btn hero__btn--primary" href="${BOOKING}" target="_blank" rel="noopener noreferrer" data-tool-cta>Faire auditer mon site par Maxens</a>
+    <a class="hero__btn hero__btn--primary" href="${BOOKING}" data-tool-cta>Faire auditer mon site par Maxens</a>
   </div>`;
   const loading = (steps) => `<div class="tool-loading"><span class="tool-spinner" aria-hidden="true"></span><ul>${steps.map((s, i) => `<li data-step="${i}">${esc(s)}</li>`).join('')}</ul></div>`;
   const errorBox = (msg) => `<div class="tool-error"><p>${esc(msg)}</p></div>`;

@@ -2362,40 +2362,59 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 })();
 
-// Titre de l'onglet quand le visiteur part sur un autre onglet : il clignote entre
-// « 👋 Vous êtes toujours là ? » et le vrai titre, qui revient dès le retour.
+// Onglet quitté depuis 1 min : le favicon devient 👋 et le titre « Vous êtes toujours là ? ». Les deux
+// clignotent avec le vrai favicon et le vrai titre jusqu'au retour, ou au plus 5 min après le départ.
 // Pas sur la réservation : on y ouvre souvent son agenda à côté.
 (function () {
   if (/^\/(?:reserver-un-appel|en\/book-a-call)(?:\/|$)/.test(window.location.pathname)) return;
 
-  var awayTitle = document.documentElement.lang === "en" ? "👋 Are you still there?" : "👋 Vous êtes toujours là ?";
+  var awayTitle = document.documentElement.lang === "en" ? "Are you still there?" : "Vous êtes toujours là ?";
+  var awayIcon = "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="86" text-anchor="middle" dominant-baseline="central">👋</text></svg>');
+  var icons = Array.prototype.slice.call(document.querySelectorAll('link[rel~="icon"]'));
+  var originalIcons = icons.map(function (link) { return { href: link.href, type: link.type }; });
   var originalTitle = document.title;
+  var AWAY_START = 60 * 1000;
+  var AWAY_STOP = 5 * 60 * 1000;
   var startTimer = null;
   var rotateTimer = null;
+  var stopTimer = null;
   var showAway = false;
+
+  var render = function (away) {
+    document.title = away ? awayTitle : originalTitle;
+    icons.forEach(function (link, i) {
+      link.type = away ? "image/svg+xml" : originalIcons[i].type;
+      link.href = away ? awayIcon : originalIcons[i].href;
+    });
+  };
 
   var stop = function () {
     clearTimeout(startTimer);
+    clearTimeout(stopTimer);
     clearInterval(rotateTimer);
-    startTimer = rotateTimer = null;
+    startTimer = rotateTimer = stopTimer = null;
   };
 
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
       originalTitle = document.title;
-      // Petit délai : pas de clignotement quand on passe vite d'un onglet à l'autre
+      // Démarre après 1 min d'absence, s'arrête après 5 min (onglet sans doute oublié) : le vrai titre revient
       startTimer = setTimeout(function () {
         // Chrome limite les minuteurs des onglets en arrière-plan à 1 par seconde : 1 s est le rythme le plus rapide fiable
         showAway = true;
-        document.title = awayTitle;
+        render(true);
         rotateTimer = setInterval(function () {
           showAway = !showAway;
-          document.title = showAway ? awayTitle : originalTitle;
+          render(showAway);
         }, 1000);
-      }, 1500);
+        stopTimer = setTimeout(function () {
+          stop();
+          render(false);
+        }, AWAY_STOP - AWAY_START);
+      }, AWAY_START);
     } else {
       stop();
-      document.title = originalTitle;
+      render(false);
     }
   });
 })();

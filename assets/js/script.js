@@ -2362,7 +2362,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 })();
 
-// Onglet quitté depuis 1 min : le favicon devient 👋 et le titre « Vous êtes toujours là ? ». Les deux
+// Onglet quitté depuis 17 s : le favicon devient 👋 et le titre « Vous êtes toujours là ? ». Les deux
 // clignotent avec le vrai favicon et le vrai titre jusqu'au retour, ou au plus 5 min après le départ.
 // Pas sur la réservation : on y ouvre souvent son agenda à côté.
 (function () {
@@ -2373,7 +2373,7 @@ document.addEventListener("DOMContentLoaded", () => {
   var icons = Array.prototype.slice.call(document.querySelectorAll('link[rel~="icon"]'));
   var originalIcons = icons.map(function (link) { return { href: link.href, type: link.type }; });
   var originalTitle = document.title;
-  var AWAY_START = 60 * 1000;
+  var AWAY_START = 17 * 1000;
   var AWAY_STOP = 5 * 60 * 1000;
   var startTimer = null;
   var rotateTimer = null;
@@ -2398,7 +2398,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
       originalTitle = document.title;
-      // Démarre après 1 min d'absence, s'arrête après 5 min (onglet sans doute oublié) : le vrai titre revient
+      // Démarre après 17 s d'absence, s'arrête après 5 min (onglet sans doute oublié) : le vrai titre revient
       startTimer = setTimeout(function () {
         // Chrome limite les minuteurs des onglets en arrière-plan à 1 par seconde : 1 s est le rythme le plus rapide fiable
         showAway = true;

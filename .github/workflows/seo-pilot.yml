@@ -64,6 +64,10 @@ jobs:
             node scripts/seo-pilot-trends.mjs
           fi
 
+      # Croise cibles, besoins, lieux et intentions (data/ai-prompts.json) et mesure ce que le site couvre.
+      - name: Couverture des prompts IA
+        run: python3 scripts/ai-prompt-coverage.py
+
       - name: Enregistrer les relevés
         run: |
           git config user.name "github-actions[bot]"

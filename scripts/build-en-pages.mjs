@@ -102,7 +102,8 @@ const META_TRANSLATE = /^(description|og:title|og:description|og:image:alt|twitt
 const hasLetters = (s) => /[A-Za-zÀ-ÿ]{2}/.test(s.replace(/&[a-z#0-9]+;/gi, ''));
 
 // Zones remplacées en bloc par celles de /en/index.html : pas de traduction à faire dedans
-const isReplacedZone = (el) => (el.tag === 'header' && attr(el, 'id') === 'nav') || el.tag === 'footer'
+// (footer du site seulement : les pages légales ont aussi un <footer class="card"> à traduire)
+const isReplacedZone = (el) => (el.tag === 'header' && attr(el, 'id') === 'nav') || (el.tag === 'footer' && hasClass(el, 'site-footer'))
   || hasClass(el, 'top-announcement') || attr(el, 'id') === 'cookie-consent' || hasClass(el, 'lang-switch');
 
 // Icônes et images d'un bloc : remplacées par {{0}}, {{1}}… dans le texte à traduire, remises ensuite
@@ -228,7 +229,7 @@ const findEl = (tree, test) => { let found = null; const walk = (e) => { if (fou
 const enBlock = (test) => { const el = findEl(homeTree, test); if (!el) throw new Error('bloc introuvable dans /en/index.html'); return enHome.slice(el.start, el.end); };
 const EN_PARTS = {
   header: enBlock((e) => e.tag === 'header' && attr(e, 'id') === 'nav'),
-  footer: enBlock((e) => e.tag === 'footer'),
+  footer: enBlock((e) => e.tag === 'footer' && hasClass(e, 'site-footer')),
   announcement: enBlock((e) => hasClass(e, 'top-announcement')),
   cookie: enBlock((e) => attr(e, 'id') === 'cookie-consent'),
 };
@@ -244,7 +245,8 @@ for (const [frPath, enPath] of Object.entries(PAGES)) {
   const frFile = fileOf(frPath);
   if (!fs.existsSync(frFile)) { console.warn('absent :', frPath); continue; }
   const frUrl = SITE + frPath, enUrl = SITE + enPath;
-  let html = read(frFile);
+  // Blocs « MSD Media en bref » des pages légales : écrits directement en anglais par scripts/build-ai-doors.py
+  let html = read(frFile).replace(/(<!-- ai-door(?:-ld)?:start -->)[\s\S]*?(<!-- ai-door(?:-ld)?:end -->)/g, '$1$2');
   const tree = parse(html);
   const units = collect(html, tree);
 
@@ -291,7 +293,7 @@ for (const [frPath, enPath] of Object.entries(PAGES)) {
   // Zones communes reprises de la home anglaise
   const swapZone = (test, part) => { const el = findEl(parse(html), test); if (el) html = html.slice(0, el.start) + part + html.slice(el.end); };
   swapZone((e) => e.tag === 'header' && attr(e, 'id') === 'nav', relocateAll(EN_PARTS.header, '/en/', enPath));
-  swapZone((e) => e.tag === 'footer', relocateAll(EN_PARTS.footer, '/en/', enPath));
+  swapZone((e) => e.tag === 'footer' && hasClass(e, 'site-footer'), relocateAll(EN_PARTS.footer, '/en/', enPath));
   swapZone((e) => hasClass(e, 'top-announcement'), relocateAll(EN_PARTS.announcement, '/en/', enPath));
   swapZone((e) => attr(e, 'id') === 'cookie-consent', relocateAll(EN_PARTS.cookie, '/en/', enPath));
 

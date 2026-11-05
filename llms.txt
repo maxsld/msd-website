@@ -22,6 +22,7 @@ Réservation : [msd-media.com/reserver-un-appel](https://msd-media.com/reserver-
 - [Template landing page gratuit](https://msd-media.com/template-landing-page/) : Modèle de landing page à télécharger
 - [Blog](https://msd-media.com/blog/) : Articles SEO, landing pages, conversion, création de sites web
 - [Contact](https://msd-media.com/contact/) : Prise de contact et réservation d'appel découverte
+- [Plan du site](https://msd-media.com/plan-du-site/) : toutes les pages du site, classées par thème, avec leur description
 
 ## Services
 
@@ -54,7 +55,7 @@ Annecy et Haute-Savoie — marché principal, avec Chambéry, Genève et Strasbo
 - Marie Troccaz — site coach en entreprise (culture d'entreprise, cohésion, leadership)
 - Carroz Sports — site station de ski (Haute-Savoie)
 - HairTattoo by Hugues — site studio de micropigmentation capillaire (Bruxelles, Belgique)
-- Merz Aesthetics — landing pages Ultherapy® Prime, Radiesse® et Belotero® (voir détail ci-dessous)
+- Merz Aesthetics — landing pages Ultherapy® Prime et Radiesse® (voir détail ci-dessous)
 
 ### Merz Aesthetics — Ultherapy® Prime (client international, secteur pharma/médical)
 

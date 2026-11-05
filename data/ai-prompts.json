@@ -1,0 +1,195 @@
+{
+  "_doc": "Matrice des prompts IA (2026-11-05). On ne connaît pas le volume des prompts tapés dans ChatGPT : on part des mots-clés qu'une IA retient d'un prompt (qui, quoi, où, quelle intention) et on les croise pour couvrir tous les prompts possibles de la cible. Chaque terme a ses variantes (sans accents, en minuscules, cherchées en début de mot). scripts/ai-prompt-coverage.py mesure quelles combinaisons le site couvre dans ses titres, H1, H2 et questions de FAQ. Ajouter un terme ici l'ajoute à la mesure.",
+  "cibles": {
+    "médecin": [
+      "medecin",
+      "cabinet medical",
+      "generaliste",
+      "praticien"
+    ],
+    "médecine esthétique": [
+      "medecine esthetique",
+      "medecin esthetique",
+      "centre esthetique",
+      "clinique esthetique"
+    ],
+    "chirurgien esthétique": [
+      "chirurgie esthetique",
+      "chirurgien esthetique",
+      "chirurgien plasticien"
+    ],
+    "dermatologue": [
+      "dermatologue",
+      "dermatologie"
+    ],
+    "dentiste": [
+      "dentiste",
+      "cabinet dentaire",
+      "chirurgien-dentiste",
+      "orthodontiste"
+    ],
+    "centre laser": [
+      "centre laser",
+      "epilation laser"
+    ],
+    "avocat": [
+      "avocat",
+      "cabinet d'avocats"
+    ],
+    "architecte": [
+      "architecte"
+    ],
+    "artisan": [
+      "artisan"
+    ],
+    "restaurant": [
+      "restaurant"
+    ],
+    "immobilier": [
+      "immobilier",
+      "agence immobiliere"
+    ],
+    "coach": [
+      "coach",
+      "consultant"
+    ],
+    "startup": [
+      "startup",
+      "start-up"
+    ],
+    "PME": [
+      "pme",
+      "entreprise",
+      "independant",
+      "tpe"
+    ]
+  },
+  "besoins": {
+    "site vitrine": [
+      "site vitrine",
+      "site web",
+      "site internet",
+      "creation de site"
+    ],
+    "landing page": [
+      "landing page",
+      "page de vente",
+      "page d'atterrissage"
+    ],
+    "refonte": [
+      "refonte"
+    ],
+    "SEO local": [
+      "seo local",
+      "referencement local",
+      "google maps",
+      "fiche google"
+    ],
+    "référencement": [
+      "seo",
+      "referencement"
+    ],
+    "visibilité IA": [
+      "chatgpt",
+      "visibilite ia",
+      "geo",
+      "perplexity",
+      "ia",
+      "intelligence artificielle"
+    ]
+  },
+  "lieux": {
+    "Annecy": [
+      "annecy"
+    ],
+    "Haute-Savoie": [
+      "haute-savoie",
+      "74"
+    ],
+    "Chambéry": [
+      "chambery",
+      "savoie"
+    ],
+    "Genève": [
+      "geneve",
+      "suisse"
+    ],
+    "Strasbourg": [
+      "strasbourg",
+      "alsace"
+    ],
+    "Munich": [
+      "munich",
+      "allemagne",
+      "bavaria",
+      "germany"
+    ],
+    "France": [
+      "france",
+      "francais"
+    ]
+  },
+  "intentions": {
+    "meilleur / recommandation": [
+      "meilleur",
+      "meilleure",
+      "meilleurs",
+      "quelle agence",
+      "choisir",
+      "recommand",
+      "top"
+    ],
+    "prix": [
+      "prix",
+      "tarif",
+      "cout",
+      "combien",
+      "budget"
+    ],
+    "délai": [
+      "delai",
+      "combien de temps",
+      "jours",
+      "rapide"
+    ],
+    "règles / conformité": [
+      "regle",
+      "autorise",
+      "interdit",
+      "deontolog",
+      "conforme",
+      "ordre",
+      "legal",
+      "rgpd"
+    ],
+    "comparaison / alternative": [
+      "wix",
+      "wordpress",
+      "freelance",
+      "vs",
+      "difference",
+      "comparatif",
+      "ou faire soi-meme"
+    ],
+    "comment faire": [
+      "comment",
+      "etapes",
+      "guide",
+      "checklist"
+    ],
+    "avis / preuves": [
+      "avis",
+      "resultat",
+      "exemple",
+      "etude de cas",
+      "realisation"
+    ]
+  },
+  "modeles": [
+    "Quelle est la meilleure agence pour créer un {besoin} de {cible} à {lieu} ?",
+    "Combien coûte un {besoin} pour un {cible} à {lieu} ?",
+    "Qui peut me faire un {besoin} de {cible} rapidement ?",
+    "Quelles règles respecter sur le {besoin} d'un {cible} ?",
+    "{besoin} de {cible} : agence, freelance ou Wix ?"
+  ]
+}

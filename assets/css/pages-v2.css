@@ -229,3 +229,27 @@ body:not(.sector-page) main > :first-child .blog-article-cover:not(#_) { margin-
 .pricing-card--featured:not(#_) { border: 0; border-radius: var(--radius); }
 /* Logo du Dauphiné (fond noir intégré au fichier) : affiché tel quel */
 .press-card__logo--dauphine:not(#_), .press-card__logo--polytech:not(#_) { filter: none; }
+
+/* Portes d'entrée pour les IA (scripts/build-ai-doors.py) : bloc « MSD Media en bref » des pages
+   légales et page Plan du site. Même habillage que le texte légal, tableau et FAQ en plus. */
+.legal-page .ai-brief:first-of-type { margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border); }
+.ai-brief__table { overflow-x: auto; margin-top: 1rem; border-radius: var(--radius); box-shadow: 0 0 0 1px var(--border); }
+.ai-brief__table table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: .9rem; line-height: 1.45; }
+.ai-brief__table :is(th, td) { padding: .75rem .9rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); color: var(--text); }
+.ai-brief__table thead th { background: var(--gray-bg); color: var(--heading); font-weight: 600; }
+.ai-brief__table tbody th { color: var(--heading); font-weight: 600; white-space: nowrap; }
+.ai-brief__table :is(thead th, td):nth-child(2) { background: var(--accent-soft); color: var(--heading); }
+.ai-brief__table tr:last-child :is(th, td) { border-bottom: 0; }
+.ai-brief__faq { border-bottom: 1px solid var(--line); padding: .8rem 0; }
+.ai-brief__faq summary { cursor: pointer; color: var(--heading); font-weight: 600; font-size: .95rem; }
+.ai-brief__faq p { margin: .5rem 0 0; }
+.legal-page .ai-brief__links:not(#_) { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin-top: 1rem; }
+.ai-brief__links a:not(#_) { display: inline-block; padding: .4rem .8rem; border-radius: 999px; box-shadow: 0 0 0 1px var(--border); text-decoration: none; font-size: .9rem; color: var(--heading); }
+.ai-brief__links a:not(#_):hover { box-shadow: 0 0 0 1px var(--heading); }
+.sitemap-page__lead { max-width: 70ch; margin: 1rem 0 2.5rem; }
+.sitemap-group { margin-bottom: 2.5rem; }
+.sitemap-group small { font-weight: 400; color: var(--text); }
+.legal-page .sitemap-group ul:not(#_) { list-style: none; padding: 0; display: grid; gap: .1rem; }
+.sitemap-group li { display: grid; gap: .1rem; padding: .55rem 0; border-bottom: 1px solid var(--line); }
+.sitemap-group li a:not(#_) { text-decoration: none; color: var(--heading); font-weight: 600; }
+.sitemap-group li span { font-size: .85rem; color: var(--text); }

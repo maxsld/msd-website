@@ -14,6 +14,9 @@ if ! git diff --quiet sitemap.xml blog/sitemap.xml lastmod-fingerprints.json 2>/
   echo "[pre-push] Sitemaps commités ✓"
 fi
 
+echo "[pre-push] Plan du site et blocs IA des pages légales..."
+python3 scripts/build-ai-doors.py > /dev/null
+
 echo "[pre-push] Versionnage des CSS/JS..."
 node scripts/version-assets.mjs
 if ! git diff --quiet -- '*.html' 'assets/css/*.min.css' 'assets/js/*.min.js' || [ -n "$(git ls-files --others --exclude-standard 'assets/css/*.min.css' 'assets/js/*.min.js')" ]; then

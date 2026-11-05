@@ -33,8 +33,8 @@
         "a": "<p>C'est même le cœur du sujet : nous construisons une mise en page pensée pour vos visuels, avec storytelling par projet plutôt qu'une simple galerie.</p>"
       },
       {
-        "q": "Travaillez-vous avec des architectes en dehors d'Annecy ?",
-        "a": "<p>Oui, nous accompagnons des architectes partout en France, en Suisse et en Belgique.</p>"
+        "q": "Travaillez-vous avec des architectes à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un architecte de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       },
       {
         "q": "Combien de temps pour le site d'un architecte ?",
@@ -153,8 +153,8 @@
         "a": "<p>Oui, un formulaire de demande de devis qualifié (type de chantier, zone, délai) peut être intégré pour filtrer les demandes sérieuses.</p>"
       },
       {
-        "q": "Travaillez-vous avec des artisans en dehors d'Annecy ?",
-        "a": "<p>Oui, nous accompagnons des artisans et TPE partout en France, en Suisse et en Belgique.</p>"
+        "q": "Travaillez-vous avec des artisans à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un artisan de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       },
       {
         "q": "Combien de temps pour le site d'un artisan ou d'une TPE ?",
@@ -277,8 +277,8 @@
         "a": "<p>Oui : mentions légales complètes (barreau, numéro de toque), conformité RGPD, et pour certains cabinets des règles déontologiques sur la communication. Nous intégrons ces éléments dès la conception.</p>"
       },
       {
-        "q": "Travaillez-vous avec des cabinets en dehors d'Annecy ?",
-        "a": "<p>Oui, nous accompagnons des cabinets partout en France, en Suisse et en Belgique, entièrement à distance.</p>"
+        "q": "Travaillez-vous avec des cabinets d'avocats à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un cabinet d'avocats de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       },
       {
         "q": "Combien de temps pour le site d'un cabinet ?",
@@ -541,6 +541,10 @@
       {
         "q": "Un infirmier peut-il réaliser les séances ?",
         "a": "<p>Oui. Le décret n° 2024-470 du 24 mai 2024 autorise les médecins, les infirmiers diplômés d&#x27;État et les esthéticiennes qualifiées à réaliser ces actes, après une formation obligatoire.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des centres laser à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un centre laser de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       }
     ],
     "package": {
@@ -743,6 +747,10 @@
       {
         "q": "Faut-il une page par établissement quand on opère dans plusieurs cliniques ?",
         "a": "<p>Oui : une page par lieu, avec son adresse et les interventions qui y sont réalisées, aide le patient à se repérer et capte les recherches locales.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des chirurgiens esthétiques à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un chirurgien esthétique de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       }
     ],
     "package": {
@@ -863,6 +871,10 @@
       {
         "q": "Faut-il une landing page par accompagnement ?",
         "a": "<p>Pour une offre que vous promouvez activement, oui : une page dédiée, qui mène à une seule action, convertit mieux qu&#x27;un site qui présente tout. Pour le reste, le site principal suffit.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des coachs à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un coach de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       }
     ],
     "package": {
@@ -1065,6 +1077,10 @@
       {
         "q": "Faut-il parler du reste à charge ?",
         "a": "<p>Oui, en termes généraux : ce que l&#x27;Assurance maladie et la complémentaire peuvent prendre en charge, et ce qui dépend du devis. Le montant exact ne se donne qu&#x27;après la consultation.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des dentistes à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un cabinet dentaire de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       }
     ],
     "package": {
@@ -1267,6 +1283,10 @@
       {
         "q": "Le site peut-il mener à une téléconsultation ?",
         "a": "<p>Oui, si votre outil de rendez-vous la propose : le site y oriente le patient. Il ne stocke lui-même aucune donnée de santé.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des dermatologues à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un dermatologue de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       }
     ],
     "package": {
@@ -1329,8 +1349,8 @@
         "a": "<p>Oui, nous intégrons vos flux d'annonces existants (XML ou API) pour que votre site reste à jour automatiquement, sans double saisie.</p>"
       },
       {
-        "q": "Travaillez-vous avec des agences en dehors d'Annecy ?",
-        "a": "<p>Oui, nous accompagnons des agences immobilières partout en France, en Suisse et en Belgique.</p>"
+        "q": "Travaillez-vous avec des agences immobilières à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : une agence immobilière de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagnée de la même façon, du brief à la mise en ligne.</p>"
       },
       {
         "q": "Combien de temps pour le site d'une agence immobilière ?",
@@ -1502,8 +1522,8 @@
         "a": "<p>Non — un site web ne doit jamais stocker de données de santé (dossiers, résultats). Nous construisons la vitrine et le parcours de prise de contact ; les données de santé restent dans vos outils métier certifiés (HDS).</p>"
       },
       {
-        "q": "Travaillez-vous avec des professionnels de santé hors d'Annecy ?",
-        "a": "<p>Oui, nous accompagnons des cabinets et cliniques partout en France, en Suisse et en Belgique.</p>"
+        "q": "Travaillez-vous avec des médecins et professionnels de santé à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un cabinet médical de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       },
       {
         "q": "Combien de temps pour un site de cabinet médical ?",
@@ -1761,8 +1781,8 @@
         "a": "<p>Oui. Nous rédigeons l'ensemble des contenus à partir d'un entretien avec vous, puis vous les validez avant intégration. Sur des actes encadrés, c'est le seul moyen d'obtenir un texte à la fois convaincant et défendable.</p>"
       },
       {
-        "q": "Travaillez-vous avec des centres hors d'Annecy ?",
-        "a": "<p>Oui. Nos clients sont en France, en Suisse et en Belgique, et l'ensemble du projet se mène à distance. Merz Aesthetics, par exemple, est un laboratoire international pour lequel nous avons produit le marché français.</p>"
+        "q": "Travaillez-vous avec des médecins et centres esthétiques à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un centre esthétique de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       },
       {
         "q": "Peut-on faire évoluer le site après la mise en ligne ?",
@@ -1841,8 +1861,8 @@
         "a": "<p>Oui, nous connectons votre outil existant (TheFork, Zenchef ou autre) directement dans le site, sans redirection qui casse l'expérience.</p>"
       },
       {
-        "q": "Travaillez-vous avec des établissements en dehors d'Annecy ?",
-        "a": "<p>Oui, nous accompagnons des restaurants et cafés partout en France, en Suisse et en Belgique.</p>"
+        "q": "Travaillez-vous avec des restaurants à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un restaurant de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
       },
       {
         "q": "Combien de temps pour le site d'un restaurant ?",

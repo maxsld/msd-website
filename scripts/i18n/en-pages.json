@@ -263,7 +263,7 @@
  ".section-title": ".section-title",
  ".about-headline": ".about-headline",
  "Études de cas MSD Media": "MSD Media case studies",
- "Les projets publiés sont disponibles dans la page Réalisations, avec des références nommées et des cas concrets.": "Published projects are available on the Work page, with named references and concrete case studies.",
+ "Les projets publiés sont disponibles dans la page Réalisations, avec des références nommées et des cas concrets.": "Published projects are available on the Case studies page, with named references and concrete examples.",
  "Logos clients": "Client logos",
  "Clients et partenaires": "Clients and partners",
  "MSD Media, agence web fondée à Annecy en juin 2025": "MSD Media, a web agency founded in Annecy in June 2025",
@@ -1325,5 +1325,12 @@
  "8 — Contact": "8 — Contact",
  "Pour toute question relative à la présente politique de confidentialité, vous pouvez nous écrire à :": "For any question about this privacy policy, you can write to us at:",
  "Email :": "Email:",
- "Envoyer un email": "Send an email"
+ "Envoyer un email": "Send an email",
+ "Mise à jour": "Last updated",
+ "Dernière mise à jour : <strong>9 août 2026</strong>.": "Last updated: <strong>9 August 2026</strong>.",
+ "Dernière mise à jour : <strong>12 août 2026</strong>.": "Last updated: <strong>12 August 2026</strong>.",
+ "Pour toute question relative aux présentes mentions légales, contactez : <a href=\"#\" class=\"js-email-link\" data-u=\"maxens.soldan\" data-d=\"msd-media.com\" rel=\"nofollow\">Envoyer un email</a>.": "For any question about this legal notice, contact: <a href=\"#\" class=\"js-email-link\" data-u=\"maxens.soldan\" data-d=\"msd-media.com\" rel=\"nofollow\">Send an email</a>.",
+ "Pour toute question relative aux présentes conditions générales de vente, contactez : <a href=\"#\" class=\"js-email-link\" data-u=\"maxens.soldan\" data-d=\"msd-media.com\" rel=\"nofollow\">Envoyer un email</a>.": "For any question about these terms of sale, contact: <a href=\"#\" class=\"js-email-link\" data-u=\"maxens.soldan\" data-d=\"msd-media.com\" rel=\"nofollow\">Send an email</a>.",
+ "Ce document est fourni à titre informatif. Il ne remplace pas un avis juridique personnalisé. Si nécessaire, consultez un professionnel du droit.": "This document is provided for information purposes. It does not replace personalised legal advice. If needed, consult a legal professional.",
+ "Politique de confidentialité": "Privacy policy"
 }

@@ -24,6 +24,11 @@ Lis `seo-pilot/RULES.md` et `seo-pilot/STRATEGY.md` (section IA).
 5. Règles : les réponses des IA varient d'une fois à l'autre, un relevé est une photo du moment ; on parle de « probabilité d'être cité », jamais de citation garantie. Une bonne position Google ne prouve pas une citation IA, et inversement : traite les deux séparément. Une page comparative reste honnête et sourcée, sans dénigrer de concurrent nommé (`RULES.md` : rien d'inventé). Pas de page Wikipédia pour MSD Media (notoriété insuffisante, auto-promotion interdite) ; une fiche Wikidata n'est envisageable qu'avec des sources indépendantes (presse).
 6. Mesure l'effet d'une correction au relevé suivant, au moins 21 jours après sa mise en ligne, comme pour le SEO.
 
+**Mission « couverture des prompts »** (quand le chef te la confie) :
+1. Lis `seo-pilot/data/prompts-ia.md` (relevé du lundi) et la matrice `data/ai-prompts.json` : cibles, besoins, lieux, intentions. Un prompt réel croise plusieurs de ces termes (« meilleure agence pour le site d'un dentiste à Chambéry ») ; une page qui réunit ces termes dans son title, ses titres ou ses questions de FAQ a plus de chances d'être retenue par l'IA.
+2. Parmi les trous à combler, choisis au plus 3 croisements utiles à la stratégie (santé et Annecy d'abord, Munich ensuite) et propose pour chacun l'endroit le plus naturel : question de FAQ d'une page existante, passage d'une page, ou sujet d'article. Jamais une page creuse par combinaison (contenu dupliqué) ni une ville où MSD Media n'a rien à dire de vrai.
+3. Si un terme manque à la matrice (nouveau secteur, nouvelle ville, formulation que tu vois revenir dans les réponses des IA), propose-le au chef pour `data/ai-prompts.json`.
+
 **Mission « audit d'entité »** (1er lundi du mois) :
 1. Vérifie que le nom, la description courte, l'adresse (6 Rue Paul Guiton, 74000 Annecy), le fondateur et les profils `sameAs` sont cohérents entre l'accueil, `/a-propos/`, `llms.txt` et le balisage des pages.
 2. Cherche « MSD Media » et « MSD Media Annecy » sur le web : quelles sources parlent de l'agence, lesquelles sont fausses ou datées, quels comparatifs ou annuaires du secteur ne la citent pas.

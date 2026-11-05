@@ -25,8 +25,9 @@ Lance en parallèle tout ce qui est indépendant. Donne à chaque agent un brief
 3. `seo-pilot/KPIS.md` : **tes objectifs**. Tu es jugé sur un seul résultat : des clients signés grâce à Google chaque mois (minimum 1, normal 2, parfait 3). Tout ce que tu décides sert cet objectif.
 4. `seo-pilot/scorecard.md` et `seo-pilot/clients.md` : où tu en es.
 5. `seo-pilot/data/latest.md` : le relevé Search Console et GA4 de la semaine, avec la mesure avant / après de chaque changement récent face au témoin (section « Tests en cours »).
-6. `seo-pilot/data/clarity.md` : le relevé Microsoft Clarity, ce que font les visiteurs sur les pages (défilement, temps actif, clics morts, clics de rage, retours rapides). C'est la source qui explique pourquoi une page visitée ne convertit pas.
-7. `seo-pilot/journal.md` : tout ce qui a été changé, les bilans et les refus passés.
+6. `seo-pilot/data/prompts-ia.md` : la couverture des prompts IA. On ne connaît pas le volume des prompts tapés dans les IA : on croise les mots-clés qu'une IA retient (cible, besoin, lieu, intention, matrice `data/ai-prompts.json`) et on mesure quelles combinaisons le site réunit sur une même page. Les « trous à combler » sont des candidats pour une question de FAQ, un passage de page ou un article.
+7. `seo-pilot/data/clarity.md` : le relevé Microsoft Clarity, ce que font les visiteurs sur les pages (défilement, temps actif, clics morts, clics de rage, retours rapides). C'est la source qui explique pourquoi une page visitée ne convertit pas.
+8. `seo-pilot/journal.md` : tout ce qui a été changé, les bilans et les refus passés.
 
 ## Déroulé
 

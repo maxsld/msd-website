@@ -11,6 +11,12 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-05 : pages légales FR/EN, /plan-du-site/ et FAQ des 12 pages secteur (décision de Maxens)
+- Changement : portes d'entrée pour les IA. Bloc « MSD Media en bref » (résumé, tableau comparatif, FAQ balisée, pages clés) ajouté sous le texte des 6 pages légales FR et EN ; nouvelle page /plan-du-site/ (toutes les pages, liée depuis le footer). Matrice des prompts IA (data/ai-prompts.json) et relevé hebdo de couverture (seo-pilot/data/prompts-ia.md). Sur les 12 pages secteur, la question « en dehors d'Annecy ? » nomme désormais Annecy, Chambéry, Genève et la France (ajoutée sur centre laser, chirurgie esthétique, coach, dentiste, dermatologue).
+- Hypothèse : les robots des IA entrent souvent par des pages que les humains ne visitent pas (pages légales) ; ils y trouvent les faits et les liens pour continuer la visite. Les croisements cible × lieu passent de 44 % à 69 % de couverture, ce qui augmente la probabilité d'être retenu pour un prompt du type « site de dentiste à Chambéry ».
+- Requête visée : prompts IA (pas de volume mesurable) ; couverture suivie dans prompts-ia.md.
+- Départ : couverture cible × lieu 43/98 au 2026-11-05. Pages secteur : ne pas les retoucher avant le 2026-11-26.
+
 ### 2026-11-03 : /realisations/merz-belotero/ (décision de Maxens)
 - Changement : MSD Media n'a pas la réalisation Belotero. Page supprimée et redirigée (301) vers /realisations/ ; liens retirés de /realisations/merz-radiesse/, /realisations/merz-ultherapy-prime/ et de l'article médecine esthétique ; retirée du sitemap et de llms.txt. FAQ Munich FR/EN : plus de mention de clients en Allemagne (Maxens n'en a pas encore).
 - Requête visée : aucune (correction d'exactitude).

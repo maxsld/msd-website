@@ -13,7 +13,7 @@ Rends :
 1. **L'entonnoir** du mois et sur 3 mois : réservations → appels tenus → propositions → signatures, avec le taux à chaque étape et le délai moyen entre l'appel et la proposition.
 2. **Le maillon le plus faible** et sa cause probable, à partir des chiffres seulement : beaucoup d'absences (rappel avant l'appel à renforcer), budgets trop bas pour l'offre (questionnaire Cal.com ou page de réservation à revoir), propositions sans réponse (relances, délai d'envoi), refus sur le prix (offre d'entrée).
 3. **Le taux réel lead → client** sur 3 mois, à comparer à l'hypothèse de `KPIS.md` (1 sur 4). Indique s'il faut recaler l'hypothèse ; c'est Maxens qui décide de modifier `KPIS.md`.
-4. **Une seule recommandation** pour le mois suivant, concrète et applicable par Maxens en moins d'une heure.
+4. **Ce que rapporte chaque canal** : rendez-vous et signatures par source déclarée dans le questionnaire (Google, IA, LinkedIn, Instagram, bouche-à-oreille, autre), avec le taux de signature par canal. Dis quelle équipe (SEO, contenu LinkedIn) amène le plus de clients signés, pas seulement le plus de rendez-vous.
+5. **Une seule recommandation** pour le mois suivant, concrète et applicable par Maxens en moins d'une heure.
 
 Avec moins de 5 rendez-vous sur 3 mois, dis que les taux ne sont pas encore fiables et contente-toi des totaux.
-4. **Ce que rapporte chaque canal** : rendez-vous et signatures par source déclarée dans le questionnaire (Google, IA, LinkedIn, Instagram, bouche-à-oreille, autre), avec le taux de signature par canal. Dis quelle équipe (SEO, contenu LinkedIn) amène le plus de clients signés, pas seulement le plus de rendez-vous.

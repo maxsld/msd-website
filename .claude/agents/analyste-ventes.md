@@ -16,3 +16,4 @@ Rends :
 4. **Une seule recommandation** pour le mois suivant, concrète et applicable par Maxens en moins d'une heure.
 
 Avec moins de 5 rendez-vous sur 3 mois, dis que les taux ne sont pas encore fiables et contente-toi des totaux.
+4. **Ce que rapporte chaque canal** : rendez-vous et signatures par source déclarée dans le questionnaire (Google, IA, LinkedIn, Instagram, bouche-à-oreille, autre), avec le taux de signature par canal. Dis quelle équipe (SEO, contenu LinkedIn) amène le plus de clients signés, pas seulement le plus de rendez-vous.

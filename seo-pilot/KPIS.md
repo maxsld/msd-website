@@ -49,6 +49,33 @@ Deux leviers multiplient le résultat : **plus de clics** (positions et taux de 
 | Contrôles (`seo:check`, relecteur) | 100 % passés, aucune règle enfreinte |
 | Clics, impressions et requêtes en top 10 sur 28 jours glissants | en hausse ou stables par rapport à la semaine précédente |
 
+## KPI de production cumulée (ce que l'équipe doit avoir livré)
+
+Objectifs fixés par Maxens le 2026-11-04, comptés depuis le 9 novembre 2026 (premier passage de l'équipe à 9 agents). Le chef les vérifie le 1er lundi du mois dans le journal : un retard de production se rattrape avant d'expliquer un retard de résultats. « Changements » : pages modifiées et notées dans le journal, articles non compris.
+
+| Échéance | Articles | Changements de pages | Tests de conversion | Bilans à 21 jours rendus | Audits (technique, accessibilité) | Scores de citations IA | Ce qui doit aussi être vrai |
+|---|---|---|---|---|---|---|---|
+| **1 semaine** (16 nov. 2026) | 1 | 1 à 3 | 1 diagnostic | — | — | — | Premier rapport Telegram envoyé avec un « À toi » |
+| **1 mois** (7 déc. 2026) | 4 | 6 à 10 | 1 à 2 | — | 1 + 1 | 1 (si le relevé est fait) | Premier lot de corrections d'accessibilité HTML en ligne |
+| **2 mois** (4 janv. 2027) | 8 | 15 à 20 | 2 à 3 | tous ceux dus | 2 + 2 | 2 | Premier conflit de cannibalisation réglé |
+| **3 mois** (1er févr. 2027) | 13 | 25 à 35 | 3 à 5 | tous ceux dus | 3 + 3 | 3 | Bilan trimestriel écrit, hypothèses de conversion recalées ; erreurs d'accessibilité « bloquantes » côté HTML à zéro |
+| **6 mois** (3 mai 2027) | 26 | 50 à 60 | 6 à 10 | tous ceux dus | 6 + 6 | 6, avec une tendance | Jalons de mars (études de cas chiffrées) et d'avril (pages en position 4 à 15) livrés |
+| **1 an** (1er nov. 2027) | 50 | 100 à 120 | 12 à 20 | tous ceux dus | 12 + 12 | 12 | Plan de l'année 2 écrit à partir de ce qui a marché |
+
+Ces volumes sont des plafonds réalistes, pas des quotas à remplir : une semaine sans changement pertinent reste une bonne décision. Mais un écart de plus de 30 % sous le bas de la fourchette doit être expliqué dans le bilan du mois (pas assez de données, bilans en « prolonger », pages bloquées par la règle des 21 jours…).
+
+**Résultats attendus aux mêmes échéances**, en complément des tableaux mensuels ci-dessous (28 jours glissants) :
+
+| Échéance | Clics Google | dont hors marque | Leads Google réels estimés / mois | Premier client via Google |
+|---|---|---|---|---|
+| 1 mois | 60 à 90 | 5 à 15 | 0 à 1 | — |
+| 2 mois | 65 à 100 | 10 à 30 | 0 à 1 | possible |
+| 3 mois | 80 à 150 | 20 à 60 | 0 à 2 | environ 25 % de chances |
+| 6 mois | 150 à 300 | 80 à 200 | 2 à 5 | environ 55 % de chances |
+| 1 an | 250 à 600 | 180 à 500 | 4 à 10 | 1 à 2 clients par mois |
+
+Le bas de chaque fourchette correspond au travail de l'équipe seule ; le haut suppose aussi les actions hors site de Maxens (avis Google réguliers, liens, fiche Google active). Les minimums des tableaux mensuels restent les seuils qui déclenchent un changement de plan.
+
 ## KPI de chaque mois (les résultats)
 
 Valeurs sur 28 jours glissants, relevées le 1er lundi du mois. **Minimum** : en dessous, le chef change de plan. **Cible** : le rythme qui mène au niveau « normal ».

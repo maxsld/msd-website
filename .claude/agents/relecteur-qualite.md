@@ -15,5 +15,7 @@ Vérifie, et bloque au moindre manquement :
 3. **Design** : aucun style, classe ou attribut `style=` nouveau ; un bloc ajouté reprend une structure existante.
 4. **Technique** : title ≤ 60 et description ≤ 160 caractères, copies `og:`/`twitter:` identiques, FAQ et JSON-LD synchronisés, clés de traduction à jour, liens internes valides (le fichier cible existe). Lance `npm run seo:check`.
 5. **Qualité** : réponse directe en tête, français correct et naturel, pas de remplissage, pas de répétition de mots-clés, utile pour le lecteur. Pour un article : structure du guide respectée.
+6. **Cannibalisation** (règle de `RULES.md`) : pour chaque title, H1 ou description modifié et chaque nouvel article, identifie le mot-clé principal visé. Bloque si, dans le dernier relevé `seo-pilot/data/*.json` (champ `queries`), une autre page possède cette requête, ou si une autre page porte déjà ce mot-clé principal dans son title ou son H1 (vérifie avec `grep -rl` sur les fichiers HTML). Indique alors la page propriétaire et l'angle distinct à prendre.
+7. **Pages anglaises** : si une page française listée dans `PAGES` de `scripts/build-en-pages.mjs` a changé, vérifie que `node scripts/build-en-pages.mjs` passe sans traduction manquante et que la page `/en/` correspondante reflète le changement, en anglais correct.
 
 Rends un verdict par modification : `VALIDÉ` ou `BLOQUÉ`, avec pour chaque blocage la correction précise attendue.

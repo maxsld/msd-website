@@ -28,6 +28,7 @@ Lance en parallèle tout ce qui est indépendant. Donne à chaque agent un brief
 6. `seo-pilot/data/prompts-ia.md` : la couverture des prompts IA. On ne connaît pas le volume des prompts tapés dans les IA : on croise les mots-clés qu'une IA retient (cible, besoin, lieu, intention, matrice `data/ai-prompts.json`) et on mesure quelles combinaisons le site réunit sur une même page. Les « trous à combler » sont des candidats pour une question de FAQ, un passage de page ou un article.
 7. `seo-pilot/data/clarity.md` : le relevé Microsoft Clarity, ce que font les visiteurs sur les pages (défilement, temps actif, clics morts, clics de rage, retours rapides). C'est la source qui explique pourquoi une page visitée ne convertit pas.
 8. `seo-pilot/journal.md` : tout ce qui a été changé, les bilans et les refus passés.
+9. `seo-pilot/OUTILS.md` : les skills Claude SEO de chaque agent, et **OpenSEO**, que toi seul appelles (quand, pour qui, plafond de dépense).
 
 ## Déroulé
 
@@ -35,10 +36,11 @@ Lance en parallèle tout ce qui est indépendant. Donne à chaque agent un brief
    - `analyste-data` : bilans des entrées de 21 jours ou plus, conflits de cannibalisation, et liste classée des opportunités ;
    - `responsable-editorial` : choix et brief de l'article de la semaine (sans rédiger encore) ;
    - `specialiste-conversion` : page à faible conversion, diagnostic et propositions, bilans des tests de conversion de 21 jours ou plus ;
+   - toi, avec OpenSEO (`OUTILS.md`) : données de la requête de l'article, puis, le 1er lundi du mois, paysage concurrentiel, backlinks, visibilité IA et local, que tu transmets aux agents concernés ;
    - le 1er lundi du mois (jour ≤ 7), en plus : `technicien` (audit), `specialiste-ia` (audit des citations IA à partir de `IA-CITATIONS.md`, et audit d'entité), `auditeur-accessibilite` (audit), et la **revue éditoriale** du `responsable-editorial` (reclassement du calendrier, voir `EDITORIAL.md`), que tu valides en vérifiant l'équilibre entre les groupes et le respect de la stratégie.
 2. **Pilotage** : compare les chiffres de la semaine aux objectifs de `KPIS.md` (mois en cours) ; le 1er lundi du mois, compare aussi la production cumulée de l'équipe (articles, changements, tests de conversion, bilans, audits, scores IA, comptés dans le journal) à la section « KPI de production cumulée », et note l'écart dans le journal ; ajoute la ligne du jour dans `scorecard.md`, et identifie le maillon le plus faible de la chaîne (taux de clic, positions, conversion, passage à l'acte) avec le tableau « Comment le chef manage l'écart ».
 3. **Décision** : à partir de ce diagnostic, des bilans et des opportunités, choisis au plus 3 pages existantes, en mettant l'effort sur le maillon le plus faible et dans l'ordre des priorités de la stratégie. Une page dont le bilan est négatif passe avant tout : on corrige ou on annule. Un conflit de cannibalisation actif passe ensuite : on le règle avant d'optimiser l'une des deux pages (règle de `RULES.md`). Quand le maillon le plus faible est la conversion, l'une des pages choisies est celle du `specialiste-conversion`, avec au plus 2 changements de conversion : une seule page en test de conversion à la fois. Le 1er lundi du mois, les corrections d'accessibilité que le rédacteur peut faire dans le HTML (textes alternatifs, libellés, intitulés de liens) passent en un seul lot, qui compte pour une page ; celles qui touchent au CSS ou au JS vont dans « À toi ». S'il n'y a rien de pertinent, ne choisis rien : c'est une bonne décision.
-4. **Diagnostic**, en parallèle, pour chaque page choisie : `analyste-concurrence` et `specialiste-ia`.
+4. **Diagnostic**, en parallèle, pour chaque page choisie : `analyste-concurrence` et `specialiste-ia`. Avant, lance l'analyse concurrentielle OpenSEO de la requête visée (2 pages au plus) et mets ses chiffres dans le brief de l'`analyste-concurrence`.
 5. **Brief** : pour chaque page, écris un brief précis : page, requête visée, ce qu'il faut changer et pourquoi, ce qu'il ne faut pas toucher.
 6. **Exécution**, en parallèle si les pages sont différentes :
    - `redacteur-integrateur` applique chaque brief de page ;

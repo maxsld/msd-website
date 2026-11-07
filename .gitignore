@@ -5,6 +5,11 @@
 !/.claude/skills/
 /.claude/skills/*
 !/.claude/skills/msd-design-system/
+# Outils de l'agence SEO (seo-pilot/OUTILS.md) : Claude SEO et OpenSEO, licence MIT
+!/.claude/skills/seo/
+!/.claude/skills/seo-*/
+!/.claude/skills/openseo-*/
+!/.claude/skills/openseo-LICENSE.txt
 /node_modules
 /.env.analytics
 

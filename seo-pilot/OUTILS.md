@@ -24,24 +24,26 @@ Méthodes d'audit et d'analyse (source : claude-seo, licence MIT). Un agent les 
 
 Leurs scripts Python sont dans **`.claude/skills/seo/scripts/`** (pas dans `scripts/` du site). Avant le premier script du passage : `pip install -q requests beautifulsoup4 lxml validators trafilatura`. Les scripts qui demandent des identifiants Google, DataForSEO, Moz ou Bing ne marchent pas ici : on ne les lance pas (la Search Console arrive déjà par le relevé du lundi). Ces skills sont des outils : on ne les modifie jamais, comme tout le dossier `.claude/`.
 
-## 2. OpenSEO (données payantes, connecteur MCP « OpenSEO »)
+## 2. OpenSEO (version gratuite, crédits offerts, connecteur MCP « OpenSEO »)
 
 OpenSEO (openseo.so, alternative à Semrush et Ahrefs) donne des données que le relevé n'a pas : volumes et difficulté des mots-clés, pages de résultats Google réelles, mots-clés des concurrents, backlinks, classements Google Maps et visibilité dans les IA. Méthodes dans `.claude/skills/openseo-*` (licence MIT).
 
 **Seul le chef de projet appelle OpenSEO** (les sous-agents n'ont pas le connecteur). Il passe les chiffres utiles dans le brief de l'agent concerné, en citant « OpenSEO, AAAA-MM-JJ ». Si les outils OpenSEO sont absents ou refusent l'accès, on continue sans eux, comme avant, et on l'écrit en une ligne dans le journal (pas dans le rapport Telegram).
 
-### Chaque lundi (au plus 3 analyses payantes)
+### Chaque lundi (au plus 3 analyses à crédits)
 1. **Article de la semaine** (`openseo-keyword-research`) : volume, difficulté, intention et page de résultats de la requête du brief, plus 5 variantes au plus. Donne-les au `responsable-editorial` avant qu'il rédige. Une requête à volume nul et sans intérêt commercial : il change d'angle.
 2. **Pages choisies** (`openseo-competitor-analysis`, une fois par page, 2 pages au plus) : qui se classe en tête sur la requête visée et ce qu'ils ont de plus. Donne-le à l'`analyste-concurrence`, qui le croise avec sa recherche web.
 
-### Le 1er lundi du mois, en plus (au plus 4 analyses payantes)
+### Le 1er lundi du mois, en plus (au plus 4 analyses à crédits)
 3. **Paysage concurrentiel** (`openseo-competitive-landscape`) : agences qui prennent nos requêtes santé et Annecy, et les écarts de mots-clés. Va à la revue éditoriale du `responsable-editorial`.
 4. **Backlinks** (`openseo-link-prospecting`) : nos domaines référents face à 2 concurrents, et 5 pistes de liens au plus. Une piste utile devient l'action « À toi » du mois (Maxens agit hors site, l'agence ne fait aucun netlinking).
 5. **Visibilité IA** (`openseo-ai-visibility-audit`) : mentions et citations de MSD Media face aux concurrents. Va au `specialiste-ia`, en complément du relevé manuel de `IA-CITATIONS.md` (on ne compare que des relevés faits de la même façon).
 6. **Local** (`openseo-local-seo`) : position dans Google Maps sur « agence web Annecy » et « création site internet Annecy ». Va au `specialiste-ia` pour l'audit d'entité.
 
 ### Garde-fous de dépense
-- Avant chaque appel payant, lis le coût estimé que renvoie OpenSEO. **Plafond : 3 € par lundi ordinaire, 10 € le 1er lundi du mois.** Au-delà, tu t'arrêtes et tu le notes dans le journal.
+- **Maxens a la version gratuite et ne paie jamais rien (décision du 2026-11-08).** L'agence n'utilise que les crédits offerts du compte. Elle n'achète jamais de crédits, ne passe jamais à une offre payante, n'ouvre jamais de lien de facturation, et ne propose pas à Maxens d'en acheter.
+- Au début du passage, lis le solde avec `whoami` (gratuit). Les outils qui disent « Uses no credits » sont toujours permis.
+- Avant chaque appel à crédits, lis le coût estimé que renvoie OpenSEO quand l'outil le donne. **Plafond : 30 crédits par lundi ordinaire, 100 crédits le 1er lundi du mois, et jamais en dessous d'une réserve de 50 crédits.** Au-delà, ou si le solde est épuisé, tu t'arrêtes, tu continues sans OpenSEO et tu le notes en une ligne dans le journal (pas dans le rapport Telegram).
 - Jamais de suivi récurrent (suivi de positions, suivi de prompts IA, audit planifié) : ça facture chaque semaine sans toi. C'est Maxens qui les crée s'il les veut.
-- Chaque passage qui dépense ajoute un résumé au journal de recherche du projet OpenSEO (`appendResearchLog`) et une ligne au journal : `OpenSEO : <analyses>, ~<coût>`.
-- Au premier passage où OpenSEO répond, remplis le contexte du projet msd-media.com (`openseo-seo-project-setup`, outils gratuits `get_project_context` et `update_project_context`) à partir de `STRATEGY.md`, `KPIS.md` et des pages cibles, **sans poser de questions** : personne ne répond pendant le passage. S'il n'y a pas encore de projet, crée-le (`create_project`, domaine msd-media.com, France, français).
+- Chaque passage qui dépense ajoute un résumé au journal de recherche du projet OpenSEO (`appendResearchLog`) et une ligne au journal : `OpenSEO : <analyses>, <crédits dépensés>, solde <crédits restants>`.
+- Au premier passage où OpenSEO répond, remplis le contexte du projet msd-media.com (`openseo-seo-project-setup`, outils gratuits `get_project_context` et `update_project_context`) à partir de `STRATEGY.md`, `KPIS.md` et des pages cibles, **sans poser de questions** : personne ne répond pendant le passage. Le projet existe (msd-media.com) mais son marché par défaut est les États-Unis en anglais : passe toujours explicitement la France (location code 2250) et le français (`fr`) à chaque appel de recherche.

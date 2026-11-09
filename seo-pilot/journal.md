@@ -112,6 +112,7 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 - Article : sujet #2 (référencement dentiste) bloqué, requête possédée par l'article dentiste existant et textes officiels illisibles depuis la session ; remplacé par le #3 (Annecy).
 - Accès réseau : legifrance.gouv.fr, ordre-chirurgiens-dentistes.fr, developers.google.com, support.google.com et afnic.fr sont refusés par le proxy de la session. Tant que c'est le cas, aucun article santé ou juridique ne peut être sourcé.
 - OpenSEO : métriques de 6 mots-clés dentiste et 2 pages de résultats (« référencement dentiste », « publicité dentiste »), 25 crédits dépensés, solde 387. Contexte du projet OpenSEO rempli (activité, objectif, positionnement, style, pages clés). « publicité dentiste » : 40 recherches/mois, difficulté 0, l'Ordre en tête des résultats.
+- Relevé de référence des citations IA fait par Maxens le 2026-11-09 (IA-CITATIONS.md) : 0 recommandation sur les 18 prompts neutres (ChatGPT sans mémoire, Claude, Gemini 1 à 7 ; Perplexity non testé). Les IA décrivent correctement MSD Media quand on la nomme. Leviers : avis et fiches sur La Fabrique du Net, Sortlist et Agence Web 74 (hors site), cohérence de l'entité face à la confusion avec MSD (Merck). À traiter par le specialiste-ia le 2026-12-07.
 
 ## Notes du 2026-11-03 (premier passage de novembre)
 

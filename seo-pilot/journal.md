@@ -11,6 +11,14 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-09 : /blog/articles/webdesigner-annecy-ou-agence/
+- Changement : nouvel article Annecy « Prestataire web à Annecy : webdesigner, agence ou plateforme ? » (aide au choix : périmètre, SEO, maintenance, délais, propriété du site et du domaine, questions à poser), liens vers /creation-site-web-annecy/, /agence-web-annecy/, /tarifs/ et /reserver-un-appel/. Aucune source externe : Google, Afnic et Légifrance inaccessibles depuis la session, l'article ne contient donc que des conseils et des faits déjà publiés sur le site.
+- Hypothèse : premières impressions sur « prestataire web annecy », « webdesigner ou agence » et variantes en 2 à 6 semaines ; renforce le groupe Annecy et pousse vers les deux pages de service.
+- Requête visée : prestataire web Annecy
+- Départ : nouvel article.
+- Type : `seo`
+- Relecture : bloqué une fois (cannibalisation : « webdesigner annecy » appartient à /creation-site-web-annecy/, 1 impression, position 37 ; deux phrases de droit à tourner en conseils), corrigé puis validé. Ne pas réorienter cet article vers « webdesigner annecy ».
+
 ### 2026-11-05 : pages légales FR/EN, /plan-du-site/ et FAQ des 12 pages secteur (décision de Maxens)
 - Changement : portes d'entrée pour les IA. Bloc « MSD Media en bref » (résumé, tableau comparatif, FAQ balisée, pages clés) ajouté sous le texte des 6 pages légales FR et EN ; nouvelle page /plan-du-site/ (toutes les pages, liée depuis le footer). Matrice des prompts IA (data/ai-prompts.json) et relevé hebdo de couverture (seo-pilot/data/prompts-ia.md). Sur les 12 pages secteur, la question « en dehors d'Annecy ? » nomme désormais Annecy, Chambéry, Genève et la France (ajoutée sur centre laser, chirurgie esthétique, coach, dentiste, dermatologue).
 - Hypothèse : les robots des IA entrent souvent par des pages que les humains ne visitent pas (pages légales) ; ils y trouvent les faits et les liens pour continuer la visite. Les croisements cible × lieu passent de 44 % à 69 % de couverture, ce qui augmente la probabilité d'être retenu pour un prompt du type « site de dentiste à Chambéry ».
@@ -93,6 +101,17 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 - Changement : Title et description réécrits (sans prix depuis le 2026-10-31).
 - Requête visée : maintenance site internet annecy
 - Départ : 67 impressions, 0 clics, position 8.1 (28 jours au 2026-10-28).
+
+## Notes du 2026-11-09
+
+- Relevé non rafraîchi : seo-pilot/data/latest.md est encore celui du 2026-11-03 (période 2026-10-04 → 2026-10-31), aucun relevé n'a été enregistré ce lundi. Chiffres identiques à la semaine dernière ; la section « Tests en cours » du relevé reste vide alors que le journal a des entrées depuis le 2026-10-30 (à faire vérifier par le technicien le 7 décembre).
+- Bilans à 21 jours : aucun dû (premiers le 2026-11-20).
+- Pages existantes : aucune modifiée, bonne décision. Toutes les pages à potentiel (landing page, Annecy, santé) sont gelées jusqu'à leurs bilans du 20 au 26 novembre ; les seules éligibles (/agence-web-rennes/, 19 impressions hors zone ; /seo-local-annecy/, baisse à confirmer sur un relevé frais) ne justifiaient pas un changement sur des données périmées.
+- Cannibalisation : un conflit actif, « refonte de site internet annecy » (propriétaire /refonte-site-web-annecy/, 26 impressions, position 3.7 ; /creation-site-web-annecy/ 5 impressions, position 21.8). Les deux pages sont gelées : à régler après le bilan du 2026-11-20 (angle « création » et lien vers la page refonte).
+- Conversion : /blog/articles/avis-google-medecin-que-repondre/ (10 visites Google, 0 intention) reste la page à traiter, gelée jusqu'au 2026-11-22. Test prêt pour le 2026-11-23 (specialiste-conversion) : dans la source, après la ligne italique de cadrage, ajouter « Votre site de cabinet affiche des avis de patients ou un widget Google ? [Réserver un appel de 30 min pour faire vérifier votre site →](https://msd-media.com/reserver-un-appel/) L'appel est gratuit et sans engagement. » ; en option, renommer le lien du bas de la même façon et ajouter la preuve Merz (Radiesse, Ultherapy Prime). Clarity est quasi inutilisable : 37 sessions sur 45 viennent de 127.0.0.1 (trafic de test), aucune session mobile.
+- Article : sujet #2 (référencement dentiste) bloqué, requête possédée par l'article dentiste existant et textes officiels illisibles depuis la session ; remplacé par le #3 (Annecy).
+- Accès réseau : legifrance.gouv.fr, ordre-chirurgiens-dentistes.fr, developers.google.com, support.google.com et afnic.fr sont refusés par le proxy de la session. Tant que c'est le cas, aucun article santé ou juridique ne peut être sourcé.
+- OpenSEO : métriques de 6 mots-clés dentiste et 2 pages de résultats (« référencement dentiste », « publicité dentiste »), 25 crédits dépensés, solde 387. Contexte du projet OpenSEO rempli (activité, objectif, positionnement, style, pages clés). « publicité dentiste » : 40 recherches/mois, difficulté 0, l'Ordre en tête des résultats.
 
 ## Notes du 2026-11-03 (premier passage de novembre)
 

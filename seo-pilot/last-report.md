@@ -1,4 +1,4 @@
-✅ Agence SEO · mar. 3 nov.
-Fait : le comparatif « agence landing page » a un nouveau titre et une réponse plus nette, et un article santé sur le décret de la publicité en chirurgie esthétique est publié.
-Résultat : 55 clics Google sur 28 jours, pile au minimum de décembre (cible 70), mais 2 seulement hors marque (minimum 5) et 0 lead : sous la cible.
-À toi : demande 2 à 3 avis Google cette semaine (méthode AVIS.md), et retire la carte « Munich » du footer, qui laisse croire à un bureau là-bas.
+✅ Agence SEO · lun. 9 nov.
+Fait : un article Annecy publié (comment choisir son prestataire web : webdesigner, agence ou plateforme) ; aucune page retouchée, elles attendent leurs bilans du 20 au 26 novembre.
+Résultat : relevé Google pas rafraîchi ce lundi, donc mêmes chiffres que la semaine dernière : 55 clics sur 28 jours, au minimum de décembre (cible 70), 2 hors marque (minimum 5) et 0 lead, sous la cible.
+À toi : faire le relevé de référence des citations IA (IA-CITATIONS.md, 20 minutes), jamais fait à ce jour.

@@ -1022,6 +1022,7 @@ function renderFullFooter(assetPrefix) {
 
     <div class="footer-award">
       <a class="footer-award-tag" href="https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france" target="_blank" rel="nofollow noopener noreferrer"><svg class="flag-fr" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg>Top 7 des agences web en France</a>
+      <script src="https://www.lafabriquedunet.fr/agences/badge/msd-media/badge.js?color=outline" defer></script>
     </div>
     <!-- Villes SEO -->
     <div class="footer-cities">

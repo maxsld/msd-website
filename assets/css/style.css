@@ -7209,6 +7209,23 @@ body.affiliate-modal-open {
   height: 30px;
 }
 
+/* Le badge La Fabrique du Net (injecté par son script) est posé, invisible, sur
+   le logo : il compte les affichages et les clics sur leur tableau de bord.
+   Sans JavaScript, le lien du logo reste cliquable. */
+.footer-partner-lfdn {
+  position: relative;
+  display: inline-flex;
+}
+
+.footer-partner-lfdn > span {
+  position: absolute !important;
+  inset: 0;
+  width: auto !important;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
 /* Distinction sous forme de tag (pas de logo) : même rayon que tous les tags du site. */
 .footer-award-tag {
   display: inline-flex;

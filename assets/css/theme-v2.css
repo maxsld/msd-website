@@ -230,7 +230,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--heading); font-w
 .footer-office-time { margin: .15rem 0 .35rem; color: #fff; font-size: 1.35rem; font-weight: 500; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
 .footer-office-time:empty { display: none; }
 .footer-office-address { font-size: .82rem; line-height: 1.45; color: #fff; opacity: .65; }
-.footer-award { max-width: 1200px; margin: 1.4rem auto 0; display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.footer-award { max-width: 1200px; margin: 1.4rem auto 0; }
 .footer-award-tag { display: inline-flex; align-items: center; gap: .4rem; padding: .5rem .85rem; border: 1px solid rgba(255, 255, 255, .18); border-radius: .2rem; background: #ffffff0d; color: #fff; font-size: .85rem; font-weight: 600; line-height: 1.2; white-space: nowrap; }
 .footer-award-tag:hover { background: #ffffff1a; text-decoration: none !important; }
 .footer-award + .footer-cities { margin-top: 1.4rem; }

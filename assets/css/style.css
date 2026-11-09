@@ -7236,14 +7236,6 @@ body.affiliate-modal-open {
   margin: 1.4rem auto 0;
 }
 
-/* Badge La Fabrique du Net (le script insère le badge à sa place), à côté du tag Sorank. */
-.footer-award {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.75rem;
-}
-
 .footer-award + .footer-cities {
   margin-top: 1.4rem;
 }

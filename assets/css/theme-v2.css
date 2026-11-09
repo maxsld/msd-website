@@ -250,6 +250,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--heading); font-w
 .footer-partner__logo { display: block; height: 64px; width: auto; }
 .footer-partner__logo--invert { filter: brightness(0) invert(1); }
 .footer-partner__logo--sortlist { height: 50px; }
+.footer-partner__logo--lfdn { height: 26px; }
 .footer-bottom { margin: 2rem auto 0; font-size: .85rem; color: #888; max-width: 1200px; }
 @media (max-width: 992px) {
   .footer-offices { grid-template-columns: 1fr; }

@@ -7204,6 +7204,11 @@ body.affiliate-modal-open {
   height: 60px;
 }
 
+/* Logo horizontal La Fabrique du Net (7:1) : bas pour ne pas élargir la rangée. */
+.footer-partner__logo--lfdn {
+  height: 30px;
+}
+
 /* Distinction sous forme de tag (pas de logo) : même rayon que tous les tags du site. */
 .footer-award-tag {
   display: inline-flex;
@@ -7244,6 +7249,7 @@ body.affiliate-modal-open {
   .footer-partners { gap: 1.8rem; }
   .footer-partner__logo { height: 64px; }
   .footer-partner__logo--sortlist { height: 50px; }
+  .footer-partner__logo--lfdn { height: 24px; }
 }
 
 .footer-bottom {

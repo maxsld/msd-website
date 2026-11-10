@@ -7188,7 +7188,7 @@ body.affiliate-modal-open {
 
 .footer-partner__logo {
   display: block;
-  height: 38px;
+  height: 48px;
   width: auto;
 }
 
@@ -7201,12 +7201,12 @@ body.affiliate-modal-open {
 /* Le badge Sortlist est un bandeau large la ou les deux autres logos sont des
    marques etroites : en pleine taille il ecrasait la rangee. */
 .footer-partner__logo--sortlist {
-  height: 30px;
+  height: 38px;
 }
 
 /* Logo horizontal La Fabrique du Net (7:1) : bas pour ne pas élargir la rangée. */
 .footer-partner__logo--lfdn {
-  height: 15px;
+  height: 19px;
 }
 
 /* Le badge La Fabrique du Net (injecté par son script) est posé, invisible, sur
@@ -7264,9 +7264,9 @@ body.affiliate-modal-open {
 
 @media (max-width: 680px) {
   .footer-partners { gap: 1.8rem; }
-  .footer-partner__logo { height: 32px; }
-  .footer-partner__logo--sortlist { height: 25px; }
-  .footer-partner__logo--lfdn { height: 12px; }
+  .footer-partner__logo { height: 42px; }
+  .footer-partner__logo--sortlist { height: 32px; }
+  .footer-partner__logo--lfdn { height: 16px; }
 }
 
 .footer-bottom {

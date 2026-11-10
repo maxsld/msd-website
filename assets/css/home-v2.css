@@ -64,3 +64,16 @@
 @media (max-width: 560px) {
   .hero__trust > span { border-left: 0; padding: .3rem 0; width: 100%; }
 }
+
+/* Bandeau de logos qui défile (la liste est doublée dans le HTML pour une boucle sans saut) */
+.client-logos--marquee:not(#_) { display: block; overflow: hidden; mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%); }
+.client-logos__track { display: flex; align-items: center; width: max-content; animation: logo-scroll 50s linear infinite; }
+.client-logos--marquee:hover .client-logos__track { animation-play-state: paused; }
+.client-logos--marquee .client-logos__item:not(#_) { flex: none; height: 64px; padding: 0 2.25rem; }
+.client-logos--marquee .client-logos__slot:not(#_) { flex: none; height: 48px; margin: 0 2.25rem; padding: 0 1.4rem; }
+@media (max-width: 600px) {
+  .client-logos--marquee .client-logos__item:not(#_) { padding: 0 1.3rem; height: 56px; }
+  .client-logos--marquee .client-logos__slot:not(#_) { margin: 0 1.3rem; }
+}
+@media (prefers-reduced-motion: reduce) { .client-logos__track { animation: none; } }
+@keyframes logo-scroll { to { transform: translateX(-50%); } }

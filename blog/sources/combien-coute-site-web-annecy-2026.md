@@ -39,8 +39,7 @@ C'est suffisant si tu es :
 - Profession libérale (avocat, architecte, médecin)
 - TPE qui veut juste être visible sur Google
 
-**Chez MSD Media : 2 450€**  
-Livré en 21 jours. Hébergement et maintenance inclus 1 an.
+**Chez MSD Media :** première version en 7 jours, version finale en 21 jours. Nos prix sont publiés sur [la page tarifs](https://msd-media.com/tarifs/).
 
 ---
 
@@ -55,8 +54,7 @@ Parfaite si tu veux :
 - Générer des leads qualifiés
 - Tester un concept avant de créer un gros site
 
-**Chez MSD Media : 1 190€**  
-Livrée en 7 jours. Optimisée pour la conversion, pas juste pour faire joli.
+**Chez MSD Media :** première version en 7 jours, version finale en 21 jours, optimisée pour la conversion, pas juste pour faire joli. Prix sur [la page tarifs](https://msd-media.com/tarifs/).
 
 ---
 
@@ -149,13 +147,12 @@ Mais ton taux de conversion monte de 25-50%.
 
 ## Le vrai ROI d'un site web à Annecy
 
-**Investissement chez MSD Media : 2 450€**  
-(site vitrine pro)
+**Exemple de calcul, avec un site vitrine à 3 000 €** (budget illustratif dans la fourchette du marché ; refais le calcul avec ton devis réel)
 
 **Si tu es artisan à Annecy :**  
 Panier moyen : 800€  
-Il te faut 3 nouveaux clients en 1 an pour rentabiliser.  
-Soit 1 client tous les 4 mois via ton site.
+Il te faut 4 nouveaux clients en 1 an pour rentabiliser.  
+Soit 1 client par trimestre via ton site.
 
 **Si tu es coach ou consultant :**  
 Prestation moyenne : 1 500€  

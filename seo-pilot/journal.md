@@ -11,6 +11,15 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-10 : vérité commerciale de 3 articles (cahier des charges V2)
+- Changement : prix MSD Media faux ou hors `/tarifs/` retirés des sources, remplacés par le délai réel et un lien vers `/tarifs/`. /blog/articles/agence-web-freelance-nocode-2026/ (« Landing pages à partir de 900€ »). /blog/articles/combien-coute-site-web-annecy-2026/ (« Chez MSD Media : 2 450€ » et « 1 190€ », « Hébergement et maintenance inclus 1 an », calcul de ROI refait avec un budget illustratif de 3 000 €). /blog/articles/landing-page-coach-consultant-annecy/ (grille 1 190 € / 1 890 € / 2 450 €, « Hébergement 1 an inclus », ROI « 4 à 15 clients par mois, en moins de 2 semaines » remplacé par un calcul illustratif ; deux « exemples concrets de coachs » sans nom ni réalisation, avec leads et clients chiffrés, remplacés par le cas réel Maxime Sciare).
+- Avant : voir le diff git du commit (prix et exemples ci-dessus, mot pour mot).
+- Hypothèse : aucune variation de trafic attendue ; on retire des contradictions avec `/tarifs/` et des résultats non prouvés, qui exposent la marque.
+- Requête visée : aucune (correction de vérité, pas un test).
+- Départ : relevé du 2026-11-09.
+- Type : `seo`
+- Reste à faire : l'article coach garde des chiffres de marché sans source (taux de conversion 15 à 25 %, 75 % de mobile, recherches « près de moi » doublées) ; à sourcer ou retirer au prochain passage où la page est libre (après le 2026-12-01).
+
 ### 2026-11-10 : refonte après l'audit complet du site (décision de Maxens)
 - Changement : 4 articles où MSD Media se classait elle-même supprimés et redirigés en 301 : top-7-meilleures-agences-web-annecy-2026 → /agence-web-annecy/, top-5-agences-landing-page-france-2026 et agences-landing-page-prix-france-2026 → /creation-landing-page/, meilleures-agences-cro-france → /blog/articles/ameliorer-taux-conversion-site-web/. Le test du 2026-11-03 sur agences-landing-page-prix-france-2026 s'arrête. Section « Demander à ChatGPT / Claude » retirée de toutes les pages. Bandeau affiliation retiré des pages qui vendent (accueil, tarifs, contact, réservation, services, villes, secteurs), gardé sur le blog, les réalisations, les outils, la presse et les pages d'information. /tarifs/ : formule MSD Care (490 €/mois, sans engagement), SEO technique et lisibilité IA cochés pour la landing page comme sur l'accueil, mention TVA. /contact/ : e-mail, téléphone et WhatsApp en clair ; e-mail et téléphone en clair dans le footer. /agence-web-annecy/ : Laurence Daien Maestripieri et Agence 3XL cités. /presse/ : dates et texte du pitch deck. Liste du blog : date de chaque article. llms.txt corrigé.
 - Hypothèse : moins de dispersion et plus de confiance ; le signal des articles supprimés passe aux pages d'offre.

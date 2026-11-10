@@ -164,7 +164,7 @@ Surtout en coaching/conseil.
 
 **Conversion moyenne : 18-25%**
 
-**Tarif chez MSD Media : 1 190€**
+**Tarif :** voir [la page tarifs](https://msd-media.com/tarifs/).
 
 ---
 
@@ -219,102 +219,40 @@ Surtout en coaching/conseil.
 
 ## Combien ça coûte pour un coach ou consultant à Annecy ?
 
-### Landing page simple : 1 190€
+Le prix d'une landing page dépend du nombre de sections, des textes à écrire et des outils à brancher (formulaire, prise de rendez-vous). Nos prix sont publiés sur [la page tarifs](https://msd-media.com/tarifs/), sans frais cachés.
 
-**Ce qui est inclus chez MSD Media :**
-- Design sur-mesure qui convertit
-- Copywriting optimisé
-- Formulaire de capture de leads
-- Intégration emailing (Brevo, Mailchimp)
+**Ce que comprend une landing page chez MSD Media :**
+- Design sur-mesure, sans template
+- Textes écrits pour convertir
+- Formulaire de contact ou de prise de rendez-vous
 - Optimisation SEO local Annecy
-- Responsive mobile/tablette
-- Hébergement 1 an inclus
-- **Livraison en 7 jours**
+- Affichage mobile et tablette
+- **Première version en 7 jours, version finale en 21 jours**
 
----
-
-### Landing page + séquence email : 1 890€
-
-**En plus de la landing :**
-- 5 emails de nurturing
-- Automation complète
-- Stratégie de conversion
-
-**Livraison : 10 jours**
-
----
-
-### Site vitrine complet : 2 450€
-
-**Si vous voulez un site plus complet :**
-- 5-8 pages
-- Blog intégré
-- Plusieurs offres
-- Parcours client plus long
-
-**Livraison : 21 jours**
+Si vous avez plusieurs offres, un blog ou un parcours client plus long, un site vitrine de 5 à 8 pages sera plus adapté qu'une seule page.
 
 ---
 
 ## Le ROI d'une landing page pour un coach à Annecy
 
-**Investissement : 1 190€**  
-(landing page conversion)
+**Calcul illustratif**, à refaire avec vos propres chiffres :
 
-**Calcul simple :**
+Si votre accompagnement coûte 1 500 €, deux clients signés couvrent le prix d'une landing page sur-mesure. Avec une hypothèse prudente de 2 % des visiteurs qui laissent leur contact et un contact sur quatre qui signe, il faut environ 8 contacts, donc 400 visiteurs qualifiés, pour signer ces deux clients.
 
-Si votre accompagnement coûte 1 500€ :
-- Il vous faut 1 client pour être rentable
-- Avec une conversion de 15%, il faut 7 leads qualifiés
-- Soit environ 100-150 visiteurs
-
-**La réalité :**  
-Une bonne landing page génère 20-50 leads/mois.  
-Taux de conversion lead → client : 20-30%.
-
-**Résultat :** 4-15 nouveaux clients par mois.
-
-ROI atteint en **moins de 2 semaines**.
+Le délai de rentabilité dépend donc surtout de votre trafic : une page sans visites ne rapporte rien, quelle que soit sa qualité. C'est pourquoi le SEO local et vos canaux existants (LinkedIn, recommandations) comptent autant que la page elle-même.
 
 ---
 
-## Exemples concrets de coachs à Annecy
+## Un exemple réel : le site de Maxime Sciare, coach et conférencier
 
-### Coach professionnel en reconversion
+Nous avons refait le site de [Maxime Sciare](https://msd-media.com/realisations/maxime-sciare/), coach professionnel et conférencier. Le problème de départ est fréquent chez les coachs : l'offre paraissait moins lisible qu'elle ne l'était, et le visiteur ne comprenait pas assez vite ce qui était proposé, ni pour qui.
 
-**Avant :**  
-Site web classique 5 pages.  
-2-3 demandes par mois.  
-Taux de conversion : 3%.
+Le travail a porté sur le fond avant la forme :
+- un positionnement clarifié, formulé en quelques secondes de lecture ;
+- la preuve sociale mise en avant ;
+- un parcours de réservation nettement raccourci.
 
-**Après (landing page MSD Media) :**
-- Focus sur "Changer de carrière à 40 ans"
-- Audit gratuit de 30 min offert
-- Optimisé pour "reconversion professionnelle Annecy"
-
-**Résultat :**  
-23 leads qualifiés le premier mois.  
-8 clients signés (35% de conversion).  
-ROI atteint en 3 semaines.
-
----
-
-### Consultante en stratégie digitale
-
-**Avant :**  
-LinkedIn + prospection manuelle.  
-5-6h/jour de prospection.  
-1-2 clients/mois.
-
-**Après :**
-- Landing page "Audit SEO gratuit"
-- Trafic via Google Ads ciblé Annecy + Haute-Savoie
-- Automatisation complète
-
-**Résultat :**  
-15 audits réalisés/mois.  
-4-6 deviennent clients (30% de conversion).  
-Temps gagné : 20h/semaine.
+Côté technique, le site atteint 96/100 sur PageSpeed mobile, soit 40 points de plus que l'ancien, livré en 21 jours ouvrés. Le détail du projet est sur [la page de la réalisation](https://msd-media.com/realisations/maxime-sciare/).
 
 ---
 

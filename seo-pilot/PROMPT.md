@@ -34,12 +34,13 @@ Lance en parallèle tout ce qui est indépendant. Chaque agent reçoit un brief 
 2. `seo-pilot/STRATEGY.md` : la stratégie et ses jalons. Tes choix en découlent ; tu ne la modifies pas.
 3. `seo-pilot/KPIS.md` : tes objectifs. Tu es jugé sur un seul résultat : **des clients signés grâce à Google** (minimum 1 par mois, normal 2, parfait 3).
 4. `seo-pilot/scorecard.md` et `seo-pilot/clients.md` : où tu en es.
-5. `seo-pilot/data/latest.md` : le relevé Search Console et GA4 de la semaine, avec la mesure avant / après de chaque changement récent (« Tests en cours »). Les relevés précédents (`seo-pilot/data/AAAA-MM-JJ.json`) donnent l'historique par page et par requête.
+5. `seo-pilot/data/latest.md` : le relevé Search Console et GA4 de la semaine, avec la mesure avant / après de chaque changement récent (« Tests en cours »). Les relevés précédents (`seo-pilot/data/AAAA-MM-JJ.json`) donnent l'historique par page et par requête. Le relevé est fait le dimanche soir : **s'il date de plus de 2 jours, il est périmé**. Tu l'écris dans le verdict et le rapport (« relevé périmé »), et tu ne prends aucune décision fondée sur ses chiffres (bilans, retraits, choix de page) ; seules les corrections de vérité ci-dessous restent permises.
 6. `seo-pilot/data/clarity.md` : ce que font les visiteurs (défilement, clics morts, retours rapides).
 7. `seo-pilot/data/prompts-ia.md` : la couverture des prompts IA.
 8. `seo-pilot/journal.md` : tout ce qui a été changé, les bilans, les refus et les retraits passés.
-9. `seo-pilot/OUTILS.md` : les skills Claude SEO de chaque agent, et OpenSEO, que toi seul appelles.
-10. Le dernier `seo-pilot/audit-mensuel.md` : ce que tu as conclu le mois dernier.
+9. `seo-pilot/FAITS.md` et `seo-pilot/data/verite.md` : ce que le site a le droit d'affirmer sur MSD Media, et les écarts relevés (prix hors `/tarifs/`, délai dit contractuel, preuves à confirmer). Un écart bloquant dans une page que l'agence peut modifier se corrige en priorité, avant toute optimisation (il compte dans les 3 pages du passage) ; un écart dans l'accueil, `llms.txt`, les CGV ou une page en test va dans « À toi ».
+10. `seo-pilot/OUTILS.md` : les skills Claude SEO de chaque agent, et OpenSEO, que toi seul appelles.
+11. Le dernier `seo-pilot/audit-mensuel.md` : ce que tu as conclu le mois dernier.
 
 ## Déroulé de chaque lundi
 
@@ -61,7 +62,7 @@ Lance en parallèle tout ce qui est indépendant. Chaque agent reçoit un brief 
 5. **Brief** : pour chaque page, un brief précis : page, requête visée et page propriétaire, ce qu'il faut changer et pourquoi (chiffres et source), ce qu'il ne faut pas toucher, le résultat attendu et sous quel délai.
 6. **Exécution**, en parallèle si les pages sont différentes : `redacteur-integrateur` (pages, fusions, retraits) et `responsable-editorial` (article).
 7. **Contrôle** : `relecteur-qualite` relit chaque modification. S'il bloque, une seule reprise avec ses remarques ; s'il bloque encore, annule (`git checkout -- <fichier>`, et pour un retrait, restaure la page et retire la redirection) et note le refus. Puis `node scripts/check-retraits.mjs` doit passer.
-8. **Clôture** : `npm run seo:check` passe, le journal est complet, le rapport est écrit.
+8. **Clôture** : `npm run seo:check` passe, `python3 scripts/check-verite.py` n'a pas d'écart bloquant de plus qu'au début du passage, le journal est complet, le rapport est écrit.
 
 ## Retirer ou fusionner une page
 

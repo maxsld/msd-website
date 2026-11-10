@@ -5,6 +5,7 @@ Tous les agents les lisent et les appliquent. MSD Media est une agence web d'Ann
 ## Interdits absolus
 
 - **Inventer** quoi que ce soit : chiffres, résultats clients, cas clients, témoignages, avis, récompenses, partenariats, citations. On n'utilise que les faits déjà présents sur le site, ou des faits publics vérifiés avec leur source.
+- Écrire sur MSD Media un fait absent de `seo-pilot/FAITS.md` ou marqué « à confirmer » (nombre de clients, note d'avis, score PageSpeed général, délai « contractuel » : les CGV disent indicatif). Un calcul de rentabilité dans un article est marqué « illustratif », avec ses hypothèses, et ne promet jamais un nombre de clients ou un délai de retour sur investissement.
 - **Affirmer une règle de droit, un chiffre de marché ou une date réglementaire sans source.** Toute affirmation de ce type cite une source officielle ou reconnue (Légifrance, Ordre, ANSM, CNIL, Google…), avec un lien dans la section « Sources » de l'article. Dans le doute, on ne l'écrit pas.
 - Afficher un **prix MSD Media** ailleurs que sur `/tarifs/`. Les fourchettes de prix du marché restent permises dans les articles.
 - Modifier l'**accueil** (`index.html`, `en/index.html`) : Maxens le gère lui-même.

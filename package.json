@@ -8,7 +8,7 @@
     "seo:browser-check": "node scripts/check-browser.mjs && node scripts/check-conversions.mjs",
     "seo:prepare": "npm run blog:build && node scripts/update-lastmod.mjs && npm run seo:check",
     "seo:sync-faq": "python3 scripts/check-seo.py --sync-faq",
-    "blog:build": "cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs && node scripts/version-assets.mjs",
+    "blog:build": "cp scripts/generate-blog.js scripts/generate-blog.cjs && node scripts/generate-blog.cjs && node scripts/version-assets.mjs && node scripts/version-assets.mjs",
     "index:submit": "node scripts/google-index.mjs --days=7",
     "index:dry-run": "node scripts/google-index.mjs --days=7 --dry-run",
     "lastmod:update": "node scripts/update-lastmod.mjs",

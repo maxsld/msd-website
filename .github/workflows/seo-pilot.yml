@@ -1,13 +1,15 @@
 name: Pilote SEO hebdomadaire
 
-# Chaque lundi : relevés Search Console, GA4, Clarity (et Trends le 1er lundi du mois),
+# Chaque dimanche soir : relevés Search Console, GA4, Clarity (et Trends la veille du 1er lundi du mois),
 # enregistrés dans seo-pilot/data/. L'agence SEO elle-même (seo-pilot/PROMPT.md et
-# .claude/agents/) tourne ensuite en routine Claude sur claude.ai, une heure plus tard,
+# .claude/agents/) tourne ensuite en routine Claude sur claude.ai le lundi à 3 h UTC,
 # avec l'abonnement de Maxens : elle lit ces relevés, corrige, contrôle et met en ligne.
+# Le dimanche laisse 9 h de marge : le 2026-11-09, le planificateur GitHub a lancé le relevé
+# de 2 h UTC à 9 h 12, après le passage de l'agence, qui a travaillé sur des chiffres périmés.
 on:
   schedule:
-    # 2 h UTC = 3 h à Paris en hiver, 4 h en été : tout est fait au réveil de Maxens.
-    - cron: "0 2 * * 1"
+    # Dimanche 18 h UTC = 19 h à Paris en hiver.
+    - cron: "0 18 * * 0"
   workflow_dispatch:
 
 concurrency:
@@ -55,18 +57,22 @@ jobs:
           CLARITY_API_TOKEN: ${{ secrets.CLARITY_API_TOKEN }}
         run: node scripts/seo-pilot-clarity.mjs
 
-      # Le 1er lundi du mois seulement : nourrit la revue éditoriale. Trends peut refuser, ce n'est pas bloquant.
-      - name: Relevé Google Trends (1er lundi du mois)
-        if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 2 * * 1' }}
+      # La veille du 1er lundi du mois seulement : nourrit la revue éditoriale. Trends peut refuser, ce n'est pas bloquant.
+      - name: Relevé Google Trends (veille du 1er lundi du mois)
+        if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 18 * * 0' }}
         continue-on-error: true
         run: |
-          if [ "$(date -u +%-d)" -le 7 ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          if [ "$(date -u -d tomorrow +%-d)" -le 7 ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             node scripts/seo-pilot-trends.mjs
           fi
 
       # Croise cibles, besoins, lieux et intentions (data/ai-prompts.json) et mesure ce que le site couvre.
       - name: Couverture des prompts IA
         run: python3 scripts/ai-prompt-coverage.py
+
+      # Écarts avec le registre des faits (seo-pilot/FAITS.md) : prix hors /tarifs/, promesses, preuves.
+      - name: Vérité commerciale
+        run: python3 scripts/check-verite.py
 
       - name: Enregistrer les relevés
         run: |

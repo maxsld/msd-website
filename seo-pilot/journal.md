@@ -11,6 +11,14 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-10 : refonte après l'audit complet du site (décision de Maxens)
+- Changement : 4 articles où MSD Media se classait elle-même supprimés et redirigés en 301 : top-7-meilleures-agences-web-annecy-2026 → /agence-web-annecy/, top-5-agences-landing-page-france-2026 et agences-landing-page-prix-france-2026 → /creation-landing-page/, meilleures-agences-cro-france → /blog/articles/ameliorer-taux-conversion-site-web/. Le test du 2026-11-03 sur agences-landing-page-prix-france-2026 s'arrête. Section « Demander à ChatGPT / Claude » retirée de toutes les pages. Bandeau affiliation retiré des pages qui vendent (accueil, tarifs, contact, réservation, services, villes, secteurs), gardé sur le blog, les réalisations, les outils, la presse et les pages d'information. /tarifs/ : formule MSD Care (490 €/mois, sans engagement), SEO technique et lisibilité IA cochés pour la landing page comme sur l'accueil, mention TVA. /contact/ : e-mail, téléphone et WhatsApp en clair ; e-mail et téléphone en clair dans le footer. /agence-web-annecy/ : Laurence Daien Maestripieri et Agence 3XL cités. /presse/ : dates et texte du pitch deck. Liste du blog : date de chaque article. llms.txt corrigé.
+- Hypothèse : moins de dispersion et plus de confiance ; le signal des articles supprimés passe aux pages d'offre.
+- Requête visée : agence landing page, agence web annecy (pages qui reçoivent les redirections).
+- Départ : relevé du 2026-11-09.
+- Type : `seo`
+- Note : les titres réécrits le 2026-10-30 ne sont pas touchés, leur bilan à 21 jours tombe le 2026-11-20.
+
 ### 2026-11-09 : /blog/articles/webdesigner-annecy-ou-agence/
 - Changement : nouvel article Annecy « Prestataire web à Annecy : webdesigner, agence ou plateforme ? » (aide au choix : périmètre, SEO, maintenance, délais, propriété du site et du domaine, questions à poser), liens vers /creation-site-web-annecy/, /agence-web-annecy/, /tarifs/ et /reserver-un-appel/. Aucune source externe : Google, Afnic et Légifrance inaccessibles depuis la session, l'article ne contient donc que des conseils et des faits déjà publiés sur le site.
 - Hypothèse : premières impressions sur « prestataire web annecy », « webdesigner ou agence » et variantes en 2 à 6 semaines ; renforce le groupe Annecy et pousse vers les deux pages de service.

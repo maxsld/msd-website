@@ -43,7 +43,7 @@ Deux leviers multiplient le résultat : **plus de clics** (positions et taux de 
 
 | KPI | Objectif minimum |
 |---|---|
-| Article publié | 1 (sauf semaine de 3 corrections lourdes) |
+| Article publié | 1 les 1er et 3e lundis du mois, sur la santé (sauf lundi de 3 corrections lourdes) |
 | Pages améliorées | 1 à 3, choisies sur le plus gros écart |
 | Bilans à 21 jours | 100 % faits, décision prise (garder, corriger, annuler) |
 | Contrôles (`seo:check`, relecteur) | 100 % passés, aucune règle enfreinte |
@@ -55,12 +55,12 @@ Objectifs fixés par Maxens le 2026-11-04, comptés depuis le 9 novembre 2026 (p
 
 | Échéance | Articles | Changements de pages | Tests de conversion | Bilans à 21 jours rendus | Audits (technique, accessibilité) | Scores de citations IA | Ce qui doit aussi être vrai |
 |---|---|---|---|---|---|---|---|
-| **1 semaine** (16 nov. 2026) | 1 | 1 à 3 | 1 diagnostic | — | — | — | Premier rapport Telegram envoyé avec un « À toi » |
-| **1 mois** (7 déc. 2026) | 4 | 6 à 10 | 1 à 2 | — | 1 + 1 | 1 (si le relevé est fait) | Premier lot de corrections d'accessibilité HTML en ligne |
-| **2 mois** (4 janv. 2027) | 8 | 15 à 20 | 2 à 3 | tous ceux dus | 2 + 2 | 2 | Premier conflit de cannibalisation réglé |
-| **3 mois** (1er févr. 2027) | 13 | 25 à 35 | 3 à 5 | tous ceux dus | 3 + 3 | 3 | Bilan trimestriel écrit, hypothèses de conversion recalées ; erreurs d'accessibilité « bloquantes » côté HTML à zéro |
-| **6 mois** (3 mai 2027) | 26 | 50 à 60 | 6 à 10 | tous ceux dus | 6 + 6 | 6, avec une tendance | Jalons de mars (études de cas chiffrées) et d'avril (pages en position 4 à 15) livrés |
-| **1 an** (1er nov. 2027) | 50 | 100 à 120 | 12 à 20 | tous ceux dus | 12 + 12 | 12 | Plan de l'année 2 écrit à partir de ce qui a marché |
+| **1 semaine** (16 nov. 2026) | 0 | 1 à 3 | 1 diagnostic | — | — | — | Premier rapport Telegram envoyé avec un « À toi » |
+| **1 mois** (7 déc. 2026) | 2 | 6 à 10 | 1 à 2 | — | 1 + 1 | 1 (si le relevé est fait) | Premier lot de corrections d'accessibilité HTML en ligne |
+| **2 mois** (4 janv. 2027) | 4 | 15 à 20 | 2 à 3 | tous ceux dus | 2 + 2 | 2 | Premier conflit de cannibalisation réglé |
+| **3 mois** (1er févr. 2027) | 6 | 25 à 35 | 3 à 5 | tous ceux dus | 3 + 3 | 3 | Bilan trimestriel écrit, hypothèses de conversion recalées ; erreurs d'accessibilité « bloquantes » côté HTML à zéro |
+| **6 mois** (3 mai 2027) | 12 | 50 à 60 | 6 à 10 | tous ceux dus | 6 + 6 | 6, avec une tendance | Jalons de mars (études de cas chiffrées) et d'avril (pages en position 4 à 15) livrés |
+| **1 an** (1er nov. 2027) | 24 | 100 à 120 | 12 à 20 | tous ceux dus | 12 + 12 | 12 | Plan de l'année 2 écrit à partir de ce qui a marché |
 
 Ces volumes sont des plafonds réalistes, pas des quotas à remplir : une semaine sans changement pertinent reste une bonne décision. Mais un écart de plus de 30 % sous le bas de la fourchette doit être expliqué dans le bilan du mois (pas assez de données, bilans en « prolonger », pages bloquées par la règle des 21 jours…).
 
@@ -82,17 +82,17 @@ Valeurs sur 28 jours glissants, relevées le 1er lundi du mois. **Minimum** : en
 
 | Mois | Clics Google (min / cible) | dont hors marque (min / cible) | Leads Google réels estimés (min / cible) | Articles publiés |
 |---|---|---|---|---|
-| Déc. 2026 | 55 / 70 | 5 / 10 | 0 / 1 | 4 |
-| Janv. 2027 | 65 / 90 | 10 / 25 | 0 / 1 | 3 |
-| Févr. 2027 | 80 / 110 | 20 / 40 | 1 / 2 | 4 |
-| Mars 2027 | 95 / 135 | 30 / 60 | 1 / 2 | 4 |
-| Avr. 2027 | 110 / 165 | 40 / 80 | 1 / 3 | 4 |
-| Mai 2027 | 130 / 200 | 55 / 110 | 2 / 4 | 4 |
-| Juin 2027 | 150 / 235 | 70 / 140 | 2 / 5 | 4 |
-| Juil. 2027 | 165 / 270 | 85 / 170 | 3 / 5 | 3 |
-| Août 2027 | 175 / 300 | 95 / 200 | 3 / 6 | 3 |
-| Sept. 2027 | 190 / 340 | 110 / 230 | 3 / 7 | 4 |
-| Oct. 2027 | 200 / 400 | 125 / 270 | 4 / 8 | 4 |
+| Déc. 2026 | 55 / 70 | 5 / 10 | 0 / 1 | 2 |
+| Janv. 2027 | 65 / 90 | 10 / 25 | 0 / 1 | 2 |
+| Févr. 2027 | 80 / 110 | 20 / 40 | 1 / 2 | 2 |
+| Mars 2027 | 95 / 135 | 30 / 60 | 1 / 2 | 2 |
+| Avr. 2027 | 110 / 165 | 40 / 80 | 1 / 3 | 2 |
+| Mai 2027 | 130 / 200 | 55 / 110 | 2 / 4 | 2 |
+| Juin 2027 | 150 / 235 | 70 / 140 | 2 / 5 | 2 |
+| Juil. 2027 | 165 / 270 | 85 / 170 | 3 / 5 | 2 |
+| Août 2027 | 175 / 300 | 95 / 200 | 3 / 6 | 2 |
+| Sept. 2027 | 190 / 340 | 110 / 230 | 3 / 7 | 2 |
+| Oct. 2027 | 200 / 400 | 125 / 270 | 4 / 8 | 2 |
 
 ### Visibilité Google (Search Console, 28 jours glissants, min / cible)
 
@@ -127,7 +127,7 @@ Autres KPI mensuels :
 
 | Fin de trimestre | Ce qui doit être vrai au minimum |
 |---|---|
-| **Fin janv. 2027** | 65 clics Google par mois ; 3 requêtes commerciales en top 10 ; 12 articles publiés depuis novembre ; hypothèses de conversion recalées |
+| **Fin janv. 2027** | 65 clics Google par mois ; 3 requêtes commerciales en top 10 ; 6 articles santé publiés depuis novembre, l'étude médecine esthétique lancée ; hypothèses de conversion recalées |
 | **Fin avr. 2027** | 110 clics par mois ; **un premier client venu de Google** ; 1 requête commerciale en top 3 ; taux de conversion ≥ 1,5 % |
 | **Fin juil. 2027** | 165 clics par mois ; **1 client par mois venu de Google** (minimum atteint) ; 5 requêtes commerciales en top 3 |
 | **Fin oct. 2027** | 200 à 400 clics par mois ; **1 client par mois au minimum, 2 en normal, 3 en parfait** ; plan de l'année 2 |

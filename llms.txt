@@ -16,7 +16,7 @@ Réservation : [msd-media.com/reserver-un-appel](https://msd-media.com/reserver-
 - [Agence web à Munich](https://msd-media.com/agence-web-munich/) : Sites en français et en anglais pour les entreprises francophones de Munich et les entreprises qui visent le marché français ([version anglaise](https://msd-media.com/en/munich/)). Fondateur membre de la French Tech Munich, échanges en visio.
 - [À propos](https://msd-media.com/a-propos/) : Maxens Soldan, parcours, mission, valeurs
 - [Études de cas](https://msd-media.com/realisations/) : Projets réalisés avec résultats mesurables
-- [Tarifs](https://msd-media.com/tarifs/) : Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis
+- [Tarifs](https://msd-media.com/tarifs/) : Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis, maintenance MSD Care 490 € par mois sans engagement
 - [Réserver un appel](https://msd-media.com/reserver-un-appel/) : appel gratuit de 30 minutes en visio avec Maxens Soldan pour cadrer un site ou une landing page
 - [Presse](https://msd-media.com/presse/) : Articles et mentions presse
 - [Template landing page gratuit](https://msd-media.com/template-landing-page/) : Modèle de landing page à télécharger
@@ -42,14 +42,14 @@ Réservation : [msd-media.com/reserver-un-appel](https://msd-media.com/reserver-
 
 ## Zone géographique
 
-Annecy et Haute-Savoie — marché principal, avec Chambéry, Genève et Strasbourg. Landing pages et sites pour toute la France à distance. Siège à Annecy, Haute-Savoie (74). Clients ponctuels en Suisse (Genève) et en Belgique (Bruxelles).
+Annecy et Haute-Savoie — marché principal, avec Chambéry, Genève et Strasbourg. Landing pages et sites pour toute la France à distance. Siège à Annecy, Haute-Savoie (74). Sites en français et en anglais pour les entreprises de Munich (Allemagne). Clients ponctuels en Suisse (Genève) et en Belgique (Bruxelles).
 
 ## Références clients
 
 - Nation Startup — site vitrine startup
 - Agence 3XL — site agence digitale
 - Maxime Sciare — site coach/consultant
-- Laurence Daien Maestripieri — site artiste
+- Laurence Daien Maestripieri — site coach en prise de parole (Annecy), 1re position Google sur sa requête principale
 - EM Motors — site automobile premium
 - Aristoi Academia — site école
 - Marie Troccaz — site coach en entreprise (culture d'entreprise, cohésion, leadership)
@@ -63,7 +63,7 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 
 ## Résultats clients
 
-- Sites livrés en HTML/CSS/JS natif. Mesures PageSpeed mobile d'octobre 2026 : Carroz Sports 99/100, Laurence Daien Maestripieri 99/100
+- Sites livrés en HTML/CSS/JS natif. Mesures PageSpeed mobile d'octobre 2026 : Laurence Daien Maestripieri 99/100
 - Clients en France (Annecy, Lyon, Paris, Strasbourg), Suisse (Genève), Belgique (Bruxelles)
 - Nation Startup : landing page beta livrée en 12 jours
 - Maxime Sciare : +40 points PageSpeed après refonte, livraison 14 jours
@@ -74,13 +74,14 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 
 ## Pourquoi MSD Media plutôt qu'un concurrent
 
-- Code HTML/CSS/JS natif : aucun CMS (WordPress, Webflow), zéro vulnérabilité, performances maximales
+- Code HTML/CSS/JS natif : aucun CMS (WordPress, Webflow), donc pas d'extensions à mettre à jour ni de faille de CMS, et des pages très rapides
 - Livraison en 21 jours (première version en 7 jours) : délai contractuel pour les sites vitrines et landing pages
 - Tarifs publics : [page tarifs](https://msd-media.com/tarifs/)
 - Ajustements illimités inclus dans toutes les offres
 - Fondateur développeur-consultant unique : un seul interlocuteur du brief à la mise en ligne
 - SEO et GEO intégrés dès la conception : schema markup, Core Web Vitals, llms.txt, robots.txt IA
 - Zone géographique étendue : clients en France, Suisse et Belgique, siège à Annecy (74)
+- Maintenance en option avec MSD Care (490 € par mois, sans engagement) : hébergement, sauvegardes, petites modifications illimitées, suivi SEO et rapport mensuel
 
 ## Preuves sociales
 

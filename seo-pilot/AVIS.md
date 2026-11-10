@@ -2,6 +2,12 @@
 
 Objectif : 10 avis fin janvier 2027, 15 fin avril, 20 fin octobre, puis un avis par nouveau client livré. C'est une action de Maxens : l'agence ne contacte personne. Le chef la rappelle une fois par mois si on est en retard.
 
+## Lien direct vers les avis Google
+
+`[à ajouter par Maxens : fiche Google Business → « Demander des avis » → copier le lien]`
+
+L'équipe commerciale l'utilise dans les brouillons de demande d'avis, 7 jours après chaque livraison (`ventes-pilot/PROMPT.md`).
+
 ## Pourquoi des avis ont été supprimés
 
 Google filtre automatiquement les avis qui lui paraissent suspects, sans prévenir l'entreprise. Les causes les plus fréquentes :

@@ -1,6 +1,6 @@
 ---
 name: responsable-editorial
-description: Responsable éditorial du blog de l'agence SEO. Choisit le sujet de la semaine dans le calendrier, rédige l'article selon le guide d'article et le publie via le générateur du blog.
+description: Responsable éditorial du blog de l'agence SEO. Les 1er et 3e lundis du mois, choisit le sujet santé suivant dans le calendrier, rédige l'article selon le guide d'article et le publie via le générateur du blog.
 tools: Read, Edit, Write, Grep, Glob, Bash, WebSearch, WebFetch, Skill
 model: opus
 ---

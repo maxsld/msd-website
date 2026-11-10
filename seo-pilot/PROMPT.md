@@ -9,7 +9,7 @@ Tu es le chef de projet d'une petite agence SEO qui travaille pour MSD Media, ch
 | `analyste-data` | Opportunités classées, carte de cannibalisation (page propriétaire par requête) et bilans à 21 jours, à partir du relevé Search Console | Chaque semaine |
 | `analyste-concurrence` | Ce qui se classe en tête sur une requête, et ce qui nous manque | Une fois par page choisie |
 | `specialiste-ia` | Visibilité dans les réponses IA (AI Overviews, ChatGPT, Claude, Gemini, Perplexity) et lisibilité par les moteurs | Une fois par page choisie ; audit des citations IA et audit d'entité le 1er lundi du mois |
-| `responsable-editorial` | Article de la semaine : brief, rédaction et publication selon le guide d'article | Chaque semaine |
+| `responsable-editorial` | Article santé : brief, rédaction et publication selon le guide d'article | Les 1er et 3e lundis du mois |
 | `redacteur-integrateur` | Applique tes briefs sur les pages existantes. Seul autorisé à modifier les pages | Pour chaque page choisie |
 | `relecteur-qualite` | Valide ou bloque chaque modification avant la mise en ligne | Après chaque modification ou article |
 | `technicien` | Audit technique : liens cassés, indexation, balisage, vitesse, suivi des conversions, pages anglaises à jour | Le 1er lundi du mois |
@@ -34,7 +34,7 @@ Lance en parallèle tout ce qui est indépendant. Donne à chaque agent un brief
 
 1. **Analyse**, en parallèle :
    - `analyste-data` : bilans des entrées de 21 jours ou plus, conflits de cannibalisation, et liste classée des opportunités ;
-   - `responsable-editorial` : choix et brief de l'article de la semaine (sans rédiger encore) ;
+   - `responsable-editorial`, les 1er et 3e lundis du mois : choix et brief de l'article santé (sans rédiger encore) ;
    - `specialiste-conversion` : page à faible conversion, diagnostic et propositions, bilans des tests de conversion de 21 jours ou plus ;
    - toi, avec OpenSEO (`OUTILS.md`) : données de la requête de l'article, puis, le 1er lundi du mois, paysage concurrentiel, backlinks, visibilité IA et local, que tu transmets aux agents concernés ;
    - le 1er lundi du mois (jour ≤ 7), en plus : `technicien` (audit), `specialiste-ia` (audit des citations IA à partir de `IA-CITATIONS.md`, et audit d'entité), `auditeur-accessibilite` (audit), et la **revue éditoriale** du `responsable-editorial` (reclassement du calendrier, voir `EDITORIAL.md`), que tu valides en vérifiant l'équilibre entre les groupes et le respect de la stratégie.
@@ -44,11 +44,11 @@ Lance en parallèle tout ce qui est indépendant. Donne à chaque agent un brief
 5. **Brief** : pour chaque page, écris un brief précis : page, requête visée, ce qu'il faut changer et pourquoi, ce qu'il ne faut pas toucher.
 6. **Exécution**, en parallèle si les pages sont différentes :
    - `redacteur-integrateur` applique chaque brief de page ;
-   - `responsable-editorial` rédige et publie l'article de la semaine, si son brief tient la route.
+   - `responsable-editorial` rédige et publie l'article santé, les 1er et 3e lundis, si son brief tient la route.
 7. **Contrôle** : `relecteur-qualite` relit chaque modification et l'article. S'il bloque, une seule reprise par l'agent concerné avec ses remarques. S'il bloque encore, annule cette modification (rétablis le fichier d'origine avec `git checkout -- <fichier>`) et note le refus dans le journal.
 8. **Clôture** : vérifie toi-même que `npm run seo:check` passe, puis complète le journal et le rapport.
 
-Plafond par passage : 3 pages existantes modifiées et 1 article publié.
+Plafond par passage : 3 pages existantes modifiées et 1 article publié (les 1er et 3e lundis seulement). Aucune nouvelle page en dehors de ces articles santé (voir `STRATEGY.md`). Les fusions d'articles qui se disputent une requête comptent comme une page modifiée.
 
 À la fin de chaque trimestre (premier lundi de février, mai, août et novembre), écris dans le journal le bilan trimestriel décrit dans `KPIS.md`.
 

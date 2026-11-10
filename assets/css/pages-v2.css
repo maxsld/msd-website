@@ -253,3 +253,25 @@ body:not(.sector-page) main > :first-child .blog-article-cover:not(#_) { margin-
 .sitemap-group li { display: grid; gap: .1rem; padding: .55rem 0; border-bottom: 1px solid var(--line); }
 .sitemap-group li a:not(#_) { text-decoration: none; color: var(--heading); font-weight: 600; }
 .sitemap-group li span { font-size: .85rem; color: var(--text); }
+
+/* MSD Care : formule mensuelle sous la grille des offres, en carte large (titre et prix à gauche, contenu à droite). */
+.pricing-card--care:not(#_) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 1.5rem 3rem; align-items: start; margin-top: 1.5rem; }
+.pricing-card--care .pricing-care__head { display: flex; flex-direction: column; align-items: flex-start; gap: .6rem; }
+.pricing-card--care .pricing-card__badge { position: static; }
+.pricing-card--care .pricing-card__price-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem; }
+.pricing-card--care .pricing-card__features { margin: 0; }
+.pricing-card--care .pricing-card__cta { margin-top: .6rem; }
+.pricing-vat-note { margin: 1rem 0 0; font-size: .9rem; color: var(--text); }
+@media (max-width: 860px) { .pricing-card--care:not(#_) { grid-template-columns: 1fr; } }
+
+/* Contact : e-mail, téléphone et WhatsApp en clair sous les modes de contact. */
+.contact-direct { margin: .9rem 0 1.4rem; font-size: .95rem; color: var(--text); }
+.contact-direct a { color: var(--text-dark); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Presse : date de chaque parution et texte d'accompagnement du pitch deck. */
+.press-card__date { display: block; margin: .9rem 0 .3rem; font-size: .85rem; color: var(--text); }
+.press-pitch-deck-cta:not(#_) { flex-direction: column; align-items: center; }
+.press-pitch-deck-cta__text { max-width: 640px; margin: 0 auto 1rem; text-align: center; color: var(--text); }
+.press-pitch-deck-cta__text a { color: var(--text-dark); text-decoration: underline; text-underline-offset: 3px; }
+/* Titres des parutions passés en h2 (pas de saut de niveau après le h1) : même taille qu'avant. */
+.press-card h2.press-card__title:not(#_) { margin: 0; font-size: 1.28rem; font-weight: 600; line-height: 1.25; letter-spacing: -0.02em; }

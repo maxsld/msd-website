@@ -22,7 +22,7 @@ Une landing page coûte entre **0 et 500 €** en no-code (Carrd, Webflow, Leadp
 | Agence intermédiaire | 2 500 à 6 000 € | SaaS, e-commerce, budget marketing établi |
 | Agence haut de gamme | 6 000 à 15 000 €+ | Scale-up, lancement national |
 
-Toutes ces options ont du sens selon votre situation. Le détail de chaque niveau est ci-dessous. Si vous cherchez plutôt à comparer des agences nommément, lisez notre [comparatif des agences de landing page en France](/blog/articles/agences-landing-page-prix-france-2026/).
+Toutes ces options ont du sens selon votre situation. Le détail de chaque niveau est ci-dessous. Si vous cherchez plutôt à comparer des agences nommément, lisez notre [comparatif des agences de landing page en France](/creation-landing-page/).
 
 ---
 

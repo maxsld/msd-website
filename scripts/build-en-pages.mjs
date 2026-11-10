@@ -230,7 +230,8 @@ const enBlock = (test) => { const el = findEl(homeTree, test); if (!el) throw ne
 const EN_PARTS = {
   header: enBlock((e) => e.tag === 'header' && attr(e, 'id') === 'nav'),
   footer: enBlock((e) => e.tag === 'footer' && hasClass(e, 'site-footer')),
-  announcement: enBlock((e) => hasClass(e, 'top-announcement')),
+  // Le bandeau affiliation n'est plus sur la home : sa version anglaise vit dans un gabarit.
+  announcement: read(path.join(ROOT, 'scripts', 'templates', 'announcement-en.html')).trim(),
   cookie: enBlock((e) => attr(e, 'id') === 'cookie-consent'),
 };
 

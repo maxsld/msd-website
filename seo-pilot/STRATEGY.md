@@ -33,7 +33,12 @@ Document de référence du pilote. Il ne change que sur décision de Maxens. Cha
 
 Une seule modification par page à la fois. Pas de nouvelle modification sur une page avant son bilan à 21 jours.
 
-**Articles** : 1 article par semaine, pris dans `seo-pilot/EDITORIAL.md` et écrit selon `seo-pilot/ARTICLE-GUIDE.md`. Chaque article sert un des 3 groupes et renvoie vers sa page de service cible. Améliorer les pages existantes reste prioritaire : si la semaine demande 3 corrections lourdes, l'article peut attendre.
+**Articles** (décision de Maxens du 2026-11-10, après l'audit complet du site) : **2 articles par mois**, les 1er et 3e lundis, **uniquement sur la réglementation et la communication santé** (médecine esthétique, médecins, dentistes, chirurgie esthétique, avis de patients) : ce sont les seuls articles qui attirent la cible prioritaire et qui se classent déjà. Pris dans `seo-pilot/EDITORIAL.md`, écrits selon `seo-pilot/ARTICLE-GUIDE.md`, avec un renvoi vers `/site-web-medecine-esthetique/` ou la page métier santé concernée. Améliorer les pages existantes reste prioritaire : si le lundi demande 3 corrections lourdes, l'article attend.
+
+**Plus de nouvelles pages** : ni page ville, ni page secteur, ni page de service, ni article hors santé. Le site a assez de pages (85 + le blog) ; ce qui manque, c'est l'autorité et la consolidation. Le temps libéré va :
+- à la **consolidation** : fusionner les articles qui se disputent la même requête (redirection 301 vers le plus fort, son contenu utile repris), titres et descriptions des pages en page 1 sans clics, maillage vers les pages cibles ;
+- à l'**autorité** : chaque 1er lundi du mois, le chef propose à Maxens dans « À toi » **une** opportunité de lien ou de mention précise et faisable (annuaire santé ou marketing reconnu, comparatif tiers où MSD Media manque, média qui accepte une tribune, client qui peut ajouter « site réalisé par MSD Media »), trouvée avec OpenSEO (backlinks des concurrents) ;
+- au **projet du trimestre** : l'étude originale « sites de médecine esthétique audités : combien respectent les règles de publicité » (protocole, grille, puis article de données), avec l'outil d'audit existant. C'est le contenu le plus citable par les IA et les médias.
 
 ## Axe Munich (ajouté le 2026-11-03, décision de Maxens)
 
@@ -52,17 +57,17 @@ Chaque phase prépare la suivante. L'agence travaille chaque lundi ; les actions
 
 | Période | Phase | L'agence | Maxens |
 |---|---|---|---|
-| **Nov. 2026** | Fondations | Bilans des titres d'octobre ; maillage vers les 3 pages cibles ; 4 articles (dont 2 santé) | Lancer les demandes d'avis aux anciens clients, 2 à 3 par semaine (`AVIS.md`) ; compléter la fiche Google |
-| **Déc. 2026** | Fondations | Pages santé : réponses directes et FAQ ; 3 articles (pause entre Noël et le Nouvel An) | Annuaires : La Fabrique du Net, Sortlist, Clutch, 118712, PagesJaunes |
-| **Janv. 2027** | Contenu | Mise à jour de l'article prix landing page pour 2027 ; guide pilier « communication des médecins » ; 4 articles | Fournir les données de l'étude des 84 cabinets si elle est faite |
-| **Févr. 2027** | Contenu | Article de l'étude des 84 cabinets si les données sont là ; 4 articles | Retour en France : tourner la vidéo Merz, recueillir 2 ou 3 cas clients chiffrés |
+| **Nov. 2026** | Fondations | Bilans des titres d'octobre (et de ceux réécrits le 10 nov.) ; maillage vers les 3 pages cibles ; 2 articles santé ; protocole de l'étude médecine esthétique | Lancer les demandes d'avis aux anciens clients, 2 à 3 par semaine (`AVIS.md`) ; compléter la fiche Google |
+| **Déc. 2026** | Fondations | Pages santé : réponses directes et FAQ ; 2 articles santé (pause entre Noël et le Nouvel An) | Annuaires : La Fabrique du Net, Sortlist, Clutch, 118712, PagesJaunes |
+| **Janv. 2027** | Contenu | Mise à jour de l'article prix landing page pour 2027 ; guide pilier « communication des médecins » ; 2 articles santé | Fournir les données de l'étude des 84 cabinets si elle est faite |
+| **Févr. 2027** | Contenu | Article de l'étude médecine esthétique si les données sont là ; 2 articles santé | Retour en France : tourner la vidéo Merz, recueillir 2 ou 3 cas clients chiffrés |
 | **Mars 2027** | Contenu | Études de cas chiffrées en ligne (avec les données de Maxens) ; mise à jour des 10 articles les plus vus ; **bilan trimestriel** | Pitch presse locale avec l'étude des cabinets |
-| **Avr. 2027** | Autorité | Pages qui stagnent entre 4 et 15 : renforcement ; 4 articles | Liens : clients (« site réalisé par MSD Media »), French Tech, Polytech |
-| **Mai 2027** | Autorité | Articles « données » et comparatifs honnêtes, les plus citables par les IA ; 4 articles | Réponses utiles et signées sur Reddit et les forums pros |
+| **Avr. 2027** | Autorité | Pages qui stagnent entre 4 et 15 : renforcement ; 2 articles santé | Liens : clients (« site réalisé par MSD Media »), French Tech, Polytech |
+| **Mai 2027** | Autorité | Articles « données », les plus citables par les IA (jamais de classement où MSD Media se place premier) ; 2 articles santé | Réponses utiles et signées sur Reddit et les forums pros |
 | **Juin 2027** | Autorité | **Bilan semestriel** ; recentrage sur ce qui a marché | Podcast ou interview (santé, entrepreneuriat) |
-| **Juil. 2027** | Accélération | 3 articles (été) ; mise à jour des pages saisonnières | Si le déménagement à Strasbourg est confirmé : fiche Google Strasbourg, adresse réelle |
-| **Août 2027** | Accélération | Préparer les contenus prix et tendances 2028 ; 3 articles | |
-| **Sept. 2027** | Accélération | Rentrée : 4 articles, mise à jour des contenus santé avec les textes de l'année | Relancer les demandes d'avis (objectif 20 fin octobre) ; un avis par client livré |
+| **Juil. 2027** | Accélération | 2 articles santé ; mise à jour des pages saisonnières | Si le déménagement à Strasbourg est confirmé : fiche Google Strasbourg, adresse réelle |
+| **Août 2027** | Accélération | Préparer les contenus prix et tendances 2028 ; 2 articles santé | |
+| **Sept. 2027** | Accélération | Rentrée : 2 articles santé, mise à jour des contenus santé avec les textes de l'année | Relancer les demandes d'avis (objectif 20 fin octobre) ; un avis par client livré |
 | **Oct. 2027** | Bilan | **Bilan annuel** ; proposition du plan de l'année 2 (2e niche : dentaire ou coachs) | Décider de l'année 2 |
 
 ## Objectifs et indicateurs

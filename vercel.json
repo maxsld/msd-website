@@ -369,12 +369,12 @@
     },
     {
       "source": "/blog/articles/top-5-agences-landing-page-france-2025.html",
-      "destination": "/blog/articles/top-5-agences-landing-page-france-2026/",
+      "destination": "/creation-landing-page/",
       "permanent": true
     },
     {
       "source": "/blog/articles/top-5-agences-landing-page-france-2025",
-      "destination": "/blog/articles/top-5-agences-landing-page-france-2026/",
+      "destination": "/creation-landing-page/",
       "permanent": true
     },
     {
@@ -399,12 +399,12 @@
     },
     {
       "source": "/blog/articles/meilleure-agence-web-annecy-2025.html",
-      "destination": "/blog/articles/top-7-meilleures-agences-web-annecy-2026/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
       "source": "/blog/articles/meilleure-agence-web-annecy-2025",
-      "destination": "/blog/articles/top-7-meilleures-agences-web-annecy-2026/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
@@ -1574,7 +1574,7 @@
     },
     {
       "source": "/blog/articles/top-7-meilleures-agences-web-annecy-2026",
-      "destination": "https://msd-media.com/blog/articles/top-7-meilleures-agences-web-annecy-2026/",
+      "destination": "/agence-web-annecy/",
       "permanent": true
     },
     {
@@ -1714,12 +1714,12 @@
     },
     {
       "source": "/blog/articles/agences-landing-page-prix-france-2026",
-      "destination": "https://msd-media.com/blog/articles/agences-landing-page-prix-france-2026/",
+      "destination": "/creation-landing-page/",
       "permanent": true
     },
     {
       "source": "/blog/articles/meilleures-agences-cro-france",
-      "destination": "https://msd-media.com/blog/articles/meilleures-agences-cro-france/",
+      "destination": "/blog/articles/ameliorer-taux-conversion-site-web/",
       "permanent": true
     },
     {
@@ -1734,7 +1734,7 @@
     },
     {
       "source": "/blog/articles/top-5-agences-landing-page-france-2026",
-      "destination": "https://msd-media.com/blog/articles/top-5-agences-landing-page-france-2026/",
+      "destination": "/creation-landing-page/",
       "permanent": true
     },
     {
@@ -2049,6 +2049,26 @@
     },
     {
       "source": "/landing-page-bruxelles/",
+      "destination": "/creation-landing-page/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-7-meilleures-agences-web-annecy-2026/",
+      "destination": "/agence-web-annecy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/top-5-agences-landing-page-france-2026/",
+      "destination": "/creation-landing-page/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/meilleures-agences-cro-france/",
+      "destination": "/blog/articles/ameliorer-taux-conversion-site-web/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/articles/agences-landing-page-prix-france-2026/",
       "destination": "/creation-landing-page/",
       "permanent": true
     }

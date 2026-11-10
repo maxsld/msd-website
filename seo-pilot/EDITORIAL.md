@@ -1,6 +1,8 @@
 # Calendrier éditorial
 
-Repris du plan SEO de Maxens (octobre 2026). Le `responsable-editorial` prend chaque semaine le premier sujet « À écrire » de la liste, après avoir vérifié qu'aucune page du site ne vise déjà la même requête (sinon il l'adapte ou passe au suivant, et le note ici). Il met le statut à jour : `Publié (AAAA-MM-JJ, /blog/articles/slug/)`, `Écarté (raison)` ou `Bloqué (raison)`.
+**Depuis le 2026-11-10 (décision de Maxens)** : 2 articles par mois, les 1er et 3e lundis, **uniquement des sujets santé** (réglementation, communication et site des médecins, dentistes, centres esthétiques, avis de patients). Les sujets hors santé encore « À écrire » ne se publient plus : à la revue du mois, passe-les en `Écarté (hors santé, décision du 2026-11-10)`. Jamais d'article qui classe des agences (MSD Media ne se classe pas elle-même).
+
+Repris du plan SEO de Maxens (octobre 2026). Le `responsable-editorial` prend, les 1er et 3e lundis, le premier sujet santé « À écrire » de la liste, après avoir vérifié qu'aucune page du site ne vise déjà la même requête (sinon il l'adapte ou passe au suivant, et le note ici). Il met le statut à jour : `Publié (AAAA-MM-JJ, /blog/articles/slug/)`, `Écarté (raison)` ou `Bloqué (raison)`.
 
 ## Revue éditoriale (1er lundi du mois)
 

@@ -9,8 +9,9 @@ Seule source autorisée pour les prix, délais et preuves cités dans une fiche 
 | **Landing page** | à partir de 1 990 € | 21 jours | Une offre, une action : lancement, campagne publicitaire, prise de rendez-vous |
 | **Site vitrine** | à partir de 3 990 € | 21 jours | Plusieurs services, une équipe, jusqu'à 10 pages, blog, contenu modifiable |
 | **Sur-mesure et refonte** | sur devis | selon le périmètre | E-commerce, multilingue, intégrations, dashboards, refontes complexes |
+| **MSD Care** (maintenance) | 490 € par mois, sans engagement | dès la mise en ligne | Hébergement, nom de domaine et SSL gérés ; sauvegardes, sécurité, mises à jour ; petites modifications illimitées (textes, photos, prix, horaires) ; suivi SEO mensuel et rapport avec une amélioration proposée ; support prioritaire sous 24 h ouvrées |
 
-Inclus dans chaque offre (page tarifs et FAQ de l'accueil) : design sur mesure sans template, copywriting orienté conversion, formulaire ou prise de rendez-vous, mobile et vitesse, SEO technique, lisibilité par les IA (llms.txt, données structurées), suivi des conversions. Code source, domaine et accès remis au client à la livraison. Coûts après livraison : nom de domaine (10 à 30 € par an) et hébergement quasi gratuit pour un site statique, sans abonnement obligatoire.
+Inclus dans chaque offre (page tarifs et FAQ de l'accueil) : design sur mesure sans template, copywriting orienté conversion, formulaire ou prise de rendez-vous, mobile et vitesse, SEO technique, lisibilité par les IA (llms.txt, données structurées), suivi des conversions. Code source, domaine et accès remis au client à la livraison. Coûts après livraison : nom de domaine (10 à 30 € par an) et hébergement quasi gratuit pour un site statique, sans abonnement obligatoire. MSD Care se propose en option dans chaque proposition, jamais comme une obligation.
 
 ## Process en 21 jours
 
@@ -42,4 +43,4 @@ Avis : 5/5 sur Trustpilot et avis Google (citer les avis existants mot pour mot,
 
 ## Ce que MSD Media ne fait pas (à dire franchement si on le demande)
 
-Pas de WordPress ni de constructeur de site. Pas de bureau à Munich. Pas de contenus rédigés en allemand. Pas de garantie de position Google ni de citation par les IA. Pour tout autre service (gestion de campagnes publicitaires, maintenance mensuelle, réseaux sociaux…), ne rien promettre : `[à confirmer par Maxens]`.
+Pas de WordPress ni de constructeur de site. Pas de bureau à Munich. Pas de contenus rédigés en allemand. Pas de garantie de position Google ni de citation par les IA. Pour tout autre service (gestion de campagnes publicitaires, réseaux sociaux…), ne rien promettre : `[à confirmer par Maxens]`.

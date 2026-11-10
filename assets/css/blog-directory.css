@@ -28,6 +28,7 @@
 .blog-index-page .blog-card__title { margin: 0; font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; line-height: 1.25; letter-spacing: -0.035em; color: var(--text-dark); }
 .blog-index-page .blog-card__details { justify-content: flex-start; gap: 1.1rem; margin-top: auto; padding-top: .8rem; font-size: .9rem; opacity: 1; color: var(--text); }
 .blog-index-page .blog-card__duration { padding: 0; border-radius: 0; background: none; color: var(--text); }
+.blog-index-page .blog-card__date { color: var(--text); white-space: nowrap; }
 .blog-index-page .blog-card__tag { padding: 0; border-radius: 0; background: none; color: var(--accent); font-size: .9rem; font-weight: 500; letter-spacing: 0; }
 
 @media (max-width: 980px) { .blog-index-page .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

@@ -248,10 +248,10 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--heading); font-w
 .footer-partners { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 1.8rem; margin: 2.25rem auto 0; max-width: 1200px; }
 .footer-partner { display: inline-flex; flex-direction: column; align-items: flex-start; gap: .6rem; color: #fff9; font-size: .8rem; line-height: 1.3; transition: color .2s ease; }
 .footer-partner:hover { color: #fff; text-decoration: none !important; }
-.footer-partner__logo { display: block; height: 64px; width: auto; }
+.footer-partner__logo { display: block; height: 32px; width: auto; }
 .footer-partner__logo--invert { filter: brightness(0) invert(1); }
-.footer-partner__logo--sortlist { height: 50px; }
-.footer-partner__logo--lfdn { height: 26px; }
+.footer-partner__logo--sortlist { height: 25px; }
+.footer-partner__logo--lfdn { height: 13px; }
 .footer-partner-lfdn { position: relative; display: inline-flex; }
 .footer-partner-lfdn > span { position: absolute !important; inset: 0; width: auto !important; overflow: hidden; opacity: 0; z-index: 1; }
 .footer-bottom { margin: 2rem auto 0; font-size: .85rem; color: #888; max-width: 1200px; }

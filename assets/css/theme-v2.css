@@ -510,3 +510,24 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--heading); font-w
   .msd-chat__window, .msd-typing i { animation: none; }
   .msd-ask, .msd-chip, .msd-chat__send { transition: none; }
 }
+
+/* Avis : cartes empilées en 3 colonnes décalées, fondu vers le bas (plus de défilement horizontal) */
+.avis-carousel-container:not(#_) { max-width: 1200px; margin: 40px auto 3.5rem; padding: 12px 24px 0; max-height: 760px; overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); }
+.avis-carousel-container::before, .avis-carousel-container::after { display: none; }
+.avis-track:not(#_) { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 24px; width: auto; animation: none; }
+.avis-track > .avis-card[aria-hidden="true"] { display: none; }
+.avis-track > .avis-card:not(#_) { width: auto; }
+.avis-track > .avis-card:nth-child(3n+1) { transform: translateY(24px) rotate(-.6deg); }
+.avis-track > .avis-card:nth-child(3n+2) { transform: translateY(0) rotate(.5deg); }
+.avis-track > .avis-card:nth-child(3n) { transform: translateY(56px) rotate(-.3deg); }
+@media (max-width: 900px) {
+  .avis-track:not(#_) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .avis-track > .avis-card:nth-child(n) { transform: none; }
+  .avis-track > .avis-card:nth-child(2n) { transform: translateY(32px); }
+}
+@media (max-width: 600px) {
+  .avis-carousel-container:not(#_) { padding: 0 16px; max-height: 900px; }
+  .avis-track:not(#_) { grid-template-columns: 1fr; }
+  .avis-track > .avis-card:nth-child(n) { transform: none; }
+}
+.avis-photo--initials { display: inline-flex; align-items: center; justify-content: center; flex: none; background: var(--accent-soft); color: var(--accent); font-family: var(--font-heading); font-size: .9rem; font-weight: 600; }

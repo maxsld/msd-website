@@ -152,7 +152,7 @@
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.hidden) close(); });
 
   // ---------- Barre de question fixe, en bas au centre (toutes les pages) ----------
-  // Apparaît 5 s après le chargement, se cache quand on descend, revient quand on remonte.
+  // Apparaît 5 s après le chargement, se cache quand on descend, revient quand on remonte, jamais sur le footer.
   const bar = document.createElement('div');
   bar.className = 'msd-ask';
   bar.innerHTML = `
@@ -177,7 +177,16 @@
 
   let ready = false;
   let lastY = window.scrollY;
-  const show = (on) => bar.classList.toggle('is-visible', on);
+  // Jamais affichée quand le footer est à l'écran.
+  let inFooter = false;
+  const show = (on) => bar.classList.toggle('is-visible', on && !inFooter);
+  const footerEl = document.querySelector('footer.site-footer');
+  if (footerEl && 'IntersectionObserver' in window) {
+    new IntersectionObserver((entries) => {
+      inFooter = entries.some((en) => en.isIntersecting);
+      if (inFooter) show(false);
+    }).observe(footerEl);
+  }
   setTimeout(() => { ready = true; lastY = window.scrollY; show(true); }, 5000);
   window.addEventListener('scroll', () => {
     const y = window.scrollY;

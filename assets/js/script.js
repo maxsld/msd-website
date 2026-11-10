@@ -2362,3 +2362,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 })();
 
+
+// Bandeaux de logos : même vitesse de défilement (en pixels par seconde) que le carrousel des avis.
+(function () {
+  var sync = function () {
+    var avis = document.querySelector(".avis-track");
+    var speed = avis && avis.scrollWidth ? avis.scrollWidth / 2 / 60 : 45;
+    document.querySelectorAll(".client-logos__track").forEach(function (track) {
+      var half = track.scrollWidth / 2;
+      if (half > 0 && speed > 0) track.style.animationDuration = (half / speed).toFixed(1) + "s";
+    });
+  };
+  if (document.readyState === "complete") sync();
+  else window.addEventListener("load", sync);
+  var t;
+  window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(sync, 200); });
+})();

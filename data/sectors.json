@@ -1613,8 +1613,8 @@
     }
   },
   "site-web-medecine-esthetique": {
-    "h1": "On fait des sites web pour la médecine esthétique.",
-    "subtitle": "Centres d'esthétique, médecine esthétique, dermatologie : nous concevons des sites qui remplissent votre agenda, dans un cadre publicitaire que nous connaissons pour l'avoir pratiqué chez <strong>Merz Aesthetics</strong>. <strong>Livré en 21 jours chrono.</strong>",
+    "h1": "Sites web pour médecins et centres esthétiques, conformes et livrés en 21 jours.",
+    "subtitle": "Avant/après, allégations, prise de rendez-vous : votre site respecte les règles de publicité et remplit votre agenda.",
     "story": [
       {
         "title": "Vos patients ne comparent pas des soins, ils comparent des sites",
@@ -1825,7 +1825,11 @@
         "Consultations réservées"
       ],
       "pour": "les médecins esthétiques"
-    }
+    },
+    "h1_lines": [
+      "Sites web pour médecins et centres esthétiques,",
+      "conformes et livrés en 21 jours."
+    ]
   },
   "site-web-restaurant": {
     "h1": "On fait des sites web pour les restaurants.",

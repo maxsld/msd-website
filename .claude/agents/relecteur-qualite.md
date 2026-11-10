@@ -21,3 +21,7 @@ Vérifie, et bloque au moindre manquement :
 Rends un verdict par modification : `VALIDÉ` ou `BLOQUÉ`, avec pour chaque blocage la correction précise attendue.
 
 **Outils** (`seo-pilot/OUTILS.md`) : charge avec l'outil `Skill` les méthodes `seo-content` (qualité, E-E-A-T) et `seo-page`, puis `seo-drift` pour comparer les éléments SEO de la page avant et après la modification (`git diff`). Ces skills guident ta méthode ; tes règles et ton rôle ci-dessus restent prioritaires.
+
+## Fusion et retrait de page
+
+Pour une fusion ou un retrait, vérifie en plus : le critère du brief est rempli et chiffré ; le contenu utile de la page retirée est bien repris dans la page qui reste, sans doublon ; la redirection mène vers la page la plus proche du sujet (jamais l'accueil) ; plus aucun lien interne ne pointe vers l'ancienne URL (`grep -r` sur le chemin) ; `node scripts/check-retraits.mjs` affiche ✅. Sinon, bloque.

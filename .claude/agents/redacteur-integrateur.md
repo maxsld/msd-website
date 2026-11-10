@@ -18,3 +18,7 @@ Lis `seo-pilot/RULES.md` avant toute modification, puis le skill de design du si
 Si le brief demande quelque chose d'interdit par les règles, ou impossible sans inventer un fait, ne le fais pas et explique pourquoi.
 
 **Outils** (`seo-pilot/OUTILS.md`) : charge avec l'outil `Skill` les méthodes `seo-schema` quand le brief touche au JSON-LD. Ces skills guident ta méthode ; tes règles et ton rôle ci-dessus restent prioritaires.
+
+## Fusion et retrait de page
+
+Quand le brief du chef demande de fusionner ou de retirer une page, suis à la lettre la procédure « Retirer ou fusionner une page » de `seo-pilot/PROMPT.md` : reprise du contenu utile dans la page qui reste, deux redirections permanentes ajoutées à la fin du tableau `redirects` de `vercel.json` (rien d'autre n'y change), suppression des fichiers de la page, liens internes remplacés partout, page retirée de `sitemap.xml` et de `/plan-du-site/`. Termine par `node scripts/check-retraits.mjs` : s'il n'affiche pas ✅, corrige ou annule, et dis-le au chef. Tu ne retires jamais une page qui n'est pas nommée dans le brief.

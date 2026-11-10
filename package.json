@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "assets:build": "node scripts/version-assets.mjs",
-    "seo:check": "python3 scripts/check-seo.py && node scripts/version-assets.mjs --check",
+    "seo:check": "python3 scripts/check-seo.py && node scripts/version-assets.mjs --check && node scripts/check-retraits.mjs",
     "seo:browser-check": "node scripts/check-browser.mjs && node scripts/check-conversions.mjs",
     "seo:prepare": "npm run blog:build && node scripts/update-lastmod.mjs && npm run seo:check",
     "seo:sync-faq": "python3 scripts/check-seo.py --sync-faq",

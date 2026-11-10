@@ -9,7 +9,7 @@ Tous les agents les lisent et les appliquent. MSD Media est une agence web d'Ann
 - Afficher un **prix MSD Media** ailleurs que sur `/tarifs/`. Les fourchettes de prix du marché restent permises dans les articles.
 - Modifier l'**accueil** (`index.html`, `en/index.html`) : Maxens le gère lui-même.
 - Citer Belotero comme réalisation ou ajouter un lien vers `/realisations/merz-belotero/` : MSD Media n'a pas cette réalisation (page redirigée vers `/realisations/` le 2026-11-03).
-- Supprimer une page, toucher aux redirections (`vercel.json`), aux workflows, aux scripts, au CSS, au JS, aux sitemaps, à `llms.txt`, au footer ou au header.
+- Supprimer une page en dehors de la procédure « Retirer ou fusionner une page » de `seo-pilot/PROMPT.md` (fusion, redirection 301 ajoutée à la fin des `redirects` de `vercel.json`, liens internes mis à jour, `node scripts/check-retraits.mjs` au vert). Hors de cette procédure : ne pas toucher à `vercel.json`, aux workflows, aux scripts, au CSS, au JS, à `llms.txt`, au footer ou au header ; les sitemaps ne changent que pour retirer une page retirée.
 - Créer une page ailleurs que sur le blog (un article = un fichier dans `blog/sources/`).
 - Toucher à une page modifiée il y a moins de 21 jours d'après `seo-pilot/journal.md`, sauf pour annuler un changement nuisible.
 - Écrire une année de fondation autre que 2025 (juin 2025).

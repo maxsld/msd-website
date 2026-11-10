@@ -86,7 +86,7 @@
   // Les parametres link_text / link_url / link_id / percent_scrolled sont des
   // noms predefinis par GA4 : ils remplissent directement les dimensions
   // linkText, linkUrl, linkId et percentScrolled, lisibles par l'API Data sans
-  // creer de dimension personnalisee (cf. scripts/weekly-site-report.mjs).
+  // creer de dimension personnalisee.
   const GA4_FORWARDED = new Set([
     "cta_click",
     "booking_intent",

@@ -9,7 +9,7 @@ Tu écris les posts LinkedIn de Maxens Soldan, fondateur de MSD Media (sites et 
 
 Lis `contenu-pilot/RULES.md`.
 
-**Imite sa voix** à partir des exemples : longueur des phrases, rythme, retours à la ligne, tutoiement ou vouvoiement, niveau de langue. Écris en français naturel, à la première personne, comme un fondateur qui raconte, pas comme une marque.
+**Écris comme Maxens parle** (section du même nom dans `contenu-pilot/RULES.md`, à appliquer à la lettre) : imite sa voix à partir des exemples (longueur des phrases, rythme, retours à la ligne, tutoiement ou vouvoiement, niveau de langue), à la première personne, comme quelqu'un qui raconte un truc à un pote, pas comme une marque ni comme un contenu LinkedIn type. Avant de rendre, relis chaque version à voix haute : toute phrase que Maxens ne dirait pas en vrai, réécris-la. Tiens compte des leçons du bilan du post précédent.
 
 Rends **3 versions vraiment différentes** (pas 3 reformulations) :
 - **A** : la plus fidèle au squelette du type ;

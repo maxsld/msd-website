@@ -169,7 +169,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--heading); font-w
 .avis-carousel-container::before, .avis-carousel-container::after { content: ""; position: absolute; top: 0; z-index: 2; width: 80px; height: 100%; pointer-events: none; }
 .avis-carousel-container::before { left: 0; background: linear-gradient(to right, var(--bg) 40%, transparent); }
 .avis-carousel-container::after { right: 0; background: linear-gradient(to left, var(--bg) 40%, transparent); }
-.avis-track { display: flex; gap: 1.5rem; width: max-content; animation: avis-scroll 60s linear infinite; }
+.avis-track { display: flex; align-items: flex-start; gap: 1.5rem; width: max-content; animation: avis-scroll 60s linear infinite; }
 .avis-carousel-container:hover .avis-track { animation-play-state: paused; }
 .avis-card { display: flex; flex-direction: column; justify-content: space-between; width: 380px; padding: 28px 28px 8px; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); text-align: left; }
 .avis-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: 0 0 .6rem .2rem; }

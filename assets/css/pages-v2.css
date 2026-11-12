@@ -40,6 +40,7 @@ main p, main li { font-family: var(--font-body); }
 /* ---------- Hero des autres pages : aligné à gauche, sur la grille de la page, comme la home ---------- */
 .hero:not(#_) { align-items: flex-start; text-align: left; width: min(1200px, calc(100% - 4rem)); padding-left: 0; padding-right: 0; }
 .hero:not(#_) > .section-tag { margin: 0 0 1.5rem; border-radius: var(--btn-radius); }
+.hero-intro:not(#_) > .section-tag { margin: 0; border-radius: var(--btn-radius); }
 .hero:not(#_) > .hero__title { margin-left: 0; margin-right: 0; text-align: left; }
 .hero:not(#_) > .hero__subheading { max-width: 720px; margin: 1.2rem 0 0; text-align: left; font-size: 1.25rem; line-height: 1.6; color: var(--text); }
 .hero:not(#_) > .hero__actions { justify-content: flex-start; margin-top: 1.8rem; }

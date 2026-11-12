@@ -1428,7 +1428,6 @@
  "Chaque mois, une vérification des contenus du site au regard des règles de communication en santé et sur les dispositifs médicaux, des mentions légales, du bandeau cookies et de l'accessibilité.": "Every month, a review of the website content against healthcare and medical device communication rules, the legal notice, the cookie banner and accessibility.",
  "MSD Care est-il obligatoire ?": "Is MSD Care mandatory?",
  "Non. Le site vous appartient, et un site codé sur mesure demande peu d'entretien. MSD Care est une option pour ceux qui préfèrent tout déléguer après la mise en ligne.": "No. The website belongs to you, and a custom-coded site needs little upkeep. MSD Care is an option for those who would rather hand everything over after launch.",
- "<span>La maintenance de votre site, en trois niveaux.</span>": "<span>Website maintenance, in three levels.</span>",
  "Après la mise en ligne, MSD Care garde votre site rapide, sûr et à jour. Selon le niveau, il le fait aussi progresser sur Google et dans les IA. Engagement de 3 mois, puis résiliable avec un mois de préavis.": "After launch, MSD Care keeps your website fast, secure and up to date. Depending on the level, it also helps it grow on Google and in AI answers. 3-month minimum, then cancellable with one month's notice.",
  "Voir les tarifs de création": "See website pricing",
  "Les niveaux MSD Care": "MSD Care levels",
@@ -1522,5 +1521,6 @@
  "{{0}}<span>Suivi de conformité santé et légal</span>": "{{0}}<span>Healthcare and legal compliance review</span>",
  "{{0}}<span>Point mensuel avec Maxens</span>": "{{0}}<span>Monthly call with Maxens</span>",
  "{{0}}<span>Réponse le jour même</span>": "{{0}}<span>Same-day reply</span>",
- "{{0}}<span>Croissance, 390 € par mois, recommandé : Essentiel, contenus SEO publiés chaque mois et rapport de positions et de visibilité IA</span>": "{{0}}<span>Growth, €390 per month, recommended: Essential, SEO content published every month and a rankings and AI visibility report</span>"
+ "{{0}}<span>Croissance, 390 € par mois, recommandé : Essentiel, contenus SEO publiés chaque mois et rapport de positions et de visibilité IA</span>": "{{0}}<span>Growth, €390 per month, recommended: Essential, SEO content published every month and a rankings and AI visibility report</span>",
+ "<span>Maintenance de site en 3 niveaux.</span>": "<span>Website maintenance in 3 levels.</span>"
 }

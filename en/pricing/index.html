@@ -253,7 +253,7 @@ function _msdConsentSignal(state){
           {
             "@type": "Offer",
             "name": "MSD Care",
-            "description": "Monthly website maintenance and monitoring: hosting, backups, security, unlimited small edits, SEO monitoring and a monthly report. No commitment.",
+            "description": "Monthly website maintenance and monitoring: hosting, backups, security, unlimited small changes, SEO monitoring and a monthly report. 3-month minimum, then cancellable with one month's notice.",
             "price": "490",
             "priceCurrency": "EUR",
             "priceSpecification": {
@@ -283,7 +283,7 @@ function _msdConsentSignal(state){
           "name": "How long does it take to build my site?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A first version is delivered in 7 days and the final version in 21 days, whatever the project. The process runs in 4 steps: brief and kickoff, UX/UI, development, then delivery and fine-tuning."
+            "text": "A first version is delivered in 7 days and the final version in 21 days from receipt of your materials (copy, photos, access), for a landing page as for a showcase website. The process runs in 4 steps: brief and kickoff, UX/UI, development, then delivery and adjustments."
           }
         },
         {
@@ -299,7 +299,7 @@ function _msdConsentSignal(state){
           "name": "What are the costs after launch?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Budget for the domain name (€10-30/year) and hosting. A custom-coded site like ours hosts for next to nothing and doesn't require heavy maintenance, unlike WordPress."
+            "text": "Budget for the domain name (€10-30/year) and hosting. A custom-coded site like ours hosts for next to nothing and doesn't require heavy maintenance, unlike WordPress. If you'd rather not manage anything, MSD Care takes care of hosting, backups, small changes and SEO monitoring every month."
           }
         },
         {
@@ -307,7 +307,7 @@ function _msdConsentSignal(state){
           "name": "How does payment work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A deposit at project kickoff, the balance on delivery. For custom projects, a payment schedule can be set up based on project milestones."
+            "text": "A 50% deposit when you sign the quote, the balance on delivery. For custom projects, a payment schedule can be set up based on project milestones."
           }
         },
         {
@@ -315,7 +315,7 @@ function _msdConsentSignal(state){
           "name": "Do I own the website once it is delivered?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. On delivery you receive the full source code, the domain name and every access (hosting, analytics, connected tools). You can keep improving the site with us or hand it over to another provider."
+            "text": "Yes. The full source code, the domain name and every access (hosting, analytics, connected tools) are handed over as soon as the balance is paid. You can keep improving the site with us or hand it to another provider."
           }
         },
         {
@@ -492,6 +492,22 @@ function _msdConsentSignal(state){
           </div>
         </div>
 
+        <div class="pricing-card pricing-card--care" id="non-inclus">
+          <div class="pricing-care__head">
+            <span class="pricing-card__badge">Good to know before the call</span>
+            <h3 class="pricing-card__title">What is not included</h3>
+            <p class="pricing-card__desc">So the quote matches exactly what you receive.</p>
+            <a class="pricing-card__cta" href="https://msd-media.com/en/pricing/#msd-care">Discover MSD Care</a>
+          </div>
+          <ul class="pricing-card__features">
+            <li><i class="fa-solid fa-xmark"></i><span>A guaranteed Google ranking or AI citation: no agency can promise that</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>Advertising and paid traffic</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>Photo and video shoots</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>Pages and features not in the quote: they get an additional quote</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>Maintenance after launch: that is what MSD Care is for</span></li>
+          </ul>
+        </div>
+
         <div class="pricing-card pricing-card--care" id="msd-care">
           <div class="pricing-care__head">
             <span class="pricing-card__badge" data-i18n="tarifs_care_badge">After launch</span>
@@ -499,7 +515,7 @@ function _msdConsentSignal(state){
             <p class="pricing-card__desc" data-i18n="tarifs_care_desc">Maintenance and monitoring for your website, so it stays fast and secure and keeps bringing you enquiries.</p>
             <div class="pricing-card__price-row">
               <span class="pricing-card__price" data-eur="490 €" data-usd="$540">490 €</span>
-              <span class="pricing-card__price-from" data-i18n="tarifs_care_period">per month, no commitment</span>
+              <span class="pricing-card__price-from" data-i18n="tarifs_care_period">per month, 3-month minimum then one month's notice</span>
             </div>
             <a class="pricing-card__cta" href="https://msd-media.com/en/book-a-call/" data-i18n="tarifs_cta_call">Book a call</a>
           </div>
@@ -614,7 +630,7 @@ function _msdConsentSignal(state){
             </tbody>
           </table>
         </div>
-        <p class="pricing-vat-note" data-i18n="tarifs_vat">Net prices: VAT not applicable (article 293 B of the French Tax Code). A deposit at kick-off, the balance on delivery.</p>
+        <p class="pricing-vat-note" data-i18n="tarifs_vat">Net prices: VAT not applicable (article 293 B of the French Tax Code). 50% deposit on signing, balance on delivery.</p>
 
       </div>
     </section>
@@ -741,13 +757,13 @@ function _msdConsentSignal(state){
         <div class="faq__grid">
           <div class="faq__col">
             <details class="faq__item"><summary>What's the average price of a website in 2026?</summary><p data-i18n="tarifs_faq_q1_a">At MSD Media, a landing page starts at €1,990, a full showcase site at €3,990. Custom projects (e-commerce, multilingual, dashboards) get a tailored quote after an initial conversation.</p></details>
-            <details class="faq__item"><summary>How long does it take to build my site?</summary><p data-i18n="tarifs_faq_q2_a">A first version is delivered in 7 days and the final version in 21 days, whatever the project. The process runs in 4 steps: brief and kickoff, UX/UI, development, then delivery and fine-tuning.</p></details>
+            <details class="faq__item"><summary>How long does it take to build my site?</summary><p data-i18n="tarifs_faq_q2_a">A first version is delivered in 7 days and the final version in 21 days from receipt of your materials (copy, photos, access), for a landing page as for a showcase website. The process runs in 4 steps: brief and kickoff, UX/UI, development, then delivery and adjustments.</p></details>
             <details class="faq__item"><summary>Is SEO included in the price?</summary><p data-i18n="tarifs_faq_q3_a">Yes. Semantic structure, Schema.org structured data and Core Web Vitals optimization are included from the Showcase Website plan onward. The Landing Page plan includes baseline on-page SEO.</p></details>
-            <details class="faq__item"><summary>What are the costs after launch?</summary><p data-i18n="tarifs_faq_q4_a">Budget for the domain name (€10-30/year) and hosting. A custom-coded site like ours hosts for next to nothing and doesn't require heavy maintenance, unlike WordPress.</p></details>
+            <details class="faq__item"><summary>What are the costs after launch?</summary><p data-i18n="tarifs_faq_q4_a">Budget for the domain name (€10-30/year) and hosting. A custom-coded site like ours hosts for next to nothing and doesn't require heavy maintenance, unlike WordPress. If you'd rather not manage anything, MSD Care takes care of hosting, backups, small changes and SEO monitoring every month.</p></details>
           </div>
           <div class="faq__col">
-            <details class="faq__item"><summary>How does payment work?</summary><p data-i18n="tarifs_faq_q5_a">A deposit at project kickoff, the balance on delivery. For custom projects, a payment schedule can be set up based on project milestones.</p></details>
-            <details class="faq__item"><summary>Do I own the website once it is delivered?</summary><p data-i18n="tarifs_faq_own_a">Yes. On delivery you receive the full source code, the domain name and every access (hosting, analytics, connected tools). You can keep improving the site with us or hand it over to another provider.</p></details>
+            <details class="faq__item"><summary>How does payment work?</summary><p data-i18n="tarifs_faq_q5_a">A 50% deposit when you sign the quote, the balance on delivery. For custom projects, a payment schedule can be set up based on project milestones.</p></details>
+            <details class="faq__item"><summary>Do I own the website once it is delivered?</summary><p data-i18n="tarifs_faq_own_a">Yes. The full source code, the domain name and every access (hosting, analytics, connected tools) are handed over as soon as the balance is paid. You can keep improving the site with us or hand it to another provider.</p></details>
             <details class="faq__item"><summary>What happens if Maxens is unavailable?</summary><p data-i18n="tarifs_faq_backup_a">Your website does not depend on us: it is built with standard HTML, CSS and JavaScript, with no proprietary tool, and you hold every access. Any web developer can take it over or edit it.</p></details>
           </div>
         </div>

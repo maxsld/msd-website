@@ -1,0 +1,27 @@
+{
+ "/tarifs/": [
+  "Maintenance et suivi mensuel du site : hébergement, sauvegardes, sécurité, petites modifications illimitées, suivi SEO et rapport mensuel. Engagement de 3 mois, puis résiliable avec un mois de préavis.",
+  "À savoir avant l’appel",
+  "Ce qui n’est pas inclus",
+  "Pour que le devis corresponde exactement à ce que vous recevez.",
+  "Découvrir MSD Care",
+  "{{0}}<span>Une position garantie sur Google ou une citation par les IA : aucune agence ne peut la promettre</span>",
+  "{{0}}<span>La publicité et l’achat de trafic</span>",
+  "{{0}}<span>Les shootings photo et vidéo</span>",
+  "{{0}}<span>Les pages et fonctionnalités non prévues au devis : elles font l’objet d’un devis complémentaire</span>",
+  "{{0}}<span>La maintenance après la mise en ligne : elle passe par MSD Care</span>",
+  "par mois, engagement de 3 mois puis préavis d’un mois",
+  "Prix nets : TVA non applicable (article 293 B du CGI). Acompte de 50 % à la signature, solde à la livraison."
+ ],
+ "/terms/cgv.html": [
+  "Sauf accord contraire précisé sur le devis, le paiement s'effectue en deux temps : un acompte de 50 % du prix est versé à la signature du devis, au lancement du projet, et le solde de 50 % est dû à la livraison, après validation du site par le client.",
+  "Le délai de livraison indicatif est de 21 jours calendaires à compter de la réception de l'ensemble des éléments nécessaires au projet (contenus, accès, identité visuelle), le devis étant signé et l'acompte versé. Ce délai n'est donné qu'à titre indicatif et n'est pas contractuel : il peut varier selon la complexité du projet et la réactivité du client dans la fourniture des éléments et validations attendues.",
+  "Si le client tarde à fournir les éléments ou les validations attendus, le délai de livraison est suspendu pour la durée du retard. Sans réponse du client pendant 60 jours à compter d'une relance écrite de MSD Media, le projet peut être clôturé : le travail réalisé est alors facturé au prorata de l'avancement, l'acompte versé restant acquis à MSD Media et venant en déduction de cette facture.",
+  "Article 5 bis — Maintenance MSD Care",
+  "MSD Care est une prestation de maintenance mensuelle, proposée en option après la mise en ligne du site. Elle comprend les prestations décrites sur la page <a href=\"https://msd-media.com/tarifs/#msd-care\">Tarifs</a> au jour de la souscription : gestion de l'hébergement, du nom de domaine et du certificat SSL, sauvegardes, sécurité et mises à jour, petites modifications de contenu (textes, photos, prix, horaires), suivi SEO et rapport mensuel, support par email. La création de nouvelles pages ou de nouvelles fonctionnalités n'en fait pas partie et fait l'objet d'un devis séparé.",
+  "MSD Care est souscrit pour une durée minimale de 3 mois à compter de son démarrage, puis se poursuit de mois en mois. À l'issue de ces 3 premiers mois, chaque partie peut y mettre fin à tout moment par écrit (email), avec un préavis d'un mois.",
+  "MSD Care est facturé chaque mois au prix indiqué sur le devis ou, à défaut, sur la page Tarifs au jour de la souscription, et payé dans les conditions de l'article 4. En cas de non-paiement, MSD Media peut suspendre la prestation jusqu'au règlement des sommes dues.",
+  "Jusqu'au paiement intégral, MSD Media demeure titulaire de l'ensemble des droits de propriété intellectuelle sur les livrables. Le code source, le nom de domaine et les accès sont remis au client dès le règlement du solde.",
+  "Dernière mise à jour : <strong>12 novembre 2026</strong>."
+ ]
+}

@@ -9,22 +9,22 @@ Seule source autorisée pour les prix, délais et preuves cités dans une fiche 
 | **Landing page** | à partir de 1 990 € | 21 jours | Une offre, une action : lancement, campagne publicitaire, prise de rendez-vous |
 | **Site vitrine** | à partir de 3 990 € | 21 jours | Plusieurs services, une équipe, jusqu'à 10 pages, blog, contenu modifiable |
 | **Sur-mesure et refonte** | sur devis | selon le périmètre | E-commerce, multilingue, intégrations, dashboards, refontes complexes |
-| **MSD Care** (maintenance) | 490 € par mois, sans engagement | dès la mise en ligne | Hébergement, nom de domaine et SSL gérés ; sauvegardes, sécurité, mises à jour ; petites modifications illimitées (textes, photos, prix, horaires) ; suivi SEO mensuel et rapport avec une amélioration proposée ; support prioritaire sous 24 h ouvrées |
+| **MSD Care** (maintenance) | 490 € par mois, engagement de 3 mois puis préavis d'un mois (CGV, article 5 bis) | dès la mise en ligne | Hébergement, nom de domaine et SSL gérés ; sauvegardes, sécurité, mises à jour ; petites modifications illimitées (textes, photos, prix, horaires) ; suivi SEO mensuel et rapport avec une amélioration proposée ; support prioritaire sous 24 h ouvrées |
 
-Inclus dans chaque offre (page tarifs et FAQ de l'accueil) : design sur mesure sans template, copywriting orienté conversion, formulaire ou prise de rendez-vous, mobile et vitesse, SEO technique, lisibilité par les IA (llms.txt, données structurées), suivi des conversions. Code source, domaine et accès remis au client à la livraison. Coûts après livraison : nom de domaine (10 à 30 € par an) et hébergement quasi gratuit pour un site statique, sans abonnement obligatoire. MSD Care se propose en option dans chaque proposition, jamais comme une obligation.
+Inclus dans chaque offre (page tarifs et FAQ de l'accueil) : design sur mesure sans template, copywriting orienté conversion, formulaire ou prise de rendez-vous, mobile et vitesse, SEO technique, lisibilité par les IA (llms.txt, données structurées), suivi des conversions. Code source, domaine et accès remis au client dès le règlement du solde (CGV, article 7). Coûts après livraison : nom de domaine (10 à 30 € par an) et hébergement quasi gratuit pour un site statique, sans abonnement obligatoire. MSD Care se propose en option dans chaque proposition, jamais comme une obligation.
 
 ## Process en 21 jours
 
 1. **Jours 1 à 4** : brief et lancement (appel de 30 minutes).
 2. **Jours 5 à 10** : maquette et textes ; le client valide la maquette avant le développement.
 3. **Jours 11 à 17** : développement sur mesure (vitesse, mobile, SEO technique, données structurées, suivi des conversions).
-4. **Jours 18 à 21** : mise en ligne, ajustements jusqu'à validation, remise du code et des accès.
+4. **Jours 18 à 21** : mise en ligne, ajustements jusqu'à validation (sans limite de nombre), puis remise du code et des accès dès le règlement du solde.
 
-Le délai suppose que les contenus et validations arrivent aux dates convenues (CGV, article 5).
+Le délai court à compter de la réception des éléments du client : « version finale en 21 jours à compter de la réception de vos éléments ». Il est indicatif (21 jours calendaires, CGV article 5), suspendu si le client tarde, et le projet peut être clôturé et facturé au prorata après 60 jours sans réponse à une relance écrite. Ne jamais écrire « 21 jours ouvrés » ni « délai contractuel ».
 
 ## Paiement (CGV, article 4)
 
-Un acompte au lancement, le solde à la livraison après validation du site. Échéancier possible pour les projets sur mesure. Virement, 30 jours. Le montant de l'acompte n'est pas fixé publiquement : la proposition laisse `[acompte : à confirmer par Maxens]`.
+Acompte de 50 % à la signature du devis, solde de 50 % à la livraison après validation du site. Échéancier possible pour les projets sur mesure. Virement, 30 jours.
 
 ## Preuves (à choisir selon le secteur du prospect)
 
@@ -43,4 +43,4 @@ Avis : 5/5 sur Trustpilot et avis Google (citer les avis existants mot pour mot,
 
 ## Ce que MSD Media ne fait pas (à dire franchement si on le demande)
 
-Pas de WordPress ni de constructeur de site. Pas de bureau à Munich. Pas de contenus rédigés en allemand. Pas de garantie de position Google ni de citation par les IA. Pour tout autre service (gestion de campagnes publicitaires, réseaux sociaux…), ne rien promettre : `[à confirmer par Maxens]`.
+Pas de WordPress ni de constructeur de site. Pas de bureau à Munich. Pas de contenus rédigés en allemand. Pas de garantie de position Google ni de citation par les IA. Pas de publicité ni d'achat de trafic, pas de shooting photo ou vidéo, pas de pages ou fonctionnalités hors devis (devis complémentaire) ; la maintenance passe par MSD Care (liste publiée sur `/tarifs/#non-inclus`). Pour tout autre service (réseaux sociaux…), ne rien promettre : `[à confirmer par Maxens]`.

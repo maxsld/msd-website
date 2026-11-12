@@ -1,6 +1,6 @@
 # Vérité commerciale
 
-Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-pilot/FAITS.md`. 12 écart(s) bloquant(s). Un écart bloquant dans une page que l'agence a le droit de modifier se corrige dans la source (JSON, Markdown) ; dans l'accueil, `llms.txt`, les CGV ou un prix, il remonte à Maxens dans « À toi ».
+Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-pilot/FAITS.md`. 11 écart(s) bloquant(s). Un écart bloquant dans une page que l'agence a le droit de modifier se corrige dans la source (JSON, Markdown) ; dans l'accueil, `llms.txt`, les CGV ou un prix, il remonte à Maxens dans « À toi ».
 
 ## Bloquant
 
@@ -13,29 +13,26 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 - `/reserver-un-appel/` : « Les offres démarrent à 1 990 € et sont détaillées sur la page Tarifs . »
 - `/en/book-a-call/` : « Packages start at €1,990 and are detailed on the Pricing page." »
 - `/en/book-a-call/` : « Packages start at €1,990 and are detailed on the Pricing page. »
-- `/blog/articles/maintenance-site-web-annecy/` : « Chez MSD Media, la maintenance s'appelle MSD Care : 490 € par mois, sans engagement. »
+- `/blog/articles/maintenance-site-web-annecy/` : « Chez MSD Media, la maintenance s'appelle MSD Care : 490 € par mois, avec un engagement de 3 mois puis un préavis d'un mois. »
 - `llms.txt` : « - [Tarifs](https://msd-media.com/tarifs/) : Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis, maintenance MSD Care 490 € par mois… »
-- `llms.txt` : « - Maintenance en option avec MSD Care (490 € par mois, sans engagement) : hébergement, sauvegardes, petites modifications illimitées, suivi SEO et rapport mensuel »
-
-### Délai dit contractuel (les CGV disent indicatif) (1)
-- `llms.txt` : « - Livraison en 21 jours (première version en 7 jours) : délai contractuel pour les sites vitrines et landing pages »
+- `llms.txt` : « - Maintenance en option avec MSD Care (490 € par mois, engagement de 3 mois puis préavis d'un mois) : hébergement, sauvegardes, petites modifications illimitées, suivi S… »
 
 ## À relire (preuve à vérifier dans FAITS.md)
 
-### Garantie (43)
+### Garantie (45)
 - `/en/` : « No agency can guarantee a citation, but these foundations clearly improve your chances." »
 - `/en/` : « No agency can guarantee a citation, but these foundations clearly improve your chances. »
+- `/tarifs/` : « Une position garantie sur Google ou une citation par les IA : aucune agence ne peut la promettre »
 - `/terms/cgv.html` : « Article 6 — Responsabilité et garantie »
 - `/site-web-dermatologue/` : « Une peau parfaite garantie »
 - `/outils/generateur-llms-txt/` : « Un plus, pas une garantie »
+- `/en/pricing/` : « A guaranteed Google ranking or AI citation: no agency can promise that »
 - `/en/landing-page-design/` : « name": "Does SEO guarantee visitors or customers? »
 - `/en/landing-page-design/` : « Does SEO guarantee visitors or customers? »
 - `/en/legal/legal-notice.html` : « However, MSD Media does not guarantee that the information is complete, accurate or up to date and cannot under any circumstances be held liable for direct or indirect d… »
 - `/blog/articles/webdesigner-annecy-ou-agence/` : « Une promesse de première place garantie sur Google doit vous alerter. »
 - `/blog/articles/publicite-chirurgie-esthetique-decret-2026/` : « Par prudence, évitez les formulations qui promettent un résultat ou qui mêlent esthétique et soin : « Résultat naturel garanti » ou « Rhinoplastie pour respirer mieux et… »
-- `/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/` : « Elle fonctionne comme une promesse, même accompagnée d'une mention « résultat non garanti ». »
-- `/blog/articles/combien-coute-refonte-site-internet-2026/` : « text":"Vérifiez la présence explicite de 5 lignes : plan de redirections 301, sort des contenus (conservés/réécrits/créés), engagement de performance chiffré (score Page… »
-- … et 31 autre(s)
+- … et 33 autre(s)
 
 ### Nombre de clients (5)
 - `/a-propos/` : « Son parcours a été relayé dans Le Dauphiné Libéré et par Polytech Annecy-Chambéry , après plus de 30 clients accompagnés. »
@@ -80,11 +77,11 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 
 ## Tirets cadratins dans le texte visible
 
-947 tirets dans 106 fichiers. On les retire quand on retouche une page pour une autre raison (deux phrases, ou deux-points), jamais en passe globale. Les plus touchés :
+948 tirets dans 106 fichiers. On les retire quand on retouche une page pour une autre raison (deux phrases, ou deux-points), jamais en passe globale. Les plus touchés :
 
 - `/blog/articles/copywriting-web-2026-textes-qui-convertissent/` : 30
 - `blog/sources/copywriting-web-2026-textes-qui-convertissent.md` : 30
-- `/terms/cgv.html` : 28
+- `/terms/cgv.html` : 29
 - `/blog/articles/vitesse-performance-site-web-annecy-2026/` : 25
 - `blog/sources/vitesse-performance-site-web-annecy-2026.md` : 25
 - `/blog/articles/apparaitre-chatgpt-perplexity-google-ia/` : 23

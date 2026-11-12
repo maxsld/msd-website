@@ -254,7 +254,7 @@ function _msdConsentSignal(state){
           {
             "@type": "Offer",
             "name": "MSD Care",
-            "description": "Maintenance et suivi mensuel du site : hébergement, sauvegardes, sécurité, petites modifications illimitées, suivi SEO et rapport mensuel. Sans engagement.",
+            "description": "Maintenance et suivi mensuel du site : hébergement, sauvegardes, sécurité, petites modifications illimitées, suivi SEO et rapport mensuel. Engagement de 3 mois, puis résiliable avec un mois de préavis.",
             "price": "490",
             "priceCurrency": "EUR",
             "priceSpecification": { "@type": "UnitPriceSpecification", "price": "490", "priceCurrency": "EUR", "unitText": "MONTH" },
@@ -279,7 +279,7 @@ function _msdConsentSignal(state){
           "name": "Combien de temps faut-il pour créer mon site ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Une première version est livrée en 7 jours et la version finale en 21 jours, quel que soit le projet. Le process se déroule en 4 étapes : brief et lancement, UX/UI, développement, puis livraison et ajustements."
+            "text": "Une première version est livrée en 7 jours et la version finale en 21 jours à compter de la réception de vos éléments (textes, photos, accès), pour une landing page comme pour un site vitrine. Le process se déroule en 4 étapes : brief et lancement, UX/UI, développement, puis livraison et ajustements."
           }
         },
         {
@@ -295,7 +295,7 @@ function _msdConsentSignal(state){
           "name": "Quels sont les coûts après la création ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Comptez le nom de domaine (10-30 €/an) et l'hébergement. Un site codé sur-mesure comme les nôtres s'héberge quasi gratuitement et ne nécessite pas de maintenance lourde, contrairement à WordPress."
+            "text": "Comptez le nom de domaine (10-30 €/an) et l'hébergement. Un site codé sur-mesure comme les nôtres s'héberge quasi gratuitement et ne nécessite pas de maintenance lourde, contrairement à WordPress. Si vous préférez ne rien gérer, MSD Care s'occupe chaque mois de l'hébergement, des sauvegardes, des petites modifications et du suivi SEO."
           }
         },
         {
@@ -303,7 +303,7 @@ function _msdConsentSignal(state){
           "name": "Comment se passe le paiement ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Un acompte au lancement du projet, le solde à la livraison. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet."
+            "text": "Un acompte de 50 % à la signature du devis, le solde à la livraison. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet."
           }
         },
         {
@@ -311,7 +311,7 @@ function _msdConsentSignal(state){
           "name": "Le site m’appartient-il une fois livré ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oui. À la livraison, vous récupérez le code source complet, le nom de domaine et tous les accès (hébergement, statistiques, outils connectés). Vous pouvez faire évoluer le site avec nous ou le confier à un autre prestataire."
+            "text": "Oui. Le code source complet, le nom de domaine et tous les accès (hébergement, statistiques, outils connectés) vous sont remis dès le règlement du solde. Vous pouvez faire évoluer le site avec nous ou le confier à un autre prestataire."
           }
         },
         {
@@ -489,6 +489,22 @@ function _msdConsentSignal(state){
           </div>
         </div>
 
+        <div class="pricing-card pricing-card--care" id="non-inclus">
+          <div class="pricing-care__head">
+            <span class="pricing-card__badge">À savoir avant l’appel</span>
+            <h3 class="pricing-card__title">Ce qui n’est pas inclus</h3>
+            <p class="pricing-card__desc">Pour que le devis corresponde exactement à ce que vous recevez.</p>
+            <a class="pricing-card__cta" href="https://msd-media.com/tarifs/#msd-care">Découvrir MSD Care</a>
+          </div>
+          <ul class="pricing-card__features">
+            <li><i class="fa-solid fa-xmark"></i><span>Une position garantie sur Google ou une citation par les IA : aucune agence ne peut la promettre</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>La publicité et l’achat de trafic</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>Les shootings photo et vidéo</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>Les pages et fonctionnalités non prévues au devis : elles font l’objet d’un devis complémentaire</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>La maintenance après la mise en ligne : elle passe par MSD Care</span></li>
+          </ul>
+        </div>
+
         <div class="pricing-card pricing-card--care" id="msd-care">
           <div class="pricing-care__head">
             <span class="pricing-card__badge" data-i18n="tarifs_care_badge">Après la mise en ligne</span>
@@ -496,7 +512,7 @@ function _msdConsentSignal(state){
             <p class="pricing-card__desc" data-i18n="tarifs_care_desc">La maintenance et le suivi de votre site, pour qu’il reste rapide, sûr et qu’il continue de vous apporter des demandes.</p>
             <div class="pricing-card__price-row">
               <span class="pricing-card__price" data-eur="490 €" data-usd="$540">490 €</span>
-              <span class="pricing-card__price-from" data-i18n="tarifs_care_period">par mois, sans engagement</span>
+              <span class="pricing-card__price-from" data-i18n="tarifs_care_period">par mois, engagement de 3 mois puis préavis d’un mois</span>
             </div>
             <a class="pricing-card__cta" href="https://msd-media.com/reserver-un-appel/" data-i18n="tarifs_cta_call">Réserver un appel</a>
           </div>
@@ -611,7 +627,7 @@ function _msdConsentSignal(state){
             </tbody>
           </table>
         </div>
-        <p class="pricing-vat-note" data-i18n="tarifs_vat">Prix nets : TVA non applicable (article 293 B du CGI). Un acompte au lancement, le solde à la livraison.</p>
+        <p class="pricing-vat-note" data-i18n="tarifs_vat">Prix nets : TVA non applicable (article 293 B du CGI). Acompte de 50 % à la signature, solde à la livraison.</p>
 
       </div>
     </section>
@@ -746,13 +762,13 @@ function _msdConsentSignal(state){
         <div class="faq__grid">
           <div class="faq__col">
             <details class="faq__item"><summary>Quel est le prix moyen d'un site internet en 2026 ?</summary><p data-i18n="tarifs_faq_q1_a">Chez MSD Media, une landing page démarre à 1 990 €, un site vitrine complet à 3 990 €. Les projets sur-mesure (e-commerce, multilingue, dashboards) font l'objet d'un devis personnalisé après un premier échange.</p></details>
-            <details class="faq__item"><summary>Combien de temps faut-il pour créer mon site ?</summary><p data-i18n="tarifs_faq_q2_a">Une première version est livrée en 7 jours et la version finale en 21 jours, quel que soit le projet. Le process se déroule en 4 étapes : brief et lancement, UX/UI, développement, puis livraison et ajustements.</p></details>
+            <details class="faq__item"><summary>Combien de temps faut-il pour créer mon site ?</summary><p data-i18n="tarifs_faq_q2_a">Une première version est livrée en 7 jours et la version finale en 21 jours à compter de la réception de vos éléments (textes, photos, accès), pour une landing page comme pour un site vitrine. Le process se déroule en 4 étapes : brief et lancement, UX/UI, développement, puis livraison et ajustements.</p></details>
             <details class="faq__item"><summary>Le SEO est-il inclus dans le prix ?</summary><p data-i18n="tarifs_faq_q3_a">Oui. Structure sémantique, données structurées Schema.org et optimisation Core Web Vitals sont inclus dès la formule Site Vitrine. La formule Landing Page inclut un SEO on-page de base.</p></details>
-            <details class="faq__item"><summary>Quels sont les coûts après la création ?</summary><p data-i18n="tarifs_faq_q4_a">Comptez le nom de domaine (10-30 €/an) et l'hébergement. Un site codé sur-mesure comme les nôtres s'héberge quasi gratuitement et ne nécessite pas de maintenance lourde, contrairement à WordPress.</p></details>
+            <details class="faq__item"><summary>Quels sont les coûts après la création ?</summary><p data-i18n="tarifs_faq_q4_a">Comptez le nom de domaine (10-30 €/an) et l'hébergement. Un site codé sur-mesure comme les nôtres s'héberge quasi gratuitement et ne nécessite pas de maintenance lourde, contrairement à WordPress. Si vous préférez ne rien gérer, MSD Care s'occupe chaque mois de l'hébergement, des sauvegardes, des petites modifications et du suivi SEO.</p></details>
           </div>
           <div class="faq__col">
-            <details class="faq__item"><summary>Comment se passe le paiement ?</summary><p data-i18n="tarifs_faq_q5_a">Un acompte au lancement du projet, le solde à la livraison. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet.</p></details>
-            <details class="faq__item"><summary>Le site m’appartient-il une fois livré ?</summary><p data-i18n="tarifs_faq_own_a">Oui. À la livraison, vous récupérez le code source complet, le nom de domaine et tous les accès (hébergement, statistiques, outils connectés). Vous pouvez faire évoluer le site avec nous ou le confier à un autre prestataire.</p></details>
+            <details class="faq__item"><summary>Comment se passe le paiement ?</summary><p data-i18n="tarifs_faq_q5_a">Un acompte de 50 % à la signature du devis, le solde à la livraison. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet.</p></details>
+            <details class="faq__item"><summary>Le site m’appartient-il une fois livré ?</summary><p data-i18n="tarifs_faq_own_a">Oui. Le code source complet, le nom de domaine et tous les accès (hébergement, statistiques, outils connectés) vous sont remis dès le règlement du solde. Vous pouvez faire évoluer le site avec nous ou le confier à un autre prestataire.</p></details>
             <details class="faq__item"><summary>Que se passe-t-il si Maxens n’est pas disponible ?</summary><p data-i18n="tarifs_faq_backup_a">Votre site ne dépend pas de nous : il est codé en HTML, CSS et JavaScript standards, sans outil propriétaire, et vous disposez de tous les accès. N’importe quel développeur web peut donc le reprendre ou le modifier.</p></details>
           </div>
         </div>

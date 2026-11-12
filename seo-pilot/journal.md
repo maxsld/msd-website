@@ -11,6 +11,17 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-12 : conditions de vente alignées entre le site et les CGV (décision de Maxens)
+- Changement : décisions de Maxens appliquées partout (FR, EN, données structurées, assistant du site, llms.txt, portes IA). Délai : « version finale en 21 jours à compter de la réception de vos éléments » ; les CGV passent de 21 jours ouvrés à 21 jours calendaires (toujours indicatif), avec suspension si le client tarde et clôture possible après 60 jours sans réponse à une relance écrite. Acompte : 50 % à la signature (CGV, /tarifs/, accueil, /reserver-un-appel/). Code, domaine et accès : remis « dès le règlement du solde » au lieu de « à la livraison » (accueil, process des 30 pages ville et métier, /tarifs/, /faq-seo/, /agence-web-munich/, CGV article 7). MSD Care : engagement de 3 mois puis préavis d'un mois (/tarifs/, CGV nouvel article 5 bis, llms.txt, article maintenance). /tarifs/ : nouveau bloc « Ce qui n'est pas inclus » (#non-inclus) et réponse « coûts après la création » qui renvoie vers MSD Care. Les 4 pages métier santé disaient « 21 jours ouvrés » : alignées. Ajustements : toujours inclus jusqu'à validation, sans limite (choix de Maxens).
+- Avant : voir le diff git du commit.
+- Hypothèse : moins d'objections et de mauvais prospects à l'appel ; pas d'effet SEO attendu.
+- Requête visée : aucune (vérité commerciale).
+- Départ : relevé du 2026-11-09.
+- Type : `seo`
+- Note : la description de /blog/articles/maintenance-site-web-annecy/ (test de title du 2026-10-30, bilan le 2026-11-20) disait « Sans engagement » ; elle dit maintenant « Engagement de 3 mois ». Le title testé n'a pas changé, mais en tenir compte au bilan.
+- Attention : `data/services.json` n'est plus à jour avec les pages en ligne. Relancer `scripts/build-sector-pages.py` remplacerait le paragraphe « Des clients d'ici, avec des résultats vérifiables… » de /agence-web-annecy/ par une ancienne version, et changerait le lien « English version » et la FAQ prix de /en/munich/. Avant toute régénération, recopier ces textes dans le JSON (les chiffres cités doivent figurer sur les pages de réalisation, voir FAITS.md).
+- Reste à faire : les études de cas Nation Startup (+350 bêta-testeurs en 1 semaine) et Agence 3XL (3 rendez-vous le jour du lancement) ont déjà un résultat de conversion, mais il n'est mis en avant ni sur l'accueil ni sur /tarifs/. Un chiffre Merz viendra de Maxens.
+
 ### 2026-11-10 : vérité commerciale de 3 articles (cahier des charges V2)
 - Changement : prix MSD Media faux ou hors `/tarifs/` retirés des sources, remplacés par le délai réel et un lien vers `/tarifs/`. /blog/articles/agence-web-freelance-nocode-2026/ (« Landing pages à partir de 900€ »). /blog/articles/combien-coute-site-web-annecy-2026/ (« Chez MSD Media : 2 450€ » et « 1 190€ », « Hébergement et maintenance inclus 1 an », calcul de ROI refait avec un budget illustratif de 3 000 €). /blog/articles/landing-page-coach-consultant-annecy/ (grille 1 190 € / 1 890 € / 2 450 €, « Hébergement 1 an inclus », ROI « 4 à 15 clients par mois, en moins de 2 semaines » remplacé par un calcul illustratif ; deux « exemples concrets de coachs » sans nom ni réalisation, avec leads et clients chiffrés, remplacés par le cas réel Maxime Sciare).
 - Avant : voir le diff git du commit (prix et exemples ci-dessus, mot pour mot).

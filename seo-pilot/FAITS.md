@@ -19,7 +19,11 @@ Contrôle automatique : `python3 scripts/check-verite.py` relève les écarts da
 | Fait | Statut | Preuve |
 |---|---|---|
 | Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis | validé, **affichable uniquement sur `/tarifs/` et `/en/pricing/`** | `/tarifs/` |
-| Maintenance MSD Care 490 € par mois, sans engagement | validé, même règle | `/tarifs/` |
+| Maintenance MSD Care 490 € par mois, engagement de 3 mois puis préavis d'un mois | validé (Maxens, 2026-11-12), même règle | `/tarifs/`, CGV article 5 bis |
+| Paiement : acompte de 50 % à la signature du devis, solde à la livraison (payable sous 30 jours) | validé (Maxens, 2026-11-12) | CGV article 4 |
+| Code source, domaine et accès remis dès le règlement du solde (jamais « à la livraison ») | validé (Maxens, 2026-11-12) | CGV article 7 |
+| Ajustements inclus jusqu'à la validation du client, sans limite de nombre | validé (Maxens, 2026-11-12) | accueil, process |
+| Non inclus : garantie de position Google ou de citation IA, publicité et achat de trafic, shootings photo et vidéo, pages ou fonctionnalités hors devis (devis complémentaire), maintenance (MSD Care) | validé (Maxens, 2026-11-12) | `/tarifs/#non-inclus` |
 | Pas d'offre gratuite (audit, maquette) sauf si `/tarifs/` l'annonce | validé | `/tarifs/` |
 
 Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à trancher par Maxens) : description de l'accueil (« Dès 1 990 € »), FAQ de `/reserver-un-appel/` (« Les offres démarrent à 1 990 € »), `llms.txt` (tarifs et MSD Care).
@@ -28,9 +32,9 @@ Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à tranc
 
 | Fait | Statut | Preuve |
 |---|---|---|
-| Première version en 7 jours, version finale en 21 jours | validé | accueil, pages de service |
-| Le délai est **indicatif** : 21 jours ouvrés à compter du devis signé, de l'acompte et de la réception des contenus | validé (texte juridique) | `terms/cgv.html`, article 5 |
-| « Délai contractuel » | **contredit les CGV** : ne pas l'écrire | encore dans `llms.txt` |
+| Première version en 7 jours, version finale en 21 jours **à compter de la réception des éléments du client** | validé (Maxens, 2026-11-12) | accueil, Tarifs, FAQ |
+| Le délai est **indicatif** : 21 jours calendaires à compter de la réception des éléments, devis signé et acompte versé ; suspendu si le client tarde, projet clôturable après 60 jours sans réponse à une relance écrite | validé (texte juridique, 2026-11-12) | `terms/cgv.html`, article 5 |
+| « Délai contractuel », « 21 jours ouvrés » comme promesse d'offre | **interdits** : contredisent les CGV (les « N jours ouvrés » des pages de réalisation sont des délais constatés, ils restent) | |
 
 ## Références et résultats
 
@@ -42,6 +46,8 @@ Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à tranc
 | Chiffres d'un projet (délai, PageSpeed, résultats) | validés seulement s'ils figurent sur la page de la réalisation | `/realisations/<projet>/` |
 | « PageSpeed systématiquement supérieur à 95/100 » | **à confirmer** : pas de mesure publiée pour tous les projets ; on cite le score d'un projet précis | pages de réalisation |
 | Maxime Sciare : PageSpeed 96/100 mobile, +40 points, livré en 21 jours ouvrés | validé | `/realisations/maxime-sciare/` ; `llms.txt` dit « livraison 14 jours » : à corriger |
+| Résultats de conversion publiés : Nation Startup « +350 bêta-testeurs inscrits en 1 semaine après la mise en ligne » ; Agence 3XL « 3 rendez-vous générés le jour du lancement » | validé (pages de réalisation) | `/realisations/nation-startup/`, `/realisations/agence-3xl/` |
+| Chiffre de conversion Merz (taux, leads) | **à obtenir** : Maxens le fournira avec période et source | |
 
 ## Avis
 

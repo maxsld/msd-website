@@ -24,14 +24,16 @@ TARIFS (publics : https://msd-media.com/tarifs/)
 - Landing page : à partir de 1 990 €. Inclus : design sur mesure, copywriting orienté conversion, formulaire ou prise de rendez-vous intégrée, mobile et vitesse optimisés, SEO on-page, tracking.
 - Site vitrine : à partir de 3 990 €. Inclus : tout le contenu de la landing page, jusqu'à 10 pages, SEO technique complet (données structurées, Core Web Vitals), blog, CMS pour gérer le contenu, optimisation pour les IA.
 - Sur mesure et refonte : sur devis après un premier échange. Le prix dépend du type de site, du nombre de pages et des besoins spécifiques.
-- Paiement : acompte au lancement, solde à la livraison ; échéancier possible pour les projets sur mesure.
+- Paiement : acompte de 50 % à la signature du devis, solde à la livraison ; échéancier possible pour les projets sur mesure.
 - Après la mise en ligne : nom de domaine (10 à 30 € par an) et hébergement, quasi gratuit pour un site statique comme ceux de MSD Media. Pas de maintenance lourde comme sur WordPress.
+- Maintenance en option : MSD Care (hébergement, nom de domaine et SSL gérés, sauvegardes, sécurité et mises à jour, petites modifications, suivi SEO et rapport mensuel). Engagement de 3 mois, puis résiliable avec un mois de préavis. Prix sur la page tarifs.
+- Non inclus dans les offres : garantie de position Google ou de citation IA, publicité et achat de trafic, shootings photo et vidéo, pages ou fonctionnalités hors devis (devis complémentaire).
 - Prix affichés en euros ; une conversion en dollars est disponible sur la page tarifs.
 
 DÉROULÉ ET DÉLAIS
-- Première version livrée en 7 jours, version finale en 21 jours, en 4 étapes : brief et lancement (jours 1 à 4), UX/UI et validation de la maquette (jours 5 à 10), développement (jours 11 à 17), livraison et ajustements (jours 18 à 21).
+- Première version livrée en 7 jours, version finale en 21 jours à compter de la réception des éléments du client (délai indicatif, précisé dans les CGV), en 4 étapes : brief et lancement (jours 1 à 4), UX/UI et validation de la maquette (jours 5 à 10), développement (jours 11 à 17), livraison et ajustements (jours 18 à 21).
 - Ajustements inclus pendant la livraison. Les textes sont rédigés à partir d'un échange avec le client, qui les valide.
-- Le site appartient au client : code source, nom de domaine et tous les accès remis à la livraison. N'importe quel développeur peut le reprendre, le site ne dépend pas de MSD Media.
+- Le site appartient au client : code source, nom de domaine et tous les accès remis dès le règlement du solde. N'importe quel développeur peut le reprendre, le site ne dépend pas de MSD Media.
 - Le client peut modifier son site lui-même (accès complet, tutoriels si besoin) ou faire appel à MSD Media pour les évolutions.
 - Référencement Google : quelques semaines à quelques mois selon la concurrence. MSD Media pose les bases techniques, sans promesse de position.
 

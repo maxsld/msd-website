@@ -77,7 +77,7 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 
 ## Tirets cadratins dans le texte visible
 
-948 tirets dans 106 fichiers. On les retire quand on retouche une page pour une autre raison (deux phrases, ou deux-points), jamais en passe globale. Les plus touchés :
+946 tirets dans 106 fichiers. On les retire quand on retouche une page pour une autre raison (deux phrases, ou deux-points), jamais en passe globale. Les plus touchés :
 
 - `/blog/articles/copywriting-web-2026-textes-qui-convertissent/` : 30
 - `blog/sources/copywriting-web-2026-textes-qui-convertissent.md` : 30

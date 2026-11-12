@@ -112,8 +112,7 @@ Au-delà du prix de création, il y a les coûts récurrents :
 **SEO local Annecy :** 500€ - 2 000€/mois (si tu veux être visible)
 
 **Chez MSD Media :**  
-Hébergement + maintenance + SSL inclus la 1ère année.  
-Tu paies une fois, t'es tranquille.
+un site codé sur mesure s'héberge pour presque rien si tu préfères le gérer toi-même. Pour tout déléguer (hébergement, sauvegardes, petites modifications, suivi SEO), la maintenance passe par [MSD Care](https://msd-media.com/tarifs/#msd-care), une formule mensuelle en option.
 
 ---
 

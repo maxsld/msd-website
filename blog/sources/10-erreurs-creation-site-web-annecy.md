@@ -149,7 +149,7 @@ Montre ce qui te rend unique.
 
 ## Erreur n°8 : Oublier la maintenance
 
-Oublier la maintenance transforme un site en ligne en site mort en quelques mois : WordPress non mis à jour crée des failles de sécurité, les plugins obsolètes provoquent des bugs, et l'absence de sauvegardes expose à une perte de données totale, avec une position Google qui dégringole. La solution : prévoir un budget maintenance dès le départ, ou choisir un prestataire qui l'inclut — chez MSD Media, elle est offerte la première année.
+Oublier la maintenance transforme un site en ligne en site mort en quelques mois : WordPress non mis à jour crée des failles de sécurité, les plugins obsolètes provoquent des bugs, et l'absence de sauvegardes expose à une perte de données totale, avec une position Google qui dégringole. La solution : prévoir un budget maintenance dès le départ. Chez MSD Media, c'est le rôle de [MSD Care](https://msd-media.com/tarifs/#msd-care), la formule de maintenance mensuelle proposée en option après la mise en ligne.
 
 **Ce qui arrive :**
 - WordPress n'est plus à jour → failles de sécurité
@@ -158,7 +158,7 @@ Oublier la maintenance transforme un site en ligne en site mort en quelques mois
 - Position Google qui dégringole
 
 **Solution :**  
-Prévois un budget maintenance dès le départ.
+Prévois un budget maintenance dès le départ, ou confie-la à ton prestataire (chez MSD Media : [MSD Care](https://msd-media.com/tarifs/#msd-care)).
 
 ---
 

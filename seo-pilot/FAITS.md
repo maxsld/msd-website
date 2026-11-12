@@ -25,6 +25,7 @@ Contrôle automatique : `python3 scripts/check-verite.py` relève les écarts da
 | Ajustements inclus jusqu'à la validation du client, sans limite de nombre | validé (Maxens, 2026-11-12) | accueil, process |
 | Non inclus : garantie de position Google ou de citation IA, publicité et achat de trafic, shootings photo et vidéo, pages ou fonctionnalités hors devis (devis complémentaire), maintenance (MSD Care) | validé (Maxens, 2026-11-12) | `/tarifs/#non-inclus` |
 | Pas d'offre gratuite (audit, maquette) sauf si `/tarifs/` l'annonce | validé | `/tarifs/` |
+| La maintenance de MSD Media s'appelle MSD Care, partout. Elle n'est jamais offerte ni incluse (ni « la première année », ni « hébergement inclus ») : elle est en option, après la mise en ligne. Hors de `/tarifs/`, on la nomme et on fait un lien vers `/tarifs/#msd-care`, sans prix | validé (Maxens, 2026-11-12) | `/tarifs/` |
 
 Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à trancher par Maxens) : description de l'accueil (« Dès 1 990 € »), FAQ de `/reserver-un-appel/` (« Les offres démarrent à 1 990 € »), `llms.txt` (tarifs et MSD Care).
 

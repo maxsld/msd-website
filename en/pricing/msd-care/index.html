@@ -422,12 +422,26 @@ function _msdConsentSignal(state){
 
   <main>
     <section class="hero">
-      <p class="section-tag section-tag--dark">MSD Care</p>
-      <h1 class="hero__title"><span>Website maintenance, in three levels.</span></h1>
-      <p class="hero__subheading">After launch, MSD Care keeps your website fast, secure and up to date. Depending on the level, it also helps it grow on Google and in AI answers. 3-month minimum, then cancellable with one month's notice.</p>
-      <div class="hero__actions" aria-label="Main actions">
-        <a class="hero__btn hero__btn--primary" href="https://msd-media.com/en/book-a-call/" data-i18n="hero_primary">Book a call</a>
-        <a class="hero__btn hero__btn--secondary" href="https://msd-media.com/en/pricing/">See website pricing</a>
+      <div class="story__row">
+        <div class="story__text">
+          <p class="section-tag section-tag--dark">MSD Care</p>
+          <h1 class="hero__title"><span>Website maintenance, in three levels.</span></h1>
+          <p class="hero__subheading">After launch, MSD Care keeps your website fast, secure and up to date. Depending on the level, it also helps it grow on Google and in AI answers. 3-month minimum, then cancellable with one month's notice.</p>
+          <div class="hero__actions" aria-label="Main actions">
+            <a class="hero__btn hero__btn--primary" href="https://msd-media.com/en/book-a-call/" data-i18n="hero_primary">Book a call</a>
+            <a class="hero__btn hero__btn--secondary" href="https://msd-media.com/en/pricing/">See website pricing</a>
+          </div>
+        </div>
+        <div class="story__img story__img--viz"><div class="feat"><div class="viz viz--track" aria-hidden="true">
+<div class="viz-funnel">
+<p class="viz-funnel__head">Your monthly report</p>
+<div class="viz-funnel__row"><span>Site online</span><i style="--w:100%"></i></div>
+<div class="viz-funnel__row"><span>Backups done</span><i style="--w:100%"></i></div>
+<div class="viz-funnel__row"><span>Visits from Google</span><i style="--w:68%"></i></div>
+<div class="viz-funnel__row"><span>Enquiries received</span><i style="--w:34%"></i></div>
+</div>
+<span class="viz-toast"><b>✓</b>Updates applied</span>
+</div></div></div>
       </div>
     </section>
 
@@ -441,38 +455,41 @@ function _msdConsentSignal(state){
         <div class="pricing-grid">
           <div class="pricing-card">
             <h3 class="pricing-card__title">Essential</h3>
-            <p class="pricing-card__desc">For freelancers and landing pages.</p>
+            <p class="pricing-card__desc">Your website kept safe, without a second thought.</p>
             <div class="pricing-card__price-row">
               <span class="pricing-card__price" data-eur="89 €" data-usd="$99">89 €</span>
               <span class="pricing-card__price-from">per month</span>
             </div>
             <ul class="pricing-card__features">
-              <li><i class="fa-solid fa-check"></i><span>Hosting, domain name and SSL certificate managed</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Website monitoring, backups, security and updates</span></li>
-              <li><i class="fa-solid fa-check"></i><span>30 minutes of changes per month</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Email support, reply within 48 business hours</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Hosting, domain and SSL managed</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Monitoring and backups</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Security updates</span></li>
+              <li><i class="fa-solid fa-check"></i><span>30 min of changes per month</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Reply within 48 hours</span></li>
             </ul>
             <a class="pricing-card__cta" href="https://msd-media.com/en/book-a-call/" data-i18n="tarifs_cta_call">Book a call</a>
           </div>
-          <div class="pricing-card">
+          <div class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">Recommended</span>
             <h3 class="pricing-card__title">Growth</h3>
-            <p class="pricing-card__desc">For clinics, practices and showcase websites.</p>
+            <p class="pricing-card__desc">A website that brings you new clients, every month.</p>
             <div class="pricing-card__price-row">
               <span class="pricing-card__price" data-eur="390 €" data-usd="$430">390 €</span>
               <span class="pricing-card__price-from">per month</span>
             </div>
             <ul class="pricing-card__features">
               <li><i class="fa-solid fa-check"></i><span>Everything in Essential</span></li>
-              <li><i class="fa-solid fa-check"></i><span>2 SEO pieces per month: articles or optimised pages</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Monthly report: Google rankings and AI visibility</span></li>
-              <li><i class="fa-solid fa-check"></i><span>2 hours of changes per month</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Support, reply within 24 business hours</span></li>
+              <li><i class="fa-solid fa-check"></i><span>SEO content published every month</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Google rankings report</span></li>
+              <li><i class="fa-solid fa-check"></i><span>AI visibility tracking</span></li>
+              <li><i class="fa-solid fa-check"></i><span>2 h of changes per month</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Reply within 24 hours</span></li>
             </ul>
             <a class="pricing-card__cta" href="https://msd-media.com/en/book-a-call/" data-i18n="tarifs_cta_call">Book a call</a>
           </div>
           <div class="pricing-card">
             <h3 class="pricing-card__title">Brand</h3>
-            <p class="pricing-card__desc">For brands and laboratories.</p>
+            <p class="pricing-card__desc">Your image protected, with a dedicated contact.</p>
             <div class="pricing-card__price-row">
               <span class="pricing-card__price-from">starting at</span>
               <span class="pricing-card__price" data-eur="590 €" data-usd="$650">590 €</span>
@@ -480,10 +497,10 @@ function _msdConsentSignal(state){
             </div>
             <ul class="pricing-card__features">
               <li><i class="fa-solid fa-check"></i><span>Everything in Growth</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Unlimited small changes, handled first</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Monthly compliance review: healthcare and medical device communication rules, legal notice, cookies, accessibility</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Monthly video call with Maxens</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Priority support, same-day reply (business days)</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Unlimited, priority changes</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Healthcare and legal compliance review</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Monthly call with Maxens</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Same-day reply</span></li>
             </ul>
             <a class="pricing-card__cta" href="https://msd-media.com/en/book-a-call/" data-i18n="tarifs_cta_call">Book a call</a>
           </div>

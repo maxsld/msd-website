@@ -20,6 +20,7 @@ const EXTRACT = process.argv.includes('--extract');
 // Page française -> page anglaise (chemins d'URL)
 export const PAGES = {
   '/tarifs/': '/en/pricing/',
+  '/tarifs/msd-care/': '/en/pricing/msd-care/',
   '/a-propos/': '/en/about/',
   '/contact/': '/en/contact/',
   '/reserver-un-appel/': '/en/book-a-call/',

@@ -29,7 +29,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE = 'https://msd-media.com'
 
-PRICE_PAGES = {'/tarifs/', '/en/pricing/'}
+PRICE_PAGES = {'/tarifs/', '/en/pricing/', '/tarifs/msd-care/', '/en/pricing/msd-care/'}
 # Pages où un montant en euros n'est pas un prix MSD (indemnité légale, fourchettes de formulaire).
 EURO_OK = {'/terms/cgv.html', '/en/legal/terms-of-sale.html', '/affiliation/', '/en/referral-program/'}
 

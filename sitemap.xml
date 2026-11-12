@@ -43,6 +43,12 @@
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://msd-media.com/tarifs/msd-care/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://msd-media.com/reserver-un-appel/</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -375,6 +381,12 @@
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://msd-media.com/en/pricing/msd-care/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
   </url>
   <url>
     <loc>https://msd-media.com/en/about/</loc>

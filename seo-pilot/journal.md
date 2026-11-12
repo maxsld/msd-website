@@ -11,6 +11,14 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-12 : MSD Care en trois niveaux, sur une sous-page (décision de Maxens)
+- Changement : nouvelle page `/tarifs/msd-care/` (et `/en/pricing/msd-care/`, générée) avec les trois niveaux : Essentiel 89 €, Croissance 390 €, Marque à partir de 590 € par mois, engagement de 3 mois pour tous, puis préavis d'un mois. Ajoutée aux sitemaps et au plan du site. Sur /tarifs/, la carte MSD Care devient un résumé « à partir de 89 € » avec un lien vers la sous-page. CGV article 5 bis, llms.txt, assistant du site, article maintenance (lien vers la sous-page, sans prix), FAQ « coûts après la création » (accueil, /tarifs/), FAITS.md, RULES.md (prix permis aussi sur la sous-page), OFFRES.md et le skill /devis mis à jour. `scripts/check-verite.py` accepte les prix sur la sous-page.
+- Avant : une seule formule MSD Care à 490 € par mois.
+- Hypothèse : une maintenance accessible aux indépendants (landing pages) qui ne prenaient pas MSD Care à 490 €.
+- Requête visée : aucune au départ ; ne pas orienter la sous-page vers « maintenance site web Annecy », que possède /blog/articles/maintenance-site-web-annecy/.
+- Départ : relevé du 2026-11-09 (page nouvelle, aucune donnée).
+- Type : `conversion`
+
 ### 2026-11-12 : conditions de vente alignées entre le site et les CGV (décision de Maxens)
 - Changement : décisions de Maxens appliquées partout (FR, EN, données structurées, assistant du site, llms.txt, portes IA). Délai : « version finale en 21 jours à compter de la réception de vos éléments » ; les CGV passent de 21 jours ouvrés à 21 jours calendaires (toujours indicatif), avec suspension si le client tarde et clôture possible après 60 jours sans réponse à une relance écrite. Acompte : 50 % à la signature (CGV, /tarifs/, accueil, /reserver-un-appel/). Code, domaine et accès : remis « dès le règlement du solde » au lieu de « à la livraison » (accueil, process des 30 pages ville et métier, /tarifs/, /faq-seo/, /agence-web-munich/, CGV article 7). MSD Care : engagement de 3 mois puis préavis d'un mois (/tarifs/, CGV nouvel article 5 bis, llms.txt, article maintenance). /tarifs/ : nouveau bloc « Ce qui n'est pas inclus » (#non-inclus) et réponse « coûts après la création » qui renvoie vers MSD Care. Les 4 pages métier santé disaient « 21 jours ouvrés » : alignées. Ajustements : toujours inclus jusqu'à validation, sans limite (choix de Maxens).
 - Avant : voir le diff git du commit.

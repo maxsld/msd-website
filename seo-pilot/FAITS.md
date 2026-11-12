@@ -18,14 +18,14 @@ Contrôle automatique : `python3 scripts/check-verite.py` relève les écarts da
 
 | Fait | Statut | Preuve |
 |---|---|---|
-| Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis | validé, **affichable uniquement sur `/tarifs/` et `/en/pricing/`** | `/tarifs/` |
-| Maintenance MSD Care 490 € par mois, engagement de 3 mois puis préavis d'un mois | validé (Maxens, 2026-11-12), même règle | `/tarifs/`, CGV article 5 bis |
+| Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis | validé, **affichable uniquement sur `/tarifs/`, `/tarifs/msd-care/` et leurs versions anglaises** | `/tarifs/` |
+| MSD Care en trois niveaux, tous avec un engagement de 3 mois puis un mois de préavis, changement de niveau possible chaque mois : Essentiel 89 € par mois (hébergement géré, surveillance, sauvegardes, 30 min de modifications, réponse sous 48 h ouvrées) ; Croissance 390 € par mois (Essentiel + 2 contenus SEO par mois, rapport de positions et de visibilité IA, 2 h de modifications, réponse sous 24 h ouvrées) ; Marque à partir de 590 € par mois (Croissance + petites modifications illimitées et prioritaires, suivi de conformité santé et légal, point mensuel en visio, réponse le jour même ouvré). Temps de modification non reporté | validé (Maxens, 2026-11-12), affichable sur `/tarifs/`, `/tarifs/msd-care/` et leurs versions anglaises | `/tarifs/msd-care/`, CGV article 5 bis |
 | Paiement : acompte de 50 % à la signature du devis, solde à la livraison (payable sous 30 jours) | validé (Maxens, 2026-11-12) | CGV article 4 |
 | Code source, domaine et accès remis dès le règlement du solde (jamais « à la livraison ») | validé (Maxens, 2026-11-12) | CGV article 7 |
 | Ajustements inclus jusqu'à la validation du client, sans limite de nombre | validé (Maxens, 2026-11-12) | accueil, process |
 | Non inclus : garantie de position Google ou de citation IA, publicité et achat de trafic, shootings photo et vidéo, pages ou fonctionnalités hors devis (devis complémentaire), maintenance (MSD Care) | validé (Maxens, 2026-11-12) | `/tarifs/#non-inclus` |
 | Pas d'offre gratuite (audit, maquette) sauf si `/tarifs/` l'annonce | validé | `/tarifs/` |
-| La maintenance de MSD Media s'appelle MSD Care, partout. Elle n'est jamais offerte ni incluse (ni « la première année », ni « hébergement inclus ») : elle est en option, après la mise en ligne. Hors de `/tarifs/`, on la nomme et on fait un lien vers `/tarifs/#msd-care`, sans prix | validé (Maxens, 2026-11-12) | `/tarifs/` |
+| La maintenance de MSD Media s'appelle MSD Care, partout. Elle n'est jamais offerte ni incluse (ni « la première année », ni « hébergement inclus ») : elle est en option, après la mise en ligne. Hors des pages de prix, on la nomme et on fait un lien vers `/tarifs/msd-care/`, sans prix | validé (Maxens, 2026-11-12) | `/tarifs/` |
 
 Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à trancher par Maxens) : description de l'accueil (« Dès 1 990 € »), FAQ de `/reserver-un-appel/` (« Les offres démarrent à 1 990 € »), `llms.txt` (tarifs et MSD Care).
 

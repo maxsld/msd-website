@@ -1,10 +1,10 @@
 # Vérité commerciale
 
-Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-pilot/FAITS.md`. 11 écart(s) bloquant(s). Un écart bloquant dans une page que l'agence a le droit de modifier se corrige dans la source (JSON, Markdown) ; dans l'accueil, `llms.txt`, les CGV ou un prix, il remonte à Maxens dans « À toi ».
+Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-pilot/FAITS.md`. 9 écart(s) bloquant(s). Un écart bloquant dans une page que l'agence a le droit de modifier se corrige dans la source (JSON, Markdown) ; dans l'accueil, `llms.txt`, les CGV ou un prix, il remonte à Maxens dans « À toi ».
 
 ## Bloquant
 
-### Prix MSD Media hors de /tarifs/ (11)
+### Prix MSD Media hors de /tarifs/ (9)
 - `/` : « Dès 1 990 €, livrés en 21 jours. »
 - `/` : « Dès 1 990 €. »
 - `/en/` : « From €1,990, delivered in 21 days. »
@@ -13,9 +13,7 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 - `/reserver-un-appel/` : « Les offres démarrent à 1 990 € et sont détaillées sur la page Tarifs . »
 - `/en/book-a-call/` : « Packages start at €1,990 and are detailed on the Pricing page." »
 - `/en/book-a-call/` : « Packages start at €1,990 and are detailed on the Pricing page. »
-- `/blog/articles/maintenance-site-web-annecy/` : « Chez MSD Media, la maintenance s'appelle MSD Care : 490 € par mois, avec un engagement de 3 mois puis un préavis d'un mois. »
-- `llms.txt` : « - [Tarifs](https://msd-media.com/tarifs/) : Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis, maintenance MSD Care 490 € par mois… »
-- `llms.txt` : « - Maintenance en option avec MSD Care (490 € par mois, engagement de 3 mois puis préavis d'un mois) : hébergement, sauvegardes, petites modifications illimitées, suivi S… »
+- `llms.txt` : « - [Tarifs](https://msd-media.com/tarifs/) : Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis, maintenance MSD Care en trois nivea… »
 
 ## À relire (preuve à vérifier dans FAITS.md)
 

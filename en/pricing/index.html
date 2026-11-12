@@ -253,16 +253,16 @@ function _msdConsentSignal(state){
           {
             "@type": "Offer",
             "name": "MSD Care",
-            "description": "Monthly website maintenance and monitoring: hosting, backups, security, unlimited small changes, SEO monitoring and a monthly report. 3-month minimum, then cancellable with one month's notice.",
-            "price": "490",
+            "description": "Monthly website maintenance and monitoring in three levels: Essential (€89 per month), Growth (€390 per month), Brand (from €590 per month). 3-month minimum, then cancellable with one month's notice.",
+            "price": "89",
             "priceCurrency": "EUR",
             "priceSpecification": {
               "@type": "UnitPriceSpecification",
-              "price": "490",
+              "minPrice": "89",
               "priceCurrency": "EUR",
               "unitText": "MONTH"
             },
-            "url": "https://msd-media.com/en/pricing/#msd-care"
+            "url": "https://msd-media.com/en/pricing/msd-care/"
           }
         ]
       }
@@ -299,7 +299,7 @@ function _msdConsentSignal(state){
           "name": "What are the costs after launch?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Budget for the domain name (€10-30/year) and hosting. A custom-coded site like ours hosts for next to nothing and doesn't require heavy maintenance, unlike WordPress. If you'd rather not manage anything, MSD Care takes care of hosting, backups, small changes and SEO monitoring every month."
+            "text": "Budget for the domain name (€10-30/year) and hosting. A custom-coded site like ours hosts for next to nothing and doesn't require heavy maintenance, unlike WordPress. If you'd rather not manage anything, MSD Care takes care of hosting, backups and changes every month, in three levels from €89 per month."
           }
         },
         {
@@ -497,7 +497,7 @@ function _msdConsentSignal(state){
             <span class="pricing-card__badge">Good to know before the call</span>
             <h3 class="pricing-card__title">What is not included</h3>
             <p class="pricing-card__desc">So the quote matches exactly what you receive.</p>
-            <a class="pricing-card__cta" href="https://msd-media.com/en/pricing/#msd-care">Discover MSD Care</a>
+            <a class="pricing-card__cta" href="https://msd-media.com/en/pricing/msd-care/">Discover MSD Care</a>
           </div>
           <ul class="pricing-card__features">
             <li><i class="fa-solid fa-xmark"></i><span>A guaranteed Google ranking or AI citation: no agency can promise that</span></li>
@@ -511,21 +511,19 @@ function _msdConsentSignal(state){
         <div class="pricing-card pricing-card--care" id="msd-care">
           <div class="pricing-care__head">
             <span class="pricing-card__badge" data-i18n="tarifs_care_badge">After launch</span>
-            <h3 class="pricing-card__title" data-i18n="tarifs_care_title">MSD Care</h3>
-            <p class="pricing-card__desc" data-i18n="tarifs_care_desc">Maintenance and monitoring for your website, so it stays fast and secure and keeps bringing you enquiries.</p>
+            <h3 class="pricing-card__title"><a href="https://msd-media.com/en/pricing/msd-care/">MSD Care</a></h3>
+            <p class="pricing-card__desc">Maintenance and monitoring for your website, in three levels, so it stays fast and secure and keeps bringing you enquiries.</p>
             <div class="pricing-card__price-row">
-              <span class="pricing-card__price" data-eur="490 €" data-usd="$540">490 €</span>
-              <span class="pricing-card__price-from" data-i18n="tarifs_care_period">per month, 3-month minimum then one month's notice</span>
+              <span class="pricing-card__price-from" data-i18n="tarifs_from">starting at</span>
+              <span class="pricing-card__price" data-eur="89 €" data-usd="$99">89 €</span>
+              <span class="pricing-card__price-from">per month, 3-month minimum</span>
             </div>
-            <a class="pricing-card__cta" href="https://msd-media.com/en/book-a-call/" data-i18n="tarifs_cta_call">Book a call</a>
+            <a class="pricing-card__cta" href="https://msd-media.com/en/pricing/msd-care/">See the three levels</a>
           </div>
           <ul class="pricing-card__features">
-            <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_care_f1">Hosting, domain name and SSL certificate managed</span></li>
-            <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_care_f2">Backups, security and updates</span></li>
-            <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_care_f3">Unlimited small edits: copy, photos, prices, opening hours</span></li>
-            <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_care_f4">Monthly SEO monitoring: rankings, traffic, enquiries received</span></li>
-            <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_care_f5">Monthly report with one improvement proposed each month</span></li>
-            <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_care_f6">Priority support, reply within one business day</span></li>
+            <li><i class="fa-solid fa-check"></i><span>Essential, €89 per month: managed hosting, monitoring, backups and 30 minutes of changes</span></li>
+            <li><i class="fa-solid fa-check"></i><span>Growth, €390 per month: Essential, 2 SEO pieces per month and a rankings and AI visibility report</span></li>
+            <li><i class="fa-solid fa-check"></i><span>Brand, from €590 per month: Growth, priority changes, compliance review and a monthly call</span></li>
           </ul>
         </div>
 
@@ -759,7 +757,7 @@ function _msdConsentSignal(state){
             <details class="faq__item"><summary>What's the average price of a website in 2026?</summary><p data-i18n="tarifs_faq_q1_a">At MSD Media, a landing page starts at €1,990, a full showcase site at €3,990. Custom projects (e-commerce, multilingual, dashboards) get a tailored quote after an initial conversation.</p></details>
             <details class="faq__item"><summary>How long does it take to build my site?</summary><p data-i18n="tarifs_faq_q2_a">A first version is delivered in 7 days and the final version in 21 days from receipt of your materials (copy, photos, access), for a landing page as for a showcase website. The process runs in 4 steps: brief and kickoff, UX/UI, development, then delivery and adjustments.</p></details>
             <details class="faq__item"><summary>Is SEO included in the price?</summary><p data-i18n="tarifs_faq_q3_a">Yes. Semantic structure, Schema.org structured data and Core Web Vitals optimization are included from the Showcase Website plan onward. The Landing Page plan includes baseline on-page SEO.</p></details>
-            <details class="faq__item"><summary>What are the costs after launch?</summary><p data-i18n="tarifs_faq_q4_a">Budget for the domain name (€10-30/year) and hosting. A custom-coded site like ours hosts for next to nothing and doesn't require heavy maintenance, unlike WordPress. If you'd rather not manage anything, MSD Care takes care of hosting, backups, small changes and SEO monitoring every month.</p></details>
+            <details class="faq__item"><summary>What are the costs after launch?</summary><p data-i18n="tarifs_faq_q4_a">Budget for the domain name (€10-30/year) and hosting. A custom-coded site like ours hosts for next to nothing and doesn't require heavy maintenance, unlike WordPress. If you'd rather not manage anything, MSD Care takes care of hosting, backups and changes every month, in three levels from €89 per month.</p></details>
           </div>
           <div class="faq__col">
             <details class="faq__item"><summary>How does payment work?</summary><p data-i18n="tarifs_faq_q5_a">A 50% deposit when you sign the quote, the balance on delivery. For custom projects, a payment schedule can be set up based on project milestones.</p></details>

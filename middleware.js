@@ -13,6 +13,7 @@ const ROUTES = {
   "/": "/en/",
   "/agence-web-munich/": "/en/munich/",
   "/tarifs/": "/en/pricing/",
+  "/tarifs/msd-care/": "/en/pricing/msd-care/",
   "/a-propos/": "/en/about/",
   "/contact/": "/en/contact/",
   "/reserver-un-appel/": "/en/book-a-call/",

@@ -1,13 +1,13 @@
 # Couverture des prompts IA
 
-Relevé automatique (114 pages françaises du sitemap). Une combinaison est couverte quand une même page réunit les termes dans son title, sa description, ses titres H1 à H3 ou ses questions de FAQ. Matrice : `data/ai-prompts.json`. Méthode : on croise qui, quoi, où et quelle intention, faute de volume de recherche pour les prompts.
+Relevé automatique (111 pages françaises du sitemap). Une combinaison est couverte quand une même page réunit les termes dans son title, sa description, ses titres H1 à H3 ou ses questions de FAQ. Matrice : `data/ai-prompts.json`. Méthode : on croise qui, quoi, où et quelle intention, faute de volume de recherche pour les prompts.
 
 ## Couverture par terme
 
-- **Cibles** (nombre de pages) : médecin 18, médecine esthétique 12, chirurgien esthétique 14, dermatologue 6, dentiste 14, centre laser 1, avocat 1, architecte 1, artisan 2, restaurant 2, immobilier 1, coach 15, startup 34, PME 39
-- **Besoins** (nombre de pages) : site vitrine 77, landing page 59, refonte 34, SEO local 41, référencement 84, visibilité IA 60
-- **Lieux** (nombre de pages) : Annecy 49, Haute-Savoie 2, Chambéry 17, Genève 14, Strasbourg 11, Munich 1, France 28
-- **Intentions** (nombre de pages) : meilleur / recommandation 51, prix 78, délai 67, règles / conformité 23, comparaison / alternative 34, comment faire 60, avis / preuves 75
+- **Cibles** (nombre de pages) : médecin 17, médecine esthétique 12, chirurgien esthétique 14, dermatologue 6, dentiste 14, centre laser 1, avocat 1, architecte 1, artisan 2, restaurant 2, immobilier 1, coach 15, startup 34, PME 37
+- **Besoins** (nombre de pages) : site vitrine 75, landing page 57, refonte 34, SEO local 40, référencement 83, visibilité IA 59
+- **Lieux** (nombre de pages) : Annecy 47, Haute-Savoie 2, Chambéry 17, Genève 14, Strasbourg 11, Munich 1, France 21
+- **Intentions** (nombre de pages) : meilleur / recommandation 47, prix 76, délai 65, règles / conformité 24, comparaison / alternative 30, comment faire 58, avis / preuves 72
 
 ## Couverture par croisement
 

@@ -37,7 +37,7 @@ category: "<Santé | SEO | Landing page | Annecy | Entrepreneuriat>"
 2. **Ligne de cadrage en italique** si le sujet est réglementaire ou daté : *« Cet article décrit l'état des textes au <date>. Il ne remplace pas l'avis de… »*
 3. **5 à 8 sections `##` formulées comme les questions réelles des lecteurs**, dans l'ordre où ils se les posent. Chaque section commence par une phrase qui répond, puis développe : exemple, règle, chiffre sourcé.
 4. **Au moins un tableau** comparatif ou récapitulatif (options, règles, prix du marché, étapes).
-5. **Une section d'expérience** : « Comment nous … chez MSD Media » ou équivalent. Uniquement des faits réels déjà présents sur le site (projets Merz Radiesse et Ultherapy Prime, méthode en 21 jours, etc.). Jamais de chiffre de résultat client inventé.
+5. **Une section d'expérience** : « Comment nous … chez MSD Media » ou équivalent. Uniquement des faits réels déjà présents sur le site (méthode, délai indicatif de 21 jours, réalisations publiées), décrits en termes généraux : jamais de client ni de produit nommé ou détaillé, Merz encore moins (voir RULES.md). Jamais de chiffre de résultat client inventé.
 6. **`## Questions fréquentes`** : 4 à 8 questions en `###`, chacune suivie d'**un seul paragraphe** de réponse (2 à 4 phrases). Le générateur en tire le balisage FAQ : pas de liste ni de second paragraphe sous une question.
 7. **`## Sources`** : liste des sources officielles ou reconnues citées dans l'article, avec leur lien. Obligatoire dès qu'il y a une règle, une date réglementaire ou un chiffre externe.
 

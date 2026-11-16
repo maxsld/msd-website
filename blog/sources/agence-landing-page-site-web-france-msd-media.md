@@ -70,7 +70,7 @@ Retrouvez l'ensemble des projets sur la page [études de cas](https://msd-media.
 ### Pierre Aliaga — Fondateur de startup
 > "Une landing page qui convertit dès le jour 1. Maxens a capté notre besoin immédiatement. Résultat : une page claire, alignée et performante."
 
-[Voir les avis sur Trustpilot](https://www.trustpilot.com/review/msd-media.com)
+**Chaque avis Trustpilot est noté 5 / 5.** [Voir les avis sur Trustpilot](https://www.trustpilot.com/review/msd-media.com)
 
 ---
 

@@ -49,6 +49,7 @@ WARNINGS = [
     ('Systématiquement', re.compile(r'syst[ée]matiquement', re.I)),
     ('Note sur 5 attribuée à MSD Media', re.compile(r'(MSD Media|Trustpilot|nos avis)[^.]{0,60}\d[,.]?\d? ?/ ?5', re.I)),
     ('Nombre de clients', re.compile(r'\d+ ?\+? clients (accompagnés|satisfaits)', re.I)),
+    ('Client nommé dans le blog (Merz : jamais sujet ni détaillé, RULES.md)', re.compile(r'Merz|Radiesse|Ultherapy', re.I)),
 ]
 EM_DASH = '—'
 
@@ -115,6 +116,8 @@ def main():
                         and not re.search(r"(n'est pas|non|not) contractu", s, re.I):
                     block[name].append((label, short(s)))
             for name, rx in WARNINGS:
+                if name.startswith('Client nommé') and not label.startswith(('/blog/', 'blog/')):
+                    continue
                 if rx.search(s):
                     warn[name].append((label, short(s)))
         if not label.startswith(('data/', 'llms')) and '/en/' not in label:

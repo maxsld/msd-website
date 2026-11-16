@@ -11,6 +11,15 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-16 : article dispositif médical réécrit sans Merz ; Trustpilot 5/5 rétabli (décision de Maxens)
+- Changement : /blog/articles/landing-page-dispositif-medical/ réécrit sur la même URL sans nommer de client : plus de Merz, Radiesse, Ultherapy Prime, études Goldie et Moers, délai de 18 jours ni liens vers les réalisations Merz. La méthode devient générale, en 5 points (catégorie avant bénéfice, études citées dans le texte, double lecteur, localisateur de praticiens, contraintes techniques d'un laboratoire), avec un tableau « produit à effet progressif / bénéfice immédiatement compris ». Title « Landing page dispositif médical : la méthode en 5 points ». Règle ajoutée à RULES.md, PROMPT.md, ARTICLE-GUIDE.md, EDITORIAL.md et FAITS.md : un client n'est jamais le sujet d'un contenu ni détaillé hors de sa page de réalisation, Merz moins encore. `check-verite.py` signale toute mention de Merz ou de ses produits dans le blog. /blog/articles/agence-landing-page-site-web-france-msd-media/ : « Chaque avis Trustpilot est noté 5 / 5. » rétabli (Maxens : chaque avis est à 5/5 ; FAITS.md mis à jour).
+- Avant : article « notre méthode avec Merz », détaillant les deux projets Merz.
+- Hypothèse : la requête visée reste la même ; on retire un contenu que MSD Media n'a pas le droit de publier.
+- Requête visée : landing page dispositif médical.
+- Départ : article publié le matin même, aucune donnée.
+- Type : `seo`
+- Reste à faire : 4 articles citent Merz en une ligne avec un lien vers la réalisation (webdesigner-annecy-ou-agence, publicite-chirurgie-esthetique-decret-2026, site-internet-medecine-esthetique-ce-qui-est-autorise, agence-landing-page-site-web-france-msd-media) : décision de Maxens attendue, ne pas y toucher d'ici là.
+
 ### 2026-11-16 : source du badge « Top 7 des agences web en France, classement Sorank 2026 »
 - Changement : la source a été retrouvée et vérifiée. Classement Sorank « Les 10 meilleures agences de création de sites en France », publié le 25 août 2026, MSD Media 7e : https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france. Le badge y renvoyait déjà sur toutes les pages, mais dans le hero seul le mot « Sorank » était cliquable ; le lien couvre maintenant « Classement Sorank 2026 » (« Sorank 2026 ranking » en anglais), sur 31 pages FR et 3 EN. L'assistant du site datait le classement d'« octobre 2026 » : corrigé en août 2026, avec l'adresse. Classement ajouté à FAITS.md.
 - Avant : lien sur le seul mot « Sorank ».

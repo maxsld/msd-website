@@ -42,20 +42,20 @@ Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à tranc
 | Fait | Statut | Preuve |
 |---|---|---|
 | Réalisations publiées : Agence 3XL, Aristoi Academia, Carroz Sports, EM Motors, HairTattoo, Laurence Daien-Maestripieri, Marie Troccaz, Maxime Sciare, Merz Radiesse, Merz Ultherapy Prime, Nation Startup | validé | `/realisations/` |
-| Merz Aesthetics : projets Radiesse et Ultherapy Prime uniquement | validé | `/realisations/merz-*` |
+| Merz Aesthetics : projets Radiesse et Ultherapy Prime uniquement | validé, **citable seulement là où Merz l'est déjà** (pages de réalisation, accueil, preuves des pages de service) ; jamais sujet d'un article ni détaillé dans le blog (Maxens, 2026-11-16) | `/realisations/merz-*` |
 | Belotero | **interdit** : MSD Media n'a pas cette réalisation | redirection du 2026-11-03 |
 | Chiffres d'un projet (délai, PageSpeed, résultats) | validés seulement s'ils figurent sur la page de la réalisation | `/realisations/<projet>/` |
 | « PageSpeed systématiquement supérieur à 95/100 » | **à confirmer** : pas de mesure publiée pour tous les projets ; on cite le score d'un projet précis | pages de réalisation |
 | Maxime Sciare : PageSpeed 96/100 mobile, +40 points, livré en 21 jours ouvrés | validé | `/realisations/maxime-sciare/` ; `llms.txt` dit « livraison 14 jours » : à corriger |
 | Résultats de conversion publiés : Nation Startup « +350 bêta-testeurs inscrits en 1 semaine après la mise en ligne » ; Agence 3XL « 3 rendez-vous générés le jour du lancement » | validé (pages de réalisation) | `/realisations/nation-startup/`, `/realisations/agence-3xl/` |
-| Chiffre de conversion Merz (taux, leads) | **à obtenir** : Maxens le fournira avec période et source | |
+| Chiffre de conversion Merz (taux, leads) | **à obtenir**, et seulement pour la page de réalisation, avec l'accord de Merz | |
 
 ## Avis
 
 | Fait | Statut | Preuve |
 |---|---|---|
 | Avis Google réels (nombre et note du jour) | à relever à la date d'écriture | fiche Google |
-| « Trustpilot : 5 / 5 » | **à confirmer** : le relevé du 2026-11-09 (specialiste-ia) donne 4,4 sur 10 avis | article `agence-landing-page-site-web-france-msd-media` |
+| Chaque avis Trustpilot est noté 5 / 5 (« note moyenne des avis : 5 / 5 ») | validé (Maxens, 2026-11-16) ; ne pas écrire « TrustScore 5 » : le TrustScore affiché par Trustpilot est un calcul pondéré qui peut être plus bas (relevé du 2026-11-09 : 4,4) | https://www.trustpilot.com/review/msd-media.com |
 
 ## Classements
 

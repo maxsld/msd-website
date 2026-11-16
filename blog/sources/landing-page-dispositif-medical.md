@@ -1,9 +1,9 @@
 ---
 status: "published"
-title: "Landing page de dispositif médical : notre méthode avec Merz"
-seoTitle: "Landing page dispositif médical : méthode et exemples"
+title: "Landing page de dispositif médical : notre méthode"
+seoTitle: "Landing page dispositif médical : la méthode en 5 points"
 date: "2026-11-16"
-description: "Landing page de dispositif médical : définir le produit avant le bénéfice, citer chaque étude, mener au praticien. Notre méthode sur 2 projets Merz."
+description: "Landing page de dispositif médical : définir le produit avant le bénéfice, citer chaque étude, mener au praticien. Notre méthode de conception en 5 points."
 image: "https://msd-media.com/assets/img/stock/photo-1785861433534-8cd4c7b994fa.webp"
 tags: ["landing page dispositif médical", "page produit dispositif médical", "landing page laboratoire médecine esthétique", "MSD Media"]
 slug: "landing-page-dispositif-medical"
@@ -12,13 +12,13 @@ category: "Santé"
 ---
 ## Réponse courte
 
-Une landing page de dispositif médical doit faire trois choses qu'une page produit ordinaire peut négliger. Elle dit ce qu'est le produit avant d'annoncer son bénéfice, si le visiteur risque de le classer dans la mauvaise catégorie. Elle cite chaque donnée clinique avec sa source et ses limites, dans le texte et pas en pied de page. Et elle mène le visiteur vers un praticien, puisque le laboratoire ne vend pas le soin. C'est la méthode que nous avons appliquée aux pages françaises de Radiesse et d'Ultherapy Prime pour Merz Aesthetics.
+Une landing page de dispositif médical doit faire trois choses qu'une page produit ordinaire peut négliger. Elle dit ce qu'est le produit avant d'annoncer son bénéfice, si le visiteur risque de le classer dans la mauvaise catégorie. Elle cite chaque donnée clinique avec sa source et ses limites, dans le texte et pas en pied de page. Et elle mène le visiteur vers un praticien, puisque le laboratoire ne vend pas le soin. Voici la méthode que nous appliquons, en cinq points.
 
 *Cet article décrit notre méthode de conception. Il ne détaille pas les règles de publicité des dispositifs médicaux et ne remplace pas l'avis des équipes réglementaires du fabricant.*
 
 ## Qu'est-ce qui change quand la page présente un dispositif médical ?
 
-Chaque phrase doit pouvoir être justifiée. Sur la page de [Radiesse](https://msd-media.com/realisations/merz-radiesse/), un dispositif médical, chaque allégation s'adosse à une source, et les données cliniques sont citées avec leurs limites. Une page produit ordinaire peut promettre. Celle-ci doit montrer d'où vient chaque affirmation.
+Chaque phrase doit pouvoir être justifiée. Une page produit ordinaire peut promettre. Celle d'un dispositif médical doit montrer d'où vient chaque affirmation, et citer les données cliniques avec leurs limites.
 
 Trois autres différences pèsent sur la conception :
 
@@ -26,67 +26,57 @@ Trois autres différences pèsent sur la conception :
 - **Un mécanisme souvent invisible.** Le visiteur ne voit pas comment le produit agit, et parfois pas de résultat le jour même.
 - **Une action qui n'est pas un achat.** Le laboratoire ne vend pas le soin : la page oriente vers un praticien.
 
-Le vocabulaire, lui, n'est pas libre. Sur Ultherapy Prime, nous avons conservé la terminologie validée par la marque pour ce type de dispositif.
+Le vocabulaire, lui, n'est pas libre : on reprend la terminologie validée par la marque et ses équipes réglementaires, sans la paraphraser.
 
-## Faut-il annoncer le bénéfice ou expliquer la catégorie d'abord ?
+## 1. Faut-il annoncer le bénéfice ou expliquer la catégorie d'abord ?
 
-Cela dépend de ce à quoi le visiteur va comparer le produit. Nos deux projets Merz ont fait des choix opposés.
+Cela dépend de ce à quoi le visiteur va comparer le produit.
 
-Radiesse est un biostimulateur régénérateur injectable à base d'hydroxyapatite de calcium. Il amène la peau à relancer sa propre production de collagène et d'élastine, et agit sur plusieurs mois. Annoncer un résultat d'emblée l'aurait fait comparer à un produit de comblement, qui ajoute du volume tout de suite. Il aurait été jugé sur le mauvais critère. La page s'ouvre donc sur une définition courte de la catégorie. Viennent ensuite trois bénéfices (raffermir, lisser, réveiller), les zones traitées, puis le mécanisme d'action.
+Prenons un produit injectable qui agit progressivement, en stimulant la peau sur plusieurs mois. Si la page annonce d'emblée un résultat, le visiteur le compare à un produit de comblement, qui ajoute du volume tout de suite. Il le juge alors sur le mauvais critère. Mieux vaut ouvrir sur une définition courte de la catégorie, puis présenter les bénéfices, les zones traitées et le mécanisme d'action.
 
-La page d'[Ultherapy Prime](https://msd-media.com/realisations/merz-ultherapy-prime/) part au contraire du bénéfice patient : raffermissement, non invasif, sans interruption sociale. Suivent le protocole, la distinction entre les usages visage et corps, puis les preuves.
+À l'inverse, pour un appareil dont le bénéfice se comprend sans explication, la page peut partir du bénéfice patient, puis présenter le protocole, les indications et les preuves.
 
 Notre règle : lisez votre bénéfice seul et demandez-vous à quel produit le visiteur va le comparer. Si ce produit ne fait pas le même travail, commencez par la catégorie.
 
-## Comment citer les études sans alourdir la page ?
+## 2. Comment citer les études sans alourdir la page ?
 
-En traitant les références comme du contenu, placées à côté de l'affirmation qu'elles soutiennent. Sur Radiesse, trois données apparaissent avec leur source et, quand c'est nécessaire, avec la mention de leurs limites d'extrapolation :
+En traitant les références comme du contenu, placées à côté de l'affirmation qu'elles soutiennent. Une étude histologique, un questionnaire de satisfaction ou une durée d'effet apparaissent avec leur source et, quand c'est nécessaire, avec la mention de leurs limites (nombre de patients, durée de suivi, population étudiée).
 
-- l'étude histologique de Goldie et al. sur la densité de collagène ;
-- le questionnaire de satisfaction multicentrique de Moers et al., portant sur 120 patients ;
-- une durée d'effet pouvant atteindre douze mois.
+En pied de page, ces références ne prouveraient rien au moment de la lecture. Une affirmation sourcée convainc davantage qu'une affirmation seule, y compris le lecteur qui ne cliquera jamais sur la référence.
 
-En pied de page, ces références n'auraient rien prouvé au moment de la lecture. Une affirmation sourcée convainc davantage qu'une affirmation seule, y compris le lecteur qui ne cliquera jamais sur la référence.
+Le mécanisme d'action pose le même problème de densité. Découpez-le en quelques étapes nommées, chacune avec une phrase : un processus biologique continu devient une séquence que l'œil peut suivre.
 
-Le mécanisme d'action pose le même problème de densité. Nous l'avons découpé en cinq étapes nommées : structure, soutien, élasticité, éclat, nutrition. Un processus biologique continu devient une séquence que l'œil peut suivre.
-
-## Comment parler à la fois au patient et au praticien ?
+## 3. Comment parler à la fois au patient et au praticien ?
 
 En gardant la rigueur dans le fond et la simplicité dans la forme. Le risque est double : un excès de technicité éloigne le patient, un excès de simplification fragilise la crédibilité auprès des praticiens.
 
-Quatre choix nous ont aidés à tenir cet équilibre :
+Quatre choix aident à tenir cet équilibre :
 
-- **Le vocabulaire réel des recherches.** Sur Radiesse : « biostimulateur », « hydroxyapatite de calcium », « collagène », les noms des zones traitées. Ce sont les termes qu'un patient tape après une première consultation.
-- **Une FAQ sur les questions qui précèdent la décision.** Durée des résultats, différence avec un comblement et déroulé de la séance pour Radiesse ; durée, résultats, douleur et indications pour Ultherapy Prime.
-- **Des visages réels plutôt que des schémas** sur Radiesse : la photographie montre un résultat crédible, pas une promesse dessinée.
-- **Un design lisible et apaisant** sur Ultherapy Prime, pour un public senior comme plus jeune.
+- **Le vocabulaire réel des recherches.** Le nom de la catégorie, de la substance et des zones traitées : ce sont les termes qu'un patient tape après une première consultation.
+- **Une FAQ sur les questions qui précèdent la décision.** Durée des résultats, différence avec les autres traitements, déroulé de la séance, douleur, indications.
+- **Des visages réels plutôt que des schémas**, quand la marque en dispose : la photographie montre un résultat crédible, pas une promesse dessinée.
+- **Un design lisible et apaisant**, pour un public de tous âges.
 
-## Quelle action proposer quand le laboratoire ne vend pas le soin ?
+## 4. Quelle action proposer quand le laboratoire ne vend pas le soin ?
 
-La recherche d'un praticien. Une marque de médecine esthétique ne vend pas directement le soin : elle oriente le visiteur vers un praticien partenaire. Sur nos deux pages, le localisateur de praticiens ferme le parcours. Il n'est pas présenté comme un lien commercial, mais comme la suite logique de la lecture : une fois le traitement compris, il reste à trouver quelqu'un qui le pratique.
+La recherche d'un praticien. Une marque de médecine esthétique ne vend pas directement le soin : elle oriente le visiteur vers un praticien partenaire. Le localisateur de praticiens ferme donc le parcours. Il n'est pas présenté comme un lien commercial, mais comme la suite logique de la lecture : une fois le traitement compris, il reste à trouver quelqu'un qui le pratique.
 
-Tout ce qui fait sortir le visiteur avant cette étape est un risque. Sur Radiesse, la campagne vidéo de la marque est intégrée à la page plutôt que renvoyée vers une plateforme externe, pour éviter une sortie de parcours au moment où l'attention est la plus forte.
+Tout ce qui fait sortir le visiteur avant cette étape est un risque. Une vidéo de la marque, par exemple, gagne à être intégrée à la page plutôt que renvoyée vers une plateforme externe, au moment où l'attention est la plus forte.
 
-## Quelles contraintes techniques chez un laboratoire ?
+## 5. Quelles contraintes techniques chez un laboratoire ?
 
-La page doit vivre dans le site existant sans créer de dépendance. Radiesse devait s'intégrer à l'écosystème WordPress de Merz Aesthetics France, sans maintenance imposée à l'équipe du laboratoire. Nous avons livré la page sous forme de plugin WordPress autonome, sans constructeur de pages, qui embarque ses propres styles, polices, scripts et gabarits. Elle n'entre pas en conflit avec le thème du site. Le laboratoire peut l'activer, la désactiver ou la déplacer sans toucher au reste. La liste des centres partenaires du localisateur, avec carte et recherche géographique, se met à jour depuis un simple fichier CSV, sans passer par nous.
+La page doit vivre dans le site existant sans créer de dépendance. Souvent, le site du laboratoire tourne déjà sous WordPress, et son équipe ne veut pas d'une maintenance de plus. Une page livrée sous forme de module autonome, qui embarque ses propres styles, polices et scripts, évite les conflits avec le thème du site : le laboratoire peut l'activer, la désactiver ou la déplacer sans toucher au reste. La liste des centres partenaires du localisateur peut se mettre à jour depuis un simple fichier, sans passer par l'agence.
 
-La charte s'applique aussi : les deux pages reprennent l'identité de Merz Aesthetics, typographie Aeonik Pro comprise sur Radiesse. Et le calendrier peut être fixé par un lancement international, comme pour Ultherapy Prime.
+La charte de la marque s'applique aussi, typographie comprise. Et le calendrier est souvent fixé par un lancement, à date imposée.
 
-## Comment nous avons conçu les pages Radiesse et Ultherapy Prime
+## Deux points de départ selon le produit
 
-Même cadre, arguments différents. Ce tableau reprend uniquement ce que publient nos deux pages de réalisation.
-
-| | Radiesse | Ultherapy Prime |
+| | Produit à effet progressif | Produit au bénéfice immédiatement compris |
 |---|---|---|
-| Produit | Biostimulateur régénérateur injectable à base d'hydroxyapatite de calcium | Technologie d'ultrasons micro-focalisés (HIFU) pour le raffermissement cutané du visage, du cou et du corps |
 | Entrée de la page | Définition de la catégorie, puis bénéfices | Bénéfice patient, puis protocole |
-| Preuves | Goldie et al., Moers et al. (120 patients), durée d'effet jusqu'à douze mois, avec sources et limites | Preuves cliniques, avant/après et témoignages présentés sobrement |
-| Action finale | Localisateur de praticiens avec carte et recherche géographique | Localisateur de praticiens intégré au parcours |
-| Technique | Plugin WordPress autonome, centres partenaires par fichier CSV | Blocs modulaires, charte Merz Aesthetics |
-| Délai constaté | Non indiqué | 18 jours ouvrés, lancement international à date fixe |
-
-Ces pages présentent nos choix de conception. Elles ne publient pas de résultats de trafic ou de conversion du laboratoire, et nous n'en citons pas ici.
+| Risque à éviter | Être comparé à un produit qui agit tout de suite | Promettre plus que ce que montrent les données |
+| Preuves | Études citées dans le texte, avec leurs limites | Données cliniques et indications, présentées sobrement |
+| Action finale | Localisateur de praticiens | Localisateur de praticiens |
 
 Pour un nouveau projet, notre délai est indicatif : une version finale en 21 jours à compter de la réception de vos éléments.
 
@@ -113,7 +103,7 @@ C'est une page dédiée à un seul produit, qui explique ce qu'il est, ce qu'il 
 
 ### Où placer les références scientifiques sur la page ?
 
-À côté de l'affirmation qu'elles soutiennent, pas en pied de page. Sur la page de Radiesse, l'étude de Goldie et al. et le questionnaire de Moers et al. apparaissent avec leur source et, si nécessaire, avec leurs limites d'extrapolation.
+À côté de l'affirmation qu'elles soutiennent, pas en pied de page. Chaque étude apparaît avec sa source et, si nécessaire, avec ses limites : nombre de patients, durée de suivi, population étudiée.
 
 ### Quelle action proposer sur la page d'un dispositif médical ?
 
@@ -121,11 +111,11 @@ La recherche d'un praticien, avec un localisateur placé à la fin du parcours. 
 
 ### Combien de temps faut-il pour créer une landing page de dispositif médical ?
 
-La page d'Ultherapy Prime a été livrée en 18 jours ouvrés, un délai constaté et imposé par un lancement international à date fixe. Pour un nouveau projet, notre délai indicatif est une version finale en 21 jours à compter de la réception de vos éléments.
+Le calendrier dépend surtout des validations réglementaires du fabricant et de la date de lancement. Chez MSD Media, le délai indicatif est une version finale en 21 jours à compter de la réception de vos éléments.
 
 ### Comment mesurer l'efficacité de ce type de page ?
 
-Suivez trois indicateurs : la lecture des informations produit, l'accès à la recherche de praticien et les actions réalisées sur cet outil. Ils distinguent l'intérêt pour le contenu du passage à l'étape suivante. Nos deux pages de réalisation Merz ne publient pas de résultats de trafic ou de conversion du laboratoire.
+Suivez trois indicateurs : la lecture des informations produit, l'accès à la recherche de praticien et les actions réalisées sur cet outil. Ils distinguent l'intérêt pour le contenu du passage à l'étape suivante.
 
 ### Un médecin esthétique peut-il reprendre la structure d'une page de laboratoire ?
 
@@ -133,7 +123,5 @@ Il peut reprendre la méthode : définir l'acte, citer les données avec leurs l
 
 ## Sources
 
-- [Merz Aesthetics : landing page RADIESSE®](https://msd-media.com/realisations/merz-radiesse/), MSD Media
-- [Merz Aesthetics : landing page Ultherapy® Prime](https://msd-media.com/realisations/merz-ultherapy-prime/), MSD Media
 - [Article R4127-19-1 du Code de la santé publique](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042750056), Légifrance
 - [Publicité en médecine et chirurgie esthétiques : quelles limites ?](https://www.macsf.fr/responsabilite-professionnelle/relation-au-patient-et-deontologie/publicite-en-medecine-et-chirurgie-esthetiques-pieges-a-eviter), MACSF

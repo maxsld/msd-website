@@ -11,6 +11,14 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-16 : source du badge « Top 7 des agences web en France, classement Sorank 2026 »
+- Changement : la source a été retrouvée et vérifiée. Classement Sorank « Les 10 meilleures agences de création de sites en France », publié le 25 août 2026, MSD Media 7e : https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france. Le badge y renvoyait déjà sur toutes les pages, mais dans le hero seul le mot « Sorank » était cliquable ; le lien couvre maintenant « Classement Sorank 2026 » (« Sorank 2026 ranking » en anglais), sur 31 pages FR et 3 EN. L'assistant du site datait le classement d'« octobre 2026 » : corrigé en août 2026, avec l'adresse. Classement ajouté à FAITS.md.
+- Avant : lien sur le seul mot « Sorank ».
+- Hypothèse : aucune variation de trafic attendue ; preuve plus facile à vérifier pour un visiteur ou une IA.
+- Requête visée : aucune.
+- Départ : relevé du 2026-11-15.
+- Type : `seo`
+
 Verdict (2026-11-16) : le site est plus vu et plus cliqué (6 341 impressions, +37 % ; 82 clics, +78 %, dont 26 sur l'article avis Google ; Search Console, 28 jours au 2026-11-12), mais rien ne se transforme : 1 clic vers la réservation pour 43 visites Google et 0 lead (GA4, même période). Le maillon le plus faible est visites → intentions ; la page qui concentre le trafic (avis Google médecin, 20 visites, 0 intention) est gelée jusqu'au 2026-11-22, son test de conversion est prêt pour le 2026-11-23.
 
 ### 2026-11-16 : /blog/articles/landing-page-dispositif-medical/

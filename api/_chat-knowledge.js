@@ -8,7 +8,7 @@ L'AGENCE
 - MSD Media, agence web fondée en juin 2025 à Annecy (6 Rue Paul Guiton, 74000 Annecy) par Maxens Soldan.
 - Maxens est l'interlocuteur unique du brief à la mise en ligne : pas de commercial, pas d'intermédiaire. Il est étudiant-entrepreneur à Polytech Annecy (Université Savoie Mont Blanc).
 - Clients partout en France, en Suisse et en Belgique, en visio. Plus de 30 clients accompagnés : startups, marques, indépendants, professions libérales, agences, associations.
-- Reconnaissance : 7e du classement Sorank des agences de création de sites en France (octobre 2026), article dans Le Dauphiné Libéré (juin 2026), membre de la French Tech Alpes, note « Excellent » sur Trustpilot, profil vérifié sur Sortlist.
+- Reconnaissance : 7e du classement Sorank des 10 meilleures agences de création de sites en France (publié le 25 août 2026 : https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france), article dans Le Dauphiné Libéré (juin 2026), membre de la French Tech Alpes, note « Excellent » sur Trustpilot, profil vérifié sur Sortlist.
 - Phrase de Maxens : « J'ai créé l'agence web dont j'aurais voulu être client : réactive, claire, obsédée par les résultats. »
 
 CE QU'ON FAIT

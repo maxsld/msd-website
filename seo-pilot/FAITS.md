@@ -60,3 +60,9 @@ Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à tranc
 ## Classements
 
 Aucun classement où MSD Media se place elle-même (les 4 articles de ce type ont été retirés le 2026-11-10 sur décision de Maxens). On n'en recrée pas.
+
+| Fait | Statut | Preuve |
+|---|---|---|
+| 7e du classement Sorank « Les 10 meilleures agences de création de sites en France », publié le 25 août 2026 (badge « Top 7 des agences web en France, classement Sorank 2026 ») | validé (page consultée le 2026-11-16 ; le titre affiche « 2027 », c'est l'année que Sorank met en avant, pas une nouvelle édition) | https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france |
+
+Chaque mention du classement renvoie à cette page. Si Sorank publie une nouvelle édition ou retire MSD Media, le badge se corrige partout le jour même.

@@ -9,7 +9,7 @@ Tous les agents les lisent et les appliquent. MSD Media est une agence web d'Ann
 - **Affirmer une règle de droit, un chiffre de marché ou une date réglementaire sans source.** Toute affirmation de ce type cite une source officielle ou reconnue (Légifrance, Ordre, ANSM, CNIL, Google…), avec un lien dans la section « Sources » de l'article. Dans le doute, on ne l'écrit pas.
 - Afficher un **prix MSD Media** ailleurs que sur `/tarifs/` et sa sous-page `/tarifs/msd-care/` (MSD Care, maintenance en trois niveaux). Les fourchettes de prix du marché restent permises dans les articles.
 - Modifier l'**accueil** (`index.html`, `en/index.html`) : Maxens le gère lui-même.
-- **Faire d'un client, et en particulier de Merz Aesthetics, le sujet d'un contenu** (article, section, FAQ) ou détailler ses projets hors de sa page de réalisation : produits (Radiesse, Ultherapy Prime), études citées, délais, choix techniques, charte. Décision de Maxens du 2026-11-16 : MSD Media n'a pas l'accord de Merz pour cela, et la communication d'un fabricant de dispositifs médicaux est encadrée. Merz reste cité seulement là où il l'est déjà (pages de réalisation, accueil, blocs de preuve existants des pages de service). Un article décrit notre méthode en termes généraux, sans nommer de client ni de produit ; au besoin il renvoie vers `/realisations/`. Aucun nouveau lien vers une page de réalisation Merz depuis le blog.
+- **Faire d'un client, et en particulier de Merz Aesthetics, le sujet principal d'un article** : jamais de Merz (ni Radiesse, ni Ultherapy Prime) dans le title, le H1, la description, le slug ou le sujet de l'article (décision de Maxens du 2026-11-16). Dans le corps d'un article, citer Merz comme référence est permis, avec les seuls faits de ses pages de réalisation et un lien vers elles, y compris la méthode appliquée pour ses pages ; l'article reste centré sur le besoin du lecteur.
 - Citer Belotero comme réalisation ou ajouter un lien vers `/realisations/merz-belotero/` : MSD Media n'a pas cette réalisation (page redirigée vers `/realisations/` le 2026-11-03).
 - Supprimer une page en dehors de la procédure « Retirer ou fusionner une page » de `seo-pilot/PROMPT.md` (fusion, redirection 301 ajoutée à la fin des `redirects` de `vercel.json`, liens internes mis à jour, `node scripts/check-retraits.mjs` au vert). Hors de cette procédure : ne pas toucher à `vercel.json`, aux workflows, aux scripts, au CSS, au JS, à `llms.txt`, au footer ou au header ; les sitemaps ne changent que pour retirer une page retirée.
 - Créer une page ailleurs que sur le blog (un article = un fichier dans `blog/sources/`).
@@ -22,7 +22,7 @@ Le design actuel du site ne change pas, et aucune autre référence de design ne
 
 ## Conversion
 
-Améliorer la conversion d'une page est permis et encouragé : réponse plus nette en tête, preuves déjà présentes sur le site (réalisations publiées, avis réels, presse ; Merz seulement là où il est déjà cité, jamais détaillé), appel à réserver un appel (lien `https://msd-media.com/reserver-un-appel/`) mieux placé. Toujours avec des blocs existants de la home, jamais de fausse urgence ni de promesse non tenue.
+Améliorer la conversion d'une page est permis et encouragé : réponse plus nette en tête, preuves déjà présentes sur le site (projets Merz Radiesse et Ultherapy Prime, avis réels, presse), appel à réserver un appel (lien `https://msd-media.com/reserver-un-appel/`) mieux placé. Toujours avec des blocs existants de la home, jamais de fausse urgence ni de promesse non tenue.
 
 ## Règles techniques
 

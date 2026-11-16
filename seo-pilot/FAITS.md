@@ -42,13 +42,13 @@ Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à tranc
 | Fait | Statut | Preuve |
 |---|---|---|
 | Réalisations publiées : Agence 3XL, Aristoi Academia, Carroz Sports, EM Motors, HairTattoo, Laurence Daien-Maestripieri, Marie Troccaz, Maxime Sciare, Merz Radiesse, Merz Ultherapy Prime, Nation Startup | validé | `/realisations/` |
-| Merz Aesthetics : projets Radiesse et Ultherapy Prime uniquement | validé, **citable seulement là où Merz l'est déjà** (pages de réalisation, accueil, preuves des pages de service) ; jamais sujet d'un article ni détaillé dans le blog (Maxens, 2026-11-16) | `/realisations/merz-*` |
+| Merz Aesthetics : projets Radiesse et Ultherapy Prime uniquement | validé ; citable dans le corps d'un article avec les faits de ses pages de réalisation, **jamais dans un title, un H1, une description ni comme sujet principal** (Maxens, 2026-11-16) | `/realisations/merz-*` |
 | Belotero | **interdit** : MSD Media n'a pas cette réalisation | redirection du 2026-11-03 |
 | Chiffres d'un projet (délai, PageSpeed, résultats) | validés seulement s'ils figurent sur la page de la réalisation | `/realisations/<projet>/` |
 | « PageSpeed systématiquement supérieur à 95/100 » | **à confirmer** : pas de mesure publiée pour tous les projets ; on cite le score d'un projet précis | pages de réalisation |
 | Maxime Sciare : PageSpeed 96/100 mobile, +40 points, livré en 21 jours ouvrés | validé | `/realisations/maxime-sciare/` ; `llms.txt` dit « livraison 14 jours » : à corriger |
 | Résultats de conversion publiés : Nation Startup « +350 bêta-testeurs inscrits en 1 semaine après la mise en ligne » ; Agence 3XL « 3 rendez-vous générés le jour du lancement » | validé (pages de réalisation) | `/realisations/nation-startup/`, `/realisations/agence-3xl/` |
-| Chiffre de conversion Merz (taux, leads) | **à obtenir**, et seulement pour la page de réalisation, avec l'accord de Merz | |
+| Chiffre de conversion Merz (taux, leads) | **à obtenir** : Maxens le fournira avec période et source | |
 
 ## Avis
 

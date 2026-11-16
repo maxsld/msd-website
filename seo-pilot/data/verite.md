@@ -54,19 +54,6 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 - `/blog/articles/10-erreurs-creation-site-web-annecy/` : « description":"Les dix erreurs qui reviennent systématiquement dans les projets de site web, ce qu'elles coûtent vraiment et comment les éviter dès le départ. »
 - … et 8 autre(s)
 
-### Client nommé dans le blog (Merz : jamais sujet ni détaillé, RULES.md) (11)
-- `/blog/articles/webdesigner-annecy-ou-agence/` : « Parmi nos réalisations, nous avons produit pour Merz Aesthetics les landing pages françaises d' Ultherapy Prime et de Radiesse , ainsi que la refonte du site de Carroz S… »
-- `/blog/articles/webdesigner-annecy-ou-agence/` : « Agence web à Annecy : adresse, rendez-vous de cadrage, délai de 21 jours, propriété du domaine et du site, devis Création de site web à Annecy : étapes, première version… »
-- `/blog/articles/publicite-chirurgie-esthetique-decret-2026/` : « Nous avons conçu pour Merz Aesthetics les landing pages françaises de Radiesse et d' Ultherapy Prime . »
-- `/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/` : « Nous avons produit pour Merz Aesthetics les landing pages françaises d' Ultherapy Prime et de Radiesse . »
-- `/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/` : « Votre site de médecine esthétique Découvrez notre approche pour les médecins esthétiques et les réalisations Merz Aesthetics : parcours, contenus et prise de rendez-vous. »
-- `/blog/articles/agence-landing-page-site-web-france-msd-media/` : « Agence 3XL — étude de cas complète EM Motors — étude de cas complète Merz Ultherapy Prime — étude de cas complète Nation Startup — étude de cas complète Hairtattoo — étu… »
-- `blog/sources/agence-landing-page-site-web-france-msd-media.md` : « - **Merz Ultherapy Prime** — [étude de cas complète](https://msd-media.com/realisations/merz-ultherapy-prime/) »
-- `blog/sources/publicite-chirurgie-esthetique-decret-2026.md` : « Nous avons conçu pour Merz Aesthetics les landing pages françaises de Radiesse et d'[Ultherapy Prime](https://msd-media.com/realisations/merz-ultherapy-prime/). »
-- `blog/sources/site-internet-medecine-esthetique-ce-qui-est-autorise.md` : « Nous avons produit pour Merz Aesthetics les landing pages françaises d'[Ultherapy Prime](https://msd-media.com/realisations/merz-ultherapy-prime/) et de [Radiesse](https… »
-- `blog/sources/webdesigner-annecy-ou-agence.md` : « Parmi nos réalisations, nous avons produit pour Merz Aesthetics les landing pages françaises d'[Ultherapy Prime](https://msd-media.com/realisations/merz-ultherapy-prime/… »
-- `blog/sources/webdesigner-annecy-ou-agence.md` : « - [Réalisations](https://msd-media.com/realisations/) : projets Merz Ultherapy Prime, Merz Radiesse et Carroz Sports »
-
 ### Note sur 5 attribuée à MSD Media (2)
 - `/blog/articles/agence-landing-page-site-web-france-msd-media/` : « Chaque avis Trustpilot est noté 5 / 5. »
 - `blog/sources/agence-landing-page-site-web-france-msd-media.md` : « **Chaque avis Trustpilot est noté 5 / 5.** [Voir les avis sur Trustpilot](https://www.trustpilot.com/review/msd-media.com) »

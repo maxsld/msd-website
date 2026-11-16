@@ -78,7 +78,7 @@ La charte de la marque s'applique aussi, typographie comprise. Et le calendrier 
 | Preuves | Études citées dans le texte, avec leurs limites | Données cliniques et indications, présentées sobrement |
 | Action finale | Localisateur de praticiens | Localisateur de praticiens |
 
-Pour un nouveau projet, notre délai est indicatif : une version finale en 21 jours à compter de la réception de vos éléments.
+C'est la méthode que nous avons appliquée aux landing pages françaises de [Radiesse](https://msd-media.com/realisations/merz-radiesse/) et d'[Ultherapy Prime](https://msd-media.com/realisations/merz-ultherapy-prime/) pour Merz Aesthetics : la première part de la catégorie, la seconde du bénéfice patient. Pour un nouveau projet, notre délai est indicatif : une version finale en 21 jours à compter de la réception de vos éléments.
 
 ## Qu'est-ce qu'un médecin esthétique peut en reprendre ?
 

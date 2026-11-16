@@ -18,7 +18,7 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 - Requête visée : landing page dispositif médical.
 - Départ : article publié le matin même, aucune donnée.
 - Type : `seo`
-- Reste à faire : 4 articles citent Merz en une ligne avec un lien vers la réalisation (webdesigner-annecy-ou-agence, publicite-chirurgie-esthetique-decret-2026, site-internet-medecine-esthetique-ce-qui-est-autorise, agence-landing-page-site-web-france-msd-media) : décision de Maxens attendue, ne pas y toucher d'ici là.
+- Précision de Maxens (même jour) : citer Merz dans le corps d'un article, y compris la méthode appliquée pour ses pages, est permis ; seuls le title, le H1, la description, le slug et le sujet principal lui sont interdits. Les 4 articles qui citent Merz en une ligne restent tels quels ; l'article réécrit garde une phrase de référence vers les deux réalisations. `check-verite.py` bloque désormais Merz, Radiesse ou Ultherapy dans le title, la description, le slug ou le H1 d'un article.
 
 ### 2026-11-16 : source du badge « Top 7 des agences web en France, classement Sorank 2026 »
 - Changement : la source a été retrouvée et vérifiée. Classement Sorank « Les 10 meilleures agences de création de sites en France », publié le 25 août 2026, MSD Media 7e : https://www.sorank.com/fr/blog-geo-seo/meilleures-agences-creation-de-sites-france. Le badge y renvoyait déjà sur toutes les pages, mais dans le hero seul le mot « Sorank » était cliquable ; le lien couvre maintenant « Classement Sorank 2026 » (« Sorank 2026 ranking » en anglais), sur 31 pages FR et 3 EN. L'assistant du site datait le classement d'« octobre 2026 » : corrigé en août 2026, avec l'adresse. Classement ajouté à FAITS.md.

@@ -49,7 +49,6 @@ WARNINGS = [
     ('Systématiquement', re.compile(r'syst[ée]matiquement', re.I)),
     ('Note sur 5 attribuée à MSD Media', re.compile(r'(MSD Media|Trustpilot|nos avis)[^.]{0,60}\d[,.]?\d? ?/ ?5', re.I)),
     ('Nombre de clients', re.compile(r'\d+ ?\+? clients (accompagnés|satisfaits)', re.I)),
-    ('Client nommé dans le blog (Merz : jamais sujet ni détaillé, RULES.md)', re.compile(r'Merz|Radiesse|Ultherapy', re.I)),
 ]
 EM_DASH = '—'
 
@@ -116,8 +115,6 @@ def main():
                         and not re.search(r"(n'est pas|non|not) contractu", s, re.I):
                     block[name].append((label, short(s)))
             for name, rx in WARNINGS:
-                if name.startswith('Client nommé') and not label.startswith(('/blog/', 'blog/')):
-                    continue
                 if rx.search(s):
                     warn[name].append((label, short(s)))
         if not label.startswith(('data/', 'llms')) and '/en/' not in label:
@@ -125,6 +122,17 @@ def main():
             if n:
                 dashes[label] = n
 
+    # Client en titre d'article (RULES.md, décision du 2026-11-16) : title, H1, description, slug du blog.
+    CLIENT = re.compile(r'Merz|Radiesse|Ultherapy', re.I)
+    for f in sorted((ROOT / 'blog/sources').glob('*.md')):
+        head = f.read_text(errors='ignore').split('\n---', 1)[0]
+        for k in ('title', 'seoTitle', 'description', 'slug', 'keyword'):
+            m = re.search(rf'^{k}:\s*"?(.*?)"?\s*$', head, re.M)
+            if m and CLIENT.search(m.group(1)):
+                block['Client dans le titre ou la description d\'un article'].append((f'blog/sources/{f.name}', f'{k} : {short(m.group(1))}'))
+        for line in f.read_text(errors='ignore').split('\n'):
+            if line.startswith('# ') and CLIENT.search(line):
+                block['Client dans le titre ou la description d\'un article'].append((f'blog/sources/{f.name}', short(line)))
     total_block = sum(len(v) for v in block.values())
     lines = ['# Vérité commerciale', '',
              f'Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-pilot/FAITS.md`. '

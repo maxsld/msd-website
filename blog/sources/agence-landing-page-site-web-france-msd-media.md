@@ -53,7 +53,7 @@ Retrouvez l'ensemble des projets sur la page [études de cas](https://msd-media.
 
 ---
 
-## Avis clients vérifiés (Trustpilot)
+## Avis clients (Trustpilot)
 
 ### Laurence D. — Créatrice & Dirigeante
 > "Tout ce qu'il fait est sur-mesure : design, structure, message, copywriting. Ce n'est pas un site, c'est un outil vivant. Je comprends aujourd'hui pourquoi ce n'est pas une dépense, mais un investissement. Maxens est un partenaire rare, patient et incroyablement précis."
@@ -70,7 +70,7 @@ Retrouvez l'ensemble des projets sur la page [études de cas](https://msd-media.
 ### Pierre Aliaga — Fondateur de startup
 > "Une landing page qui convertit dès le jour 1. Maxens a capté notre besoin immédiatement. Résultat : une page claire, alignée et performante."
 
-**Note moyenne des avis Trustpilot : 5 / 5** — [voir les avis complets](https://www.trustpilot.com/review/msd-media.com)
+[Voir les avis sur Trustpilot](https://www.trustpilot.com/review/msd-media.com)
 
 ---
 
@@ -92,7 +92,7 @@ Les projets sont livrés en **21 jours** et les prix de départ sont sur la [pag
 2. **Réalisation 100 % sur-mesure**, adaptée à votre secteur et à votre audience.
 3. **Résultats vérifiables** : études de cas nominatives, pas de moyennes invérifiables.
 4. **Accompagnement complet** : stratégie, design, intégration, SEO et suivi post-livraison.
-5. **Preuve sociale traçable** : avis Trustpilot certifiés, mention presse, portfolio public.
+5. **Preuve sociale traçable** : avis Trustpilot publics, mention presse, portfolio public.
 
 ---
 

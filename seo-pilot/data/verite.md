@@ -54,10 +54,6 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 - `/blog/articles/10-erreurs-creation-site-web-annecy/` : « description":"Les dix erreurs qui reviennent systématiquement dans les projets de site web, ce qu'elles coûtent vraiment et comment les éviter dès le départ. »
 - … et 8 autre(s)
 
-### Note sur 5 attribuée à MSD Media (2)
-- `/blog/articles/agence-landing-page-site-web-france-msd-media/` : « Note moyenne des avis Trustpilot : 5 / 5 — voir les avis complets »
-- `blog/sources/agence-landing-page-site-web-france-msd-media.md` : « **Note moyenne des avis Trustpilot : 5 / 5** — [voir les avis complets](https://www.trustpilot.com/review/msd-media.com) »
-
 ### Numéro 1 (16)
 - `/blog/articles/refonte-site-internet-guide-2026/` : « Règle simple : si votre site reçoit déjà du trafic organique significatif, la protection de ce trafic devient la priorité n°1 du projet — avant le design. »
 - `/blog/articles/wordpress-vs-site-sur-mesure-annecy-2026/` : « Sécurité : WordPress alimente plus de 40% des sites web dans le monde — et c'est exactement pour ça qu'il est la cible n°1 des attaques automatisées. »
@@ -75,7 +71,7 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 
 ## Tirets cadratins dans le texte visible
 
-946 tirets dans 106 fichiers. On les retire quand on retouche une page pour une autre raison (deux phrases, ou deux-points), jamais en passe globale. Les plus touchés :
+944 tirets dans 106 fichiers. On les retire quand on retouche une page pour une autre raison (deux phrases, ou deux-points), jamais en passe globale. Les plus touchés :
 
 - `/blog/articles/copywriting-web-2026-textes-qui-convertissent/` : 30
 - `blog/sources/copywriting-web-2026-textes-qui-convertissent.md` : 30
@@ -90,5 +86,5 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 - `blog/sources/maillage-interne-guide-seo.md` : 19
 - `/blog/articles/faut-il-creer-site-web-2026/` : 18
 - `blog/sources/faut-il-creer-site-web-2026.md` : 18
-- `/blog/articles/agence-landing-page-site-web-france-msd-media/` : 17
-- `blog/sources/agence-landing-page-site-web-france-msd-media.md` : 17
+- `/blog/articles/google-mise-a-jour-aout-2026/` : 16
+- `/blog/articles/agence-landing-page-site-web-france-msd-media/` : 16

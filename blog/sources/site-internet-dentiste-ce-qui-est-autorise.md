@@ -3,7 +3,8 @@ status: "published"
 title: "Site internet de dentiste : ce que l'Ordre autorise en 2026"
 seoTitle: "Site internet de dentiste : ce que l'Ordre autorise (2026)"
 date: "2026-10-18"
-description: "Tarifs obligatoires, avis patients, photos avant/après, Google Ads : ce que le site d'un chirurgien-dentiste peut afficher selon les recommandations de l'Ordre."
+updated: "2026-11-16"
+description: "Tarifs obligatoires, avis patients, Google Ads et référencement : ce que le site internet d'un chirurgien-dentiste peut afficher selon l'Ordre."
 image: "https://msd-media.com/assets/img/stock/photo-1629909613654-28e377c37b09.webp"
 tags: ["site internet dentiste", "communication chirurgien-dentiste", "déontologie dentaire", "Ordre des chirurgiens-dentistes", "site web santé", "MSD Media"]
 slug: "site-internet-dentiste-ce-qui-est-autorise"
@@ -12,7 +13,7 @@ category: "Santé"
 ---
 ## Réponse courte
 
-Un chirurgien-dentiste peut présenter sur son site ses compétences, ses actes, son parcours, son cabinet et son équipe, depuis le décret n° 2020-1658 du 22 décembre 2020. Il doit même y afficher ses honoraires et les modes de paiement acceptés : l'Ordre recommande les tarifs des 5 à 10 actes les plus pratiqués. En revanche, son site ne peut contenir ni témoignages, ni notes en étoiles, ni comparaison avec d'autres cabinets, ni promotion, et l'Ordre déconseille les photos avant/après. Acheter un référencement prioritaire sur Google, par exemple avec Google Ads, est interdit.
+Un chirurgien-dentiste peut présenter sur son site ses compétences, ses actes, son parcours, son cabinet et son équipe. Il doit même y afficher ses honoraires et les modes de paiement acceptés : l'Ordre recommande les tarifs des 5 à 10 actes les plus pratiqués. En revanche, son site ne peut contenir ni témoignages, ni notes en étoiles, ni comparaison, ni promotion, et l'Ordre déconseille les photos avant/après. Côté référencement, l'article R4127-217 interdit d'obtenir un référencement prioritaire, payant ou non : une campagne Google Ads est exclue, tandis qu'un site clair qui informe les patients relève, selon notre lecture, de l'information.
 
 *Cet article s'appuie sur les recommandations du Conseil national de l'Ordre des chirurgiens-dentistes dans leur version du 19 juin 2026. Il ne remplace ni l'avis de votre conseil départemental, ni celui d'un avocat.*
 
@@ -65,11 +66,18 @@ Le site peut décrire le cabinet, le plateau technique et les équipements, mais
 
 Les informations pratiques, elles, sont bienvenues et très consultées sur mobile : adresse et accès, horaires, prise de rendez-vous, accessibilité, équipe avec les fonctions de chacun, et conduite à tenir en cas d'urgence.
 
-## Google Ads et référencement : où est la limite ?
+## Un dentiste peut-il faire du référencement (SEO) et de la publicité Google ?
 
 L'article R4127-217 interdit au chirurgien-dentiste d'obtenir « contre paiement ou par tout autre moyen un référencement numérique faisant apparaître de manière prioritaire l'information le concernant ». Une campagne Google Ads qui fait apparaître le cabinet en tête des résultats est donc exclue, et l'Ordre précise que l'interdiction vise le référencement prioritaire « payant ou non ».
 
-Notre lecture : un site clair, rapide et bien structuré, qui répond aux questions que se posent les patients, relève de l'information et non d'un procédé pour apparaître en priorité. Acheter des liens, des avis ou des emplacements pour remonter artificiellement, en revanche, se heurte à cette règle. En cas de doute sur une action précise, votre conseil départemental reste l'interlocuteur à consulter.
+Pour le site d'un cabinet dentaire, notre lecture est la suivante : un site clair, rapide et bien structuré, qui répond aux questions que se posent les patients, relève de l'information et non d'un procédé pour apparaître en priorité. Acheter des liens, des avis ou des emplacements pour remonter artificiellement se heurte en revanche à cette règle. En cas de doute sur une action précise, votre conseil départemental reste l'interlocuteur à consulter.
+
+Ce qu'un cabinet peut déjà faire dans ce cadre, avec les éléments vus plus haut :
+
+- une page d'honoraires avec les actes les plus pratiqués, obligatoire selon l'article R4127-240-II ;
+- une page par traitement qui répond aux questions des patients : durée, séances, suites, prise en charge ;
+- les informations pratiques : adresse, accès, horaires, prise de rendez-vous, accessibilité, équipe ;
+- un nom de domaine à votre nom ou à celui du cabinet, suivi de la ville.
 
 ## Liens vers des marques et nom de domaine
 
@@ -114,6 +122,10 @@ Non. Selon les recommandations de l'Ordre, une communication loyale ne fait appe
 ### Les photos avant/après sont-elles interdites pour un dentiste ?
 
 L'Ordre les déconseille, car elles tendraient à suggérer un résultat positif certain et peuvent induire le public en erreur. Toute photo ou vidéo de patient doit en outre le rendre non identifiable, visage flouté, même avec son accord.
+
+### Un dentiste peut-il faire du référencement (SEO) pour son site ?
+
+L'article R4127-217 interdit au chirurgien-dentiste d'obtenir, contre paiement ou par tout autre moyen, un référencement numérique qui le fait apparaître de manière prioritaire, et l'Ordre précise que l'interdiction vise le référencement prioritaire « payant ou non ». Notre lecture : un site clair, rapide et bien structuré, qui répond aux questions des patients, relève de l'information, alors qu'acheter des liens, des avis ou des emplacements pour remonter artificiellement se heurte à cette règle. En cas de doute sur une action précise, votre conseil départemental reste l'interlocuteur à consulter.
 
 ### Un dentiste peut-il faire de la publicité sur Google Ads ?
 

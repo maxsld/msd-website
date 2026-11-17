@@ -50,6 +50,15 @@ jobs:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: node scripts/seo-pilot-data.mjs
 
+      # Les questions longues (8 mots ou plus) tapées sur Google, sur 3 mois : méthode de Maxens du 2026-11-17.
+      - name: Questions longues Search Console
+        continue-on-error: true
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: node scripts/seo-pilot-questions.mjs
+
       # Ce que font les visiteurs sur les pages. Clarity peut être indisponible, ce n'est pas bloquant.
       - name: Relevé Clarity
         continue-on-error: true

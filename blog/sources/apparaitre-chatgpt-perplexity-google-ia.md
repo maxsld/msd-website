@@ -7,7 +7,7 @@ image: "https://msd-media.com/assets/img/maxens-soldan-fondateur-ceo-msd-media-a
 tags: ["GEO", "ChatGPT", "Perplexity", "Google AI Overviews", "référencement IA", "MSD Media"]
 slug: "apparaitre-chatgpt-perplexity-google-ia"
 keyword: "comment apparaître dans chatgpt"
-updated: "2026-10-07"
+updated: "2026-11-17"
 ---
 ## Réponse courte
 
@@ -203,7 +203,11 @@ Posez vous-même aux deux outils les questions que vos clients poseraient, et re
 
 ### Pourquoi mon concurrent est recommandé par ChatGPT et pas moi ?
 
-Le plus souvent, parce qu'il est cité par davantage de sources tierces (presse, annuaires, comparatifs) et que son nom, son activité et sa ville sont décrits de la même façon partout. ChatGPT recommande l'entreprise dont il peut confirmer l'existence et la spécialité de plusieurs manières.
+Le plus souvent, parce qu'il est cité par davantage de sources tierces (presse, annuaires, comparatifs) et que son nom, son activité et sa ville sont décrits de la même façon partout. ChatGPT recommande l'entreprise dont il peut confirmer l'existence et la spécialité de plusieurs manières. Pour comprendre pourquoi dans votre cas, posez à ChatGPT la question exacte de vos clients, puis demandez-lui ses sources : vous voyez quelles pages il lit chez votre concurrent, et lesquelles lui manquent chez vous.
+
+### Comment référencer son site sur Google et ChatGPT en 2026 ?
+
+Avec les mêmes bases pour les deux : un site rapide, lisible sans JavaScript, qui répond directement aux questions de vos clients, avec des données structurées et un nom, une activité et une ville décrits de la même façon partout. Google classe des pages ; ChatGPT cite des sources qu'il juge fiables. Vérifiez enfin que les robots des IA ne sont pas bloqués : notre outil gratuit [ChatGPT peut-il lire mon site ?](https://msd-media.com/outils/chatgpt-peut-il-lire-mon-site/) le teste en quelques secondes.
 
 ### MSD Media peut-il aider à apparaître dans les IA ?
 

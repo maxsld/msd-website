@@ -15,7 +15,7 @@ Lis `seo-pilot/RULES.md`, `seo-pilot/ARTICLE-GUIDE.md`, `seo-pilot/EDITORIAL.md`
 1. Prends le premier sujet « À écrire » de `EDITORIAL.md`, en respectant l'équilibre du mois entre les groupes.
 2. Vérifie qu'aucune page du site ne vise déjà la requête (titres, `keyword:` des sources, pages de service). Si c'est le cas, adapte l'angle ou passe au sujet suivant, et note-le dans `EDITORIAL.md`.
 3. Recherche sur le web : ce qui se classe en tête, les questions réelles des internautes, et les sources officielles nécessaires.
-4. Rends au chef un brief : titre, requête, plan des sections `##`, questions de la FAQ, sources, liens internes prévus, image choisie. Ne rédige pas encore.
+4. Rends au chef un brief : titre, requête, plan des sections `##`, questions de la FAQ (en reprenant mot pour mot, en français correct, les questions de `seo-pilot/data/questions.md` qui touchent le sujet), sources, liens internes prévus, image choisie. Ne rédige pas encore.
 
 **Phase « rédaction »** (si le chef valide le brief) :
 1. Écris `blog/sources/<slug>.md` en suivant le guide à la lettre, avec `status: "published"` et la date du jour.

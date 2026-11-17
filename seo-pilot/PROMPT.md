@@ -39,8 +39,13 @@ Lance en parallèle tout ce qui est indépendant. Chaque agent reçoit un brief 
 7. `seo-pilot/data/prompts-ia.md` : la couverture des prompts IA.
 8. `seo-pilot/journal.md` : tout ce qui a été changé, les bilans, les refus et les retraits passés.
 9. `seo-pilot/FAITS.md` et `seo-pilot/data/verite.md` : ce que le site a le droit d'affirmer sur MSD Media, et les écarts relevés (prix hors `/tarifs/`, délai dit contractuel, preuves à confirmer). Un écart bloquant dans une page que l'agence peut modifier se corrige en priorité, avant toute optimisation (il compte dans les 3 pages du passage) ; un écart dans l'accueil, `llms.txt`, les CGV ou une page en test va dans « À toi ». Un client, Merz en premier, n'est jamais le titre ni le sujet principal d'un article ; il peut l'illustrer dans le corps, avec les faits de sa page de réalisation (décision de Maxens du 2026-11-16, voir RULES.md).
-10. `seo-pilot/OUTILS.md` : les skills Claude SEO de chaque agent, et OpenSEO, que toi seul appelles.
-11. Le dernier `seo-pilot/audit-mensuel.md` : ce que tu as conclu le mois dernier.
+10. `seo-pilot/data/questions.md` : les questions longues (8 mots ou plus) tapées sur Google ces 3 derniers mois, avec la page qui s'affiche et sa position. Ce sont des questions complètes, souvent formulées comme à ChatGPT ; c'est la façon dont la cible pose sa question. Classe chaque ligne « À classer » :
+    - **utile** : la personne cherche un site, une landing page, une refonte, du SEO ou de la visibilité dans les IA, dans une zone et pour une cible de `STRATEGY.md` ;
+    - **hors cible** : autre intention (vendre un appartement, trouver un vétérinaire), zone abandonnée (Lyon, Rennes, Paris), ou concurrent nommé ;
+    - **bruit** : déjà rangé en bas du fichier, ne rien en tirer.
+   Pour chaque question utile, trouve la page propriétaire (celle qui s'affiche ; si elle est redirigée, sa destination dans `vercel.json`). Si la page y répond déjà, rien à faire. Sinon, et si la page est libre (pas de changement depuis 21 jours), ajoute une question de FAQ qui reprend la formulation de la personne en français correct, avec une réponse directe dans la première phrase, ou rends la réponse explicite dans les 100 premiers mots ; au plus 2 questions par page et par lundi, dans la limite des 3 pages. Une question utile sans page qui y réponde va dans `EDITORIAL.md` comme sujet candidat dès qu'elle revient sur deux relevés. Le volume est faible (quelques impressions) : c'est un signal de formulation, jamais une raison de créer une page creuse.
+11. `seo-pilot/OUTILS.md` : les skills Claude SEO de chaque agent, et OpenSEO, que toi seul appelles.
+12. Le dernier `seo-pilot/audit-mensuel.md` : ce que tu as conclu le mois dernier.
 
 ## Déroulé de chaque lundi
 

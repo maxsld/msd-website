@@ -11,6 +11,8 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+Verdict (2026-11-17) : passage de rattrapage, un jour après celui du 2026-11-16, sur le même relevé du 2026-11-15 (82 clics, 4 hors marque, 43 visites Google et 0 lead ; Search Console et GA4, 28 jours au 2026-11-12) : le maillon le plus faible reste visites → intentions, et toutes les pages qui portent du trafic sont gelées jusqu'aux bilans du 20 au 26 novembre. Aucune page modifiée.
+
 ### 2026-11-17 : questions longues de Search Console (méthode de Maxens)
 - Changement : nouveau relevé `scripts/seo-pilot-questions.mjs` (dimanche, dans seo-pilot.yml) : requêtes de 8 mots ou plus sur 3 mois (filtre `^(?:\S+\s+){7,}\S+$`), écrites dans `seo-pilot/data/questions.md`, avec la page, la position, le bruit écarté (requêtes booléennes de veille, prompts collés) et les pages redirigées signalées. Mode d'emploi au point 10 de PROMPT.md ; ARTICLE-GUIDE, responsable-editorial et specialiste-ia reprennent ces formulations dans les FAQ. Premier relevé (2026-08-16 → 2026-11-14) : 29 requêtes, 95 impressions, 0 clic ; un tiers de bruit, et les plus gros volumes sont hors cible (vendeurs cherchant une agence immobilière à Annecy, 36 impressions ; clinique vétérinaire ; agence web Lyon). Appliqué tout de suite : /blog/articles/apparaitre-chatgpt-perplexity-google-ia/ (nouvelle question « Comment référencer son site sur Google et ChatGPT en 2026 ? », réponse « concurrent recommandé par ChatGPT » complétée par la façon de comprendre pourquoi ; `updated: 2026-11-17`) et /agence-web-geneve/ (question « À qui confier la refonte de son site web à Genève ? », dans data/services.json et la page).
 - Avant : FAQ sans ces deux questions.
@@ -193,6 +195,15 @@ Verdict (2026-11-16) : le site est plus vu et plus cliqué (6 341 impressions, +
 - Changement : Title et description réécrits (sans prix depuis le 2026-10-31).
 - Requête visée : maintenance site internet annecy
 - Départ : 67 impressions, 0 clics, position 8.1 (28 jours au 2026-10-28).
+
+## Notes du 2026-11-17
+
+- Relevé : toujours celui du 2026-11-15 (2 jours, non périmé), identique à celui du passage d'hier ; aucun nouveau chiffre, donc les analyses de l'analyste data et du spécialiste conversion du 2026-11-16 restent valables et ne sont pas refaites. Pas de ligne ajoutée au scorecard (une ligne par relevé ; celle du 2026-11-16 couvre ce relevé).
+- Décision : aucune modification de page. Bilans : aucun dû avant le 2026-11-20. Cannibalisation refonte / création : les deux pages gelées. Retraits : décision reportée au 2026-12-13 (relevés chevauchants). Passage à 2027 (STRATEGY.md, ajouté par Maxens ce jour) : briefs seulement les 23 et 30 novembre, exécution à partir du 30 novembre. Questions longues (PROMPT.md point 10) : les deux questions utiles traitables ont été appliquées par Maxens ce matin (/blog/articles/apparaitre-chatgpt-perplexity-google-ia/, /agence-web-geneve/) ; la troisième attend le 2026-11-20 (/blog/articles/combien-coute-landing-page-france-2026/). Les autres questions sont hors cible (immobilier, vétérinaire, Lyon, Rennes) ou sans page, à revoir si elles reviennent au relevé du 2026-11-22.
+- Pages libres examinées et écartées : /audit-seo-strasbourg/ (29 impressions, 0 clic, position 3,6 : page de service générée depuis data/services.json, dont le JSON n'est plus aligné sur les pages en ligne, voir la note du 2026-11-12 ; hors des groupes de la stratégie ; à reprendre quand le JSON aura été resynchronisé) ; /agence-web-chambery/ (88 impressions, position 26 ; même contrainte JSON, 15 impressions sur « agence web chambery ») ; /realisations/merz-ultherapy-prime/ (173 impressions, 0 clic, position 26,9 : requêtes de produit, patients, pas de cible). Sources : Search Console, 28 jours au 2026-11-12.
+- Vérité commerciale : 9 écarts bloquants, tous dans l'accueil, /reserver-un-appel/ et llms.txt (prix hors /tarifs/), inchangés depuis hier ; relèvent de Maxens. La note « translations.json contient encore “Note moyenne des avis Trustpilot : 5 / 5” » du 2026-11-16 est caduque : le fait est validé depuis le 2026-11-16 (FAITS.md).
+- OpenSEO : solde 37 crédits (réserve minimale 50) : aucune analyse à crédits, comme hier.
+- Prochain passage (2026-11-23) : plan du 2026-11-16 inchangé (bilans des 6 tests du 2026-10-30, test de conversion de l'article avis Google, FAQ de recommandation sur /creation-landing-page/, conflit refonte / création), plus les briefs 2027 du groupe A (STRATEGY.md).
 
 ## Notes du 2026-11-16
 

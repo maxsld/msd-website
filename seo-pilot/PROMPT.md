@@ -60,7 +60,8 @@ Lance en parallèle tout ce qui est indépendant. Chaque agent reçoit un brief 
    1. un bilan négatif : on annule ou on corrige ;
    2. un conflit de cannibalisation actif : on le règle, de préférence **par fusion** (voir plus bas) ;
    3. un retrait justifié (critères plus bas) : au plus 2 par passage ;
-   4. les priorités de `STRATEGY.md`, en mettant l'effort sur le maillon le plus faible.
+   4. jusqu'au 2026-12-31, le **passage à 2027** de `STRATEGY.md` (groupe A d'abord, dans l'ordre de la liste), décision de Maxens du 2026-11-17 ;
+   5. les priorités de `STRATEGY.md`, en mettant l'effort sur le maillon le plus faible.
 
    Au plus 3 pages modifiées par passage, fusions et retraits compris, plus l'article santé des 1er et 3e lundis. Une page touchée il y a moins de 21 jours ne se retouche pas, sauf pour annuler. Ne rien choisir est une bonne décision quand rien n'est pertinent.
 4. **Diagnostic**, en parallèle, pour chaque page modifiée : `analyste-concurrence` et `specialiste-ia`, avec l'analyse OpenSEO de la requête visée (2 pages au plus).

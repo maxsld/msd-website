@@ -40,6 +40,32 @@ Une seule modification par page à la fois. Pas de nouvelle modification sur une
 - à l'**autorité** : chaque 1er lundi du mois, le chef propose à Maxens dans « À toi » **une** opportunité de lien ou de mention précise et faisable (annuaire santé ou marketing reconnu, comparatif tiers où MSD Media manque, média qui accepte une tribune, client qui peut ajouter « site réalisé par MSD Media »), trouvée avec OpenSEO (backlinks des concurrents) ;
 - au **projet du trimestre** : l'étude originale « sites de médecine esthétique audités : combien respectent les règles de publicité » (protocole, grille, puis article de données), avec l'outil d'audit existant. C'est le contenu le plus citable par les IA et les médias.
 
+## Passage à 2027 (décision de Maxens du 2026-11-17, priorité jusqu'au 2026-12-31)
+
+But : que les pages datées affichent 2027 avant que Google et les IA ne cherchent des contenus de 2027, sans tomber dans la fausse fraîcheur. Constat de départ : 32 pages ont 2026 dans leur title ou leur H1 (27 dans leur URL), mais aucune des 4 008 impressions du relevé du 2026-11-15 ne vient d'une requête contenant une année. L'année n'attire donc pas les recherches ; elle joue sur le clic (un résultat « 2026 » paraît périmé en janvier) et sur le choix des IA, qui préfèrent un contenu récent et daté. D'où trois traitements, jamais une simple chasse aux « 2026 ».
+
+**Calendrier.** Les lundis 23 et 30 novembre : briefs seulement (pour chaque page du groupe A, la liste des chiffres, prix, règles et sources à revérifier). Du lundi 30 novembre au lundi 28 décembre : passage effectif, dans l'ordre ci-dessous, dans la limite habituelle des 3 pages par passage et du gel de 21 jours. Les pages non faites au 2026-12-31 suivent le même traitement en janvier.
+
+**A. Actualiser et passer à 2027** (contenu qui dépend vraiment de l'année : prix, règles, outils), du plus d'impressions au moins :
+1. `/blog/articles/combien-coute-landing-page-france-2026/` (341 impressions, libre après son bilan du 2026-11-20)
+2. `/blog/articles/site-internet-dentiste-ce-qui-est-autorise/` (186, libre le 2026-12-07)
+3. `/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/` (84)
+4. `/blog/articles/logiciels-seo-marque-blanche-agences-2026/` (32 ; prix des outils à revérifier un par un)
+5. `/blog/articles/meilleurs-logiciels-seo-2026/`, `/blog/articles/combien-coute-site-web-annecy-2026/` (libre le 2026-12-01), `/blog/articles/combien-coute-refonte-site-internet-2026/`, `/blog/articles/combien-coute-seo-annecy-2026/`, `/blog/articles/combien-coute-landing-page-annecy-2026/`
+
+**B. Rendre intemporel** (le contenu ne dépend pas de l'année) : retirer l'année du title, du H1 et de la description, sans autre changement de fond. `/blog/articles/referencement-naturel-annecy/` (50 impressions), `/blog/articles/structure-landing-page-saas/`, `/blog/articles/creer-landing-page-qui-convertit/`, `/blog/articles/core-web-vitals-guide-2026/`, `/blog/articles/creation-site-web-annecy-2026/`, `/blog/articles/faut-il-creer-site-web-2026/`, `/blog/articles/wordpress-vs-site-sur-mesure-annecy-2026/`, `/blog/articles/copywriting-web-2026-textes-qui-convertissent/`, `/blog/articles/agence-web-freelance-nocode-2026/`, `/blog/articles/refonte-site-internet-guide-2026/`, `/blog/articles/vitesse-performance-site-web-annecy-2026/`, `/blog/articles/google-business-profile-annecy-2026/`. Après le groupe A, et seulement pour les pages qui ont des impressions.
+
+**C. Garder l'année** (instantané daté : l'année est le sujet) : `/blog/articles/publicite-chirurgie-esthetique-decret-2026/`, `/blog/articles/google-mise-a-jour-aout-2026/`, `/blog/articles/accessibilite-web-obligatoire-entreprises-2026/`. Rien à faire, sauf si le texte de loi change.
+
+**D. Ne pas investir** : les pages de la pré-liste des retraits ou sans impression depuis trois relevés (`seo-local-ia-2026`, `aeo-seo-geo-guide-2026`, `google-business-profile-strasbourg-2026`, `seo-local-alsace-2026`, `pourquoi-site-web-ne-convertit-pas-2026`, `top-10-questions-landing-page-2026`, `avis-clients-autorite-geo-2026`, `google-ai-mode-zero-click-2026`) : elles attendent la décision de retrait du 2026-12-13.
+
+**Règles du passage (groupe A).**
+- Une vraie mise à jour d'abord : chaque prix, chiffre, règle et date est revérifié à sa source, et ce qui a changé est corrigé. Si une source ne peut pas être lue depuis la session, la page attend : on ne passe pas à 2027 un contenu non vérifié.
+- Ensuite seulement : « 2026 » devient « 2027 » dans le title, le H1, la description et ses copies `og:` et `twitter:`, et dans le texte là où l'année désigne le présent ; le champ `updated:` de la source prend la date du jour. Les années qui datent un fait (« décret du … 2026 », « mise à jour d'août 2026 ») restent.
+- Jamais de chiffre « 2027 » qui n'existe pas encore : un prix ou une règle se présente comme l'état vérifié à la date de mise à jour.
+- **Les URL ne changent pas** (pas de redirection pour une année) : le slug garde « 2026 », seul ce qui s'affiche change.
+- Chaque passage est une entrée du journal (type `seo`), avec son bilan à 21 jours comme les autres.
+
 ## Axe Munich (ajouté le 2026-11-03, décision de Maxens)
 
 Maxens est membre de la communauté French Tech Munich. Il vit et travaille à Munich (la carte « Munich » du footer est donc juste et voulue : ne pas la signaler), mais il ne parle pas allemand et n'a pas de bureau ni d'adresse où recevoir des clients à Munich : on ne vise donc **ni les recherches en allemand, ni la fiche Google Business Profile à Munich** (Google l'interdit sans adresse réelle où recevoir des clients). On vise trois cibles, en français et en anglais :

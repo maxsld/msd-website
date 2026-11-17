@@ -1,14 +1,15 @@
 /**
  * seo-pilot-questions.mjs
  *
- * Les questions longues tapées sur Google (2026-11-17, méthode de Maxens) : dans Search Console,
+ * Les questions longues tapées sur Google (2026-11-17, méthode « GEO hack » transmise par Maxens) : dans Search Console,
  * 3 derniers mois, filtre de requête par expression régulière ^(?:\S+\s+){7,}\S+$, soit 8 mots ou plus.
  * Ce sont des questions complètes, formulées comme on parle à ChatGPT ; une partie vient d'agents IA
  * et d'outils de veille qui interrogent Google à la place des gens.
  *
  * Écrit seo-pilot/data/questions.md : chaque requête avec sa page, ses impressions et sa position,
  * triée en « bruit » (requêtes booléennes de veille, textes de plus de 40 mots) ou « à classer »
- * par l'agence selon la stratégie (cible, zone, intention). Lancé le dimanche par seo-pilot.yml.
+ * par l'agence selon la stratégie (cible, zone, intention). Priorité : beaucoup d'impressions, peu de clics ;
+ * on ajoute une réponse directe sur la page qui se classe déjà. Lancé le dimanche par seo-pilot.yml.
  *
  * Variables : GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY, GSC_SITE_URL
  * (environnement, ou .env.analytics en local).

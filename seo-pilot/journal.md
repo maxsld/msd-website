@@ -11,6 +11,12 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-20 : nouvelle grille MSD Care (décision de Maxens)
+- Changement : /tarifs/msd-care/ et sa version anglaise passent à Essentiel 89 € (rapport mensuel automatique, 2 modifications par an incluses), Suivi 190 € recommandé (remplace Croissance 390 € : modifications incluses jusqu'à 1 h par mois, journal daté des interventions) et Marque sur devis (remplace « à partir de 590 € » : validation de chaque texte par le client, historique des versions). L'option SEO sort de la grille, sur devis. Clause de continuité ajoutée (CGV art. 5 bis FR et EN). FAQ refaite (9 questions, dont les objections « site neuf », « ce qui est fait », « et si MSD Media s'arrête ») ; carte MSD Care de /tarifs/, FAQ de l'accueil, llms.txt, chatbot, FAITS.md et OFFRES.md alignés.
+- Avant : Essentiel 89 €, Croissance 390 €, Marque dès 590 €.
+- Hypothèse : plus de souscriptions MSD Care à la livraison ; pas d'effet SEO attendu (mêmes URL, mêmes titres).
+- Type : `offre`
+
 Verdict (2026-11-17) : passage de rattrapage, un jour après celui du 2026-11-16, sur le même relevé du 2026-11-15 (82 clics, 4 hors marque, 43 visites Google et 0 lead ; Search Console et GA4, 28 jours au 2026-11-12) : le maillon le plus faible reste visites → intentions, et toutes les pages qui portent du trafic sont gelées jusqu'aux bilans du 20 au 26 novembre. Aucune page modifiée.
 
 ### 2026-11-17 : questions longues de Search Console (méthode de Maxens)

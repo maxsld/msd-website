@@ -17,20 +17,20 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 
 ## À relire (preuve à vérifier dans FAITS.md)
 
-### Garantie (47)
+### Garantie (49)
 - `/en/` : « No agency can guarantee a citation, but these foundations clearly improve your chances." »
 - `/en/` : « No agency can guarantee a citation, but these foundations clearly improve your chances. »
 - `/tarifs/` : « Une position garantie sur Google ou une citation par les IA : aucune agence ne peut la promettre »
+- `/tarifs/msd-care/` : « Aucune garantie de position : nous montrons les chiffres, mois après mois »
 - `/tarifs/msd-care/` : « Résultat garanti dès la première séance »
 - `/terms/cgv.html` : « Article 6 — Responsabilité et garantie »
 - `/site-web-dermatologue/` : « Une peau parfaite garantie »
 - `/outils/generateur-llms-txt/` : « Un plus, pas une garantie »
 - `/en/pricing/` : « A guaranteed Google ranking or AI citation: no agency can promise that »
+- `/en/pricing/msd-care/` : « No ranking guarantee: we show you the numbers, month after month »
 - `/en/pricing/msd-care/` : « Guaranteed results from the first session »
 - `/en/landing-page-design/` : « name": "Does SEO guarantee visitors or customers? »
-- `/en/landing-page-design/` : « Does SEO guarantee visitors or customers? »
-- `/en/legal/legal-notice.html` : « However, MSD Media does not guarantee that the information is complete, accurate or up to date and cannot under any circumstances be held liable for direct or indirect d… »
-- … et 35 autre(s)
+- … et 37 autre(s)
 
 ### Nombre de clients (5)
 - `/a-propos/` : « Son parcours a été relayé dans Le Dauphiné Libéré et par Polytech Annecy-Chambéry , après plus de 30 clients accompagnés. »

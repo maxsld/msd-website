@@ -96,6 +96,20 @@ Chaque phase prépare la suivante. L'agence travaille chaque lundi ; les actions
 | **Sept. 2027** | Accélération | Rentrée : 2 articles santé, mise à jour des contenus santé avec les textes de l'année | Relancer les demandes d'avis (objectif 20 fin octobre) ; un avis par client livré |
 | **Oct. 2027** | Bilan | **Bilan annuel** ; proposition du plan de l'année 2 (2e niche : dentaire ou coachs) | Décider de l'année 2 |
 
+## Plan commercial décembre 2026 → mai 2027 (décision de Maxens du 2026-11-20)
+
+Maxens a adopté un plan commercial « un produit, deux prix » : la **landing page** devient le produit principal (Landing Page en 21 jours, Landing Express en 7 jours avec une place par mois, ajustements illimités jusqu'à validation, premier mois de MSD Care Essentiel inclus). Site vitrine, sur mesure et refonte restent vendus, au second plan. L'acquisition principale du plan est LinkedIn, que le site doit compléter.
+
+**Ce qui ne change pas.** Maxens est content de la croissance actuelle : les priorités ci-dessus, les 2 articles santé par mois, le passage à 2027, la feuille de route et `KPIS.md` restent tels quels. Ce plan ne remplace rien ; il sert à trancher quand deux actions se valent.
+
+**Ce qui change pour l'agence :**
+1. **À priorité égale, le groupe landing page passe d'abord** : `/creation-landing-page/`, `/tarifs/` (dont le bloc `#landing-express`) et les articles du groupe landing page, avec un maillage qui mène vers eux. Les pages santé restent la meilleure preuve et gardent leur place.
+2. **La mesure qui compte est l'appel de découverte réservé** (Cal.com), puis le formulaire. Dans la priorité 0 (conversion), le chef regarde d'abord les pages qui mènent à `/tarifs/` et à la réservation.
+3. **Les mêmes messages partout** : le délai (21 jours, ou 7 en Express), les ajustements illimités jusqu'à validation, le premier mois de MSD Care inclus. Aucune promesse d'économie chiffrée. Les prix restent sur `/tarifs/` et `/tarifs/msd-care/` (l'accueil y a droit, mais Maxens ne veut pas toucher à l'accueil pour l'instant : ni H1 ni mise en page).
+4. **Preuves** : chaque projet livré doit pouvoir devenir une étude de cas chiffrée (avant/après, score de vitesse, demandes reçues). Dès que Maxens fournit les chiffres, l'étude de cas passe avant les autres tâches de contenu ; le but est 3 études de cas en ligne d'ici fin février. L'agence note chaque projet livré dans le journal, pour que l'équipe contenu en tire un post.
+5. **Rapport du premier lundi du mois** : une ligne « Plan commercial » avec les appels et les leads venus de Google ce mois-là, face à l'objectif d'appels de découverte du plan (toutes sources confondues) : décembre 3, janvier 5, février 6, mars 8, avril 8, mai 10. Si Google n'en apporte aucun deux mois de suite, le dire dans « À toi » avec la page qui bloque.
+6. **Mai 2027** : Maxens décide s'il reste large ou s'il affiche le secteur qui achète le plus. L'agence prépare ce choix : secteurs d'où viennent les leads Google et les impressions, de décembre à mai.
+
 ## Objectifs et indicateurs
 
 Les objectifs chiffrés (clients, leads, clics, par semaine, mois et trimestre) et la façon de les manager sont dans `seo-pilot/KPIS.md`. Ils priment sur toute autre estimation.

@@ -13,7 +13,7 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 - `/reserver-un-appel/` : « Les offres démarrent à 1 990 € et sont détaillées sur la page Tarifs . »
 - `/en/book-a-call/` : « Packages start at €1,990 and are detailed on the Pricing page." »
 - `/en/book-a-call/` : « Packages start at €1,990 and are detailed on the Pricing page. »
-- `llms.txt` : « - [Tarifs](https://msd-media.com/tarifs/) : Landing page à partir de 1 990 €, site vitrine à partir de 3 990 €, sur-mesure sur devis, maintenance MSD Care en trois nivea… »
+- `llms.txt` : « - [Tarifs](https://msd-media.com/tarifs/) : Landing page à partir de 1 990 € (21 jours), Landing Express 2 990 € (7 jours, une place par mois), 1er mois de MSD Care Esse… »
 
 ## À relire (preuve à vérifier dans FAITS.md)
 

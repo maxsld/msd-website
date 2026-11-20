@@ -231,10 +231,18 @@ function _msdConsentSignal(state){
           {
             "@type": "Offer",
             "name": "Landing Page",
-            "description": "Une page unique, pensée pour convertir vos visiteurs en clients. Livraison en 21 jours.",
+            "description": "Une page unique, pensée pour convertir vos visiteurs en clients. Livraison en 21 jours, ajustements illimités jusqu'à validation, premier mois de MSD Care Essentiel inclus.",
             "price": "1990",
             "priceCurrency": "EUR",
             "url": "https://msd-media.com/tarifs/"
+          },
+          {
+            "@type": "Offer",
+            "name": "Landing Express",
+            "description": "La même landing page, en ligne en 7 jours à compter de la réception des éléments, en priorité. Une seule place par mois. Ajustements illimités jusqu'à validation, premier mois de MSD Care Essentiel inclus.",
+            "price": "2990",
+            "priceCurrency": "EUR",
+            "url": "https://msd-media.com/tarifs/#landing-express"
           },
           {
             "@type": "Offer",
@@ -446,7 +454,10 @@ function _msdConsentSignal(state){
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f4">Optimisation mobile &amp; vitesse</span></li>
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f5">SEO technique et lisibilité par les IA</span></li>
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f6">Tracking &amp; analytics installés</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Ajustements illimités jusqu’à validation</span></li>
+              <li><i class="fa-solid fa-check"></i><span>1er mois de MSD Care Essentiel inclus</span></li>
             </ul>
+            <a class="pricing-card__express" href="#landing-express" style="display:block;margin:0 0 14px;font-size:.85rem;color:var(--accent,#2f6bff);text-decoration:underline;text-underline-offset:3px">Besoin d’aller plus vite ? Landing Express, 2 990 € en 7 jours</a>
             <a class="pricing-card__cta" href="https://msd-media.com/reserver-un-appel/" data-i18n="tarifs_cta_call">Réserver un appel</a>
           </div>
 
@@ -489,6 +500,26 @@ function _msdConsentSignal(state){
           </div>
         </div>
 
+        <div class="pricing-card pricing-card--care" id="landing-express">
+          <div class="pricing-care__head">
+            <span class="pricing-card__badge">Une seule place par mois</span>
+            <h3 class="pricing-card__title">Landing Express</h3>
+            <p class="pricing-card__desc">La même landing page, en ligne en 7 jours : votre projet passe avant les autres.</p>
+            <div class="pricing-card__price-row">
+              <span class="pricing-card__price" data-eur="2 990 €" data-usd="$3 300">2 990 €</span>
+            </div>
+            <span class="pricing-card__delay"><i class="fa-regular fa-clock"></i>En ligne en 7 jours</span>
+            <a class="pricing-card__cta" href="https://msd-media.com/reserver-un-appel/">Réserver la place du mois</a>
+          </div>
+          <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i><span>Tout ce qui est inclus dans Landing Page</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Votre projet en priorité, du brief à la mise en ligne</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Ajustements illimités jusqu’à votre validation</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Premier mois de MSD Care Essentiel inclus</span></li>
+              <li><i class="fa-solid fa-check"></i><span>7 jours à compter de la réception de vos éléments (textes, photos, accès)</span></li>
+          </ul>
+        </div>
+
         <div class="pricing-card pricing-card--care" id="non-inclus">
           <div class="pricing-care__head">
             <span class="pricing-card__badge">À savoir avant l’appel</span>
@@ -501,7 +532,7 @@ function _msdConsentSignal(state){
             <li><i class="fa-solid fa-xmark"></i><span>La publicité et l’achat de trafic</span></li>
             <li><i class="fa-solid fa-xmark"></i><span>Les shootings photo et vidéo</span></li>
             <li><i class="fa-solid fa-xmark"></i><span>Les pages et fonctionnalités non prévues au devis : elles font l’objet d’un devis complémentaire</span></li>
-            <li><i class="fa-solid fa-xmark"></i><span>La maintenance après la mise en ligne : elle passe par MSD Care</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>La maintenance après la mise en ligne : elle passe par MSD Care, dont le premier mois est inclus avec une landing page</span></li>
           </ul>
         </div>
 

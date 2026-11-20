@@ -230,10 +230,18 @@ function _msdConsentSignal(state){
           {
             "@type": "Offer",
             "name": "Landing Page",
-            "description": "A single page designed to turn your visitors into customers. Delivered in 21 days.",
+            "description": "A single page, designed to turn your visitors into clients. Delivered in 21 days, unlimited revisions until approval, first month of MSD Care Essential included.",
             "price": "1990",
             "priceCurrency": "EUR",
             "url": "https://msd-media.com/en/pricing/"
+          },
+          {
+            "@type": "Offer",
+            "name": "Landing Express",
+            "description": "The same landing page, live in 7 days from receipt of the materials, as a priority. One slot per month. Unlimited revisions until approval, first month of MSD Care Essential included.",
+            "price": "2990",
+            "priceCurrency": "EUR",
+            "url": "https://msd-media.com/en/pricing/#landing-express"
           },
           {
             "@type": "Offer",
@@ -449,7 +457,10 @@ function _msdConsentSignal(state){
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f4">Mobile &amp; speed optimisation</span></li>
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f5">Technical SEO and AI readability</span></li>
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f6">Tracking &amp; analytics set up</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Unlimited revisions until approval</span></li>
+              <li><i class="fa-solid fa-check"></i><span>First month of MSD Care Essential included</span></li>
             </ul>
+            <a class="pricing-card__express" href="#landing-express" style="display:block;margin:0 0 14px;font-size:.85rem;color:var(--accent,#2f6bff);text-decoration:underline;text-underline-offset:3px">Need it faster? Landing Express, €2,990 in 7 days</a>
             <a class="pricing-card__cta" href="https://msd-media.com/en/book-a-call/" data-i18n="tarifs_cta_call">Book a call</a>
           </div>
 
@@ -492,6 +503,26 @@ function _msdConsentSignal(state){
           </div>
         </div>
 
+        <div class="pricing-card pricing-card--care" id="landing-express">
+          <div class="pricing-care__head">
+            <span class="pricing-card__badge">One slot per month</span>
+            <h3 class="pricing-card__title">Landing Express</h3>
+            <p class="pricing-card__desc">The same landing page, live in 7 days: your project goes first.</p>
+            <div class="pricing-card__price-row">
+              <span class="pricing-card__price" data-eur="2 990 €" data-usd="$3 300">2 990 €</span>
+            </div>
+            <span class="pricing-card__delay"><i class="fa-regular fa-clock"></i>Live in 7 days</span>
+            <a class="pricing-card__cta" href="https://msd-media.com/en/book-a-call/">Book this month's slot</a>
+          </div>
+          <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i><span>Everything in Landing Page</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Your project first, from brief to launch</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Unlimited revisions until you approve</span></li>
+              <li><i class="fa-solid fa-check"></i><span>First month of MSD Care Essential included</span></li>
+              <li><i class="fa-solid fa-check"></i><span>7 days from receipt of your materials (copy, photos, access)</span></li>
+          </ul>
+        </div>
+
         <div class="pricing-card pricing-card--care" id="non-inclus">
           <div class="pricing-care__head">
             <span class="pricing-card__badge">Good to know before the call</span>
@@ -504,7 +535,7 @@ function _msdConsentSignal(state){
             <li><i class="fa-solid fa-xmark"></i><span>Advertising and paid traffic</span></li>
             <li><i class="fa-solid fa-xmark"></i><span>Photo and video shoots</span></li>
             <li><i class="fa-solid fa-xmark"></i><span>Pages and features not in the quote: they get an additional quote</span></li>
-            <li><i class="fa-solid fa-xmark"></i><span>Maintenance after launch: that is what MSD Care is for</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>Maintenance after launch: that is what MSD Care is for, and its first month is included with a landing page</span></li>
           </ul>
         </div>
 

@@ -11,6 +11,12 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-20 : Landing Express et premier mois de MSD Care inclus (décision de Maxens, plan 1600)
+- Changement : /tarifs/ (FR et EN) ajoute Landing Express, 2 990 € en 7 jours, une place par mois (bloc `#landing-express` et offre dans les données structurées). La carte Landing Page affiche « Ajustements illimités jusqu'à validation » et « 1er mois de MSD Care Essentiel inclus ». Le mois inclus est sans engagement, avec un préavis de 7 jours avant sa fin, puis 89 € par mois résiliables avec un mois de préavis : il figure sur /tarifs/msd-care/, dans les CGV (articles 5 et 5 bis, FR et EN), dans FAITS.md, OFFRES.md, le chatbot et llms.txt. RULES.md autorise désormais les prix sur l'accueil (non utilisé pour l'instant : accueil inchangé).
+- Avant : un seul délai, 21 jours ; MSD Care jamais inclus.
+- Hypothèse : plus de demandes depuis /tarifs/ et plus d'abonnés MSD Care après livraison ; pas d'effet SEO attendu.
+- Type : `offre`
+
 ### 2026-11-20 : nouvelle grille MSD Care (décision de Maxens)
 - Changement : /tarifs/msd-care/ et sa version anglaise passent à Essentiel 89 € (rapport mensuel automatique, 2 modifications par an incluses), Suivi 190 € recommandé (remplace Croissance 390 € : modifications incluses jusqu'à 1 h par mois, journal daté des interventions) et Marque sur devis (remplace « à partir de 590 € » : validation de chaque texte par le client, historique des versions). L'option SEO sort de la grille, sur devis. Clause de continuité ajoutée (CGV art. 5 bis FR et EN). FAQ refaite (9 questions, dont les objections « site neuf », « ce qui est fait », « et si MSD Media s'arrête ») ; carte MSD Care de /tarifs/, FAQ de l'accueil, llms.txt, chatbot, FAITS.md et OFFRES.md alignés.
 - Avant : Essentiel 89 €, Croissance 390 €, Marque dès 590 €.

@@ -22,6 +22,16 @@ Constat de Maxens et de l'audit (Search Console, semaines du 3, du 10 et du 17 n
 | 5 | `/realisations/nation-startup/` | « MSD Media a conçu la landing page de pré-lancement beta de Nation… » | landing page de pré-lancement |
 | 6 | `/blog/articles/agence-web-freelance-nocode-2026/` | « Micro-agence spécialisée landing pages et sites sur mesure. » | agence spécialisée landing pages |
 
+## Failles de mots-clés du 2026-11-22 (demande de Maxens, juste après le groupe landing page)
+
+Recherche du 2026-11-22 : Ahrefs (générateur gratuit, France), Semrush (Keyword Overview, France), vraie première page Google et Search Console du 2026-08-24 au 2026-11-21. Critère : difficulté faible et première page tenue par des forums ou des petits sites. À traiter dans les places restantes du passage du 2026-11-23, sinon au passage suivant, en respectant les gels et la règle d'une modification par page.
+
+1. **« supprimer avis google médecin »** : 70 recherches par mois, difficulté 8 %. En première page : deux fils du forum d'aide Google et des agences e-réputation. L'article `/blog/articles/avis-google-medecin-que-repondre/` est 20e sur cette requête (138 impressions en 3 mois, 0 clic) et 14e sur « avis google médecin ». La section H2 « Comment supprimer un avis Google quand on est médecin ? » existe déjà : passer la requête à l'analyste-concurrence pour voir ce que les résultats de tête donnent de plus (étapes concrètes, motifs de suppression acceptés par Google, délais, recours) et compléter cette section. Attention : un test de conversion est déjà prévu le 2026-11-23 sur cet article ; une seule modification par page, au chef de choisir l'ordre.
+2. **« création site internet dentiste »** : 110 recherches par mois, difficulté 26 %, intention commerciale. En première page : uniquement de petits sites spécialisés (denti.site, simplebo, land-dentiste, webdentiste…). `/site-web-dentiste/` n'apparaît pas sur cette requête dans Search Console ; son title (« Site Web pour Dentiste : Implantologie et Esthétique ») ne contient pas « création site internet ». Faire entrer « création de site internet pour dentiste » dans le title et la réponse directe, sans changer le design. La page vient de `data/sectors.json` : ne jamais lancer `scripts/build-sector-pages.py`.
+3. **« landing page exemple »** (720 recherches par mois, difficulté 15 %) : demande une nouvelle page d'exemples tirée des vraies réalisations. **À Maxens, ne pas créer.**
+
+Écartés : « site kiné », « site ostéopathe », « site psychologue » (moins de 100 recherches par variante, mot principal noté difficile), « landing page c'est quoi » (HubSpot, Adobe, Bpifrance en tête), « création site internet annecy » (difficile).
+
 ## Vérité : à corriger en priorité dès que la page est libre (compte dans les 3 pages)
 
 - **Belotero** : `data/sectors.json` ligne 1634 (rendu sur `/site-web-medecine-esthetique/`) écrit « trois landing pages pour Merz […] RADIESSE, Ultherapy Prime et BELOTERO ». Écrire « deux landing pages […] Radiesse et Ultherapy Prime ». Le logo Belotero de la bande « clients » (34 pages, modèle : l'accueil) est à Maxens. `check-verite.py` ne cherche que `merz-belotero` : signalé à Maxens.

@@ -3,6 +3,7 @@
 Une ligne par post préparé, la plus récente en tête : `date · type · sujet · impressions attendues`. Jamais le texte d'un brouillon (dépôt public). Bilan mensuel le 1er lundi du mois.
 
 ## Posts
+2026-11-23 · T1-A · une seule offre mise en avant : la landing en deux délais (21 j / 7 j Express), ce qui m'a fait hésiter · ~12370 · bilan du précédent : stats non synchronisées depuis le 01/11 (1195 / non prédit), pas de leçon fiable ; posts du 9 au 20/11 absents du dashboard
 2026-11-20 · T1-C · le trafic Google comme mauvais indicateur (clics en hausse, 0 lead) · ~2150 · bilan du précédent : stats non synchronisées depuis le 01/11 (1195 / non prédit), pas de leçon fiable
 2026-11-18 · T1-B · classement Sorank (7e sur 10), badge affiché 2 mois et demi après · ~19500 (confiance basse, stats figées) · bilan du précédent : stats non synchronisées depuis le 01/11 (1195 / non prédit), pas de leçon fiable
 2026-11-16 · T2-C · creux en temps réel : ChatGPT me recommandait grâce à sa mémoire, 0/18 sans · ~7650 · bilan du précédent : stats non synchronisées depuis le 30/10 (1195 impressions, âge 330 h), pas de leçon fiable

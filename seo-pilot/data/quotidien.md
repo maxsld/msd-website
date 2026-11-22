@@ -1,6 +1,6 @@
 # Veille quotidienne Search Console
 
-Mise à jour le 2026-11-21 (workflow seo-quotidien.yml, chaque matin). Jours complets jusqu'au 2026-11-18 ; les jours suivants sont provisoires (Search Console les complète en 2 à 3 jours) et ne déclenchent pas d'alerte.
+Mise à jour le 2026-11-22 (workflow seo-quotidien.yml, chaque matin). Jours complets jusqu'au 2026-11-19 ; les jours suivants sont provisoires (Search Console les complète en 2 à 3 jours) et ne déclenchent pas d'alerte.
 
 Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affilée sous 75 % de la médiane des 14 jours précédents, hors bruit) justifie une action le lundi. Une alerte « bruit » ou « à suivre » se mentionne au plus en une ligne dans le compte rendu, jamais comme une chute.
 
@@ -31,8 +31,9 @@ Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affil
 
 | Jour | Impressions | Clics | Position | Ordinateur | Mobile | Au-delà de la pos. 30 |
 |---|---|---|---|---|---|---|
-| 2026-11-20 (provisoire) | 235 | 2 | 29.9 | 174 | 59 | 118 |
-| 2026-11-19 (provisoire) | 285 | 0 | 28.2 | 220 | 64 | 135 |
+| 2026-11-21 (provisoire) | 172 | 1 | 33.9 | 135 | 36 | 109 |
+| 2026-11-20 (provisoire) | 240 | 2 | 29.6 | 176 | 62 | 121 |
+| 2026-11-19 | 285 | 0 | 28.2 | 220 | 64 | 135 |
 | 2026-11-18 | 416 | 1 | 30.6 | 341 | 71 | 310 |
 | 2026-11-17 | 354 | 3 | 30.8 | 276 | 76 | 233 |
 | 2026-11-16 | 294 | 7 | 35.6 | 233 | 58 | 180 |
@@ -58,4 +59,3 @@ Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affil
 | 2026-10-27 | 194 | 2 | 19.5 | 150 | 42 | 54 |
 | 2026-10-26 | 212 | 6 | 19.4 | 163 | 49 | 55 |
 | 2026-10-25 | 176 | 3 | 15.5 | 122 | 53 | 23 |
-| 2026-10-24 | 159 | 1 | 15.6 | 117 | 42 | 24 |

@@ -38,7 +38,7 @@ Réservation : [msd-media.com/reserver-un-appel](https://msd-media.com/reserver-
 ## Secteurs
 
 - [Médecins et santé](https://msd-media.com/site-web-medecin/) — sites conformes au Code de déontologie médicale (article R4127-19-1)
-- [Médecine esthétique](https://msd-media.com/site-web-medecine-esthetique/), [chirurgie esthétique](https://msd-media.com/site-web-chirurgie-esthetique/), [dermatologues](https://msd-media.com/site-web-dermatologue/), [dentistes](https://msd-media.com/site-web-dentiste/), [centres laser](https://msd-media.com/site-web-centre-laser/)
+- [Médecine esthétique](https://msd-media.com/site-web-medecine-esthetique/), [chirurgie esthétique](https://msd-media.com/site-web-chirurgie-esthetique/), [dermatologues](https://msd-media.com/site-web-dermatologue/), [dentistes](https://msd-media.com/site-web-dentiste/), [psychologues](https://msd-media.com/site-web-psychologue/), [centres laser](https://msd-media.com/site-web-centre-laser/)
 - [Avocats](https://msd-media.com/site-web-avocat/), [immobilier](https://msd-media.com/site-web-immobilier/), [restaurants](https://msd-media.com/site-web-restaurant/), [artisans](https://msd-media.com/site-web-artisan/), [architectes](https://msd-media.com/site-web-architecte/)
 
 ## Zone géographique

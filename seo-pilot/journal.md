@@ -42,6 +42,13 @@ Verdict (2026-11-23) : relevé frais du 2026-11-22 (28 jours au 2026-11-19). Le 
 - Type : `seo`
 - Relecture : validé. En plus : « RADIESSE » → « Radiesse », tiret cadratin → deux-points, lien ajouté sur « Ultherapy Prime » vers sa réalisation.
 
+### 2026-11-22 : nouvelle page /site-web-psychologue/ (demande de Maxens)
+- Changement : création de la page secteur « Création de site internet pour psychologue » (title), sur la structure exacte de /site-web-dentiste/ ; contenu ajouté dans `data/sectors.json` (clé `site-web-psychologue`). HTML construit à partir de la page dentiste sans lancer `scripts/build-sector-pages.py`. Ajoutée au sitemap et à llms.txt. Cadre cité : titre protégé (art. 44, loi n° 85-772 du 25 juillet 1985), titre de psychothérapeute (art. 52, loi du 9 août 2004), code de déontologie des psychologues révisé en 2021, Mon soutien psy, 3114. Aucun client psychologue cité.
+- Avant : aucune page du site sur cette requête ; 0 impression Search Console.
+- Hypothèse : première page sur « création site internet psychologue » et ses variantes (Semrush France, 2026-11-22 : 59 variantes, 400 recherches par mois ; « création de sites internet pour psychologue » 70, difficulté 4 % ; première page Google tenue par de petits sites spécialisés). Bilan à 21 jours, le 2026-12-13.
+- Liens entrants : aucun lien contextuel pour l'instant (plan du site, sitemap, llms.txt). L'article psychologue du 2026-12-07 doit pointer vers cette page.
+- Type : `nouvelle page`
+
 ### 2026-11-22 : date de la vidéo Maxime Sciare (alerte Search Console)
 - Changement : `uploadDate` du VideoObject passé de « 2026-09-10 » à « 2026-09-10T12:00:00+02:00 » sur /realisations/maxime-sciare/ et /en/work/maxime-sciare/, après l'e-mail Search Console « Données structurées Vidéos » (fuseau horaire manquant, valeur de date et heure incorrecte). Ce sont les 2 seules pages du site avec une vidéo balisée.
 - Avant : 2 problèmes non critiques signalés par la Search Console.

@@ -1831,6 +1831,212 @@
       "conformes et livrés en 21 jours."
     ]
   },
+  "site-web-psychologue": {
+    "h1": "On fait des sites web pour les psychologues.",
+    "subtitle": "Psychologues en libéral, en cabinet ou en visio : des sites qui expliquent votre approche, rassurent avant la première séance et simplifient la prise de rendez-vous, dans le respect du secret professionnel. <strong>Première version en 7 jours.</strong>",
+    "story": [
+      {
+        "title": "On ne choisit pas un psy comme on choisit un créneau",
+        "paragraphs": [
+          "Avant un premier rendez-vous, la personne veut savoir à qui elle va parler : votre formation, votre approche, les publics que vous recevez, la durée et le tarif d'une séance. Elle a souvent hésité longtemps avant de chercher. Un site clair lève les dernières hésitations.",
+          "Nous construisons une page par motif de consultation et par public, qui explique comment se passent les séances, puis mène à la prise de rendez-vous, en cabinet ou en visio. Le formulaire ne demande jamais de raconter son histoire : ce qui relève de la séance reste en séance, pas sur le site."
+        ],
+        "img": "https://msd-media.com/assets/img/stock/photo-1731514693674-a32211b63996.webp",
+        "alt": "Deux fauteuils face à face dans un cabinet calme",
+        "width": "1400",
+        "height": "875"
+      }
+    ],
+    "cards": [
+      {
+        "id": "cadre",
+        "title": "Ce que votre site doit respecter",
+        "intro": [
+          "Les psychologues n'ont pas d'Ordre : le cadre vient de la loi sur le titre et du code de déontologie de la profession."
+        ],
+        "cards": [
+          {
+            "href": null,
+            "num": "01",
+            "title": "Le titre est protégé",
+            "text": "L'usage du titre de psychologue est réservé par l'article 44 de la loi n° 85-772 du 25 juillet 1985 aux titulaires des diplômes requis. Le site l'affiche avec votre numéro ADELI.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": "02",
+            "title": "Psychologue, psychothérapeute, psychanalyste",
+            "text": "Le titre de psychothérapeute est lui aussi réglementé, par l'article 52 de la loi du 9 août 2004. Le site n'emploie que les titres que vous détenez, sans entretenir de confusion.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": "03",
+            "title": "Le code de déontologie comme référence",
+            "text": "Révisé en 2021 par les organisations de la profession, il place au premier plan le respect de la personne et le secret professionnel. Nous rédigeons les textes avec ces principes : pas de promesse de guérison, pas de témoignage.",
+            "link": null,
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "pages",
+        "title": "Les pages que nous construisons pour vous",
+        "intro": [],
+        "cards": [
+          {
+            "href": null,
+            "num": null,
+            "title": "Votre approche expliquée",
+            "text": "Votre orientation, votre formation et ce qu'elles changent concrètement en séance, en mots simples.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "Une page par motif et par public",
+            "text": "Anxiété, épuisement professionnel, deuil, couple, enfants et adolescents : chaque recherche a sa page.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "Séances, tarifs et remboursement",
+            "text": "Durée et tarif d'une séance, en cabinet ou en visio, et le dispositif Mon soutien psy si vous y participez.",
+            "link": null,
+            "external": false
+          },
+          {
+            "href": null,
+            "num": null,
+            "title": "Le premier rendez-vous",
+            "text": "Comment réserver, comment se passe la première séance, et qui appeler en cas d'urgence.",
+            "link": null,
+            "external": false
+          }
+        ],
+        "outro": []
+      },
+      {
+        "id": "specialites",
+        "title": "Les autres pages santé",
+        "intro": [],
+        "cards": [
+          {
+            "href": "https://msd-media.com/site-web-medecin/",
+            "num": null,
+            "title": "Médecins",
+            "text": "Rassurer avant la consultation et simplifier la prise de rendez-vous.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-dentiste/",
+            "num": null,
+            "title": "Dentistes",
+            "text": "Implantologie et esthétique du sourire, selon le code de déontologie dentaire.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-medecine-esthetique/",
+            "num": null,
+            "title": "Médecine esthétique",
+            "text": "Injections et soins esthétiques : informer sans promettre de résultat.",
+            "link": "Voir la page",
+            "external": false
+          },
+          {
+            "href": "https://msd-media.com/site-web-coach/",
+            "num": null,
+            "title": "Coachs",
+            "text": "Présenter une méthode et transformer les visites en premières séances.",
+            "link": "Voir la page",
+            "external": false
+          }
+        ],
+        "outro": [
+          "À lire aussi : <a href=\"https://msd-media.com/blog/articles/avis-google-medecin-que-repondre/\">ce qu'un soignant peut répondre à un avis Google sans trahir le secret</a>."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Un psychologue a-t-il le droit d'avoir un site internet ?",
+        "a": "<p>Oui. Rien n'interdit à un psychologue de présenter son activité en ligne. Le site reste informatif et loyal : vos titres réels, votre approche, vos conditions d'exercice, sans promesse de résultat.</p>"
+      },
+      {
+        "q": "Faut-il afficher son numéro ADELI ?",
+        "a": "<p>Nous le recommandons. Il atteste votre enregistrement en tant que psychologue et rassure la personne qui hésite à prendre un premier rendez-vous.</p>"
+      },
+      {
+        "q": "Peut-on publier des avis de patients ?",
+        "a": "<p>Nous le déconseillons. Un témoignage révèle qu'une personne a consulté, ce qui touche au secret professionnel. Les avis déposés sur votre fiche Google existent en dehors du site : ne les reprenez pas.</p>"
+      },
+      {
+        "q": "Faut-il afficher le tarif des séances ?",
+        "a": "<p>Oui, c'est l'une des premières questions : tarif et durée d'une séance, différence éventuelle entre cabinet et visio, modes de paiement. Si vous participez à Mon soutien psy, indiquez-le en renvoyant aux conditions de l'Assurance maladie.</p>"
+      },
+      {
+        "q": "Que doit demander le formulaire de contact ?",
+        "a": "<p>Le strict minimum : nom, moyen de contact, disponibilités. Le site n'invite pas à décrire sa situation : ce sont des informations de santé, qui n'ont rien à faire dans une boîte mail ordinaire.</p>"
+      },
+      {
+        "q": "Peut-on proposer des séances en visio ?",
+        "a": "<p>Oui. Le site explique comment elles se déroulent et renvoie vers votre outil de rendez-vous et de visio.</p>"
+      },
+      {
+        "q": "Peut-on intégrer Doctolib ou un autre agenda ?",
+        "a": "<p>Oui, nous intégrons votre outil de prise de rendez-vous existant dans le parcours du site, sans double saisie.</p>"
+      },
+      {
+        "q": "Le site doit-il parler des situations d'urgence ?",
+        "a": "<p>Oui. Un cabinet de psychologue ne prend pas en charge les urgences : le site rappelle d'appeler le 15, ou le 3114, numéro national de prévention du suicide, joignable 24 h/24.</p>"
+      },
+      {
+        "q": "Le référencement local est-il utile pour un psychologue ?",
+        "a": "<p>Oui : la plupart des recherches associent la profession et une ville, comme « psychologue + ville ». Une fiche Google complète et un site qui reprend les mêmes coordonnées aident à apparaître sur ces recherches.</p>"
+      },
+      {
+        "q": "Combien de temps pour le site d'un psychologue ?",
+        "a": "<p>Une première version en 7 jours et la version finale en 21 jours à compter de la réception de vos éléments. Les textes peuvent être rédigés à partir d'un entretien avec vous ; vous les validez avant la mise en ligne.</p>"
+      },
+      {
+        "q": "Travaillez-vous avec des psychologues à Annecy, Chambéry, Genève et ailleurs en France ?",
+        "a": "<p>Oui. MSD Media est basée à Annecy, en Haute-Savoie, et travaille en visio : un cabinet de psychologue de Chambéry, de Genève, de Strasbourg ou de n'importe quelle ville de France, de Suisse ou de Belgique est accompagné de la même façon, du brief à la mise en ligne.</p>"
+      }
+    ],
+    "package": {
+      "label": "les psychologues",
+      "who": "d'un psychologue",
+      "url": "cabinet-psychologue.fr",
+      "brand": "Cabinet de psychologie",
+      "hero": "Séances en cabinet et en visio",
+      "cta": "Prendre RDV",
+      "before": "Le meilleur psy de la ville",
+      "after": "L'approche, les séances et les tarifs expliqués avant le premier appel.",
+      "health": true,
+      "query": "psychologue annecy",
+      "serp": "Psychologue à Annecy · Rendez-vous",
+      "rdv_head": "Première séance",
+      "rdv_btn": "Réserver via Doctolib",
+      "toast": "Rendez-vous confirmé",
+      "rdv_title": "Prise de rendez-vous",
+      "rdv_desc": "Doctolib ou votre agenda intégré, en cabinet ou en visio.",
+      "funnel": [
+        "Visites",
+        "Clics sur « Prendre RDV »",
+        "Appels au cabinet",
+        "Rendez-vous pris"
+      ],
+      "pour": "les psychologues"
+    }
+  },
   "site-web-restaurant": {
     "h1": "On fait des sites web pour les restaurants.",
     "subtitle": "MSD Media crée des sites web sur-mesure pour restaurants et cafés, pensés pour donner envie de réserver, simplifier la réservation en ligne et améliorer votre référencement local. <strong>Livré en 21 jours chrono.</strong>",

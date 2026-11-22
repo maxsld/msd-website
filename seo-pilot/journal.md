@@ -11,6 +11,12 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 ## Entrées
 
+### 2026-11-22 : date de la vidéo Maxime Sciare (alerte Search Console)
+- Changement : `uploadDate` du VideoObject passé de « 2026-09-10 » à « 2026-09-10T12:00:00+02:00 » sur /realisations/maxime-sciare/ et /en/work/maxime-sciare/, après l'e-mail Search Console « Données structurées Vidéos » (fuseau horaire manquant, valeur de date et heure incorrecte). Ce sont les 2 seules pages du site avec une vidéo balisée.
+- Avant : 2 problèmes non critiques signalés par la Search Console.
+- Hypothèse : alertes levées à la prochaine exploration ; pas d'effet de classement attendu. Ne compte pas comme changement de contenu pour le gel de 21 jours.
+- Type : `technique`
+
 ### 2026-11-20 : Landing Express et premier mois de MSD Care inclus (décision de Maxens, plan 1600)
 - Changement : /tarifs/ (FR et EN) ajoute Landing Express, 2 990 € en 7 jours, une place par mois (bloc `#landing-express` et offre dans les données structurées). La carte Landing Page affiche « Ajustements illimités jusqu'à validation » et « 1er mois de MSD Care Essentiel inclus ». Le mois inclus est sans engagement, avec un préavis de 7 jours avant sa fin, puis 89 € par mois résiliables avec un mois de préavis : il figure sur /tarifs/msd-care/, dans les CGV (articles 5 et 5 bis, FR et EN), dans FAITS.md, OFFRES.md, le chatbot et llms.txt. RULES.md autorise désormais les prix sur l'accueil (non utilisé pour l'instant : accueil inchangé).
 - Avant : un seul délai, 21 jours ; MSD Care jamais inclus.

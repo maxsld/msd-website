@@ -9,6 +9,8 @@ Le même jour, les 12 pages secteur (site-web-…) ont été reconstruites sur l
 Le 2026-11-03, les 15 pages de service ont été reconstruites de la même façon (contenu dans `data/services.json`), et les anciennes sections communes des autres pages (réalisations, process, avis, FAQ, « Demander à l'IA ») remplacées par celles de l'accueil. Textes, FAQ et données structurées conservés.
 Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonicals et données structurées identiques à avant sur toutes les pages. Corrigé : étiquette au-dessus du H1 passée de <h2> à <p> (75 pages, le H1 est maintenant le premier titre), données structurées Blog + fil d'Ariane sur /blog/, ancre cassée sur /faq-seo/, llms.txt (première version en 7 jours). À traiter par l'agence, page par page : 10 titles > 60 caractères et 5 descriptions > 160 (outils, template, 6 articles, /refonte-site-web-annecy/).
 
+Hors entrées : le 2026-11-22, Maxens confie à l'équipe les suites de l'audit complet du 2026-11-21 : **lire `seo-pilot/audit-complet-2026-11-21.md` au passage du 2026-11-23** et traiter en premier le groupe landing page (l'ancien comparatif redirigé recule de 12 à 21 et `/creation-landing-page/` de 17 à 28). Les points marqués « à Maxens » ne sont pas pour l'agence.
+
 ## Entrées
 
 ### 2026-11-22 : date de la vidéo Maxime Sciare (alerte Search Console)

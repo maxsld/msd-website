@@ -1,0 +1,765 @@
+{
+ "date": "2026-11-23",
+ "profils": [
+  {
+   "id": "L1",
+   "groupe": "landing",
+   "canal": "Google",
+   "requete": "agence landing page",
+   "page": "/creation-landing-page/ (page d'origine /blog/articles/agences-landing-page-prix-france-2026/ redirigée)",
+   "parcours": [
+    "/creation-landing-page/",
+    "/tarifs/",
+    "/a-propos/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "réserve",
+   "phrase": "Nation Startup (+350 bêta-testeurs inscrits en 1 semaine après la mise en ligne)",
+   "page_phrase": "/creation-landing-page/",
+   "objection": "Tout repose sur une seule personne, dans une agence créée en juin 2025 : si elle est prise, ma bêta glisse.",
+   "question": "[retirée : le site y répond] Que se passe-t-il si Maxens est indisponible pendant les 21 jours ? (FAQ /tarifs/ « Que se passe-t-il si Maxens n'est pas disponible ? »)",
+   "rassure": "Nation Startup, +350 inscrits en 1 semaine ; prix dans son budget sur /tarifs/",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L2",
+   "groupe": "landing",
+   "canal": "Google",
+   "requete": "prix landing page",
+   "page": "/blog/articles/combien-coute-landing-page-france-2026/",
+   "parcours": [
+    "/blog/articles/combien-coute-landing-page-france-2026/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "part",
+   "phrase": "Chez MSD Media, une landing page démarre à 1 990 €, un site vitrine complet à 3 990 €.",
+   "page_phrase": "/tarifs/",
+   "objection": "Mon budget est de 1 500 € et ils démarrent à 1 990 € ; l'article disait que MSD était dans la zone 800 à 2 500 €, mais il ne donne pas leur vrai prix.",
+   "question": "Existe-t-il une version allégée de landing page pour 1 500 €, ou un paiement en 3 fois ?",
+   "rassure": "« Paiement en 2 fois sans frais » (/tarifs/), prix affiché sans devis",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L3",
+   "groupe": "landing",
+   "canal": "IA",
+   "requete": "Quelle agence pour créer une landing page sur mesure en France ?",
+   "page": "/creation-landing-page/",
+   "parcours": [
+    "/creation-landing-page/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "réserve",
+   "phrase": "Un seul interlocuteur",
+   "page_phrase": "/creation-landing-page/",
+   "objection": "C'est une micro-entreprise fondée en juin 2025, est-ce assez solide pour un lancement de gamme à 6 000 € ?",
+   "question": "Avez-vous déjà fait une landing page pour une entreprise industrielle ou du B2B technique ?",
+   "rassure": "« Un acompte de 50 % à la signature du devis, le solde à la livraison. » (/tarifs/) et la FAQ sur l'indisponibilité de Maxens",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L4",
+   "groupe": "landing",
+   "canal": "LinkedIn",
+   "requete": "post : la landing en 21 jours ou 7 jours",
+   "page": "/tarifs/",
+   "parcours": [
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "réserve",
+   "phrase": "La même landing page, en ligne en 7 jours : votre projet passe avant les autres.",
+   "page_phrase": "/tarifs/",
+   "objection": "Je ne sais pas si la place Express du mois est encore libre, ni à partir de quand les 7 jours comptent.",
+   "question": "La place Express du mois est-elle encore disponible, et que se passe-t-il si mes textes arrivent en retard ou si vous dépassez les 7 jours ?",
+   "rassure": "« Tout ce qui est inclus dans Landing Page », « Ajustements illimités jusqu'à votre validation », bloc « Ce qui n'est pas inclus » (/tarifs/)",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L5",
+   "groupe": "landing",
+   "canal": "Google",
+   "requete": "créer landing page qui convertit",
+   "page": "/blog/articles/creer-landing-page-qui-convertit/",
+   "parcours": [
+    "/blog/articles/creer-landing-page-qui-convertit/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "part",
+   "phrase": "Les constructeurs de sites génériques ajoutent souvent des scripts et des styles inutilisés qui ralentissent le chargement",
+   "page_phrase": "/blog/articles/creer-landing-page-qui-convertit/",
+   "objection": "J'ai déjà Systeme.io. Pour 1 990 €, qu'est-ce que vous faites que je ne peux pas faire moi-même avec mes templates ?",
+   "question": "Systeme.io ou agence : qu'apportez-vous de plus, et puis-je garder mon tunnel Systeme.io ?",
+   "rassure": "« Copywriting orienté conversion » et « Ajustements illimités jusqu'à validation » (/tarifs/)",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L6",
+   "groupe": "landing",
+   "canal": "Bouche-à-oreille",
+   "requete": "recommandé par un ancien client",
+   "page": "/",
+   "parcours": [
+    "/",
+    "/realisations/merz-radiesse/",
+    "/reserver-un-appel/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "réserve",
+   "phrase": "Cette étude de cas montre qu'une contrainte réglementaire forte ne s'oppose pas à la conversion.",
+   "page_phrase": "/realisations/merz-radiesse/",
+   "objection": "Rien ne dit que vous savez faire une page investisseurs, ni que mes informations restent confidentielles.",
+   "question": "Pouvez-vous signer un NDA, et avez-vous déjà fait une page investisseurs pour une levée de fonds ?",
+   "rassure": "L'étude de cas Merz Radiesse, dispositif médical proche de son univers medtech",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L7",
+   "groupe": "landing",
+   "canal": "IA",
+   "requete": "Landing page ou site vitrine : que choisir pour lancer une offre ?",
+   "page": "/blog/articles/landing-page-vs-site-web-guide-complet/",
+   "parcours": [
+    "/blog/articles/landing-page-vs-site-web-guide-complet/",
+    "/creation-landing-page/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Manque : comment la landing s'articule avec le site corporate existant (sous-domaine, hébergement, DSI) et le circuit de validation d'un groupe (devis, bon de commande, facture)",
+   "page_phrase": "/blog/articles/landing-page-vs-site-web-guide-complet/",
+   "objection": "Agence fondée en juin 2025 : je dois faire valider ça par la direction, et rien ne me dit comment ça se branche sur notre site existant.",
+   "question": "Peut-on héberger la landing sur un sous-domaine de notre site corporate, et facturer avec bon de commande et paiement à 30 jours ?",
+   "rassure": "Avis Merz « On partait d'assez loin… » et « Code, domaine et accès vous appartiennent. » (/creation-landing-page/)",
+   "citation_verifiee": null
+  },
+  {
+   "id": "L8",
+   "groupe": "landing",
+   "canal": "Google",
+   "requete": "landing page coach",
+   "page": "/blog/articles/landing-page-coach-consultant-annecy/",
+   "parcours": [
+    "/blog/articles/landing-page-coach-consultant-annecy/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "part",
+   "phrase": "Chez MSD Media, une landing page démarre à 1 990 €, un site vitrine complet à 3 990 €.",
+   "page_phrase": "/tarifs/",
+   "objection": "C'est le double de mon budget de 1 000 €, et il me faudrait en plus de quoi payer les Google Ads.",
+   "question": "Existe-t-il une version allégée de la landing page à moins de 1 000 € pour une indépendante ?",
+   "rassure": "« Aucun abonnement obligatoire : la maintenance MSD Care est en option. » (/tarifs/)",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L9",
+   "groupe": "landing",
+   "canal": "LinkedIn",
+   "requete": "profil LinkedIn de Maxens",
+   "page": "/",
+   "parcours": [
+    "/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Intégration de vos outils : Doctolib, Planity, Calendly, Stripe, Shopify, Systeme.io.",
+   "page_phrase": "/tarifs/",
+   "objection": "Shopify n'apparaît que dans une liste d'outils. Je ne sais pas comment une page de lancement codée sur mesure se branche à ma boutique, et je ne vois aucun exemple e-commerce ou cosmétique.",
+   "question": "Une landing page de lancement produit peut-elle être reliée à ma boutique Shopify (panier, stock), ou est-ce un site séparé ?",
+   "rassure": "Les deux lancements de produits Merz Aesthetics dès l'accueil, prix dès 1 990 €, devis sous 24 h",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L10",
+   "groupe": "landing",
+   "canal": "IA",
+   "requete": "Combien coûte une landing page en France en 2026 ?",
+   "page": "/blog/articles/combien-coute-landing-page-france-2026/",
+   "parcours": [
+    "/blog/articles/combien-coute-landing-page-france-2026/",
+    "/tarifs/",
+    "/reserver-un-appel/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "réserve",
+   "phrase": "Besoin d'aller plus vite ? Landing Express, 2 990 € en 7 jours",
+   "page_phrase": "/tarifs/",
+   "objection": "Je ne sais pas si vous pouvez reprendre notre charte existante et tenir 7 jours avec un seul interlocuteur.",
+   "question": "Pouvez-vous suivre notre charte graphique existante pour une page d'événement ?",
+   "rassure": "« En ligne en 7 jours », « Votre projet en priorité, du brief à la mise en ligne » (/tarifs/)",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L11",
+   "groupe": "landing",
+   "canal": "Google",
+   "requete": "landing page avocat",
+   "page": "/site-web-avocat/",
+   "parcours": [
+    "/site-web-avocat/",
+    "/tarifs/",
+    "/realisations/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Oui. L'avocat qui ouvre ou modifie un site internet en informe sans délai le conseil de l'ordre et lui communique les noms de domaine qui y donnent accès.",
+   "page_phrase": "/site-web-avocat/",
+   "objection": "Aucun cabinet d'avocats parmi les références : seul Merz, un laboratoire, est cité pour la réglementation. Et la page parle d'un site de cabinet, pas d'une landing page.",
+   "question": "Avez-vous déjà fait le site ou la landing page d'un cabinet d'avocats, et puis-je le voir ?",
+   "rassure": "La FAQ déontologique : décret 2014-1251, article 10 du RIN, déclaration au barreau",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L12",
+   "groupe": "landing",
+   "canal": "LinkedIn",
+   "requete": "post sur un client livré",
+   "page": "/realisations/",
+   "parcours": [
+    "/realisations/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Les pages et fonctionnalités non prévues au devis : elles font l'objet d'un devis complémentaire",
+   "page_phrase": "/tarifs/",
+   "objection": "Je veux 4 pages par an sur le même modèle : je ne sais pas si la 2e, la 3e et la 4e coûtent 1 990 € chacune.",
+   "question": "[retirée : le site y répond] Combien coûte une landing page supplémentaire sur la même structure ? (/tarifs/ : devis complémentaire)",
+   "rassure": "Deux landing pages livrées pour le même client (Merz Ultherapy Prime et Radiesse)",
+   "citation_verifiee": true
+  },
+  {
+   "id": "L13",
+   "groupe": "landing",
+   "canal": "Google",
+   "requete": "template landing page",
+   "page": "/template-landing-page/",
+   "parcours": [
+    "/template-landing-page/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "formulaire",
+   "phrase": "Section par section, dans l'ordre. Rien à installer, rien à payer.",
+   "page_phrase": "/template-landing-page/",
+   "objection": "Je ne sais pas si c'est un vrai template réutilisable ou juste un guide de structure en PDF, et il faut donner mon e-mail pour le savoir.",
+   "question": "[retirée : le site y répond] Le template est-il en Figma, en HTML ou en PDF ? (la page dit « template de landing page en PDF »)",
+   "rassure": "Formulaire réduit à prénom et e-mail, téléchargement gratuit",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S1",
+   "groupe": "santé",
+   "canal": "IA",
+   "requete": "Quelle agence web choisir pour un site de médecine esthétique ?",
+   "page": "/site-web-medecine-esthetique/",
+   "parcours": [
+    "/site-web-medecine-esthetique/",
+    "/realisations/merz-ultherapy-prime/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Les comparatifs avant/après et les témoignages ont été intégrés avec une présentation sobre, pour appuyer la preuve sans tomber dans un registre trop promotionnel, peu compatible avec la communication d'un dispositif médical.",
+   "page_phrase": "/realisations/merz-ultherapy-prime/",
+   "objection": "Leur référence est un laboratoire, pas un cabinet de médecin, et leur vitrine montre des avant/après et des témoignages alors qu'on me dit de ne pas en publier.",
+   "question": "Avez-vous déjà fait le site d'un médecin esthétique validé par son conseil départemental de l'Ordre ?",
+   "rassure": "FAQ avant/après « Pour un médecin, nous le déconseillons. » (/site-web-medecine-esthetique/)",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S2",
+   "groupe": "santé",
+   "canal": "Google",
+   "requete": "supprimer avis google medecin",
+   "page": "/blog/articles/avis-google-medecin-que-repondre/",
+   "parcours": [
+    "/blog/articles/avis-google-medecin-que-repondre/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "part",
+   "phrase": "Un médecin ne peut pas supprimer lui-même un avis Google : il peut le signaler à Google, qui le retire s'il enfreint ses règles (faux avis, propos injurieux, informations personnelles, contenu hors sujet), puis faire appel en cas de refus.",
+   "page_phrase": "/blog/articles/avis-google-medecin-que-repondre/",
+   "objection": "Mon avis est injuste mais il ne casse peut-être aucune règle de Google, donc il restera en ligne.",
+   "question": "L'avis est sur la fiche de la maison de santé, pas la mienne : qui doit le signaler, et ma réponse engage-t-elle la structure ?",
+   "rassure": "Les modèles de réponse conformes au secret médical",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S3",
+   "groupe": "santé",
+   "canal": "Google",
+   "requete": "site internet dentiste",
+   "page": "/site-web-dentiste/",
+   "parcours": [
+    "/site-web-dentiste/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Nous construisons une page par traitement, qui en explique les étapes et les points à anticiper, puis mène au rendez-vous de consultation où le devis est établi.",
+   "page_phrase": "/site-web-dentiste/",
+   "objection": "Je ne vois aucun cabinet dentaire déjà réalisé, seulement des réalisations Merz, des startups et des coachs.",
+   "question": "Avez-vous déjà réalisé un site pour un cabinet dentaire que je peux consulter ?",
+   "rassure": "Section « Ce que votre site doit respecter » (R4127-215-1, décret 2020-1658) et « Doctolib ou votre agenda intégré »",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S4",
+   "groupe": "santé",
+   "canal": "IA",
+   "requete": "Who can build a fast custom website for a clinic in France or Switzerland?",
+   "page": "/en/",
+   "parcours": [
+    "/en/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Yes. We delivered two launches for Merz Aesthetics (Radiesse and Ultherapy Prime) and build aesthetic medicine websites that follow the profession's rules: fair information, no patient reviews and no before/after photos.",
+   "page_phrase": "/en/",
+   "objection": "Les règles citées sont françaises, rien sur la Suisse ni sur un site multilingue ; le lien « aesthetic medicine websites » mène à une page en français, et « From €1,990 » ne ressemble pas à une offre haut de gamme.",
+   "question": "Do you build multilingual clinic websites compliant with Swiss (Geneva) advertising rules for aesthetic surgery, and what does that cost?",
+   "rassure": "La référence Merz Aesthetics (logo, mockups) et les clients en France, Suisse et Belgique",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S5",
+   "groupe": "santé",
+   "canal": "Google",
+   "requete": "site internet dermatologue",
+   "page": "/site-web-dermatologue/",
+   "parcours": [
+    "/site-web-dermatologue/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Nous les déconseillons. La chambre disciplinaire de l'Ordre des médecins les qualifie régulièrement de procédé publicitaire, et des praticiens ont été sanctionnés pour en avoir publié.",
+   "page_phrase": "/site-web-dermatologue/",
+   "objection": "C'est sérieux, mais je veux vérifier moi-même ces règles et voir un prix avant d'appeler.",
+   "question": "Aucune",
+   "rassure": "FAQ « Peut-on présenter les lasers et les appareils du cabinet ? » et section « Ce que votre site doit respecter » (R4127-19-1, arrêté du 30 mai 2018)",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S6",
+   "groupe": "santé",
+   "canal": "Google",
+   "requete": "publicité chirurgie esthétique 2026",
+   "page": "/blog/articles/publicite-chirurgie-esthetique-decret-2026/",
+   "parcours": [
+    "/blog/articles/publicite-chirurgie-esthetique-decret-2026/",
+    "/site-web-medecine-esthetique/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Les médecins qui pratiquent la médecine esthétique en cabinet, par exemple des injections, ne sont pas visés par le décret n° 2026-891 et restent soumis au code de déontologie médicale.",
+   "page_phrase": "/blog/articles/publicite-chirurgie-esthetique-decret-2026/",
+   "objection": "L'article traite de chirurgie, pas de mon centre : je ne sais toujours pas ce que j'ai le droit d'écrire sur chaque traitement.",
+   "question": "[retirée : le site y répond] Combien de pages de soins dans un site à 3 990 € et combien coûte une page de plus ? (/tarifs/ : jusqu'à 10 pages, devis complémentaire)",
+   "rassure": "« une page par soin » sur /site-web-medecine-esthetique/ ; sources citées dans l'article",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S7",
+   "groupe": "santé",
+   "canal": "Google",
+   "requete": "création site internet psychologue",
+   "page": "/site-web-psychologue/",
+   "parcours": [
+    "/site-web-psychologue/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Le formulaire ne demande jamais de raconter son histoire : ce qui relève de la séance reste en séance, pas sur le site.",
+   "page_phrase": "/site-web-psychologue/",
+   "objection": "Le ton est juste, mais 1 990 à 3 990 €, c'est beaucoup pour un cabinet en libéral, et je ne sais pas si je pourrai modifier mes horaires toute seule.",
+   "question": "[retirée : le site y répond] Puis-je modifier mes horaires moi-même ? (FAQ « Puis-je modifier mon site moi-même ? Oui, avec un accès complet et des tutoriels si besoin. »)",
+   "rassure": "« pas de promesse de guérison, pas de témoignage » (/site-web-psychologue/)",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S8",
+   "groupe": "santé",
+   "canal": "LinkedIn",
+   "requete": "post sur un projet Merz",
+   "page": "/realisations/merz-ultherapy-prime/",
+   "parcours": [
+    "/realisations/merz-ultherapy-prime/",
+    "/site-web-medecine-esthetique/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Cette étude présente nos choix de conception ; elle ne publie pas de résultats de trafic ou de conversion du laboratoire.",
+   "page_phrase": "/realisations/merz-ultherapy-prime/",
+   "objection": "Aucun chiffre ni description du circuit de validation interne, et c'est une micro-entreprise face à nos exigences de fournisseur grand compte.",
+   "question": "Comment vous intégrez-vous à un circuit de validation interne (relecture médicale, juridique, réglementaire) et êtes-vous référençables comme fournisseur d'un grand groupe ?",
+   "rassure": "« Chaque allégation y est adossée à sa source… » (/site-web-medecine-esthetique/) et la formule Marque de /tarifs/",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S9",
+   "groupe": "santé",
+   "canal": "IA",
+   "requete": "Qui peut créer le site internet d'un cabinet dentaire à Annecy ?",
+   "page": "/site-web-dentiste/",
+   "parcours": [
+    "/site-web-dentiste/",
+    "/tarifs/",
+    "/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Les anciennes adresses sont redirigées pour conserver vos positions Google.",
+   "page_phrase": "/",
+   "objection": "La page dentiste ne parle ni de refonte ni de ne pas perdre le référencement du cédant ; la refonte est « Devis personnalisé » sur /tarifs/.",
+   "question": "[retirée : le site y répond] Combien coûte la refonte du site d'un cabinet repris ? (/tarifs/ : Sur-mesure & Refonte, devis personnalisé)",
+   "rassure": "Les articles du code de déontologie dentaire cités ; Chambéry nommée parmi les villes servies",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S10",
+   "groupe": "santé",
+   "canal": "Google",
+   "requete": "site internet médecin",
+   "page": "/site-web-medecin/",
+   "parcours": [
+    "/site-web-medecin/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "part",
+   "phrase": "Chaque devis est personnalisé après un premier échange.",
+   "page_phrase": "/site-web-medecin/",
+   "objection": "Je veux juste horaires, adresse et lien Doctolib. 1 990 € minimum, c'est trop.",
+   "question": "Y a-t-il une formule à moins de 1 000 € pour un cabinet de généraliste qui veut juste horaires, adresse et Doctolib ?",
+   "rassure": "FAQ « Un médecin a-t-il le droit d'avoir un site internet ? » (R4127-19-1) et celle sur les honoraires",
+   "citation_verifiee": true
+  },
+  {
+   "id": "S11",
+   "groupe": "santé",
+   "canal": "Google",
+   "requete": "site internet médecine esthétique ce qui est autorisé",
+   "page": "/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/",
+   "parcours": [
+    "/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "part",
+   "phrase": "Un institut qui la propose, ou un site qui la présente comme réalisable par une esthéticienne, expose à des poursuites pour exercice illégal de la médecine.",
+   "page_phrase": "/blog/articles/site-internet-medecine-esthetique-ce-qui-est-autorise/",
+   "objection": "Je ne sais toujours pas si je suis concernée : l'article parle de médecins, de cliniques et d'instituts, pas d'une infirmière en esthétique non médicale. Et les offres à 1 990 € dépassent mon budget.",
+   "question": "Une infirmière qui ouvre un cabinet d'esthétique non médicale est-elle soumise aux règles de communication des médecins, et que peut-elle afficher ?",
+   "rassure": "La ligne « Institut ou centre esthétique non médical » du tableau par établissement",
+   "citation_verifiee": true
+  },
+  {
+   "id": "A1",
+   "groupe": "local",
+   "canal": "Google",
+   "requete": "création site internet annecy",
+   "page": "/creation-site-web-annecy/",
+   "parcours": [
+    "/creation-site-web-annecy/",
+    "/tarifs/",
+    "/a-propos/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Il vit et travaille aujourd'hui à Munich et mène chaque projet à distance, en visio, pour des clients en France, en Suisse et en Belgique.",
+   "page_phrase": "/a-propos/",
+   "objection": "Ils se disent d'Annecy, mais le patron est à Munich : je ne pourrai pas le rencontrer, et la page me renvoie vers une « refonte » alors que j'ai un site de 10 ans.",
+   "question": "[retirée : le site y répond] Peut-on se voir en vrai à Annecy ? (FAQ /agence-web-annecy/ : rendez-vous de cadrage sur place, 6 rue Paul Guiton ; contredit par /a-propos/)",
+   "rassure": "« Une réalisation en Haute-Savoie : le projet Carroz Sports, aux Carroz d'Araches » ; prix clair sur /tarifs/",
+   "citation_verifiee": true
+  },
+  {
+   "id": "A2",
+   "groupe": "local",
+   "canal": "IA",
+   "requete": "Meilleure agence de création de site web en Haute-Savoie",
+   "page": "/agence-web-annecy/",
+   "parcours": [
+    "/agence-web-annecy/",
+    "/tarifs/",
+    "/realisations/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Manque : une référence BTP, industrie ou site de recrutement, et la taille réelle de l'équipe (la page ne montre qu'un fondateur, « Un seul interlocuteur », « fondée en juin 2025 »)",
+   "page_phrase": "/agence-web-annecy/",
+   "objection": "Trente salariés, un site pour recruter : ils sont combien derrière Maxens, et ont-ils déjà fait ça pour une entreprise comme la mienne ?",
+   "question": "Avez-vous déjà fait un site de recrutement ou pour une entreprise du BTP, et combien de personnes travaillent chez vous ?",
+   "rassure": "« MSD Media est une agence annécienne, pas une agence parisienne avec une page « Annecy ». » et la FAQ sur le rendez-vous de cadrage sur place",
+   "citation_verifiee": null
+  },
+  {
+   "id": "A3",
+   "groupe": "local",
+   "canal": "Google",
+   "requete": "agence web genève",
+   "page": "/agence-web-geneve/",
+   "parcours": [
+    "/agence-web-geneve/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "En euros, depuis la France. Pour une entreprise suisse, cela représente généralement une économie substantielle par rapport aux tarifs pratiqués localement, à qualité de livraison comparable.",
+   "page_phrase": "/agence-web-geneve/",
+   "objection": "Une « économie substantielle » sans aucun chiffre, et pas un seul prix en francs suisses.",
+   "question": "Combien ça fait en CHF, et avez-vous déjà travaillé pour une fintech ou une société financière réglementée ?",
+   "rassure": "« Quarante minutes d'Annecy, pas une présence virtuelle » et le déplacement possible à Genève",
+   "citation_verifiee": true
+  },
+  {
+   "id": "A4",
+   "groupe": "local",
+   "canal": "Google",
+   "requete": "refonte site web annecy",
+   "page": "/refonte-site-web-annecy/",
+   "parcours": [
+    "/refonte-site-web-annecy/",
+    "/site-web-restaurant/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "formulaire",
+   "phrase": "Nous intégrons votre outil de réservation existant (TheFork ou autre) directement dans le parcours du site, sans redirection qui casse l'expérience et fait perdre des réservations.",
+   "page_phrase": "/site-web-restaurant/",
+   "objection": "Un site vitrine à partir de 3 990 €, c'est cher pour un restaurant. Je ne sais pas si la landing page à 1 990 € me suffit. La page refonte ne parle pas de restaurants.",
+   "question": "[retirée : le site y répond] Prix d'un site restaurant avec TheFork, et puis-je modifier ma carte moi-même ? (/tarifs/ : site vitrine 3 990 €, FAQ « Puis-je modifier mon site moi-même ? »)",
+   "rassure": "La page restaurant cite TheFork et Zenchef ; « Livré en 21 jours chrono »",
+   "citation_verifiee": true
+  },
+  {
+   "id": "A5",
+   "groupe": "local",
+   "canal": "LinkedIn",
+   "requete": "post French Tech Munich",
+   "page": "/agence-web-munich/",
+   "parcours": [
+    "/agence-web-munich/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "MSD Media est une agence web fondée en juin 2025 à Annecy par Maxens Soldan, membre de la communauté French Tech Munich.",
+   "page_phrase": "/agence-web-munich/",
+   "objection": "Il connaît la French Tech Munich, mais est-ce qu'il connaît vraiment le marché allemand, et a-t-il déjà travaillé pour quelqu'un comme moi ici ?",
+   "question": "Avez-vous une référence client à Munich ou en Allemagne, et pouvez-vous facturer ma société allemande ?",
+   "rassure": "« Nous concevons votre site directement en français, avec des textes écrits pour vos clients, pas traduits. »",
+   "citation_verifiee": true
+  },
+  {
+   "id": "T1",
+   "groupe": "témoin",
+   "canal": "IA",
+   "requete": "Meilleure agence web en France pour un grand groupe",
+   "page": "/",
+   "parcours": [
+    "/"
+   ],
+   "premier_ecran": "part",
+   "decision": "part",
+   "phrase": "Choisie par Merz Aesthetics pour deux lancements de produits. Dès 1 990 €.",
+   "page_phrase": "/",
+   "objection": "« Dès 1 990 € » et « un seul interlocuteur », ce n'est pas une agence capable de gérer 12 langues et un groupe international.",
+   "question": "Combien de personnes dans l'équipe, et savez-vous répondre à un appel d'offres pour un site en 12 langues ?",
+   "rassure": "Merz Aesthetics cité dès le premier écran",
+   "citation_verifiee": true
+  },
+  {
+   "id": "T2",
+   "groupe": "témoin",
+   "canal": "Google",
+   "requete": "créer site internet pas cher",
+   "page": "/blog/articles/combien-coute-site-web-annecy-2026/",
+   "parcours": [
+    "/blog/articles/combien-coute-site-web-annecy-2026/"
+   ],
+   "premier_ecran": "part",
+   "decision": "part",
+   "phrase": "Le vrai sujet n'est pas de payer le moins cher, mais d'éviter un site qui ne rapporte rien.",
+   "page_phrase": "/blog/articles/combien-coute-site-web-annecy-2026/",
+   "objection": "Je veux un portfolio gratuit, pas un site à 2 500 €.",
+   "question": "Existe-t-il un tarif étudiant, ou un modèle gratuit pour faire mon portfolio moi-même ?",
+   "rassure": "Rien",
+   "citation_verifiee": true
+  },
+  {
+   "id": "T3",
+   "groupe": "témoin",
+   "canal": "Bouche-à-oreille",
+   "requete": "curiosité",
+   "page": "/tarifs/",
+   "parcours": [
+    "/tarifs/",
+    "/creation-landing-page/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "part",
+   "phrase": "Une position garantie sur Google ou une citation par les IA : aucune agence ne peut la promettre",
+   "page_phrase": "/tarifs/",
+   "objection": "Aucune : je ne cherche pas à acheter, je regarde comment ils vendent.",
+   "question": "La « place unique par mois » de Landing Express est-elle réellement limitée ?",
+   "rassure": "Rien",
+   "citation_verifiee": true
+  },
+  {
+   "id": "R1",
+   "groupe": "tournant",
+   "canal": "Google",
+   "requete": "prix landing page",
+   "page": "/blog/articles/combien-coute-landing-page-france-2026/",
+   "parcours": [
+    "/blog/articles/combien-coute-landing-page-france-2026/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "part",
+   "phrase": "Chez MSD Media, une landing page démarre à 1 990 €, un site vitrine complet à 3 990 €.",
+   "page_phrase": "/tarifs/",
+   "objection": "1 990 € minimum et j'ai 1 200 € : l'article place MSD à « 800 à 2 500 € » mais le vrai prix est plus haut, il faut cliquer pour le savoir.",
+   "question": "Existe-t-il une version allégée de landing page autour de 1 200 € ?",
+   "rassure": "« Aucun abonnement obligatoire : la maintenance MSD Care est en option. », paiement en 2 fois sans frais (/tarifs/)",
+   "citation_verifiee": true
+  },
+  {
+   "id": "R2",
+   "groupe": "tournant",
+   "canal": "Google",
+   "requete": "agence landing page",
+   "page": "/creation-landing-page/",
+   "parcours": [
+    "/creation-landing-page/",
+    "/tarifs/",
+    "/realisations/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Un seul interlocuteur",
+   "page_phrase": "/creation-landing-page/",
+   "objection": "Je veux une agence avec une vraie équipe, pas un freelance : là, tout tourne autour de Maxens, et mes références B2B e-learning, je ne les vois pas.",
+   "question": "Qui travaille concrètement sur mon projet (designer, développeur, rédacteur) et avez-vous un cas client B2B ou e-learning ?",
+   "rassure": "Le process en 4 étapes de J1 à J21 et le prix « à partir de 1 990 € »",
+   "citation_verifiee": true
+  },
+  {
+   "id": "R3",
+   "groupe": "tournant",
+   "canal": "Google",
+   "requete": "supprimer avis google medecin",
+   "page": "/blog/articles/avis-google-medecin-que-repondre/",
+   "parcours": [
+    "/blog/articles/avis-google-medecin-que-repondre/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "part",
+   "phrase": "Sur business.google.com, ouvrez « Voir les avis », cliquez sur l'icône de signalement à côté de l'avis, choisissez la raison puis « Signaler »",
+   "page_phrase": "/blog/articles/avis-google-medecin-que-repondre/",
+   "objection": "Le médecin a fait la demande, mais moi je dois pouvoir le faire pour lui, et il me faut un résultat cette semaine.",
+   "question": "Comment donner à la secrétaire l'accès à la fiche Google du cabinet pour signaler l'avis à la place du médecin ?",
+   "rassure": "Les six étapes numérotées et le délai de trois mois pour la diffamation",
+   "citation_verifiee": true
+  },
+  {
+   "id": "R4",
+   "groupe": "tournant",
+   "canal": "Google",
+   "requete": "référencement naturel annecy",
+   "page": "/blog/articles/referencement-naturel-annecy/",
+   "parcours": [
+    "/blog/articles/referencement-naturel-annecy/",
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "part",
+   "phrase": "Accompagnement mensuel disponible",
+   "page_phrase": "/blog/articles/referencement-naturel-annecy/",
+   "objection": "On ne me donne aucun prix mensuel. J'ai un site Wix et 150 € par mois maximum, et je ne vois pas ce que je dois faire concrètement.",
+   "question": "Combien coûte par mois un accompagnement SEO pour un artisan à Annecy-le-Vieux, et peut-on le faire sans refaire mon site Wix ?",
+   "rassure": "Le tableau « Combien de temps pour voir des résultats ? » (site existant : 1 à 3 mois)",
+   "citation_verifiee": true
+  },
+  {
+   "id": "R5",
+   "groupe": "tournant",
+   "canal": "Google",
+   "requete": "à qui confier la refonte de son site web à genève?",
+   "page": "/site-web-avocat/",
+   "parcours": [
+    "/site-web-avocat/"
+   ],
+   "premier_ecran": "part",
+   "decision": "part",
+   "phrase": "On fait des sites web pour les avocats.",
+   "page_phrase": "/site-web-avocat/",
+   "objection": "Ce n'est pas mon métier ni ma ville : je cherche quelqu'un qui connaît les cabinets de conseil genevois.",
+   "question": "Avez-vous déjà fait un site pour un cabinet de gestion de patrimoine ou de conseil financier à Genève ?",
+   "rassure": "Rien",
+   "citation_verifiee": true
+  },
+  {
+   "id": "R6",
+   "groupe": "tournant",
+   "canal": "Google",
+   "requete": "mon site est-il techniquement lisible et accessible pour l ia",
+   "page": "/outils/chatgpt-peut-il-lire-mon-site/",
+   "parcours": [
+    "/outils/chatgpt-peut-il-lire-mon-site/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "garde",
+   "phrase": "Gratuit, sans inscription. Nous vérifions robots.txt, llms.txt et la page telle que la voit un robot.",
+   "page_phrase": "/outils/chatgpt-peut-il-lire-mon-site/",
+   "objection": "Je vais obtenir un score plein de jargon que je ne saurai pas expliquer à mon prestataire.",
+   "question": "Mon test est mauvais : qu'est-ce que je dois demander de corriger, en mots simples ?",
+   "rassure": "FAQ « Conservez-vous les sites testés ? » : rien n'est conservé",
+   "citation_verifiee": true
+  },
+  {
+   "id": "R7",
+   "groupe": "tournant",
+   "canal": "LinkedIn",
+   "requete": "post du 23/11 : une seule offre, la landing en deux délais (21 j / 7 j Express)",
+   "page": "/tarifs/",
+   "parcours": [
+    "/tarifs/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "réserve",
+   "phrase": "La même landing page, en ligne en 7 jours : votre projet passe avant les autres.",
+   "page_phrase": "/tarifs/",
+   "objection": "Express à 2 990 €, c'est 490 € au-dessus de mon budget de 2 500 €, et la formule à 1 990 € arrive après ma date de sortie. Je réserve pour savoir si la place du mois est libre.",
+   "question": "La place Express du mois est-elle libre, et peut-on tenir les 7 jours pour une page d'offre d'emploi à moins de 2 500 € ?",
+   "rassure": "« Paiement en 2 fois sans frais » et « 7 jours à compter de la réception de vos éléments (textes, photos, accès) »",
+   "citation_verifiee": true
+  },
+  {
+   "id": "R8",
+   "groupe": "tournant",
+   "canal": "IA",
+   "requete": "Quelle agence web me recommandes-tu à Annecy ?",
+   "page": "/agence-web-annecy/",
+   "parcours": [
+    "/agence-web-annecy/",
+    "/tarifs/",
+    "/reserver-un-appel/"
+   ],
+   "premier_ecran": "reste",
+   "decision": "réserve",
+   "phrase": "Oui, et nous le recommandons. Le bureau est au 6 rue Paul Guiton, en centre-ville. Le rendez-vous de cadrage dure une heure et se fait sur place, chez vous ou en visio si vous préférez.",
+   "page_phrase": "/agence-web-annecy/",
+   "objection": "Ils ont des clients annéciens, mais pas de marque de vêtements ni de lien avec Shopify : est-ce qu'ils savent faire ce que je veux ?",
+   "question": "Avez-vous déjà relié un site vitrine de marque à une boutique Shopify ? Un exemple dans l'habillement ou le sport ?",
+   "rassure": "Les clients d'ici avec résultats (Laurence Daien Maestripieri, Agence 3XL, Carroz Sports) sur /agence-web-annecy/",
+   "citation_verifiee": true
+  }
+ ]
+}

@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="../../assets/css/theme-v2.min.css?v=398e17b0">
   <link rel="stylesheet" href="../../assets/css/sections-v2.min.css?v=a8a8c42a">
   <link rel="stylesheet" href="../../assets/css/sector-v2.min.css?v=0b5e374c">
-  <link rel="stylesheet" href="../../assets/css/pages-v2.min.css?v=2f5fde7d">
+  <link rel="stylesheet" href="../../assets/css/pages-v2.min.css?v=5df07ddb">
 <!-- AI referrer detection — runs immediately, no consent required (aucun cookie) -->
 <script>
 (function(){
@@ -315,7 +315,7 @@ function _msdConsentSignal(state){
           "name": "How does payment work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A 50% deposit when you sign the quote, the balance on delivery. For custom projects, a payment schedule can be set up based on project milestones."
+            "text": "A 50% deposit when you sign the quote, the balance on delivery. For the Landing Page, you can also pay in 2 interest-free card instalments: half when you sign, the other half 30 days later. For custom projects, a payment schedule can be set up based on project milestones."
           }
         },
         {
@@ -459,9 +459,11 @@ function _msdConsentSignal(state){
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f6">Tracking &amp; analytics set up</span></li>
               <li><i class="fa-solid fa-check"></i><span>Unlimited revisions until approval</span></li>
               <li><i class="fa-solid fa-check"></i><span>First month of MSD Care Essential included</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Pay in 2 interest-free instalments</span></li>
             </ul>
             <a class="pricing-card__express" href="#landing-express" style="display:block;margin:0 0 14px;font-size:.85rem;color:var(--accent,#2f6bff);text-decoration:underline;text-underline-offset:3px">Need it faster? Landing Express, €2,990 in 7 days</a>
             <a class="pricing-card__cta" href="https://msd-media.com/en/book-a-call/" data-i18n="tarifs_cta_call">Book a call</a>
+            <a class="pricing-card__help" href="https://wa.me/33783141287" data-wa="tarifs" target="_blank" rel="noopener">Not sure which plan? Send me your website on WhatsApp and I'll tell you which one to pick.</a>
           </div>
 
           <div class="pricing-card pricing-card--featured">
@@ -482,6 +484,7 @@ function _msdConsentSignal(state){
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card2_f6">AI visibility optimisation (ChatGPT, Perplexity)</span></li>
             </ul>
             <a class="pricing-card__cta" href="https://msd-media.com/en/book-a-call/" data-i18n="tarifs_cta_call">Book a call</a>
+            <a class="pricing-card__help" href="https://wa.me/33783141287" data-wa="tarifs" target="_blank" rel="noopener">Not sure which plan? Send me your website on WhatsApp and I'll tell you which one to pick.</a>
           </div>
 
           <div class="pricing-card">
@@ -500,8 +503,11 @@ function _msdConsentSignal(state){
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card3_f6">Ongoing SEO support</span></li>
             </ul>
             <a class="pricing-card__cta" href="https://msd-media.com/en/contact/" data-i18n="tarifs_cta_contact">Contact us</a>
+            <a class="pricing-card__help" href="https://wa.me/33783141287" data-wa="tarifs" target="_blank" rel="noopener">Not sure which plan? Send me your website on WhatsApp and I'll tell you which one to pick.</a>
           </div>
         </div>
+
+        <p class="pricing-integrations">Integration with your tools: Doctolib, Planity, Calendly, Stripe, Shopify, Systeme.io.</p>
 
         <div class="pricing-card pricing-card--care" id="landing-express">
           <div class="pricing-care__head">
@@ -791,7 +797,7 @@ function _msdConsentSignal(state){
             <details class="faq__item"><summary>What are the costs after launch?</summary><p data-i18n="tarifs_faq_q4_a">Budget for the domain name (€10-30/year) and hosting. A custom-coded site like ours hosts for next to nothing and doesn't require heavy maintenance, unlike WordPress. If you'd rather not manage anything, MSD Care takes care of hosting, backups and changes every month, in three levels from €89 per month.</p></details>
           </div>
           <div class="faq__col">
-            <details class="faq__item"><summary>How does payment work?</summary><p data-i18n="tarifs_faq_q5_a">A 50% deposit when you sign the quote, the balance on delivery. For custom projects, a payment schedule can be set up based on project milestones.</p></details>
+            <details class="faq__item"><summary>How does payment work?</summary><p data-i18n="tarifs_faq_q5_a">A 50% deposit when you sign the quote, the balance on delivery. For the Landing Page, you can also pay in 2 interest-free card instalments: half when you sign, the other half 30 days later. For custom projects, a payment schedule can be set up based on project milestones.</p></details>
             <details class="faq__item"><summary>Do I own the website once it is delivered?</summary><p data-i18n="tarifs_faq_own_a">Yes. The full source code, the domain name and every access (hosting, analytics, connected tools) are handed over as soon as the balance is paid. You can keep improving the site with us or hand it to another provider.</p></details>
             <details class="faq__item"><summary>What happens if Maxens is unavailable?</summary><p data-i18n="tarifs_faq_backup_a">Your website does not depend on us: it is built with standard HTML, CSS and JavaScript, with no proprietary tool, and you hold every access. Any web developer can take it over or edit it.</p></details>
           </div>
@@ -933,7 +939,7 @@ function _msdConsentSignal(state){
 
   <script src="../../assets/js/theme-v2.min.js?v=21fcba7d" defer></script>
   <script src="../../assets/js/home-v2.min.js?v=c37f6818" defer></script>
-  <script src="../../assets/js/script.min.js?v=643692ab"></script>
+  <script src="../../assets/js/script.min.js?v=dcf2d41e"></script>
   <script>
     (() => {
       const tabs = document.querySelectorAll('#currency-tabs .currency-tab');

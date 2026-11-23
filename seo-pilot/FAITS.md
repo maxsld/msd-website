@@ -26,6 +26,8 @@ Contrôle automatique : `python3 scripts/check-verite.py` relève les écarts da
 | Ajustements inclus jusqu'à la validation du client, sans limite de nombre | validé (Maxens, 2026-11-12) | accueil, process |
 | Non inclus : garantie de position Google ou de citation IA, publicité et achat de trafic, shootings photo et vidéo, pages ou fonctionnalités hors devis (devis complémentaire), maintenance (MSD Care) | validé (Maxens, 2026-11-12) | `/tarifs/#non-inclus` |
 | Pas d'offre gratuite (audit, maquette) sauf si `/tarifs/` l'annonce | validé | `/tarifs/` |
+| Landing Page : paiement en 2 fois sans frais par carte bancaire (Stripe), la moitié à la signature, l'autre moitié 30 jours plus tard ; affichable uniquement sur `/tarifs/` et sa version anglaise | validé (Maxens, 2026-11-24) | `/tarifs/`, CGV article 4 |
+| Intégration des outils du client : Doctolib, Planity, Calendly, Stripe, Shopify, Systeme.io | validé (Maxens, 2026-11-24) | `/tarifs/` |
 | La maintenance de MSD Media s'appelle MSD Care, partout. Seule exception, décidée par Maxens le 2026-11-20 : le premier mois de MSD Care Essentiel est inclus avec chaque landing page (Landing et Landing Express), sans engagement, puis 89 € par mois résiliable avec un mois de préavis. Jamais « la première année » ni « hébergement inclus » : au-delà de ce mois, elle est en option. Hors des pages de prix, on la nomme et on fait un lien vers `/tarifs/msd-care/`, sans prix | validé (Maxens, 2026-11-12) | `/tarifs/` |
 
 Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à trancher par Maxens) : description de l'accueil (« Dès 1 990 € »), FAQ de `/reserver-un-appel/` (« Les offres démarrent à 1 990 € »), `llms.txt` (tarifs et MSD Care).
@@ -36,6 +38,7 @@ Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à tranc
 |---|---|---|
 | Première version en 7 jours, version finale en 21 jours **à compter de la réception des éléments du client** | validé (Maxens, 2026-11-12) | accueil, Tarifs, FAQ |
 | Le délai est **indicatif** : 21 jours calendaires à compter de la réception des éléments, devis signé et acompte versé ; suspendu si le client tarde, projet clôturable après 60 jours sans réponse à une relance écrite | validé (texte juridique, 2026-11-12) | `terms/cgv.html`, article 5 |
+| Devis envoyé sous 24 h ouvrées après une demande (formulaire de l'accueil, « Recevoir mon devis sous 24 h ») ; Maxens répond lui-même | validé (Maxens, 2026-11-24) ; ne pas l'étendre à « réponse à toute demande sous 24 h » sans son accord | accueil, `/a-propos/` |
 | « Délai contractuel », « 21 jours ouvrés » comme promesse d'offre | **interdits** : contredisent les CGV (les « N jours ouvrés » des pages de réalisation sont des délais constatés, ils restent) | |
 
 ## Références et résultats

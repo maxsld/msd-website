@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="../assets/css/theme-v2.min.css?v=398e17b0">
   <link rel="stylesheet" href="../assets/css/sections-v2.min.css?v=a8a8c42a">
   <link rel="stylesheet" href="../assets/css/sector-v2.min.css?v=0b5e374c">
-  <link rel="stylesheet" href="../assets/css/pages-v2.min.css?v=2f5fde7d">
+  <link rel="stylesheet" href="../assets/css/pages-v2.min.css?v=5df07ddb">
 <!-- AI referrer detection — runs immediately, no consent required (aucun cookie) -->
 <script>
 (function(){
@@ -311,7 +311,7 @@ function _msdConsentSignal(state){
           "name": "Comment se passe le paiement ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Un acompte de 50 % à la signature du devis, le solde à la livraison. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet."
+            "text": "Un acompte de 50 % à la signature du devis, le solde à la livraison. Pour la Landing Page, vous pouvez aussi payer en 2 fois sans frais par carte bancaire : la moitié à la signature, l’autre moitié 30 jours plus tard. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet."
           }
         },
         {
@@ -456,9 +456,11 @@ function _msdConsentSignal(state){
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card1_f6">Tracking &amp; analytics installés</span></li>
               <li><i class="fa-solid fa-check"></i><span>Ajustements illimités jusqu’à validation</span></li>
               <li><i class="fa-solid fa-check"></i><span>1er mois de MSD Care Essentiel inclus</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Paiement en 2 fois sans frais</span></li>
             </ul>
             <a class="pricing-card__express" href="#landing-express" style="display:block;margin:0 0 14px;font-size:.85rem;color:var(--accent,#2f6bff);text-decoration:underline;text-underline-offset:3px">Besoin d’aller plus vite ? Landing Express, 2 990 € en 7 jours</a>
             <a class="pricing-card__cta" href="https://msd-media.com/reserver-un-appel/" data-i18n="tarifs_cta_call">Réserver un appel</a>
+            <a class="pricing-card__help" href="https://wa.me/33783141287" data-wa="tarifs" target="_blank" rel="noopener">Pas sûr de la formule ? Envoyez l’adresse de votre site sur WhatsApp, je vous dis laquelle prendre.</a>
           </div>
 
           <div class="pricing-card pricing-card--featured">
@@ -479,6 +481,7 @@ function _msdConsentSignal(state){
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card2_f6">Optimisation visibilité IA (ChatGPT, Perplexity)</span></li>
             </ul>
             <a class="pricing-card__cta" href="https://msd-media.com/reserver-un-appel/" data-i18n="tarifs_cta_call">Réserver un appel</a>
+            <a class="pricing-card__help" href="https://wa.me/33783141287" data-wa="tarifs" target="_blank" rel="noopener">Pas sûr de la formule ? Envoyez l’adresse de votre site sur WhatsApp, je vous dis laquelle prendre.</a>
           </div>
 
           <div class="pricing-card">
@@ -497,8 +500,11 @@ function _msdConsentSignal(state){
               <li><i class="fa-solid fa-check"></i><span data-i18n="tarifs_card3_f6">Accompagnement SEO continu</span></li>
             </ul>
             <a class="pricing-card__cta" href="https://msd-media.com/contact/" data-i18n="tarifs_cta_contact">Nous contacter</a>
+            <a class="pricing-card__help" href="https://wa.me/33783141287" data-wa="tarifs" target="_blank" rel="noopener">Pas sûr de la formule ? Envoyez l’adresse de votre site sur WhatsApp, je vous dis laquelle prendre.</a>
           </div>
         </div>
+
+        <p class="pricing-integrations">Intégration de vos outils : Doctolib, Planity, Calendly, Stripe, Shopify, Systeme.io.</p>
 
         <div class="pricing-card pricing-card--care" id="landing-express">
           <div class="pricing-care__head">
@@ -796,7 +802,7 @@ function _msdConsentSignal(state){
             <details class="faq__item"><summary>Quels sont les coûts après la création ?</summary><p data-i18n="tarifs_faq_q4_a">Comptez le nom de domaine (10-30 €/an) et l'hébergement. Un site codé sur-mesure comme les nôtres s'héberge quasi gratuitement et ne nécessite pas de maintenance lourde, contrairement à WordPress. Si vous préférez ne rien gérer, MSD Care s'occupe chaque mois de l'hébergement, des sauvegardes et des modifications, en trois niveaux dès 89 € par mois.</p></details>
           </div>
           <div class="faq__col">
-            <details class="faq__item"><summary>Comment se passe le paiement ?</summary><p data-i18n="tarifs_faq_q5_a">Un acompte de 50 % à la signature du devis, le solde à la livraison. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet.</p></details>
+            <details class="faq__item"><summary>Comment se passe le paiement ?</summary><p data-i18n="tarifs_faq_q5_a">Un acompte de 50 % à la signature du devis, le solde à la livraison. Pour la Landing Page, vous pouvez aussi payer en 2 fois sans frais par carte bancaire : la moitié à la signature, l’autre moitié 30 jours plus tard. Pour les projets sur-mesure, un échéancier peut être mis en place selon les étapes du projet.</p></details>
             <details class="faq__item"><summary>Le site m’appartient-il une fois livré ?</summary><p data-i18n="tarifs_faq_own_a">Oui. Le code source complet, le nom de domaine et tous les accès (hébergement, statistiques, outils connectés) vous sont remis dès le règlement du solde. Vous pouvez faire évoluer le site avec nous ou le confier à un autre prestataire.</p></details>
             <details class="faq__item"><summary>Que se passe-t-il si Maxens n’est pas disponible ?</summary><p data-i18n="tarifs_faq_backup_a">Votre site ne dépend pas de nous : il est codé en HTML, CSS et JavaScript standards, sans outil propriétaire, et vous disposez de tous les accès. N’importe quel développeur web peut donc le reprendre ou le modifier.</p></details>
           </div>
@@ -941,7 +947,7 @@ function _msdConsentSignal(state){
 
   <script src="../assets/js/theme-v2.min.js?v=21fcba7d" defer></script>
   <script src="../assets/js/home-v2.min.js?v=c37f6818" defer></script>
-  <script src="../assets/js/script.min.js?v=643692ab"></script>
+  <script src="../assets/js/script.min.js?v=dcf2d41e"></script>
   <script>
     (() => {
       const tabs = document.querySelectorAll('#currency-tabs .currency-tab');

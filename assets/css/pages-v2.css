@@ -276,3 +276,10 @@ body:not(.sector-page) main > :first-child .blog-article-cover:not(#_) { margin-
 .press-pitch-deck-cta__text a { color: var(--text-dark); text-decoration: underline; text-underline-offset: 3px; }
 /* Titres des parutions passés en h2 (pas de saut de niveau après le h1) : même taille qu'avant. */
 .press-card h2.press-card__title:not(#_) { margin: 0; font-size: 1.28rem; font-weight: 600; line-height: 1.25; letter-spacing: -0.02em; }
+
+/* Tarifs : aide au choix sous chaque formule et ligne des intégrations (2026-11-24) */
+.pricing-card__help { display: block; margin-top: .8rem; font-size: .82rem; line-height: 1.45; color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.pricing-card__help:hover { color: var(--heading); }
+.pricing-card--featured:not(#_) .pricing-card__help { color: rgba(255, 255, 255, .85); }
+.pricing-card--featured:not(#_) .pricing-card__help:hover { color: #fff; }
+.pricing-integrations { margin: 1.4rem 0 2rem; text-align: center; font-size: .95rem; color: var(--text); }

@@ -2378,3 +2378,59 @@ document.addEventListener("DOMContentLoaded", () => {
   var t;
   window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(sync, 200); });
 })();
+
+
+// WhatsApp : message pré-rempli selon la page (métier, réalisation, tarifs), pour que le visiteur n'ait
+// pas à chercher quoi écrire. Le HTML garde le lien nu (header et footer identiques partout) ; un lien
+// peut préciser son contexte avec data-wa="tarifs" | "projet" | "accueil".
+(function () {
+  var NUM = "https://wa.me/33783141287";
+  var path = window.location.pathname;
+  var en = /^\/en(\/|$)/.test(path) || document.documentElement.lang === "en";
+  var hi = en ? "Hi Maxens, " : "Bonjour Maxens, ";
+  var PROJETS = {
+    "agence-3xl": "Agence 3XL", "aristoi-academia": "Aristoi Academia", "carroz-sports": "Carroz Sports",
+    "em-motors": "EM Motors", "hairtattoo": "HairTattoo", "laurence-daien-maestripieri": "Laurence Daien-Maestripieri",
+    "marie-troccaz": "Marie Troccaz", "maxime-sciare": "Maxime Sciare", "merz-radiesse": "Radiesse",
+    "merz-ultherapy-prime": "Ultherapy Prime", "nation-startup": "Nation Startup"
+  };
+  var METIERS = {
+    "medecin": "je suis médecin et je voudrais un site pour mon cabinet.",
+    "dentiste": "je suis dentiste et je voudrais un site pour mon cabinet.",
+    "psychologue": "je suis psychologue et je voudrais un site pour mon cabinet.",
+    "dermatologue": "je suis dermatologue et je voudrais un site pour mon cabinet.",
+    "medecine-esthetique": "j'exerce en médecine esthétique et je voudrais un site pour mon cabinet.",
+    "chirurgie-esthetique": "je suis chirurgien esthétique et je voudrais un site.",
+    "centre-laser": "j'ai un centre laser et je voudrais un site.",
+    "coach": "je suis coach et je voudrais une page pour remplir mon agenda.",
+    "avocat": "je suis avocat et je voudrais un site pour mon cabinet.",
+    "architecte": "je suis architecte et je voudrais un site pour présenter mes projets.",
+    "artisan": "je suis artisan et je voudrais un site pour recevoir plus de demandes.",
+    "immobilier": "je travaille dans l'immobilier et je voudrais un site.",
+    "restaurant": "j'ai un restaurant et je voudrais un site."
+  };
+  var slug = function (re) { var m = path.match(re); return m ? m[1] : ""; };
+  var message = function (ctx) {
+    var projet = PROJETS[slug(/\/(?:realisations|work)\/([^\/]+)/)];
+    if (ctx === "projet" || (!ctx && projet)) {
+      if (projet) return hi + (en ? "I saw your " + projet + " project and I have a similar one." : "j'ai vu votre projet " + projet + " et j'ai un projet similaire.");
+    }
+    if (ctx === "tarifs" || /^\/(tarifs|en\/pricing)\//.test(path)) {
+      return hi + (en ? "I'm not sure which plan to choose. Here is my website: " : "je ne sais pas quelle formule choisir. Voici l'adresse de mon site : ");
+    }
+    if (!en) {
+      var metier = METIERS[slug(/^\/site-web-([^\/]+)\//)];
+      if (metier) return hi + metier;
+    }
+    if (/landing-page/.test(path)) return hi + (en ? "I'd like a landing page." : "je voudrais une landing page.");
+    return hi + (en ? "I'd like a website for my business." : "je voudrais un site pour mon activité.");
+  };
+  var apply = function () {
+    document.querySelectorAll('a[href^="' + NUM + '"]').forEach(function (a) {
+      if (a.getAttribute("href").indexOf("?") !== -1) return;
+      a.setAttribute("href", NUM + "?text=" + encodeURIComponent(message(a.getAttribute("data-wa"))));
+    });
+  };
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", apply);
+  else apply();
+})();

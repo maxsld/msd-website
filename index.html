@@ -41,7 +41,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Inter+Tight:wght@400..700&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/fontawesome-subset.min.css?v=eccfcc01">
   <link rel="stylesheet" href="assets/css/theme-v2.min.css?v=398e17b0">
-  <link rel="stylesheet" href="assets/css/home-v2.min.css?v=b7a1395a">
+  <link rel="stylesheet" href="assets/css/home-v2.min.css?v=a9c598d8">
   <link rel="stylesheet" href="assets/css/sections-v2.min.css?v=a8a8c42a">
   <script>document.documentElement.classList.add("js");</script>
 
@@ -750,14 +750,37 @@ function _msdConsentSignal(state){
         <h1>Sites web et landing pages sur <br> mesure, livrés en 21&nbsp;jours.</h1>
         <p class="hero__sub">Design, textes et référencement inclus.<br>Choisie par Merz Aesthetics pour deux lancements de produits. Dès 1&nbsp;990&nbsp;€.</p>
         <div class="hero__row">
-          <a class="btn btn--primary" href="https://msd-media.com/tarifs/">Voir les tarifs</a>
-          <a class="btn btn--secondary" href="https://msd-media.com/reserver-un-appel/">Réserver un appel</a>
+          <a class="btn btn--primary" href="https://msd-media.com/contact/" data-hero-quote aria-controls="hero-quote" aria-expanded="false">Recevoir mon devis sous 24&nbsp;h</a>
+          <a class="btn btn--secondary" href="https://wa.me/33783141287" data-wa="accueil" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>WhatsApp</a>
           <div class="hero__trust">
             <span><img width="146" height="220" class="hero__trust-ft" src="assets/img/logos/french-tech-full.webp" alt="French Tech Alpes">Membre French Tech</span>
             <span>Vu dans <img width="600" height="106" src="assets/img/logos/le-dauphine-libere.svg" alt="Le Dauphiné Libéré"></span>
             <span><svg class="flag-fr" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg>Basé en France</span>
           </div>
         </div>
+        <a class="hero__prices" href="https://msd-media.com/tarifs/">Voir les tarifs</a>
+        <form class="hero-quote" id="hero-quote" action="https://formspree.io/f/mkopvwap" method="POST" hidden>
+          <input type="hidden" name="_subject" value="Demande de devis sous 24 h (accueil)">
+          <input type="hidden" name="origine" value="accueil, formulaire devis 24 h">
+          <div class="hero-quote__fields">
+            <select name="besoin" required aria-label="Votre besoin">
+              <option value="" selected disabled>Votre besoin *</option>
+              <option value="landing-page">Une landing page</option>
+              <option value="site-vitrine">Un site vitrine</option>
+              <option value="refonte">La refonte de mon site</option>
+              <option value="autre">Autre</option>
+            </select>
+            <input name="site_actuel" type="text" inputmode="url" placeholder="Votre site actuel (facultatif)" aria-label="Adresse de votre site actuel">
+            <input name="contact" type="text" required placeholder="E-mail ou WhatsApp *" aria-label="Votre e-mail ou votre numéro WhatsApp">
+          </div>
+          <label class="hero-quote__consent"><input name="consentement_donnees" type="checkbox" value="accepté" required> <span>J'accepte la <a href="https://msd-media.com/terms/politique-confidentialite.html" target="_blank" rel="noopener noreferrer">politique de confidentialité</a> et le traitement de mes données pour cette demande.</span></label>
+          <div class="hero-quote__captcha"></div>
+          <div class="hero-quote__row">
+            <button type="submit" class="btn btn--primary">Recevoir mon devis</button>
+            <p class="hero-quote__note">Devis envoyé sous 24&nbsp;h ouvrées, par e-mail ou WhatsApp.</p>
+          </div>
+          <p class="hero-quote__status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
 
@@ -1394,9 +1417,58 @@ function _msdConsentSignal(state){
 </footer>
 
   <script src="assets/js/theme-v2.min.js?v=21fcba7d" defer></script>
+  <script>
+  (function () {
+    var btn = document.querySelector('[data-hero-quote]');
+    var form = document.getElementById('hero-quote');
+    if (!btn || !form) return;
+    var status = form.querySelector('.hero-quote__status');
+    var track = function (e, p) { if (typeof window.msdTrack === 'function') window.msdTrack(e, p || {}); };
+    var captchaLoaded = false;
+    var loadCaptcha = function () {
+      if (captchaLoaded) return; captchaLoaded = true;
+      var box = form.querySelector('.hero-quote__captcha');
+      box.innerHTML = '<div class="cf-turnstile" data-sitekey="0x4AAAAAACzTY9vZj2kS5nhl"></div>';
+      var sc = document.createElement('script');
+      sc.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js'; sc.async = true; sc.defer = true;
+      document.head.appendChild(sc);
+    };
+    btn.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      form.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
+      loadCaptcha();
+      track('quote_form_open', { form_id: 'hero-quote' });
+      var first = form.querySelector('select, input:not([type=hidden])');
+      if (first) first.focus({ preventScroll: false });
+    });
+    form.addEventListener('submit', async function (ev) {
+      ev.preventDefault();
+      var submit = form.querySelector('button[type=submit]');
+      var label = submit.textContent;
+      status.textContent = '';
+      var token = form.querySelector('input[name="cf-turnstile-response"]');
+      if (!token || !token.value) { status.textContent = "Veuillez valider le captcha avant d'envoyer."; return; }
+      submit.disabled = true; submit.textContent = 'Envoi...';
+      try {
+        var r = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+        if (r.ok) {
+          track('lead_submit_success', { form_id: 'hero-quote', provider: 'formspree' });
+          window.location.href = 'https://msd-media.com/confirmation-contact/';
+          return;
+        }
+        status.textContent = "Une erreur est survenue. Réessayez ou écrivez-moi sur WhatsApp.";
+      } catch (e) {
+        status.textContent = "Impossible d'envoyer la demande pour le moment. Écrivez-moi sur WhatsApp.";
+      }
+      if (window.turnstile && typeof window.turnstile.reset === 'function') window.turnstile.reset();
+      submit.disabled = false; submit.textContent = label;
+    });
+  })();
+  </script>
   <script src="assets/js/home-v2.min.js?v=c37f6818" defer></script>
   <script src="assets/js/chat-widget.min.js?v=f18c9a50" defer></script>
-<script src="assets/js/script.min.js?v=643692ab" defer></script>
+<script src="assets/js/script.min.js?v=dcf2d41e" defer></script>
 <script>
   (function () {
     var CAL_BASE = "https://cal.com/maxens-soldan-msd-media/30min";

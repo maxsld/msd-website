@@ -1,4 +1,4 @@
-✅ Agence SEO · mar. 17 nov.
-Verdict : même relevé qu'hier (82 clics sur 28 jours, 43 visites Google et 0 demande) : le maillon faible reste la conversion, et toutes les pages qui portent du trafic sont gelées jusqu'aux bilans du 20 au 26 novembre.
-Fait : rien à corriger cette semaine, on attend les bilans. Vos consignes du jour (questions longues, passage à 2027) sont intégrées : briefs 2027 les 23 et 30 novembre, exécution à partir du 30.
+✅ Agence SEO · lun. 23 nov.
+Verdict : le site est plus vu (7 517 impressions) et garde 79 clics, mais 5 clics seulement hors marque et 0 demande pour 38 visites Google ; l'offre landing page recule depuis la fusion du 10 novembre (toujours 4 impressions seulement sur la page cible).
+Fait : page landing page relancée (réponse directe, question « quelle agence choisir », 3 liens entrants, renvois de l'article prix corrigés), référence Belotero retirée de la page médecine esthétique, lien création → refonte Annecy pour régler leur concurrence ; 10 bilans rendus (2 gardés, 1 à corriger le 14 déc., 7 prolongés), briefs 2027 écrits. Test de conversion de l'article avis Google reporté au 30 nov.
 À toi : rien cette semaine.

@@ -113,7 +113,7 @@ Optimiser pour l'intention de recherche signifie aligner chaque page sur ce que 
 
 Une landing page qui traite d'une seule offre pour une seule cible convertit systématiquement mieux qu'une page généraliste. Si vous avez plusieurs services distincts, chacun mérite sa propre page — avec sa propre hero section, ses propres preuves sociales et son propre CTA.
 
-C'est la différence fondamentale entre un site vitrine classique et un site conçu pour générer des leads. MSD Media est spécialisée dans la création de landing pages à fort taux de conversion.
+C'est la différence fondamentale entre un site vitrine classique et un site conçu pour générer des leads. MSD Media est spécialisée dans la [création de landing pages](https://msd-media.com/creation-landing-page/) à fort taux de conversion.
 
 ---
 

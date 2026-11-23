@@ -54,9 +54,14 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 - `/blog/articles/10-erreurs-creation-site-web-annecy/` : « description":"Les dix erreurs qui reviennent systématiquement dans les projets de site web, ce qu'elles coûtent vraiment et comment les éviter dès le départ. »
 - … et 8 autre(s)
 
-### Note sur 5 attribuée à MSD Media (2)
+### Note sur 5 attribuée à MSD Media (7)
+- `/creation-landing-page/` : « Chaque avis Trustpilot est noté 5 / 5."}}, {"@type": "Question »
+- `/creation-landing-page/` : « Chaque avis Trustpilot est noté 5 / 5. »
+- `/en/landing-page-design/` : « Each Trustpilot review is rated 5 / 5." »
+- `/en/landing-page-design/` : « Each Trustpilot review is rated 5 / 5. »
 - `/blog/articles/agence-landing-page-site-web-france-msd-media/` : « Chaque avis Trustpilot est noté 5 / 5. »
 - `blog/sources/agence-landing-page-site-web-france-msd-media.md` : « **Chaque avis Trustpilot est noté 5 / 5.** [Voir les avis sur Trustpilot](https://www.trustpilot.com/review/msd-media.com) »
+- `data/services.json` : « Chaque avis Trustpilot est noté 5 / 5.</p>" »
 
 ### Numéro 1 (16)
 - `/blog/articles/refonte-site-internet-guide-2026/` : « Règle simple : si votre site reçoit déjà du trafic organique significatif, la protection de ce trafic devient la priorité n°1 du projet — avant le design. »
@@ -75,7 +80,7 @@ Relevé automatique de `scripts/check-verite.py`, à comparer au registre `seo-p
 
 ## Tirets cadratins dans le texte visible
 
-944 tirets dans 106 fichiers. On les retire quand on retouche une page pour une autre raison (deux phrases, ou deux-points), jamais en passe globale. Les plus touchés :
+943 tirets dans 106 fichiers. On les retire quand on retouche une page pour une autre raison (deux phrases, ou deux-points), jamais en passe globale. Les plus touchés :
 
 - `/blog/articles/copywriting-web-2026-textes-qui-convertissent/` : 30
 - `blog/sources/copywriting-web-2026-textes-qui-convertissent.md` : 30

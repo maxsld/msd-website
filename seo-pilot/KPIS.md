@@ -34,6 +34,9 @@ Deux leviers multiplient le résultat : **plus de clics** (positions et taux de 
 
 ## Sources des chiffres
 
+- **Panel de visiteurs simulés** (`seo-pilot/data/panel.md`) : **ce n'est pas une source de chiffres**. Il donne des objections et des hypothèses, jamais un taux. Il ne compte dans aucun indicateur de ce fichier.
+- **Canaux** (Google, IA, LinkedIn, direct) : section « Visites et demandes par canal » de `seo-pilot/data/latest.md` (GA4, minimums), et source déclarée dans Cal.com (`ventes-pilot/journal.md`), qui fait foi pour les réservations.
+
 - **Clics et positions** : Search Console, complète (`seo-pilot/data/latest.md`).
 - **Leads et intentions** : GA4. Ce ne sont que des minimums : GA4 ne voit que les visiteurs qui acceptent les cookies, environ la moitié d'après la comparaison avec la Search Console. On estime les leads réels à environ 2 fois les leads GA4.
 - **Comportement sur les pages** : Microsoft Clarity (`seo-pilot/data/clarity.md`) : défilement, temps actif, clics morts et de rage, retours rapides. Il explique le maillon « visites → intentions ». Même limite que GA4 : seuls les visiteurs qui acceptent les cookies.

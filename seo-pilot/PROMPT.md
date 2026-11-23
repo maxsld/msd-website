@@ -37,6 +37,7 @@ Lance en parallèle tout ce qui est indépendant. Chaque agent reçoit un brief 
 5. `seo-pilot/data/latest.md` : le relevé Search Console et GA4 de la semaine, avec la mesure avant / après de chaque changement récent (« Tests en cours »). Les relevés précédents (`seo-pilot/data/AAAA-MM-JJ.json`) donnent l'historique par page et par requête. Le relevé est fait le dimanche soir : **s'il date de plus de 2 jours, il est périmé**. Tu l'écris dans le verdict et le rapport (« relevé périmé »), et tu ne prends aucune décision fondée sur ses chiffres (bilans, retraits, choix de page) ; seules les corrections de vérité ci-dessous restent permises.
 5 bis. `seo-pilot/data/quotidien.md` : la veille quotidienne Search Console, mise à jour chaque matin (demande de Maxens du 2026-11-21). Elle montre les 28 derniers jours jour par jour et classe chaque écart des 7 derniers jours complets : « bruit » (variation portée par des pages au-delà de la position 30, ou retour à la normale après un pic), « à suivre » ou « confirmée » (3 jours complets d'affilée sous 75 % de la normale). Seule une alerte **confirmée** justifie une action : l'`analyste-data` en cherche la cause (page désindexée, changement du journal, requête perdue, problème technique) et la correction passe avant les optimisations du passage. Une alerte « bruit » ou « à suivre » ne change aucune décision ; elle se mentionne au plus en quelques mots dans « Verdict », jamais comme une chute.
 6. `seo-pilot/data/clarity.md` : ce que font les visiteurs (défilement, clics morts, retours rapides).
+6 bis. `seo-pilot/data/panel.md` : le panel de visiteurs simulés du dimanche (`seo-pilot/PANEL.md`, décision de Maxens du 2026-11-24). 40 prospects fictifs venus de Google, des IA, de LinkedIn ou du bouche-à-oreille lisent les pages et rendent leurs objections, les phrases qui bloquent et les questions sans réponse. C'est un **avis simulé, jamais une mesure** : il ne justifie à lui seul aucune modification, n'entre ni dans le verdict chiffré, ni dans le scorecard, ni dans le rapport Telegram. Il sert à trois choses : (a) départager deux pages que les vrais chiffres ne départagent pas ; (b) donner au `specialiste-conversion` l'hypothèse de son test, que les vrais chiffres jugent à 21 jours ; (c) une question sans réponse qui revient chez au moins 3 profils, ou 2 semaines de suite, se traite comme une question longue utile du point 10 (réponse directe sur la page où elle se posait). Une objection sur l'accueil va dans « À toi ». Si `panel-calibration.md` dit `non fiable`, ignore le panel. S'il date de plus de 2 jours, ignore-le.
 7. `seo-pilot/data/prompts-ia.md` : la couverture des prompts IA.
 8. `seo-pilot/journal.md` : tout ce qui a été changé, les bilans, les refus et les retraits passés.
 9. `seo-pilot/FAITS.md` et `seo-pilot/data/verite.md` : ce que le site a le droit d'affirmer sur MSD Media, et les écarts relevés (prix hors `/tarifs/`, délai dit contractuel, preuves à confirmer). Un écart bloquant dans une page que l'agence peut modifier se corrige en priorité, avant toute optimisation (il compte dans les 3 pages du passage) ; un écart dans l'accueil, `llms.txt`, les CGV ou une page en test va dans « À toi ». Un client, Merz en premier, n'est jamais le titre ni le sujet principal d'un article ; il peut l'illustrer dans le corps, avec les faits de sa page de réalisation (décision de Maxens du 2026-11-16, voir RULES.md).
@@ -52,7 +53,7 @@ Lance en parallèle tout ce qui est indépendant. Chaque agent reçoit un brief 
 
 1. **Analyse**, en parallèle :
    - `analyste-data` : bilans des entrées de 21 jours ou plus, conflits de cannibalisation, opportunités classées, et **candidats au retrait** selon les critères de la section « Retirer ou fusionner une page » ;
-   - `specialiste-conversion` : page à faible conversion, diagnostic, bilans des tests de 21 jours ou plus ;
+   - `specialiste-conversion` : page à faible conversion, diagnostic, bilans des tests de 21 jours ou plus ; donne-lui les objections et questions de `panel.md` qui portent sur les pages candidates ;
    - `responsable-editorial`, les 1er et 3e lundis : choix et brief de l'article santé (sans rédiger encore) ;
    - toi, avec OpenSEO (`OUTILS.md`) : données de la requête de l'article ; le 1er lundi du mois, paysage concurrentiel, backlinks, visibilité IA et local ;
    - le 1er lundi du mois, en plus : `technicien`, `specialiste-ia` (citations IA et entité), `auditeur-accessibilite`, et la revue éditoriale du `responsable-editorial`.
@@ -119,6 +120,9 @@ En plus du passage normal, tu écris `seo-pilot/audit-mensuel.md` (tu remplaces 
 
 ## Requêtes qui comptent
 | Requête | Volume (OpenSEO) | Position | Impressions | Clics | Page | Lecture |
+
+## Canaux et panel
+<La section « Visites et demandes par canal » de latest.md (Google, IA, LinkedIn, direct) face au mois précédent, et les rendez-vous par source déclarée dans Cal.com (ventes-pilot/journal.md). Puis une ligne sur le panel : statut de panel-calibration.md, et l'objection du mois qui a donné lieu à un test, avec son bilan s'il existe.>
 
 ## Autorité
 <Domaines référents (OpenSEO) et leur qualité, avis Google et Trustpilot, mentions dans les comparatifs tiers et les réponses IA. Une seule opportunité de lien ou de mention précise et faisable, avec qui contacter et quoi demander.>

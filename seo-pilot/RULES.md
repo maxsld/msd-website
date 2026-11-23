@@ -40,3 +40,7 @@ Améliorer la conversion d'une page est permis et encouragé : réponse plus net
 ## Style
 
 Français clair, phrases courtes, vouvoiement du visiteur, pas de superlatifs creux ni de jargon inutile. Pas de tiret cadratin pour relier deux idées : deux phrases, ou deux-points.
+
+## Panel de visiteurs simulés (décision de Maxens du 2026-11-24)
+
+Le panel du dimanche (`seo-pilot/PANEL.md`) est un avis simulé de prospects fictifs. Aucun de ses chiffres n'est une donnée : il n'apparaît ni dans le scorecard, ni dans les KPI, ni dans un rapport à Maxens comme une mesure, et il ne justifie à lui seul aucune modification. Une objection du panel est une hypothèse, testée puis jugée avec les vrais chiffres (Search Console, GA4, Clarity, Cal.com). Le panel ne crée aucune page : une question sans réponse se traite sur une page existante. Les agents `visiteur-panel` ne lisent jamais les documents internes de l'agence.

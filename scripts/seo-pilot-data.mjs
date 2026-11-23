@@ -90,6 +90,10 @@ if (process.env.GA4_PROPERTY_ID) {
         events: await ga4(period, { dimensions: [{ name: 'eventName' }, { name: 'sessionDefaultChannelGroup' }], metrics: [{ name: 'eventCount' }], dimensionFilter: eventsIn([...LEAD_EVENTS, ...INTENT_EVENTS]) }),
         landing: await ga4(period, { dimensions: [{ name: 'landingPage' }], metrics: [{ name: 'sessions' }], dimensionFilter: organic, limit: 20 }),
         leadPages: await ga4(period, { dimensions: [{ name: 'landingPage' }, { name: 'eventName' }], metrics: [{ name: 'eventCount' }], dimensionFilter: { andGroup: { expressions: [organic, eventsIn([...LEAD_EVENTS, ...INTENT_EVENTS])] } } }),
+        // Par source et support, pour isoler les IA (chatgpt.com, perplexity.ai…) et LinkedIn,
+        // que le regroupement par défaut de GA4 noie dans « Referral » et « Organic Social ».
+        sources: await ga4(period, { dimensions: [{ name: 'sessionSource' }, { name: 'sessionMedium' }], metrics: [{ name: 'sessions' }] }),
+        sourceEvents: await ga4(period, { dimensions: [{ name: 'sessionSource' }, { name: 'sessionMedium' }, { name: 'eventName' }], metrics: [{ name: 'eventCount' }], dimensionFilter: eventsIn([...LEAD_EVENTS, ...INTENT_EVENTS]) }),
       };
     } catch (e) {
       console.warn(`GA4 indisponible (${name}) : ${e.message}`);
@@ -205,6 +209,41 @@ if (g('current')) {
     const ev = g('current').leadPages.filter((x) => x.keys[0] === r.keys[0]);
     const n = (names) => ev.filter((x) => names.includes(x.keys[1])).reduce((s, x) => s + x.value, 0);
     lines.push(`| ${r.keys[0]} | ${r.value} | ${n(INTENT_EVENTS)} | ${n(LEAD_EVENTS)} |`);
+  }
+  // Canaux : d'où viennent les visites et les demandes, tous canaux confondus.
+  // Les liens LinkedIn portent utm_source=linkedin (voir contenu-pilot/RULES.md).
+  const CHANNELS = [
+    ['IA (ChatGPT, Perplexity, Gemini, Copilot, Claude)', (src) => /chatgpt|openai|perplexity|gemini|bard|copilot|claude\.ai|anthropic|you\.com|mistral|deepseek/i.test(src)],
+    ['LinkedIn', (src) => /linkedin|lnkd/i.test(src)],
+    ['Google (recherche)', (src, med) => /google/i.test(src) && med === 'organic'],
+    ['Autres moteurs', (src, med) => med === 'organic'],
+    ['Autres réseaux', (src, med) => /facebook|instagram|^ig$|t\.co|twitter|x\.com|youtube|tiktok|reddit|whatsapp|telegram/i.test(src) || med === 'social'],
+    ['Direct ou inconnu', (src) => src === '(direct)' || src === '(not set)'],
+    ['Autres sites (liens, annuaires, Trustpilot…)', () => true],
+  ];
+  const channelOf = (src, med) => CHANNELS.find(([, test]) => test(src, med))[0];
+  const byChannel = (name) => {
+    const out = new Map(CHANNELS.map(([c]) => [c, { visits: 0, intents: 0, leads: 0, sources: new Map() }]));
+    for (const r of g(name)?.sources || []) {
+      const c = out.get(channelOf(r.keys[0], r.keys[1]));
+      c.visits += r.value; c.sources.set(r.keys[0], (c.sources.get(r.keys[0]) || 0) + r.value);
+    }
+    for (const r of g(name)?.sourceEvents || []) {
+      const c = out.get(channelOf(r.keys[0], r.keys[1]));
+      if (LEAD_EVENTS.includes(r.keys[2])) c.leads += r.value; else c.intents += r.value;
+    }
+    return out;
+  };
+  if (g('current').sources) {
+    const cur = byChannel('current'), prev = byChannel('previous');
+    lines.push('', '## Visites et demandes par canal (GA4, 28 jours, tous canaux)', '',
+      '| Canal | Visites | Avant | Intentions | Leads | Principales sources |', '|---|---|---|---|---|---|');
+    for (const [c, v] of cur) {
+      if (!v.visits && !prev.get(c).visits && !v.intents && !v.leads) continue;
+      const top = [...v.sources].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([s, n]) => `${s} (${n})`).join(', ');
+      lines.push(`| ${c} | ${v.visits} | ${prev.get(c).visits} | ${v.intents} | ${v.leads} | ${top || '-'} |`);
+    }
+    lines.push('', '_Une IA qui cite le site sans qu\'on clique ne laisse aucune trace ici : voir `seo-pilot/IA-CITATIONS.md`. La source déclarée dans le questionnaire Cal.com (bilan mensuel de `ventes-pilot/journal.md`) reste la mesure de référence des réservations par canal._');
   }
 }
 

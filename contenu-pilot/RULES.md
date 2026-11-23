@@ -19,6 +19,7 @@ L'équipe rédige et enregistre le post dans le dashboard (onglet LinkedIn → P
 - Le texte respecte la **check-list avant publication** du playbook (`playbook.preflight`) et le **squelette du type** (`playbook.templates`).
 - Le style imite les **meilleurs posts de Maxens** (`bestPosts`) : même façon de parler, même longueur de phrases, même mise en page. Pas de ton « gourou », pas d'émojis en liste, pas de hashtags en rafale (3 au plus, ou aucun), pas de « Et vous, qu'en pensez-vous ? » en fin de post.
 - Un lien externe se met en commentaire, pas dans le post (sauf si le playbook dit le contraire).
+- **Tout lien vers msd-media.com porte un marqueur de source**, pour que GA4 sache que la visite vient de LinkedIn : `?utm_source=linkedin&utm_medium=social&utm_campaign=post-AAAA-MM-JJ` (date de publication), ajouté à la fin de l'URL (`&` au lieu de `?` si l'URL a déjà un `?`, et avant un éventuel `#`). Exemple : `https://msd-media.com/tarifs/?utm_source=linkedin&utm_medium=social&utm_campaign=post-2026-11-25`.
 
 ## Écrire comme Maxens parle
 

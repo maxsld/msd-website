@@ -1,16 +1,11 @@
 # Veille quotidienne Search Console
 
-Mise à jour le 2026-11-22 (workflow seo-quotidien.yml, chaque matin). Jours complets jusqu'au 2026-11-19 ; les jours suivants sont provisoires (Search Console les complète en 2 à 3 jours) et ne déclenchent pas d'alerte.
+Mise à jour le 2026-11-23 (workflow seo-quotidien.yml, chaque matin). Jours complets jusqu'au 2026-11-20 ; les jours suivants sont provisoires (Search Console les complète en 2 à 3 jours) et ne déclenchent pas d'alerte.
 
 Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affilée sous 75 % de la médiane des 14 jours précédents, hors bruit) justifie une action le lundi. Une alerte « bruit » ou « à suivre » se mentionne au plus en une ligne dans le compte rendu, jamais comme une chute.
 
 ## Alertes des 7 derniers jours complets
 
-- **info** · 2026-11-13 : 293 impressions contre 217 d'habitude (+35 %), 1 clic(s), position 35.6. Hausse.
-  - /outils/audit-site/ : 0 → 45 impressions, position 78 → 73
-  - /agence-web-strasbourg/ : 10 → 38 impressions, position 34 → 52
-  - /agence-web-clermont-ferrand/ : 29 → 38 impressions, position 45 → 51
-  - /en/work/merz-ultherapy-prime/ : 1 → 7 impressions, position 14 → 8
 - **info** · 2026-11-14 : 308 impressions contre 244 d'habitude (+26 %), 1 clic(s), position 36.3. Hausse.
   - /outils/audit-site/ : 6 → 57 impressions, position 78 → 66
   - /agence-web-clermont-ferrand/ : 33 → 61 impressions, position 46 → 45
@@ -31,8 +26,9 @@ Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affil
 
 | Jour | Impressions | Clics | Position | Ordinateur | Mobile | Au-delà de la pos. 30 |
 |---|---|---|---|---|---|---|
-| 2026-11-21 (provisoire) | 172 | 1 | 33.9 | 135 | 36 | 109 |
-| 2026-11-20 (provisoire) | 240 | 2 | 29.6 | 176 | 62 | 121 |
+| 2026-11-22 (provisoire) | 213 | 0 | 31.7 | 172 | 40 | 116 |
+| 2026-11-21 (provisoire) | 202 | 1 | 34.1 | 161 | 40 | 130 |
+| 2026-11-20 | 240 | 2 | 29.6 | 176 | 62 | 121 |
 | 2026-11-19 | 285 | 0 | 28.2 | 220 | 64 | 135 |
 | 2026-11-18 | 416 | 1 | 30.6 | 341 | 71 | 310 |
 | 2026-11-17 | 354 | 3 | 30.8 | 276 | 76 | 233 |
@@ -58,4 +54,3 @@ Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affil
 | 2026-10-28 | 223 | 2 | 19.4 | 165 | 58 | 68 |
 | 2026-10-27 | 194 | 2 | 19.5 | 150 | 42 | 54 |
 | 2026-10-26 | 212 | 6 | 19.4 | 163 | 49 | 55 |
-| 2026-10-25 | 176 | 3 | 15.5 | 122 | 53 | 23 |

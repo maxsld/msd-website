@@ -18,6 +18,8 @@
 .hero__trust img { height: 22px; width: auto; }
 .hero__trust img.hero__trust-ft { height: 38px; }
 .hero__trust svg { width: 18px; height: 18px; }
+.hero__trust-link { display: inline-flex; align-items: center; gap: .55rem; color: inherit; text-decoration: none; }
+.hero__trust-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .hero__trust svg.flag-fr { width: 21px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(4, 8, 21, .12); }
 .recent { padding-top: 110px; }
 .recent__strip { overflow: hidden; }

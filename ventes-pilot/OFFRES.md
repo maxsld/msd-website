@@ -14,6 +14,7 @@ Seule source autorisée pour les prix, délais et preuves cités dans une fiche 
 | **MSD Care Suivi** | 190 € par mois | dès la mise en ligne | Sites qui changent souvent leurs offres, tarifs ou horaires : Essentiel + modifications incluses jusqu'à 1 h par mois, en ligne sous 48 h ouvrées ; journal daté de chaque intervention ; rapport des visites et des demandes ; réponse sous 24 h ouvrées |
 | **MSD Care Marque** | sur devis | dès la mise en ligne | Marques, laboratoires : Suivi + modifications prioritaires, validation de chaque texte par le client avant mise en ligne, historique des versions, suivi de conformité mensuel (santé, dispositifs médicaux, mentions légales, cookies, accessibilité), point mensuel en visio |
 | **Option SEO** | sur devis, hors grille | après 3 à 6 mois de rapports | Contenus SEO mensuels, rapport de positions et de visibilité IA, en complément de Suivi ou Marque. Ne la proposer qu'avec un cas chiffré à montrer |
+| **Option Assistant IA** | 390 € de mise en place, puis 29 € par mois | sur n'importe quel niveau MSD Care | Assistant sur le site, entraîné sur les questions fréquentes du client ; oriente vers le formulaire ou l'agenda ; en santé, jamais d'avis médical ni de donnée de santé. Une raison de plus de garder MSD Care. |
 
 MSD Care (page `https://msd-media.com/tarifs/msd-care/`, CGV article 5 bis) : engagement de 3 mois pour les trois niveaux, puis préavis d'un mois ; changement de niveau possible à la fin de chaque mois ; modifications non utilisées non reportées (12 mois pour Essentiel, le mois pour Suivi) ; clause de continuité. Avec une landing, le 1er mois d'Essentiel est inclus et sans engagement : prévenir le client 7 jours avant sa fin (puis 89 € par mois, résiliable avec un mois de préavis). Pour les autres projets, proposer Essentiel à chaque livraison, systématiquement ; Suivi aux clients qui changent souvent leurs offres, tarifs ou horaires ; Marque aux marques et laboratoires (circuit de relecture réglementaire) ; l'option SEO seulement après 3 à 6 mois de rapports. Objections connues et réponses : « mon site est neuf » → hébergement, domaine, certificat, sauvegardes et surveillance restent à gérer ; « je ne vois pas ce qui est fait » → rapport mensuel, et journal daté avec Suivi ; « je modifie deux fois par an » → 2 modifications par an incluses dans Essentiel ; « et si vous disparaissez » → clause de continuité des CGV (accès, code, documentation remis).
 
@@ -30,7 +31,7 @@ Le délai court à compter de la réception des éléments du client : « versio
 
 ## Paiement (CGV, article 4)
 
-Acompte de 50 % à la signature du devis, solde de 50 % à la livraison après validation du site. Échéancier possible pour les projets sur mesure. Virement, 30 jours.
+Acompte de 50 % à la signature du devis, solde de 50 % à la livraison après validation du site. Échéancier possible pour les projets sur mesure. Virement, 30 jours. Landing Page : paiement en 2 fois sans frais par carte possible (Stripe), la moitié à la signature, l'autre moitié 30 jours plus tard. Devis envoyé sous 24 h ouvrées après une demande par le formulaire de l'accueil.
 
 ## Preuves (à choisir selon le secteur du prospect)
 

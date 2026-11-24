@@ -82,7 +82,7 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 - Fondateur développeur-consultant unique : un seul interlocuteur du brief à la mise en ligne
 - SEO et GEO intégrés dès la conception : schema markup, Core Web Vitals, llms.txt, robots.txt IA
 - Zone géographique étendue : clients en France, Suisse et Belgique, siège à Annecy (74)
-- Maintenance en option avec MSD Care, en trois niveaux (engagement de 3 mois puis préavis d'un mois) : Essentiel (hébergement, surveillance, sauvegardes, rapport mensuel, 2 modifications par an), Suivi (en plus, modifications incluses jusqu'à 1 h par mois et journal daté des interventions), Marque (en plus, validation de chaque texte par le client, historique des versions, suivi de conformité santé et légal, point mensuel). Option SEO sur devis. Clause de continuité : à la fin de MSD Care, le client reçoit les accès, le code source et la documentation.
+- Maintenance en option avec MSD Care, en trois niveaux (engagement de 3 mois puis préavis d'un mois) : Essentiel (hébergement, surveillance, sauvegardes, rapport mensuel, 2 modifications par an), Suivi (en plus, modifications incluses jusqu'à 1 h par mois et journal daté des interventions), Marque (en plus, validation de chaque texte par le client, historique des versions, suivi de conformité santé et légal, point mensuel). Option SEO sur devis. Option Assistant IA : un assistant sur le site, entraîné sur les questions fréquentes du client (détails sur la page MSD Care). Clause de continuité : à la fin de MSD Care, le client reçoit les accès, le code source et la documentation.
 
 ## Preuves sociales
 

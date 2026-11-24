@@ -13,6 +13,12 @@ Hors entrées : le 2026-11-22, Maxens confie à l'équipe les suites de l'audit 
 
 ## Entrées
 
+### 2026-11-24 : option Assistant IA de MSD Care, liens French Tech et Dauphiné (décision de Maxens)
+- Changement : /tarifs/msd-care/ (FR et EN) : carte « Assistant IA » (390 € de mise en place, 29 € par mois, en option sur les trois niveaux), offre dans le JSON-LD, question de FAQ (visible et JSON-LD). Sur les 33 pages qui affichent le bandeau de confiance du haut de page : « Membre French Tech » renvoie vers la fiche de l'annuaire French Tech Alpes, « Vu dans Le Dauphiné » vers l'article du Dauphiné Libéré.
+- Avant : options MSD Care limitées à l'Option SEO ; badges non cliquables.
+- Hypothèse : l'option donne une raison de plus de garder MSD Care ; les badges cliquables rendent la preuve vérifiable. Pas d'effet SEO attendu.
+- Type : `offre`
+
 ### 2026-11-24 : parcours de contact plus léger (décision de Maxens)
 - Changement : accueil, haut de page : le bouton principal « Voir les tarifs » devient « Recevoir mon devis sous 24 h » (formulaire de 3 champs sur la page : besoin, site actuel, e-mail ou WhatsApp, envoi Formspree, redirection vers /confirmation-contact/) ; « Réserver un appel » quitte le haut de page (bouton WhatsApp ajouté puis retiré le même jour à la demande de Maxens ; l'appel reste dans le menu) ; « Voir les tarifs » passe en bouton secondaire (lien texte le 2026-11-24, remis en bouton le même jour à la demande de Maxens). H1 et sous-titre inchangés. WhatsApp pré-rempli sur tout le site par `assets/js/script.js` (message selon le métier, la réalisation, les tarifs, FR/EN ; HTML du header et du footer inchangé). Bouton « Projet similaire ? WhatsApp » sur les 11 études de cas (FR et EN). /tarifs/ : lien « Pas sûr de la formule ? … WhatsApp » sous les 3 formules, « Paiement en 2 fois sans frais » sur la Landing Page (carte et FAQ paiement), ligne « Intégration de vos outils : Doctolib, Planity, Calendly, Stripe, Shopify, Systeme.io. ». CGV article 4 : paiement en 2 fois par Stripe (FR et EN). /contact/ : secteurs Coach ou consultant, PME, Formation ajoutés, message facultatif. /a-propos/ : « en parallèle de ses études à Polytech » remplacé par Munich, à distance, réponse aux demandes de devis sous 24 h ouvrées. /confirmation-contact/ : phrase vers l'appel. Faits ajoutés à FAITS.md.
 - Avant : seule porte d'entrée, l'appel de 30 minutes ; bouton principal de l'accueil vers /tarifs/, la page la plus quittée.

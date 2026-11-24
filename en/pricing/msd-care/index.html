@@ -264,6 +264,20 @@ function _msdConsentSignal(state){
           },
           {
             "@type": "Offer",
+            "name": "AI Assistant add-on",
+            "description": "An assistant on the website trained on the client's frequently asked questions, available as an add-on to Essential, Active or Brand. Setup €390, then €29 per month.",
+            "price": "29",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "29",
+              "priceCurrency": "EUR",
+              "unitText": "MONTH"
+            },
+            "url": "https://msd-media.com/en/pricing/msd-care/#assistant-ia"
+          },
+          {
+            "@type": "Offer",
             "name": "MSD Care Brand",
             "description": "For brands and laboratories, on quote. Everything in Active; Changes on request, handled first; Every text approved by your review before going live; Version history of every page; Monthly compliance review: healthcare and medical device communication rules, legal notice, cookies, accessibility; Monthly video call with Maxens. 3-month minimum, then cancellable with one month's notice.",
             "url": "https://msd-media.com/en/pricing/msd-care/"
@@ -336,6 +350,14 @@ function _msdConsentSignal(state){
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Every month, a review of the website content against healthcare and medical device communication rules, the legal notice, the cookie banner and accessibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the AI Assistant do, and what doesn't it do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It answers your visitors' practical questions using answers we prepare with you: hours, prices, access, how an appointment works. When a question goes beyond that, it points to your form or your calendar. On a healthcare website, it never gives medical advice and never asks for health data. It is added to Essential, Active or Brand: €390 setup, then €29 per month."
           }
         },
         {
@@ -538,6 +560,26 @@ function _msdConsentSignal(state){
           </ul>
         </div>
 
+        <div class="pricing-card pricing-card--care" id="assistant-ia">
+          <div class="pricing-care__head">
+            <span class="pricing-card__badge">Optional</span>
+            <h3 class="pricing-card__title">AI Assistant</h3>
+            <p class="pricing-card__desc">An assistant on your website that answers your visitors day and night, using your own answers. Available with Essential, Active or Brand.</p>
+            <div class="pricing-card__price-row">
+              <span class="pricing-card__price" data-eur="29 €" data-usd="$32">29 €</span>
+              <span class="pricing-card__price-from">per month, after a €390 setup</span>
+            </div>
+            <a class="pricing-card__cta" href="https://msd-media.com/en/book-a-call/">Talk about it</a>
+          </div>
+          <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i><span>Setup: we train it on your clients' frequently asked questions</span></li>
+              <li><i class="fa-solid fa-check"></i><span>It answers questions about your hours, prices, access and booking</span></li>
+              <li><i class="fa-solid fa-check"></i><span>It points to your form or your calendar when the question calls for it</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Its answers are updated when your business changes</span></li>
+              <li><i class="fa-solid fa-check"></i><span>For healthcare: never any medical advice, and it never asks for health data</span></li>
+          </ul>
+        </div>
+
         <div class="pricing-card pricing-card--care" id="conditions">
           <div class="pricing-care__head">
             <span class="pricing-card__badge">Terms</span>
@@ -666,6 +708,7 @@ function _msdConsentSignal(state){
             <details class="faq__item"><summary>What happens if I don't use my changes?</summary><p>They are not carried over: Essential's 2 changes cover each 12-month period, Active's hour covers the current month. Beyond that, a change is quoted separately.</p></details>
             <details class="faq__item"><summary>What if MSD Media stops?</summary><p>The website is yours. The continuity clause in our terms of sale says that when MSD Care ends, whatever the reason, you receive the access, the source code and documentation to hand the site over to another provider.</p></details>
             <details class="faq__item"><summary>What does the Brand compliance review cover?</summary><p>Every month, a review of the website content against healthcare and medical device communication rules, the legal notice, the cookie banner and accessibility.</p></details>
+            <details class="faq__item"><summary>What does the AI Assistant do, and what doesn't it do?</summary><p>It answers your visitors' practical questions using answers we prepare with you: hours, prices, access, how an appointment works. When a question goes beyond that, it points to your form or your calendar. On a healthcare website, it never gives medical advice and never asks for health data. It is added to Essential, Active or Brand: €390 setup, then €29 per month.</p></details>
             <details class="faq__item"><summary>Is MSD Care mandatory?</summary><p>No. The website belongs to you, and a custom-coded site needs little upkeep. MSD Care is an option for those who would rather hand everything over after launch.</p></details>
           </div>
         </div>

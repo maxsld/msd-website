@@ -1,16 +1,11 @@
 # Veille quotidienne Search Console
 
-Mise à jour le 2026-11-23 (workflow seo-quotidien.yml, chaque matin). Jours complets jusqu'au 2026-11-20 ; les jours suivants sont provisoires (Search Console les complète en 2 à 3 jours) et ne déclenchent pas d'alerte.
+Mise à jour le 2026-11-24 (workflow seo-quotidien.yml, chaque matin). Jours complets jusqu'au 2026-11-21 ; les jours suivants sont provisoires (Search Console les complète en 2 à 3 jours) et ne déclenchent pas d'alerte.
 
 Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affilée sous 75 % de la médiane des 14 jours précédents, hors bruit) justifie une action le lundi. Une alerte « bruit » ou « à suivre » se mentionne au plus en une ligne dans le compte rendu, jamais comme une chute.
 
 ## Alertes des 7 derniers jours complets
 
-- **info** · 2026-11-14 : 308 impressions contre 244 d'habitude (+26 %), 1 clic(s), position 36.3. Hausse.
-  - /outils/audit-site/ : 6 → 57 impressions, position 78 → 66
-  - /agence-web-clermont-ferrand/ : 33 → 61 impressions, position 46 → 45
-  - /agence-web-strasbourg/ : 11 → 26 impressions, position 34 → 48
-  - /agence-web-annecy/ : 4 → 10 impressions, position 26 → 41
 - **info** · 2026-11-17 : 354 impressions contre 273 d'habitude (+30 %), 3 clic(s), position 30.8. Hausse.
   - /creation-site-web-strasbourg/ : 0 → 64 impressions, position 56 → 50
   - /agence-web-strasbourg/ : 20 → 40 impressions, position 47 → 49
@@ -21,13 +16,19 @@ Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affil
   - /creation-site-web-strasbourg/ : 0 → 46 impressions, position 53 → 42
   - /outils/audit-site/ : 40 → 67 impressions, position 73 → 36
   - /blog/articles/combien-coute-landing-page-france-2026/ : 8 → 19 impressions, position 11 → 11
+- **à suivre** · 2026-11-21 : 202 impressions contre 294 d'habitude (-31 %), 1 clic(s), position 34.1. Baisse sur moins de 3 jours.
+  - /agence-web-clermont-ferrand/ : 38 → 15 impressions, position 44 → 34
+  - /agence-web-strasbourg/ : 30 → 8 impressions, position 49 → 40
+  - /outils/audit-site/ : 40 → 24 impressions, position 73 → 45
+  - /blog/articles/avis-google-medecin-que-repondre/ : 26 → 20 impressions, position 8 → 11
 
 ## Jour par jour (28 jours)
 
 | Jour | Impressions | Clics | Position | Ordinateur | Mobile | Au-delà de la pos. 30 |
 |---|---|---|---|---|---|---|
+| 2026-11-23 (provisoire) | 188 | 3 | 27.6 | 157 | 30 | 94 |
 | 2026-11-22 (provisoire) | 213 | 0 | 31.7 | 172 | 40 | 116 |
-| 2026-11-21 (provisoire) | 202 | 1 | 34.1 | 161 | 40 | 130 |
+| 2026-11-21 | 202 | 1 | 34.1 | 161 | 40 | 130 |
 | 2026-11-20 | 240 | 2 | 29.6 | 176 | 62 | 121 |
 | 2026-11-19 | 285 | 0 | 28.2 | 220 | 64 | 135 |
 | 2026-11-18 | 416 | 1 | 30.6 | 341 | 71 | 310 |
@@ -53,4 +54,3 @@ Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affil
 | 2026-10-29 | 236 | 4 | 23.0 | 193 | 42 | 90 |
 | 2026-10-28 | 223 | 2 | 19.4 | 165 | 58 | 68 |
 | 2026-10-27 | 194 | 2 | 19.5 | 150 | 42 | 54 |
-| 2026-10-26 | 212 | 6 | 19.4 | 163 | 49 | 55 |

@@ -157,12 +157,12 @@ function localBusinessJsonLd(canonical, relPath) {
       'https://fr.trustpilot.com/review/msd-media.com',
       'https://share.google/xqjORxmtKbIlxybrm',
       'https://www.sortlist.com/agency/msd-media',
-      'https://www.ftalps.com/company/msd-media/'
+      'https://lafrenchtechalpes.fr/annuaire/01a15924-cfef-7b8f-934e-6788da8a897b'
     ],
     memberOf: {
       '@type': 'Organization',
       name: 'French Tech Alpes',
-      url: 'https://www.ftalps.com/'
+      url: 'https://lafrenchtechalpes.fr/'
     },
     mainEntityOfPage: canonical
   };

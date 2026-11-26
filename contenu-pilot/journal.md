@@ -3,6 +3,7 @@
 Une ligne par post préparé, la plus récente en tête : `date · type · sujet · impressions attendues`. Jamais le texte d'un brouillon (dépôt public). Bilan mensuel le 1er lundi du mois.
 
 ## Posts
+2026-11-27 · récit perso / opinion · agence d'une seule personne : qui décide si ça coince, ce qui limite le risque · non prédit (API dashboard 401, jeton refusé) · bilan du précédent : impossible (API injoignable)
 2026-11-25 · retour d'expérience · parcours de contact allégé : bouton « devis sous 24 h » à la place de l'appel seul · non prédit (API dashboard 401, jeton refusé) · bilan du précédent : impossible (API injoignable)
 2026-11-23 · T1-A · une seule offre mise en avant : la landing en deux délais (21 j / 7 j Express), ce qui m'a fait hésiter · ~12370 · bilan du précédent : stats non synchronisées depuis le 01/11 (1195 / non prédit), pas de leçon fiable ; posts du 9 au 20/11 absents du dashboard
 2026-11-20 · T1-C · le trafic Google comme mauvais indicateur (clics en hausse, 0 lead) · ~2150 · bilan du précédent : stats non synchronisées depuis le 01/11 (1195 / non prédit), pas de leçon fiable

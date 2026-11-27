@@ -11,6 +11,8 @@ Le 2026-11-03, audit SEO/AEO/GEO après refonte : titles, descriptions, canonica
 
 Hors entrées : le 2026-11-22, Maxens confie à l'équipe les suites de l'audit complet du 2026-11-21 : **lire `seo-pilot/audit-complet-2026-11-21.md` au passage du 2026-11-23** et traiter en premier le groupe landing page (l'ancien comparatif redirigé recule de 12 à 21 et `/creation-landing-page/` de 17 à 28). Les points marqués « à Maxens » ne sont pas pour l'agence. Ajout du même jour : section « Failles de mots-clés du 2026-11-22 » dans ce fichier (avis Google médecin, création site internet dentiste), à traiter juste après le groupe landing page.
 
+Hors entrées : le 2026-11-27, Maxens n'est pas satisfait de la baisse des clics Google (12 contre 26 sur une semaine, après la mise à jour principale de novembre). **Lire `seo-pilot/consignes-2026-11-30.md` en premier au passage du 2026-11-30** : il passe avant tout le reste (article avis Google, requêtes longues de Search Console transformées en sujets d'articles et en FAQ, groupe landing page, bilan dentiste).
+
 ## Entrées
 
 ### 2026-11-24 : option Assistant IA de MSD Care, liens French Tech et Dauphiné (décision de Maxens)

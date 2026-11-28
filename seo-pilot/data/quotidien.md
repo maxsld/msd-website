@@ -1,16 +1,11 @@
 # Veille quotidienne Search Console
 
-Mise à jour le 2026-11-27 (workflow seo-quotidien.yml, chaque matin). Jours complets jusqu'au 2026-11-24 ; les jours suivants sont provisoires (Search Console les complète en 2 à 3 jours) et ne déclenchent pas d'alerte.
+Mise à jour le 2026-11-28 (workflow seo-quotidien.yml, chaque matin). Jours complets jusqu'au 2026-11-25 ; les jours suivants sont provisoires (Search Console les complète en 2 à 3 jours) et ne déclenchent pas d'alerte.
 
 Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affilée sous 75 % de la médiane des 14 jours précédents, hors bruit) justifie une action le lundi. Une alerte « bruit » ou « à suivre » se mentionne au plus en une ligne dans le compte rendu, jamais comme une chute.
 
 ## Alertes des 7 derniers jours complets
 
-- **info** · 2026-11-18 : 416 impressions contre 284 d'habitude (+46 %), 1 clic(s), position 30.6. Hausse.
-  - /agence-web-clermont-ferrand/ : 37 → 100 impressions, position 46 → 35
-  - /creation-site-web-strasbourg/ : 0 → 46 impressions, position 53 → 42
-  - /outils/audit-site/ : 40 → 67 impressions, position 73 → 36
-  - /blog/articles/combien-coute-landing-page-france-2026/ : 8 → 19 impressions, position 11 → 11
 - **à suivre** · 2026-11-21 : 202 impressions contre 294 d'habitude (-31 %), 1 clic(s), position 34.1. Baisse sur moins de 3 jours.
   - /agence-web-clermont-ferrand/ : 38 → 15 impressions, position 44 → 34
   - /agence-web-strasbourg/ : 30 → 8 impressions, position 49 → 40
@@ -31,13 +26,19 @@ Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affil
   - /agence-web-strasbourg/ : 30 → 4 impressions, position 51 → 52
   - /outils/audit-site/ : 40 → 14 impressions, position 56 → 37
   - /creation-site-web-annecy/ : 23 → 9 impressions, position 46 → 52
+- **bruit** · 2026-11-25 : 184 impressions contre 276 d'habitude (-33 %), 2 clic(s), position 25.8. 85 % de l'écart vient de pages au-delà de la position 30.
+  - /outils/audit-site/ : 40 → 6 impressions, position 44 → 27
+  - /agence-web-clermont-ferrand/ : 29 → 0 impressions
+  - /agence-web-strasbourg/ : 28 → 2 impressions, position 52 → 45
+  - /creation-site-web-annecy/ : 23 → 12 impressions, position 46 → 49
 
 ## Jour par jour (28 jours)
 
 | Jour | Impressions | Clics | Position | Ordinateur | Mobile | Au-delà de la pos. 30 |
 |---|---|---|---|---|---|---|
+| 2026-11-27 (provisoire) | 215 | 3 | 28.4 | 157 | 56 | 75 |
 | 2026-11-26 (provisoire) | 239 | 3 | 30.4 | 176 | 61 | 127 |
-| 2026-11-25 (provisoire) | 184 | 2 | 25.8 | 139 | 43 | 69 |
+| 2026-11-25 | 184 | 2 | 25.8 | 139 | 43 | 69 |
 | 2026-11-24 | 200 | 4 | 21.7 | 149 | 47 | 63 |
 | 2026-11-23 | 190 | 3 | 27.6 | 157 | 32 | 94 |
 | 2026-11-22 | 213 | 0 | 31.7 | 172 | 40 | 116 |
@@ -63,4 +64,3 @@ Règle pour l'agence : seule une alerte **confirmée** (3 jours complets d'affil
 | 2026-11-02 | 168 | 1 | 16.2 | 110 | 56 | 27 |
 | 2026-11-01 | 165 | 2 | 19.0 | 105 | 58 | 54 |
 | 2026-10-31 | 199 | 5 | 16.7 | 134 | 65 | 40 |
-| 2026-10-30 | 167 | 2 | 23.5 | 124 | 42 | 54 |

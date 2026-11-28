@@ -140,5 +140,58 @@ for (const d of dates.slice(-28).reverse()) {
 }
 
 fs.writeFileSync('seo-pilot/data/quotidien.md', md);
+
+// ---------------------------------------------------------------------------
+// Message Telegram du matin (demande de Maxens du 2026-11-28) : les 7 derniers jours complets
+// face aux 7 précédents, en hausse ou en baisse, avec les pages qui expliquent l'écart.
+// Écrit dans le fichier TELEGRAM_OUT (le workflow l'envoie) ; rien n'est écrit sinon.
+if (process.env.TELEGRAM_OUT) {
+  const sem = complets.slice(-7), avant = complets.slice(-14, -7);
+  const somme = (ds, champ) => ds.reduce((s, d) => s + (parJour.get(d)?.[champ] || 0), 0);
+  // Position moyenne pondérée par les impressions, comme Search Console.
+  const posMoy = (ds) => { const i = somme(ds, 'impr'); return i ? ds.reduce((s, d) => s + parJour.get(d).pos * parJour.get(d).impr, 0) / i : 0; };
+  // Clics de marque : requêtes qui contiennent « msd ».
+  const brandRows = (await q(['date', 'query'])).filter((r) => /msd/i.test(r.keys[1]));
+  const clicsMarque = (ds) => brandRows.filter((r) => ds.includes(r.keys[0])).reduce((s, r) => s + r.clicks, 0);
+  const val = {
+    clics: [somme(sem, 'clics'), somme(avant, 'clics')],
+    horsMarque: [somme(sem, 'clics') - clicsMarque(sem), somme(avant, 'clics') - clicsMarque(avant)],
+    impr: [somme(sem, 'impr'), somme(avant, 'impr')],
+    top30: [somme(sem, 'impr') - somme(sem, 'profond'), somme(avant, 'impr') - somme(avant, 'profond')],
+    pos: [posMoy(sem), posMoy(avant)],
+  };
+  const evol = ([a, b]) => (b ? pct(a / b - 1) : 'nouveau');
+  const fleche = ([a, b]) => (a > b * 1.1 ? '↗' : a < b * 0.9 ? '↘' : '→');
+  // Pages : clics et impressions (position ≤ 30 seulement, le reste est du bruit) sur les deux semaines.
+  const parPage = new Map();
+  for (const [ds, k] of [[sem, 0], [avant, 1]]) for (const d of ds) for (const [p, x] of pagesJour.get(d) || []) {
+    const e = parPage.get(p) || { c: [0, 0], i: [0, 0], pi: [0, 0] };
+    e.c[k] += x.clics;
+    if (x.pos <= 30) { e.i[k] += x.impr; e.pi[k] += x.pos * x.impr; }
+    parPage.set(p, e);
+  }
+  const pages = [...parPage].map(([p, e]) => ({ p, ...e, score: (e.c[0] - e.c[1]) * 20 + (e.i[0] - e.i[1]) }));
+  const ligne = (x) => `${x.p} : ${x.c[1]}→${x.c[0]} clic(s), ${x.i[1]}→${x.i[0]} impr.${x.i[0] && x.i[1] ? `, pos. ${(x.pi[1] / x.i[1]).toFixed(0)}→${(x.pi[0] / x.i[0]).toFixed(0)}` : ''}`;
+  const net = (x) => x.c[0] - x.c[1] >= 2 || x.i[0] - x.i[1] >= 20 ? 1 : x.c[1] - x.c[0] >= 2 || x.i[1] - x.i[0] >= 20 ? -1 : 0;
+  const hausses = pages.filter((x) => net(x) > 0 && x.score > 0).sort((a, b) => b.score - a.score).slice(0, 3);
+  const baisses = pages.filter((x) => net(x) < 0 && x.score < 0).sort((a, b) => a.score - b.score).slice(0, 3);
+  const tendance = val.clics[0] > val.clics[1] * 1.1 || (val.clics[0] >= val.clics[1] && val.top30[0] > val.top30[1] * 1.1) ? '📈 En hausse'
+    : val.clics[0] < val.clics[1] * 0.9 || (val.clics[0] <= val.clics[1] && val.top30[0] < val.top30[1] * 0.9) ? '📉 En baisse' : '➡️ Stable';
+  const court = (d) => new Date(`${d}T12:00:00Z`).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+  const conf = alertes.filter((a) => a.niveau === 'confirmée');
+  const provisoires = dates.filter((d) => d > dernierComplet);
+  let t = `${tendance} · Google, ${court(sem[0])} → ${court(sem.at(-1))} (vs 7 jours avant)\n\n`;
+  t += `Clics : ${val.clics[0]} (${val.clics[1]}) ${fleche(val.clics)} ${evol(val.clics)}\n`;
+  t += `Clics hors marque : ${val.horsMarque[0]} (${val.horsMarque[1]})\n`;
+  t += `Impressions : ${n(val.impr[0])} (${n(val.impr[1])}) ${fleche(val.impr)} ${evol(val.impr)}\n`;
+  t += `  dont pages 1 à 3 de Google : ${n(val.top30[0])} (${n(val.top30[1])}) ${evol(val.top30)}\n`;
+  t += `Position moyenne : ${val.pos[0].toFixed(1)} (${val.pos[1].toFixed(1)})\n`;
+  if (hausses.length) t += `\nCe qui monte :\n${hausses.map((x) => `• ${ligne(x)}`).join('\n')}\n`;
+  if (baisses.length) t += `\nCe qui baisse :\n${baisses.map((x) => `• ${ligne(x)}`).join('\n')}\n`;
+  if (provisoires.length) t += `\nDerniers jours (provisoires) : ${provisoires.map((d) => `${court(d)} ${parJour.get(d).clics} clic(s)/${n(parJour.get(d).impr)} impr.`).join(' · ')}\n`;
+  t += conf.length ? `\n⚠️ Baisse confirmée (3 jours sous la normale) : l'agence la traite lundi.` : `\nAucune baisse confirmée.`;
+  fs.writeFileSync(process.env.TELEGRAM_OUT, t);
+  console.log(t);
+}
 const resume = alertes.filter((a) => a.niveau === 'confirmée').length;
 console.log(`quotidien.md écrit : ${alertes.length} alerte(s), dont ${resume} confirmée(s)${sansClic ? ', 3 jours sans clic' : ''}.`);

@@ -3,6 +3,8 @@ name: Veille Search Console quotidienne
 # Chaque matin : relevé Search Console jour par jour et classement des écarts (bruit, à suivre, confirmée)
 # dans seo-pilot/data/quotidien.md. Aucun appel à une IA. L'agence SEO le lit le lundi
 # (seo-pilot/PROMPT.md, point 5 bis). Demandé par Maxens le 2026-11-21.
+# Depuis le 2026-11-28 (demande de Maxens), le résumé du matin part aussi sur Telegram :
+# 7 derniers jours complets face aux 7 précédents, pages qui montent et qui baissent.
 on:
   schedule:
     # 6 h 23 UTC (7 h 23 à Paris en hiver) : minute décalée, le planificateur GitHub est saturé à l'heure pile.
@@ -40,7 +42,18 @@ jobs:
           GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
           GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY }}
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          TELEGRAM_OUT: ${{ runner.temp }}/telegram.txt
         run: node scripts/seo-pilot-quotidien.mjs
+
+      - name: Résumé du matin sur Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_OUT: ${{ runner.temp }}/telegram.txt
+        run: |
+          [ -s "$TELEGRAM_OUT" ] && [ -n "$TELEGRAM_BOT_TOKEN" ] || { echo "Pas de message ou pas de secret Telegram."; exit 0; }
+          curl -s -o /dev/null -w "Telegram : HTTP %{http_code}\n" -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d chat_id="${TELEGRAM_CHAT_ID}" --data-urlencode text@"$TELEGRAM_OUT"
 
       - name: Enregistrer
         run: |

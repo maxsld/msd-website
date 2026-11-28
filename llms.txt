@@ -50,7 +50,7 @@ Annecy et Haute-Savoie — marché principal, avec Chambéry, Genève et Strasbo
 - Nation Startup — site vitrine startup
 - Agence 3XL — site agence digitale
 - Maxime Sciare — site coach/consultant
-- Laurence Daien Maestripieri — site coach en prise de parole (Annecy), 1re position Google sur sa requête principale
+- Laurence Daien Maestripieri — site coach en prise de parole (Annecy), 1re sur Google pour « coach prise de parole annecy » (absente de la première page sur mobile avant notre intervention), PageSpeed mobile 54 → 82/100, SEO 81 → 100/100
 - EM Motors — site automobile premium
 - Aristoï Academia — site du cabinet de conseil stratégique de Nice : PageSpeed mobile de 74 à 98/100, page 52 fois plus légère (31,9 Mo à 0,61 Mo), LCP mobile de 14,4 s à 1,5 s, SEO local Nice (https://msd-media.com/realisations/aristoi-academia/)
 - Marie Troccaz — site coach en entreprise (culture d'entreprise, cohésion, leadership)
@@ -64,7 +64,7 @@ MSD Media a conçu la landing page dédiée au lancement français d'Ultherapy®
 
 ## Résultats clients
 
-- Sites livrés en HTML/CSS/JS natif. Mesures PageSpeed mobile d'octobre 2026 : Laurence Daien Maestripieri 99/100
+- Sites livrés en HTML/CSS/JS natif. Mesures PageSpeed mobile de novembre 2026 : Laurence Daien Maestripieri 82/100 (54 avant notre intervention), Aristoï Academia 98/100
 - Clients en France (Annecy, Lyon, Paris, Strasbourg), Suisse (Genève), Belgique (Bruxelles)
 - Nation Startup : landing page beta livrée en 12 jours
 - Maxime Sciare : +40 points PageSpeed après refonte, livraison 14 jours

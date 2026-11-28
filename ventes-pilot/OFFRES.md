@@ -39,7 +39,7 @@ Acompte de 50 % à la signature du devis, solde de 50 % à la livraison après v
 |---|---|---|---|
 | Santé, médecine esthétique, laboratoire | Merz Aesthetics : RADIESSE et Ultherapy Prime | `/realisations/merz-radiesse/`, `/realisations/merz-ultherapy-prime/` | Deux lancements pour un laboratoire international, cadre réglementaire du dispositif médical |
 | Beauté, institut, soin | HairTattoo (Bruxelles) | `/realisations/hairtattoo/` | Top 2 Google sur « micropigmentation Bruxelles », 12 jours ouvrés |
-| Coach, consultant, formateur | Marie Troccaz, Maxime Sciare, Laurence Daien Maestripieri | `/realisations/marie-troccaz/`, `/realisations/maxime-sciare/`, `/realisations/laurence-daien-maestripieri/` | 1re position Google sur sa requête (Laurence), site créé de zéro en 10 jours (Marie) |
+| Coach, consultant, formateur | Marie Troccaz, Maxime Sciare, Laurence Daien Maestripieri | `/realisations/marie-troccaz/`, `/realisations/maxime-sciare/`, `/realisations/laurence-daien-maestripieri/` | 1re position Google sur « coach prise de parole annecy », PageSpeed mobile 54 → 82/100 (Laurence), site créé de zéro en 10 jours (Marie) |
 | Commerce local, station, sport | Carroz Sports | `/realisations/carroz-sports/` | 1re position Google sur la requête principale, SEO local Haute-Savoie |
 | Startup, application | Nation Startup | `/realisations/nation-startup/` | Plus de 350 bêta-testeurs inscrits en 1 semaine |
 | Agence, offre multiple | Agence 3XL | `/realisations/agence-3xl/` | 3 rendez-vous pris le jour du lancement |

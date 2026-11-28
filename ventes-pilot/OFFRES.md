@@ -43,7 +43,7 @@ Acompte de 50 % à la signature du devis, solde de 50 % à la livraison après v
 | Commerce local, station, sport | Carroz Sports | `/realisations/carroz-sports/` | 1re position Google sur la requête principale, SEO local Haute-Savoie |
 | Startup, application | Nation Startup | `/realisations/nation-startup/` | Plus de 350 bêta-testeurs inscrits en 1 semaine |
 | Agence, offre multiple | Agence 3XL | `/realisations/agence-3xl/` | 3 rendez-vous pris le jour du lancement |
-| Formation, éducation | Aristoi Academia | `/realisations/aristoi-academia/` | PageSpeed 97/100 mobile |
+| Conseil, formation de dirigeants | Aristoï Academia (Nice) | `/realisations/aristoi-academia/` | PageSpeed mobile 74 → 98/100, page 52 fois plus légère (31,9 Mo → 0,61 Mo) |
 | Association, outil interne | EM Motors | `/realisations/em-motors/` | Site et dashboard livrés en moins d'une semaine |
 
 Avis : 5/5 sur Trustpilot et avis Google (citer les avis existants mot pour mot, jamais les résumer en leur faisant dire plus). Presse : Le Dauphiné Libéré. Membre French Tech Alpes.

@@ -51,6 +51,7 @@ Prix affichés aujourd'hui hors de `/tarifs/` (contraires à la règle, à tranc
 | Belotero | **interdit** : MSD Media n'a pas cette réalisation | redirection du 2026-11-03 |
 | Chiffres d'un projet (délai, PageSpeed, résultats) | validés seulement s'ils figurent sur la page de la réalisation | `/realisations/<projet>/` |
 | « PageSpeed systématiquement supérieur à 95/100 » | **à confirmer** : pas de mesure publiée pour tous les projets ; on cite le score d'un projet précis | pages de réalisation |
+| Aristoï Academia (Nice) : PageSpeed mobile 74 → 98/100, ordinateur 85 → 100/100, LCP mobile 14,4 s → 1,5 s, poids 31,9 Mo → 0,61 Mo, 18 → 0 requêtes tierces, CO2e 3,3 g → 0,06 g par visite (mesures du 2026-11-28, méthode sur la page) ; site créé en 21 jours ouvrés | validé | `/realisations/aristoi-academia/` |
 | Maxime Sciare : PageSpeed 96/100 mobile, +40 points, livré en 21 jours ouvrés | validé | `/realisations/maxime-sciare/` ; `llms.txt` dit « livraison 14 jours » : à corriger |
 | Résultats de conversion publiés : Nation Startup « +350 bêta-testeurs inscrits en 1 semaine après la mise en ligne » ; Agence 3XL « 3 rendez-vous générés le jour du lancement » | validé (pages de réalisation) | `/realisations/nation-startup/`, `/realisations/agence-3xl/` |
 | Chiffre de conversion Merz (taux, leads) | **à obtenir** : Maxens le fournira avec période et source | |

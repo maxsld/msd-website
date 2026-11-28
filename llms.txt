@@ -52,7 +52,7 @@ Annecy et Haute-Savoie — marché principal, avec Chambéry, Genève et Strasbo
 - Maxime Sciare — site coach/consultant
 - Laurence Daien Maestripieri — site coach en prise de parole (Annecy), 1re position Google sur sa requête principale
 - EM Motors — site automobile premium
-- Aristoi Academia — site école
+- Aristoï Academia — site du cabinet de conseil stratégique de Nice : PageSpeed mobile de 74 à 98/100, page 52 fois plus légère (31,9 Mo à 0,61 Mo), LCP mobile de 14,4 s à 1,5 s, SEO local Nice (https://msd-media.com/realisations/aristoi-academia/)
 - Marie Troccaz — site coach en entreprise (culture d'entreprise, cohésion, leadership)
 - Carroz Sports — site station de ski (Haute-Savoie)
 - HairTattoo by Hugues — site studio de micropigmentation capillaire (Bruxelles, Belgique)

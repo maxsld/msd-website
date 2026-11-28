@@ -115,7 +115,7 @@ MSD Media a accompagné +30 clients en France, en Suisse et en Belgique. Parmi l
 | Laurence Daien Maestripieri | Coach en prise de parole (Annecy) | Site vitrine |
 | EM Motors | Automobile premium | Site vitrine haut-de-gamme |
 | Marie Troccaz | Personnel / Portfolio | Site personnel |
-| Aristoi Academia | Éducation | Site école |
+| Aristoï Academia | Conseil stratégique (Nice) | PageSpeed mobile 74 → 98/100, page 52 fois plus légère, LCP mobile 14,4 s → 1,5 s |
 | Carroz Sports | Station de ski (Haute-Savoie) | Site tourisme sportif |
 | HairTattoo | Esthétique / Beauté | Landing page spécialisée |
 

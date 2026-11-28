@@ -15,6 +15,12 @@ Hors entrées : le 2026-11-27, Maxens n'est pas satisfait de la baisse des clics
 
 ## Entrées
 
+### 2026-11-28 : étude de cas Aristoï Academia refaite avec des mesures (décision de Maxens)
+- Changement : /realisations/aristoi-academia/ (FR et EN) réécrite. Nouveau title « Aristoï Academia : site de conseil à Nice, 98/100 mobile », nouvelle description, contenu factuel : client (cabinet de conseil à Nice), point de départ (site hors ligne, 31,9 Mo, 18 requêtes tierces, canonical vers un domaine inexistant), travaux (médias, code, SEO local Nice, llms.txt, migration Vercel), résultats mesurés le 2026-11-28 avec captures avant/après (bloc `ba-side` de HairTattoo) et tableau `blog-table` (style déjà présent dans style.css, ajouté au CSS des études de cas par la purge), méthode de mesure. JSON-LD : Article, entité du client (`https://www.aristoiacademia.fr/#organization`), WebSite créé par MSD Media, captures en ImageObject. Carte de /realisations/ (FR et EN), llms.txt, llms-full.txt, FAITS.md et ventes-pilot/OFFRES.md mis à jour.
+- Avant : page générique « organisme de formation » avec « PageSpeed 97/100 » et « < 0,9 s » non mesurés, mot-clé « agence web annecy », parcours d'inscription inexistant.
+- Hypothèse : une étude de cas chiffrée et vérifiable est citée par les moteurs IA et rassure les prospects ; pas de requête cible propre (marque du client + Nice, aucune page MSD sur Nice).
+- Type : `preuve`
+
 ### 2026-11-24 : option Assistant IA de MSD Care, liens French Tech et Dauphiné (décision de Maxens)
 - Changement : /tarifs/msd-care/ (FR et EN) : carte « Assistant IA » (390 € de mise en place, 29 € par mois, en option sur les trois niveaux), offre dans le JSON-LD, question de FAQ (visible et JSON-LD). Sur les 33 pages qui affichent le bandeau de confiance du haut de page : « Membre French Tech » renvoie vers la fiche de l'annuaire French Tech Alpes, « Vu dans Le Dauphiné » vers l'article du Dauphiné Libéré.
 - Avant : options MSD Care limitées à l'Option SEO ; badges non cliquables.
